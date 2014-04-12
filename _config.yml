@@ -7,6 +7,8 @@ author:
   name:           'Brian Mitchell'
   url:            https://twitter.com/bman4789
 
+markdown: kramdown
+
 exclude: [
   'node_modules',
   'bower_components',
