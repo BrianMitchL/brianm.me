@@ -1,0 +1,23 @@
+title:            Brian Mitchell
+tagline:
+description:      'Computer Science Student'
+url:              http://bman4789.github.io
+
+author:
+  name:           'Brian Mitchell'
+  url:            https://twitter.com/bman4789
+
+exclude: [
+  'node_modules',
+  'bower_components',
+  'Gruntfile.js',
+  'package.json',
+  'bower.json',
+  'requirements.txt',
+  'Gemfile',
+  'Gemfile.lock',
+  'README.md',
+  'env',
+  'tmp',
+  '*.sh'
+]
