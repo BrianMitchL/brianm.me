@@ -4,13 +4,17 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
     <meta name="author" content="Brian Mitchell" />
-    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/tablet.css" type="text/css" media="screen and (min-width:651px) and (max-width: 1024px), screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
+    <link rel="stylesheet" href="/css/mobile.css" type="text/css" media="handheld, screen and (max-width: 650px), screen and (max-device-width: 480px)" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <div class="title">
             <a href="/">Brian Mitchell</a>
-            <a class="nav" href="/">home</a>
+            <a href="/">home</a>
         </div>
         {{ content }}
     </div>
@@ -23,7 +27,8 @@
     <div class="contact">
         <p>
             <a href="https://github.com/bman4789/">github.com/bman4789</a><br />
-            <a href="https://twitter.com/tech4789/">twitter.com/tech4789</a>
+            <a href="https://twitter.com/tech4789/">twitter.com/tech4789</a><br />
+            <a href="http://www.linkedin.com/in/brianscottmitchell">linkedin.com/in/brianscottmitchell</a>
         </p>
     </div>
 </footer>

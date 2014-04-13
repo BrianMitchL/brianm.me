@@ -4,14 +4,35 @@
 html, body {
     height: 100%;
 }
+
+body {
+    font: 14px helvetica, arial, clean, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    margin-top: 1em;
+}
+
 #wrapper {
     min-height: 100%;
-    height: auto !important;
     height: 100%;
     margin: 0 auto -100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
+#disqus_thread {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 footer{
-    background-color: darkgrey;
     text-align: center;
     height: 100px;
+    font-size: 80%;
+    color: #666;
+    border-top: 2px solid #eee;
+    margin-top: 2em;
+    overflow: hidden;
 }
