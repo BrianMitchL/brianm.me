@@ -3,8 +3,13 @@ layout: default
 title: Brian Mitchell
 ---
 
-<div>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    <p>Test p tag</p>
+<div class="home">
+    <h2>Blog Posts</h2>
+    <div class="posts">
+        <ul class="posts">
+            {% for post in site.posts %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
