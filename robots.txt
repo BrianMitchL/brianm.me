@@ -1,0 +1,3 @@
+Sitemap: http://bman4789.github.io/sitemap.xml
+User-agent: *
+Allow: /
