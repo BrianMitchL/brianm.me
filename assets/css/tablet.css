@@ -1,7 +1,18 @@
+/* whole site */
+
 body {
     font-size:14pt;
+    margin-left:3em;
+    margin-right:3em;
 }
 
 .body {
     width: 35em;
+}
+
+/* posts */
+
+#disqus_thread {
+    padding-left: 0%;
+    padding-right: 0%;
 }

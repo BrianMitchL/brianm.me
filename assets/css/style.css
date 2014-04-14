@@ -1,3 +1,7 @@
+/* Note, this site uses bootstrap, so much of the formatting is already done */
+
+/* whole site */
+
 * {
     margin: 0;
 }
@@ -5,22 +9,21 @@ html, body {
     height: 100%;
 }
 
+body {
+    margin-left:10%;
+    margin-right:10%;
+}
+
 #wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -8em;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin: 0 auto -6em;
 }
 
-#disqus_thread {
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
 footer, .push{
-    height: 8em;
+    height: 6em;
 }
 
 footer {
@@ -29,3 +32,35 @@ footer {
     border-top: 2px solid orange;
     margin-top: 2em;
 }
+
+/* posts */
+
+#post {
+    background-color: #FEE3BE;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#post h1 {
+    text-align: center;
+}
+
+#post .meta {
+
+}
+#postBody {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#disqus_thread {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* pages */

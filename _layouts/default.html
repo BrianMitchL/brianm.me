@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Brian Mitchell | {{ page.title }}</title>
     <meta name="author" content="Brian Mitchell" />
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
@@ -13,21 +14,36 @@
 </head>
 <body>
     <div id="wrapper">
-        <div class="title">
-            <a href="/">Brian Mitchell</a>
-            <a href="/">home</a>
-        </div>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Brian Mitchell</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">{{ page.title }}</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/">Home</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
         {{ content }}
         <div class="push"></div>
     </div>
 <footer>
     <div class="contact">
         <p>
-            © 2014 Brian Mitchell
-        </p>
-    </div>
-    <div class="contact">
-        <p>
+            © 2014 Brian Mitchell<br />
             <a href="https://github.com/bman4789/">github.com/bman4789</a><br />
             <a href="https://twitter.com/tech4789/">twitter.com/tech4789</a><br />
             <a href="http://www.linkedin.com/in/brianscottmitchell">linkedin.com/in/brianscottmitchell</a>
@@ -35,7 +51,7 @@
     </div>
 </footer>
 
-<a href="https://github.com/bman4789"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-orange@2x.png" alt="Fork me on GitHub"></a>
+<a id="forkme" href="https://github.com/bman4789"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-orange@2x.png" alt="Fork me on GitHub"></a>
 
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

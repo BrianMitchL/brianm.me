@@ -1,3 +1,5 @@
+/* whole site */
+
 body {
     margin-left:1em;
     margin-right:1em;
@@ -8,10 +10,28 @@ body {
     width: 100%;
 }
 
+#forkme {
+    display: none;
+}
+
+/* home page */
+
 ul.posts span.seperator {
     display:none;
 }
 
 ul.posts a {
     display:block;
+}
+
+/* posts */
+
+#post .meta {
+    margin-left: 0em;
+    text-align: center;
+}
+
+#disqus_thread {
+    padding-left: 0%;
+    padding-right: 0%;
 }
