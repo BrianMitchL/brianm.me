@@ -9,4 +9,4 @@ author :
 url: http://bman4789.github.io
 markdown: kramdown
 
-exclude: ['README.md', '.gitignore', 'Gemfile']
+exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
