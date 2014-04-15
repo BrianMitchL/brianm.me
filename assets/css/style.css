@@ -34,8 +34,20 @@ html, body {
 #footer {
     text-align: center;
     font-size: 80%;
-    border-top: 2px solid #FF6F00;
+    border-top: 1px solid #FF6F00;
 }
+
+.page-header {
+    border-bottom: 1px solid #FF6F00;
+}
+
+/* home
+-------------------------------------------------- */
+
+ul.posts {
+    list-style-type: none;
+}
+
 
 
 /* posts
