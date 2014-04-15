@@ -3,16 +3,16 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="page-header">
     <h1><a href="/about/" />About Me</a></h1>
     <p>A quick bio and a brief resume.</p>
+</div>
 
-    <h1><a href="/posts/" />Blog Posts</a></h1>
-    <div class="posts">
-        <ul class="posts">
-            {% for post in site.posts %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </div>
+<h1><a href="/posts/" />Blog Posts</a></h1>
+<div class="posts">
+    <ul class="posts">
+        {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
 </div>
