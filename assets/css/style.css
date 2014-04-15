@@ -9,16 +9,16 @@ html, body {
     height: 100%;
 }
 
-body {
-    margin-left:10%;
-    margin-right:10%;
-}
-
-#wrapper {
+#content {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -6em;
+    margin: 0 auto -7em;
+}
+
+#wrapper {
+    margin-left:10%;
+    margin-right:10%;
 }
 
 

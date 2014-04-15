@@ -1,3 +1,5 @@
+markdown: kramdown
+
 title : Brian Mitchell
 
 author :
@@ -6,7 +8,15 @@ author :
   github : bman4789
   twitter : tech4789
 
-url: http://bman4789.github.io
-markdown: kramdown
+navigation:
+#      - text: Home
+#        title: Back to home page
+#        url: /
+      - text: About Me
+        title: A brief overview of me
+        url: /about/
+      - text: Posts
+        title: Blog Posts
+        url: /posts/
 
 exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
