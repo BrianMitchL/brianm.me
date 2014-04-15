@@ -1,8 +1,6 @@
 /* whole site */
 
 body {
-    margin-left:1em;
-    margin-right:1em;
     font-size:18pt;
 }
 
@@ -36,10 +34,6 @@ h6 {
 
 #forkme {
     display: none;
-}
-
-#footer {
-    font-size: 70%;
 }
 
 /* home page */
