@@ -46,6 +46,11 @@ ul.posts a {
     display:block;
 }
 
+#container {
+    margin-left:5%;
+    margin-right:5%;
+}
+
 /* posts */
 
 #post .meta {
