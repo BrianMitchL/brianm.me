@@ -48,11 +48,24 @@ ul.posts {
     list-style-type: none;
 }
 
-
-
 /* posts
 -------------------------------------------------- */
 
 .post h1 {
     text-align: center;
+}
+
+#shareButtons {
+    border-top: 1px solid #FF6F00;
+    border-bottom: 1px solid #FF6F00;
+}
+
+#shareButtons ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
+#shareButtons ul li {
+    display: inline;
 }
