@@ -64,8 +64,14 @@ ul.posts {
     list-style-type: none;
     margin: 5px;
     padding: 0;
+    margin-top: 10px;
 }
 
 #shareButtons ul li {
     display: inline;
+}
+
+#shareButtons ul li > * {
+    height:20px;
+    vertical-align: top;
 }
