@@ -16,9 +16,12 @@ navigation:
 #        url: /
       - text: About Me
         title: A brief overview of me
-        url: /about/
+        url: /about
+      - text: Other Sites
+        title: Links to my other sites
+        url: /other-sites
       - text: Posts
         title: Blog Posts
-        url: /posts/
+        url: /posts
 
 exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']

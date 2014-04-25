@@ -75,3 +75,10 @@ ul.posts {
     height:20px;
     vertical-align: top;
 }
+
+/* other-sites
+-------------------------------------------------- */
+
+#sitesList {
+    list-style-type: none;
+}
