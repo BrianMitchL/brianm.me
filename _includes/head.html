@@ -5,7 +5,6 @@
     {% else %}
         {{ site.title }}
     {% endif %}</title>
-<meta name="author" content="Brian Mitchell" />
 <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -15,8 +14,9 @@
 <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/assets/css/tablet.css" type="text/css" media="screen and (min-width:651px) and (max-width: 1024px), screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
 <link rel="stylesheet" href="/assets/css/mobile.css" type="text/css" media="handheld, screen and (max-width: 650px), screen and (max-device-width: 480px)" />
-        <!--facebook-->
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<!--facebook-->
+{% capture canonical %}{{ site.url }}{{ page.url | remove:'index.html' | '/' }}{% endcapture %}
+<meta property="og:url" content="{{ canonical }}">
 <meta content="{{ site.title }}" property="og:site_name">
 {% if page.title %}
 <meta content="{{ page.title }}" property="og:title">
@@ -34,14 +34,14 @@
 {% else %}
 <meta property="og:type" content="website">
 {% endif %}
-        <!--twitter-->
+<!--twitter-->
 <meta name="twitter:card" content="summary">
 {% if page.title %}
 <meta content="{{ page.title }}" name="twitter:title">
 {% else %}
 <meta content="{{ site.title }}" name="twitter:title">
 {% endif %}
-<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:url" content="{{ canonical }}">
 {% if page.description %}
 <meta name="twitter:description" content="{{ page.description }}">
 {% else %}
