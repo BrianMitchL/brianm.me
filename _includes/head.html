@@ -36,7 +36,11 @@
 {% endif %}
         <!--twitter-->
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="{{ site.title }} | {{ page.title }}">
+{% if page.title %}
+<meta content="{{ page.title }}" name="twitter:title">
+{% else %}
+<meta content="{{ site.title }}" name="twitter:title">
+{% endif %}
 <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 {% if page.description %}
 <meta name="twitter:description" content="{{ page.description }}">
