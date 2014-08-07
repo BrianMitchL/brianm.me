@@ -16,11 +16,7 @@
 <link rel="stylesheet" href="/assets/css/tablet.css" type="text/css" media="screen and (min-width:651px) and (max-width: 1024px), screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
 <link rel="stylesheet" href="/assets/css/mobile.css" type="text/css" media="handheld, screen and (max-width: 650px), screen and (max-device-width: 480px)" />
         <!--facebook-->
-{% if page.url=="/index.html" %}
-<meta property="og:url" content="{{ site.url }}" />
-{% else %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-{% endif %}
 <meta content="{{ site.title }}" property="og:site_name">
 {% if page.title %}
 <meta content="{{ page.title }}" property="og:title">
