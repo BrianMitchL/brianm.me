@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Long Car Rides (And MICS)
+description: Rambling and the plan for MICS 2014
+type: article
 ---
 
 Today I drove (by drive, I mean rode in a car while someone else drove) to Verona, WI for MICS 2014. MICS ([Midwest Instruction and Computing Symposium](http://micsymposium.org/)) is an annual conference that has a career fair, robotics and programming competitions, and research paper presentations. I am attending with two professors from The University of Minnesota and 12 fellow students. I am competing in the both the robotics and programming competitions. I'm very excited to compete! All I hope is that we have some fun and that our robot doesn't fail epically. [Video of the robot shooting during testing](https://www.youtube.com/watch?v=Il7Uavkg4aA)

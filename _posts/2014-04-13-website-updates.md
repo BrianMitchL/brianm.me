@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Website Updates
+description: Updates on plans for brianm.me
+type: article
 ---
 
 First and foremost, I have upgraded the "fork me on Github" banner! I'm using the orange one from [aral's Github Retina ribbons](https://github.com/aral/fork-me-on-github-retina-ribbons "aral's Github retina ribbons")
