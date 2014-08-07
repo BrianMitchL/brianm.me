@@ -1,18 +1,34 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brian Mitchell | {{ page.title }}</title>
+<title>{{ site.title }} | {{ page.title }}</title>
 <meta name="author" content="Brian Mitchell" />
 <link rel="shortcut icon" href="/assets/images/favicon.ico">
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></sc\
-    ript>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/assets/css/tablet.css" type="text/css" media="screen and (min-width:651px) and (max-width: 1024px), screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
 <link rel="stylesheet" href="/assets/css/mobile.css" type="text/css" media="handheld, screen and (max-width: 650px), screen and (max-device-width: 480px)" />
+        <!--facebook-->
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-<meta property="og:title" content="brianm.me | {{ page.title }}" />
-<meta property="og:description" content="Blog posts, links to other sites, an online resume, and more! " />
-<meta property="og:image" content="{{ site.url }}assets/images/Profile500.jpg"/>
+<meta property="og:title" content="{{ site.title }} | {{ page.title }}" />
+{% if page.description %}
+<meta property="og:description" content="{{ page.description }}" />
+{% else %}
+<meta property="og:description" content="{{ site.description }}" />
+{% endif %}
+<meta property="og:image" content="{{ site.url }}/assets/images/Profile500.jpg"/>
+<meta property="og:type" content="" />
+        <!--twitter-->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ site.title }} | {{ page.title }}">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% if page.description %}
+<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+<meta name="twitter:site" content="@bman4789">
+<meta name="twitter:creator" content="@bman4789">
