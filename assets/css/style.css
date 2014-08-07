@@ -82,3 +82,7 @@ ul.posts {
 #sitesList {
     list-style-type: none;
 }
+
+#sitesList li:before {
+    content: " - ";
+}
