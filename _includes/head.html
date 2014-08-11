@@ -28,7 +28,14 @@
 {% else %}
 <meta property="og:description" content="{{ site.description }}" />
 {% endif %}
-<meta property="og:image" content="{{ site.url }}/assets/images/Profile500.jpg"/>
+<meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/assets/images/Profile500.jpg{% endif %}"/>
+
+<!--{% if page.image %}-->
+<!--<meta property="og:image" content="{{ site.url }}{{ page.image }}"/>-->
+<!--{% else %}-->
+<!--<meta property="og:image" content="{{ site.url }}/assets/images/Profile500.jpg"/>-->
+<!--{% endif %}-->
+
 {% if page.type == "article" %}
 <meta property="og:type" content="article">
 {% else %}
