@@ -3,7 +3,7 @@ layout: post
 title: Designing a Logo
 description: A few thoughts on designing a logo and the process used for Brian Mitchell's new logo
 type: article
-image: /assets/post_assets/2014-08-11-designing-a-logo/BM-Logo.jpg
+image: /assets/post_assets/2014-08-11-designing-a-logo/BM-Logo.png
 ---
 
 <img src="/assets/post_assets/2014-08-11-designing-a-logo/BM-Logo.png" alt="Brian Mitchell Logo" title="Brian Mitchell Logo" style="height:250px;width:auto">
