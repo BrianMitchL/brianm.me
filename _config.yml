@@ -1,4 +1,4 @@
-markdown: kramdown
+markdown: kramdo
 
 title : Brian Mitchell
 description: Blog posts, links to other sites, an online resume, and more!
@@ -9,7 +9,7 @@ author :
   github : bman4789
   twitter : tech4789
 
-url: http://brianm.me
+url: https://brianm.me
 
 navigation:
 #      - text: Home
@@ -26,3 +26,5 @@ navigation:
         url: /posts
 
 exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
+
+enforce_ssl: brianm.me
