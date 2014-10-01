@@ -9,7 +9,7 @@ author :
   github : bman4789
   twitter : tech4789
 
-url: https://brianm.me
+url: http://brianm.me
 
 navigation:
 #      - text: Home
@@ -27,4 +27,4 @@ navigation:
 
 exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
 
-enforce_ssl: brianm.me
+#enforce_ssl: brianm.me
