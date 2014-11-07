@@ -41,6 +41,9 @@ html, body {
     border-bottom: 1px solid #FF6F00;
 }
 
+.navbar-brand {
+    padding: 5px;
+}
 /* home
 -------------------------------------------------- */
 
