@@ -7,7 +7,7 @@ author :
   name : Brian Mitchell
   email : bman4789@gmail.com
   github : bman4789
-  twitter : tech4789
+  twitter : bman4789
 
 url: http://brianm.me
 
@@ -18,12 +18,15 @@ navigation:
       - text: About Me
         title: A brief overview of me
         url: /about
-      - text: Other Sites
-        title: Links to my other sites
-        url: /other-sites
       - text: Posts
         title: Blog Posts
         url: /posts
+      - text: Angular Demos
+        title: Angular Demo Site
+        url: https://angular.brianm.me/
+      - text: Other Sites
+        title: Links to my other sites
+        url: /other-sites
 
 exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
 
