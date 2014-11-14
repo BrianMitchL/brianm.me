@@ -3,26 +3,24 @@ layout: default
 type: home
 ---
 
-<div class="page-header">
-    <h1><a href="/about/" />About Me</a></h1>
-    <p>A quick bio and a brief resume.</p>
-</div>
+<header class="hero-unit">
+    <div class="container">
+        <h1><a href="/about/" />About Me</a></h1>
+        <p>A quick bio and a brief resume.</p>
+        <h1><a href="https://angular.brianm.me" />Angular Demos</a></h1>
+        <p>A group of pages with various Angular demos.</p>
+        <h1><a href="/other-sites/" />Other Sites</a></h1>
+        <p>A list of other websites that I have profiles on.</p>
+    </div>
+</header>
 
-<div class="page-header">
-    <h1><a href="https://angular.brianm.me" />Angular Demos</a></h1>
-    <p>A group of pages with various Angular demos.</p>
-</div>
-
-<div class="page-header">
-    <h1><a href="/other-sites/" />Other Sites</a></h1>
-    <p>A list of other websites that I have profiles on.</p>
-</div>
-
-<h1><a href="/posts/" />Recent Blog Posts</a></h1>
-<div class="posts">
-    <ul class="posts">
-        {% for post in site.posts limit: 8 %}
-        <li><span>{{ post.date | date_to_string }}</span> <span class="seperator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
+<div class="container">
+    <h1><a href="/posts/" />Recent Blog Posts</a></h1>
+    <div class="posts">
+        <ul class="posts">
+            {% for post in site.posts limit: 8 %}
+            <li><span>{{ post.date | date_to_string }}</span> <span class="seperator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
