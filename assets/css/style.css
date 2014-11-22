@@ -1,12 +1,18 @@
-html, body {
-    height: 100%;
-    /* The html and body elements cannot have any padding or margin. */
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-/* whole site
--------------------------------------------------- */
+body {
+    margin-bottom: 96px;
+}
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 96px;
     text-align: center;
     padding: 10px 0;
     margin-top: 70px;

@@ -22,7 +22,7 @@ navigation:
         title: Blog Posts
         url: /posts
       - text: Angular Demos
-        title: Angular Demo Site
+        title: Angular
         url: https://angular.brianm.me/
       - text: Other Sites
         title: Links to my other sites
