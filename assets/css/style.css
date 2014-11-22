@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    /* Set the fixed height of the footer here */
     margin-bottom: 96px;
 }
 
@@ -26,7 +27,7 @@ body {
 }
 
 #banner h1 {
-    font-size: 60px;
+    font-size: 4em;
     line-height: 1;
     letter-spacing: -1px;
 }
@@ -42,6 +43,12 @@ body {
 
 .hero-unit a {
     color: white;
+}
+
+@media only screen and (max-width : 320px) {
+    #banner h1 {
+        font-size: 3em;
+    }
 }
 
 /* home
