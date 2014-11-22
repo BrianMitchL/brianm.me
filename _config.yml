@@ -21,8 +21,8 @@ navigation:
       - text: Posts
         title: Blog Posts
         url: /posts
-      - text: Angular Demos
-        title: Angular
+      - text: Angular
+        title: Angular Demos
         url: https://angular.brianm.me/
       - text: Other Sites
         title: Links to my other sites

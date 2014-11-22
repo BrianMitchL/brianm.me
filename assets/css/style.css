@@ -20,11 +20,16 @@ body {
     border-top: 1px solid #FF6F00;
 }
 
-.navbar-brand {
-    padding: 5px;
+#banner {
+    border-bottom: none;
+    margin-top: -20px;
 }
-/* home
--------------------------------------------------- */
+
+#banner h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
 
 .hero-unit {
     position: relative;
@@ -38,6 +43,10 @@ body {
 .hero-unit a {
     color: white;
 }
+
+/* home
+-------------------------------------------------- */
+
 ul.posts {
     list-style-type: none;
 }
