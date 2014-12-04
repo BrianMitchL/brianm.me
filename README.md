@@ -2,7 +2,7 @@
 
 Website for Brian Mitchell
 
-The site can be found at [http://brianm.me/](http://brianm.me/)
+The site can be found at [http://github.brianm.me/](http://github.brianm.me/)
 
 Note: when developing, use
 ```bash

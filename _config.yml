@@ -1,7 +1,7 @@
 markdown: kramdown
 
 title : Brian Mitchell
-description: Blog posts, links to other sites, an online resume, and more!
+description: Old website with blog posts, links to other sites, an online resume, and more!
 
 author :
   name : Brian Mitchell
@@ -9,7 +9,7 @@ author :
   github : bman4789
   twitter : bman4789
 
-url: http://brianm.me
+url: http://github.brianm.me
 
 navigation:
 #      - text: Home
@@ -23,11 +23,11 @@ navigation:
         url: /posts
       - text: Angular
         title: Angular Demos
-        url: https://angular.brianm.me/
+        url: https://brianm.me/
       - text: Other Sites
         title: Links to my other sites
         url: /other-sites
 
 exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
 
-#enforce_ssl: brianm.me
+#enforce_ssl: github.brianm.me
