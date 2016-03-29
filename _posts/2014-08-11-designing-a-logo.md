@@ -1,18 +1,20 @@
 ---
 layout: post
 title: Designing a Logo
+slug: designing-a-logo
+date: 2014-08-11
 description: A few thoughts on designing a logo and the process used for Brian Mitchell's new logo
 type: article
 image: /assets/post_assets/2014-08-11-designing-a-logo/BM-Logo.png
 ---
 
-<img src="/assets/post_assets/2014-08-11-designing-a-logo/BM-Logo.png" alt="Brian Mitchell Logo" title="Brian Mitchell Logo" style="height:250px;width:auto">
+<img src="/assets/images/BM-Logo.png" alt="Brian Mitchell Logo" title="Brian Mitchell Logo" style="height:250px;width:auto">
 
 *Logo scaled to 250px, open separately to view the full 1000px*
 
 I had some time to kill today, so I thought to myself, "Hey, why not make a logo?" I then sat and thought for 30 seconds on how I could make a cool logo that had to do with my name, "Brian Mitchell." In the past, I've made little icons that were just squares with a 'B' or "BM" inside. An example of this is below:
 
-<img src="/assets/post_assets/2014-08-11-designing-a-logo/old-BM-logo.png" alt="Old Brian Mitchell Logo" title="Old Brian Mitchell Logo" style="height:256px;width:auto">
+<img src="/assets/images/old-BM-logo.png" alt="Old Brian Mitchell Logo" title="Old Brian Mitchell Logo" style="height:256px;width:auto">
 
 While that worked for some things in the past, I wanted to something different. Then it dawned on me, I'd flip the 'M' 90&deg;! I feel like the simplest and seemingly stupidest things will make a design go from bad to good (that's debatable, but seemed true enough for this new logo).
 

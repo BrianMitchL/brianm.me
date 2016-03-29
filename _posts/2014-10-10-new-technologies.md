@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Learning New Technologies (MEAN Stack)
+slug: new-technologies
+date: 2014-10-10
 description: Ideas on learning to develop for a new platform using Node.js.
 type: article
+image:
 ---
 
 While taking the Software Design and Development course last spring, we (the class) used Backbone as the main framework on top of Node.js. I never really got the chance to appreciate Backbone due to being slammed with a towering wall of new technologies that make up the Node.js world. I mostly stuck to my own world of Hogan templates, jQuery, and plain JavaScript. This worked reasonably well. While it got a little messy, it worked, and I knew how it worked. During this whole time I was slowly feeling more guilty for creating a monster of jQuery calls that who knows how I was able to keep track of. I wanted to use Backbone to manipulate the page and handle all of the functions, but at that point, I didn't want to tackle the massive refactoring that would have needed to happen to move it to Backbone properly and moved to a different part of the website completely (design and usability). Maybe I'll go back and properly refactor the code someday, but for now, that's a ways off.

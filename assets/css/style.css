@@ -5,50 +5,20 @@ html {
 
 body {
     /* Set the fixed height of the footer here */
-    margin-bottom: 96px;
+    margin-bottom: 7em;
 }
 
-.footer {
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 96px;
+    height: 7em;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 70px;
-    font-size: 80%;
+    padding: 0.5em 0;
+    /*margin-top: 70px;*/
+    font-size: 0.8em;
     border-top: 1px solid #FF6F00;
-}
-
-#banner {
-    border-bottom: none;
-    margin-top: -20px;
-}
-
-#banner h1 {
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
-.hero-unit {
-    position: relative;
-    padding: 30px 15px;
-    color: #F5F5F5;
-    text-align: center;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-    background: #4393B9;
-}
-
-.hero-unit a {
-    color: white;
-}
-
-@media only screen and (max-width : 320px) {
-    #banner h1 {
-        font-size: 3em;
-    }
 }
 
 /* home
@@ -79,38 +49,4 @@ ul.posts {
 #shareButtons ul li > * {
     height:20px;
     vertical-align: top;
-}
-
-/* other-sites
--------------------------------------------------- */
-
-#sitesList {
-    list-style-type: none;
-    padding: 0;
-}
-
-#sitesList li {
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-/* social buttons
----------------------------------------------------*/
-
-.social-img {
-    width: 40px;
-    height: 40px;
-}
-
-a.darken img {
-
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
-}
-
-a.darken:hover img {
-    opacity: 0.7;
 }

@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<header class="hero-unit" id="banner">
-    <div class="container">
+<header>
+    <div>
         <h1>{{ page.title }}</h1>
-        <p class="meta lead">{{ page.date | date_to_string }}</p>
+        <p>{{ page.date | date_to_string }}</p>
     </div>
 </header>
-<div class="container">
+<div>
     <article>
         <br />
         {{ content }}
