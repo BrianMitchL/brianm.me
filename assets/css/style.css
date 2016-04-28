@@ -1,31 +1,54 @@
 html {
-    position: relative;
-    min-height: 100%;
+    font-family: -apple-system-font;
+    /*position: relative;*/
+    /*min-height: 100%;*/
 }
 
-body {
-    /* Set the fixed height of the footer here */
-    margin-bottom: 7em;
-}
+/*body {*/
+    /*!* Set the fixed height of the footer here *!*/
+    /*margin-bottom: 7em;*/
+/*}*/
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 7em;
-    text-align: center;
-    padding: 0.5em 0;
-    /*margin-top: 70px;*/
-    font-size: 0.8em;
-    border-top: 1px solid #FF6F00;
+/*footer {*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*!* Set the fixed height of the footer here *!*/
+    /*height: 7em;*/
+    /*text-align: center;*/
+    /*padding: 0.5em 0;*/
+    /*!*margin-top: 70px;*!*/
+    /*font-size: 0.8em;*/
+    /*border-top: 1px solid #FF6F00;*/
+/*}*/
+
+.list-inline li {
+    display: inline;
 }
 
 /* home
 -------------------------------------------------- */
 
-ul.posts {
-    list-style-type: none;
+#main-parallax {
+    background: url(/assets/images/norway1.jpg) no-repeat center center;
+    /*background-size: cover;*/
+    height: 100vh;
+    width: 100vw;
+}
+
+#main-content {
+    background: #232323;
+    /*background-size: cover;*/
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-text {
+    text-align: center;
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    font-size: 1.5em;
 }
 
 /* posts
@@ -50,3 +73,46 @@ ul.posts {
     height:20px;
     vertical-align: top;
 }
+
+/* contact
+-------------------------------------------------- */
+.social-icons .fa {
+    font-size: 2.2em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa{
+    border-radius: 50%;
+}
+.social-icons.icon-rounded .fa{
+    border-radius:10px;
+}
+.social-icons.icon-flat .fa{
+    border-radius: 0;
+}
+
+.social-icons .fa:hover, .social-icons .fa:active {
+    color: #FFF;
+}
+
+.social-icons .fa-facebook{background-color:#3C599F;}
+.social-icons .fa-github{background-color:#070709;}
+.social-icons .fa-google-plus{background-color:#CF3D2E;}
+.social-icons .fa-instagram{background-color:#A1755C;}
+.social-icons .fa-lastfm{background-color:#DF1426;}
+.social-icons .fa-linkedin{background-color:#0085AE;}
+.social-icons .fa-reddit{background-color:#232323;}
+.social-icons .fa-spotify{background-color:#598401;}
+.social-icons .fa-soundcloud{background-color:#F76411;}
+.social-icons .fa-steam{background-color:#17191E;}
+.social-icons .fa-tumblr{background-color:#314E6C;}
+.social-icons .fa-twitter{background-color:#32CCFE;}
+.social-icons .fa-vine{background-color:#01B784;}
+.social-icons .fa-youtube{background-color:#C52F30;}
+.social-icons .fa-snapchat-ghost{background-color:#FFFB03;-webkit-text-stroke: 1px black;}

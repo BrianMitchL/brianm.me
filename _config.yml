@@ -24,10 +24,8 @@ navigation:
       - text: Angular
         title: Angular Demos
         url: https://brianm.me/
-      - text: Other Sites
-        title: Links to my other sites
-        url: /other-sites
+      - text: Contact
+        title: Where to find me
+        url: /contact
 
-exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
-
-#enforce_ssl: github.brianm.me
+exclude: ['README.md', '.gitignore', 'Gemfile']

@@ -3,21 +3,21 @@ layout: default
 type: home
 ---
 
-<header>
+<div id="main-parallax" data-uk-parallax="{bg: '-200'}">
+    <div class="main-text">
+        <h1>Hi, I'm Brian</h1>
+        <p>I'm an aspiring iOS and web developer with a side interest of lighting design and programming.</p>
+    </div>
+</div>
 
-</header>
-
-<div>
-    <div>
-        <div>
-            <h1><a href="/posts/">Recent Blog Posts</a></h1>
-            <div class="posts">
-                <ul class="posts">
-                    {% for post in site.posts limit: 8 %}
-                    <li><span>{{ post.date | date_to_string }}</span> <span class="seperator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
+<div id="main-content">
+    <div class="main-text">
+        <ul>
+            {% assign url = page.url|remove:'index.html' %}
+            {% for link in site.navigation %}
+            <li {% if url == link.url %}class="active"{% endif %}>
+                <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+            </li>{% endfor %}
+        </ul>
     </div>
 </div>
