@@ -38,13 +38,11 @@ html {
 
 #main-content {
     background: #232323;
-    /*background-size: cover;*/
     height: 100vh;
     width: 100vw;
 }
 
 .main-text {
-    text-align: center;
     position: relative;
     top: 30%;
     transform: translateY(-30%);
