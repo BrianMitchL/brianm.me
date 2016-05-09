@@ -1,48 +1,28 @@
 html {
-    font-family: -apple-system-font;
-    /*position: relative;*/
-    /*min-height: 100%;*/
+    font-family: -apple-system-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-/*body {*/
-    /*!* Set the fixed height of the footer here *!*/
-    /*margin-bottom: 7em;*/
-/*}*/
-
-/*footer {*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    /*width: 100%;*/
-    /*!* Set the fixed height of the footer here *!*/
-    /*height: 7em;*/
-    /*text-align: center;*/
-    /*padding: 0.5em 0;*/
-    /*!*margin-top: 70px;*!*/
-    /*font-size: 0.8em;*/
-    /*border-top: 1px solid #FF6F00;*/
-/*}*/
 
 .list-inline li {
     display: inline;
 }
 
+.fill-window {
+    height: 100vh;
+    width: 100vw;
+}
+
 /* home
 -------------------------------------------------- */
+#index-wrapper > div:not(#main-parallax) {
+    background: #232323;
+}
 
 #main-parallax {
     background: url(/assets/images/norway1.jpg) no-repeat center center;
-    /*background-size: cover;*/
-    height: 100vh;
-    width: 100vw;
+    background-size: cover;
 }
 
-#main-content {
-    background: #232323;
-    height: 100vh;
-    width: 100vw;
-}
-
-.main-text {
+#main-parallax > div {
     position: relative;
     top: 30%;
     transform: translateY(-30%);
@@ -51,6 +31,10 @@ html {
 
 /* posts
 -------------------------------------------------- */
+.uk-panel-teaser img {
+    max-height:100pt;
+}
+
 #shareButtons {
     border-top: 1px solid #FF6F00;
     border-bottom: 1px solid #FF6F00;
@@ -60,7 +44,6 @@ html {
     list-style-type: none;
     margin: 5px;
     padding: 0;
-    margin-top: 10px;
 }
 
 #shareButtons ul li {
@@ -76,23 +59,14 @@ html {
 -------------------------------------------------- */
 .social-icons .fa {
     font-size: 2.2em;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
     text-align: center;
     color: #FFF;
     color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease-in-out;
-}
-
-.social-icons.icon-circle .fa{
-    border-radius: 50%;
-}
-.social-icons.icon-rounded .fa{
-    border-radius:10px;
-}
-.social-icons.icon-flat .fa{
-    border-radius: 0;
+    border-radius: 0.32em;
 }
 
 .social-icons .fa:hover, .social-icons .fa:active {

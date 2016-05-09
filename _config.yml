@@ -24,8 +24,5 @@ navigation:
       - text: Angular
         title: Angular Demos
         url: https://brianm.me/
-      - text: Contact
-        title: Where to find me
-        url: /contact
 
 exclude: ['README.md', '.gitignore', 'Gemfile']

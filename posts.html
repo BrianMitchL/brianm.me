@@ -7,7 +7,12 @@ type: main
 <h1><a href="/posts/">Recent Blog Posts</a></h1>
 <div class="uk-grid" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.bm-posts', delay:300}">
     {% for post in site.posts limit: 8 %}
-    <div class="uk-width-medium-1-2 uk-panel uk-panel-box uk-panel-header bm-posts">
+    <div class="uk-width-medium-1-2 uk-panel uk-panel-box uk-panel-header uk-panel-space bm-posts">
+        {% if post.image contains "/assets/images/" %}
+        <div class="uk-panel-teaser">
+            <img src="{{ site.url }}{{ post.image }}">
+        </div>
+        {% endif %}
         <h3 class="uk-panel-title"><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <small>{{ post.date | date: "%B %-d, %Y" }}</small></h3>
         {{ post.excerpt }}
     </div>
