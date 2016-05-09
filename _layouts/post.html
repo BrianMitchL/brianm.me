@@ -2,15 +2,11 @@
 layout: default
 ---
 
-<header>
-    <div>
-        <h1>{{ page.title }}</h1>
-        <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-    </div>
-</header>
-<div>
-    <article>
-        <br />
+<div class="uk-container uk-container-center">
+    <article class="uk-article">
+        <h1 class="uk-article-title">{{ page.title }}</h1>
+        <p class="uk-article-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+        <hr class="uk-article-divider">
         {{ content }}
     </article>
 
