@@ -1,0 +1,31 @@
+.social-icons .fa {
+    font-size: 2.2em;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease-in-out;
+    border-radius: 0.32em;
+}
+
+.social-icons .fa:hover, .social-icons .fa:active {
+    color: #FFF;
+}
+
+.social-icons .fa-facebook{background-color:#3B5998;}
+.social-icons .fa-github{background-color:#070709;}
+.social-icons .fa-google-plus{background-color:#DD4B39;}
+.social-icons .fa-instagram{background-color:#124D7D;}
+.social-icons .fa-lastfm{background-color:#B00000;}
+.social-icons .fa-linkedin{background-color:#0077B5;}
+.social-icons .fa-reddit{background-color:#232323;}
+.social-icons .fa-spotify{background-color:#1DD155;}
+.social-icons .fa-soundcloud{background-color:#FF4A01;}
+.social-icons .fa-steam{background-color:#17191E;}
+.social-icons .fa-tumblr{background-color:#2F3D53;}
+.social-icons .fa-twitter{background-color:#55ACEE;}
+.social-icons .fa-vine{background-color:#01D499;}
+.social-icons .fa-youtube{background-color:#E21D17;}
+.social-icons .fa-snapchat-ghost{background-color:#FFFC00;-webkit-text-stroke: 1px black;}

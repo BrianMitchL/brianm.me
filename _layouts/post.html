@@ -11,7 +11,8 @@ layout: default
     </article>
 
     <div id="shareButtons">
-        <ul>
+        <hr>
+        <ul class="list-inline">
             <li>
                 <!--facebook-->
                 <div class="fb-share-button vMid" data-href="{{ site.url }}{{ page.url }}" data-type="button_count"></div>
@@ -37,6 +38,7 @@ layout: default
                 <script class="vMid" type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
             </li>
         </ul>
+        <hr>
     </div>
 
     <div id="disqus_thread"></div>
@@ -53,3 +55,12 @@ layout: default
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

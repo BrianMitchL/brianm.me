@@ -4,7 +4,7 @@ title: Learning New Technologies (MEAN Stack)
 slug: new-technologies
 date: 2014-10-10
 description: Ideas on learning to develop for a new platform using Node.js.
-type: article
+seo.type: BlogPosting
 image:
 ---
 

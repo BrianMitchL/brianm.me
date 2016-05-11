@@ -1,20 +1,27 @@
 markdown: kramdown
 
-title : Brian Mitchell
-description: Old website with blog posts, links to other sites, an online resume, and more!
+title: Brian Mitchell
+description: Blog posts, project, social media presence, and more!
 
-author :
-  name : Brian Mitchell
-  email : bman4789@gmail.com
-  github : bman4789
-  twitter : bman4789
+author:
+  name: Brian Mitchell
+  email: bman4789@gmail.com
+  github: bman4789
+  twitter:
+    username: _BrianMitchell_
 
-url: http://github.brianm.me
+social:
+  name: Brian Mitchell
+  links: ['https://github.com/bman4789', 'https://facebook.com/bman4789', 'https://twitter.com/_BrianMitchell_',
+  'https://twitter.com/bman4789', 'https://plus.google.com/+BrianMitchell16/', 'https://www.instagram.com/bman4789',
+  'http://www.last.fm/user/bman4789', 'https://www.linkedin.com/in/brianscottmitchell',
+  'https://www.reddit.com/user/bman4789', 'https://open.spotify.com/user/1237277662', 'https://soundcloud.com/bman4789',
+  'https://steamcommunity.com/id/MagicBriBri', 'http://bman4789.tumblr.com', 'https://vine.co/bman4789',
+  'https://www.youtube.com/user/bman112234', 'https://www.snapchat.com/add/bman4789']
+
+url: //github.brianm.me
 
 navigation:
-#      - text: Home
-#        title: Back to home page
-#        url: /
       - text: About Me
         title: A brief overview of me
         url: /about
@@ -26,3 +33,12 @@ navigation:
         url: https://brianm.me/
 
 exclude: ['README.md', '.gitignore', 'Gemfile']
+
+sass:
+    style: compressed
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sass-converter
+  - jemoji

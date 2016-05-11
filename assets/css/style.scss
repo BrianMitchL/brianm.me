@@ -1,0 +1,60 @@
+---
+---
+
+@import 'contact';
+@import 'post';
+
+$primary-background: #232323;
+
+html {
+    font-family: -apple-system-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.list-inline li {
+    display: inline;
+}
+
+.fill-window {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* home
+-------------------------------------------------- */
+#index-wrapper > div:not(#main-parallax) {
+    background: $primary-background;
+}
+
+.fill-window {
+    position: relative;
+}
+
+#main-parallax {
+    background: url(/assets/images/norway1.jpg) no-repeat center center;
+    background-size: cover;
+
+    > div {
+        position: relative;
+        top: 30%;
+        transform: translateY(-30%);
+        font-size: 1.5em;
+    }
+}
+
+.chevron-scroll {
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 5vh;
+    font-size: 5em;
+    left: calc(50% - 0.5em);
+
+    &:hover, &:focus {
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* posts
+-------------------------------------------------- */
+.uk-panel-teaser img {
+    max-height:100pt;
+}

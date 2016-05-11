@@ -4,7 +4,7 @@ title: Long Car Rides (And MICS)
 slug: long-car-rides-mics
 date: 2014-04-24
 description: Rambling and the plan for MICS 2014
-type: article
+seo.type: BlogPosting
 image:
 ---
 
