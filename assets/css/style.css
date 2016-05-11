@@ -17,6 +17,10 @@ html {
     background: #232323;
 }
 
+.fill-window {
+    position: relative;
+}
+
 #main-parallax {
     background: url(/assets/images/norway1.jpg) no-repeat center center;
     background-size: cover;
@@ -29,6 +33,17 @@ html {
     font-size: 1.5em;
 }
 
+.chevron-scroll {
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 5vh;
+    font-size: 5em;
+    left: calc(50% - 0.5em)
+}
+
+.chevron-scroll:hover, .chevron-scroll:focus {
+    color: rgba(255, 255, 255, 0.5);
+}
 /* posts
 -------------------------------------------------- */
 .uk-panel-teaser img {
