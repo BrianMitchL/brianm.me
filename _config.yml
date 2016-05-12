@@ -6,9 +6,13 @@ description: Blog posts, project, social media presence, and more!
 author:
   name: Brian Mitchell
   email: bman4789@gmail.com
-  github: bman4789
-  twitter:
-    username: _BrianMitchell_
+  twitter: _BrianMitchell_
+
+
+twitter:
+  username: _BrianMitchell_
+
+logo: /assets/images/BM-Logo.png
 
 social:
   name: Brian Mitchell
