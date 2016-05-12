@@ -16,16 +16,8 @@ html {
 
 /* home
 -------------------------------------------------- */
-#index-wrapper {
-    color: white;
-    
-    h1 {
-        color: white;
-    }
-
-    > div:not(#main-parallax) {
-        background: $primary-background;
-    }
+#index-wrapper > div:not(#main-parallax) {
+    background: $primary-background;
 }
 
 #main-parallax {
