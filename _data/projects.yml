@@ -1,0 +1,38 @@
+- name: weatherBot
+  range: March 2015 - Present
+  status: <a href="https://travis-ci.org/bman4789/weatherBot" title="Build Status"><img src="https://travis-ci.org/bman4789/weatherBot.svg?branch=master" alt="Build Status"/></a> <a href="https://coveralls.io/r/bman4789/weatherBot?branch=master" title="Coverage Status"><img src="https://coveralls.io/repos/bman4789/weatherBot/badge.svg?branch=master" alt="Coverage Status"/></a>
+  link:
+    href: https://twitter.com/MorrisMNWeather
+    title: "@MorrisMNWeather"
+  description: A Python based twitter bot for tweeting scheduled updates, forecasts, and special weather events.
+  github: bman4789/weatherBot
+
+- name: Hey, Get Back to Work!
+  range: March 2015 - Present
+  link:
+    href: https://heygetbackto.work/
+    title: heygetbackto.work
+  description: A simple website to remind you to get back to work. Send the link to a distracted friend, co-worker, or family member!
+  github: bman4789/heygetbacktowork
+
+- name: YeoMEAN
+  range: September 2014 - May 2016
+  status: <a href="https://travis-ci.org/bman4789/YeoMEAN" title="Build Status"><img src="https://travis-ci.org/bman4789/YeoMEAN.svg?branch=master" alt="Build Status"/></a>
+  link:
+    href: https://brianm.me
+    title: brianm.me
+  description: Former main website. The name is a pun on the Yeoman generator and the MEAN stack. Initially started as a MEAN stack tutorial project for a course at UMM I was TAing for, but then morphed into a full fledged homepage.
+  github: bman4789/YeoMEAN
+
+- name: bman4789.github.io
+  range: April 2014 - Present
+  link:
+    href: http://github.brianm.me
+    title: github.brianm.me
+  description: This very site. This is a Jekyll based blog/website that acted as my main website until YeoMEAN took over, and then again in May 2016.
+  github: bman4789/bman4789.github.io
+
+- name: BPM
+  range: April 2016 - Present
+  description: An iOS application written in Swift to count the beats per minute (BPM) in a song. This was started at the CarlHacks 2016 hackathon with <a href="http://www.litzin.gr">Zach Litzinger</a>, another brand new iOS developer.
+  github: bman4789/bpm

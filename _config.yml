@@ -32,9 +32,9 @@ navigation:
       - text: Posts
         title: Blog Posts
         url: /posts
-      - text: Old Angular Site
-        title: Old Angular Site
-        url: https://brianm.me/
+      - text: Projects
+        title: Projects
+        url: /projects
 
 exclude: ['README.md', '.gitignore', 'Gemfile']
 
