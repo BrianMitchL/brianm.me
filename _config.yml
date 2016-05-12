@@ -26,14 +26,14 @@ social:
 url: http://github.brianm.me
 
 navigation:
-      - text: About Me
-        title: A brief overview of me
+      - text: About
+        title: Extended Résumé
         url: /about
       - text: Posts
         title: Blog Posts
         url: /posts
-      - text: Angular
-        title: Angular Demos
+      - text: Old Angular Site
+        title: Old Angular Site
         url: https://brianm.me/
 
 exclude: ['README.md', '.gitignore', 'Gemfile']
