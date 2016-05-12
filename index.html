@@ -4,15 +4,15 @@ type: home
 ---
 
 <div id="index-wrapper">
-    <div id="main-parallax" class="fill-window" data-uk-parallax="{bg: '-200'}">
-        <div class="uk-container uk-container-center uk-animation-fade uk-animation-2">
-            <h1 class="uk-text-center">Hi, I'm Brian</h1>
-            <p class="uk-text-center">I'm an aspiring iOS and web developer with a side interest of lighting design and programming.</p>
+    <div id="main-parallax" class="uk-cover-background uk-height-viewport uk-position-relative uk-flex" data-uk-parallax="{bg: '-200'}">
+        <div class="uk-container uk-container-center uk-text-center uk-flex uk-flex-center uk-flex-middle uk-flex-column uk-animation-fade uk-animation-2">
+            <h1 class="uk-heading-large">Hi, I'm Brian</h1>
+            <p>I'm an aspiring iOS and web developer with a side interest of lighting design and programming.</p>
         </div>
-        <a href="#links" class="chevron-scroll"><i class="fa fa-chevron-down"></i></a>
+        <a href="#nav" class="chevron-scroll uk-flex uk-flex-center"><i class="fa fa-chevron-down"></i></a>
     </div>
 
-    <div id="links" class="fill-window">
+    <div id="nav" class="uk-cover uk-position-relative uk-height-viewport">
         <div class="uk-container uk-container-center uk-text-center">
             <ul class="uk-list uk-list-space">
                 {% assign url = page.url|remove:'index.html' %}
@@ -22,10 +22,10 @@ type: home
                 </li>{% endfor %}
             </ul>
         </div>
-        <a href="#contact" class="chevron-scroll"><i class="fa fa-chevron-down"></i></a>
+        <a href="#contact" class="chevron-scroll uk-flex uk-flex-center"><i class="fa fa-chevron-down"></i></a>
     </div>
 
-    <div id="contact" class="fill-window">
+    <div id="contact" class="uk-cover uk-position-relative uk-height-viewport">
         <div class="uk-container uk-container-center uk-text-center">
             <ul class="social-icons list-inline">
                 <li>
