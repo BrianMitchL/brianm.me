@@ -35,7 +35,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 ### Experience
 
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN<br />
-36 hour hackathon where I worked with Zach Litzinger to start an iOS application in Swift. For more info, see [here](http://devpost.com/software/bpm).
+36 hour hackathon where I worked with [Zach Litzinger](http://www.litzin.gr) to start an iOS application in Swift. For more info, see [here](http://devpost.com/software/bpm).
 * _Intern - IT_ (Summer 2015, internship), C.H. Robinson, Eden Prairie, MN<br />
 Developed an interactive lobby display illustrating active customer shipments on an animated world map, implemented with web technologies for touch­driven hardware as part of working on the Client Technology Strategy and Enterprise Data Warehouse teams. Some technologies used were JavaScript, jQuery, Microsoft Maps, and d3.js.
 * _[MICS 2015](http://www.micsymposium.org/mics2015/) Robotics and Programming Competitions_ (April 10-11, 2015), ​Grand Forks, ND<br />
