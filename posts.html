@@ -1,14 +1,12 @@
 ---
 permalink: /posts
 layout: page
-title: Blog Posts
-type: main
+title: Posts
+description: Infrequent Blog Posts
 ---
-
-<h1><a href="/posts/">Recent Blog Posts</a></h1>
-<div class="uk-grid" data-uk-scrollspy="{cls:'uk-animation-fade', target:'.bm-posts', delay:300}">
-    {% for post in site.posts limit: 8 %}
-    <div class="uk-width-medium-1-2 uk-panel uk-panel-box uk-panel-header uk-panel-space bm-posts">
+<div>
+    {% for post in site.posts limit: 20 %}
+    <div class="uk-panel uk-panel-box uk-panel-header uk-panel-divider" data-uk-scrollspy="{cls:'uk-animation-fade'}">
         {% if post.image contains "/assets/images/" %}
         <div class="uk-panel-teaser">
             <img src="{{ site.url }}{{ post.image }}">

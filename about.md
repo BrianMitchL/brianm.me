@@ -3,7 +3,6 @@ permalink: /about
 layout: page
 title: About
 description: Extended Résumé
-type: main
 ---
 
 *A more formal résumé can be found [here](https://github.com/bman4789/resume/raw/master/resume.pdf).*

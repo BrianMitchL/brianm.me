@@ -2,10 +2,10 @@
 permalink: /projects
 layout: page
 title: Projects
-description: Projects
+description: Personal Projects
 ---
 {% for project in site.data.projects %}
-<div class="uk-panel uk-panel-box uk-panel-header uk-panel-divider">
+<div class="uk-panel uk-panel-box uk-panel-header uk-panel-divider" data-uk-scrollspy="{cls:'uk-animation-fade'}">
     <div class="uk-panel-title">
         <h2>{{ project.name }}<small class="uk-align-medium-right">{{ project.range }}</small></h2>
         {{ project.status }}
