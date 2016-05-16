@@ -1,5 +1,7 @@
 markdown: kramdown
 
+permalink: /post/:slug
+
 title: Brian Mitchell
 description: Blog posts, projects, social media presence, and more!
 
