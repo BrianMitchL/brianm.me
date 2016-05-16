@@ -14,6 +14,7 @@ A little over a week ago I finished building my new server. It's the second comp
 
 ## Desktop
 Built in September, 2013
+
 #### Parts
 + Gigabyte GA-Z87MX-D3H mATX Motherboard
 + Intel Core i7-4770K CPU
@@ -39,6 +40,7 @@ Note: The 1TB hard drive has about 4.6 years of power on time (but no errors!), 
 
 ## Server
 Built in January, 2015
+
 #### Parts
 + Gigabyte GA-Z97N-WIFI Mini ITX Motherboard
 + Intel Core i5-4690K CPU
