@@ -1,16 +1,10 @@
 <nav class="uk-navbar">
+    <a href="/" class="uk-navbar-brand uk-hidden-small"><img src="/assets/images/BM-brand.png"/>&nbsp;Brian Mitchell</a>
     <ul class="uk-navbar-nav">
-        <li >
-            <a href="/" title="Home">Home</a>
-        </li>
+        {% assign url = page.url|remove:'index.html' %}
+        {% for link in site.navigation %}
+        <li {% if url == link.url %}class="uk-active"{% endif %}>
+            <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+        </li>{% endfor %}
     </ul>
-    <div class="uk-navbar-flip">
-        <ul class="uk-navbar-nav">
-            {% assign url = page.url|remove:'index.html' %}
-            {% for link in site.navigation %}
-            <li {% if url == link.url %}class="uk-active"{% endif %}>
-                <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-            </li>{% endfor %}
-        </ul>
-    </div>
 </nav>

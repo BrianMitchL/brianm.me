@@ -14,6 +14,10 @@ html {
     display: inline;
 }
 
+.uk-navbar-brand > img {
+    height: 30px;
+}
+
 /* home
 -------------------------------------------------- */
 #index-wrapper > div:not(#main-parallax) {
