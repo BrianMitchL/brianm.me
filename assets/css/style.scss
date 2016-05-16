@@ -20,12 +20,9 @@ html {
 
 /* home
 -------------------------------------------------- */
-#index-wrapper > div:not(#main-parallax) {
-    background: $primary-background;
-}
-
 #main-parallax {
     background: url(/assets/images/norway.jpg) no-repeat center top;
+    background-size: cover;
 
     > div {
         text-shadow: 0 0 0.5em rgba(0, 0, 0, 1);
@@ -47,6 +44,12 @@ html {
 
 /* posts
 -------------------------------------------------- */
-.uk-panel-teaser img {
-    max-height:100pt;
+.uk-panel-teaser {
+    text-align: center;
+
+    @media (min-width: 768px) {
+        img {
+            max-height:200pt;
+        }
+    }
 }
