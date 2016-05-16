@@ -5,7 +5,8 @@ slug: writing-a-python-bot
 date: 2015-05-08
 description: My experience with writing a Python based Twitter bot (for weather)
 seo.type: BlogPosting
-image: 
+image:
+excerpt: I have toyed with the idea of writing a Twitter bot for posting weather updates for a while now. I've had one or two conversations with friends about if a Twitter account reported the weather in vulgar ways. It seemed like an entertaining idea. With that sitting in my head for a few weeks I set out on what would be a now almost two month project (and still going), to write a Twitter bot that did just that (it's changed a little).
 ---
 
 *Before I begin, you may wish to check out the source for weatherBot on [GitHub](https://github.com/bman4789/weatherBot), or my live Twitter bot running the latest version, [@MorrisMNWeather](https://twitter.com/MorrisMNWeather). I figured that at my 100th commit and my neglected "blog", I should write about weatherBot, so here it is.*
