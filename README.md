@@ -2,12 +2,12 @@
 
 Website for Brian Mitchell
 
-The site can be found at [http://github.brianm.me/](http://github.brianm.me/)
+The site can be found at [https://brianm.me/](https://brianm.me/)
 
 Note: when developing, use
 ```bash
-jekyll serve --watch
+jekyll serve
 ```
 ##Attributions
 
-Some icons on the site are created by Volkan Olmez and can be found on [Dribble](https://dribbble.com/shots/1605630-60-Social-media-icons-set-PSD).
+This site uses [uikit](http://getuikit.com) and [fontawesome](http://fontawesome.io).
