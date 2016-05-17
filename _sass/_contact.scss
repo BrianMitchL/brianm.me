@@ -15,6 +15,7 @@
     color: #FFF;
 }
 
+.social-icons .fa-aboutme{background-color:#044A75;}
 .social-icons .fa-facebook{background-color:#3B5998;}
 .social-icons .fa-github{background-color:#070709;}
 .social-icons .fa-google-plus{background-color:#DD4B39;}
@@ -30,3 +31,10 @@
 .social-icons .fa-vine{background-color:#01D499;}
 .social-icons .fa-youtube{background-color:#E21D17;}
 .social-icons .fa-snapchat-ghost{background-color:#FFFC00;-webkit-text-stroke: 1px black;}
+
+
+.fa-aboutme:after {
+    content: "me";
+    margin-left: -0.6em;
+    font-size: 50%;
+    position: absolute; }
