@@ -1,33 +1,50 @@
 markdown: kramdown
 
-title : Brian Mitchell
-description: Old website with blog posts, links to other sites, an online resume, and more!
+permalink: /post/:slug
 
-author :
-  name : Brian Mitchell
-  email : bman4789@gmail.com
-  github : bman4789
-  twitter : bman4789
+title: Brian Mitchell
+description: Blog posts, projects, social media presence, and more!
 
-url: http://github.brianm.me
+author:
+  name: Brian Mitchell
+  email: bman4789@gmail.com
+  twitter: _BrianMitchell_
+
+
+twitter:
+  username: _BrianMitchell_
+
+logo: /assets/images/BM-Logo.png
+
+social:
+  name: Brian Mitchell
+  links: ['https://github.com/bman4789', 'https://facebook.com/bman4789', 'https://twitter.com/_BrianMitchell_',
+  'https://twitter.com/bman4789', 'https://plus.google.com/+BrianMitchell16/', 'https://www.instagram.com/bman4789',
+  'http://www.last.fm/user/bman4789', 'https://www.linkedin.com/in/brianscottmitchell',
+  'https://www.reddit.com/user/bman4789', 'https://open.spotify.com/user/1237277662', 'https://soundcloud.com/bman4789',
+  'https://steamcommunity.com/id/MagicBriBri', 'http://bman4789.tumblr.com', 'https://vine.co/bman4789',
+  'https://www.youtube.com/user/bman112234', 'https://www.snapchat.com/add/bman4789']
+
+url: https://brianm.me
 
 navigation:
-#      - text: Home
-#        title: Back to home page
-#        url: /
-      - text: About Me
-        title: A brief overview of me
+      - text: About
+        title: Extended Résumé
         url: /about
       - text: Posts
         title: Blog Posts
         url: /posts
-      - text: Angular
-        title: Angular Demos
-        url: https://brianm.me/
-      - text: Other Sites
-        title: Links to my other sites
-        url: /other-sites
+      - text: Projects
+        title: Projects
+        url: /projects
 
-exclude: ['README.md', '.gitignore', 'Gemfile', 'resource_creation']
+exclude: ['README.md', '.gitignore', 'Gemfile']
 
-#enforce_ssl: github.brianm.me
+sass:
+    style: compressed
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sass-converter
+  - jemoji

@@ -1,45 +1,7 @@
-{% if site.enforce_ssl %}
-<!--
-  redirect users to the https version of the website.
-  but: only check when on the production domain, as set in _config.yml.
- -->
-<script type="text/javascript">
-    var enforce = "{{ site.enforce_ssl }}";
-    if ((enforce == window.location.host) && (window.location.protocol != "https:"))
-        window.location = window.location.toString().replace(/^http:/, "https:");
-</script>
-{% endif %}
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title %}
-        {{ site.title }} | {{ page.title }}
-    {% else %}
-        {{ site.title }}
-    {% endif %}</title>
 <link rel="shortcut icon" href="/assets/images/favicon.ico">
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="/assets/css/style.css" type="text/css" media="all" />
-<!--facebook-->
-{% capture canonical %}{{ site.url }}{{ page.url | remove:'index.html' | '/' }}{% endcapture %}
-<meta property="og:url" content="{{ canonical }}">
-<meta content="{{ site.title }}" property="og:site_name">
-{% if page.title %}
-<meta content="{{ page.title }}" property="og:title">
-{% else %}
-<meta content="{{ site.title }}" property="og:title">
-{% endif %}
-{% if page.description %}
-<meta property="og:description" content="{{ page.description }}" />
-{% else %}
-<meta property="og:description" content="{{ site.description }}" />
-{% endif %}
-<meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}/assets/images/Profile500.jpg{% endif %}"/>
-{% if page.type == "article" %}
-<meta property="og:type" content="article">
-{% else %}
-<meta property="og:type" content="website">
-{% endif %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/css/uikit.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+{% seo %}

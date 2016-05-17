@@ -2,20 +2,18 @@
 layout: default
 ---
 
-<header class="hero-unit" id="banner">
-    <div class="container">
-        <h1>{{ page.title }}</h1>
-        <p class="meta lead">{{ page.date | date_to_string }}</p>
-    </div>
-</header>
-<div class="container">
-    <article>
-        <br />
+{% include nav.html %}
+<div class="uk-container uk-container-center">
+    <article class="uk-article">
+        <h1 class="uk-article-title">{{ page.title }}</h1>
+        <p class="uk-article-meta">{{ page.date | date: "%B %-d, %Y %I:%M %p %Z" }}</p>
+        <hr class="uk-article-divider">
         {{ content }}
     </article>
 
     <div id="shareButtons">
-        <ul>
+        <hr>
+        <ul class="list-inline">
             <li>
                 <!--facebook-->
                 <div class="fb-share-button vMid" data-href="{{ site.url }}{{ page.url }}" data-type="button_count"></div>
@@ -41,20 +39,29 @@ layout: default
                 <script class="vMid" type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
             </li>
         </ul>
+        <hr>
     </div>
 
     <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            var disqus_shortname = 'bman4789githubio';
-            var disqus_identifier = '{{ page.id }}';
-            var disqus_url = '{{ site.url }}{{ page.url }}';
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-    </div>
+    <script type="text/javascript">
+        var disqus_shortname = 'bman4789githubio';
+        var disqus_identifier = '{{ page.id }}';
+        var disqus_url = '{{ site.url }}{{ page.url }}';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

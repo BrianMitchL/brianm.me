@@ -1,0 +1,9 @@
+#shareButtons ul {
+    list-style-type: none;
+    padding: 0;
+
+    li > * {
+        height:20px;
+        vertical-align: top !important;
+    }
+}
