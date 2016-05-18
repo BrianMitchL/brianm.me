@@ -1,6 +1,6 @@
 markdown: kramdown
 
-permalink: /post/:slug
+permalink: /posts/:slug
 
 title: Brian Mitchell
 description: Blog posts, projects, social media presence, and more!
@@ -31,9 +31,9 @@ navigation:
       - text: About
         title: Extended Résumé
         url: /about
-      - text: Posts
+      - text: Blog
         title: Blog Posts
-        url: /posts
+        url: /blog
       - text: Projects
         title: Projects
         url: /projects
