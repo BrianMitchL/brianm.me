@@ -48,3 +48,5 @@ gems:
   - jekyll-seo-tag
   - jekyll-sass-converter
   - jemoji
+  - jekyll-redirect-from
+  - jekyll-feed
