@@ -62,7 +62,7 @@ The primary operating system is OS X. I ran Mountain Lion (10.8.5) for a couple 
 
 In April 2014, I installed Windows 8.1 and Ubuntu 14.04. Tri-booting with Chimera, and one mis-installation of grub caused a few issues, but I got it working. When I updated my 500 GB HDD to the new Crucial MX100 SSD (see the [post](https://brianm.me/posts/hdd-to-ssd) about it), I reinstalled Ubunutu, and migrated Windows. When switching to Clover, I realized that my install of Windows wasn't via UEFI, so I wiped the SSD and reinstalled. I haven't yet reinstalled Ubuntu or any other flavor of Linux.
 
-##Server
+## Server
 I installed CentOS 7 in the server. As a sysadmin at the University of Minnesota, Morris computer science labs, I work with Fedora, so I figured something similar would be good. I went with CentOS because I thought it'd be fun using an enterprise OS. Plus, it's supposedly more stable than Fedora! Currently, I have samba and netatalk configured for smb and afp file sharing, as well as the Plex media server for my media needs.
 
 I'm planning of taking advantage of the 802.11ac wireless card that came with the motherboard in the mini PCIe slot and making it be an access point. This would replace my aging 802.11n AirPort Express that maxes out at 100Mb due to its 100Mb Ethernet port. I think I'll eventually have more services running, but right now, I'm unsure of what that may be.
