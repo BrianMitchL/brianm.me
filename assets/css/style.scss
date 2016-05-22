@@ -42,6 +42,10 @@ footer {
     }
 }
 
+#nav {
+    min-height: 100vh;
+}
+
 .chevron-scroll {
     color: rgba(255, 255, 255, 0.7);
     position: absolute;
@@ -67,6 +71,20 @@ footer {
     }
     60% {
         transform: translate3d(0,-1vh,0);
+    }
+}
+
+.referral {
+    background: transparent;
+    border-radius: 5px;
+    border: solid 1px;
+    color: white;
+    transition: background 0.3s ease-in-out;
+    margin: 2px 0;
+
+    &:hover, &:visited, &:active, &:focus {
+        background: #555;
+        color: white;
     }
 }
 
