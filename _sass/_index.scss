@@ -1,0 +1,54 @@
+#main-parallax {
+    background: url(/assets/images/norway.jpg) no-repeat center;
+    background-size: cover;
+
+    > div {
+        text-shadow: 0 0 0.5em rgba(0, 0, 0, 1);
+    }
+}
+
+#nav {
+    min-height: 100vh;
+}
+
+.chevron-scroll {
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: 5vh;
+    font-size: 5em;
+    left: calc(50% - 0.5em);
+    animation: bounce 4s 2s infinite;
+    transition: 0.5s ease-in-out;
+
+    &:hover, &:focus {
+        color: rgba(255, 255, 255, 1);
+        text-decoration: none;
+        animation: none;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translate3d(0,0,0);
+    }
+    40% {
+        transform: translate3d(0,-2vh,0);
+    }
+    60% {
+        transform: translate3d(0,-1vh,0);
+    }
+}
+
+.referral {
+    background: transparent;
+    border-radius: 5px;
+    border: solid 1px;
+    color: white;
+    transition: background 0.3s ease-in-out;
+    margin: 2px 0;
+
+    &:hover, &:visited, &:active, &:focus {
+        background: #555;
+        color: white;
+    }
+}
