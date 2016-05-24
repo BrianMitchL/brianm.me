@@ -13,7 +13,7 @@ Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeathe
 
 ### Computer Science Skills
 
-Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, jQuery, Node.js, MongoDB, Jekyll, git, Bash, Puppet
+Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, jQuery, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker
 
 ##### Operating Systems
 
@@ -27,6 +27,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 
 * Hackintosh running the latest version of OS X and Windows
 * Fedora based file and media server
+* CentOS 7 VPS running [weatherBots](https://github.com/bman4789/weatherBot) via Docker
 * Jailbroke iPhone and iPad from iOS 4.3 - iOS 8.4
 * Alpine skiing (since 2005)
 * Theatrical and live performance lighting (since 2003!)
