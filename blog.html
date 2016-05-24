@@ -12,7 +12,7 @@ description: Infrequent Blog Posts
             <img src="{{ post.image }}">
         </div>
         {% endif %}
-        <h3 class="uk-panel-title"><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <small>{{ post.date | date: "%B %-d, %Y" }}</small></h3>
+        <h3 class="uk-panel-title"><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <small>{{ post.date | date: "%B %-d, %Y" }} by {{ site.authors[post.author].name }}</small></h3>
         {{ post.excerpt }}
     </div>
     {% endfor %}

@@ -4,6 +4,7 @@ title: Server and Desktop Setup
 slug: server-desktop-setup
 date: 2015-01-11
 description: An overview of the hardware and software I run on my desktop and server
+author: brian
 seo.type: BlogPosting
 image: 
 ---

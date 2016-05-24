@@ -4,6 +4,7 @@ title: Designing a Logo
 slug: designing-a-logo
 date: 2014-08-11
 description: A few thoughts on designing a logo and the process used for Brian Mitchell's new logo
+author: brian
 seo.type: BlogPosting
 image: /assets/images/BM-Logo.png
 ---
