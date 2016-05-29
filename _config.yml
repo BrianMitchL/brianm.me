@@ -1,5 +1,7 @@
 markdown: kramdown
 
+timezone: America/Chicago
+
 permalink: /posts/:slug
 
 title: Brian Mitchell
