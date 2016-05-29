@@ -15,15 +15,6 @@
   description: A simple website to remind you to get back to work. Send the link to a distracted friend, co-worker, or family member!
   github: bman4789/heygetbacktowork
 
-- name: YeoMEAN
-  range: September 2014 - May 2016
-  status: <a href="https://travis-ci.org/bman4789/YeoMEAN" title="Build Status"><img src="https://travis-ci.org/bman4789/YeoMEAN.svg?branch=master" alt="Build Status"/></a>
-  link:
-    href: https://old.brianm.me
-    title: old.brianm.me
-  description: Former main website. The name is a pun on the Yeoman generator and the MEAN stack. Initially started as a MEAN stack tutorial project for a course at UMM I was TAing for, but then morphed into a full fledged homepage.
-  github: bman4789/YeoMEAN
-
 - name: bman4789.github.io
   range: April 2014 - Present
   link:
@@ -34,5 +25,17 @@
 
 - name: BPM
   range: April 2016 - Present
+  link:
+      href: https://getbpm.xyz
+      title: getbpm.xyz
   description: An iOS application written in Swift to count the beats per minute (BPM) in a song. This was started at the CarlHacks 2016 hackathon with <a href="http://www.litzin.gr">Zach Litzinger</a>, another brand new iOS developer.
   github: bman4789/bpm
+
+- name: YeoMEAN
+  range: September 2014 - May 2016
+  status: <a href="https://travis-ci.org/bman4789/YeoMEAN" title="Build Status"><img src="https://travis-ci.org/bman4789/YeoMEAN.svg?branch=master" alt="Build Status"/></a>
+  link:
+    href: https://old.brianm.me
+    title: old.brianm.me
+  description: Former main website. The name is a pun on the Yeoman generator and the MEAN stack. Initially started as a MEAN stack tutorial project for a course at UMM I was TAing for, but then morphed into a full fledged homepage.
+  github: bman4789/YeoMEAN
