@@ -30,6 +30,14 @@ social:
 
 url: https://brianm.me
 
+comments:
+  disqus:
+    shortname: brianmme
+
+analytics:
+  google:
+    tracking_id: UA-44772557-2
+
 navigation:
       - text: About
         title: Extended Résumé

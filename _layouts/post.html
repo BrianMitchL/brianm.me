@@ -31,7 +31,7 @@ layout: default
             </li>
             <li>
                 <!--twitter-->
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via="bman4789">Tweet</a>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via="{{ site.twitter.username }}">Tweet</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
             </li>
             <li>
@@ -59,7 +59,7 @@ layout: default
 
     <div id="disqus_thread"></div>
     <script type="text/javascript">
-        var disqus_shortname = 'brianmme';
+        var disqus_shortname = '{{ site.comments.disqus.shortname }}';
         var disqus_identifier = '{{ page.id }}';
         var disqus_url = '{{ site.url }}{{ page.url }}';
         (function() {
