@@ -35,15 +35,15 @@ Paired programming, interpersonal communication, excellent organization, lightin
 
 ### Experience
 
-* _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN<br />
+* _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
 36 hour hackathon where I worked with [Zach Litzinger](http://www.litzin.gr) to start an iOS application in Swift. For more info, see [here](http://devpost.com/software/bpm).
-* _Intern - IT_ (Summer 2015, internship), C.H. Robinson, Eden Prairie, MN<br />
+* _Intern - IT_ (Summer 2015, internship), C.H. Robinson, Eden Prairie, MN.\\
 Developed an interactive lobby display illustrating active customer shipments on an animated world map, implemented with web technologies for touch­driven hardware as part of working on the Client Technology Strategy and Enterprise Data Warehouse teams. Some technologies used were JavaScript, jQuery, Microsoft Maps, and d3.js.
-* _[MICS 2015](http://www.micsymposium.org/mics2015/) Robotics and Programming Competitions_ (April 10-11, 2015), ​Grand Forks, ND<br />
+* _[MICS 2015](http://www.micsymposium.org/mics2015/) Robotics and Programming Competitions_ (April 10-11, 2015), ​Grand Forks, ND.\\
 Teams placed 2nd of 14 in robotics (Arduino), and 26th of 52 for programming (Java).
-* _System Administrator_ (Fall 2014 - Spring 2015), Computer Science Discipline, University of Minnesota, Morris<br />
+* _System Administrator_ (Fall 2014 - Spring 2015), Computer Science Discipline, University of Minnesota, Morris.\\
 Managed, maintained, updated, and supported the computer science labs in relation to software, hardware, and users.
-* _IT Specialist_ (Summer 2014, internship), Info Link, Inc., Morris, MN<br />
+* _IT Specialist_ (Summer 2014, internship), Info Link, Inc., Morris, MN.\\
 Assisted with managing Info-Link's network and services. This included but was not limited to:
     * Providing support and consulting for users
     * Computer service and repair
@@ -51,24 +51,23 @@ Assisted with managing Info-Link's network and services. This included but was n
     * Providing custom network installations
     * Managing internal tools, servers, radios, and other hardware
     * Climbing telecom towers, water towers, and grain elevators to install or service Info-Link's hardware
-* _[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions_ (April 25-26, 2014), ​Verona, WI<br />
+* _[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions_ (April 25-26, 2014), ​Verona, WI.\\
 Teams placed 4th of 11 in robotics (Java), and 18th of ~50 for programming (Java).
-* _[Software Design and Development class project](https://drive.google.com/open?id=1P_iGN6c9NwVeAoehqKqB1GFTToOdBYSKLjesfVIpjX8&authuser=1)_ (Spring 2014), University of Minnesota, Morris.<br />
+* _[Software Design and Development class project](https://drive.google.com/open?id=1P_iGN6c9NwVeAoehqKqB1GFTToOdBYSKLjesfVIpjX8)_ (Spring 2014), University of Minnesota, Morris.\\
 Created a web interface for LightSide Labs (an educational technology and machine learning startup spun out of Carnegie Mellon University) using their machine learning API for grading papers.
-* _Student Center Tech Crew_ (Fall 2012 - present), University of Minnesota, Morris. Morris MN (Lighting Supervisor for the 2014-2015 school year and spring 2016 semester)<br />
+* _Student Center Tech Crew_ (Fall 2012 - Spring 2016), University of Minnesota, Morris.\\
+_Lighting Lead_ for the 2014-2015 school year and Spring 2016 semester.\\
 Designed, set-up, and operated sound and lighting for small to large scale events. This also included rigging, managing power distribution, electrical work, operating heavy equipment, cable management, talking with clients, and problem solving.
-* _Custodian_ (Summer 2011, Summer 2013), Unity Church-Unitarian. Saint Paul, MN
-* _Assistant Cook_ (Summer 2012, Summer 2013), Concordia Language Villages. Bemidji, MN
-* _Kitchen Staff_ (Summer 2011 - Summer 2012), Leo C. Byrne Residence. Saint Paul, MN
+* _Custodian_ (Summer 2011, Summer 2013), Unity Church-Unitarian. Saint Paul, MN.
+* _Assistant Cook_ (Summer 2012, Summer 2013), Concordia Language Villages. Bemidji, MN.
+* _Kitchen Staff_ (Summer 2011 - Summer 2012), Leo C. Byrne Residence. Saint Paul, MN.
 
 ### Education
 
-*   B.A. Computer Science, University of Minnesota, Morris. Expected graduation, May 2016.
-_Studied abroad at DIS - Danish Institute for Study Abroad in Copenhagen, Denmark for the fall 2015 semester._<br />
+*   B.A. Computer Science, University of Minnesota, Morris. May 2016. [3.32 GPA]\\
 Related Courses:
     * Network Administration Practicum with an Emphasis on Directory Services Directed Study (CSCI 4993)
     * Robotics (CSCI 4454)
-    * Artificial Intelligence (DIS, Fall 2015)
     * Models of Computing Systems (CSCI 3401)
     * Human-Computer Interface Design (CSCI 4656)
     * Robotics Directed Study (x2) (CSCI 3993)
@@ -79,9 +78,14 @@ Related Courses:
     * Data Structures (CSCI 2101)
     * Foundations of Computer Science (CSCI 1302)
     * Digital Media Computation (CSCI 1201)
-    * H.S. Diploma, 2012, Central High School, Saint Paul, MN
-* Skovsøen Language Village, 2011\. Concordia Language Villages, Bemidji, MN.
-* High school credit for Danish language study and immersion
+* DIS - Danish Institute for Study Abroad. Copenhagen, Denmark. Fall 2015.\\
+Related Courses:
+    * Artificial Intelligence
+    * Sustainability in Northern Europe
+    * Danish Language I--II
+* H.S. Diploma, 2012, Central High School, Saint Paul, MN.
+* Skovsøen Language Village, 2011. Concordia Language Villages, Bemidji, MN.
+    * High school credit for Danish language study and immersion
 
 ### Accomplishments
 
