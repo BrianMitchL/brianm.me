@@ -17,7 +17,7 @@ Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, j
 
 ##### Operating Systems
 
-OS X, iOS, Linux (more familiar with Fedora, CentOS, and Ubuntu), Windows
+macOS, iOS, Linux (more familiar with Fedora, CentOS, and Ubuntu), Windows
 
 ### Other Skills
 
@@ -25,7 +25,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 
 ### Hobbies
 
-* Hackintosh running the latest version of OS X and Windows
+* Hackintosh running the latest version of macOS and Windows
 * Fedora based file and media server
 * CentOS 7 VPS running [weatherBots](https://github.com/bman4789/weatherBot) via Docker
 * Jailbroke iPhone and iPad from iOS 4.3 - iOS 8.4
