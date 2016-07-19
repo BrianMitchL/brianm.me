@@ -5,7 +5,7 @@ title: About
 description: Extended Résumé
 ---
 
-*A more formal résumé can be found [here](https://github.com/bman4789/resume/raw/master/resume.pdf).*
+*A more formal résumé can be found [here](https://github.com/BrianMitchL/resume/raw/master/resume.pdf).*
 
 I am interested in web and iOS development. I also have experience with Java and Python development and system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. I also am an experienced lighting designer and programmer on ETC EOS family consoles.
 
@@ -27,7 +27,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 
 * Hackintosh running the latest version of macOS and Windows
 * Fedora based file and media server
-* CentOS 7 VPS running [weatherBots](https://github.com/bman4789/weatherBot) via Docker
+* CentOS 7 VPS running [weatherBots](https://github.com/BrianMitchL/weatherBot) via Docker
 * Jailbroke iPhone and iPad from iOS 4.3 - iOS 8.4
 * Alpine skiing (since 2005)
 * Theatrical and live performance lighting (since 2003!)

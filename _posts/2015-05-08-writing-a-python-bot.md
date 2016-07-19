@@ -28,7 +28,7 @@ Once I started the scheduled tweets on my Twitter account, I realized that dropp
 I merged the Python 2.7 and Python 3 files into one (see Python 2.7 vs 3 for more). I also added support for setting the units to be metric or imperial. During this time I also tried to fix the numerous crashes that were happening.
 
 ### April 2-14
-I started to write some tests during this time. As a result of testing, a good amount of code got refactored in order to make it easier. I also changed a fair number of things to follow PEP 8 and started using [TravisCI](https://travis-ci.org/bman4789/weatherBot) and [Coveralls](https://coveralls.io/r/bman4789/weatherBot?branch=master). I narrowed down the crashes to be YQL returning JSON that wasn't properly formatted, but didn't yet fix my code to handle that.
+I started to write some tests during this time. As a result of testing, a good amount of code got refactored in order to make it easier. I also changed a fair number of things to follow PEP 8 and started using [TravisCI](https://travis-ci.org/BrianMitchL/weatherBot) and [Coveralls](https://coveralls.io/r/BrianMitchL/weatherBot?branch=master). I narrowed down the crashes to be YQL returning JSON that wasn't properly formatted, but didn't yet fix my code to handle that.
 
 ### April 15-26
 I finally fixed my exception handling and refactored the handling of the weather data, weatherBot was now actually (more) stable. I kept adding tests and refactored the twitter auth keys to be used via environmental variables.
