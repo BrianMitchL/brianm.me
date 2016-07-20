@@ -15,13 +15,13 @@
   description: A simple website to remind you to get back to work. Send the link to a distracted friend, co-worker, or family member!
   github: BrianMitchL/heygetbacktowork
 
-- name: bman4789.github.io
+- name: BrianMitchL.github.io
   range: April 2014 - Present
   link:
     href: https://brianm.me
     title: brianm.me
   description: This very site. This is a Jekyll based blog/website that acted as my main website until YeoMEAN took over, and then again in May 2016.
-  github: BrianMitchL/bman4789.github.io
+  github: BrianMitchL/BrianMitchL.github.io
 
 - name: BPM
   range: April 2016 - Present
