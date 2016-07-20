@@ -36,7 +36,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 ### Experience
 
 * _Counselor and Technology Support_ (Summer 2016), Concordia Language Villages - Skovsøen, Bemidji, MN.\\
-Responsible for technology, photos, and daily blog posts, as well as a counselor for Skovsøen, the Danish language immersion camp, with campers aged 7-18.
+Responsible for technology, photos, daily blog posts, store management, and counselor for Skovsøen, the Danish language immersion camp, with campers aged 7-18.
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
 36 hour hackathon where I worked with [Zach Litzinger](http://www.litzin.gr) to start an iOS application in Swift. For more info, see [here](http://devpost.com/software/bpm).
 * _Intern - IT_ (Summer 2015, internship), C.H. Robinson, Eden Prairie, MN.\\
