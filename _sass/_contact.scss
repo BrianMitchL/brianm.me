@@ -1,14 +1,26 @@
+$square-size: 1.6em;
+
 .social-icons .fa {
-    font-size: 2.2em;
-    width: 1.6em;
-    height: 1.6em;
-    line-height: 1.6em;
+    font-size: $square-size * 1.375;
+    width: $square-size;
+    height: $square-size;
+    line-height: $square-size;
     text-align: center;
     color: #FFF;
     color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease-in-out;
-    border-radius: 0.32em;
-    margin: 0.125em;
+    border-radius: $square-size * 0.2;
+    margin: $square-size * 0.078125;
+}
+
+.social-icons .fa-lg {
+    $square-size: $square-size * 5/4;
+    font-size: $square-size * 1.375;
+    width: $square-size;
+    height: $square-size;
+    line-height: $square-size;
+    border-radius: $square-size * 0.2;
+    margin: $square-size * 0.078125;
 }
 
 .social-icons .fa:hover, .social-icons .fa:active {
