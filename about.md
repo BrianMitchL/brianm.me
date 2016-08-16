@@ -7,15 +7,15 @@ description: Extended Résumé
 
 *A more formal résumé can be found [here](https://github.com/BrianMitchL/resume/raw/master/resume.pdf).*
 
-I am interested in web and iOS development. I also have experience with Java and Python development and system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. I also am an experienced lighting designer and programmer on ETC EOS family consoles.
+I am interested in web and iOS development. I also have experience with Java and Python development as well as Linux system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. I also am an experienced lighting designer and programmer on ETC EOS family consoles.
 
 Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
 ### Computer Science Skills
 
-Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, jQuery, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker
+Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, jQuery, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
-##### Operating Systems
+#### Operating Systems
 
 macOS, iOS, Linux (more familiar with Fedora, CentOS, and Ubuntu), Windows
 
@@ -26,17 +26,19 @@ Paired programming, interpersonal communication, excellent organization, lightin
 ### Hobbies
 
 * Hackintosh running the latest version of macOS and Windows
-* Fedora based file and media server
+* Fedora based file and media server running Plex, samba, and netatalk
 * CentOS 7 VPS running [weatherBots](https://github.com/BrianMitchL/weatherBot) via Docker
 * Jailbroke iPhone and iPad from iOS 4.3 - iOS 8.4
 * Alpine skiing (since 2005)
 * Theatrical and live performance lighting (since 2003!)
-* Listening to or occasionally producing electronic, trap, or hip-hop music (see my [SoundCloud](https://soundcloud.com/bman4789 "Brian Mitchell on SoundCloud") for more)
+* Listening to or (occasionally) producing electronic, trap, or hip-hop music (see my [SoundCloud](https://soundcloud.com/bman4789 "Brian Mitchell on SoundCloud") for more)
+* Watching science-fiction TV shows and movies
+* Learning/speaking Danish
 
 ### Experience
 
 * _Counselor and Technology Support_ (Summer 2016), Concordia Language Villages - Skovsøen, Bemidji, MN.\\
-Responsible for technology, photos, daily blog posts, store management, and counselor for Skovsøen, the Danish language immersion camp, with campers aged 7-18.
+Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
 36 hour hackathon where I worked with [Zach Litzinger](http://www.litzin.gr) to start an iOS application in Swift. For more info, see [here](http://devpost.com/software/bpm).
 * _Intern - IT_ (Summer 2015, internship), C.H. Robinson, Eden Prairie, MN.\\
