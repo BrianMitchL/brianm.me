@@ -7,7 +7,7 @@ description: Infrequent Blog Posts
 <div>
     {% for post in site.posts limit: 20 %}
     <div class="uk-panel uk-panel-box uk-panel-header uk-panel-divider" data-uk-scrollspy="{cls:'uk-animation-fade'}">
-        {% if post.image contains "/assets/images/" or "http" %}
+        {% if post.image != nil %}
         <div class="uk-panel-teaser">
             <img src="{{ post.image }}">
         </div>
