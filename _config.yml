@@ -3,6 +3,8 @@ markdown: kramdown
 timezone: America/Chicago
 
 permalink: /posts/:slug
+paginate: 5
+paginate_path: '/blog/page/:num/'
 
 title: Brian Mitchell
 description: Blog posts, projects, social media presence, and more!
@@ -63,3 +65,4 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-feed
+  - jekyll-paginate

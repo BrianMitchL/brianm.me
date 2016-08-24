@@ -1,0 +1,42 @@
+---
+layout: page
+title: Blog
+description: Infrequent Blog Posts
+---
+{% for post in paginator.posts %}
+<div class="uk-panel uk-panel-box uk-panel-header uk-panel-divider" data-uk-scrollspy="{cls:'uk-animation-fade'}">
+    {% if post.image != nil %}
+    <div class="uk-panel-teaser">
+        <img src="{{ post.image }}">
+    </div>
+    {% endif %}
+    <h3 class="uk-panel-title"><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <small>{{ post.date | date: "%B %-d, %Y" }} by {{ site.authors[post.author].name }}</small></h3>
+    {{ post.excerpt }}
+</div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<ul class="uk-pagination">
+    {% if paginator.previous_page %}
+    <li class="uk-pagination-previous"><a href="{{ paginator.previous_page_path }}">&laquo; Prev</a></li>
+    {% else %}
+    <li class="uk-pagination-previous uk-disabled"><span>&laquo; Prev</span></li>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <li class="uk-active"><span>{{ page }}</span></li>
+    {% elsif page == 1 %}
+    <li><a href="{{ paginator.previous_page_path }}">{{ page }}</a></li>
+    {% else %}
+    <li><a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+    <li class="uk-pagination-next"><a href="{{ paginator.next_page_path }}">Next &raquo;</a></li>
+    {% else %}
+    <li class="uk-pagination-next uk-disabled"><span>Next &raquo;</span></li>
+    {% endif %}
+</ul>
+{% endif %}
