@@ -12,5 +12,5 @@ description: Personal Projects
     </div>
     {% if project.link %}<h4><a href="{{ project.link.href }}" target="_blank">{{ project.link.title }}</a></h4>{% endif %}
     <p>{{ project.description }}</p>
-    <a href="https://github.com/{{ project.github }}" target="_blank"><i class="fa fa-lg fa-github"></i> {{ project.name }} on GitHub</a>
+    <a href="https://github.com/{{ project.github }}" target="_blank"><i class="uk-icon-github"></i> {{ project.name }} on GitHub</a>
 </div>{% endfor %}

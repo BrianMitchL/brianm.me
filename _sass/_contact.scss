@@ -1,51 +1,51 @@
-$square-size: 1.6em;
+$icon-size: 1.6em;
 
-.social-icons .fa {
-    font-size: $square-size * 1.375;
-    width: $square-size;
-    height: $square-size;
-    line-height: $square-size;
+.social-icons a {
+    font-size: $icon-size * 1.375;
+    width: $icon-size;
+    height: $icon-size;
+    line-height: $icon-size;
     text-align: center;
     color: #FFF;
     color: rgba(255, 255, 255, 0.8);
     transition: color 0.3s ease-in-out;
-    border-radius: $square-size * 0.2;
-    margin: $square-size * 0.078125;
+    //border-radius: $square-size * 0.2;
+    margin: $icon-size * 0.078125;
 }
 
-.social-icons .fa-lg {
-    $square-size: $square-size * 5/4;
-    font-size: $square-size * 1.375;
-    width: $square-size;
-    height: $square-size;
-    line-height: $square-size;
-    border-radius: $square-size * 0.2;
-    margin: $square-size * 0.078125;
+.social-icons .uk-icon-large {
+    $icon-size: $icon-size * 5/4;
+    font-size: $icon-size * 1.375;
+    width: $icon-size;
+    height: $icon-size;
+    line-height: $icon-size;
+    //border-radius: $square-size * 0.2;
+    margin: $icon-size * 0.078125;
 }
 
-.social-icons .fa:hover, .social-icons .fa:active {
+.social-icons a:hover, .social-icons a:active {
     color: #FFF;
 }
 
-.social-icons .fa-aboutme{background-color:#044A75;}
-.social-icons .fa-facebook{background-color:#3B5998;}
-.social-icons .fa-github{background-color:#070709;}
-.social-icons .fa-google-plus{background-color:#DD4B39;}
-.social-icons .fa-instagram{background-color:#124D7D;}
-.social-icons .fa-lastfm{background-color:#B00000;}
-.social-icons .fa-linkedin{background-color:#0077B5;}
-.social-icons .fa-reddit{background-color:#121212;}
-.social-icons .fa-spotify{background-color:#1DD155;}
-.social-icons .fa-soundcloud{background-color:#FF4A01;}
-.social-icons .fa-steam{background-color:#17191E;}
-.social-icons .fa-tumblr{background-color:#2F3D53;}
-.social-icons .fa-twitter{background-color:#55ACEE;}
-.social-icons .fa-vine{background-color:#01D499;}
-.social-icons .fa-youtube{background-color:#E21D17;}
-.social-icons .fa-snapchat-ghost{background-color:#FFFC00;-webkit-text-stroke: 1px black;}
+.social-icons .uk-icon-aboutme{background-color:#044A75;}
+.social-icons .uk-icon-facebook{background-color:#3B5998;}
+.social-icons .uk-icon-github{background-color:#070709;}
+.social-icons .uk-icon-google-plus{background-color:#DD4B39;}
+.social-icons .uk-icon-instagram{background-color:#124D7D;}
+.social-icons .uk-icon-lastfm{background-color:#B00000;}
+.social-icons .uk-icon-linkedin{background-color:#0077B5;}
+.social-icons .uk-icon-reddit{background-color:#121212;}
+.social-icons .uk-icon-spotify{background-color:#1DD155;}
+.social-icons .uk-icon-soundcloud{background-color:#FF4A01;}
+.social-icons .uk-icon-steam{background-color:#17191E;}
+.social-icons .uk-icon-tumblr{background-color:#2F3D53;}
+.social-icons .uk-icon-twitter{background-color:#55ACEE;}
+.social-icons .uk-icon-vine{background-color:#01D499;}
+.social-icons .uk-icon-youtube{background-color:#E21D17;}
+.social-icons .uk-icon-snapchat-ghost{background-color:#FFFC00;-webkit-text-stroke: 1px black;}
 
 
-.fa-aboutme:after {
+.uk-icon-aboutme:after {
     font-family: -apple-system-font, "Helvetica Neue", Helvetica, Arial, sans-serif;
     content: "me";
     margin-left: -0.6em;
