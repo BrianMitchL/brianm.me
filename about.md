@@ -5,7 +5,7 @@ title: About
 description: Extended Résumé
 ---
 
-*A more formal résumé can be found [here](https://github.com/BrianMitchL/resume/raw/master/resume.pdf).*
+*A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf).*
 
 I am interested in web and iOS development. I also have experience with Java and Python development as well as Linux system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. I also am an experienced lighting designer and programmer on ETC EOS family consoles.
 
@@ -40,7 +40,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 * _Counselor and Technology Support_ (Summer 2016), Concordia Language Villages - Skovsøen, Bemidji, MN.\\
 Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
-36 hour hackathon where I worked with [Zach Litzinger](http://www.litzin.gr) to start an iOS application in Swift. For more info, see [here](http://devpost.com/software/bpm).
+36 hour hackathon where I worked with [Zach Litzinger](http://www.litzin.gr) to start an iOS application in Swift. For more info, see our [devpost page](http://devpost.com/software/bpm).
 * _Intern - IT_ (Summer 2015, internship), C.H. Robinson, Eden Prairie, MN.\\
 Developed an interactive lobby display illustrating active customer shipments on an animated world map, implemented with web technologies for touch­driven hardware as part of working on the Client Technology Strategy and Enterprise Data Warehouse teams. Some technologies used were JavaScript, jQuery, Microsoft Maps, and d3.js.
 * _[MICS 2015](http://www.micsymposium.org/mics2015/) Robotics and Programming Competitions_ (April 10-11, 2015), ​Grand Forks, ND.\\
