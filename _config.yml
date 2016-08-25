@@ -1,4 +1,13 @@
 markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
 timezone: America/Chicago
 
@@ -53,9 +62,10 @@ navigation:
         title: Projects
         url: /projects
 
-exclude: ['README.md', '.gitignore', 'Gemfile']
+exclude: ['README.md', '.gitignore', 'Gemfile', 'Gemfile.lock', '.sass-cache']
 
 sass:
+    sass_dir: assets/css/_sass
     style: compressed
 
 gems:
@@ -66,3 +76,4 @@ gems:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-paginate
+  - rouge

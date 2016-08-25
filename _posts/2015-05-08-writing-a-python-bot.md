@@ -42,7 +42,25 @@ Other than web development, this has been my first real project outside of a cla
 
 # Python 2.7 vs 3
 
-I started writing the bot in Python 2.7 as that is what OS X has installed. I added a Python 3 version in order to learn about the new version and to support the latest and greatest. From using both versions, I quickly realized how good of a job the Python team did in cross version support. Python 3 was obviously known about for a long time, and Python 2.7 supports many older styles as well as the newer ones. The most notable things that come to mind are using `print "Hello world!` vs `print("Hello world!")` and catching exceptions (using 'as' or not). I know there are several libraries that allows a Python file to support both versions, but I figured that, with the relatively small size of my bot and the desire to keep it to a small footprint, I'd stick with my own if statements. As weatherBot stands today, it runs different code by checking  `if sys.version < '3':` or by excepting an ImportError for imports.
+I started writing the bot in Python 2.7 as that is what OS X has installed. I added a Python 3 version in order to learn about the new version and to support the latest and greatest. From using both versions, I quickly realized how good of a job the Python team did in cross version support. Python 3 was obviously known about for a long time, and Python 2.7 supports many older styles as well as the newer ones. The most notable things that come to mind are using
+
+```python
+print "Hello world!
+```
+
+vs 
+
+```python
+print("Hello world!")
+```
+
+and catching exceptions (using 'as' or not). I know there are several libraries that allows a Python file to support both versions, but I figured that, with the relatively small size of my bot and the desire to keep it to a small footprint, I'd stick with my own if statements. As weatherBot stands today, it runs different code by checking
+
+```python
+if sys.version < '3':
+```
+
+or by excepting an ImportError for imports.
 
 The largest annoyance in working with both versions at once was how they each handle unicode. For me, the issues all revolved around the degree (º) symbol. For Python 2.7 I have to decode it with utf-8 for it to work. With Python 3 it just works as everything uses utf-8. At first I used a separate file for each version of Python, but I learned very quickly that that was not the right way to handle it. I did the initial version conversion using 2to3. This worked very well aside from the urllib libraries used for fetching data from Yahoo's YQL service.
 
