@@ -17,6 +17,7 @@
 
 - name: BrianMitchL.github.io
   range: April 2014 - Present
+  status: <a href="https://travis-ci.org/BrianMitchL/BrianMitchL.github.io" title="Build Status"><img src="https://travis-ci.org/BrianMitchL/BrianMitchL.github.io.svg?branch=master" alt="Build Status"/></a>
   link:
     href: https://brianm.me
     title: brianm.me
