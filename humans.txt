@@ -1,0 +1,16 @@
+---
+---
+/* TEAM */
+Name: {{ site.data.authors.brian.name }}
+Twitter: @{{ site.data.authors.brian.twitter }}
+Location: Saint Paul, MN, USA.
+
+/* THANKS */
+Name: mom
+
+/* SITE */
+Last update: {{ site.time | date: "%Y/%m/%d"}}
+Language: English
+Doctype: HTML5
+Components: Jekyll, UIkit, jQuery, fontawesome (via UIkit), SCSS
+Software: WebStorm, Safari, Photoshop
