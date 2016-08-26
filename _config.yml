@@ -38,6 +38,8 @@ gems:
   - jekyll-paginate
   - rouge
 
+exclude: [vendor]
+
 # navigation
 navigation:
   - text: About
