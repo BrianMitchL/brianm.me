@@ -27,8 +27,6 @@ $pythonBuiltIn: #8888C6;
 $swiftKeywordDeclaration: #FFC66D;
 
 @mixin rounded($radius:4px) {
-  -webkit-border-radius : $radius;
-  -moz-border-radius : $radius;
   border-radius : $radius;
 }
 
@@ -37,15 +35,6 @@ $swiftKeywordDeclaration: #FFC66D;
   color: $foreground;
   background-color: $background;
   @include rounded(4px);
-  pre::-webkit-scrollbar {
-    height: 10px;
-    background-color: #34362e;
-    border-radius: 0 0 4px 4px;
-  }
-  pre::-webkit-scrollbar-thumb{
-    background-color: #75715e;
-    @include rounded(4px);
-  }
   ::selection {
     background-color: $selectionBackground;
     color: $selectionForeground;
