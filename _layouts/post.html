@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% include nav.html %}
-{% assign author = site.authors[page.author] %}
+{% assign author = site.data.authors[page.author] %}
 <div class="uk-container uk-container-center">
     <article class="uk-article">
         <h1 class="uk-article-title">{{ page.title }}</h1>

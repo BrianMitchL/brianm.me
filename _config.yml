@@ -15,58 +15,18 @@ permalink: /posts/:slug
 paginate: 5
 paginate_path: '/blog/page/:num/'
 
-title: Brian Mitchell
-description: Blog posts, projects, social media presence, and more!
-
-authors:
-  brian:
-    name: Brian Mitchell
-    email: bman4789@gmail.com
-    twitter: _BrianMitchell_
-    gravatar: 89e0d7d3d9370c45517960c8a12f92b9
-    web: https://brianm.me
-
-
-twitter:
-  username: _BrianMitchell_
-
-logo: /assets/images/BM-Logo.png
-
-social:
-  name: Brian Mitchell
-  links: ['https://github.com/BrianMitchL', 'https://facebook.com/bman4789', 'https://twitter.com/_BrianMitchell_',
-  'https://twitter.com/bman4789', 'https://plus.google.com/+BrianMitchell16/', 'https://www.instagram.com/bman4789',
-  'http://www.last.fm/user/bman4789', 'https://www.linkedin.com/in/brianscottmitchell',
-  'https://www.reddit.com/user/bman4789', 'https://open.spotify.com/user/1237277662', 'https://soundcloud.com/bman4789',
-  'https://steamcommunity.com/id/MagicBriBri', 'http://bman4789.tumblr.com', 'https://vine.co/bman4789',
-  'https://www.youtube.com/user/bman112234', 'https://www.snapchat.com/add/bman4789']
-
-url: https://brianm.me
-
-comments:
-  disqus:
-    shortname: brianmme
-
-analytics:
-  google:
-    tracking_id: UA-44772557-2
-
-navigation:
-      - text: About
-        title: Extended Résumé
-        url: /about
-      - text: Blog
-        title: Blog Posts
-        url: /blog
-      - text: Projects
-        title: Projects
-        url: /projects
-
-exclude: ['README.md', '.gitignore', 'Gemfile', 'Gemfile.lock', '.sass-cache']
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - .sass-cache
+  - CNAME
+  - LICENSE
 
 sass:
-    sass_dir: assets/css/_sass
-    style: compressed
+  sass_dir: assets/css/_sass
+  style: compressed
 
 gems:
   - jekyll-sitemap
@@ -77,3 +37,62 @@ gems:
   - jekyll-feed
   - jekyll-paginate
   - rouge
+
+# navigation
+navigation:
+  - text: About
+    title: Extended Résumé
+    url: /about
+  - text: Blog
+    title: Blog Posts
+    url: /blog
+  - text: Projects
+    title: Projects
+    url: /projects
+
+# analytics
+analytics:
+  google:
+    tracking_id: UA-44772557-2
+
+# comments
+comments:
+  disqus:
+    shortname: brianmme
+
+# seo
+title: Brian Mitchell
+description: Blog posts, projects, social media presence, and more!
+url: https://brianm.me
+
+twitter:
+  username: _BrianMitchell_
+
+facebook:
+  app_id:
+  publisher:
+  admins:
+
+logo: /assets/images/BM-Logo.png
+
+social:
+  name: Brian Mitchell
+  links:
+    - https://github.com/BrianMitchL
+    - https://facebook.com/bman4789
+    - https://twitter.com/_BrianMitchell_
+    - https://twitter.com/bman4789
+    - https://plus.google.com/+BrianMitchell16/
+    - https://www.instagram.com/bman4789
+    - http://www.last.fm/user/bman4789
+    - https://www.linkedin.com/in/brianscottmitchell
+    - https://www.reddit.com/user/bman4789
+    - https://open.spotify.com/user/1237277662
+    - https://soundcloud.com/bman4789
+    - https://steamcommunity.com/id/MagicBriBri
+    - http://bman4789.tumblr.com
+    - https://vine.co/bman4789
+    - https://www.youtube.com/user/bman112234
+    - https://www.snapchat.com/add/bman4789
+
+google_site_verification: 4-mwXA7aYqZalRm3UuWpPv-aMyFT_zUtA_ks_RK7r5I
