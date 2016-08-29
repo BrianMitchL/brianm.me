@@ -18,7 +18,7 @@ description: Infrequent Blog Posts
 {% if paginator.total_pages > 1 %}
 <ul class="uk-pagination">
     {% if paginator.previous_page %}
-    <li class="uk-pagination-previous"><a href="{{ paginator.previous_page_path }}">&laquo; Prev</a></li>
+    <li class="uk-pagination-previous"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
     {% else %}
     <li class="uk-pagination-previous uk-disabled"><span>&laquo; Prev</span></li>
     {% endif %}
@@ -27,14 +27,14 @@ description: Infrequent Blog Posts
     {% if page == paginator.page %}
     <li class="uk-active"><span>{{ page }}</span></li>
     {% elsif page == 1 %}
-    <li><a href="{{ paginator.previous_page_path }}">{{ page }}</a></li>
+    <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
     {% else %}
-    <li><a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
+    <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
-    <li class="uk-pagination-next"><a href="{{ paginator.next_page_path }}">Next &raquo;</a></li>
+    <li class="uk-pagination-next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
     {% else %}
     <li class="uk-pagination-next uk-disabled"><span>Next &raquo;</span></li>
     {% endif %}
