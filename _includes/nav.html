@@ -1,7 +1,7 @@
 <nav class="uk-navbar">
     <a href="/" class="uk-navbar-brand"><img src="/assets/images/BM-brand.png" alt="BM brand logo"/><span class="uk-hidden-small">&nbsp;Brian Mitchell</span></a>
     <ul class="uk-navbar-nav">
-        {% assign url = page.url|remove:'index.html' %}
+        {% assign url = page.url|remove:'/index.html' %}
         {% for link in site.navigation %}
         <li {% if url == link.url %}class="uk-active"{% endif %}>
             <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
