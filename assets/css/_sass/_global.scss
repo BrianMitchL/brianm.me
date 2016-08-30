@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 footer {
@@ -13,6 +13,15 @@ footer {
     bottom: 0;
     margin: 0.5rem 0;
     width: 100%;
+
+    p {
+        margin: 0;
+    }
+
+    a.uk-icon-hover {
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+    }
 }
 
 .list-inline li {
