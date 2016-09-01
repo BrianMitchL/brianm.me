@@ -12,13 +12,13 @@ layout: default
         {{ content }}
         <hr class="uk-article-divider">
         <div class="uk-comment">
-            <header class="uk-comment-header">
+            <div class="uk-comment-header">
                 <img class="uk-comment-avatar" src="https://1.gravatar.com/avatar/{{ author.gravatar }}?s=240" height="80" width="80" alt="Gravatar Thumbnail">
                 <h4 class="uk-comment-title">{{ author.name }}</h4>
                 <div class="uk-comment-meta"><a href="mailto:{{ author.email }}">{{ author.email }}</a></div>
                 <div class="uk-comment-meta"><i class="uk-icon-twitter" style="color:#55ACEE;" aria-hidden="true"></i> <a href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">@{{ author.twitter }}</a></div>
                 <div class="uk-comment-meta"><a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a></div>
-            </header>
+            </div>
         </div>
     </article>
 
@@ -80,3 +80,35 @@ layout: default
     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+    // https://github.com/jekyll/jekyll/blob/7f578b5dd88653583bdf3ad5ff703a6ee5d91b95/site/_includes/anchor_links.html
+    var anchorForId = function (id) {
+        var anchor = document.createElement("a");
+        anchor.className = "header-link";
+        anchor.href      = "#" + id;
+        anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"uk-icon-link\"></i>";
+        anchor.title = "Permalink";
+        return anchor;
+    };
+    var linkifyAnchors = function (level, containingElement) {
+        var headers = containingElement.getElementsByTagName("h" + level);
+        for (var h = 0; h < headers.length; h++) {
+            var header = headers[h];
+            if (typeof header.id !== "undefined" && header.id !== "") {
+                header.appendChild(anchorForId(header.id));
+            }
+        }
+    };
+    document.onreadystatechange = function () {
+        if (this.readyState === "interactive") { // some iframes never "completes"
+            var contentBlock = document.getElementsByTagName("article")[0];
+            if (!contentBlock) {
+                return;
+            }
+            for (var level = 1; level <= 6; level++) {
+                linkifyAnchors(level, contentBlock);
+            }
+        }
+    };
+</script>
