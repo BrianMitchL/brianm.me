@@ -5,13 +5,13 @@ html {
 }
 
 body {
-    margin-bottom: 3rem;
+  margin-bottom: 3em;
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    margin: 0.5rem 0;
+    margin: 0.5em 0;
     width: 100%;
 
     p {
@@ -25,7 +25,8 @@ footer {
 }
 
 .list-inline li {
-    display: inline;
+    display: inline-block;
+    margin: 1em;
 }
 
 .uk-navbar-brand > img {
@@ -58,4 +59,21 @@ footer {
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
+}
+
+@media (min-width:960px) {
+    .align-large-left {
+        margin-right: 15px;
+        float: left
+    }
+
+    .align-large-right {
+        margin-left: 15px;
+        float: right
+    }
+
+    .large-container-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

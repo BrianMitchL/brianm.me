@@ -7,8 +7,22 @@
     }
 }
 
-#nav {
-    min-height: 100vh;
+#lower-content {
+    min-height: calc(100vh - 3em);
+}
+
+#headshot {
+    background: url(/assets/images/headshot.jpg) no-repeat center center;
+    background-size: cover;
+    $size: 300px;
+    height: $size;
+    width: $size;
+
+    @media (max-width: 374px) {
+        $size: 250px;
+        height: $size;
+        width: $size;
+    }
 }
 
 .chevron-scroll {
@@ -45,7 +59,6 @@
     border: solid 1px;
     color: white;
     transition: background 0.3s ease-in-out;
-    margin: 2px 0;
 
     &:hover, &:visited, &:active, &:focus {
         background: #555;
