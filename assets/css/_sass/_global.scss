@@ -24,6 +24,22 @@ footer {
     }
 }
 
+.uk-table td, .uk-table th {
+  border-bottom: 1px solid #E5E5E5;
+  vertical-align: middle;
+
+  span {
+    display: block;
+    font-size: 90%;
+  }
+}
+
+.uk-overflow-container>.uk-table>thead>tr>th, .uk-overflow-container>.uk-table>thead>tr>td,
+.uk-overflow-container>.uk-table>tbody>tr>th, .uk-overflow-container>.uk-table>tbody>tr>td,
+.uk-overflow-container>.uk-table>tfoot>tr>th, .uk-overflow-container>.uk-table>tfoot>tr>td {
+  white-space: nowrap;
+}
+
 .list-inline li {
     display: inline-block;
     margin: 1em;
@@ -42,6 +58,10 @@ footer {
             max-height:300pt;
         }
     }
+}
+
+.text-double {
+  font-size: 200%;
 }
 
 // Twitter Bootstrap's implementation
