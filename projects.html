@@ -4,13 +4,15 @@ layout: page
 title: Projects
 description: Personal Projects
 ---
+<h3>:star: indicates a featured and more complete project</h3>
 {% for project in site.data.projects %}
 <div class="uk-panel uk-panel-box uk-panel-header uk-panel-divider uk-margin-bottom" data-uk-scrollspy="{cls:'uk-animation-fade'}">
     <div class="uk-panel-title">
-        <h2>{{ project.name }}<small class="uk-align-medium-right">{{ project.range }}</small></h2>
+        <h2>{{ project.name }}{% if project.featured %} :star:{% endif %}<small class="uk-align-medium-right">{{ project.range }}</small></h2>
         {{ project.status }}
     </div>
     {% if project.link %}<h4><a href="{{ project.link.href }}" target="_blank">{{ project.link.title }}</a></h4>{% endif %}
     <p>{{ project.description }}</p>
-    <a href="https://github.com/{{ project.github }}" target="_blank"><i class="uk-icon-github"></i> {{ project.name }} on GitHub</a>
+    {% if project.github %}<a href="https://github.com/{{ project.github }}" target="_blank"><i class="uk-icon-github"></i> {{ project.name }} on GitHub</a>{% endif %}
+    {% if project.gitlab %}<a href="https://gitlab.com/{{ project.gitlab }}" target="_blank"><i class="uk-icon-gitlab"></i> {{ project.name }} on GitLab</a>{% endif %}
 </div>{% endfor %}
