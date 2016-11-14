@@ -167,3 +167,12 @@ Thanks for reading, have fun exploring!
     <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/world.jpg" data-uk-lightbox title="World Exploration"><img src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/world-small.jpg" alt="World Exploration"></a>
     <figcaption class="uk-text-muted">World Exploration</figcaption>
 </figure>
+
+**UPDATE:** I thought I should probably add a quick note about tracking while flying. Artem Liubeznyi made a good point in the comments that high-flying jets should not count for exploration, where low-flying aircraft or helicopters could count at under perhaps 10,000 feet, a distance where you can still around you with reasonable detail. While I do agree with Artem, I also think it's very interesting to see where a flight I've been on has been. I tried tracking one flight, and then thought that since I had already done it once, I might as well continue since I already broke the ground only exploration. If I could go back though, I don't think I would track those flights, as it does ruin the point of true exploration.
+
+With that being said, I have one notable flight memory that is illustrated by Fog of World. I was flying from Denmark to the United States, with a stop in Iceland. The runway had to be cleared of snow, so we circled in the air for around 30 minutes. I had just drank a whole Coke and a delay that long was a little painful. Tracking the circles the plane flew in brings back that memory in a way that nothing else really could.
+
+<figure class="uk-margin-bottom-remove uk-text-center">
+    <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Iceland.jpg" data-uk-lightbox title="Circling north of the Keflavík, Iceland airport"><img src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Iceland-small.jpg" alt="Circling north of the Keflavík, Iceland airport"></a>
+    <figcaption class="uk-text-muted">Circling north of the Keflavík, Iceland airport</figcaption>
+</figure>
