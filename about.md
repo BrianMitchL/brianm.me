@@ -37,6 +37,8 @@ Paired programming, interpersonal communication, excellent organization, lightin
 
 ### Experience
 
+* _Business Intelligence Developer_ (November 2016 - Present), C.H. Robinson, Eden Prairie, MN.\\
+Programmar Analyist I - App Dev/Business Intelligence Developer on the Enterprise Data Warehouse Customer team. Web development using AngularJS.
 * _Counselor and Technology Support_ (Summer 2016), Concordia Language Villages - Skovsøen, Bemidji, MN.\\
 Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
