@@ -13,7 +13,7 @@ Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeathe
 
 ### Computer Science Skills
 
-Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, jQuery, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, jQuery, D3.js, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 #### Operating Systems
 
@@ -38,7 +38,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 ### Experience
 
 * _Business Intelligence Developer_ (November 2016 - Present), C.H. Robinson, Eden Prairie, MN.\\
-Programmar Analyist I - App Dev/Business Intelligence Developer on the Enterprise Data Warehouse Customer team. Web development using AngularJS.
+Front-end web developer (Programmer Analyst I - App Dev) on the Enterprise Data Warehouse Customer team. Developed a lobby visualization app showing worldwide company activity for use in customer tours. Primary technologies used: Angular.js, D3.js, and Microsoft Maps.
 * _Counselor and Technology Support_ (Summer 2016), Concordia Language Villages - Skovsøen, Bemidji, MN.\\
 Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
