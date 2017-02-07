@@ -54,6 +54,9 @@ navigation:
   - text: Projects
     title: Projects
     url: /projects
+  - text: Slides
+    title: Slides
+    url: /slides
 
 # analytics
 analytics:
