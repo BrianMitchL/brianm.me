@@ -13,7 +13,7 @@ Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeathe
 
 ### Computer Science Skills
 
-Java, C, Python, Swift, JavaScript, HTML, CSS, SCSS, CoffeeScript, Angular.js, jQuery, D3.js, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+Java, Python, Swift, JavaScript, HTML, CSS, SCSS, AngularJS, jQuery, D3.js, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 #### Operating Systems
 
@@ -25,6 +25,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 
 ### Hobbies
 
+* Attending monthly [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetups
 * Hackintosh running the latest version of macOS and Windows
 * Fedora based file and media server running Plex, samba, and netatalk
 * CentOS 7 VPS running [weatherBots](https://github.com/BrianMitchL/weatherBot) via Docker
@@ -38,7 +39,9 @@ Paired programming, interpersonal communication, excellent organization, lightin
 ### Experience
 
 * _Business Intelligence Developer_ (November 2016 - Present), C.H. Robinson, Eden Prairie, MN.\\
-Front-end web developer (Programmer Analyst I - App Dev) on the Enterprise Data Warehouse Customer team. Developed a lobby visualization app showing worldwide company activity for use in customer tours. Primary technologies used: Angular.js, D3.js, and Microsoft Maps.
+BI/UI web developer (Programmer Analyst I - App Dev) on the Enterprise Data Warehouse Customer team.
+    * Developed a lobby visualization application showing worldwide company activity for use in customer tours. Primary technologies used: AngularJS 1.6, D3.js, and Microsoft Maps.
+    * Developed an external analytics tool for displaying a high level view of trends in spend, service, and volume information. Primary technologies used: AngularJS 1.6 and Highcharts.
 * _Counselor and Technology Support_ (Summer 2016), Concordia Language Villages - Skovsøen, Bemidji, MN.\\
 Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
