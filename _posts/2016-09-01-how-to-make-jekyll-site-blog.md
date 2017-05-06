@@ -407,7 +407,8 @@ gems:
 ```
 
 This plugin will allow you to insert GitHub-flavored Emojis into your pages and posts. For example:
-```:+1: :heart: :smile:
+```
+:+1: :heart: :smile:
 ```
 would produce: :+1: :heart: :smile:
 
