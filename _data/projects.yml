@@ -41,8 +41,5 @@
 - name: YeoMEAN
   range: September 2014 - May 2016
   status: <a href="https://travis-ci.org/BrianMitchL/YeoMEAN" title="Build Status"><img src="https://travis-ci.org/BrianMitchL/YeoMEAN.svg?branch=master" alt="Build Status"/></a>
-  link:
-    href: https://old.brianm.me
-    title: old.brianm.me
   description: Former main website. The name is a pun on the Yeoman generator and the MEAN stack. Initially started as a MEAN stack tutorial project for a course at UMM I was TAing for, but then morphed into a full fledged homepage.
   github: BrianMitchL/YeoMEAN
