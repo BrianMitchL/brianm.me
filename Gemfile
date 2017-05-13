@@ -1,3 +1,7 @@
 source 'https://rubygems.org'
-gem 'github-pages', '>=118'
+ruby '2.4.1'
+
+gem 'github-pages', '>=136'
 gem 'html-proofer'
+
+Encoding.default_external = Encoding::UTF_8

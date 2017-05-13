@@ -4,22 +4,26 @@ layout: default
 
 {% include nav.html %}
 {% assign author = site.data.authors[page.author] %}
-<div class="uk-container uk-container-center">
+<div class="uk-container">
     <article class="uk-article">
         <h1 class="uk-article-title">{{ page.title }}</h1>
         <p class="uk-article-meta">Written by {{ author.name }} on {{ page.date | date: "%B %-d, %Y %I:%M %p %Z" }}</p>
-        <hr class="uk-article-divider">
+        <hr>
         {{ content }}
-        <hr class="uk-article-divider">
-        <div class="uk-comment">
-            <div class="uk-comment-header">
-                <img class="uk-comment-avatar" src="https://1.gravatar.com/avatar/{{ author.gravatar }}?s=240" height="80" width="80" alt="Gravatar Thumbnail">
-                <h4 class="uk-comment-title">{{ author.name }}</h4>
-                <div class="uk-comment-meta"><a href="mailto:{{ author.email }}">{{ author.email }}</a></div>
-                <div class="uk-comment-meta"><i class="uk-icon-twitter" style="color:#55ACEE;" aria-hidden="true"></i> <a href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">@{{ author.twitter }}</a></div>
-                <div class="uk-comment-meta"><a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a></div>
-            </div>
-        </div>
+        <hr>
+        <article class="uk-comment">
+            <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                    <img class="uk-comment-avatar" src="https://1.gravatar.com/avatar/{{ author.gravatar }}?s=240" height="80" width="80" alt="Gravatar Thumbnail">
+                </div>
+                <div class="uk-width-expand">
+                    <h4 class="uk-comment-title uk-margin-remove">{{ author.name }}</h4>
+                    <div class="uk-comment-meta"><a href="mailto:{{ author.email }}">{{ author.email }}</a></div>
+                    <div class="uk-comment-meta"><span uk-icon="icon: twitter" style="color:#55ACEE;" aria-hidden="true"></span> <a href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">@{{ author.twitter }}</a></div>
+                    <div class="uk-comment-meta"><a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a></div>
+                </div>
+            </header>
+        </article>
     </article>
 
     <div id="shareButtons">
@@ -87,7 +91,7 @@ layout: default
         var anchor = document.createElement("a");
         anchor.className = "header-link";
         anchor.href      = "#" + id;
-        anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"uk-icon-link\"></i>";
+        anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><span uk-icon=\"icon: link\"></span>";
         anchor.title = "Permalink";
         return anchor;
     };

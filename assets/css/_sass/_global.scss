@@ -1,68 +1,60 @@
 html {
-    position: relative;
-    min-height: 100%;
-}
-
-html, h1, h2, h3, h4, h5, h6 {
-  font-family: system, -apple-system, BlinkMacSystemFont,
-  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-  "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    margin: 0.5em 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0.5em 0;
+  width: 100%;
 
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
+}
 
-    a.uk-icon-hover {
-        margin-left: 0.25em;
-        margin-right: 0.25em;
-    }
+a {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink;
+}
+
+.uk-navbar {
+  li > a, a {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .uk-navbar-item.uk-logo > img {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .uk-table td, .uk-table th {
-  border-bottom: 1px solid #E5E5E5;
-  vertical-align: middle;
-
   span {
     display: block;
     font-size: 90%;
   }
 }
 
-.uk-overflow-container>.uk-table>thead>tr>th, .uk-overflow-container>.uk-table>thead>tr>td,
-.uk-overflow-container>.uk-table>tbody>tr>th, .uk-overflow-container>.uk-table>tbody>tr>td,
-.uk-overflow-container>.uk-table>tfoot>tr>th, .uk-overflow-container>.uk-table>tfoot>tr>td {
-  white-space: nowrap;
-}
-
 .list-inline li {
-    display: inline-block;
-    margin: 1em;
+  display: inline-block;
+  margin: 1em;
 }
 
-.uk-navbar-brand > img {
-    height: 30px;
-    width: 30px;
-}
+.uk-card-media-top {
+  text-align: center;
 
-.uk-panel-teaser {
-    text-align: center;
-
-    @media (min-width: 768px) {
-        img {
-            max-height:300pt;
-        }
+  @media (min-width: 640px) {
+    img {
+      max-height: 500px;
     }
+  }
 }
 
 .text-double {
@@ -76,29 +68,24 @@ footer {
 // See: http://a11yproject.com/posts/how-to-hide-content
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
-@media (min-width:960px) {
-    .align-large-left {
-        margin-right: 15px;
-        float: left
-    }
+@media (min-width: 960px) {
+  .align-large-left {
+    margin-right: 15px;
+    float: left
+  }
 
-    .align-large-right {
-        margin-left: 15px;
-        float: right
-    }
-
-    .large-container-center {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .align-large-right {
+    margin-left: 15px;
+    float: right
+  }
 }

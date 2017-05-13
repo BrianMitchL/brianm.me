@@ -1,25 +1,26 @@
 #shareButtons ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 !important;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 !important;
 
-    li > * {
-        height:20px;
-        vertical-align: top !important;
-    }
+  li > * {
+    height: 20px;
+    vertical-align: top !important;
+  }
 }
-// Taken from https://github.com/jekyll/jekyll/blob/7f578b5dd88653583bdf3ad5ff703a6ee5d91b95/site/_sass/_style.scss#L141
-.header-link {
-    position: relative;
-    left: 0.5em;
-    opacity: 0;
-    font-size: 0.8em;
 
-    $transition: opacity 0.2s ease-in-out 0.1s;
-    -webkit-transition: $transition;
-    -moz-transition: $transition;
-    -o-transition: $transition;
-    transition: $transition;
+// taken from https://github.com/jekyll/jekyll/blob/7f578b5dd88653583bdf3ad5ff703a6ee5d91b95/site/_sass/_style.scss#L141
+.header-link {
+  position: relative;
+  left: 0.5em;
+  opacity: 0;
+  font-size: 0.8em;
+
+  $transition: opacity 0.2s ease-in-out 0.1s;
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
 }
 
 h1:hover .header-link,
@@ -28,5 +29,5 @@ h3:hover .header-link,
 h4:hover .header-link,
 h5:hover .header-link,
 h6:hover .header-link {
-    opacity: 1;
+  opacity: 1;
 }

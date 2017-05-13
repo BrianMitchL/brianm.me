@@ -1,67 +1,14 @@
-#main-parallax {
-    background: url(/assets/images/norway.jpg) no-repeat center;
-    background-size: cover;
+.headshot {
+  background: url(/assets/images/headshot.jpg) no-repeat center center;
+  background-size: cover;
+  $size: 300px;
+  height: $size;
+  width: $size;
+  border: 1px white solid;
 
-    > div {
-        text-shadow: 0 0 0.5em rgba(0, 0, 0, 1);
-    }
-}
-
-#lower-content {
-    min-height: calc(100vh - 3em);
-}
-
-#headshot {
-    background: url(/assets/images/headshot.jpg) no-repeat center center;
-    background-size: cover;
-    $size: 300px;
+  @media (max-width: 374px) {
+    $size: 250px;
     height: $size;
     width: $size;
-
-    @media (max-width: 374px) {
-        $size: 250px;
-        height: $size;
-        width: $size;
-    }
-}
-
-.chevron-scroll {
-    color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    bottom: 5vh;
-    font-size: 5em;
-    left: calc(50% - 0.5em);
-    animation: bounce 4s 2s infinite;
-    transition: 0.5s ease-in-out;
-
-    &:hover, &:focus {
-        color: rgba(255, 255, 255, 1);
-        text-decoration: none;
-        animation: none;
-    }
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translate3d(0,0,0);
-    }
-    40% {
-        transform: translate3d(0,-2vh,0);
-    }
-    60% {
-        transform: translate3d(0,-1vh,0);
-    }
-}
-
-.referral {
-    background: transparent;
-    border-radius: 5px;
-    border: solid 1px;
-    color: white;
-    transition: background 0.3s ease-in-out;
-
-    &:hover, &:visited, &:active, &:focus {
-        background: #555;
-        color: white;
-    }
+  }
 }

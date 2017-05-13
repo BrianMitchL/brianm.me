@@ -1,10 +1,12 @@
-<nav class="uk-navbar">
-    <a href="/" class="uk-navbar-brand"><img src="/assets/images/BM-brand.png" alt="BM brand logo"/><span class="uk-hidden-small">&nbsp;Brian Mitchell</span></a>
-    <ul class="uk-navbar-nav">
-        {% if page.link %}{% assign url = page.link %}{% else %}{% assign url = page.url|remove:'/index.html' %}{% endif %}
-        {% for link in site.navigation %}
-        <li {% if url == link.url %}class="uk-active"{% endif %}>
-            <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-        </li>{% endfor %}
-    </ul>
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+        <a href="/" class="uk-navbar-item uk-logo"><img src="/assets/images/BM-brand.png" alt="BM brand logo"/><span class="uk-visible@s">&nbsp;Brian Mitchell</span></a>
+        <ul class="uk-navbar-nav">
+            {% if page.link %}{% assign url = page.link %}{% else %}{% assign url = page.url|remove:'/index.html' %}{% endif %}
+            {% for link in site.navigation %}
+            <li {% if url == link.url %}class="uk-active"{% endif %}>
+                <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+            </li>{% endfor %}
+        </ul>
+    </div>
 </nav>
