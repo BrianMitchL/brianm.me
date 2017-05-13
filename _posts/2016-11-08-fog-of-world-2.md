@@ -25,7 +25,7 @@ During the warmer months, I use Fog of World as a motivator to get outside and w
 
 <div class="uk-child-width-expand@s uk-text-center" uk-grid>
     <figure class="uk-margin-remove-bottom">
-        <a href="#Morris-small" uk-toggle title="Morris, Minnesota"><img src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Morris-small.jpg" alt="Morris, Minnesota"></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Morris.jpg" title="Morris, Minnesota"><img src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Morris-small.jpg" alt="Morris, Minnesota"></a>
         <figcaption class="uk-text-center uk-text-muted">Morris, Minnesota</figcaption>
     </figure>
     <figure class="uk-margin-remove-bottom">
