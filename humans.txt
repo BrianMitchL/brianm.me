@@ -3,7 +3,7 @@
 /* TEAM */
 Name: {{ site.data.authors.brian.name }}
 Twitter: @{{ site.data.authors.brian.twitter }}
-Location: Saint Paul, MN, USA.
+Location: Minneapolis, MN, USA.
 
 /* THANKS */
 Name: mom
@@ -12,5 +12,5 @@ Name: mom
 Last update: {{ site.time | date: "%Y/%m/%d"}}
 Language: English
 Doctype: HTML5
-Components: Jekyll, UIkit, jQuery, fontawesome (via UIkit), SCSS
+Components: Jekyll, UIkit, jQuery, fontawesome, SCSS, GitHub
 Software: WebStorm, Safari, Photoshop
