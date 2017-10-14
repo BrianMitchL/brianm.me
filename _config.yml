@@ -31,7 +31,7 @@ sass:
   sass_dir: assets/css/_sass
   style: compressed
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-sass-converter
