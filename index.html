@@ -10,55 +10,96 @@ redirect_from: "/contact"
         {% for link in site.navigation %}
         <li class="uk-display-inline-block uk-margin uk-margin-left uk-margin-right">
             <h1 class="uk-light"><a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a></h1>
-        </li>{% endfor %}
+        </li>
+        {% endfor %}
     </ul>
 
     <div uk-grid>
-        <div class="uk-width-1-1 uk-width-1-2@m uk-width-2-5@l">
-            <div class="uk-flex uk-border-circle uk-align-center uk-align-right@l uk-margin-top uk-margin-bottom headshot"></div>
+        <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
+            <div class="uk-flex uk-border-circle uk-align-center headshot"></div>
         </div>
-        <div class="uk-width-1-1 uk-width-1-2@m uk-width-2-5@l">
-            <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-column">
-                <h1 class="uk-light">Hi, I'm Brian Mitchell!</h1>
-                <div class="uk-flex uk-flex-wrap uk-flex-wrap-middle uk-light social-icons">
-                    <a href="https://github.com/BrianMitchL" title="Brian Mitchell on Github" class="uk-icon-button icon-large icon-github" uk-icon="icon: github; ratio: 2.5"></a>
-                    <a href="https://www.linkedin.com/in/brianscottmitchell" title="Brian Mitchell on LinkedIn" class="uk-icon-button icon-large icon-linkedin"  uk-icon="icon: linkedin; ratio: 2.5"></a>
-                    <a href="https://twitter.com/BrianMitchL" title="@BrianMitchL on Twitter" class="uk-icon-button icon-large icon-twitter" uk-icon="icon: twitter; ratio: 2.5"></a>
-                </div>
-                <h2 class="uk-light uk-margin-top uk-margin-bottom">Find me online...</h2>
-                <div class="uk-flex uk-flex-wrap uk-flex-center uk-light social-icons">
-                    <a href="https://facebook.com/BrianMitchL" title="Brian Mitchell on Facebook" class="uk-icon-button icon-facebook" uk-icon="icon: facebook; ratio: 1.5"></a>
-                    <a href="https://www.flickr.com/people/43812551@N03/" title="Brian Mitchell on Flickr" class="uk-icon-button icon-flickr" uk-icon="icon: flickr; ratio: 1.5"></a>
-                    <a href="https://gitlab.com/u/BrianMitchL" title="Brian Mitchell on GitLab" class="uk-icon-button icon-gitlab fa fa-gitlab"></a>
-                    <a href="https://plus.google.com/+BrianMitchell16/" title="Brian Mitchell on Google+" class="uk-icon-button icon-google-plus"  uk-icon="icon: google-plus; ratio: 1.5"></a>
-                    <a href="https://www.instagram.com/BrianMitchL" title="Brian Mitchell on Instagram" class="uk-icon-button icon-instagram" uk-icon="icon: instagram; ratio: 1.5"></a>
-                    <a href="http://www.last.fm/user/bman4789" title="Brian Mitchell on Last.fm" class="uk-icon-button icon-lastfm fa fa-lastfm"></a>
-                    <a href="https://www.reddit.com/user/bman4789" title="Brian Mitchell on Reddit" class="uk-icon-button icon-reddit fa fa-reddit-alien"></a>
-                    <a href="/feed.xml" title="Atom Feed" class="uk-icon-button icon-rss" uk-icon="icon: rss; ratio: 1.5"></a>
-                    <a href="https://www.snapchat.com/add/bman4789" title="Brian Mitchell on Snapchat" class="uk-icon-button icon-snapchat-ghost fa fa-snapchat-ghost"></a>
-                    <a href="https://soundcloud.com/bman4789" title="Brian Mitchell on SoundCloud" class="uk-icon-button icon-soundcloud" uk-icon="icon: soundcloud; ratio: 1.5"></a>
-                    <a href="https://open.spotify.com/user/1237277662" title="Brian Mitchell on Spotify" class="uk-icon-button icon-spotify fa fa-spotify"></a>
-                    <a href="https://steamcommunity.com/id/MagicBriBri" title="Brian Mitchell on Steam" class="uk-icon-button icon-steam fa fa-steam"></a>
-                    <a href="https://bman4789.tumblr.com" title="Brian Mitchell on Tumblr" class="uk-icon-button icon-tumblr" uk-icon="icon: tumblr; ratio: 1.5"></a>
-                    <a href="https://www.youtube.com/user/bman112234" title="Brian Mitchell on YouTube" class="uk-icon-button icon-youtube" uk-icon="icon: youtube; ratio: 1.5"></a>
-                </div>
+        <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
+            <h1 class="uk-light">Hi, I'm Brian Mitchell!</h1>
+            <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Developer">👨🏻‍💻</span> at <a
+                    href="https://twitter.com/CHRobinsonInc" title="C.H. Robinson on Twitter">@CHRobinsonInc</a>.</p>
+            <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Podcaster">🎙</span> at <a
+                    href="https://twitter.com/TheNexusTV" title="The Nexus TV on Twitter">@TheNexusTV</a>.</p>
+            <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Graduate">👨🏻‍🎓</span> of <a
+                    href="https://twitter.com/UMMorris"
+                    title="The University of Minnesota Morris on Twitter">@UMMorris</a>.</p>
+            <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Bots">🤖</span>: <a
+                    href="https://twitter.com/MorrisMNWeather" title="@MorrisMNWeather on Twitter">@MorrisMNWeather</a>
+                & <a href="https://twitter.com/WeatherByBrian" title="@WeatherByBrian on Twitter">@WeatherByBrian</a>
+            </p>
+        </div>
+        <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
+            <div class="uk-flex uk-flex-wrap uk-flex-center uk-light social-icons">
+                <a href="https://github.com/BrianMitchL" title="Brian Mitchell on Github"
+                   class="uk-icon-button icon-large icon-github" uk-icon="icon: github; ratio: 2.5"></a>
+                <a href="https://www.linkedin.com/in/brianscottmitchell" title="Brian Mitchell on LinkedIn"
+                   class="uk-icon-button icon-large icon-linkedin" uk-icon="icon: linkedin; ratio: 2.5"></a>
+                <a href="https://twitter.com/BrianMitchL" title="@BrianMitchL on Twitter"
+                   class="uk-icon-button icon-large icon-twitter" uk-icon="icon: twitter; ratio: 2.5"></a>
+            </div>
+        </div>
+        <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
+            <div class="uk-flex uk-flex-wrap uk-flex-center uk-light social-icons">
+                <a href="https://facebook.com/BrianMitchL" title="Brian Mitchell on Facebook"
+                   class="uk-icon-button icon-facebook" uk-icon="icon: facebook; ratio: 1.5"></a>
+                <a href="https://www.flickr.com/people/43812551@N03/" title="Brian Mitchell on Flickr"
+                   class="uk-icon-button icon-flickr" uk-icon="icon: flickr; ratio: 1.5"></a>
+                <a href="https://gitlab.com/u/BrianMitchL" title="Brian Mitchell on GitLab"
+                   class="uk-icon-button icon-gitlab fa fa-gitlab"></a>
+                <a href="https://plus.google.com/+BrianMitchell16/" title="Brian Mitchell on Google+"
+                   class="uk-icon-button icon-google-plus" uk-icon="icon: google-plus; ratio: 1.5"></a>
+                <a href="https://www.instagram.com/BrianMitchL" title="Brian Mitchell on Instagram"
+                   class="uk-icon-button icon-instagram" uk-icon="icon: instagram; ratio: 1.5"></a>
+                <a href="http://www.last.fm/user/bman4789" title="Brian Mitchell on Last.fm"
+                   class="uk-icon-button icon-lastfm fa fa-lastfm"></a>
+                <a href="https://www.reddit.com/user/bman4789" title="Brian Mitchell on Reddit"
+                   class="uk-icon-button icon-reddit fa fa-reddit-alien"></a>
+                <a href="/feed.xml" title="Atom Feed" class="uk-icon-button icon-rss"
+                   uk-icon="icon: rss; ratio: 1.5"></a>
+                <a href="https://www.snapchat.com/add/bman4789" title="Brian Mitchell on Snapchat"
+                   class="uk-icon-button icon-snapchat-ghost fa fa-snapchat-ghost"></a>
+                <a href="https://soundcloud.com/bman4789" title="Brian Mitchell on SoundCloud"
+                   class="uk-icon-button icon-soundcloud" uk-icon="icon: soundcloud; ratio: 1.5"></a>
+                <a href="https://open.spotify.com/user/1237277662" title="Brian Mitchell on Spotify"
+                   class="uk-icon-button icon-spotify fa fa-spotify"></a>
+                <a href="https://steamcommunity.com/id/MagicBriBri" title="Brian Mitchell on Steam"
+                   class="uk-icon-button icon-steam fa fa-steam"></a>
+                <a href="https://bman4789.tumblr.com" title="Brian Mitchell on Tumblr"
+                   class="uk-icon-button icon-tumblr"
+                   uk-icon="icon: tumblr; ratio: 1.5"></a>
+                <a href="https://www.youtube.com/user/bman112234" title="Brian Mitchell on YouTube"
+                   class="uk-icon-button icon-youtube" uk-icon="icon: youtube; ratio: 1.5"></a>
             </div>
         </div>
     </div>
 
-    <p class="uk-light">I am a co-host on <a href="http://thenexus.tv/category/pk/" title="PodKit">PodKit</a>, a podcast about Apple inclined Web Developers discussing interesting technology and development related topics.</p>
+    <p class="uk-light">I am a co-host on <a href="http://thenexus.tv/category/pk/" title="PodKit">PodKit</a>, a podcast
+        about Apple inclined Web Developers discussing interesting technology and development related topics.</p>
 
-    <h1 class="uk-heading-line uk-margin-top uk-margin-bottom" aria-hidden="true"><span class="uk-light" uk-icon="icon: link; ratio: 2"></span></h1>
+    <h1 class="uk-heading-line uk-margin-top uk-margin-bottom" aria-hidden="true"><span class="uk-light"
+                                                                                        uk-icon="icon: link; ratio: 2"></span>
+    </h1>
 
     <h2 class="uk-light">Affiliate Links</h2>
     <p class="uk-light">Use these links to save some money or gain extra perks when you sign up for an account.</p>
     <p uk-margin class="uk-light">
-        <a class="uk-button uk-button-default" href="https://m.do.co/c/414f452c2b6f" title="Digital Ocean Affiliate Link">Digital Ocean</a>
-        <a class="uk-button uk-button-default" href="https://db.tt/GuhrvQ7d" title="Dropbox Affiliate Link">Dropbox</a>
-        <a class="uk-button uk-button-default" href="https://lyft.com/idi/BRIAN05122" title="Lyft Affiliate Link">Lyft</a>
-        <a class="uk-button uk-button-default" href="https://www.namecheap.com/?aff=103772" title="Namecheap Affiliate Link">Namecheap</a>
-        <a class="uk-button uk-button-default" href="https://cash.me/app/QLQVQBK" title="Square Cash Affiliate Link">Square Cash</a>
-        <a class="uk-button uk-button-default" href="https://www.stickermule.com/unlock?ref_id=0469870701" title="Stickermule">Stickermule</a>
-        <a class="uk-button uk-button-default" href="https://www.uber.com/invite/brianm30595ue" title="Uber Affiliate Link">Uber</a>
+        <a class="uk-button uk-button-default" href="https://m.do.co/c/414f452c2b6f"
+           title="Digital Ocean Affiliate Link">Digital Ocean</a>
+        <a class="uk-button uk-button-default" href="https://db.tt/GuhrvQ7d"
+           title="Dropbox Affiliate Link">Dropbox</a>
+        <a class="uk-button uk-button-default" href="https://lyft.com/idi/BRIAN05122"
+           title="Lyft Affiliate Link">Lyft</a>
+        <a class="uk-button uk-button-default" href="https://www.namecheap.com/?aff=103772"
+           title="Namecheap Affiliate Link">Namecheap</a>
+        <a class="uk-button uk-button-default" href="https://cash.me/app/QLQVQBK"
+           title="Square Cash Affiliate Link">Square Cash</a>
+        <a class="uk-button uk-button-default" href="https://www.stickermule.com/unlock?ref_id=0469870701"
+           title="Stickermule">Stickermule</a>
+        <a class="uk-button uk-button-default" href="https://www.uber.com/invite/brianm30595ue"
+           title="Uber Affiliate Link">Uber</a>
     </p>
 </div>

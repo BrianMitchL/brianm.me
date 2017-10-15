@@ -11,3 +11,13 @@
     width: $size;
   }
 }
+
+.bio {
+  margin: 0;
+  line-height: 2.25em;
+
+  .emoji-wrapper {
+    font-size: 2rem;
+    vertical-align: middle;
+  }
+}
