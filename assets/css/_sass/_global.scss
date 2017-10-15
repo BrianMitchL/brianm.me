@@ -5,6 +5,7 @@ html {
 
 body {
   margin-bottom: 4em;
+  margin-bottom: calc(4em + constant(safe-area-inset-bottom));
 }
 
 footer {
@@ -12,6 +13,8 @@ footer {
   bottom: 0;
   margin: 0.5em 0;
   width: 100%;
+  padding-bottom: 0;
+  padding-bottom: constant(safe-area-inset-bottom);
 
   p {
     margin: 0;
@@ -96,4 +99,31 @@ a {
 
 .uk-card {
   border: 1px solid #eee;
+}
+
+.uk-container {
+  // need to reset the paddings from the defaults in UIKit (3.0.0-beta.30)
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: calc(15px + constant(safe-area-inset-left));
+  padding-right: calc(15px + constant(safe-area-inset-right));
+
+  @media (min-width: 640px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-left: calc(30px + constant(safe-area-inset-left));
+    padding-right: calc(30px + constant(safe-area-inset-right));
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-left: calc(40px + constant(safe-area-inset-left));
+    padding-right: calc(40px + constant(safe-area-inset-right));
+  }
+}
+
+.uk-navbar-container {
+  padding-left: constant(safe-area-inset-left);
+  padding-right: constant(safe-area-inset-right);
 }
