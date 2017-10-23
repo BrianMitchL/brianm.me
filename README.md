@@ -4,9 +4,11 @@ Website for Brian Mitchell
 
 The site can be found at [https://brianm.me/](https://brianm.me/)
 
-Note: when developing, use
-```bash
-jekyll serve
+Install:
+```sh
+gem install bundler
+bundle install
+bundle exec jekyll serve
 ```
 ## Attributions
 
