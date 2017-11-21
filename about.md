@@ -27,7 +27,7 @@ Paired programming, interpersonal communication, excellent organization, lightin
 
 * Attending monthly [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetups
 * Hackintosh running the latest version of macOS and Windows
-* Fedora based file and media server running Plex, samba, and netatalk
+* CentOS 7 based media server
 * CentOS 7 VPS running [weatherBots](https://github.com/BrianMitchL/weatherBot) via Docker
 * Jailbroke iPhone and iPad from iOS 4.3 - iOS 8.4
 * Alpine skiing (since 2005)
@@ -105,6 +105,7 @@ Related Courses:
 
 ### Theatre Experience
 
+* _Electrician_ - _Green T Productions' Frankenstein: A Modern Prometheus_, November 2017, The Historic Mounds Theatre, Saint Paul, MN
 * _Lighting Designer_ - _Dance Ensemble_, Spring 2016, University of Minnesota, Morris [Photos](https://flic.kr/s/aHskyhQRx3)
 * _Lighting Designer_ - _Dance Ensemble_, Spring 2015, University of Minnesota, Morris [Photos](https://flic.kr/s/aHsk9VWDqc)
 * _Master Electrician_ - _Many Moons_, Spring 2015, University of Minnesota, Morris
