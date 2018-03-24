@@ -57,9 +57,10 @@ $icon-size: 1.5em;
     }
     &.icon-snapchat-ghost {
       background-color: #FFFC00;
-      // maybe this will one day be implemented without a -webkit prefix (2017-05-12)
-      text-stroke: 1px black;
-      -webkit-text-stroke: 1px black;
+      path {
+        stroke: black;
+        stroke-width: 15;
+      }
     }
     &.icon-soundcloud {
       background-color: #FF4A01;
