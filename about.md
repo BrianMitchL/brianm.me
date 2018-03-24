@@ -7,17 +7,17 @@ description: Extended Résumé
 
 *A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf).*
 
-I am interested in web and iOS development. I also have experience with Java and Python development as well as Linux system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. I also am an experienced lighting designer and programmer on ETC EOS family consoles.
+I am interested in web and iOS development. I also have experience with Java and Python development as well as Linux system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. I also am an experienced lighting designer and programmer primarily on ETC EOS family consoles.
 
 Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
 ### Computer Science Skills
 
-Java, Python, Swift, JavaScript, HTML, CSS, SCSS, AngularJS, jQuery, D3.js, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+Java, Python, Swift, JavaScript, TypeScript, HTML, CSS, SCSS, AngularJS, React, Redux, RxJS, jQuery, D3.js, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 #### Operating Systems
 
-macOS, iOS, Linux (more familiar with Fedora, CentOS, and Ubuntu), Windows
+macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
 
 ### Other Skills
 
@@ -39,9 +39,10 @@ Paired programming, interpersonal communication, excellent organization, lightin
 ### Experience
 
 * _Business Intelligence Developer_ (November 2016 - Present), C.H. Robinson, Eden Prairie, MN.\\
-BI/UI web developer (Programmer Analyst I - App Dev) on the Enterprise Data Warehouse Customer team.
+BI/UI developer on the Enterprise Data Warehouse Customer team.
     * Developed a lobby visualization application showing worldwide company activity for use in customer tours. Primary technologies used: AngularJS 1.6, D3.js, and Microsoft Maps.
     * Developed an external analytics tool for displaying a high level view of trends in spend, service, and volume information. Primary technologies used: AngularJS 1.6 and Highcharts.
+    * Developed an internal administration and analytics tool for displaying a usage statistics and debugging information. Primary technologies used: TypeScript, React, Redux, RxJS, and Highcharts.
 * _Counselor and Technology Support_ (Summer 2016), Concordia Language Villages - Skovsøen, Bemidji, MN.\\
 Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
 * _CarlHacks 2016_ (April 8-10 2016), Carleton College, Northfield, MN.\\
@@ -73,7 +74,7 @@ Designed, set-up, and operated sound and lighting for small to large scale event
 
 ### Education
 
-*   B.A. Computer Science, University of Minnesota, Morris. May 2016. [3.32 GPA]\\
+*   B.A. Computer Science, University of Minnesota, Morris. May 2016.\\
 Related Courses:
     * Network Administration Practicum with an Emphasis on Directory Services Directed Study (CSCI 4993)
     * Robotics (CSCI 4454)
@@ -92,19 +93,13 @@ Related Courses:
     * Artificial Intelligence
     * Sustainability in Northern Europe
     * Danish Language I--II
-* H.S. Diploma, 2012, Central High School, Saint Paul, MN.
+* H.S. Diploma with High Honors, 2012, Central High School, Saint Paul, MN.
 * Skovsøen Language Village, 2011. Concordia Language Villages, Bemidji, MN.
     * High school credit for Danish language study and immersion
 
-### Accomplishments
-
-* Dean's List Spring 2015
-* Dean's List Spring 2014
-* Eagle Scout
-* Graduated high school with high honors
-
 ### Theatre Experience
 
+* _Lighting Designer_ - _Young Artists Initiative's Annie_, March 2018, The Wellstone Center, Saint Paul, MN
 * _Electrician_ - _Green T Productions' Frankenstein: A Modern Prometheus_, November 2017, The Historic Mounds Theatre, Saint Paul, MN
 * _Lighting Designer_ - _Dance Ensemble_, Spring 2016, University of Minnesota, Morris [Photos](https://flic.kr/s/aHskyhQRx3)
 * _Lighting Designer_ - _Dance Ensemble_, Spring 2015, University of Minnesota, Morris [Photos](https://flic.kr/s/aHsk9VWDqc)
@@ -114,7 +109,7 @@ Related Courses:
 * _Electrician_ - _Twelfth Night_, Fall 2013, University of Minnesota, Morris
 * _Assistant Stage Manager_ - _An Evening of One Acts_, Spring 2013, University of Minnesota, Morris
 * _Assistant Lighting Designer/Board Operator_ - _God of Carnage_, Winter 2013, University of Minnesota, Morris
-* _Sound Board Operator_ - _Twelfth Night_, Fall 2012, University of Minnesota, Morris
+* _Sound Board Operator_ - _The Laramie Project: Ten Years Later_, Fall 2012, University of Minnesota, Morris
 * _Co-Lighting Designer/Co-Board Operator_ - _The Importance of Being Earnest_, Spring 2012, Central High School, Saint Paul, MN
 * _Co-Lighting Designer/Co-Board Operator_ - _Bye Bye Birdie_, Fall 2011, Central High School, Saint Paul, MN
 * _Co-Lighting Designer/Co-Board Operator_ - _The Government Inspector_, Spring 2011, Central High School, Saint Paul, MN
