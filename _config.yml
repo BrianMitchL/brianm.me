@@ -8,6 +8,7 @@ kramdown:
   syntax_highlighter: rouge
   # do not replace newlines by <br>s
   hard_wrap: false
+  parse_block_html: true
 
 timezone: America/Chicago
 
@@ -26,6 +27,7 @@ exclude:
   - .sass-cache
   - CNAME
   - LICENSE
+  - vendor
 
 sass:
   sass_dir: assets/css/_sass
@@ -40,8 +42,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - rouge
-
-exclude: [vendor]
 
 # navigation
 navigation:
@@ -71,7 +71,6 @@ comments:
 # seo
 title: Brian Mitchell
 description: Blog, projects, & online presence
-url: https://brianm.me
 
 twitter:
   username: BrianMitchL
@@ -93,12 +92,9 @@ social:
     - https://www.instagram.com/BrianMitchL
     - http://www.last.fm/user/bman4789
     - https://www.linkedin.com/in/brianscottmitchell
-    - https://www.reddit.com/user/bman4789
     - https://open.spotify.com/user/1237277662
     - https://soundcloud.com/bman4789
     - https://steamcommunity.com/id/MagicBriBri
-    - http://bman4789.tumblr.com
-    - https://vine.co/bman4789
     - https://www.youtube.com/user/bman112234
     - https://www.snapchat.com/add/bman4789
 

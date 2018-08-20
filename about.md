@@ -7,23 +7,23 @@ description: Extended Résumé
 
 *A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf).*
 
-I am interested in web and iOS development. I also have experience with Java and Python development as well as Linux system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. I also am an experienced lighting designer and programmer primarily on ETC EOS family consoles.
+I am primarily focused in web development. I also have experience with Java and Python development and Linux system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer and programmer primarily on ETC EOS family consoles.
 
 Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
-### Computer Science Skills
+## Tools/Frameworks/Languages
 
-Java, Python, Swift, JavaScript, TypeScript, HTML, CSS, SCSS, AngularJS, React, Redux, RxJS, jQuery, D3.js, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+Java, Python, Swift, JavaScript, TypeScript, HTML, CSS, SCSS, AngularJS, React, Redux, RxJS, D3.js, Webpack, Node.js, MongoDB, Jekyll, git, Bash, Puppet, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
-#### Operating Systems
+### Operating Systems
 
 macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
 
-### Other Skills
+## Other Skills
 
 Paired programming, interpersonal communication, excellent organization, lighting design, theatrical lighting electrician, lighting and sound board operation
 
-### Hobbies
+## Hobbies
 
 * Attending monthly [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetups
 * Hackintosh running the latest version of macOS and Windows
@@ -32,11 +32,11 @@ Paired programming, interpersonal communication, excellent organization, lightin
 * Jailbroke iPhone and iPad from iOS 4.3 - iOS 8.4
 * Alpine skiing (since 2005)
 * Theatrical and live performance lighting (since 2003!)
-* Listening to or (occasionally) producing electronic, trap, or hip-hop music (see my [SoundCloud](https://soundcloud.com/bman4789 "Brian Mitchell on SoundCloud") for more)
+* Listening to or (occasionally) producing electronic, trap, or hip-hop music
 * Watching science-fiction TV shows and movies
 * Learning/speaking Danish
 
-### Experience
+## Experience
 
 * _Business Intelligence Developer_ (November 2016 - Present), C.H. Robinson, Eden Prairie, MN.\\
 BI/UI developer on the Enterprise Data Warehouse Customer team.
@@ -72,32 +72,38 @@ Designed, set-up, and operated sound and lighting for small to large scale event
 * _Assistant Cook_ (Summer 2012, Summer 2013), Concordia Language Villages. Bemidji, MN.
 * _Kitchen Staff_ (Summer 2011 - Summer 2012), Leo C. Byrne Residence. Saint Paul, MN.
 
-### Education
+## Education
 
-*   B.A. Computer Science, University of Minnesota, Morris. May 2016.\\
-Related Courses:
-    * Network Administration Practicum with an Emphasis on Directory Services Directed Study (CSCI 4993)
-    * Robotics (CSCI 4454)
-    * Models of Computing Systems (CSCI 3401)
-    * Human-Computer Interface Design (CSCI 4656)
-    * Robotics Directed Study (x2) (CSCI 3993)
-    * Software Design Directed Study (using MEAN Stack) (CSCI 4993)
-    * Algorithms and Computability (CSCI 3501)
-    * Software Design and Development (CSCI 3601)
-    * Ethical and Social Implications of Technology (IS 1091)
-    * Data Structures (CSCI 2101)
-    * Foundations of Computer Science (CSCI 1302)
-    * Digital Media Computation (CSCI 1201)
-* DIS - Danish Institute for Study Abroad. Copenhagen, Denmark. Fall 2015.\\
-Related Courses:
-    * Artificial Intelligence
-    * Sustainability in Northern Europe
-    * Danish Language I--II
+* B.A. Computer Science, University of Minnesota, Morris. May 2016.
+<details>
+<summary markdown="span">Related Courses</summary>
+* Network Administration Practicum with an Emphasis on Directory Services Directed Study (CSCI 4993)
+* Robotics (CSCI 4454)
+* Models of Computing Systems (CSCI 3401)
+* Human-Computer Interface Design (CSCI 4656)
+* Robotics Directed Study (x2) (CSCI 3993)
+* Software Design Directed Study (using MEAN Stack) (CSCI 4993)
+* Algorithms and Computability (CSCI 3501)
+* Software Design and Development (CSCI 3601)
+* Ethical and Social Implications of Technology (IS 1091)
+* Data Structures (CSCI 2101)
+* Foundations of Computer Science (CSCI 1302)
+* Digital Media Computation (CSCI 1201)
+</details>
+
+* DIS - Danish Institute for Study Abroad. Copenhagen, Denmark. Fall 2015.
+<details>
+<summary markdown="span">Related Courses</summary>
+* Artificial Intelligence
+* Sustainability in Northern Europe
+* Danish Language I--II
+</details>
+
 * H.S. Diploma with High Honors, 2012, Central High School, Saint Paul, MN.
 * Skovsøen Language Village, 2011. Concordia Language Villages, Bemidji, MN.
     * High school credit for Danish language study and immersion
 
-### Theatre Experience
+## Theatre Experience
 
 * _Lighting Designer_ - _Young Artists Initiative's Annie_, March 2018, The Wellstone Center, Saint Paul, MN
 * _Electrician_ - _Green T Productions' Frankenstein: A Modern Prometheus_, November 2017, The Historic Mounds Theatre, Saint Paul, MN
