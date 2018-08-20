@@ -7,7 +7,9 @@ layout: default
 <main class="uk-container" role="main">
     <article class="uk-article" itemscope itemtype="https://schema.org/Article">
         <h1 class="uk-article-title">{{ page.title }}</h1>
-        <p class="uk-article-meta">Written by <span itemprop="author">{{ author.name }}</span> on <time>{{ page.date | date: "%B %-d, %Y %I:%M %p %Z" }}</time></p>
+        <p class="uk-article-meta">Written by <span itemprop="author">{{ author.name }}</span> on
+            <time>{{ page.date | date: "%B %-d, %Y %I:%M %p %Z" }}</time>
+        </p>
         <hr>
         <div itemprop="articleBody">
             {{ content }}
@@ -16,87 +18,63 @@ layout: default
         <section class="uk-comment">
             <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
-                    <img class="uk-comment-avatar" src="https://1.gravatar.com/avatar/{{ author.gravatar }}?s=240" height="80" width="80" alt="Profile photo" itemprop="image">
+                    <img class="uk-comment-avatar" src="https://1.gravatar.com/avatar/{{ author.gravatar }}?s=240"
+                         height="80" width="80" alt="Profile photo" itemprop="image">
                 </div>
                 <address class="uk-width-expand">
                     <h4 class="uk-comment-title uk-margin-remove" itemprop="author">{{ author.name }}</h4>
                     <div class="uk-comment-meta">{{ author.bio }}</div>
-                    <div class="uk-comment-meta"><span uk-icon="icon: twitter" style="color:#55ACEE;" aria-hidden="true"></span> <a href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">@{{ author.twitter }}</a></div>
-                    <div class="uk-comment-meta"><a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a></div>
+                    <div class="uk-comment-meta"><span uk-icon="icon: twitter" style="color:#55ACEE;"
+                                                       aria-hidden="true"></span> <a
+                            href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">@{{
+                        author.twitter }}</a></div>
+                    <div class="uk-comment-meta"><a href="{{ author.web }}" title="{{ author.web }}">{{ author.web
+                        }}</a></div>
                 </address>
             </header>
         </section>
     </article>
-    {% if jekyll.environment == 'production' %}
-    <div id="shareButtons">
-        <hr>
-        <ul class="list-inline">
-            <li>
-                <!--facebook-->
-                <div class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-type="button_count"></div>
-            </li>
-            <li>
-                <!--twitter-->
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}" data-via="{{ site.twitter.username }}">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            </li>
-            <li>
-                <!--google+-->
-                <div class="g-plusone" data-size="medium"></div>
-                <script type="text/javascript">
-                    (function() {
-                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                        po.src = 'https://apis.google.com/js/platform.js';
-                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                    })();
-                </script>
-            </li>
-            <li>
-                <!--reddit-->
-                <script type="text/javascript">
-                    reddit_url = "{{ site.url }}{{ page.url }}";
-                    reddit_title = "{{ page.title }}";
-                </script>
-                <script type="text/javascript" src="//www.reddit.com/static/button/button1.js"></script>
-            </li>
-        </ul>
-        <hr>
+    <hr>
+    <div class="share-page" uk-margin>
+        <a class="uk-icon-button"
+           href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.baseurl }}"
+           target="_blank" uk-icon="facebook">Share on Facebook</a>
+        <a class="uk-icon-button"
+           href="https://twitter.com/intent/tweet?text={{ page.title | escape | replace:' ','%20' }}&amp;url={{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.baseurl }}&amp;via={{ site.twitter.username }}"
+           target="_blank" uk-icon="twitter">Share on Twitter</a>
+        <a class="uk-icon-button"
+           href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.baseurl }}&amp;title={{ page.title | escape | replace:' ','%20' }}&amp;source=Brian%20Mitchell%27s%20Blog"
+           target="_blank" uk-icon="linkedin">Share on LinkedIn</a>
     </div>
 
+    {% if jekyll.environment == 'production' %}
+    <hr>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         var disqus_shortname = '{{ site.comments.disqus.shortname }}';
         var disqus_identifier = '{{ page.id }}';
-        var disqus_url = '{{ site.url }}{{ page.url }}';
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
+        (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+    <a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     {% endif %}
 </main>
-
-{% if jekyll.environment == 'production' %}
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-{% endif %}
 
 <script>
     // https://github.com/jekyll/jekyll/blob/7f578b5dd88653583bdf3ad5ff703a6ee5d91b95/site/_includes/anchor_links.html
     var anchorForId = function (id) {
         var anchor = document.createElement("a");
         anchor.className = "header-link";
-        anchor.href      = "#" + id;
-        anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><span uk-icon=\"icon: link\"></span>";
+        anchor.href = "#" + id;
+        anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><span uk-icon=\"link\"></span>";
         anchor.title = "Permalink";
         return anchor;
     };
