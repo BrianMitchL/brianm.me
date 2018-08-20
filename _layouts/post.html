@@ -46,26 +46,8 @@ layout: default
            href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.baseurl }}&amp;title={{ page.title | escape | replace:' ','%20' }}&amp;source=Brian%20Mitchell%27s%20Blog"
            target="_blank" uk-icon="linkedin">Share on LinkedIn</a>
     </div>
-
-    {% if jekyll.environment == 'production' %}
     <hr>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = '{{ site.comments.disqus.shortname }}';
-        var disqus_identifier = '{{ page.id }}';
-        var disqus_url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
-        (function () {
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
-    <a href="https://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-    {% endif %}
+    {% include comments.html %}
 </main>
 
 <script>
