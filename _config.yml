@@ -8,7 +8,6 @@ kramdown:
   syntax_highlighter: rouge
   # do not replace newlines by <br>s
   hard_wrap: false
-  parse_block_html: true
 
 timezone: America/Chicago
 

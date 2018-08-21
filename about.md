@@ -77,26 +77,30 @@ Designed, set-up, and operated sound and lighting for small to large scale event
 * B.A. Computer Science, University of Minnesota, Morris. May 2016.
 <details>
 <summary markdown="span">Related Courses</summary>
-* Network Administration Practicum with an Emphasis on Directory Services Directed Study (CSCI 4993)
-* Robotics (CSCI 4454)
-* Models of Computing Systems (CSCI 3401)
-* Human-Computer Interface Design (CSCI 4656)
-* Robotics Directed Study (x2) (CSCI 3993)
-* Software Design Directed Study (using MEAN Stack) (CSCI 4993)
-* Algorithms and Computability (CSCI 3501)
-* Software Design and Development (CSCI 3601)
-* Ethical and Social Implications of Technology (IS 1091)
-* Data Structures (CSCI 2101)
-* Foundations of Computer Science (CSCI 1302)
-* Digital Media Computation (CSCI 1201)
+<ul>
+    <li>Network Administration Practicum with an Emphasis on Directory Services Directed Study (CSCI 4993)</li>
+    <li>Robotics (CSCI 4454)</li>
+    <li>Models of Computing Systems (CSCI 3401)</li>
+    <li>Human-Computer Interface Design (CSCI 4656)</li>
+    <li>Robotics Directed Study (x2) (CSCI 3993)</li>
+    <li>Software Design Directed Study (using MEAN Stack) (CSCI 4993)</li>
+    <li>Algorithms and Computability (CSCI 3501)</li>
+    <li>Software Design and Development (CSCI 3601)</li>
+    <li>Ethical and Social Implications of Technology (IS 1091)</li>
+    <li>Data Structures (CSCI 2101)</li>
+    <li>Foundations of Computer Science (CSCI 1302)</li>
+    <li>Digital Media Computation (CSCI 1201)</li>
+</ul>
 </details>
 
 * DIS - Danish Institute for Study Abroad. Copenhagen, Denmark. Fall 2015.
 <details>
 <summary markdown="span">Related Courses</summary>
-* Artificial Intelligence
-* Sustainability in Northern Europe
-* Danish Language I--II
+<ul>
+    <li>Artificial Intelligence</li>
+    <li>Sustainability in Northern Europe</li>
+    <li>Danish Language I--II</li>
+</ul>
 </details>
 
 * H.S. Diploma with High Honors, 2012, Central High School, Saint Paul, MN.
