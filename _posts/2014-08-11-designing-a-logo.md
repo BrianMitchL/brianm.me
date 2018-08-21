@@ -12,7 +12,7 @@ image: /assets/images/BM-Logo.png
 I had some time to kill today, so I thought to myself, "Hey, why not make a logo?" I then sat and thought for 30 seconds on how I could make a cool logo that had to do with my name, "Brian Mitchell." In the past, I've made little icons that were just squares with a 'B' or "BM" inside. An example of this is below:
 
 <figure>
-    <img data-src="/assets/images/old-BM-logo.png" alt="Old Brian Mitchell Logo" height="256" width="256" uk-img>
+    <img data-src="/assets/images/old-BM-logo.png" alt="Old Brian Mitchell Logo" height="256" width="256" uk-img data-proofer-ignore>
     <figcaption>Old Brian Mitchell Logo</figcaption>
 </figure>
 
@@ -23,6 +23,6 @@ I whipped open Photoshop and didn't even have to change the font! I guess I used
 The whole thing took maybe half an hour and really wasn't too difficult or horrible like I thought it would be. Maybe a future version will be less boxy (as I was talking about with my friend Matt over iMessage), but for now I'm satisfied.
 
 <figure>
-    <img data-src="/assets/images/BM-Logo.png" alt="Brian Mitchell Logo" title="Brian Mitchell Logo" height="256" width="256" uk-img>
+    <img data-src="/assets/images/BM-Logo.png" alt="Brian Mitchell Logo" title="Brian Mitchell Logo" height="256" width="256" uk-img data-proofer-ignore>
     <figcaption>New logo scaled to 250px, open separately to view the full 1000px</figcaption>
 </figure>

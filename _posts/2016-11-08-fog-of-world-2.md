@@ -24,15 +24,15 @@ During the warmer months, I use Fog of World as a motivator to get outside and w
 
 <div class="uk-child-width-expand@s" uk-grid>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Morris.jpg" title="Morris, Minnesota"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Morris-small.jpg" alt="Morris, Minnesota" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Morris.jpg" title="Morris, Minnesota"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Morris-small.jpg" alt="Morris, Minnesota" uk-img data-proofer-ignore></a>
         <figcaption>Morris, Minnesota</figcaption>
     </figure>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Saint-Paul.jpg" title="Saint Paul, Minnesota"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Saint-Paul-small.jpg" alt="Saint Paul, Minnesota" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Saint-Paul.jpg" title="Saint Paul, Minnesota"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Saint-Paul-small.jpg" alt="Saint Paul, Minnesota" uk-img data-proofer-ignore></a>
         <figcaption>Saint Paul, Minnesota</figcaption>
     </figure>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/MSP.jpg" title="Minneapolis/Saint Paul, Minnesota"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/MSP-small.jpg" alt="Minneapolis/Saint Paul, Minnesota" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/MSP.jpg" title="Minneapolis/Saint Paul, Minnesota"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/MSP-small.jpg" alt="Minneapolis/Saint Paul, Minnesota" uk-img data-proofer-ignore></a>
         <figcaption>Minneapolis/Saint Paul, Minnesota</figcaption>
     </figure>
 </div>
@@ -43,23 +43,23 @@ When traveling, having a history of where I was in Fog of World is wonderful. It
 
 <div class="uk-child-width-expand@s" uk-grid>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Copenhagen.jpg" title="Copenhagen, Denmark"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Copenhagen-small.jpg" alt="Copenhagen, Denmark" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Copenhagen.jpg" title="Copenhagen, Denmark"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Copenhagen-small.jpg" alt="Copenhagen, Denmark" uk-img data-proofer-ignore></a>
         <figcaption>Copenhagen, Denmark</figcaption>
     </figure>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Amsterdam.jpg" title="Amsterdam, Netherlands"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Amsterdam-small.jpg" alt="Amsterdam, Netherlands" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Amsterdam.jpg" title="Amsterdam, Netherlands"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Amsterdam-small.jpg" alt="Amsterdam, Netherlands" uk-img data-proofer-ignore></a>
         <figcaption>Amsterdam, Netherlands</figcaption>
     </figure>
     <figure class="uk-margin-remove-bottom">
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/London.jpg" title="London, England"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/London-small.jpg" alt="London, England" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/London.jpg" title="London, England"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/London-small.jpg" alt="London, England" uk-img data-proofer-ignore></a>
         <figcaption>London, England</figcaption>
     </figure>
     <figure class="uk-margin-remove-bottom">
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Boston.jpg" title="Boston, Massachusetts"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Boston-small.jpg" alt="Boston, Massachusetts" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Boston.jpg" title="Boston, Massachusetts"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Boston-small.jpg" alt="Boston, Massachusetts" uk-img data-proofer-ignore></a>
         <figcaption>Boston, Massachusetts</figcaption>
     </figure>
     <figure class="uk-margin-remove-bottom">
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Chicago.jpg" title="Chicago, Illinois"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Chicago-small.jpg" alt="Chicago, Illinois" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Chicago.jpg" title="Chicago, Illinois"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Chicago-small.jpg" alt="Chicago, Illinois" uk-img data-proofer-ignore></a>
         <figcaption>Chicago, Illinois</figcaption>
     </figure>
 </div>
@@ -87,7 +87,7 @@ This shows the embedded map with the fog layer on top. You can pan and zoom arou
 The passport is a section that presents a simple overview of yoiur current level, badge count, and exploration status of continents/regions of the world. You can tap on each region and see more detailed information such as the regions level, explored area, progress (as a percent), and territory count. You can further tap each territory within a region and see similar information for that territory.
 
 <figure>
-    <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/passport.png" title="Passport"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/passport.png" alt="Passport" style="max-height:667px" uk-img></a>
+    <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/passport.png" title="Passport"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/passport.png" alt="Passport" style="max-height:667px" uk-img data-proofer-ignore></a>
     <figcaption class="uk-text-muted">Passport</figcaption>
 </figure>
 
@@ -113,11 +113,11 @@ First and foremost, Fod of World 2 is optimized for recent versions of iOS. It i
 
 <div class="uk-child-width-expand@s" uk-grid>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/efficiency.jpg" title="Efficient Fog Rendering"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/efficiency.jpg" alt="Efficient Fog Rendering" style="max-height:568px" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/efficiency.jpg" title="Efficient Fog Rendering"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/efficiency.jpg" alt="Efficient Fog Rendering" style="max-height:568px" uk-img data-proofer-ignore></a>
         <figcaption class="uk-text-muted">Efficient Fog Rendering (hard edges)</figcaption>
     </figure>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/high-quality.jpg" title="High-Quality Fog Rendering"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/high-quality.jpg" alt="High-Quality Fog Rendering" style="max-height:568px" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/high-quality.jpg" title="High-Quality Fog Rendering"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/high-quality.jpg" alt="High-Quality Fog Rendering" style="max-height:568px" uk-img data-proofer-ignore></a>
         <figcaption class="uk-text-muted">High-Quality Fog Rendering (soft edges)</figcaption>
     </figure>
 </div>
@@ -126,11 +126,11 @@ As Fog of World 1 was showing age, it could not add new data to its database in 
 
 <div class="uk-child-width-expand@s" uk-grid>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/lag.jpg" title="Innacurate Dual Paths (from two iPhones)"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/lag-small.jpg" alt="Innacurate Dual Paths (from two iPhones)" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/lag.jpg" title="Innacurate Dual Paths (from two iPhones)"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/lag-small.jpg" alt="Innacurate Dual Paths (from two iPhones)" uk-img data-proofer-ignore></a>
         <figcaption>Innacurate Dual Paths (from two iPhones)</figcaption>
     </figure>
     <figure>
-        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/downtown-Saint-Paul.jpg" title="Dashed Exploration Path"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/downtown-Saint-Paul-small.jpg" alt="Dashed Exploration Path" uk-img></a>
+        <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/downtown-Saint-Paul.jpg" title="Dashed Exploration Path"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/downtown-Saint-Paul-small.jpg" alt="Dashed Exploration Path" uk-img data-proofer-ignore></a>
         <figcaption>Dashed Exploration Path (screen off with Fog of World 1 on iOS 9)</figcaption>
     </figure>
 </div>
@@ -139,7 +139,7 @@ As Fog of World 1 was showing age, it could not add new data to its database in 
 Thanks for reading, have fun exploring!
 
 <figure>
-    <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/world.jpg" title="World Exploration"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/world-small.jpg" alt="World Exploration" uk-img></a>
+    <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/world.jpg" title="World Exploration"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/world-small.jpg" alt="World Exploration" uk-img data-proofer-ignore></a>
     <figcaption class="uk-text-muted">World Exploration</figcaption>
 </figure>
 
@@ -148,6 +148,6 @@ Thanks for reading, have fun exploring!
 With that being said, I have one notable flight memory that is illustrated by Fog of World. I was flying from Denmark to the United States, with a stop in Iceland. The runway had to be cleared of snow, so we circled in the air for around 30 minutes. I had just drank a whole Coke and a delay that long was a little painful. Tracking the circles the plane flew in brings back that memory in a way that nothing else really could.
 
 <figure>
-    <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Iceland.jpg" title="Circling north of the Keflavík, Iceland airport"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Iceland-small.jpg" alt="Circling north of the Keflavík, Iceland airport" uk-img></a>
+    <a href="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Iceland.jpg" title="Circling north of the Keflavík, Iceland airport"><img data-src="https://s3.amazonaws.com/brianm.me/posts/fog-of-world-2/Iceland-small.jpg" alt="Circling north of the Keflavík, Iceland airport" uk-img data-proofer-ignore></a>
     <figcaption class="uk-text-muted">Circling north of the Keflavík, Iceland airport</figcaption>
 </figure>
