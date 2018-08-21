@@ -361,18 +361,15 @@ social:
   name: Brian Mitchell
   links:
     - https://github.com/BrianMitchL
-    - https://facebook.com/bman4789
-    - https://twitter.com/_BrianMitchell_
-    - https://twitter.com/bman4789
+    - https://facebook.com/BrianMitchL
+    - https://twitter.com/BrianMitchL
     - https://plus.google.com/+BrianMitchell16/
-    - https://www.instagram.com/bman4789
+    - https://www.instagram.com/BrianMitchL
     - http://www.last.fm/user/bman4789
     - https://www.linkedin.com/in/brianscottmitchell
-    - https://www.reddit.com/user/bman4789
     - https://open.spotify.com/user/1237277662
     - https://soundcloud.com/bman4789
     - https://steamcommunity.com/id/MagicBriBri
-    - http://bman4789.tumblr.com
     - https://vine.co/bman4789
     - https://www.youtube.com/user/bman112234
     - https://www.snapchat.com/add/bman4789

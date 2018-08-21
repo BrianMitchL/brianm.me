@@ -1,3 +1,20 @@
+div[itemprop="articleBody"] > p:first-child {
+  // .uk-text-lead
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+figure {
+  img {
+    margin-bottom: .5rem;
+  }
+  figcaption {
+    color: #999;
+    font-size: .875rem;
+  }
+}
+
 .uk-comment-header {
   margin-bottom: 0;
 }
