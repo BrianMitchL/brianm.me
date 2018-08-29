@@ -9,8 +9,6 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-timezone: America/Chicago
-
 url: https://brianm.me
 baseurl: ''
 

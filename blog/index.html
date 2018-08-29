@@ -14,7 +14,7 @@ link: /blog
     <div class="uk-card-header">
         <h3 class="uk-card-title"><a href="{{ post.url }}">{{ post.title }}</a> <span
                 uk-icon="icon: chevron-right"></span>
-            <small>{{ post.date | date: "%B %-d, %Y" }} by {{ site.data.authors[post.author].name }}</small>
+            <small><time datetime="{{ post.date | date: date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time> by {{ site.data.authors[post.author].name }}</small>
         </h3>
     </div>
     <div class="uk-card-body">

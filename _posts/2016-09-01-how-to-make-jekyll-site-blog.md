@@ -2,7 +2,7 @@
 layout: post
 title: How to Make a Jekyll Site/Blog
 slug: how-to-make-jekyll-site-blog
-date: 2016-09-01 14:32:13 CDT
+modified: 2018-08-28 23:37 CDT
 description: A tutorial on making a Jekyll based site/blog.
 author: brian
 seo.type: BlogPosting
@@ -97,7 +97,7 @@ Front matter is a [YAML](http://yaml.org) block in-between a set of triple-dashe
 layout: {{ page.layout }}
 title: {{ page.title }}
 slug: {{ page.slug }}
-date: {{ page.date }}
+modified: {{ page.modified }}
 description: {{ page.description }}
 author: {{ page.author }}
 seo.type: BlogPosting
@@ -117,7 +117,7 @@ Good question, I'm glad you asked!
 
 ```html
 {% raw %}{% assign author = site.data.authors[page.author] %}{% endraw %}
-<p>Written by {% raw %}{{ author.name }}{% endraw %} on {% raw %}{{ page.date | date: "%B %-d, %Y %I:%M %p %Z" }}{% endraw %}</p>
+<p>Written by {% raw %}{{ author.name }}{% endraw %} on {% raw %}{{ page.date | date: "%B %-d, %Y" }}{% endraw %}</p>
 ```
 
 Woah.
@@ -145,7 +145,7 @@ If you have a file that you don't need to declare any variables, but want to use
 /* TEAM */
 Name: {{ site.data.authors.brian.name }}
 Twitter: @{{ site.data.authors.brian.twitter }}
-Location: Saint Paul, MN, USA.
+Location: Minneapolis, MN, USA.
 
 /* THANKS */
 Name: mom
@@ -154,8 +154,8 @@ Name: mom
 Last update: {{ site.time | date: "%Y/%m/%d"}}
 Language: English
 Doctype: HTML5
-Components: Jekyll, UIkit, jQuery, fontawesome (via UIkit), SCSS
-Software: WebStorm, Safari, Photoshop{% endraw %}
+Components: Jekyll, UIkit, fontawesome, SCSS, GitHub
+Software: WebStorm, Safari, Photoshop
 ```
 
 For a full list of features, check out the Jekyll docs on [front matter](https://jekyllrb.com/docs/frontmatter/) and [variables](https://jekyllrb.com/docs/variables/).

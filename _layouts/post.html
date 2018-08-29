@@ -6,8 +6,7 @@ layout: default
 <main class="uk-container" role="main">
     <article class="uk-article" itemscope itemtype="https://schema.org/Article">
         <h1 class="uk-article-title">{{ page.title }}</h1>
-        <p class="uk-article-meta">Written by <span itemprop="author">{{ site.data.authors[page.author].name }}</span>
-            on <time>{{ page.date | date: "%B %-d, %Y %I:%M %p %Z" }}</time>
+        <p class="uk-article-meta">Updated on <time datetime="{{ page.modified | date: date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>
         </p>
         <hr>
         <div itemprop="articleBody">
