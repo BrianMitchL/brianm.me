@@ -18,7 +18,7 @@ paginate: 5
 paginate_path: /blog/page/:num/
 
 collections:
-  evergreen:
+  living-docs:
     output: true
 
 exclude:
@@ -53,9 +53,9 @@ navigation:
   - text: Blog
     title: Blog Posts
     url: /blog
-  - text: Evergreen
-    title: Evergreen Documents
-    url: /evergreen
+  - text: Living Docs
+    title: Living Documents
+    url: /living-docs
   - text: Projects
     title: Projects
     url: /projects
