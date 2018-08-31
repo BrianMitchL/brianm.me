@@ -10,23 +10,23 @@
 
     <link rel="shortcut icon" href="/assets/images/favicon.ico">
 
-    <link rel="stylesheet" href="/assets/reveal/css/reveal.css">
-    <link rel="stylesheet" href="/assets/reveal/css/theme/night.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.min.css" integrity="sha256-9+Wg2bcNeiOMGXOUNqBdceY2lAH/eCiTDcdzHhHIl48=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/night.min.css" integrity="sha256-djVnjcP0NP5brHSrvt4ZvBMjSJ6EkZE/jYKcR1TvJRY=" crossorigin="anonymous" />
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="/assets/reveal/lib/css/zenburn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/css/zenburn.min.css" integrity="sha256-GN8HsMOOckKB/M7+4WPg3rJkM8nem9eRdTiSgcKLVyA=" crossorigin="anonymous" />
 
     <!-- Printing and PDF exports -->
     <script>
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = window.location.search.match( /print-pdf/gi ) ? '/assets/reveal/css/print/pdf.css' : '/assets/reveal/css/print/paper.css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/pdf.min.css' : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/paper.min.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     </script>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/brands.js" integrity="sha384-4BRtleJgTYsMKIVuV1Z7lNE29r4MxwKR7u88TWG2GaXsmSljIykt/YDbmKndKGID" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js" integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1" crossorigin="anonymous"></script>
     <style>
         .twitter-tweet {
             margin-left: auto !important;
@@ -107,7 +107,7 @@
 
                 <p>Static or dynamic</p>
 
-                <p class="fragment fade-up">Twitter has a geolocation data...</p>
+                <p class="fragment fade-up">Twitter has geolocation data...</p>
                 <aside class="notes">
                     How can we consume the Twitter API?
                 </aside>
@@ -219,8 +219,8 @@
         </section>
     </div>
 </div>
-<script src="/assets/reveal/lib/js/head.min.js"></script>
-<script src="/assets/reveal/js/reveal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js" integrity="sha256-CTcwyen1cxIrm4hlqdxe0y7Hq6B0rpxAKLiXMD3dJv0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.min.js" integrity="sha256-Xr6ZH+/kc7hDVReZLO5khBknteLqu5oen/xnSraXrVk=" crossorigin="anonymous"></script>
 <script>
     Reveal.initialize({
         controls: true,
@@ -233,12 +233,12 @@
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
-            { src: '/assets/reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-            { src: '/assets/reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: '/assets/reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: '/assets/reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: '/assets/reveal/plugin/zoom-js/zoom.js', async: true },
-            { src: '/assets/reveal/plugin/notes/notes.js', async: true }
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.min.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.min.js', async: true },
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/notes/notes.min.js', async: true }
         ]
     });
 
