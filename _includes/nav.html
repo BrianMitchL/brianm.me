@@ -1,12 +1,40 @@
+{% if page.link %}
+    {% assign url = page.link %}
+{% else %}
+    {% assign url = page.url|remove:'/index.html' %}
+{% endif %}
+
 <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
-        <a href="/" class="uk-navbar-item uk-logo"><img src="/assets/images/BM-brand.png" alt="BM brand logo"/><span class="uk-visible@s">&nbsp;Brian Mitchell</span></a>
-        <ul class="uk-navbar-nav">
-            {% if page.link %}{% assign url = page.link %}{% else %}{% assign url = page.url|remove:'/index.html' %}{% endif %}
+        <a href="/" class="uk-navbar-item uk-logo">Brian Mitchell</a>
+        <ul class="uk-navbar-nav uk-visible@s">
             {% for link in site.navigation %}
-            <li {% if url == link.url %}class="uk-active"{% endif %}>
-                <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-            </li>{% endfor %}
+                <li {% if url == link.url %}class="uk-active"{% endif %}>
+                    <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+                </li>
+            {% endfor %}
         </ul>
+    </div>
+    <div class="uk-navbar-right uk-hidden@s">
+        <button class="uk-button"
+                type="button"
+                uk-toggle="target: #nav-offcanvas"
+                uk-navbar-toggle-icon
+        ></button>
+    </div>
+
+    <div id="nav-offcanvas" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li><a href="/" title="Home">Home</a></li>
+                <li class="uk-nav-divider"></li>
+                {% for link in site.navigation %}
+                <li {% if url== link.url %}class="uk-active" {% endif %}>
+                    <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </nav>

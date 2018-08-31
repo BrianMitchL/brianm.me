@@ -5,10 +5,10 @@ redirect_from: "/contact"
 ---
 
 <nav class="uk-container uk-text-center">
-    <ul class="uk-list uk-list-large">
+    <ul class="uk-list">
         {% assign url = page.url|remove:'/index.html' %}
         {% for link in site.navigation %}
-        <li class="uk-display-inline-block uk-margin uk-margin-left uk-margin-right uk-light">
+        <li class="uk-display-inline-block uk-margin-small uk-margin-small-left uk-margin-small-right uk-light">
             <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
         </li>
         {% endfor %}
