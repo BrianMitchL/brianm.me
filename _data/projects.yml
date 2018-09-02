@@ -33,9 +33,6 @@
 
 - name: BPM
   range: April 2016 - August 2016
-  link:
-      href: https://getbpm.xyz
-      title: getbpm.xyz
   description: An iOS application written in Swift to count the beats per minute (BPM) in a song. This was started at the CarlHacks 2016 hackathon with <a href="http://www.litzin.gr">Zach Litzinger</a>, another brand new iOS developer.
   github: BrianMitchL/bpm
 

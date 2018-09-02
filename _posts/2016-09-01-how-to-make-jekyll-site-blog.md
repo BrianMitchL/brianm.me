@@ -2,7 +2,7 @@
 layout: post
 title: How to Make a Jekyll Site/Blog
 slug: how-to-make-jekyll-site-blog
-modified: 2018-08-28 23:37 CDT
+modified: 2018-09-01 17:57 CDT
 description: A tutorial on making a Jekyll based site/blog.
 author: brian
 seo.type: BlogPosting
@@ -18,9 +18,9 @@ Because I put a lot of time into this site in the last few months, I figured I m
 
 ## Installation
 
-Jekyll officially supports Linux, Unix, and macOS, though it seems you can get it to [work on Windows](https://jekyllrb.com/docs/windows/) as well. 
+Jekyll officially supports Linux, Unix, and macOS, though it seems you can get it to [install on Windows](https://jekyllrb.com/docs/installation/windows/) as well. 
 
-As Jekyll is written in Ruby, you will need Ruby installed. Apple ships the now unmaintained `2.0.0p648` version of Ruby on El Capitan, so I installed the latest version of Ruby (`2.3.1`) with [Homebrew](http://brew.sh) (:heart: Homebrew, I love a good package manager). I deploy this site with GitHub Pages, so to start off, I installed the `github-pages` gem. To maintain dependencies, create a file called `Gemfile` and add the following:
+As Jekyll is written in Ruby, you will need Ruby installed. Apple ships the now unmaintained `2.0.0p648` version of Ruby on El Capitan, so I installed the latest version of Ruby (`2.3.1`) with [Homebrew](https://brew.sh) (:heart: Homebrew, I love a good package manager). I deploy this site with GitHub Pages, so to start off, I installed the `github-pages` gem. To maintain dependencies, create a file called `Gemfile` and add the following:
 
 ```ruby
 source 'https://rubygems.org'
@@ -80,7 +80,7 @@ exclude:
   - LICENSE
 ```
 
-The `markdown: kramdown` line tells Jekyll to use [kramdown](http://kramdown.gettalong.org) as the markdown interpreter.
+The `markdown: kramdown` line tells Jekyll to use [kramdown](https://kramdown.gettalong.org) as the markdown interpreter.
 
 The `timezone` setting will make sure dates used across the site will be localized to a timezone that you want, if not specified, Jekyll defaults to UTC.
 
@@ -207,7 +207,7 @@ Here, I get the URL from the current page (while removing unwanted possible file
 
 ### Creating Pages
 
-Your homepage needs to be named `index.html` (or `index.md` if you're writing it in markdown) and be located at the root level of your project. For any other page at the root level, you can create a file such that the title of the file will be the URL to that page. For example, if you create a file at `/about.md`, Jekyll will make that available at `http://example.com/about.html` (or `example.com/about` if you set `permalink: /about` in the file's front matter). If you wish to have a page in a subdirectory (or [many subdirectories](https://github.com/BrianMitchL/heygetbacktowork/tree/gh-pages/it/looks/like/you/are/distracted/%2C/maybe/you/should/get/back/to/work!)), title that subdirectory what you wish the URL path to be, then drop in an `index.html` (or markdown equivalent) at that directory. For example, if I created `/this/is/a/test/index.html`, I could access that page at `http://example.com/this/is/a/test`.
+Your homepage needs to be named `index.html` (or `index.md` if you're writing it in markdown) and be located at the root level of your project. For any other page at the root level, you can create a file such that the title of the file will be the URL to that page. For example, if you create a file at `/about.md`, Jekyll will make that available at `https://example.com/about.html` (or `example.com/about` if you set `permalink: /about` in the file's front matter). If you wish to have a page in a subdirectory (or [many subdirectories](https://github.com/BrianMitchL/heygetbacktowork/tree/gh-pages/it/looks/like/you/are/distracted/%2C/maybe/you/should/get/back/to/work!)), title that subdirectory what you wish the URL path to be, then drop in an `index.html` (or markdown equivalent) at that directory. For example, if I created `/this/is/a/test/index.html`, I could access that page at `https://example.com/this/is/a/test`.
 
 Check the Jekyll documentation on [creating pages](https://jekyllrb.com/docs/pages/).
 
@@ -287,7 +287,7 @@ gems:
 Set the `sass_dir` to where you store your Sass/SCSS files.
 You can change the output style to `nested`, `expanded`, `compact`, `compressed`, or remove it entirely to keep everything.
 
-Check out the [Sass/SCSS docs](http://jekyllrb.com/docs/assets/#sassscss).
+Check out the [Sass/SCSS docs](https://jekyllrb.com/docs/assets/#sassscss).
 
 
 ### Pagination
@@ -330,7 +330,7 @@ In order to use syntax highling in your site, you can use the default setting or
 Default:
 Use `{% raw %}{% highlight python %}{% endraw %}` followed by some sweet Python code, closed with `{% raw %}{% endhighlight %}{% endraw %}`.
 
-When building the site, rouge will seek through the code block and add span tags with classes on parts of the code. These tags can then be styled to have different colors, hence syntax highlighting. I've been a huge fan of JetBrain's darcula theme, so I adapted a version from [http://smasue.github.io/pygments-darcula](http://smasue.github.io/pygments-darcula) to use on this site. You can find the code in [_darcula.scss](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/assets/css/_sass/_darcula.scss). Any Rouge or Pygments CSS theme will work. You can generate CSS files from Pygments or by downloading themes, for example, from [https://github.com/richleland/pygments-css/](https://github.com/richleland/pygments-css/).
+When building the site, rouge will seek through the code block and add span tags with classes on parts of the code. These tags can then be styled to have different colors, hence syntax highlighting. I've been a huge fan of JetBrain's darcula theme, so I adapted a version from [https://smasue.github.io/pygments-darcula](https://smasue.github.io/pygments-darcula) to use on this site. You can find the code in [_darcula.scss](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/assets/css/_sass/_darcula.scss). Any Rouge or Pygments CSS theme will work. You can generate CSS files from Pygments or by downloading themes, for example, from [https://github.com/richleland/pygments-css/](https://github.com/richleland/pygments-css/).
 
 ### Search Engine Optimization (SEO)
 
@@ -381,7 +381,7 @@ The `title`, `description`, `logo`, and `url` are used as site wide defaults. Je
 
 The `social` section is used for creating a site card on search engines. Enter the name of the website/person/company, followed by a list of other official pages. Set the `google_site_verification` string with your Google Webmaster site verification key to have it inserted as a meta tag.
 
-On any page or post, you may define the `seo.type` variable. This uses the [schema.org](http://schema.org) types to define what kind of content is on the page.
+On any page or post, you may define the `seo.type` variable. This uses the [schema.org](https://schema.org) types to define what kind of content is on the page.
 
 ### Feed
 
@@ -460,4 +460,4 @@ env:
 ```
 
 The `--disable-external` flag disables the checking on 3rd party links. Some websites will block scrapers like the one used in `html-proofer`, which will cause the check to fail, so this just skips em' all. The `--assume-extension` flag will assume that an href like `/about` is the same as `about.html`.
-For more detailed information, check out the [Jekyll documentation on continuous integration](https://jekyllrb.com/docs/continuous-integration/).
+For more detailed information, check out the [Jekyll documentation on continuous integration](https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service).
