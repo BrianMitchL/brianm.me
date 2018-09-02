@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-08-31
+modified: 2018-09-01
 title: Gear
 ---
 
@@ -15,7 +15,7 @@ This is a running list of the gear that I use. Last updated <time datetime="{{ p
 {: .uk-heading-divider}
 
 ### BriBook Pro
-MacBook Pro (Retina, Mid 2012)
+[MacBook Pro (Retina, Mid 2012)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.7-15-mid-2012-retina-display-specs.html)
 
 * 2.7 GHz Intel Core i7 3820-QM
 * 16 GB 1600 MHz DDR3 RAM
@@ -39,8 +39,6 @@ Hackintosh (Late 2013)
 * WD Caviar Green 1 TB HDD
 * Corsair Obsidian 250D Mini ITX case
 * Logitech C615 webcam
-* Focusrite Scarlett 2i2 audio interface
-* 2 M-Audio BX5 studio monitors
 * 2 ViewSonic VX2270 Displays
 * WASD CODE V2B keyboard (Cherry MX Brown)
 * Logitech MX Master mouse
@@ -49,13 +47,13 @@ Hackintosh (Late 2013)
 macOS High Sierra and Windows 10 Education
 
 ### Work Mac
-MacBook Pro (13-inch, 2017, Four Thunderbolt 3 Ports)
+[MacBook Pro (13-inch, 2017, Four Thunderbolt 3 Ports)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-3.5-13-mid-2017-retina-display-touch-bar-specs.html)
 
 * 3.5 GHz Intel Core i7 7567U
 * 16 GB 2133 Mhz LPDDR3 RAM
 * Intel Iris Plus Graphics 650 1536 MB
 * Apple 256 GB SSD
-* Apple Magic Keyboard 2
+* Apple Magic Keyboard
 * Apple Magic Trackpad 2
 * Logitech MX Master mouse
 * Elgato Thunderbolt 3 dock
@@ -63,10 +61,11 @@ MacBook Pro (13-inch, 2017, Four Thunderbolt 3 Ports)
 macOS High Sierra
 
 ### Guantanmo
-Home Server (early 2014)
+Home Server (Early 2014)
 
 * 4.0 GHz Intel Core i5 4790K
 * 20 GB 1600 MHz DDR3 RAM
+* Gigabyte GA-Z87MX-D3H motherboard
 * Samsung 850 Pro 256 GB SSD
 
 CentOS 7.5
@@ -76,7 +75,7 @@ CentOS 7.5
 * Shairport Sync
 
 ### Saylut
-Synology Diskstation 1817+ NAS
+[Synology Diskstation 1817+ NAS](https://www.synology.com/en-us/products/DS1817+)
 
 * 2.4 GHz Intel Atom C2538
 * 8 GB RAM
@@ -88,7 +87,7 @@ Synology Diskstation 1817+ NAS
 DSM 6.2
 
 ### Mir
-Digital Ocean VPS
+[Digital Ocean VPS](https://m.do.co/c/414f452c2b6f)
 
 * 1 vCPUs
 * 1GB / 25GB Disk
@@ -122,6 +121,8 @@ Apple Watch Series 3 (GPS + Cellular) - 42mm, Sport, Silver
 
 * AirPods
 * Beats Solo<sup>3</sup> Wireless - Black
+* Focusrite Scarlett 2i2 audio interface
+* M-Audio BX5 studio monitors
 * Audio-Technica ATH-M50 studio headphones
 * Audio-Technica AT2020 microphone
 * Anker PowerCore 13000 battery
@@ -155,7 +156,7 @@ No longer boots, RIP :skull:
 Apple TV (3rd generation)
 
 ### BriBook
-MacBook (Late 2008, Aluminum Unibody)
+[MacBook (Late 2008, Aluminum Unibody)](https://everymac.com/systems/apple/macbook/specs/macbook-core-2-duo-2.4-aluminum-13-late-2008-unibody-specs.html)
 
 * 2.4 GHz Intel Core 2 Duo P8600
 * 4 GB 1066 MHz DDR3 RAM
