@@ -2,7 +2,7 @@
 layout: post
 title: How to Make a Jekyll Site/Blog
 slug: how-to-make-jekyll-site-blog
-modified: 2018-09-01 17:57 CDT
+modified: 2018-09-02 19:35 CDT
 description: A tutorial on making a Jekyll based site/blog.
 author: brian
 seo.type: BlogPosting
@@ -49,10 +49,10 @@ jekyll new path/to/directory
 To build your site, run:
 
 ```sh
-jekyll build
+bundle exec jekyll build
 # build the site
 
-jekyll serve
+bundle exec jekyll serve --livereload
 # build the site and serve it, auto-regenerating on changes
 # access from http://localhost:4000/
 ```
@@ -127,8 +127,8 @@ What's going on here? To begin, we using a data file to store authors. This can 
 ```yaml
 brian:
   name: Brian Mitchell
-  email: bman4789@gmail.com
-  twitter: _BrianMitchell_
+  bio: Web developer, emoji lover :wave:, and an avid fan of electronic music.
+  twitter: BrianMitchL
   gravatar: 89e0d7d3d9370c45517960c8a12f92b9
   web: https://brianm.me
 ```
@@ -271,16 +271,16 @@ If you are using GitHub Pages to host your site, you can create your own 404 err
 
 If this applies to you, all you need to do is create a `404.html` or `404.md` file in the project root and add `permalink: /404.html` to the front matter, and you're all set!
 
-### Sass/SCSS
+### SASS/SCSS
 
-To add support for Sass/SCSS (which you totally should :grin:), add the following to your `_config.yml` file:
+To add support for SASS/SCSS (which you totally should :grin:), add the following to your `_config.yml` file:
 
 ```yml
 sass:
   sass_dir: assets/css/_sass
   style: compressed
 
-gems:
+plugins:
   - jekyll-sass-converter
 ```
 
@@ -302,7 +302,7 @@ So really, why not? To add pagination, add the following to your `_config.yml` f
 paginate: 5
 paginate_path: /blog/page/:num/
 
-gems:
+plugins:
   - jekyll-paginate
 ```
 
@@ -320,7 +320,7 @@ highlighter: rouge
 kramdown:
   syntax_highlighter: rouge
   
-gems:
+plugins:
   - rouge
 ```
 
@@ -338,7 +338,7 @@ It is ridiculously easy to get pretty good SEO with Jekyll. The `jekyll-seo-tag`
 Below is what I have added to my `_config.yml` file:
 
 ```yaml
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   
@@ -348,7 +348,7 @@ description: Blog posts, projects, social media presence, and more!
 url: https://brianm.me
 
 twitter:
-  username: _BrianMitchell_
+  username: BrianMitchL
 
 facebook:
   app_id:
@@ -388,7 +388,7 @@ On any page or post, you may define the `seo.type` variable. This uses the [sche
 Be sure to add `jekyll-sitemap` to your `_config.yml`. 
 
 ```yaml
-gems:
+plugins:
   - jekyll-feed
 ```
 
@@ -399,7 +399,7 @@ From there all you need to do is add `{% raw %}{% feed_meta %}{% endraw %}` to t
 As usual with plugins, add `jemoji` to your `_config.yml` file.
 
 ```yaml
-gems:
+plugins:
   - jemoji
 ```
 
@@ -414,7 +414,7 @@ would produce: :+1: :heart: :smile:
 Add `jekyll-redirect-from` to your `_config.yml` file.
 
 ```yaml
-gems:
+plugins:
   - jekyll-redirect-from
 ```
 
@@ -450,7 +450,7 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.2
+  - 2.5.1
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer ./_site --disable-external --assume-extension
@@ -461,3 +461,5 @@ env:
 
 The `--disable-external` flag disables the checking on 3rd party links. Some websites will block scrapers like the one used in `html-proofer`, which will cause the check to fail, so this just skips em' all. The `--assume-extension` flag will assume that an href like `/about` is the same as `about.html`.
 For more detailed information, check out the [Jekyll documentation on continuous integration](https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service).
+
+Update 2018-09-02: I have refactored this to use a [Rakefile](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/Rakefile) and tell Travis CI to use that (see the [.travis.yml](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/.travis.yml)). I was having problems with html-proofer matching URLs with a hyphen in them, and needed to use the `url_swap` configuration, which I thought was easier to configure in a Rakefile.
