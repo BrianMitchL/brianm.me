@@ -2,10 +2,13 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.4.1
+  - 2.5.1
 script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --disable-external --assume-extension --file-ignore "/assets/"
+  - bundle exec rake test
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
