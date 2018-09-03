@@ -2,6 +2,8 @@
 layout: page
 modified: 2018-09-01
 title: Gear
+description: A list of the gear that I use.
+disable-description: true
 ---
 
 This is a running list of the gear that I use. Last updated <time datetime="{{ page.modified | date: date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>.

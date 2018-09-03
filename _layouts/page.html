@@ -4,7 +4,7 @@ layout: default
 {% include nav.html %}
 <main class="uk-container" aria-label="Content" role="main">
     <header>
-            <h1 class="uk-heading-primary">{{ page.title }}<small class="uk-align-right@m">{{ page.description }}</small></h1>
+            <h1 class="uk-heading-primary">{{ page.title }}{% if page.disable-description != true %}<small class="uk-align-right@m">{{ page.description }}</small>{% endif %}</h1>
     </header>
     {{ content }}
 </main>
