@@ -62,7 +62,7 @@ macOS High Sierra and Windows 10 Education
 
 macOS High Sierra
 
-### Guantanmo
+### Guantanamo
 Home Server (Early 2014)
 
 * 4.0 GHz Intel Core i5 4790K
@@ -76,7 +76,7 @@ CentOS 7.5
 * Tautulli
 * Shairport Sync
 
-### Saylut
+### Salyut
 [Synology Diskstation 1817+ NAS](https://www.synology.com/en-us/products/DS1817+)
 
 * 2.4 GHz Intel Atom C2538
