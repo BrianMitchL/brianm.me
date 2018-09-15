@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-09-03
+modified: 2018-09-15
 title: Gear
 description: A list of the gear that I use.
 disable-description: true
@@ -99,6 +99,7 @@ macOS High Sierra
 * BriTV, [Apple TV 4K](https://everymac.com/systems/apple/apple-tv/specs/apple-tv-4k-5th-generation-2017-specs.html)
 * Logitech Z623 speakers
 * ASUS RT-AC3200 router
+* Apple AirPort Express (2nd Generation)
 
 ## Legacy
 {: .uk-heading-divider}
