@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-09-01
+modified: 2018-09-15
 title: Software
 description: A list of software that I use.
 disable-description: true
@@ -105,7 +105,7 @@ A :star2: indicates an app I find especially notable.
 * [Duolingo](https://itunes.apple.com/app/duolingo-learn-spanish-french/id570060128)
 * [Fog of World](https://itunes.apple.com/us/app/fog-of-world/id505367096) (see my [review]({{ site.url }}{{ site.baseurl }}/posts/fog-of-world-2)) :star2:
 * [GPX Builder](https://itunes.apple.com/us/app/fog-of-world-assistant-gpx-builder/id938037644)
-* [Hacker News](https://itunes.apple.com/us/app/hacker-news-yc/id713733435)
+* [Simple Reader for Hacker News](https://itunes.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
 * [Cinema Time](https://itunes.apple.com/us/app/cinema-time/id1096436735)
 * [Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857) :star2:
 * [Plex](https://itunes.apple.com/us/app/plex/id383457673)
