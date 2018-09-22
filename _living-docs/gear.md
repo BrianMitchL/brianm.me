@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-09-15
+modified: 2018-09-22
 title: Gear
 description: A list of the gear that I use.
 disable-description: true
@@ -73,7 +73,7 @@ macOS High Sierra
 ## Mobile Devices
 {: .uk-heading-divider}
 
-* BriPhone 7, [iPhone 7](https://everymac.com/systems/apple/iphone/specs/apple-iphone-7-att-t-mobile-global-a1778-specs.html)
+* BriPhone XS Max, [iPhone XS Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
 * BriPad Pro, [iPad Pro (9.7-inch)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-pro-9-7-inch-1st-gen-wi-fi-only-specs.html)
 * Brapple Watch 3, [Apple Watch Series 3](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-3-gps-cellular-42mm-us-canada-a1861.html)
 
@@ -104,6 +104,7 @@ macOS High Sierra
 ## Legacy
 {: .uk-heading-divider}
 
+* BriPhone 7, [iPhone 7](https://everymac.com/systems/apple/iphone/specs/apple-iphone-7-att-t-mobile-global-a1778-specs.html)
 * Brapple Watch, [Apple Watch (1st generation)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-sport-aluminum-42mm.html)
 * BriPhone 6, [iPhone 6](https://everymac.com/systems/apple/iphone/specs/apple-iphone-6-a1549-4.7-inch-gsm-north-america-specs.html)
 * BriPhone 5, [iPhone 5](https://everymac.com/systems/apple/iphone/specs/apple-iphone-5-a1428-gsm-lte-aws-tmobile-north-america-specs.html)
