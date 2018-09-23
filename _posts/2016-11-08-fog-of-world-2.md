@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Fog of World 2
-slug: fog-of-world-2
 modified: 2016-11-12 12:29:50 CST
 description: A review of Fog of World 2.
 author: brian

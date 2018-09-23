@@ -1,7 +1,6 @@
 ---
 layout: post
 title: How to Make a Jekyll Site/Blog
-slug: how-to-make-jekyll-site-blog
 modified: 2018-09-02 19:35 CDT
 description: A tutorial on making a Jekyll based site/blog.
 author: brian

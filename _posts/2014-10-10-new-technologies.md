@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Learning New Technologies (MEAN Stack)
-slug: new-technologies
 modified: 2014-10-10
 description: Ideas on learning to develop for a new platform using Node.js.
 author: brian

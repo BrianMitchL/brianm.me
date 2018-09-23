@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Writing a Python Bot
-slug: writing-a-python-bot
 modified: 2015-05-08
 description: My experience with writing a Python based Twitter bot (for weather)
 author: brian

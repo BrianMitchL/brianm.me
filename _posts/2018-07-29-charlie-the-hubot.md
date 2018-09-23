@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Charlie the Hubot
-slug: charlie-the-hubot
 modified: 2018-07-29 15:44:35 CDT
 description: Meet Charlie, the hubot I helped build out at my work.
 author: brian
