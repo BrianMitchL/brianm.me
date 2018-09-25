@@ -38,7 +38,7 @@ Chimera bootloader, I had problems with it crashing after waking from sleep, and
 to Clover, stability improved, but would still crash every so often.
 
 Starting with macOS Sierra in the fall of 2017, it started to crash more often, nearly always related to graphics
-issues. For some reason, JetBrains IDEs would very frequently cause it to crash. It once crashed when hovering over an
+issues. For some reason, JetBrains IDEs would very frequently cause it to crash. It once crashed when hovering over a
 link with an emoji in Safari. Twice, it crashed while recording a podcast for [The Nexus](https://thenexus.tv), which
 resulted in total loss of the recording.
 
@@ -73,7 +73,7 @@ directory, KEXTs needed for booting were moved to being stored and injected from
 one configuration allowing to boot multiple volumes. I was able to boot the macOS Recovery partition!
 
 I've learned so many things about how lower levels of macOS and modern computers work. Building a Hackintosh was a
-fantastic was to get a high performance Mac for a lot less money. Now that I'm out of school, I appreciate stability
+fantastic way to get a high performance Mac for a lot less money. Now that I'm out of school, I appreciate stability
 and my time more than saving money and having a desire to keep tinkering and tweaking a custom-built computer. For
 stability, I started using my MacBook Pro for podcasting. For the last few years, the Hackintosh took a minute or more
 to boot up (probably a BIOS config issue, or some cache is lost and the OS runs extra checks on boot), so I would
