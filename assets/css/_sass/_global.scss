@@ -3,6 +3,17 @@ html {
   min-height: 100%;
 }
 
+html.dark {
+  background: #1F2023;
+
+  #site-footer {
+    color: rgba(255, 255, 255, .7);
+    & a:hover {
+      color: #ddd !important;
+    }
+  }
+}
+
 body {
   margin-bottom: 4em;
   margin-bottom: calc(4em + env(safe-area-inset-bottom));
