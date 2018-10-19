@@ -42,6 +42,13 @@ minutes!
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
+<blockquote class="twitter-tweet" data-dnt="true" data-lang="en">
+  <p lang="en" dir="ltr">Oh my god, I just booted up my iPhone 7 and it feels
+  so small!</p>&mdash; Brian Mitchell (@BrianMitchL)
+  <a href="https://twitter.com/BrianMitchL/status/1053421495232421888?ref_src=twsrc%5Etfw">October 19, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### The Size
 
 Because I came from the iPhone 7 (and before that, the iPhone 6), I've been
