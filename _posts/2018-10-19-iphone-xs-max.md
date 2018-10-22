@@ -192,7 +192,18 @@ JavaScript.
 
 The iPhone X<span class="small-caps">S</span> Max packs a 6.5" OLED at
 a resolution of 2688x1242 (458 ppi). Now because it is OLED disply, the pixel
-density is really only true for the green sub-pixels. LINK TO STEVE TROUGHTEN-SMITH TWEET
+density is really only true for the green sub-pixels.
+
+<blockquote class="twitter-tweet" data-dnt="true" data-lang="en">
+  <p lang="en" dir="ltr">So what does PenTile mean in practice on iPhone
+  X? Only green is &#39;true 3X&#39; You need exceedingly tiny text
+  to notice the effect, just about the limits of decent human vision.
+  (full-res test PNG: <a href="https://t.co/iuR0SQzXoz">https://t.co/iuR0SQzXoz</a>)
+  <a href="https://t.co/XFr2cawtV0">pic.twitter.com/XFr2cawtV0</a>
+  </p>&mdash; Steve Troughton-Smith (@stroughtonsmith)
+  <a href="https://twitter.com/stroughtonsmith/status/929193491644723201?ref_src=twsrc%5Etfw">November 11, 2017</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 OLED displays have a ridiculous contrast ratio because esch pixel provides it's
 own light. This means that if black is being displayed on the display, the pixels
@@ -200,7 +211,17 @@ aren't even lit. A tradeoff of this is that if you are switching from black
 to any other color, there is a small delay because the pixel needs to turn itself
 on. It is apparent when scrolling a list of items with a pure black theme.
 The edge content of an animating object seems to lag behind the rest.
-LINK TO MARC EDWARDS TWEET
+
+
+<blockquote class="twitter-tweet" data-dnt="true" data-lang="en">
+  <p lang="en" dir="ltr">What does OLED black smearing look like?
+  In this example, the dark grey square seems to be lagging behind the
+  light grey square, but they’re locked together. (Needs to be viewed
+  on an OLED screen.) <a href="https://t.co/WYFEXKAvsG">pic.twitter.com/WYFEXKAvsG</a>
+  </p>&mdash; Marc Edwards (@marcedwards)
+  <a href="https://twitter.com/marcedwards/status/1053519077958803456?ref_src=twsrc%5Etfw">October 20, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Tradeoffs aside, I love this display. The 6.5" allows for much larger video,
 seeing more content at once, or being able to increase the size of content
@@ -212,8 +233,20 @@ night when dark themes in apps kick in.
 The camera on the iPhone X<span class="small-caps">S</span> is the real
 flagship feature. It has a dual camera system, like the Plus sized iPhones
 from the past four years: a wide-angle ƒ/1.8 and a telephoto ƒ/2.4. New with
-the iPhone X<span class="small-caps">S</span> though is that the sensors
-are... FIND NEW SENSOR INFO
+the iPhone X<span class="small-caps">S</span> though is that the wide
+angle lens is now a 26mm equivalent focal length (compared to 28mm on the iPhone X),
+which makes photos a touch more "wide-angle."
+
+The sensors in the new iPhone also are about [30% larger](https://daringfireball.net/2018/09/the_iphones_xs),
+which reduces noise and increases brightness in dark areas. Both the wide-angle and telephoto sensors have a wider
+ISO range, which further helps to reduce grain. Photos can now be exposed
+at up to one second (1/3 second in earlier iPhones). For further hardware changes, I'd recommend looking at the [Halide](http://halide.cam/) team's [hardware breakdown](https://blog.halide.cam/iphone-xs-vs-iphone-x-the-camera-hardware-changes-496b40ceae3a).
+
+The Halide team also wrote a second post,
+[iPhone XS: Why It's A Whole New Camera](https://blog.halide.cam/iphone-xs-why-its-a-whole-new-camera-ddf9780d714c).
+I highly recommend giving it a read to learn about all of
+the software enhancements in the iPhone X<span class="small-caps">S</span>'s
+camera(s), it's truly impressive.
 
 #### Photos
 
@@ -231,9 +264,6 @@ combining the different exposures. This makes for incredible detail, almost in
 an unatural way (at least when comparign to traditional cameras), where areas
 that would normally be over- or under-exposed are now included at an exposure
 that matches that area's brightness into the final image.
-
-LINK TO THE HALIDE POST
-The camera now exposes photos at one step higher ISO with one step slower framerate.
 
 #### Video
 
