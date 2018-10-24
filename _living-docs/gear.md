@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-09-22
+modified: 2018-10-23
 title: Gear
 description: A list of the gear that I use.
 disable-description: true
@@ -22,7 +22,8 @@ This is a running list of the gear that I use. Last updated <time datetime="{{ p
 macOS High Sierra and Windows 10 Pro
 
 ### Terra
-Hackintosh (Late 2013)
+~~Hackintosh (Late 2013)~~ (RIP, no longer running macOS, see the 
+[blog post]({{ site.url }}{{ site.baseurl }}/posts/a-hackintosh-reflection))
 
 Specs:
 * 3.5 GHz Intel Core i7 4770K
@@ -31,7 +32,7 @@ Specs:
 * Gigabyte GA-Z97N-WIFI motherboard
 * Apple Broadcom BCM94360CD – 802.11 a/b/g/n/ac with Bluetooth 4.0
 
-macOS High Sierra and Windows 10 Education
+Windows 10 Education
 
 ### Guantanamo
 Home Server (Early 2014)
@@ -73,7 +74,7 @@ macOS High Sierra
 ## Mobile Devices
 {: .uk-heading-divider}
 
-* BriPhone XS Max, [iPhone XS Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
+* BriPhone XS Max, [iPhone X<span class="small-caps">S</span> Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
 * BriPad Pro, [iPad Pro (9.7-inch)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-pro-9-7-inch-1st-gen-wi-fi-only-specs.html)
 * Brapple Watch 3, [Apple Watch Series 3](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-3-gps-cellular-42mm-us-canada-a1861.html)
 
