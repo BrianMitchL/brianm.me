@@ -76,7 +76,7 @@ is _fast_. [Some reports](https://www.anandtech.com/show/13392/the-iphone-xs-xs-
 go as far as saying the A12 Bionic is 40% faster than the A11 Bionic.
 
 Here's a breakdown of Geekbench 4 results from the more recent iPhones and
-my current devices. I'm particularily impressed with how well the A12 Bionic
+my current devices. I'm particularly impressed with how well the A12 Bionic
 compares to my aging mid-2012 MacBook Pro and it's multi-core performance in
 general.
 
@@ -202,7 +202,7 @@ JavaScript.
 ### Display
 
 The iPhone X<span class="small-caps">S</span> Max packs a 6.5" OLED display at
-a resolution of 2688x1242 (458 ppi). Now because it is OLED disply, the pixel
+a resolution of 2688x1242 (458 ppi). Now because it is OLED display, the pixel
 density is really only true for the green sub-pixels.
 
 <blockquote class="twitter-tweet" data-dnt="true" data-lang="en">
@@ -218,7 +218,7 @@ density is really only true for the green sub-pixels.
 
 OLED displays have a ridiculous contrast ratio because each pixel provides its
 own light. This means that if black is being displayed on the display, the pixels
-aren't even lit. A tradeoff of this is that if you are switching from black
+aren't even lit. A trade-off of this is that if you are switching from black
 to any other color, there is a small delay because the pixel needs to turn itself
 on. It is apparent when scrolling a list of items with a pure black theme.
 The edge content of an animating object seems to lag behind the rest.
@@ -233,7 +233,7 @@ The edge content of an animating object seems to lag behind the rest.
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Tradeoffs aside, I love this display. The OLED display makes it a joy to use at
+Trade-offs aside, I love this display. The OLED display makes it a joy to use at
 night when dark themes in apps kick in.
 
 ### Camera
@@ -295,7 +295,7 @@ video at that quality uses a ton of disk space.
 ### Other
 
 The iPhone X<span class="small-caps">S</span> is now rated for IP68 water
-resistence (maximum depth of 2 meters up to 30 minutes). This is a nice improvement
+resistance (maximum depth of 2 meters up to 30 minutes). This is a nice improvement
 on something I hope to never have to test. Though, I did once bike with my iPhone 7
 in my bike mount while it was raining, because I knew it should be fine (it was).
 
@@ -317,7 +317,7 @@ sound when it starts charging, so it doesn't bother me at all.
 FaceID is great most of the time. I'm used to it now, but every so often I do wish
 I could unlock my phone without needing to point the phone towards my face. However,
 once the phone is unlocked I love how easy FaceID is. If I'm already using the phone, it
-authenticates me without requiring me to do antthing. My favorite use of this is with
+authenticates me without requiring me to do anything. My favorite use of this is with
 the 1Password extension for entering passwords on websites and apps. All I need to do
 is tap the suggestion in the QuickType area above the keyboard and it automatically
 verifies my face and enters the username and password. I hope FaceID gets faster over
