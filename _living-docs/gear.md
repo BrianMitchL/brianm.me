@@ -74,7 +74,7 @@ macOS High Sierra
 ## Mobile Devices
 {: .uk-heading-divider}
 
-* BriPhone XS Max, [iPhone X<span class="small-caps">S</span> Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
+* BriPhone XS Max, [iPhone XS Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
 * BriPad Pro, [iPad Pro (9.7-inch)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-pro-9-7-inch-1st-gen-wi-fi-only-specs.html)
 * Brapple Watch 3, [Apple Watch Series 3](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-3-gps-cellular-42mm-us-canada-a1861.html)
 
