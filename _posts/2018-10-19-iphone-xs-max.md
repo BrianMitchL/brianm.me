@@ -29,7 +29,7 @@ X<span class="small-caps">S</span> (and me keeping an every-other-year upgrade
 cycle) that still made me decide to upgrade to the iPhone
 X<span class="small-caps">S</span> Max.
 
-Now that I live within a ten minute walk on an Apple Store, I decided to pick
+Now that I live within a ten minute walk to an Apple Store, I decided to pick
 the phone up in store. This was a great decision, I was in and out in 15
 minutes!
 
@@ -67,7 +67,7 @@ and I can use the two-column layouts that are unique to iPads and iPhone Pluses
 
 ### Speed
 
-The A12 Bionic SoC packs a 64-bit, 7 nm processor (the definition of a 7mm
+The A12 Bionic SoC packs a 64-bit, 7 nm processor (the definition of a 7nm
 processor can vary widely, so take it with a grain of salt) with six cores: two
 performance cores and four high-efficiency cores. It also includes a new
 "8-core Neural Engine." Apple didn't market the chip as being all that much faster,
@@ -216,7 +216,7 @@ density is really only true for the green sub-pixels.
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-OLED displays have a ridiculous contrast ratio because each pixel provides it's
+OLED displays have a ridiculous contrast ratio because each pixel provides its
 own light. This means that if black is being displayed on the display, the pixels
 aren't even lit. A tradeoff of this is that if you are switching from black
 to any other color, there is a small delay because the pixel needs to turn itself
@@ -242,8 +242,8 @@ The camera on the iPhone X<span class="small-caps">S</span> is the real
 flagship feature. It has a dual camera system, like the Plus sized iPhones
 from the past four years: a wide-angle ƒ/1.8 and a telephoto ƒ/2.4. New with
 the iPhone X<span class="small-caps">S</span> is that the wide-angle lens
-is now has a 26mm equivalent focal length (compared to 28mm on the iPhone X),
-which means you can fit a touch more from a scene into the frame.
+now has a 26mm equivalent focal length (compared to 28mm on the iPhone X),
+which means you can fit a bit more from a scene into the frame.
 
 The sensors in the new iPhone also are about [30% larger](https://daringfireball.net/2018/09/the_iphones_xs),
 which reduces noise and increases brightness in dark areas. Both the wide-angle
@@ -255,7 +255,7 @@ I'd highly recommend looking at the
 [Halide](http://halide.cam/) team's [hardware breakdown](https://blog.halide.cam/iphone-xs-vs-iphone-x-the-camera-hardware-changes-496b40ceae3a)
 and more software focused [iPhone XS: Why It's A Whole New Camera](https://blog.halide.cam/iphone-xs-why-its-a-whole-new-camera-ddf9780d714c).
 Both posts go into great detail about the improvements in the iPhone
-X<span class="small-caps">S</span>'s camera(s), it's truly impressive.
+X<span class="small-caps">S</span>'s camera(s); it's truly impressive.
 
 #### Photo
 
@@ -267,11 +267,11 @@ I've taken, I'm quite impressed.
 What excites me most about the new cameras are the improved sensors combined
 with the new Smart HDR. Apple introduced HDR with the iPhone 4 back in 2010;
 It took a photo at normal, above, and below exposure. I think it has continued
-to work in mostly the same way until now. Smart HDR takes several more at different
-exposures, and uses the A12 Bionic's Neural Engine to stitch the photo back together,
+to work in mostly the same way until now. Smart HDR takes several more photos at different
+exposures, and uses the A12 Bionic's Neural Engine to stitch the final photo back together,
 combining the different exposures. This makes for incredible detail, almost in
 an unatural way (at least when comparing to traditional cameras), where areas
-that would normally be over- or under-exposed are now included at an exposure
+that would normally be over or under exposed are now included at an exposure
 that matches that area's brightness into the final image.
 
 #### Video
@@ -295,11 +295,11 @@ video at that quality uses a ton of disk space.
 ### Other
 
 The iPhone X<span class="small-caps">S</span> is now rated for IP68 water
-resistence (maximum depth of 2 meters up to 30 minutes). A nice imprevement
+resistence (maximum depth of 2 meters up to 30 minutes). This is a nice improvement
 on something I hope to never have to test. Though, I did once bike with my iPhone 7
 in my bike mount while it was raining, because I knew it should be fine (it was).
 
-The battery life in this iPhone is incredible! I really wasnt expecting such an
+The battery life in this iPhone is incredible! I really wasn't expecting such an
 improvement. One day I left work and my phone still had 86% battery left! I
 didn't charge it that night, and finally plugged it in right before bed the day
 after, at 1% left. I don't think I've ever gotten two full days out of a single
@@ -307,7 +307,7 @@ charge on any of my iPhones in the past.
 
 The physical form of the iPhone X<span class="small-caps">S</span> Max is nearly
 the same as the iPhone 8 Plus, but with a stainless steel band around the sides
-and the awesome edge-to-edge OLED display.
+and an awesome edge-to-edge OLED display.
 
 I picked up a Qi charger with my iPhone and use it to charge every night. It's a
 small thing, but it's nice to just rest the iPhone on my bedside table and it just
