@@ -53,21 +53,32 @@ minutes!
 ### The Size
 
 Because I came from the iPhone 7 (and before that, the iPhone 6), I've been
-using the 4.7" size for years. The Plus sized iPhones always seemed way too
+using the 4.7" size for four years. The Plus sized iPhones always seemed way too
 large, but something about this even _larger_ screen seemed enticing.
+
+Like the 4.7" displays over the earlier 4" and even 3.5" displays, it's impossible
+to reach the entire display. I find myself gripping the iPhone
+X<span class="small-caps">S</span> Max with two hands much more frequently than
+earlier iPhones. Part of this is for stability to make sure I don't drop the phone,
+but it's also so I can interact with everything that's on the screen. This is a
+worthy trade off because I can see so much more on the screen, media is larger,
+and I can use the two-column layouts that are unique to iPads and iPhone Pluses
+(iPhones Plus?).
 
 ### Speed
 
-The A12 Bionic SoC packs a 64-bit, 7 nm processor with six cores: two
+The A12 Bionic SoC packs a 64-bit, 7 nm processor (the definition of a 7mm
+processor can vary widely, so take it with a grain of salt) with six cores: two
 performance cores and four high-efficiency cores. It also includes a new
-"8-core Neural Engine." Apple didn't market the chip as being loads faster,
-especially with the A11 and A12 both sharing the "Bionic" name. This chip
+"8-core Neural Engine." Apple didn't market the chip as being all that much faster,
+especially with the A11 and A12 both sharing the "Bionic" name, but this chip
 is _fast_. [Some reports](https://www.anandtech.com/show/13392/the-iphone-xs-xs-max-review-unveiling-the-silicon-secrets)
 go as far as saying the A12 Bionic is 40% faster than the A11 Bionic.
 
 Here's a breakdown of Geekbench 4 results from the more recent iPhones and
 my current devices. I'm particularily impressed with how well the A12 Bionic
-to my (six year-old) MacBook Pro.
+compares to my aging mid-2012 MacBook Pro and it's multi-core performance in
+general.
 
 <div class="uk-overflow-auto">
 <table class="uk-table uk-table-small uk-table-middle uk-text-nowrap uk-table-divider">
@@ -172,8 +183,8 @@ to my (six year-old) MacBook Pro.
 </table>
 </div>
 
-The ARMv8.3 instruction set (the A12 is the first chip to support ARMv8.3)
-adds a new float-to-int instruction that handles
+The A12 Bionic is the first processor to support the ARMv8.3 instruction set
+which adds a new float-to-int instruction that handles
 number exceptions the same way that JavaScript does. This makes the
 iPhone X<span class="small-caps">S</span> one of the fastest devices to run
 JavaScript.
@@ -190,7 +201,7 @@ JavaScript.
 
 ### Display
 
-The iPhone X<span class="small-caps">S</span> Max packs a 6.5" OLED at
+The iPhone X<span class="small-caps">S</span> Max packs a 6.5" OLED display at
 a resolution of 2688x1242 (458 ppi). Now because it is OLED disply, the pixel
 density is really only true for the green sub-pixels.
 
@@ -205,13 +216,12 @@ density is really only true for the green sub-pixels.
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-OLED displays have a ridiculous contrast ratio because esch pixel provides it's
+OLED displays have a ridiculous contrast ratio because each pixel provides it's
 own light. This means that if black is being displayed on the display, the pixels
 aren't even lit. A tradeoff of this is that if you are switching from black
 to any other color, there is a small delay because the pixel needs to turn itself
 on. It is apparent when scrolling a list of items with a pure black theme.
 The edge content of an animating object seems to lag behind the rest.
-
 
 <blockquote class="twitter-tweet" data-dnt="true" data-lang="en">
   <p lang="en" dir="ltr">What does OLED black smearing look like?
@@ -223,9 +233,7 @@ The edge content of an animating object seems to lag behind the rest.
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Tradeoffs aside, I love this display. The 6.5" allows for much larger video,
-seeing more content at once, or being able to increase the size of content
-in order to see it more clearly. The OLED display makes it a joy to use at
+Tradeoffs aside, I love this display. The OLED display makes it a joy to use at
 night when dark themes in apps kick in.
 
 ### Camera
@@ -233,22 +241,23 @@ night when dark themes in apps kick in.
 The camera on the iPhone X<span class="small-caps">S</span> is the real
 flagship feature. It has a dual camera system, like the Plus sized iPhones
 from the past four years: a wide-angle ƒ/1.8 and a telephoto ƒ/2.4. New with
-the iPhone X<span class="small-caps">S</span> though is that the wide
-angle lens is now a 26mm equivalent focal length (compared to 28mm on the iPhone X),
-which makes photos a touch more "wide-angle."
+the iPhone X<span class="small-caps">S</span> is that the wide-angle lens
+is now has a 26mm equivalent focal length (compared to 28mm on the iPhone X),
+which means you can fit a touch more from a scene into the frame.
 
 The sensors in the new iPhone also are about [30% larger](https://daringfireball.net/2018/09/the_iphones_xs),
-which reduces noise and increases brightness in dark areas. Both the wide-angle and telephoto sensors have a wider
-ISO range, which further helps to reduce grain. Photos can now be exposed
-at up to one second (1/3 second in earlier iPhones). For further hardware changes, I'd recommend looking at the [Halide](http://halide.cam/) team's [hardware breakdown](https://blog.halide.cam/iphone-xs-vs-iphone-x-the-camera-hardware-changes-496b40ceae3a).
+which reduces noise and increases brightness in dark areas. Both the wide-angle
+and telephoto sensors have a wider ISO range, which further helps to reduce
+grain. Photos can now be exposed at up to one second (1/3 second in earlier
+iPhones).
 
-The Halide team also wrote a second post,
-[iPhone XS: Why It's A Whole New Camera](https://blog.halide.cam/iphone-xs-why-its-a-whole-new-camera-ddf9780d714c).
-I highly recommend giving it a read to learn about all of
-the software enhancements in the iPhone X<span class="small-caps">S</span>'s
-camera(s), it's truly impressive.
+I'd highly recommend looking at the
+[Halide](http://halide.cam/) team's [hardware breakdown](https://blog.halide.cam/iphone-xs-vs-iphone-x-the-camera-hardware-changes-496b40ceae3a)
+and more software focused [iPhone XS: Why It's A Whole New Camera](https://blog.halide.cam/iphone-xs-why-its-a-whole-new-camera-ddf9780d714c).
+Both posts go into great detail about the improvements in the iPhone
+X<span class="small-caps">S</span>'s camera(s), it's truly impressive.
 
-#### Photos
+#### Photo
 
 Apple introduced Portrait mode with the iPhone X last year, but this is
 a first for me. It works the same way as the X, but you can now adjust the
@@ -257,15 +266,22 @@ I've taken, I'm quite impressed.
 
 What excites me most about the new cameras are the improved sensors combined
 with the new Smart HDR. Apple introduced HDR with the iPhone 4 back in 2010;
-It took a photo at normal, above, and below exposure. I think it's continued
-to work in most the same way until now. Smart HDR takes several more at different
+It took a photo at normal, above, and below exposure. I think it has continued
+to work in mostly the same way until now. Smart HDR takes several more at different
 exposures, and uses the A12 Bionic's Neural Engine to stitch the photo back together,
 combining the different exposures. This makes for incredible detail, almost in
-an unatural way (at least when comparign to traditional cameras), where areas
+an unatural way (at least when comparing to traditional cameras), where areas
 that would normally be over- or under-exposed are now included at an exposure
 that matches that area's brightness into the final image.
 
 #### Video
+
+The camera on the iPhone X<span class="small-caps">S</span> will step down
+the frame rate of a 30fps video to 24fps if there isn't enough brightness in
+the scene. This will increase the brightness and detail in video recorded in
+low-light scenes.
+
+New with this iPhone, video is recorded with stereo microphones! :tada:
 
 New last year with the iPhone 8 and X (but new to me), video can be recorded at
 at 60 fps when using the HEVC codec. Good thing I got the 256 GB iPhone, because
@@ -290,8 +306,8 @@ after, at 1% left. I don't think I've ever gotten two full days out of a single
 charge on any of my iPhones in the past.
 
 The physical form of the iPhone X<span class="small-caps">S</span> Max is nearly
-the same as the iPhone  Plus, but with a stainless steel band around the sides
-and the awesome edge-to-edge display.
+the same as the iPhone 8 Plus, but with a stainless steel band around the sides
+and the awesome edge-to-edge OLED display.
 
 I picked up a Qi charger with my iPhone and use it to charge every night. It's a
 small thing, but it's nice to just rest the iPhone on my bedside table and it just
@@ -304,7 +320,13 @@ once the phone is unlocked I love how easy FaceID is. If I'm already using the p
 authenticates me without requiring me to do antthing. My favorite use of this is with
 the 1Password extension for entering passwords on websites and apps. All I need to do
 is tap the suggestion in the QuickType area above the keyboard and it automatically
-verifies my face and enters the username and password.
+verifies my face and enters the username and password. I hope FaceID gets faster over
+time, I feel like I always have to wait for the animation to finish when authenticating
+myself in apps.
+
+The iPhone X<span class="small-caps">S</span> now also has 4 GB of RAM, which will
+allow for better multi-tasking and more advanced applications that consume lots of
+memory.
 
 ## Conclusion
 
@@ -313,5 +335,6 @@ In short, :thumbsup: :thumbsup:!
 I'm happy with my decision to try the larger sized model of iPhone. I have to be
 more careful when holding it to minimize the risk of dropping it due to the
 larger size and weight, but it's important to protect your phone either way, right?
-
-I look forward to continue to take even better photos with the much improved camera(s).
+While I never really thought my iPhone 7 was very slow, the six-core A12 Bionic is
+certainly much faster. I look forward to continue to take even better photos with
+the much improved camera(s).
