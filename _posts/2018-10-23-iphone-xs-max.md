@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iPhone X<span class="small-caps">S</span> Max
-modified: 2018-10-19 00:49:47 CDT
+modified: 2018-10-23 23:23:58 CDT
 description: A review of the iPhone XS Max after upgrading from the iPhone 7.
 author: brian
 seo.type: BlogPosting
