@@ -125,3 +125,7 @@ main.uk-container {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
+
+.small-caps {
+  font-variant-caps: all-small-caps;
+}
