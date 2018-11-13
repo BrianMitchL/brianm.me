@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-10-23
+modified: 2018-11-12
 title: Gear
 description: A list of the gear that I use.
 disable-description: true
@@ -35,7 +35,7 @@ Specs:
 Windows 10 Education
 
 ### Guantanamo
-Home Server (Early 2014)
+Home Server (Early 2015)
 
 CentOS 7.5
 
