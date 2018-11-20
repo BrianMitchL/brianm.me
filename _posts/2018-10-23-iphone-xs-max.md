@@ -287,8 +287,10 @@ New last year with the iPhone 8 and X (but new to me), video can be recorded at
 at 60 fps when using the HEVC codec. Good thing I got the 256 GB iPhone, because
 video at that quality uses a ton of disk space.
 
-<figure>
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jeNbrPEMQgc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<figure class="video-container">
+  <div>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jeNbrPEMQgc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div
   <figcaption>Video example. This looks even better in 4K at 60fps with the raw 217.2 MB HEVC file.</figcaption>
 </figure>
 
