@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-11-12
+modified: 2018-11-27
 title: Gear
 description: A list of the gear that I use.
 disable-description: true
@@ -16,10 +16,10 @@ This is a running list of the gear that I use. Last updated <time datetime="{{ p
 ## Computers
 {: .uk-heading-divider}
 
-### BriBook Pro
-[MacBook Pro (Retina, Mid 2012)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.7-15-mid-2012-retina-display-specs.html)
+### Skylab
+[MacBook Pro (13-inch, 2018, Four Thunderbolt 3 Ports)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.7-13-mid-2018-true-tone-display-touch-bar-specs.html)
 
-macOS High Sierra and Windows 10 Pro
+macOS Mojave
 
 ### Terra
 ~~Hackintosh (Late 2013)~~ (RIP, no longer running macOS, see the 
@@ -63,7 +63,7 @@ CentOS 7.5
 ### Work Mac
 [MacBook Pro (13-inch, 2017, Four Thunderbolt 3 Ports)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-3.5-13-mid-2017-retina-display-touch-bar-specs.html)
 
-macOS High Sierra
+macOS Mojave
 
 * Apple Magic Keyboard
 * Apple Magic Trackpad 2
@@ -82,7 +82,7 @@ macOS High Sierra
 {: .uk-heading-divider}
 
 * AirPods
-* Beats Solo<sup>3</sup> Wireless - Black
+* Beats Solo<sup>3</sup> Wireless
 * Focusrite Scarlett 2i2 audio interface
 * M-Audio BX5 studio monitors
 * Audio-Technica ATH-M50 studio headphones
@@ -90,8 +90,10 @@ macOS High Sierra
 * Anker PowerCore 13000 battery
 * WASD CODE V2B keyboard (Cherry MX Brown)
 * Logitech MX Master mouse
+* Apple Magic Mouse
 * Apple Magic Trackpad
 * Apple Smart Battery Case - (PRODUCT)<sup>RED</sup>
+* Macally Aluminum Laptop Stand
 
 ## Media
 {: .uk-heading-divider}
@@ -105,15 +107,16 @@ macOS High Sierra
 ## Legacy
 {: .uk-heading-divider}
 
+* BriBook Pro, [MacBook Pro (Retina, Mid 2012)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.7-15-mid-2012-retina-display-specs.html)
 * BriPhone 7, [iPhone 7](https://everymac.com/systems/apple/iphone/specs/apple-iphone-7-att-t-mobile-global-a1778-specs.html)
 * Brapple Watch, [Apple Watch (1st generation)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-sport-aluminum-42mm.html)
 * BriPhone 6, [iPhone 6](https://everymac.com/systems/apple/iphone/specs/apple-iphone-6-a1549-4.7-inch-gsm-north-america-specs.html)
-* BriPhone 5, [iPhone 5](https://everymac.com/systems/apple/iphone/specs/apple-iphone-5-a1428-gsm-lte-aws-tmobile-north-america-specs.html)
-* BriPhone, [iPhone 4](https://everymac.com/systems/apple/iphone/specs/apple-iphone-4-specs.html), No longer boots, RIP :skull:
 * BriTV 3, [Apple TV (3rd generation)](https://everymac.com/systems/apple/apple-tv/specs/apple-tv-3rd-generation-early-2012-specs.html)
+* BriPhone 5, [iPhone 5](https://everymac.com/systems/apple/iphone/specs/apple-iphone-5-a1428-gsm-lte-aws-tmobile-north-america-specs.html)
+* BriBook, [MacBook (Late 2008, Aluminum Unibody)](https://everymac.com/systems/apple/macbook/specs/macbook-core-2-duo-2.4-aluminum-13-late-2008-unibody-specs.html)
+* BriPhone, [iPhone 4](https://everymac.com/systems/apple/iphone/specs/apple-iphone-4-specs.html), No longer boots, RIP :skull:
 * BriPod Shuffle, [iPod Shuffle (4th generation)](https://everymac.com/systems/apple/ipod/specs/ipod-4th-generation-shuffle-4g-late-2012-specs.html)
 * BriPod Nano, [iPod Nano (5th generation)](https://everymac.com/systems/apple/ipod/specs/ipod-5th-generation-5g-nano-specs.html)
-* BriBook, [MacBook (Late 2008, Aluminum Unibody)](https://everymac.com/systems/apple/macbook/specs/macbook-core-2-duo-2.4-aluminum-13-late-2008-unibody-specs.html)
 * BriPod Nano, [iPod Nano (3rd generation)](https://everymac.com/systems/apple/ipod/specs/ipod-3rd-generation-fat-nano-specs.html)
 
 ## Transportation
