@@ -17,10 +17,14 @@ description: Personal Projects
     <div class="uk-card-body">
         {% if project.link %}<h4><a href="{{ project.link.href }}" target="_blank">{{ project.link.title }}</a></h4>{% endif %}
         <p>{{ project.description }}</p>
-        {% if project.github %}<a href="https://github.com/{{ project.github }}" target="_blank"><span
-            uk-icon="icon: github"></span> {{ project.name }} on GitHub</a>{% endif %}
-        {% if project.gitlab %}<a href="https://gitlab.com/{{ project.gitlab }}" target="_blank"><span
-            uk-icon="icon: gitlab"></span> {{ project.name }} on GitLab</a>{% endif %}
+        {% if project.github %}
+            <a href="https://github.com/{{ project.github }}" target="_blank">
+            {% include icon.html icon="github" %} {{ project.name }} on GitHub</a>
+        {% endif %}
+        {% if project.gitlab %}
+            <a href="https://gitlab.com/{{ project.gitlab }}" target="_blank">
+            {% include icon.html icon="gitlab" %} {{ project.name }} on GitLab</a>
+        {% endif %}
     </div>
 </div>
 {% endfor %}

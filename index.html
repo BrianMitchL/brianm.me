@@ -1,6 +1,5 @@
 ---
 layout: default
-fontawesome: true
 redirect_from: "/contact"
 html_class: dark
 ---
@@ -41,45 +40,78 @@ html_class: dark
                 </p>
             </div>
             <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
-                <div class="uk-flex uk-flex-wrap uk-flex-center uk-light social-icons">
+                <div class="uk-flex uk-flex-wrap uk-flex-center uk-light">
                     <a href="https://github.com/BrianMitchL" title="Brian Mitchell on Github"
-                       class="uk-icon-button icon-large icon-github" uk-icon="icon: github; ratio: 2.5"></a>
+                       class="uk-icon-button uk-icon icon-back-large icon-github">
+                        {% include icons/github.svg %}
+                    </a>
                     <a href="https://www.linkedin.com/in/brianscottmitchell" title="Brian Mitchell on LinkedIn"
-                       class="uk-icon-button icon-large icon-linkedin" uk-icon="icon: linkedin; ratio: 2.5"></a>
+                       class="uk-icon-button uk-icon icon-back-large icon-linkedin">
+                        {% include icons/linkedin.svg %}
+                    </a>
                     <a href="https://twitter.com/BrianMitchL" title="@BrianMitchL on Twitter"
-                       class="uk-icon-button icon-large icon-twitter" uk-icon="icon: twitter; ratio: 2.5"></a>
+                       class="uk-icon-button uk-icon icon-back-large icon-twitter">
+                       {% include icons/twitter.svg %}
+                    </a>
                 </div>
             </div>
             <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
-                <div class="uk-flex uk-flex-wrap uk-flex-center uk-light social-icons">
-                    <a href="https://facebook.com/BrianMitchL" title="Brian Mitchell on Facebook"
-                       class="uk-icon-button icon-facebook" uk-icon="icon: facebook; ratio: 1.5"></a>
-                    <a href="https://www.flickr.com/people/43812551@N03/" title="Brian Mitchell on Flickr"
-                       class="uk-icon-button icon-flickr" uk-icon="icon: flickr; ratio: 1.5"></a>
-                    <a href="https://gitlab.com/u/BrianMitchL" title="Brian Mitchell on GitLab"
-                       class="uk-icon-button icon-gitlab"><i class="fab fa-gitlab"></i></a>
-                    <a href="https://www.instagram.com/BrianMitchL" title="Brian Mitchell on Instagram"
-                       class="uk-icon-button icon-instagram" uk-icon="icon: instagram; ratio: 1.5"></a>
-                    <a href="http://www.last.fm/user/bman4789" title="Brian Mitchell on Last.fm"
-                       class="uk-icon-button icon-lastfm"><i class="fab fa-lastfm"></i></a>
-                    <a href="https://mastodon.cloud/@BrianMitchL" title="Brian Mitchell on Mastodon"
-                       class="uk-icon-button icon-mastodon"><i class="fab fa-mastodon"></i></a>
-                    <a href="https://www.mixcloud.com/BrianMitchL/" title="Brian Mitchell on Mixcloud"
-                       class="uk-icon-button icon-mixcloud"><i class="fab fa-mixcloud"></i></a>
-                    <a href="/feed.xml" title="Atom Feed" class="uk-icon-button icon-rss"
-                       uk-icon="icon: rss; ratio: 1.5"></a>
-                    <a href="https://www.snapchat.com/add/bman4789" title="Brian Mitchell on Snapchat"
-                       class="uk-icon-button icon-snapchat-ghost"><i class="fab fa-snapchat-ghost"></i></a>
-                    <a href="https://soundcloud.com/bman4789" title="Brian Mitchell on SoundCloud"
-                       class="uk-icon-button icon-soundcloud" uk-icon="icon: soundcloud; ratio: 1.5"></a>
-                    <a href="https://open.spotify.com/user/1237277662" title="Brian Mitchell on Spotify"
-                       class="uk-icon-button icon-spotify"><i class="fab fa-spotify"></i></a>
-                    <a href="https://www.strava.com/athletes/brianmitchl" title="Brian Mitchell on Strava"
-                       class="uk-icon-button icon-strava"><i class="fab fa-strava"></i></a>
-                    <a href="https://steamcommunity.com/id/MagicBriBri" title="Brian Mitchell on Steam"
-                       class="uk-icon-button icon-steam"><i class="fab fa-steam"></i></a>
-                    <a href="https://www.youtube.com/user/bman112234" title="Brian Mitchell on YouTube"
-                       class="uk-icon-button icon-youtube" uk-icon="icon: youtube; ratio: 1.5"></a>
+                <div class="uk-flex uk-flex-wrap uk-flex-center uk-light">
+                    <a href="https://facebook.com/BrianMitchL" title="Facebook"
+                       class="uk-icon-button uk-icon icon-back icon-facebook">
+                        {% include icons/facebook.svg %}
+                    </a>
+                    <a href="https://www.flickr.com/people/43812551@N03/" title="Flickr"
+                       class="uk-icon-button uk-icon icon-back icon-flickr">
+                        {% include icons/flickr.svg %}
+                    </a>
+                    <a href="https://gitlab.com/u/BrianMitchL" title="GitLab"
+                       class="uk-icon-button uk-icon icon-back icon-gitlab">
+                        {% include icons/gitlab.svg %}
+                    </a>
+                    <a href="https://www.instagram.com/BrianMitchL" title="Instagram"
+                       class="uk-icon-button uk-icon icon-back icon-instagram">
+                        {% include icons/instagram.svg %}
+                    </a>
+                    <a href="http://www.last.fm/user/bman4789" title="Last.fm"
+                       class="uk-icon-button uk-icon icon-back icon-lastfm">
+                        {% include icons/last-dot-fm.svg %}
+                    </a>
+                    <a href="https://mastodon.cloud/@BrianMitchL" title="Mastodon"
+                       class="uk-icon-button uk-icon icon-back icon-mastodon">
+                        {% include icons/mastodon.svg %}
+                    </a>
+                    <a href="https://www.mixcloud.com/BrianMitchL/" title="Mixcloud"
+                       class="uk-icon-button uk-icon icon-back icon-mixcloud">
+                        {% include icons/mixcloud.svg %}
+                    </a>
+                    <a href="/feed.xml" title="Atom Feed" class="uk-icon-button uk-icon icon-back icon-rss">
+                        {% include icons/rss.svg %}
+                    </a>
+                    <a href="https://www.snapchat.com/add/bman4789" title="Snapchat"
+                       class="uk-icon-button uk-icon icon-back icon-snapchat">
+                        {% include icons/snapchat.svg %}
+                    </a>
+                    <a href="https://soundcloud.com/bman4789" title="SoundCloud"
+                       class="uk-icon-button uk-icon icon-back icon-soundcloud">
+                        {% include icons/soundcloud.svg %}
+                    </a>
+                    <a href="https://open.spotify.com/user/1237277662" title="Spotify"
+                       class="uk-icon-button uk-icon icon-back icon-spotify">
+                        {% include icons/spotify.svg %}
+                    </a>
+                    <a href="https://www.strava.com/athletes/brianmitchl" title="Strava"
+                       class="uk-icon-button uk-icon icon-back icon-strava">
+                        {% include icons/strava.svg %}
+                    </a>
+                    <a href="https://steamcommunity.com/id/MagicBriBri" title="Steam"
+                       class="uk-icon-button uk-icon icon-back icon-steam">
+                        {% include icons/steam.svg %}
+                    </a>
+                    <a href="https://www.youtube.com/user/bman112234" title="YouTube"
+                       class="uk-icon-button uk-icon icon-back icon-youtube">
+                        {% include icons/youtube.svg %}
+                    </a>
                 </div>
             </div>
         </div>
@@ -89,8 +121,11 @@ html_class: dark
             development related topics.</p>
     </section>
 
-    <div class="uk-heading-line uk-margin-top uk-margin-bottom"
-        aria-hidden="true"><span class="uk-light" uk-icon="icon: link; ratio: 2"></span></div>
+    <div class="uk-heading-line uk-margin-top uk-margin-bottom" aria-hidden="true">
+        <span class="uk-light icon-2">
+            {% include icons/link.svg %}
+        </span>
+    </div>
 
     <section>
         <h2 class="uk-light">Affiliate Links</h2>

@@ -1,0 +1,105 @@
+@mixin icon($multiplier: 1, $background: false) {
+  $size: $multiplier * 1.5rem;
+
+  & > svg {
+    height: $size * 0.8;
+    width: $size * 0.8;
+  }
+
+  @if $background {
+    width: $size * 1.375;
+    height: $size * 1.375;
+    margin: $size * 0.1;
+  }
+}
+
+.icon {
+  @include icon();
+}
+
+.icon-2 {
+  @include icon(2);
+}
+
+.icon-back {
+  @include icon(1.5, true);
+}
+
+.icon-back-large {
+  @include icon(2.5, true);
+}
+
+.icon-back,
+.icon-back-large {
+  &:hover,
+  &:active {
+    &.icon-facebook {
+      background-color: #3B5998;
+    }
+
+    &.icon-flickr {
+      background-color: #0063DC;
+    }
+
+    &.icon-github {
+      background-color: #181717;
+    }
+
+    &.icon-gitlab {
+      background-color: #E24329;
+    }
+
+    &.icon-instagram {
+      background-color: #E4405F;
+    }
+
+    &.icon-lastfm {
+      background-color: #D51007;
+    }
+
+    &.icon-linkedin {
+      background-color: #0077B5;
+    }
+
+    &.icon-mastodon {
+      background-color: #3088D4;
+    }
+
+    &.icon-mixcloud {
+      background-color: #314359;
+    }
+
+    &.icon-snapchat {
+      background-color: #FFFC00;
+      fill: #000000;
+    }
+
+    &.icon-soundcloud {
+      background-color: #FF3300;
+    }
+
+    &.icon-spotify {
+      background-color: #1ED760;
+    }
+
+    &.icon-rss {
+      background-color: #FFA500;
+    }
+
+    &.icon-steam {
+      background-color: #000000;
+    }
+
+    &.icon-strava {
+      background-color: #FC4C02;
+    }
+
+    &.icon-twitter {
+      background-color: #1DA1F2;
+    }
+
+    &.icon-youtube {
+      background-color: #FF0000;
+    }
+  }
+}

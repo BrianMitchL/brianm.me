@@ -4,7 +4,7 @@
         var anchor = document.createElement("a");
         anchor.className = "header-link";
         anchor.href = "#" + id;
-        anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><span uk-icon=\"link\"></span>";
+        anchor.innerHTML = '<span class="sr-only">Permalink</span>{%- include icon.html icon="link" -%}';
         anchor.title = "Permalink";
         return anchor;
     };

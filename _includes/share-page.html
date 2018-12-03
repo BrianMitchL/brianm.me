@@ -1,11 +1,11 @@
 <section class="share-page uk-margin-bottom" uk-margin>
     <a class="uk-button uk-button-default"
        href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.baseurl }}"
-       target="_blank">Share on Facebook <span uk-icon="facebook"></span></a>
+       target="_blank">Share on Facebook {% include icon.html icon="facebook" %}</a>
     <a class="uk-button uk-button-default"
        href="https://twitter.com/intent/tweet?text={{ page.title | escape | replace:' ','%20' }}&amp;url={{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.baseurl }}&amp;via={{ site.twitter.username }}"
-       target="_blank">Share on Twitter <span uk-icon="twitter"></span></a>
+       target="_blank">Share on Twitter {% include icon.html icon="twitter" %}</a>
     <a class="uk-button uk-button-default"
        href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ page.url | replace:'index.html','' | prepend: site.url | prepend: site.baseurl }}&amp;title={{ page.title | escape | replace:' ','%20' }}&amp;source=Brian%20Mitchell%27s%20Blog"
-       target="_blank">Share on LinkedIn <span uk-icon="linkedin"></span></a>
+       target="_blank">Share on LinkedIn {% include icon.html icon="linkedin" %}</a>
 </section>

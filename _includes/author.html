@@ -8,9 +8,12 @@
         <address class="uk-width-expand">
             <h4 class="uk-comment-title uk-margin-remove" itemprop="author">{{ author.name }}</h4>
             <div class="uk-comment-meta">{{ author.bio }}</div>
-            <div class="uk-comment-meta"><span uk-icon="twitter" style="color:#55ACEE;" aria-hidden="true"></span> <a
-                    href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">@{{
-                author.twitter }}</a></div>
+            <div class="uk-comment-meta">
+                {% include icon.html icon="twitter" color="#1DA1F2" %}
+                <a href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">
+                    @{{ author.twitter }}
+                </a>
+            </div>
             <div class="uk-comment-meta"><a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a></div>
         </address>
     </header>

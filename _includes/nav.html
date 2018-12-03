@@ -1,18 +1,17 @@
-{% if page.link %}
-    {% assign url = page.link %}
-{% else %}
-    {% assign url = page.url|remove:'/index.html' %}
-{% endif %}
-
+{%- if page.link -%}
+    {%- assign url = page.link -%}
+{%- else -%}
+    {%- assign url = page.url|remove:'/index.html' -%}
+{%- endif -%}
 <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left">
         <a href="/" class="uk-navbar-item uk-logo">Brian Mitchell</a>
         <ul class="uk-navbar-nav uk-visible@s">
-            {% for link in site.navigation %}
+            {%- for link in site.navigation -%}
                 <li {% if url == link.url %}class="uk-active"{% endif %}>
                     <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
                 </li>
-            {% endfor %}
+            {%- endfor -%}
         </ul>
     </div>
     <div class="uk-navbar-right uk-hidden@s">
@@ -29,11 +28,11 @@
             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                 <li><a href="/" title="Home">Home</a></li>
                 <li class="uk-nav-divider"></li>
-                {% for link in site.navigation %}
+                {%- for link in site.navigation -%}
                 <li {% if url== link.url %}class="uk-active" {% endif %}>
                     <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
                 </li>
-                {% endfor %}
+                {%- endfor -%}
             </ul>
         </div>
     </div>

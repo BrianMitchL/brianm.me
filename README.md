@@ -8,8 +8,12 @@ Install:
 ```sh
 gem install bundler
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 ## Attributions
 
-This site uses [uikit](http://getuikit.com) and [fontawesome](http://fontawesome.io).
+This site uses [UIkit](http://getuikit.com), [Feather Icons](https://feathericons.com), and
+[Simple Icons](https://simpleicons.org).
+ 
+Feather Icons are licensed with the MIT license, icons from there include the license message.
+Simple Icons are licensed with the CC0 1.0 Universal, so no extra information is included with the icons.
