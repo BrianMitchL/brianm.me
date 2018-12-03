@@ -6,12 +6,12 @@ html_class: dark
 
 <nav class="uk-container uk-text-center">
     <ul class="uk-list">
-        {% assign url = page.url|remove:'/index.html' %}
-        {% for link in site.navigation %}
+        {%- assign url = page.url|remove:'/index.html' -%}
+        {%- for link in site.navigation -%}
         <li class="uk-display-inline-block uk-margin-small uk-margin-small-left uk-margin-small-right uk-light">
             <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
         </li>
-        {% endfor %}
+        {%- endfor -%}
     </ul>
 </nav>
 <main class="uk-container uk-text-center" role="main">
@@ -22,30 +22,30 @@ html_class: dark
             </div>
             <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
                 <h1 class="uk-light">Hi, I'm Brian! 👋</h1>
-                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Developer">👨🏻‍💻</span>
-                    at <a
-                            href="https://twitter.com/CHRobinsonInc" title="C.H. Robinson on Twitter">@CHRobinsonInc</a>.
+                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Software Engineer" aria-label="Software Engineer">👨🏻‍💻</span>
+                    at <a href="https://twitter.com/CHRobinsonInc" title="C.H. Robinson on Twitter">@CHRobinsonInc</a>.
                 </p>
-                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Podcaster">🎙</span> at <a
+                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Podcaster" aria-label="Podcaster">🎙</span> at <a
                         href="https://twitter.com/TheNexusTV" title="The Nexus TV on Twitter">@TheNexusTV</a>.</p>
-                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Graduate">👨🏻‍🎓</span> of
+                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Graduate" aria-label="Graduate">👨🏻‍🎓</span> of
                     <a
                             href="https://twitter.com/UMNMorris"
                             title="The University of Minnesota Morris on Twitter">@UMNMorris</a>.</p>
-                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Bots">🤖</span>: <a
+                <p class="uk-light bio"><span class="emoji-wrapper emoji-color-reset" title="Bots" aria-label="Twitter bots">🤖</span>: <a
                         href="https://twitter.com/MorrisMNWeather"
                         title="@MorrisMNWeather on Twitter">@MorrisMNWeather</a>
                     & <a href="https://twitter.com/WeatherByBrian"
                          title="@WeatherByBrian on Twitter">@WeatherByBrian</a>
                 </p>
             </div>
+            <h2 class="uk-width-1-1 uk-light">Where to Find Me</h2>
             <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
                 <div class="uk-flex uk-flex-wrap uk-flex-center uk-light">
-                    <a href="https://github.com/BrianMitchL" title="Brian Mitchell on Github"
+                    <a href="https://github.com/BrianMitchL" title="Github"
                        class="uk-icon-button uk-icon icon-back-large icon-github">
                         {% include icons/github.svg %}
                     </a>
-                    <a href="https://www.linkedin.com/in/brianscottmitchell" title="Brian Mitchell on LinkedIn"
+                    <a href="https://www.linkedin.com/in/brianscottmitchell" title="LinkedIn"
                        class="uk-icon-button uk-icon icon-back-large icon-linkedin">
                         {% include icons/linkedin.svg %}
                     </a>
@@ -128,8 +128,8 @@ html_class: dark
     </div>
 
     <section>
-        <h2 class="uk-light">Affiliate Links</h2>
-        <p class="uk-light">Use these links to save some money or gain extra perks when you sign up for an account.</p>
+        <h2 class="uk-light" aria-describedby="affiliate-description">Affiliate Links</h2>
+        <p class="uk-light" id="affiliate-description">Use these links to save some money or gain extra perks when you sign up for an account.</p>
         <p uk-margin class="uk-light">
             <a class="uk-button uk-button-default" href="https://m.do.co/c/414f452c2b6f"
                title="Digital Ocean Affiliate Link">Digital Ocean</a>
