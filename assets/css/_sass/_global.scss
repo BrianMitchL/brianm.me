@@ -66,6 +66,10 @@ a {
   color: initial;
 }
 
+.uk-light .emoji-color-reset {
+  color: white;
+}
+
 // Twitter Bootstrap's implementation
 // https://github.com/twbs/bootstrap/blob/7e2741eb1074afc66bdf2fb5c2b65d476cf7f37e/less/scaffolding.less#L121
 // Only display content to screen readers
