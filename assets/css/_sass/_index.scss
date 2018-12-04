@@ -1,17 +1,3 @@
-.headshot {
-  background: url(https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=900) no-repeat center center;
-  background-size: cover;
-  $size: 300px;
-  height: $size;
-  width: $size;
-
-  @media (max-width: 374px) {
-    $size: 250px;
-    height: $size;
-    width: $size;
-  }
-}
-
 .bio {
   margin: 0;
   line-height: 2.25em;
