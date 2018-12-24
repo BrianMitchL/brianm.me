@@ -22,6 +22,7 @@ collections:
     output: true
 
 exclude:
+  - .idea
   - README.md
   - .gitignore
   - Gemfile
