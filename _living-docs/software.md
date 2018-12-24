@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-09-15
+modified: 2018-12-23
 title: Software
 description: A list of software that I use.
 disable-description: true
@@ -135,11 +135,11 @@ A :star2: indicates an app I find especially notable.
 {: .uk-heading-divider}
 
 * [1 Second Everyday](https://itunes.apple.com/us/app/1-second-everyday-video-diary/id587823548) :star2:
+* [Darkroom](https://itunes.apple.com/us/app/darkroom-photo-editor/id953286746) :star2:
 * [Halide](https://itunes.apple.com/us/app/halide-camera/id885697368) :star2:
 * [Motion Stills](https://itunes.apple.com/us/app/motion-stills-gif-collage/id1086172168)
 * [Obscura](https://itunes.apple.com/us/app/obscura-2/id1290342794)
 * [Pixelmator](https://itunes.apple.com/us/app/pixelmator/id924695435)
-* [RAW Power](https://itunes.apple.com/us/app/raw-power/id1250601531)
 * [ViewExif](https://itunes.apple.com/us/app/viewexif/id945320815)
 
 ### Productivity
@@ -155,6 +155,7 @@ A :star2: indicates an app I find especially notable.
 * [Fantastical](https://itunes.apple.com/us/app/fantastical-2-for-iphone/id718043190)
 * [Google Maps](https://itunes.apple.com/us/app/google-maps-transit-food/id585027354) (just for cycling directions)
 * [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-7/id1049254261)
+* [TypeStyle](https://itunes.apple.com/us/app/typestyle/id1441019779)
 * [Waze](https://itunes.apple.com/us/app/waze-navigation-live-traffic/id323229106)
 
 ### Social
