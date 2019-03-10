@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-11-27
+modified: 2019-01-25
 title: Gear
 description: A list of the gear that I use.
 disable-description: true
@@ -83,6 +83,7 @@ macOS Mojave
 
 * AirPods
 * Beats Solo<sup>3</sup> Wireless
+* Sony WH-1000XM3 Wireless Noise-Canceling Headphones
 * Focusrite Scarlett 2i2 audio interface
 * M-Audio BX5 studio monitors
 * Audio-Technica ATH-M50 studio headphones
@@ -92,7 +93,6 @@ macOS Mojave
 * Logitech MX Master mouse
 * Apple Magic Mouse
 * Apple Magic Trackpad
-* Apple Smart Battery Case - (PRODUCT)<sup>RED</sup>
 * Macally Aluminum Laptop Stand
 
 ## Media
