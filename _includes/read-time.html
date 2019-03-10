@@ -1,0 +1,9 @@
+<span title="Estimated Reading Time">
+  :book: about
+  {% assign timeToRead = content | number_of_words | divided_by: 200.0 %}
+  {% if timeToRead <= 1 %}
+    1 min
+  {% else %}
+    {{ timeToRead | round }} mins
+  {% endif %}
+</span>
