@@ -7,7 +7,7 @@ description: Extended Résumé
 
 *A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf).*
 
-I am primarily focused in web development. I also have experience with Java and Python development and Linux system administration. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer and programmer primarily on ETC EOS family consoles.
+I am primarily focused in web development, particularly on the UI side. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer and programmer primarily on ETC EOS family consoles.
 
 Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
@@ -25,7 +25,7 @@ Paired programming, excellent organization, lighting design, theatrical lighting
 
 ## Hobbies
 
-* Attending monthly [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetups
+* Co-organizer of the [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetup
 * Podcasting on [The Nexus](http://thenexus.tv)
 * Hackintosh from macOS 10.8 - macOS 10.13
 * CentOS 7 based media server
@@ -36,6 +36,7 @@ Paired programming, excellent organization, lighting design, theatrical lighting
 * Theatrical and live performance lighting (since 2003!)
 * Watching science-fiction TV shows and movies
 * Learning/speaking Danish
+* Travelling
 
 ## Experience
 
