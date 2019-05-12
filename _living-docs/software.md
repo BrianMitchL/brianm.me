@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2018-12-23
+modified: 2018-05-11
 title: Software
 description: A list of software that I use.
 disable-description: true
@@ -12,11 +12,13 @@ This is a running list of the software that I use. Last updated <time datetime="
 
 ## Browsers
 
-1. Safari (Home)
-2. Firefox (Work)
-3. Edge (Home on Windows)
-4. Chrome (When needed)
-5. Internet Explorer 11 (Windows, debugging only)
+1. Safari
+2. Firefox
+3. Edge *
+4. Chrome *
+5. Internet Explorer 11 *
+
+_* used for web development only_
 
 ## macOS
 
@@ -26,11 +28,10 @@ This is a running list of the software that I use. Last updated <time datetime="
 - Forecast
 - iVI
 - iTunes (with Apple Music)
+- Last.fm Scrobbler
 - Logic Pro X
 - `mvktoolnix`
 - Spotify
-- QuickScrobbler
-- Soundflower
 - VLC
 - XLD
 - `youtube-dl`
@@ -114,6 +115,7 @@ A :star2: indicates an app I find especially notable.
 ### Music
 
 - Apple Music
+- [Marvis Pro](https://itunes.apple.com/mt/app/marvis-pro/id1447768809) :star2:
 - [Mixcloud](https://itunes.apple.com/us/app/mixcloud-radio-dj-mixes/id401206431)
 - [Shazam](https://itunes.apple.com/us/app/shazam/id284993459)
 
@@ -136,8 +138,9 @@ A :star2: indicates an app I find especially notable.
 - [Calcbot](https://itunes.apple.com/us/app/calcbot-2/id376694347)
 - [CARROT Weather](https://itunes.apple.com/us/app/carrot-weather/id961390574) :star2:
 - [Clear Todos](https://itunes.apple.com/us/app/clear-todos/id493136154)
-- [Fantastical](https://itunes.apple.com/us/app/fantastical-2-for-iphone/id718043190)
+- [Fantastical 2](https://itunes.apple.com/us/app/fantastical-2-for-iphone/id718043190)
 - [Google Maps](https://itunes.apple.com/us/app/google-maps-transit-food/id585027354) (just for cycling directions)
+- [SmartNews](https://itunes.apple.com/us/app/smartnews-local-breaking-news/id579581125)
 - [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-7/id1049254261)
 - [TypeStyle](https://itunes.apple.com/us/app/typestyle/id1441019779)
 - [Waze](https://itunes.apple.com/us/app/waze-navigation-live-traffic/id323229106)
