@@ -5,7 +5,6 @@
 
 html {
   background: #fff;
-  transition: background 0.2s ease-out;
 
   &.uk-light {
     background: #1f2023;
@@ -13,7 +12,9 @@ html {
 }
 
 * {
-  transition: background 0.2s ease-out;
+  transition: 0.2s ease-out;
+  transition-property: background, background-color, border-top-color,
+    border-left-color, border-bottom-color, border-right-color;
 }
 
 html,
@@ -109,4 +110,12 @@ main.uk-container {
 
 details > summary {
   cursor: pointer;
+}
+
+.uk-icon-button {
+  transition: none;
+}
+
+.uk-light pre {
+  border-color: rgba(255, 255, 255, 0.2);
 }
