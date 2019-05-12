@@ -42,7 +42,6 @@
       mqLight.addListener(listener);
     }
 
-
     // run the toggler on page load
     if (mqDark.matches) {
       changeWebsiteTheme('dark');
