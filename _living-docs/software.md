@@ -14,11 +14,11 @@ This is a running list of the software that I use. Last updated <time datetime="
 
 1. Safari
 2. Firefox
-3. Edge *
-4. Chrome *
-5. Internet Explorer 11 *
+3. Edge \*
+4. Chrome \*
+5. Internet Explorer 11 \*
 
-_* used for web development only_
+_\* used for web development only_
 
 ## macOS
 
