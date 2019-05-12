@@ -1,12 +1,1 @@
-<span
-  class="uk-icon icon"
-  {%
-  if
-  include.color
-  %}style="color:{{ include.color }}"
-  {%
-  endif
-  %}
-  aria-hidden="true"
-  >{% include icons/{{ include.icon }}.svg %}</span
->
+<span class="uk-icon icon" {% if include.color %}style="color:{{ include.color }}" {% endif %} aria-hidden="true">{% include icons/{{ include.icon }}.svg %}</span>
