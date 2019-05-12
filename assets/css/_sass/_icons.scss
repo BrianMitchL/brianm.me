@@ -33,6 +33,8 @@
 .icon-back-large {
   &:hover,
   &:active {
+    color: white;
+
     &.icon-facebook {
       background-color: #3B5998;
     }
@@ -70,8 +72,8 @@
     }
 
     &.icon-snapchat {
-      background-color: #FFFC00;
-      fill: #000000;
+      background-color: #fffc00;
+      stroke: #000000;
     }
 
     &.icon-soundcloud {
