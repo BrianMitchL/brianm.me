@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-01-25
+modified: 2019-05-11
 title: Gear
 description: A list of the gear that I use.
 disable-description: true
@@ -94,6 +94,7 @@ macOS Mojave
 - Apple Magic Mouse
 - Apple Magic Trackpad
 - Macally Aluminum Laptop Stand
+- APC UPS 1500VA (BX1500M)
 
 ## Media
 
