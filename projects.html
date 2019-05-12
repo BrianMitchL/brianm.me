@@ -5,40 +5,32 @@ title: Projects
 description: Personal Projects
 ---
 
-<h3>:star: indicates a featured and more complete project</h3>
+<p>:star: indicates a featured and more complete project</p>
 
 {% for project in site.data.projects %}
-<div
-  class="uk-card uk-card-small uk-card-default uk-margin-bottom"
-  uk-scrollspy="cls:uk-animation-fade"
->
-  <div class="uk-card-header">
-    <h2 class="uk-card-title uk-margin-remove">
+<div class="uk-article">
+  <header>
+    <h2 class="uk-article-title uk-margin-remove">
       {{ project.name }}{% if project.featured %} :star:{% endif %}
-      <small class="uk-align-right@m uk-margin-remove"
-        >{{ project.range }}</small
-      >
     </h2>
-    {{ project.status }}
-  </div>
-  <div class="uk-card-body">
+  </header>
+  <p class="uk-article-meta">
+    {{ project.range }} {{ project.status }}
+  </p>
+  <p>
     {% if project.link %}
-    <h4>
-      <a href="{{ project.link.href }}" target="_blank"
-        >{{ project.link.title }}</a
-      >
-    </h4>
-    {% endif %}
-    <p>{{ project.description }}</p>
-    {% if project.github %}
+    <a href="{{ project.link.href }}" target="_blank"
+      >{{ project.link.title }}</a
+    ><br>
+    {% endif %} {% if project.github %}
     <a href="https://github.com/{{ project.github }}" target="_blank">
       {% include icon.html icon="github" %} {{ project.name }} on GitHub</a
-    >
+    ><br>
     {% endif %} {% if project.gitlab %}
     <a href="https://gitlab.com/{{ project.gitlab }}" target="_blank">
       {% include icon.html icon="gitlab" %} {{ project.name }} on GitLab</a
-    >
-    {% endif %}
-  </div>
+    ><br>
+    {% endif %} {{ project.description }}
+  </p>
 </div>
 {% endfor %}

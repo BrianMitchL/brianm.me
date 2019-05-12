@@ -6,37 +6,31 @@ link: /blog
 ---
 
 {%- for post in paginator.posts -%}
-<div
-  class="uk-card uk-card-small uk-card-default uk-margin-bottom"
-  uk-scrollspy="cls:uk-animation-fade"
->
-  {%- if post.image != nil -%}
-  <div class="uk-card-media-top">
-    <a href="{{ post.url }}"
+<article class="uk-article">
+  <header>
+    {%- if post.image != nil -%}
+    <a href="{{ post.url }}" class="uk-width-1-2@s"
       ><img src="{{ post.image }}" alt="{{ post.title }} teaser image"
     /></a>
-  </div>
-  {%- endif -%}
-  <div class="uk-card-header">
-    <h3 class="uk-card-title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="uk-icon icon" aria-hidden="true"
-        >{% include icons/chevron-right.svg %}</span
-      >
-      <small
-        ><time
-          datetime="{{ post.date | date: date_to_xmlschema }}"
-          itemprop="datePublished"
-          >{{ post.date | date: "%B %d, %Y" }}</time
-        >
-        by {{ site.data.authors[post.author].name }}</small
-      >
+    {%- endif -%}
+    <h3 class="uk-article-title">
+      <a class="uk-link-heading" href="{{ post.url }}">{{ post.title }}</a>
     </h3>
-  </div>
-  <div class="uk-card-body">
+    <p class="uk-article-meta">
+      <time
+        datetime="{{ post.date | date: date_to_xmlschema }}"
+        itemprop="datePublished"
+        >{{ post.date | date: "%B %d, %Y" }}</time
+      >
+      by {{ site.data.authors[post.author].name }} • {% include read-time.html
+      content=post.content %}
+    </p>
+  </header>
+  <p>
     {{ post.excerpt }}
-  </div>
-</div>
+    <a class="uk-button uk-button-text" href="{{ post.url }}">Read more</a>
+  </p>
+</article>
 {%- endfor -%} {%- if paginator.total_pages > 1 -%}
 <ul class="uk-pagination uk-flex-center">
   {%- if paginator.previous_page -%}
