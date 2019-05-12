@@ -1,23 +1,15 @@
 :root {
   color-scheme: light dark;
   supported-color-schemes: light dark;
-  --background-color: #fff;
-  --nav-background-color: #f8f8f8;
-  --accent-text: #333;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #1f2023;
-    --nav-background-color: #222;
-    --accent-text: #fff;
-  }
 }
 
 html {
   background: #fff;
-  background: var(--background-color);
   transition: background 0.2s ease-out;
+
+  &.uk-light {
+    background: #1f2023;
+  }
 }
 
 html, body {
@@ -101,10 +93,10 @@ main.uk-container {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
   transition: background 0.2s ease-out;
+}
 
-  &:not(.uk-navbar-transparent) {
-    background: var(--nav-background-color);
-  }
+.uk-light .uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #222;
 }
 
 .small-caps {

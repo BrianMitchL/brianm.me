@@ -2,7 +2,11 @@ div[itemprop='articleBody'] > p:first-child {
   // .uk-text-lead
   font-size: 1.5rem;
   line-height: 1.5;
-  color: var(--accent-text);
+  color: #333;
+}
+
+.uk-light div[itemprop='articleBody'] > p:first-child {
+  color: #fff;
 }
 
 figure {

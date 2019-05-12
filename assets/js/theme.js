@@ -1,3 +1,5 @@
+// adapted from https://medium.freecodecamp.org/how-to-detect-a-users-preferred-color-scheme-in-javascript-ec8ee514f1ef
+
 (function() {
   const DARK = '(prefers-color-scheme: dark)';
   const LIGHT = '(prefers-color-scheme: light)';
@@ -28,9 +30,18 @@
     }
 
     const mqDark = window.matchMedia(DARK);
-    mqDark.addListener(listener);
+    if (mqDark.addEventListener) {
+      mqDark.addEventListener('change', listener);
+    } else {
+      mqDark.addListener(listener);
+    }
     const mqLight = window.matchMedia(LIGHT);
-    mqLight.addListener(listener);
+    if (mqLight.addEventListener) {
+      mqLight.addEventListener('change', listener);
+    } else {
+      mqLight.addListener(listener);
+    }
+
 
     // run the toggler on page load
     if (mqDark.matches) {
