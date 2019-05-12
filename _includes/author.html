@@ -1,20 +1,33 @@
 {% assign author = site.data.authors[page.author] %}
 <section class="uk-comment uk-margin-bottom">
-    <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
-        <div class="uk-width-auto">
-            <img class="uk-comment-avatar" src="https://1.gravatar.com/avatar/{{ author.gravatar }}?s=240"
-                 height="80" width="80" alt="Profile photo" itemprop="image">
-        </div>
-        <address class="uk-width-expand">
-            <h4 class="uk-comment-title uk-margin-remove" itemprop="author">{{ author.name }}</h4>
-            <div class="uk-comment-meta">{{ author.bio }}</div>
-            <div class="uk-comment-meta">
-                {% include icon.html icon="twitter" color="#1DA1F2" %}
-                <a href="https://twitter.com/{{ author.twitter }}" title="@{{ author.twitter }} on Twitter">
-                    @{{ author.twitter }}
-                </a>
-            </div>
-            <div class="uk-comment-meta"><a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a></div>
-        </address>
-    </header>
+  <header class="uk-comment-header uk-grid-medium uk-flex-middle" uk-grid>
+    <div class="uk-width-auto">
+      <img
+        class="uk-comment-avatar"
+        src="https://1.gravatar.com/avatar/{{ author.gravatar }}?s=240"
+        height="80"
+        width="80"
+        alt="Profile photo"
+        itemprop="image"
+      />
+    </div>
+    <address class="uk-width-expand">
+      <h4 class="uk-comment-title uk-margin-remove" itemprop="author">
+        {{ author.name }}
+      </h4>
+      <div class="uk-comment-meta">{{ author.bio }}</div>
+      <div class="uk-comment-meta">
+        {% include icon.html icon="twitter" color="#1DA1F2" %}
+        <a
+          href="https://twitter.com/{{ author.twitter }}"
+          title="@{{ author.twitter }} on Twitter"
+        >
+          @{{ author.twitter }}
+        </a>
+      </div>
+      <div class="uk-comment-meta">
+        <a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a>
+      </div>
+    </address>
+  </header>
 </section>

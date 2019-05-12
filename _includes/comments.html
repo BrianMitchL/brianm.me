@@ -1,23 +1,32 @@
-<button id="show-comments-button" class="uk-button uk-button-default uk-button-small" onclick="loadComments();return false;">
-    Load Comments
+<button
+  id="show-comments-button"
+  class="uk-button uk-button-default uk-button-small"
+  onclick="loadComments();return false;"
+>
+  Load Comments
 </button>
 <div id="disqus_thread"></div>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></noscript>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
 <script type="text/javascript">
-    var disqus_loaded = false;
-    var disqus_shortname = '{{ site.comments.disqus.shortname }}';
+  var disqus_loaded = false;
+  var disqus_shortname = '{{ site.comments.disqus.shortname }}';
 
-    function loadComments() {
-        if (!disqus_loaded) {
-            disqus_loaded = true;
-            (function () {
-                var d = document, s = d.createElement('script');
-                s.src = 'https://'+disqus_shortname+'.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-            document.getElementById('show-comments-button').remove();
-        }
+  function loadComments() {
+    if (!disqus_loaded) {
+      disqus_loaded = true;
+      (function() {
+        var d = document,
+          s = d.createElement('script');
+        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      document.getElementById('show-comments-button').remove();
     }
+  }
 </script>

@@ -16,23 +16,29 @@ I have toyed with the idea of writing a Twitter bot for posting weather updates 
 # Timeline
 
 ### March 12-15
+
 I decided to use Python and Tweepy due to Google searching "how to make a Twitter bot." :stuck_out_tongue_closed_eyes: I had used Jython (Python built on top of Java) in an intro computer science class, but that was two years ago. I had always wanted to use Python again, so I decided why not now? I started off with a good old [hello world](https://github.com/BrianMitchL/weatherBot/commit/c24200ad415f9367d3cbc94427cd08f84acd0468), and continued from there.
 
 Over the next few days I added some vulgar tweets for special weather conditions, a loop so it would run forever, scheduled tweets, normal condition tweet templates, tweeting with location, forking the process to daemonize it, proper logging, reimplemented that logging, logging to a file, and a separate version for Python 3. This was all done over four days while I stayed up way to late over Spring Break. I thought I was pretty close to being done with the bot, but I was just getting started.
 
 ### March 16-29
+
 Once I started the scheduled tweets on my Twitter account, I realized that dropping the f-bomb in nearly every tweet wasn't going to work. I re-worded all of the templates so that they were still sarcastic and amusing (at least some are, I hope), but for the most part free of swearing. My work on weatherBot slowed a little during this time. I tweaked thresholds and minor refactoring here and there, but the features remained the same.
 
 ### March 31-April 1
+
 I merged the Python 2.7 and Python 3 files into one (see Python 2.7 vs 3 for more). I also added support for setting the units to be metric or imperial. During this time I also tried to fix the numerous crashes that were happening.
 
 ### April 2-14
+
 I started to write some tests during this time. As a result of testing, a good amount of code got refactored in order to make it easier. I also changed a fair number of things to follow PEP 8 and started using [TravisCI](https://travis-ci.org/BrianMitchL/weatherBot) and [Coveralls](https://coveralls.io/r/BrianMitchL/weatherBot?branch=master). I narrowed down the crashes to be YQL returning JSON that wasn't properly formatted, but didn't yet fix my code to handle that.
 
 ### April 15-26
+
 I finally fixed my exception handling and refactored the handling of the weather data, weatherBot was now actually (more) stable. I kept adding tests and refactored the twitter auth keys to be used via environmental variables.
 
 ### April 28-May 7
+
 I started deploying weatherBot on Heroku and added some documentation about that. I also fixed my apparently broken environmental variables. I added a global variable for a hashtag, and a daily forecast every morning. I also refactored how timed and special events were triggered. Additional test writing happened too.
 
 # Thoughts
@@ -47,7 +53,7 @@ I started writing the bot in Python 2.7 as that is what OS X has installed. I ad
 print "Hello world!
 ```
 
-vs 
+vs
 
 ```python
 print("Hello world!")

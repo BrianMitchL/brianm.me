@@ -5,11 +5,10 @@ modified: 2018-09-02 19:35 CDT
 description: A tutorial on making a Jekyll based site/blog.
 author: brian
 seo.type: BlogPosting
-image: 
+image:
 ---
 
 Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io).
-
 
 ## Introduction
 
@@ -17,7 +16,7 @@ Because I put a lot of time into this site in the last few months, I figured I m
 
 ## Installation
 
-Jekyll officially supports Linux, Unix, and macOS, though it seems you can get it to [install on Windows](https://jekyllrb.com/docs/installation/windows/) as well. 
+Jekyll officially supports Linux, Unix, and macOS, though it seems you can get it to [install on Windows](https://jekyllrb.com/docs/installation/windows/) as well.
 
 As Jekyll is written in Ruby, you will need Ruby installed. Apple ships the now unmaintained `2.0.0p648` version of Ruby on El Capitan, so I installed the latest version of Ruby (`2.3.1`) with [Homebrew](https://brew.sh) (:heart: Homebrew, I love a good package manager). I deploy this site with GitHub Pages, so to start off, I installed the `github-pages` gem. To maintain dependencies, create a file called `Gemfile` and add the following:
 
@@ -58,7 +57,7 @@ bundle exec jekyll serve --livereload
 
 By default, the site is built to `_site` and is sourced from the current directory. These paths can be configured in `_config.yml` or by passing in flags when running `jekyll`.
 
-### _config.yml
+### \_config.yml
 
 To start off, you will need a `_config.yml` file for configuration and a place to store global variables. Here is a good starter example for the file.
 
@@ -116,7 +115,10 @@ Good question, I'm glad you asked!
 
 ```html
 {% raw %}{% assign author = site.data.authors[page.author] %}{% endraw %}
-<p>Written by {% raw %}{{ author.name }}{% endraw %} on {% raw %}{{ page.date | date: "%B %-d, %Y" }}{% endraw %}</p>
+<p>
+  Written by {% raw %}{{ author.name }}{% endraw %} on {% raw %}{{ page.date |
+  date: "%B %-d, %Y" }}{% endraw %}
+</p>
 ```
 
 Woah.
@@ -126,7 +128,7 @@ What's going on here? To begin, we using a data file to store authors. This can 
 ```yaml
 brian:
   name: Brian Mitchell
-  bio: Web developer, emoji lover :wave:, and an avid fan of electronic music.
+  bio: 'Web developer, emoji lover :wave:, and an avid fan of electronic music.'
   twitter: BrianMitchL
   gravatar: 89e0d7d3d9370c45517960c8a12f92b9
   web: https://brianm.me
@@ -168,16 +170,16 @@ When writing pages and posts, you don't want to have to keep track of every occu
 ```html
 {% raw %}<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     {% include head.html %}
-</head>
-<body>
-{{ content }}
-{% include footer.html %}
+  </head>
+  <body>
+    {{ content }} {% include footer.html %}
 
-<!-- some script tags and Google Analytics are located here -->
-</body>
-</html>{% endraw %}
+    <!-- some script tags and Google Analytics are located here -->
+  </body>
+</html>
+{% endraw %}
 ```
 
 Every page I make in some way uses this layout. If I created a new page, I would include the following in it's front matter, and the content of that file would be rendered into the `{% raw %}{{ content }}{% endraw %}` of the default layout:
@@ -239,13 +241,15 @@ So now you have a bunch of well written and entertaining posts, but how do you s
 It's quite easy, you can use Liquid to iterate through your posts to show them in a list:
 
 ```html
-{% raw %}<ul>
+{% raw %}
+<ul>
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
   {% endfor %}
-</ul>{% endraw %}
+</ul>
+{% endraw %}
 ```
 
 If you have a lot of posts, be sure to check out the [Pagination](#pagination) plugin for showing your posts on more than one page.
@@ -266,7 +270,7 @@ GitHub Pages only supports a limited set of plugins. I will cover the ones that 
 
 ### GitHub Pages 404 Page
 
-If you are using GitHub Pages to host your site, you can create your own 404 error page. Instead of showing a visitor of your site a standard GitHub 404 page, you can create your own that fits your site. *Note, this can only be done if you use a custom domain, see the GitHub page on [Creating a custom 404 page for your GitHub Pages site](https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/) for more information.*
+If you are using GitHub Pages to host your site, you can create your own 404 error page. Instead of showing a visitor of your site a standard GitHub 404 page, you can create your own that fits your site. _Note, this can only be done if you use a custom domain, see the GitHub page on [Creating a custom 404 page for your GitHub Pages site](https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/) for more information._
 
 If this applies to you, all you need to do is create a `404.html` or `404.md` file in the project root and add `permalink: /404.html` to the front matter, and you're all set!
 
@@ -287,7 +291,6 @@ Set the `sass_dir` to where you store your Sass/SCSS files.
 You can change the output style to `nested`, `expanded`, `compact`, `compressed`, or remove it entirely to keep everything.
 
 Check out the [Sass/SCSS docs](https://jekyllrb.com/docs/assets/#sassscss).
-
 
 ### Pagination
 
@@ -318,7 +321,7 @@ highlighter: rouge
 
 kramdown:
   syntax_highlighter: rouge
-  
+
 plugins:
   - rouge
 ```
@@ -329,7 +332,7 @@ In order to use syntax highling in your site, you can use the default setting or
 Default:
 Use `{% raw %}{% highlight python %}{% endraw %}` followed by some sweet Python code, closed with `{% raw %}{% endhighlight %}{% endraw %}`.
 
-When building the site, rouge will seek through the code block and add span tags with classes on parts of the code. These tags can then be styled to have different colors, hence syntax highlighting. I've been a huge fan of JetBrain's darcula theme, so I adapted a version from [https://smasue.github.io/pygments-darcula](https://smasue.github.io/pygments-darcula) to use on this site. You can find the code in [_darcula.scss](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/assets/css/_sass/_darcula.scss). Any Rouge or Pygments CSS theme will work. You can generate CSS files from Pygments or by downloading themes, for example, from [https://github.com/richleland/pygments-css/](https://github.com/richleland/pygments-css/).
+When building the site, rouge will seek through the code block and add span tags with classes on parts of the code. These tags can then be styled to have different colors, hence syntax highlighting. I've been a huge fan of JetBrain's darcula theme, so I adapted a version from [https://smasue.github.io/pygments-darcula](https://smasue.github.io/pygments-darcula) to use on this site. You can find the code in [\_darcula.scss](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/assets/css/_sass/_darcula.scss). Any Rouge or Pygments CSS theme will work. You can generate CSS files from Pygments or by downloading themes, for example, from [https://github.com/richleland/pygments-css/](https://github.com/richleland/pygments-css/).
 
 ### Search Engine Optimization (SEO)
 
@@ -340,7 +343,7 @@ Below is what I have added to my `_config.yml` file:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-  
+
 # seo
 title: Brian Mitchell
 description: Blog posts, projects, social media presence, and more!
@@ -364,7 +367,7 @@ social:
     - https://twitter.com/BrianMitchL
     - https://plus.google.com/+BrianMitchell16/
     - https://www.instagram.com/BrianMitchL
-    - http://www.last.fm/user/bman4789
+    - https://www.last.fm/user/bman4789
     - https://www.linkedin.com/in/brianscottmitchell
     - https://open.spotify.com/user/1237277662
     - https://soundcloud.com/bman4789
@@ -384,7 +387,7 @@ On any page or post, you may define the `seo.type` variable. This uses the [sche
 
 ### Feed
 
-Be sure to add `jekyll-sitemap` to your `_config.yml`. 
+Be sure to add `jekyll-sitemap` to your `_config.yml`.
 
 ```yaml
 plugins:
@@ -403,9 +406,11 @@ plugins:
 ```
 
 This plugin will allow you to insert GitHub-flavored Emojis into your pages and posts. For example:
+
 ```
 :+1: :heart: :smile:
 ```
+
 would produce: :+1: :heart: :smile:
 
 ### Redirect
@@ -422,8 +427,8 @@ This plugin allows you to give your pages and posts multiple URLs. Redirects are
 ```yaml
 redirect_from: /contact
 redirect_from:
-    - /contact
-    - /other-sites
+  - /contact
+  - /other-sites
 ```
 
 ### Travis CI
@@ -455,7 +460,7 @@ script:
   - bundle exec htmlproofer ./_site --disable-external --assume-extension
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 ```
 
 The `--disable-external` flag disables the checking on 3rd party links. Some websites will block scrapers like the one used in `html-proofer`, which will cause the check to fail, so this just skips em' all. The `--assume-extension` flag will assume that an href like `/about` is the same as `about.html`.

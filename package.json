@@ -4,7 +4,7 @@
   "private": true,
   "description": "Website for Brian Mitchell",
   "scripts": {
-    "prettier": "prettier --write 'assets/**/*.scss'"
+    "prettier": "prettier --write '**/*.{js,scss,css,json,md,yml}'"
   },
   "repository": {
     "type": "git",
@@ -13,19 +13,6 @@
   "author": "Brian Mitchell",
   "dependencies": {},
   "devDependencies": {
-    "husky": "^2.2.0",
-    "lint-staged": "^8.1.6",
     "prettier": "^1.17.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,css,json,md}": [
-      "prettier --write",
-      "git add"
-    ]
   }
 }

@@ -53,7 +53,7 @@ In 2018, it only crashed a handful of times. Sometimes a month or two would go b
 
 ## The Demise
 
-Sometime last week, I installed the Clover r4674 update like I always do when a newer version is available. When I 
+Sometime last week, I installed the Clover r4674 update like I always do when a newer version is available. When I
 booted it up next on Saturday, it would not boot into Clover. When selecting the UEFI entry for the macOS SSD, the
 motherboard manufacturer logos would just stay on the screen forever. Booting into Windows via the Windows Boot Manager
 was fine, so was mounting the macOS SSD on my MacBook Pro. I tried restoring to Clover r4658, the earlier version that
@@ -88,7 +88,7 @@ RIP old friend. I'll boot you up twice a year to install Windows updates and pla
     <figcaption>Twitter Moment compiling a good majority of my tweets relating to the Hackintosh</figcaption>
 </figure>
 
-***
+---
 
 [^bios]: BIOS: Basic Input/Output System, a legacy way to boot a computer.
 [^efi]: EFI: Extensible Firmware Interface, a modern interface between the operating system and platform firmware.

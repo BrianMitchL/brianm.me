@@ -41,7 +41,7 @@ minutes!
     </p>&mdash; Brian Mitchell (@BrianMitchL)<a href="https://twitter.com/BrianMitchL/status/1043269420179709952?ref_src=twsrc%5Etfw">
     September 21, 2018</a>
 </blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet" data-dnt="true" data-lang="en">
   <p lang="en" dir="ltr">Oh my god, I just booted up my iPhone 7 and it feels
@@ -197,7 +197,7 @@ JavaScript.
   this conversion a lot.</p>&mdash; Greg Parker (@gparker)
   <a href="https://twitter.com/gparker/status/1047246359261106176?ref_src=twsrc%5Etfw">October 2, 2018</a>
 </blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Display
 

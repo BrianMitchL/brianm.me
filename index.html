@@ -1,160 +1,325 @@
 ---
 layout: default
-redirect_from: "/contact"
+redirect_from: '/contact'
 ---
 
 <nav class="uk-container uk-text-center">
-    <ul class="uk-list">
-        {%- assign url = page.url|remove:'/index.html' -%}
-        {%- for link in site.navigation -%}
-        <li class="uk-display-inline-block uk-margin-small uk-margin-small-left uk-margin-small-right">
-            <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-        </li>
-        {%- endfor -%}
-    </ul>
+  <ul class="uk-list">
+    {%- assign url = page.url|remove:'/index.html' -%} {%- for link in
+    site.navigation -%}
+    <li
+      class="uk-display-inline-block uk-margin-small uk-margin-small-left uk-margin-small-right"
+    >
+      <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
 </nav>
 <main class="uk-container uk-text-center" role="main">
-    <section>
-        <div uk-grid>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
-                <img class="uk-flex uk-border-circle uk-align-center"
-                    src="https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=300"
-                    srcset="https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=600 2x,
-                            https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=900 3x"
-                    alt="Headshot of Brian Mitchell"
-                >
-            </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
-                <h1>Hi, I'm Brian! <span class="emoji-color-reset" role="img" aria-label="wave">👋</span></h1>
-                <p class="bio">Co-organizer of <a href="https://javascriptmn.com">JavaScriptMN</a>.</p>
-                <p class="bio"><span class="emoji-wrapper emoji-color-reset" role="img" title="Software Engineer" aria-label="Software Engineer">👨🏻‍💻</span>
-                    at <a href="https://twitter.com/CHRobinson" title="C.H. Robinson on Twitter">@CHRobinson</a>.
-                </p>
-                <p class="bio"><span class="emoji-wrapper emoji-color-reset" role="img" title="Podcaster" aria-label="Podcaster">🎙</span> at <a
-                        href="https://twitter.com/TheNexusTV" title="The Nexus TV on Twitter">@TheNexusTV</a>.</p>
-                <p class="bio"><span class="emoji-wrapper emoji-color-reset" role="img" title="Graduate" aria-label="Graduate">👨🏻‍🎓</span> of
-                    <a href="https://twitter.com/UMNMorris" title="The University of Minnesota Morris on Twitter">@UMNMorris</a>.</p>
-                <p class="bio"><span class="emoji-wrapper emoji-color-reset" role="img" title="Bots" aria-label="Twitter bots">🤖</span>: <a
-                        href="https://twitter.com/MorrisMNWeather"
-                        title="@MorrisMNWeather on Twitter">@MorrisMNWeather</a>
-                    & <a href="https://twitter.com/WeatherByBrian"
-                         title="@WeatherByBrian on Twitter">@WeatherByBrian</a>
-                </p>
-            </div>
-            <h2 class="uk-width-1-1">Where to Find Me</h2>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
-                <div class="uk-flex uk-flex-wrap uk-flex-center">
-                    <a href="https://github.com/BrianMitchL" title="Github"
-                       class="uk-icon-button uk-icon icon-back-large icon-github">
-                        {% include icons/github.svg %}
-                    </a>
-                    <a href="https://www.linkedin.com/in/brianscottmitchell" title="LinkedIn"
-                       class="uk-icon-button uk-icon icon-back-large icon-linkedin">
-                        {% include icons/linkedin.svg %}
-                    </a>
-                    <a href="https://twitter.com/BrianMitchL" title="@BrianMitchL on Twitter"
-                       class="uk-icon-button uk-icon icon-back-large icon-twitter">
-                       {% include icons/twitter.svg %}
-                    </a>
-                </div>
-            </div>
-            <div class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch">
-                <div class="uk-flex uk-flex-wrap uk-flex-center">
-                    <a href="https://facebook.com/BrianMitchL" title="Facebook"
-                       class="uk-icon-button uk-icon icon-back icon-facebook">
-                        {% include icons/facebook.svg %}
-                    </a>
-                    <a href="https://www.flickr.com/people/43812551@N03/" title="Flickr"
-                       class="uk-icon-button uk-icon icon-back icon-flickr">
-                        {% include icons/flickr.svg %}
-                    </a>
-                    <a href="https://gitlab.com/u/BrianMitchL" title="GitLab"
-                       class="uk-icon-button uk-icon icon-back icon-gitlab">
-                        {% include icons/gitlab.svg %}
-                    </a>
-                    <a href="https://www.instagram.com/BrianMitchL" title="Instagram"
-                       class="uk-icon-button uk-icon icon-back icon-instagram">
-                        {% include icons/instagram.svg %}
-                    </a>
-                    <a href="https://www.last.fm/user/bman4789" title="Last.fm"
-                       class="uk-icon-button uk-icon icon-back icon-lastfm">
-                        {% include icons/last-dot-fm.svg %}
-                    </a>
-                    <a href="https://mastodon.cloud/@BrianMitchL" title="Mastodon"
-                       class="uk-icon-button uk-icon icon-back icon-mastodon">
-                        {% include icons/mastodon.svg %}
-                    </a>
-                    <a href="https://www.mixcloud.com/BrianMitchL/" title="Mixcloud"
-                       class="uk-icon-button uk-icon icon-back icon-mixcloud">
-                        {% include icons/mixcloud.svg %}
-                    </a>
-                    <a href="/feed.xml" title="Atom Feed" class="uk-icon-button uk-icon icon-back icon-rss">
-                        {% include icons/rss.svg %}
-                    </a>
-                    <a href="https://www.snapchat.com/add/bman4789" title="Snapchat"
-                       class="uk-icon-button uk-icon icon-back icon-snapchat">
-                        {% include icons/snapchat.svg %}
-                    </a>
-                    <a href="https://soundcloud.com/bman4789" title="SoundCloud"
-                       class="uk-icon-button uk-icon icon-back icon-soundcloud">
-                        {% include icons/soundcloud.svg %}
-                    </a>
-                    <a href="https://open.spotify.com/user/1237277662" title="Spotify"
-                       class="uk-icon-button uk-icon icon-back icon-spotify">
-                        {% include icons/spotify.svg %}
-                    </a>
-                    <a href="https://www.strava.com/athletes/brianmitchl" title="Strava"
-                       class="uk-icon-button uk-icon icon-back icon-strava">
-                        {% include icons/strava.svg %}
-                    </a>
-                    <a href="https://steamcommunity.com/id/MagicBriBri" title="Steam"
-                       class="uk-icon-button uk-icon icon-back icon-steam">
-                        {% include icons/steam.svg %}
-                    </a>
-                    <a href="https://trakt.tv/users/brianmitchl" title="Trakt"
-                       class="uk-icon-button uk-icon icon-back icon-trakt">
-                        {% include icons/trakt.svg %}
-                    </a>
-                    <a href="https://www.youtube.com/user/bman112234" title="YouTube"
-                       class="uk-icon-button uk-icon icon-back icon-youtube">
-                        {% include icons/youtube.svg %}
-                    </a>
-                </div>
-            </div>
+  <section>
+    <div uk-grid>
+      <div
+        class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch"
+      >
+        <img
+          class="uk-flex uk-border-circle uk-align-center"
+          src="https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=300"
+          srcset="
+            https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=600 2x,
+            https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=900 3x
+          "
+          alt="Headshot of Brian Mitchell"
+        />
+      </div>
+      <div
+        class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch"
+      >
+        <h1>
+          Hi, I'm Brian!
+          <span class="emoji-color-reset" role="img" aria-label="wave">👋</span>
+        </h1>
+        <p class="bio">
+          Co-organizer of <a href="https://javascriptmn.com">JavaScriptMN</a>.
+        </p>
+        <p class="bio">
+          <span
+            class="emoji-wrapper emoji-color-reset"
+            role="img"
+            title="Software Engineer"
+            aria-label="Software Engineer"
+            >👨🏻‍💻</span
+          >
+          at
+          <a
+            href="https://twitter.com/CHRobinson"
+            title="C.H. Robinson on Twitter"
+            >@CHRobinson</a
+          >.
+        </p>
+        <p class="bio">
+          <span
+            class="emoji-wrapper emoji-color-reset"
+            role="img"
+            title="Podcaster"
+            aria-label="Podcaster"
+            >🎙</span
+          >
+          at
+          <a
+            href="https://twitter.com/TheNexusTV"
+            title="The Nexus TV on Twitter"
+            >@TheNexusTV</a
+          >.
+        </p>
+        <p class="bio">
+          <span
+            class="emoji-wrapper emoji-color-reset"
+            role="img"
+            title="Graduate"
+            aria-label="Graduate"
+            >👨🏻‍🎓</span
+          >
+          of
+          <a
+            href="https://twitter.com/UMNMorris"
+            title="The University of Minnesota Morris on Twitter"
+            >@UMNMorris</a
+          >.
+        </p>
+        <p class="bio">
+          <span
+            class="emoji-wrapper emoji-color-reset"
+            role="img"
+            title="Bots"
+            aria-label="Twitter bots"
+            >🤖</span
+          >:
+          <a
+            href="https://twitter.com/MorrisMNWeather"
+            title="@MorrisMNWeather on Twitter"
+            >@MorrisMNWeather</a
+          >
+          &
+          <a
+            href="https://twitter.com/WeatherByBrian"
+            title="@WeatherByBrian on Twitter"
+            >@WeatherByBrian</a
+          >
+        </p>
+      </div>
+      <h2 class="uk-width-1-1">Where to Find Me</h2>
+      <div
+        class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch"
+      >
+        <div class="uk-flex uk-flex-wrap uk-flex-center">
+          <a
+            href="https://github.com/BrianMitchL"
+            title="Github"
+            class="uk-icon-button uk-icon icon-back-large icon-github"
+          >
+            {% include icons/github.svg %}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/brianscottmitchell"
+            title="LinkedIn"
+            class="uk-icon-button uk-icon icon-back-large icon-linkedin"
+          >
+            {% include icons/linkedin.svg %}
+          </a>
+          <a
+            href="https://twitter.com/BrianMitchL"
+            title="@BrianMitchL on Twitter"
+            class="uk-icon-button uk-icon icon-back-large icon-twitter"
+          >
+            {% include icons/twitter.svg %}
+          </a>
         </div>
-
-        <p>I am a co-host on <a href="http://thenexus.tv/category/pk/" title="PodKit">PodKit</a>,
-            a podcast about Apple inclined Web Developers discussing interesting technology and
-            development related topics.</p>
-    </section>
-
-    <div class="uk-heading-line uk-margin-top uk-margin-bottom" aria-hidden="true">
-        <span class="icon-2">
-            {% include icons/link.svg %}
-        </span>
+      </div>
+      <div
+        class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch"
+      >
+        <div class="uk-flex uk-flex-wrap uk-flex-center">
+          <a
+            href="https://facebook.com/BrianMitchL"
+            title="Facebook"
+            class="uk-icon-button uk-icon icon-back icon-facebook"
+          >
+            {% include icons/facebook.svg %}
+          </a>
+          <a
+            href="https://www.flickr.com/people/43812551@N03/"
+            title="Flickr"
+            class="uk-icon-button uk-icon icon-back icon-flickr"
+          >
+            {% include icons/flickr.svg %}
+          </a>
+          <a
+            href="https://gitlab.com/u/BrianMitchL"
+            title="GitLab"
+            class="uk-icon-button uk-icon icon-back icon-gitlab"
+          >
+            {% include icons/gitlab.svg %}
+          </a>
+          <a
+            href="https://www.instagram.com/BrianMitchL"
+            title="Instagram"
+            class="uk-icon-button uk-icon icon-back icon-instagram"
+          >
+            {% include icons/instagram.svg %}
+          </a>
+          <a
+            href="https://www.last.fm/user/bman4789"
+            title="Last.fm"
+            class="uk-icon-button uk-icon icon-back icon-lastfm"
+          >
+            {% include icons/last-dot-fm.svg %}
+          </a>
+          <a
+            href="https://mastodon.cloud/@BrianMitchL"
+            title="Mastodon"
+            class="uk-icon-button uk-icon icon-back icon-mastodon"
+          >
+            {% include icons/mastodon.svg %}
+          </a>
+          <a
+            href="https://www.mixcloud.com/BrianMitchL/"
+            title="Mixcloud"
+            class="uk-icon-button uk-icon icon-back icon-mixcloud"
+          >
+            {% include icons/mixcloud.svg %}
+          </a>
+          <a
+            href="/feed.xml"
+            title="Atom Feed"
+            class="uk-icon-button uk-icon icon-back icon-rss"
+          >
+            {% include icons/rss.svg %}
+          </a>
+          <a
+            href="https://www.snapchat.com/add/bman4789"
+            title="Snapchat"
+            class="uk-icon-button uk-icon icon-back icon-snapchat"
+          >
+            {% include icons/snapchat.svg %}
+          </a>
+          <a
+            href="https://soundcloud.com/bman4789"
+            title="SoundCloud"
+            class="uk-icon-button uk-icon icon-back icon-soundcloud"
+          >
+            {% include icons/soundcloud.svg %}
+          </a>
+          <a
+            href="https://open.spotify.com/user/1237277662"
+            title="Spotify"
+            class="uk-icon-button uk-icon icon-back icon-spotify"
+          >
+            {% include icons/spotify.svg %}
+          </a>
+          <a
+            href="https://www.strava.com/athletes/brianmitchl"
+            title="Strava"
+            class="uk-icon-button uk-icon icon-back icon-strava"
+          >
+            {% include icons/strava.svg %}
+          </a>
+          <a
+            href="https://steamcommunity.com/id/MagicBriBri"
+            title="Steam"
+            class="uk-icon-button uk-icon icon-back icon-steam"
+          >
+            {% include icons/steam.svg %}
+          </a>
+          <a
+            href="https://trakt.tv/users/brianmitchl"
+            title="Trakt"
+            class="uk-icon-button uk-icon icon-back icon-trakt"
+          >
+            {% include icons/trakt.svg %}
+          </a>
+          <a
+            href="https://www.youtube.com/user/bman112234"
+            title="YouTube"
+            class="uk-icon-button uk-icon icon-back icon-youtube"
+          >
+            {% include icons/youtube.svg %}
+          </a>
+        </div>
+      </div>
     </div>
 
-    <section>
-        <h2 aria-describedby="affiliate-description">Affiliate Links</h2>
-        <p id="affiliate-description">Use these links to save some money or gain extra perks when you sign up for an account.</p>
-        <p uk-margin>
-            <a class="uk-button uk-button-default" href="https://m.do.co/c/414f452c2b6f"
-               title="Digital Ocean Affiliate Link">Digital Ocean</a>
-            <a class="uk-button uk-button-default"
-               href="https://doordash.com/consumer/referred/Brian-Mitchell-3686/"
-               title="DoorDash Affiliate Link">DoorDash</a>
-            <a class="uk-button uk-button-default" href="https://db.tt/GuhrvQ7d"
-               title="Dropbox Affiliate Link">Dropbox</a>
-            <a class="uk-button uk-button-default" href="https://lyft.com/idi/BRIAN05122"
-               title="Lyft Affiliate Link">Lyft</a>
-            <a class="uk-button uk-button-default" href="https://lime.bike/referral/RFNYWRX"
-               title="Lime Affiliate Link">Lime</a>
-            <a class="uk-button uk-button-default" href="https://www.namecheap.com/?aff=103772"
-               title="Namecheap Affiliate Link">Namecheap</a>
-            <a class="uk-button uk-button-default" href="https://cash.me/app/QLQVQBK"
-               title="Square Cash Affiliate Link">Square Cash</a>
-            <a class="uk-button uk-button-default" href="https://www.stickermule.com/unlock?ref_id=0469870701"
-               title="Stickermule">Stickermule</a>
-        </p>
-    </section>
+    <p>
+      I am a co-host on
+      <a href="http://thenexus.tv/category/pk/" title="PodKit">PodKit</a>, a
+      podcast about Apple inclined Web Developers discussing interesting
+      technology and development related topics.
+    </p>
+  </section>
+
+  <div
+    class="uk-heading-line uk-margin-top uk-margin-bottom"
+    aria-hidden="true"
+  >
+    <span class="icon-2">
+      {% include icons/link.svg %}
+    </span>
+  </div>
+
+  <section>
+    <h2 aria-describedby="affiliate-description">Affiliate Links</h2>
+    <p id="affiliate-description">
+      Use these links to save some money or gain extra perks when you sign up
+      for an account.
+    </p>
+    <p uk-margin>
+      <a
+        class="uk-button uk-button-default"
+        href="https://m.do.co/c/414f452c2b6f"
+        title="Digital Ocean Affiliate Link"
+        >Digital Ocean</a
+      >
+      <a
+        class="uk-button uk-button-default"
+        href="https://doordash.com/consumer/referred/Brian-Mitchell-3686/"
+        title="DoorDash Affiliate Link"
+        >DoorDash</a
+      >
+      <a
+        class="uk-button uk-button-default"
+        href="https://db.tt/GuhrvQ7d"
+        title="Dropbox Affiliate Link"
+        >Dropbox</a
+      >
+      <a
+        class="uk-button uk-button-default"
+        href="https://lyft.com/idi/BRIAN05122"
+        title="Lyft Affiliate Link"
+        >Lyft</a
+      >
+      <a
+        class="uk-button uk-button-default"
+        href="https://lime.bike/referral/RFNYWRX"
+        title="Lime Affiliate Link"
+        >Lime</a
+      >
+      <a
+        class="uk-button uk-button-default"
+        href="https://www.namecheap.com/?aff=103772"
+        title="Namecheap Affiliate Link"
+        >Namecheap</a
+      >
+      <a
+        class="uk-button uk-button-default"
+        href="https://cash.me/app/QLQVQBK"
+        title="Square Cash Affiliate Link"
+        >Square Cash</a
+      >
+      <a
+        class="uk-button uk-button-default"
+        href="https://www.stickermule.com/unlock?ref_id=0469870701"
+        title="Stickermule"
+        >Stickermule</a
+      >
+    </p>
+  </section>
 </main>

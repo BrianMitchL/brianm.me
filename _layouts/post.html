@@ -4,22 +4,28 @@ layout: default
 
 {% include nav.html %}
 <main class="uk-container" role="main">
-    <article class="uk-article" itemscope itemtype="https://schema.org/Article">
-        <h1 class="uk-article-title">{{ page.title }}</h1>
-        <p class="uk-article-meta">Updated on <time datetime="{{ page.modified | date: date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time> • {% include read-time.html %}
-        </p>
-        <hr>
-        <div itemprop="articleBody">
-            {{ content }}
-        </div>
-    </article>
-    <hr>
-    <footer>
-        {% include share-page.html %}
-        {% include author.html %}
-    </footer>
-    <aside>
-        {% include comments.html %}
-    </aside>
+  <article class="uk-article" itemscope itemtype="https://schema.org/Article">
+    <h1 class="uk-article-title">{{ page.title }}</h1>
+    <p class="uk-article-meta">
+      Updated on
+      <time
+        datetime="{{ page.modified | date: date_to_xmlschema }}"
+        itemprop="dateModified"
+        >{{ page.modified | date: "%B %d, %Y" }}</time
+      >
+      • {% include read-time.html %}
+    </p>
+    <hr />
+    <div itemprop="articleBody">
+      {{ content }}
+    </div>
+  </article>
+  <hr />
+  <footer>
+    {% include share-page.html %} {% include author.html %}
+  </footer>
+  <aside>
+    {% include comments.html %}
+  </aside>
 </main>
 {% include anchor-links.html %}
