@@ -12,6 +12,10 @@ html {
   }
 }
 
+* {
+  transition: background 0.2s ease-out;
+}
+
 html, body {
   height: 100%;
 }
@@ -92,7 +96,6 @@ main.uk-container {
 .uk-navbar-container {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
-  transition: background 0.2s ease-out;
 }
 
 .uk-light .uk-navbar-container:not(.uk-navbar-transparent) {
