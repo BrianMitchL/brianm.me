@@ -8,13 +8,9 @@ disable-description: true
 
 This is a running list of the gear that I use. Last updated <time datetime="{{ page.modified | date: date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>.
 
-## On This Page
-{: .no_toc .uk-heading-divider}
-- ToC
-{:toc}
+{% include toc.md %}
 
 ## Computers
-{: .uk-heading-divider}
 
 ### Skylab
 
@@ -78,14 +74,12 @@ macOS Mojave
 - Elgato Thunderbolt 3 dock
 
 ## Mobile Devices
-{: .uk-heading-divider}
 
 - BriPhone XS Max, [iPhone XS Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
 - BriPad Pro, [iPad Pro (9.7-inch)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-pro-9-7-inch-1st-gen-wi-fi-only-specs.html)
 - Brapple Watch 3, [Apple Watch Series 3](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-3-gps-cellular-42mm-us-canada-a1861.html)
 
 ## Accessories
-{: .uk-heading-divider}
 
 - AirPods
 - Beats Solo<sup>3</sup> Wireless
@@ -102,7 +96,6 @@ macOS Mojave
 - Macally Aluminum Laptop Stand
 
 ## Media
-{: .uk-heading-divider}
 
 - TCL 55" 55P605 4K UHD HDR TV
 - BriTV, [Apple TV 4K](https://everymac.com/systems/apple/apple-tv/specs/apple-tv-4k-5th-generation-2017-specs.html)
@@ -111,7 +104,6 @@ macOS Mojave
 - Apple AirPort Express (2nd Generation)
 
 ## Legacy
-{: .uk-heading-divider}
 
 - BriBook Pro, [MacBook Pro (Retina, Mid 2012)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.7-15-mid-2012-retina-display-specs.html)
 - BriPhone 7, [iPhone 7](https://everymac.com/systems/apple/iphone/specs/apple-iphone-7-att-t-mobile-global-a1778-specs.html)
@@ -126,7 +118,6 @@ macOS Mojave
 - BriPod Nano, [iPod Nano (3rd generation)](https://everymac.com/systems/apple/ipod/specs/ipod-3rd-generation-fat-nano-specs.html)
 
 ## Transportation
-{: .uk-heading-divider}
 
 - 2013 Toyota Prius c Two
 - 2017 Jamis Renegade Expat bicycle

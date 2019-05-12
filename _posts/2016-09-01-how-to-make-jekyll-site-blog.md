@@ -90,6 +90,7 @@ The `exclude` setting tells Jekyll to ignore certain files when building the sit
 
 Front matter is a [YAML](http://yaml.org) block in-between a set of triple-dashed lines. It is how to set page level variables and metadata. Liquid will only add tags and variables if a file contains front matter. Below is the front matter from this post:
 
+<!-- prettier-ignore-start -->
 ```yaml
 ---
 layout: {{ page.layout }}
@@ -102,6 +103,7 @@ seo.type: BlogPosting
 image: {{ page.title }}
 ---
 ```
+<!-- prettier-ignore-end -->
 
 Variables included in the front matter or that come standard on any page or post can be accessed on the page by using the Liquid template engine:
 
@@ -184,11 +186,13 @@ When writing pages and posts, you don't want to have to keep track of every occu
 
 Every page I make in some way uses this layout. If I created a new page, I would include the following in it's front matter, and the content of that file would be rendered into the `{% raw %}{{ content }}{% endraw %}` of the default layout:
 
+<!-- prettier-ignore-start -->
 ```yaml
 ---
 layout: default
 ---
 ```
+<!-- prettier-ignore-end -->
 
 Another layout can also use a layout. It's content will be loaded in the `{% raw %}{{ content }}{% endraw %}` of it's parent layout.
 

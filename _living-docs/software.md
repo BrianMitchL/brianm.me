@@ -8,25 +8,19 @@ disable-description: true
 
 This is a running list of the software that I use. Last updated <time datetime="{{ page.modified | date: date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>.
 
-## On This Page
-{: .no_toc .uk-heading-divider}
-- ToC
-{:toc}
+{% include toc.md %}
 
 ## Browsers
-{: .uk-heading-divider}
 
 1. Safari (Home)
 2. Firefox (Work)
 3. Edge (Home on Windows)
 4. Chrome (When needed)
-999. Internet Explorer 11 (Windows, debugging only)
+5. Internet Explorer 11 (Windows, debugging only)
 
 ## macOS
-{: .uk-heading-divider}
 
 ### Audio/Video
-{: .uk-heading-divider}
 
 - Final Cut Pro X
 - Forecast
@@ -42,7 +36,6 @@ This is a running list of the software that I use. Last updated <time datetime="
 - `youtube-dl`
 
 ### Development
-{: .uk-heading-divider}
 
 - Atom
 - `brew`
@@ -59,13 +52,11 @@ This is a running list of the software that I use. Last updated <time datetime="
 - WebStorm
 
 ### Photography
-{: .uk-heading-divider}
 
 - Apple Photos
 - Pixelmator
 
 ### Productivity and Social
-{: .uk-heading-divider}
 
 - 1Password
 - Apple Mail
@@ -77,7 +68,6 @@ This is a running list of the software that I use. Last updated <time datetime="
 - Tweetbot for Mac
 
 ### Utilities
-{: .uk-heading-divider}
 
 - AppCleaner
 - BetterTouchTool
@@ -94,12 +84,10 @@ This is a running list of the software that I use. Last updated <time datetime="
 - Wineskin Winery
 
 ## iOS
-{: .uk-heading-divider}
 
 A :star2: indicates an app I find especially notable.
 
 ### Entertainment
-{: .uk-heading-divider}
 
 - [Cyanide and Happiness](https://itunes.apple.com/us/app/cyanide-and-happiness/id368088267)
 - [Duolingo](https://itunes.apple.com/app/duolingo-learn-spanish-french/id570060128)
@@ -112,7 +100,6 @@ A :star2: indicates an app I find especially notable.
 - [Television Time](https://itunes.apple.com/us/app/television-time/id969714962) :star2:
 
 ### Games
-{: .uk-heading-divider}
 
 - [Alto's Adventure](https://itunes.apple.com/us/app/altos-adventure/id950812012) :star2:
 - [Alto's Odyssey](https://itunes.apple.com/us/app/altos-odyssey/id1182456409)
@@ -125,14 +112,12 @@ A :star2: indicates an app I find especially notable.
 - [Threes](https://itunes.apple.com/us/app/threes-freeplay/id976851174) :star2:
 
 ### Music
-{: .uk-heading-divider}
 
 - Apple Music
 - [Mixcloud](https://itunes.apple.com/us/app/mixcloud-radio-dj-mixes/id401206431)
 - [Shazam](https://itunes.apple.com/us/app/shazam/id284993459)
 
 ### Photo/Video
-{: .uk-heading-divider}
 
 - [1 Second Everyday](https://itunes.apple.com/us/app/1-second-everyday-video-diary/id587823548) :star2:
 - [Darkroom](https://itunes.apple.com/us/app/darkroom-photo-editor/id953286746) :star2:
@@ -143,7 +128,6 @@ A :star2: indicates an app I find especially notable.
 - [ViewExif](https://itunes.apple.com/us/app/viewexif/id945320815)
 
 ### Productivity
-{: .uk-heading-divider}
 
 - [1Blocker X](https://itunes.apple.com/us/app/1blocker-x/id1365531024)
 - [1Password](https://itunes.apple.com/us/app/1password-password-manager/id568903335) :star2:
@@ -159,7 +143,6 @@ A :star2: indicates an app I find especially notable.
 - [Waze](https://itunes.apple.com/us/app/waze-navigation-live-traffic/id323229106)
 
 ### Social
-{: .uk-heading-divider}
 
 - [Apollo for Reddit](https://itunes.apple.com/us/app/apollo-for-reddit/id979274575) :star2:
 - [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669)
@@ -169,7 +152,6 @@ A :star2: indicates an app I find especially notable.
 - [Tweetbot](https://itunes.apple.com/us/app/tweetbot-4-for-twitter/id1018355599) :star2:
 
 ### Utilities
-{: .uk-heading-divider}
 
 - [Prompt](https://itunes.apple.com/us/app/prompt-2/id917437289) :star2:
 - [Screens](https://itunes.apple.com/us/app/screens/id655890150)
