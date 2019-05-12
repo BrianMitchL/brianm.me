@@ -4,10 +4,10 @@ html {
 }
 
 html.dark {
-  background: #1F2023;
+  background: #1f2023;
 
   #site-footer {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.7);
     & a:hover {
       color: #ddd !important;
     }
@@ -37,7 +37,8 @@ a {
   text-decoration-skip: ink;
 }
 
-.uk-table td, .uk-table th {
+.uk-table td,
+.uk-table th {
   span {
     display: block;
     font-size: 90%;
@@ -90,12 +91,12 @@ a {
 @media (min-width: 960px) {
   .align-large-left {
     margin-right: 15px;
-    float: left
+    float: left;
   }
 
   .align-large-right {
     margin-left: 15px;
-    float: right
+    float: right;
   }
 }
 

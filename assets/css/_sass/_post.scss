@@ -1,4 +1,4 @@
-div[itemprop="articleBody"] > p:first-child {
+div[itemprop='articleBody'] > p:first-child {
   // .uk-text-lead
   font-size: 1.5rem;
   line-height: 1.5;
@@ -7,11 +7,11 @@ div[itemprop="articleBody"] > p:first-child {
 
 figure {
   img {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   figcaption {
     color: #999;
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   &.video-container {

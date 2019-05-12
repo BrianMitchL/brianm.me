@@ -31,6 +31,11 @@ exclude:
   - CNAME
   - LICENSE
   - vendor
+  - node_modules
+  - .prettierrc
+  - .editorconfig
+  - package.json
+  - package-lock.json
 
 sass:
   sass_dir: assets/css/_sass
