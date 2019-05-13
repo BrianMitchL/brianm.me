@@ -27,7 +27,7 @@ link: /blog
     </p>
   </header>
   <p>
-    {{ post.excerpt }}
+    {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_newlines }}
     <a class="uk-button uk-button-text" href="{{ post.url }}">Read more</a>
   </p>
 </article>

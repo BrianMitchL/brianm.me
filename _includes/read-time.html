@@ -2,7 +2,7 @@
 {% assign realContent = content %} {% endif %}
 
 <span title="Estimated Reading Time">
-  :book: about {% assign timeToRead = realContent | number_of_words |
-  divided_by: 200.0 %} {% if timeToRead <= 1 %} 1 min {% else %} {{ timeToRead |
+  :book: about {%- assign timeToRead = realContent | number_of_words |
+  divided_by: 200.0 -%} {% if timeToRead <= 1 %} 1 min {% else %} {{ timeToRead |
   round }} mins {% endif %}
 </span>
