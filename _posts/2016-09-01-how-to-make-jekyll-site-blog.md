@@ -374,7 +374,7 @@ social:
     - https://www.last.fm/user/bman4789
     - https://www.linkedin.com/in/brianscottmitchell
     - https://open.spotify.com/user/1237277662
-    - https://soundcloud.com/bman4789
+    - https://soundcloud.com/brianmitchl
     - https://steamcommunity.com/id/MagicBriBri
     - https://vine.co/bman4789
     - https://www.youtube.com/user/bman112234
