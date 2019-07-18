@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-05-11
+modified: 2019-07-18
 title: Gear
 description: A list of the gear that I use.
 ---
@@ -40,7 +40,6 @@ CentOS 7.5
 
 - Plex Media Server
 - Tautulli
-- Shairport Sync
 
 ### Salyut
 

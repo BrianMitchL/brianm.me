@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-05-11
+modified: 2019-07-18
 title: Software
 description: A list of software that I use.
 ---
@@ -51,6 +51,8 @@ _\* used for web development only_
 - Terminal with zsh and oh-my-zsh (see my [dotfiles](https://github.com/BrianMitchL/dotfiles))
 - WebStorm
 
+[Dank Mono](https://dank.sh) font.
+
 ### Photography
 
 - Apple Photos
@@ -69,19 +71,22 @@ _\* used for web development only_
 
 ### Utilities
 
-- AppCleaner
-- BetterTouchTool
-- Coconut Battery
-- Daisy Disk
-- DriveDX
-- iStat Menus
-- iStumbler
-- `mas`
-- Pacifist
-- Screens
-- Transmission
-- Transmit
-- Wineskin Winery
+- [AppCleaner](https://freemacsoft.net/appcleaner/)
+- [Bartender 3](https://www.macbartender.com)
+- [BetterTouchTool](https://folivora.ai)
+- [Coconut Battery](https://www.coconut-flavour.com/coconutbattery/)
+- [Daisy Disk](https://daisydiskapp.com)
+- [DriveDX](https://binaryfruit.com/drivedx)
+- [iStat Menus](https://bjango.com/mac/istatmenus/)
+- [iStumbler](https://istumbler.net)
+- [`mas`](https://github.com/mas-cli/mas)
+- [Night Owl](https://nightowl.kramser.xyz)
+- [Pacifist](https://www.charlessoft.com)
+- [Rocket](https://matthewpalmer.net/rocket/)
+- [Screens](https://edovia.com/en/screens-mac/)
+- [Transmission](https://transmissionbt.com)
+- [Transmit](https://www.panic.com/transmit/)
+- [Wineskin](http://wineskin.urgesoftware.com/tiki-index.php)
 
 ## iOS
 
@@ -122,10 +127,10 @@ A :star2: indicates an app I find especially notable.
 
 - [1 Second Everyday](https://itunes.apple.com/us/app/1-second-everyday-video-diary/id587823548) :star2:
 - [Darkroom](https://itunes.apple.com/us/app/darkroom-photo-editor/id953286746) :star2:
-- [Halide](https://itunes.apple.com/us/app/halide-camera/id885697368) :star2:
+- [Halide Camera](https://itunes.apple.com/us/app/halide-camera/id885697368) :star2:
 - [Motion Stills](https://itunes.apple.com/us/app/motion-stills-gif-collage/id1086172168)
-- [Obscura](https://itunes.apple.com/us/app/obscura-2/id1290342794)
 - [Pixelmator](https://itunes.apple.com/us/app/pixelmator/id924695435)
+- [Spectre Camera](https://apps.apple.com/us/app/spectre-camera/id1450074595) :star2:
 - [ViewExif](https://itunes.apple.com/us/app/viewexif/id945320815)
 
 ### Productivity
