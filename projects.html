@@ -30,6 +30,10 @@ description: Personal Projects
     <a href="https://gitlab.com/{{ project.gitlab }}" target="_blank">
       {% include icon.html icon="gitlab" %} {{ project.name }} on GitLab</a
     ><br>
+    {% endif %} {% if project.npm %}
+    <a href="https://npmjs.com/package/{{ project.npm }}" target="_blank">
+      {% include icon.html icon="npm" %} {{ project.name }} on npm</a
+    ><br>
     {% endif %} {{ project.description }}
   </p>
 </div>

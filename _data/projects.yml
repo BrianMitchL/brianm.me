@@ -1,5 +1,13 @@
+- name: gift-exchange
+  featured: true
+  range: November 2018 - Present
+  description: A library to generate unbiased pairs of names for a gift exchange or secret santa.
+  status: <a href="https://travis-ci.org/BrianMitchL/gift-exchange" title="Build Status"><img src="https://travis-ci.org/BrianMitchL/gift-exchange.svg?branch=master" alt="Build Status"/></a> <a href='https://coveralls.io/github/BrianMitchL/gift-exchange?branch=master'><img src='https://coveralls.io/repos/github/BrianMitchL/gift-exchange/badge.svg?branch=master' alt='Coverage Status' /></a> <a href="https://github.com/BrianMitchL/gift-exchange/releases/latest" title="GitHubRelease"><img src="https://img.shields.io/github/release/BrianMitchL/gift-exchange.svg?maxAge=2592000" alt="GitHub Release"/></a>
+  github: BrianMitchL/gift-exchange
+  npm: gift-exchange
+
 - name: The Nexus CMS Admin Frontend
-  range: November 2016 - Present
+  range: November 2016 - April 2017
   description: Vue.js frontend for "the new CMS" of <a href="http://thenexus.tv" title="The Nexus">The Nexus</a> podcast network.
   gitlab: thenexustv/nexus-cms-admin-frontend
 
