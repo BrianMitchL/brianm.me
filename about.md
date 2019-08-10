@@ -26,7 +26,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 ## Hobbies
 
 - Co-organizer of the [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetup
-- Frequently attend React Minneapolis and NodeMN meetups
+- Frequently attend [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/) and [NodeMN](https://www.meetup.com/NodeMN/) meetups
 - Podcasting on [The Nexus](http://thenexus.tv)
 - Bicycling
 - Downhill skiing
