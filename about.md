@@ -65,12 +65,12 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
   Managed, maintained, updated, and supported the computer science labs in relation to software, hardware, and users.
 - __Info Link, Inc.__, _IT Specialist_ (Summer 2014, internship), Morris, MN.\\
   Assisted with managing Info-Link's network and services. This included but was not limited to:
-  _ Providing support and consulting for users
-  _ Computer service and repair
-  _ Installing wireless Internet in homes and businesses
-  _ Providing custom network installations
-  _ Managing internal tools, servers, radios, and other hardware
-  _ Climbing telecom towers, water towers, and grain elevators to install or service Info-Link's hardware
+  - Providing support and consulting for users
+  - Computer service and repair
+  - Installing wireless Internet in homes and businesses
+  - Providing custom network installations
+  - Managing internal tools, servers, radios, and other hardware
+  - Climbing telecom towers, water towers, and grain elevators to install or service Info-Link's hardware
 - __[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions__ (April 25-26, 2014), ​Verona, WI.\\
   Teams placed 4th of 11 in robotics (Java), and 18th of ~50 for programming (Java).
 - __University of Minnesota, Morris__, _Student Center Tech Crew_ (Fall 2012 - Spring 2016), Morris, MN.\\
