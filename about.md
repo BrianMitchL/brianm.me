@@ -43,8 +43,8 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 ## Experience
 
 - __C.H. Robinson__ (November 2016 - Present), Eden Prairie, MN.\\
-  - _Software Engineer_ III (August 2019 - Present), Customer Facing Analytics
-  - _Software Engineer_ II (January 2018 - July 2019), Customer Facing Analytics
+  - _Software Engineer III_ (August 2019 - Present), Customer Facing Analytics
+  - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
     - Architected and lead the development of the React front-end for a new highly-scaling customer analytics platform.
     - Built a complex multi-source user authentication and impersonation flow, developed new patterns using React hooks to reduce the amount of code, and built performant charting and table components utilizing TypeScript generics for displaying a wide range of data.
     - Developed an internal administration and analytics tool for displaying a usage statistics and debugging information.
