@@ -155,6 +155,7 @@ A :star2: indicates an app I find especially notable.
 - [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669)
 - [Slack](https://itunes.apple.com/us/app/slack/id618783545)
 - [Strava](https://itunes.apple.com/us/app/strava-run-ride-or-swim/id426826309)
+- [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082)
 - [Tootdon](https://itunes.apple.com/us/app/tootdon-for-mastodon/id1282283934)
 - [Tweetbot](https://itunes.apple.com/us/app/tweetbot-4-for-twitter/id1018355599) :star2:
 
