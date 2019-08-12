@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-07-18
+modified: 2019-08-11
 title: Software
 description: A list of software that I use.
 ---
