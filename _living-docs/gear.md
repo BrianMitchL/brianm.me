@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-07-18
+modified: 2019-08-14
 title: Gear
 description: A list of the gear that I use.
 ---
@@ -93,6 +93,7 @@ macOS Mojave
 - Apple Magic Trackpad
 - Macally Aluminum Laptop Stand
 - APC UPS 1500VA (BX1500M)
+- LG UltraFine 5K 27MD5KA
 
 ## Media
 
