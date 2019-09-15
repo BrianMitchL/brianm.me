@@ -1,0 +1,92 @@
+<script type="text/javascript">
+  function createTable(caption) {
+    const table = document.createElement('table');
+    table.classList.add(
+      'uk-table',
+      'uk-table-small',
+      'uk-table-striped',
+      'uk-text-left'
+    );
+    const captionEl = table.createCaption();
+    captionEl.appendChild(document.createTextNode(caption));
+    return table;
+  }
+
+  function createTableHead(table, columns) {
+    const thead = table.createTHead();
+    const row = thead.insertRow();
+    columns.forEach(col => {
+      const th = document.createElement('th');
+      const text = document.createTextNode(col);
+      th.appendChild(text);
+      row.appendChild(th);
+    });
+  }
+
+  function createLinkCell(row, href, text) {
+    const cell = row.insertCell();
+    cell.classList.add('uk-table-link');
+
+    const link = document.createElement('a');
+    link.setAttribute('href', href);
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer');
+    link.appendChild(document.createTextNode(text));
+
+    cell.appendChild(link);
+  }
+
+  function createNumberCell(row, number) {
+    const cell = row.insertCell();
+    cell.appendChild(document.createTextNode(Number(number).toLocaleString()));
+  }
+
+  const getData = async (path, period = 'overall') => {
+    const response = await fetch(
+      `https://royal-darkness-cf0c.brianmitchl.workers.dev/${path}?period=${period}`
+    );
+    if (response.ok && response.status === 200) {
+      return response.json();
+    }
+    throw new Error('Bad request');
+  };
+
+  const artistsNode = document.getElementById('last-fm-artists-root');
+  if (artistsNode) {
+    getData('artists', '1month')
+      .then(data => {
+        const mapped = data.topartists.artist.map(artist => ({
+          name: artist.name,
+          url: artist.url,
+          playcount: artist.playcount
+        }));
+        const table = createTable('Top Artists - One Month');
+        createTableHead(table, ['Name', 'Playcount']);
+        const tbody = table.createTBody();
+        mapped.forEach(artist => {
+          const row = tbody.insertRow();
+
+          createLinkCell(row, artist.url, artist.name);
+          createNumberCell(row, artist.playcount);
+        });
+        const spinners = artistsNode.getElementsByClassName('uk-spinner');
+        if (spinners.length > 0) {
+          artistsNode.removeChild(spinners[0]);
+        }
+        artistsNode.appendChild(table);
+      })
+      .catch(e => {
+        console.error(e);
+        const spinners = artistsNode.getElementsByClassName('uk-spinner');
+        if (spinners.length > 0) {
+          artistsNode.removeChild(spinners[0]);
+        }
+        const error = document.createElement('span');
+        error.classList.add('uk-text-danger');
+        error.appendChild(
+          document.createTextNode('Error fetching top artists 😞')
+        );
+        artistsNode.appendChild(error);
+      });
+  }
+</script>
