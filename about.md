@@ -42,7 +42,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 
 ## Experience
 
-- __C.H. Robinson__ (November 2016 - Present), Eden Prairie, MN.\\
+- **C.H. Robinson** (November 2016 - Present), Eden Prairie, MN.\\
   - _Software Engineer III_ (August 2019 - Present), Customer Facing Analytics
   - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
     - Architected and lead the development of the React front-end for a new highly-scaling customer analytics platform.
@@ -53,17 +53,17 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
   - _Software Engineer I_ (November 2016 - December 2017), Enterprise Data Warehouse Customer
     - Built new widgets and lead major refactoring for a customer analytics tool to support additional segments of the company and powerful dynamic data filtering application-wide.
     - Designed new and rewrote existing screens in an animation-focused data visualization tool for lobby displays leveraging AngularJS, D3, and Bing Maps.
-- __Concordia Language Villages - Skovsøen__, _Counselor and Technology Support_ (Summer 2016), Bemidji, MN.\\
+- **Concordia Language Villages - Skovsøen**, _Counselor and Technology Support_ (Summer 2016), Bemidji, MN.\\
   Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
-- __CarlHacks 2016__ (April 8-10 2016), Carleton College, Northfield, MN.\\
+- **CarlHacks 2016** (April 8-10 2016), Carleton College, Northfield, MN.\\
   36 hour hackathon where I worked with a classmate to start an iOS application in Swift. For more info, see our [devpost page](https://devpost.com/software/bpm).
-- __C.H. Robinson__, _Intern - IT_ (Summer 2015, internship), Eden Prairie, MN.\\
+- **C.H. Robinson**, _Intern - IT_ (Summer 2015, internship), Eden Prairie, MN.\\
   Developed an interactive lobby display illustrating active customer shipments on an animated world map, implemented with web technologies for touch­driven hardware as part of working on the Client Technology Strategy and Enterprise Data Warehouse teams. Some technologies used were JavaScript, jQuery, Microsoft Maps, and d3.js.
-- __[MICS 2015](https://www.micsymposium.org/mics2015/) Robotics and Programming Competitions__ (April 10-11, 2015), ​Grand Forks, ND.\\
+- **[MICS 2015](https://www.micsymposium.org/mics2015/) Robotics and Programming Competitions** (April 10-11, 2015), ​Grand Forks, ND.\\
   Teams placed 2nd of 14 in robotics (Arduino), and 26th of 52 for programming (Java).
-- __Computer Science Discipline, University of Minnesota, Morris.__, _System Administrator_ (Fall 2014 - Spring 2015), Morris, MN.\\
+- **Computer Science Discipline, University of Minnesota, Morris.**, _System Administrator_ (Fall 2014 - Spring 2015), Morris, MN.\\
   Managed, maintained, updated, and supported the computer science labs in relation to software, hardware, and users.
-- __Info Link, Inc.__, _IT Specialist_ (Summer 2014, internship), Morris, MN.\\
+- **Info Link, Inc.**, _IT Specialist_ (Summer 2014, internship), Morris, MN.\\
   Assisted with managing Info-Link's network and services. This included but was not limited to:
   - Providing support and consulting for users
   - Computer service and repair
@@ -71,12 +71,12 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
   - Providing custom network installations
   - Managing internal tools, servers, radios, and other hardware
   - Climbing telecom towers, water towers, and grain elevators to install or service Info-Link's hardware
-- __[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions__ (April 25-26, 2014), ​Verona, WI.\\
+- **[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions** (April 25-26, 2014), ​Verona, WI.\\
   Teams placed 4th of 11 in robotics (Java), and 18th of ~50 for programming (Java).
-- __University of Minnesota, Morris__, _Student Center Tech Crew_ (Fall 2012 - Spring 2016), Morris, MN.\\
+- **University of Minnesota, Morris**, _Student Center Tech Crew_ (Fall 2012 - Spring 2016), Morris, MN.\\
   _Lighting Lead_ for the 2014-2015 school year and Spring 2016 semester.\\
   Designed, set-up, and operated sound and lighting for small to large scale events. This also included rigging, managing power distribution, electrical work, operating heavy equipment, cable management, talking with clients, and problem solving.
-- __Concordia Language Villages__, _Assistant Cook_ (Summer 2012, Summer 2013), Bemidji, MN.
+- **Concordia Language Villages**, _Assistant Cook_ (Summer 2012, Summer 2013), Bemidji, MN.
 
 ## Education
 
