@@ -41,6 +41,13 @@
     cell.appendChild(document.createTextNode(Number(number).toLocaleString()));
   }
 
+  function removeSpinner(container) {
+    const spinners = container.getElementsByClassName('uk-spinner');
+    if (spinners.length > 0) {
+      container.removeChild(spinners[0]);
+    }
+  }
+
   const getData = async (path, period = 'overall') => {
     const response = await fetch(
       `https://royal-darkness-cf0c.brianmitchl.workers.dev/${path}?period=${period}`
@@ -69,18 +76,13 @@
           createLinkCell(row, artist.url, artist.name);
           createNumberCell(row, artist.playcount);
         });
-        const spinners = artistsNode.getElementsByClassName('uk-spinner');
-        if (spinners.length > 0) {
-          artistsNode.removeChild(spinners[0]);
-        }
+
+        removeSpinner(artistsNode);
         artistsNode.appendChild(table);
       })
       .catch(e => {
         console.error(e);
-        const spinners = artistsNode.getElementsByClassName('uk-spinner');
-        if (spinners.length > 0) {
-          artistsNode.removeChild(spinners[0]);
-        }
+        removeSpinner(artistsNode);
         const error = document.createElement('span');
         error.classList.add('uk-text-danger');
         error.appendChild(
