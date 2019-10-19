@@ -6,6 +6,11 @@ link: /talks
 redirect_from: /slides
 ---
 
+- ### [React Testing Library Livecoding](https://codesandbox.io/embed/react-minneapolis-rtl-sandbox-txy5t)
+
+  [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/263988845/)
+  Main Talk, <time dateTime="2019-10-17">October 17, 2019</time>
+
 - ### [TypeScript & React](https://github.com/BrianMitchL/typescript-react-talk/tree/react-mpls-talk)
 
   [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/257861771/)
