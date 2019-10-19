@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-09-22
+modified: 2019-10-19
 title: Gear
 description: A list of the gear that I use.
 ---
@@ -75,7 +75,7 @@ macOS Mojave
 
 - BriPhone XS Max, [iPhone XS Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
 - BriPad Pro, [iPad Pro (9.7-inch)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-pro-9-7-inch-1st-gen-wi-fi-only-specs.html)
-- Brapple Watch 5, Apple Watch Series 5
+- Brapple Watch 5, [Apple Watch Series 5 (Aluminum, GPS, 44 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-5-aluminum-gps-44mm-a2093.html)
 
 ## Accessories
 
