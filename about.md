@@ -7,13 +7,13 @@ description: Extended Résumé
 
 _A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf)._
 
-I am primarily focused in web development, particularly on the UI side. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer and programmer primarily on ETC EOS family consoles.
+I am primarily focused in front-end web development with an interest in tooling and developer experience. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer, electrician, and console programmer.
 
 Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
 ## Tools/Frameworks/Languages
 
-TypeScript, JavaScript, React, Redux, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, Redux, redux-saga, react-table, react-testing-library, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 ### Operating Systems
 
@@ -44,8 +44,11 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 
 - **C.H. Robinson** (November 2016 - Present), Eden Prairie, MN.\\
   - _Software Engineer III_ (August 2019 - Present), Customer Facing Analytics
+    - Architected and lead the development of the React front‐end for a
+    highly‐scaling customer analytics platform.
+    - Lead technical maintainer of a hubot chatbot running in Slack.
   - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
-    - Architected and lead the development of the React front-end for a new highly-scaling customer analytics platform.
+    - Architected and lead the development of the React front-end for a highly-scaling customer analytics platform.
     - Built a complex multi-source user authentication and impersonation flow, developed new patterns using React hooks to reduce the amount of code, and built performant charting and table components utilizing TypeScript generics for displaying a wide range of data.
     - Developed an internal administration and analytics tool for displaying a usage statistics and debugging information.
     - Mentored across the company with JavaScript/TypeScript and React.
