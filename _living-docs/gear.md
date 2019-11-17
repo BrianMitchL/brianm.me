@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-10-19
+modified: 2019-11-16
 title: Gear
 description: A list of the gear that I use.
 ---
@@ -20,7 +20,7 @@ macOS Mojave
 ### Terra
 
 ~~Hackintosh (Late 2013)~~ (RIP, no longer running macOS, see the
-[blog post]({{ site.url }}{{ site.baseurl }}/posts/a-hackintosh-reflection))
+[blog post]({% post_url 2018-09-23-a-hackintosh-reflection %}))
 
 Specs:
 
@@ -79,7 +79,8 @@ macOS Mojave
 
 ## Accessories
 
-- AirPods
+- AirPods Pro
+- AirPods (1st generation)
 - Beats Solo<sup>3</sup> Wireless
 - Sony WH-1000XM3 Wireless Noise-Canceling Headphones
 - Focusrite Scarlett 2i2 audio interface
