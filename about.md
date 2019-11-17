@@ -45,7 +45,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 - **C.H. Robinson** (November 2016 - Present), Eden Prairie, MN.\\
   - _Software Engineer III_ (August 2019 - Present), Customer Facing Analytics
     - Architected and lead the development of the React front‐end for a
-    highly‐scaling customer analytics platform.
+      highly‐scaling customer analytics platform.
     - Lead technical maintainer of a hubot chatbot running in Slack.
   - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
     - Architected and lead the development of the React front-end for a highly-scaling customer analytics platform.
