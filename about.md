@@ -49,6 +49,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
     - Lead technical maintainer of a hubot chatbot running in Slack.
   - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
     - Architected and lead the development of the React front-end for a highly-scaling customer analytics platform.
+    - Wrote an internal shared library for adding Adobe Analytics and providing an interface to track asynchronous events in React applications.
     - Built a complex multi-source user authentication and impersonation flow, developed new patterns using React hooks to reduce the amount of code, and built performant charting and table components utilizing TypeScript generics for displaying a wide range of data.
     - Developed an internal administration and analytics tool for displaying a usage statistics and debugging information.
     - Mentored across the company with JavaScript/TypeScript and React.
