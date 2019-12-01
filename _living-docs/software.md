@@ -1,6 +1,6 @@
 ---
 layout: page
-modified: 2019-08-11
+modified: 2019-12-01
 title: Software
 description: A list of software that I use.
 ---
@@ -99,10 +99,9 @@ A :star2: indicates an app I find especially notable.
 - [Fog of World](https://itunes.apple.com/us/app/fog-of-world/id505367096) (see my [review]({{ site.url }}{{ site.baseurl }}/posts/fog-of-world-2)) :star2:
 - [GPX Builder](https://itunes.apple.com/us/app/fog-of-world-assistant-gpx-builder/id938037644)
 - [Simple Reader for Hacker News](https://itunes.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
-- [Cinema Time](https://itunes.apple.com/us/app/cinema-time/id1096436735)
 - [Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857) :star2:
 - [Plex](https://itunes.apple.com/us/app/plex/id383457673)
-- [Television Time](https://itunes.apple.com/us/app/television-time/id969714962) :star2:
+- [Watcht for Trakt](https://apps.apple.com/us/app/watcht-for-trakt/id1396920723) :star2:
 
 ### Games
 
@@ -155,7 +154,7 @@ A :star2: indicates an app I find especially notable.
 - [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669)
 - [Slack](https://itunes.apple.com/us/app/slack/id618783545)
 - [Strava](https://itunes.apple.com/us/app/strava-run-ride-or-swim/id426826309)
-- [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082)
+- [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082) :star2:
 - [Tootdon](https://itunes.apple.com/us/app/tootdon-for-mastodon/id1282283934)
 - [Tweetbot](https://itunes.apple.com/us/app/tweetbot-4-for-twitter/id1018355599) :star2:
 
@@ -168,5 +167,5 @@ A :star2: indicates an app I find especially notable.
 - [DS file](https://itunes.apple.com/us/app/ds-file/id416751772)
 - [DS finder](https://itunes.apple.com/us/app/ds-finder/id429865523)
 - [Mactracker](https://itunes.apple.com/us/app/mactracker/id311421597)
-- [Omnistat](https://itunes.apple.com/us/app/omnistat/id898245825)
+- [Omnistat 2](https://apps.apple.com/us/app/omnistat-2/id1473751241)
 - [Working Copy](https://itunes.apple.com/us/app/working-copy/id896694807) :star2:
