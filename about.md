@@ -11,7 +11,7 @@ I am primarily focused in front-end web development with an interest in tooling 
 
 Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
-## Tools/Frameworks/Languages
+## Tools, Frameworks, and Languages
 
 TypeScript, JavaScript, React, Redux, redux-saga, react-table, react-testing-library, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
