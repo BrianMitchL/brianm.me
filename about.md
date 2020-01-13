@@ -116,6 +116,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 
 ## Theatre Experience
 
+- _Lighting Designer_ - _Young Artists Initiative's Frozen Jr._, January 2020, The Wellstone Center, Saint Paul, MN
 - _Lighting Designer_ - _Young Artists Initiative's Annie_, March 2018, The Wellstone Center, Saint Paul, MN [Photos](https://www.facebook.com/pg/youngartistsmn/photos/?tab=album&album_id=2328712980574326)
 - _Electrician_ - _Green T Productions' Frankenstein: A Modern Prometheus_, November 2017, The Historic Mounds Theatre, Saint Paul, MN
 - _Lighting Designer_ - _Dance Ensemble_, Spring 2016, University of Minnesota, Morris [Photos](https://flic.kr/s/aHskyhQRx3)
