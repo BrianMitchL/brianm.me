@@ -1,7 +1,7 @@
 <button
   id="show-comments-button"
   class="uk-button uk-button-default uk-button-small"
-  onclick="loadComments();return false;"
+  onclick="loadComments()"
 >
   Load Comments
 </button>
@@ -13,16 +13,15 @@
   ></noscript
 >
 <script type="text/javascript">
-  var disqus_loaded = false;
-  var disqus_shortname = '{{ site.comments.disqus.shortname }}';
-
+  var l = false;
   function loadComments() {
-    if (!disqus_loaded) {
-      disqus_loaded = true;
+    if (!l) {
+      l = true;
       (function() {
         var d = document,
           s = d.createElement('script');
-        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        s.src =
+          'https://{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
       })();
