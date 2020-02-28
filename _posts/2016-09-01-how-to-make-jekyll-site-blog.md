@@ -371,7 +371,7 @@ social:
     - https://twitter.com/BrianMitchL
     - https://plus.google.com/+BrianMitchell16/
     - https://www.instagram.com/BrianMitchL
-    - https://www.last.fm/user/bman4789
+    - https://www.last.fm/user/BrianMitchL
     - https://www.linkedin.com/in/brianscottmitchell
     - https://open.spotify.com/user/1237277662
     - https://soundcloud.com/brianmitchl
