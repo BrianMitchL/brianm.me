@@ -1,19 +1,19 @@
 ---
 permalink: /about
 layout: page
-title: About
+title: About Brian Mitchell
 description: Extended Résumé
 ---
 
 _A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf)._
 
-I am primarily focused in front-end web development with an interest in tooling and developer experience. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer, electrician, and console programmer.
+I am a senior frontend software engineer and web developer with an interest in tooling and developer experience. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer, electrician, and console programmer.
 
 Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, Redux, redux-saga, react-table, react-testing-library, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, Redux, redux-saga, react-table, react-testing-library, react-query, react-spring, styled-components, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 ### Operating Systems
 
@@ -44,13 +44,21 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 
 - **C.H. Robinson** (November 2016 - Present), Eden Prairie, MN.\\
   - _Software Engineer III_ (August 2019 - Present), Customer Facing Analytics
-    - Architected and lead the development of the React front‐end for a
-      highly‐scaling customer analytics platform.
+    - Architected and lead the development of the React application for the
+      premier customer facing analytics platform.
     - Lead technical maintainer of a hubot chatbot running in Slack.
+    - Advocated for React Testing Library and modernizing frontend tooling.
   - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
-    - Architected and lead the development of the React front-end for a highly-scaling customer analytics platform.
-    - Wrote an internal shared library for adding Adobe Analytics and providing an interface to track asynchronous events in React applications.
-    - Built a complex multi-source user authentication and impersonation flow, developed new patterns using React hooks to reduce the amount of code, and built performant charting and table components utilizing TypeScript generics for displaying a wide range of data.
+    - Architected and lead the development of the React application for the
+      premier customer facing analytics platform.
+    - Implemented asynchronous event tracking for Adobe Analytics, creating a
+      common library used by React applications across the company.
+    - Built the first-in-the-company multi-source user authentication and
+      impersonation flow.
+    - Introduced, advocated, and provided patterns of using React hooks and
+      React Testing Library across the company.
+    - Built performant charting, table, and other visualization components
+      using React hooks and TypeScript.
     - Developed an internal administration and analytics tool for displaying a usage statistics and debugging information.
     - Mentored across the company with JavaScript/TypeScript and React.
     - Lead developer and publisher for the C.H. Robinson [Engineering Blog](https://engineering.chrobinson.com).
@@ -110,7 +118,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
   <ul>
       <li>Artificial Intelligence</li>
       <li>Sustainability in Northern Europe</li>
-      <li>Danish Language I--II</li>
+      <li>Danish Language I&ndash;II</li>
   </ul>
   </details>
 
