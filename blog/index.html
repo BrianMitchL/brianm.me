@@ -37,14 +37,14 @@ link: /blog
   <li>
     <a
       href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-      ><span class="uk-margin-small-right" uk-pagination-previous></span>
+      ><span class="uk-margin-small-right" uk-pagination-previous aria-hidden="true"></span>
       Prev</a
     >
   </li>
   {%- else -%}
   <li class="uk-disabled">
     <span
-      ><span class="uk-margin-small-right" uk-pagination-previous></span>
+      ><span class="uk-margin-small-right" uk-pagination-previous aria-hidden="true"></span>
       Prev</span
     >
   </li>
@@ -69,13 +69,13 @@ link: /blog
   <li>
     <a
       href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-      >Next <span class="uk-margin-small-left" uk-pagination-next></span
+      >Next <span class="uk-margin-small-left" uk-pagination-next aria-hidden="true"></span
     ></a>
   </li>
   {%- else -%}
   <li class="uk-disabled">
     <span
-      >Next <span class="uk-margin-small-left" uk-pagination-next></span
+      >Next <span class="uk-margin-small-left" uk-pagination-next aria-hidden="true"></span
     ></span>
   </li>
   {%- endif -%}
