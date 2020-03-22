@@ -17,10 +17,6 @@ permalink: /posts/:title
 paginate: 5
 paginate_path: /blog/page/:num/
 
-collections:
-  living-docs:
-    output: true
-
 exclude:
   - .idea
   - README.md
@@ -59,15 +55,15 @@ navigation:
   - text: Blog
     title: Blog Posts
     url: /blog
-  - text: Living Docs
-    title: Living Documents
-    url: /living-docs
   - text: Projects
     title: Projects
     url: /projects
   - text: Talks
     title: Talks
     url: /talks
+  - text: Uses
+    title: Uses
+    url: /uses
 
 # analytics
 analytics:
@@ -85,11 +81,6 @@ description: Blog, projects, & online presence
 
 twitter:
   username: BrianMitchL
-
-facebook:
-  app_id:
-  publisher:
-  admins:
 
 logo: /assets/images/BM-Logo.png
 
