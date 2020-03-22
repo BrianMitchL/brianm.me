@@ -1,13 +1,13 @@
 // adapted from https://medium.freecodecamp.org/how-to-detect-a-users-preferred-color-scheme-in-javascript-ec8ee514f1ef
 
-(function() {
+(function () {
   const DARK = '(prefers-color-scheme: dark)';
   const LIGHT = '(prefers-color-scheme: light)';
 
   function changeWebsiteTheme(scheme) {
     const darkFunc = scheme === 'dark' ? 'add' : 'remove';
     const lightFunc = scheme === 'light' ? 'add' : 'remove';
-    document.querySelectorAll('.themeable').forEach(el => {
+    document.querySelectorAll('.themeable').forEach((el) => {
       el.classList[darkFunc]('uk-light');
       el.classList[lightFunc]('uk-dark');
     });

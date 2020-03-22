@@ -13,6 +13,6 @@
   "author": "Brian Mitchell",
   "dependencies": {},
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^2.0.1"
   }
 }
