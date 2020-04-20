@@ -20,10 +20,7 @@ task :test => [:clean, :build] do
     :check_html => true,
     :check_img_http => true,
     :check_opengraph => true,
-    :disable_external => true,
-    :url_swap => {
-      /\/living-docs$/ => "/living-docs.html"
-    }
+    :disable_external => true
   }
   begin
     HTMLProofer.check_directory("./_site", options).run
