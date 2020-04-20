@@ -1,50 +1,29 @@
-const DARK = '(prefers-color-scheme: dark)';
-const LIGHT = '(prefers-color-scheme: light)';
-
-function changeWebsiteTheme(scheme) {
-  const darkFunc = scheme === 'dark' ? 'add' : 'remove';
-  const lightFunc = scheme === 'light' ? 'add' : 'remove';
+function applyTheme(isDark) {
+  const darkFunc = isDark ? 'add' : 'remove';
+  const lightFunc = !isDark ? 'add' : 'remove';
   document.querySelectorAll('.themeable').forEach((el) => {
     el.classList[darkFunc]('uk-light');
     el.classList[lightFunc]('uk-dark');
   });
 }
 
-function detectColorScheme() {
+function setupTheme() {
   if (!window.matchMedia) {
     return;
   }
 
-  function listener({ matches, media }) {
-    if (!matches) {
-      return;
-    }
-    if (media === DARK) {
-      changeWebsiteTheme('dark');
-    } else if (media === LIGHT) {
-      changeWebsiteTheme('light');
-    }
+  function onChange(e) {
+    applyTheme(e.matches);
   }
 
-  const mqDark = window.matchMedia(DARK);
-  if (mqDark.addEventListener) {
-    mqDark.addEventListener('change', listener);
+  const mql = window.matchMedia('(prefers-color-scheme: dark)');
+  if (mql.addEventListener) {
+    mql.addEventListener('change', onChange);
   } else {
-    mqDark.addListener(listener);
-  }
-  const mqLight = window.matchMedia(LIGHT);
-  if (mqLight.addEventListener) {
-    mqLight.addEventListener('change', listener);
-  } else {
-    mqLight.addListener(listener);
+    mql.addListener(onChange);
   }
 
-  // run the toggler on page load
-  if (mqDark.matches) {
-    changeWebsiteTheme('dark');
-  } else if (mqLight.matches) {
-    changeWebsiteTheme('light');
-  }
+  applyTheme(mql.matches);
 }
 
-detectColorScheme();
+setupTheme();
