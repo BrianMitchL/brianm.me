@@ -1,0 +1,35 @@
+---
+---
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Brian Mitchell's Blog",
+  "home_page_url": "{{ site.url }}{{ site.baseurl }}",
+  "feed_url": "{{ site.url }}{{ site.baseurl }}/feed.json",
+  "description": "{{ site.description }}",
+  "icon": "{{ site.url }}{{ site.baseurl }}/assets/images/BM-Logo.png",
+  "favicon": "{{ site.url }}{{ site.baseurl }}/assets/images/favicon.ico",
+  "author": {
+    "name": "{{ site.data.authors.brian.name }}",
+    "url": "{{ site.data.authors.brian.web }}",
+    "avatar": "https://gravatar.com/avatar/{{ site.data.authors.brian.gravatar }}?s=512"
+  },
+  "items": [
+    {%- for post in site.posts | limit: 10 -%}
+    {
+      "id": "{{ post.id }}",
+      "url": "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
+      "title": {{ post.title | jsonify }},
+      "date_published": {{ post.date | date: date_to_xmlschema | jsonify }},
+      "date_modified": {{ post.modified | date: date_to_xmlschema | jsonify }},
+      "author": {
+        "name": "{{ site.data.authors[post.author].name }}",
+        "url": "{{ site.data.authors[post.author].web }}",
+        "avatar": "https://gravatar.com/avatar/{{ site.data.authors[post.author].gravatar }}?s=512"
+      },
+      "summary": {{ post.description | jsonify }},
+      "content_html": {{ post.content | jsonify }},
+      "content_text": {{ post.content | strip_html | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
