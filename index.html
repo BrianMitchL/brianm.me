@@ -335,16 +335,7 @@ redirect_from: '/contact'
     </p>
   </section>
 
-  <section>
-    <h2>Top Recent Music</h2>
-    <p>
-      I listen to a lot of music, here's who I've been listening to in the last
-      month.
-    </p>
-    <div class="uk-width-1-2@s uk-margin-auto" id="last-fm-artists-root">
-      <div uk-spinner></div>
-    </div>
-  </section>
+  <section id="last-fm-artists-root"></section>
 </main>
 
-{% include last-fm.html %}
+<script defer src="/assets/js/lastfm-artists.js?{{site.time | date: '%s'}}"></script>
