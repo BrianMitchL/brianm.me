@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Moving to React Tesing Library
-modified: 2020-04-18 12:59:02 CDT
+title: Moving to React Testing Library
+modified: 2020-04-20 01:29:00 -0500
 description: This post covers why using React Testing Library improves testing patterns and practices to your React component tests.
 author: brian
 seo.type: BlogPosting
