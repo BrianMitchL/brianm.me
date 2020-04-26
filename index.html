@@ -21,7 +21,7 @@ redirect_from: '/contact'
         class="uk-width-1-1 uk-width-1-2@m uk-flex uk-flex-center uk-flex-column uk-flex-stretch"
       >
         <img
-          class="uk-flex uk-border-circle uk-align-center"
+          class="uk-flex uk-border-circle uk-align-center easter-egg-rotate"
           src="https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=300"
           srcset="
             https://www.gravatar.com/avatar/89e0d7d3d9370c45517960c8a12f92b9?s=600 2x,
@@ -35,7 +35,9 @@ redirect_from: '/contact'
       >
         <h1>
           Hi, I'm Brian Mitchell!
-          <span class="emoji-color-reset" role="img" aria-label="wave">👋</span>
+          <span class="emoji-color-reset wave" role="img" aria-label="wave"
+            >👋🏻</span
+          >
         </h1>
         <p class="bio">
           Senior Frontend Software Engineer and Web Developer
@@ -338,4 +340,7 @@ redirect_from: '/contact'
   <section id="last-fm-artists-root"></section>
 </main>
 
-<script defer src="/assets/js/lastfm-artists.js?{{site.time | date: '%s'}}"></script>
+<script
+  defer
+  src="/assets/js/lastfm-artists.js?{{site.time | date: '%s'}}"
+></script>
