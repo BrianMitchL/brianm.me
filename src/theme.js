@@ -1,10 +1,7 @@
 function applyTheme(isDark) {
-  const darkFunc = isDark ? 'add' : 'remove';
-  const lightFunc = !isDark ? 'add' : 'remove';
-  document.querySelectorAll('.themeable').forEach((el) => {
-    el.classList[darkFunc]('uk-light');
-    el.classList[lightFunc]('uk-dark');
-  });
+  const htmlEl = document.getElementsByTagName('html')[0];
+  htmlEl.classList.remove(isDark ? 'uk-dark' : 'uk-light');
+  htmlEl.classList.add(isDark ? 'uk-light' : 'uk-dark');
 }
 
 function setupTheme() {
@@ -17,9 +14,7 @@ function setupTheme() {
   }
 
   const mql = window.matchMedia('(prefers-color-scheme: dark)');
-  if (mql.addEventListener) {
-    mql.addEventListener('change', onChange);
-  } else {
+  if (mql.addListener) {
     mql.addListener(onChange);
   }
 
