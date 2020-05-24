@@ -72,11 +72,6 @@ analytics:
   google:
     tracking_id: UA-44772557-2
 
-# comments
-comments:
-  disqus:
-    shortname: brianmme
-
 # seo
 title: Brian Mitchell
 description: Blog, projects, & online presence
