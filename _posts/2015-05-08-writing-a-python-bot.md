@@ -13,7 +13,7 @@ Before I begin, you may wish to check out the source for weatherBot on [GitHub](
 
 I have toyed with the idea of writing a Twitter bot for posting weather updates for a while now. I've had one or two conversations with friends about if a Twitter account reported the weather in vulgar ways. It seemed like an entertaining idea. With that sitting in my head for a few weeks I set out on what would be a now almost two month project (and still going), to write a Twitter bot that did just that (it's changed a little).
 
-# Timeline
+## Timeline
 
 ### March 12-15
 
@@ -41,11 +41,11 @@ I finally fixed my exception handling and refactored the handling of the weather
 
 I started deploying weatherBot on Heroku and added some documentation about that. I also fixed my apparently broken environmental variables. I added a global variable for a hashtag, and a daily forecast every morning. I also refactored how timed and special events were triggered. Additional test writing happened too.
 
-# Thoughts
+## Thoughts
 
 Other than web development, this has been my first real project outside of a classroom or school setting. It has been exciting and refreshing to come back to something that is entirely my own where I'm not restricted by an assignment. I know that there are issues with several parts of weatherBot, but overall I'm happy with what I've created. When I started writing tests, I was a major refactor away from weatherBot's current state, and never expected to get to 80% code coverage (although I'm sure many tests are not ther most effective).
 
-# Python 2.7 vs 3
+## Python 2.7 vs 3
 
 I started writing the bot in Python 2.7 as that is what OS X has installed. I added a Python 3 version in order to learn about the new version and to support the latest and greatest. From using both versions, I quickly realized how good of a job the Python team did in cross version support. Python 3 was obviously known about for a long time, and Python 2.7 supports many older styles as well as the newer ones. The most notable things that come to mind are using
 
@@ -69,6 +69,6 @@ or by excepting an ImportError for imports.
 
 The largest annoyance in working with both versions at once was how they each handle unicode. For me, the issues all revolved around the degree (º) symbol. For Python 2.7 I have to decode it with utf-8 for it to work. With Python 3 it just works as everything uses utf-8. At first I used a separate file for each version of Python, but I learned very quickly that that was not the right way to handle it. I did the initial version conversion using 2to3. This worked very well aside from the urllib libraries used for fetching data from Yahoo's YQL service.
 
-# Tools Used
+## Tools Used
 
 I use Tweepy for using the Twitter API, Yahoo! Weather via YQL to get weather data, and python-daemon for easy daemonizing. I use Heroku to deploy my [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) account. I had previously used my own server, but Heroku being always up and at a remote location won me over.

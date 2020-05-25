@@ -10,13 +10,13 @@ image:
 
 A little over a week ago I finished building my new server. It's the second computer I've built (after my desktop), and is primarily a file and media server. Ryan ([@ryanmr](https://twitter.com/ryanmr)) asked me to do a spec sheet, so this is the result.
 
-# The Hardware
+## The Hardware
 
-## Desktop
+### Desktop
 
 Built in September, 2013
 
-#### Parts
+##### Parts
 
 - Gigabyte GA-Z87MX-D3H mATX Motherboard
 - Intel Core i7-4770K CPU
@@ -40,11 +40,11 @@ Price: Not all of these parts were bought (or gifted) at once or even originally
 
 Note: The 1TB hard drive has about 4.6 years of power on time (but no errors!), so it'll probably be dying soon, and when it does, I'm going to be switching around my other 3.5" drives as I need to upgrade the size on others.
 
-## Server
+### Server
 
 Built in January, 2015
 
-#### Parts
+##### Parts
 
 - Gigabyte GA-Z97N-WIFI Mini ITX Motherboard
 - Intel Core i5-4690K CPU
@@ -59,15 +59,15 @@ Price: I spent about $520 on the build (the case was purchased for $84.99 via Am
 
 Note: I built this with the idea that it would be used for virtualization, but that is not the case right now, so some of these parts are pretty overkill.
 
-# The Software
+## The Software
 
-## Desktop
+### Desktop
 
 The primary operating system is OS X. I ran Mountain Lion (10.8.5) for a couple days right before Mavericks came out. I then upgraded to Yosemite on release day, October 16, 2014. I Hackintoshed using the tonymacx86 tools, Unibeast and Multibeast, with the Chimera bootloader through Mavericks. Under Yosemite, the NVRAM module part of Chimera didn't support iMessage, so I switched to the much more modern and powerful bootloader Clover. On top of OS X, I have OS X Server installed to primarily use the computer as a Time Machine server for my MacBook Pro. I also used it to have more powerful file sharing options.
 
 In April 2014, I installed Windows 8.1 and Ubuntu 14.04. Tri-booting with Chimera, and one mis-installation of grub caused a few issues, but I got it working. When I updated my 500 GB HDD to the new Crucial MX100 SSD (see the [post](https://brianm.me/posts/hdd-to-ssd) about it), I reinstalled Ubunutu, and migrated Windows. When switching to Clover, I realized that my install of Windows wasn't via UEFI, so I wiped the SSD and reinstalled. I haven't yet reinstalled Ubuntu or any other flavor of Linux.
 
-## Server
+### Server
 
 I installed CentOS 7 in the server. As a sysadmin at the University of Minnesota, Morris computer science labs, I work with Fedora, so I figured something similar would be good. I went with CentOS because I thought it'd be fun using an enterprise OS. Plus, it's supposedly more stable than Fedora! Currently, I have samba and netatalk configured for smb and afp file sharing, as well as the Plex media server for my media needs.
 
