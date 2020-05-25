@@ -1,18 +1,17 @@
 ---
 layout: post
 title: How to Make a Jekyll Site/Blog
-modified: 2018-09-02 19:35 CDT
+modified: 2020-05-25 01:05 CDT
 description: A tutorial on making a Jekyll based site/blog.
 author: brian
 seo.type: BlogPosting
-image:
 ---
 
 Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io).
 
 ## Introduction
 
-[Jekyll](https://jekyllrb.com) is a static site generator, written in [Ruby](https://www.ruby-lang.org/en/). It takes a series of templates and static files, and outputs to a ready to host directory of files. For simple websites like a blog or portfolio, a static site generator is perfect. Additionally, with a generator like Jekyll and its [Liquid templating engine](https://shopify.github.io/liquid/), you are still able to use many powerful features like markdown, layouts, partials, and iterating through data to build files. As an added bonus, GitHub Pages can build a Jekyll site and host it, making it perfect for personal and project websites and blogs.
+[Jekyll](https://jekyllrb.com) is a static site generator, written in [Ruby](https://www.ruby-lang.org/en/). It takes a series of templates and static files, and outputs to a ready to host directory of files. For simple websites like a blog or portfolio, a static site generator is perfect. Additionally, with a generator like Jekyll and its [Liquid templating engine](https://shopify.github.io/liquid/), you are still able to use many powerful features like markdown, layouts, partials, and iterating through data to build files. As an bonus, GitHub Pages can build a Jekyll site and host it, making it perfect for personal and project websites and blogs.
 
 ## Installation
 
@@ -36,7 +35,7 @@ Now you're all set and ready to start building your site! Check out the [Jekyll 
 
 ## Getting Started
 
-You can either create all of the files yourself, or run the following to generate a new scaffold site:
+You can either create all the files yourself, or run the following to generate a new scaffold site:
 
 ```sh
 jekyll new path/to/directory
@@ -59,7 +58,7 @@ By default, the site is built to `_site` and is sourced from the current directo
 
 ### \_config.yml
 
-To start off, you will need a `_config.yml` file for configuration and a place to store global variables. Here is a good starter example for the file.
+To start off, you will need a `_config.yml` file for the configuration, and a place to store global variables. Here is a good starter example for the file.
 
 ```yaml
 markdown: kramdown
@@ -125,7 +124,7 @@ Good question, I'm glad you asked!
 
 Woah.
 
-What's going on here? To begin, we using a data file to store authors. This can be found at `_data/authors.yml`. Content in this file becomes available to Liquid at `site.data.authors`. More info on data files can be found on the [Jekyll data files docs](https://jekyllrb.com/docs/datafiles/). We're assigning the `author` variable to `site.data.authors[page.author]`. `page.author` refers to the front matter above, which resolves to `brian`. So now `author` contians everything inside of the `brian` object in `_data/authors.yml`. Inside that file we have:
+What's going on here? To begin, we use a data file to store authors. This can be found at `_data/authors.yml`. Content in this file becomes available to Liquid at `site.data.authors`. More info on data files can be found on the [Jekyll data files docs](https://jekyllrb.com/docs/datafiles/). We're assigning the `author` variable to `site.data.authors[page.author]`. `page.author` refers to the front matter above, which resolves to `brian`. So now `author` contains everything inside of the `brian` object in `_data/authors.yml`. Inside that file we have:
 
 ```yaml
 brian:
@@ -165,6 +164,8 @@ For a full list of features, check out the Jekyll docs on [front matter](https:/
 
 ### Layouts and Includes
 
+Creating reusable templates through layouts and includes are crucial to building your site in a reusable and maintainable way.
+
 #### Layouts
 
 When writing pages and posts, you don't want to have to keep track of every occurrence of a navbar, or page head. This is where a layouts and includes are extremely useful. Store any layouts you use in `_layouts/`. In my site, I have a file at `_layouts/default.html` which more or less contains the following:
@@ -184,7 +185,7 @@ When writing pages and posts, you don't want to have to keep track of every occu
 {% endraw %}
 ```
 
-Every page I make in some way uses this layout. If I created a new page, I would include the following in it's front matter, and the content of that file would be rendered into the `{% raw %}{{ content }}{% endraw %}` of the default layout:
+Every page I make in some way uses this layout. If I created a new page, I would include the following in its front matter, and the content of that file would be rendered into the `{% raw %}{{ content }}{% endraw %}` of the default layout:
 
 <!-- prettier-ignore-start -->
 ```yaml
@@ -194,7 +195,7 @@ layout: default
 ```
 <!-- prettier-ignore-end -->
 
-Another layout can also use a layout. It's content will be loaded in the `{% raw %}{{ content }}{% endraw %}` of it's parent layout.
+Another layout can also use a layout. It's content will be loaded in the `{% raw %}{{ content }}{% endraw %}` of its parent layout.
 
 #### Includes
 
@@ -222,7 +223,7 @@ All posts live inside the appropriately named `_posts` directory.
 
 #### Files
 
-Each post is it's own file, and must have a filename formatted as:
+Each post is its own file, and must have a filename formatted as:
 
 ```plaintext
 YYYY-MM-DD-title.MARKUP
@@ -332,15 +333,15 @@ plugins:
 
 This sets [rouge](http://rouge.jneen.net) for syntax highlighting. Jekyll also supports the Pygments highlighter, but GitHub Pages does not, so I will only talk about Rouge in this post. The `kramdown:` list configures kramdown, the markdown converter.
 
-In order to use syntax highling in your site, you can use the default setting or use GitHub Flavored Markdown's backticks to denote a code block.
+In order to use syntax highlighting in your site, you can use the default setting or use GitHub Flavored Markdown's backticks to denote a code block.
 Default:
 Use `{% raw %}{% highlight python %}{% endraw %}` followed by some sweet Python code, closed with `{% raw %}{% endhighlight %}{% endraw %}`.
 
-When building the site, rouge will seek through the code block and add span tags with classes on parts of the code. These tags can then be styled to have different colors, hence syntax highlighting. I've been a huge fan of JetBrain's darcula theme, so I adapted a version from [https://smasue.github.io/pygments-darcula](https://smasue.github.io/pygments-darcula) to use on this site. You can find the code in [\_darcula.scss](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/assets/css/_sass/_darcula.scss). Any Rouge or Pygments CSS theme will work. You can generate CSS files from Pygments or by downloading themes, for example, from [https://github.com/richleland/pygments-css/](https://github.com/richleland/pygments-css/).
+When building the site, rouge will seek through the code block and add span tags with classes on parts of the code. These tags can then be styled to have different colors, hence syntax highlighting. Any Rouge or Pygments CSS theme will work. You can generate CSS files from Pygments or by downloading themes, for example, from [https://github.com/richleland/pygments-css/](https://github.com/richleland/pygments-css/).
 
 ### Search Engine Optimization (SEO)
 
-It is ridiculously easy to get pretty good SEO with Jekyll. The `jekyll-seo-tag` plugin does nearly all of the heavy lifting to properly make the correct meta tags (description, open graph, Twitter card), and title. All that's really required is to be sure to set some variables in `_config.yml`, be sure to set the `title` and `description` in a page or post's front matter, and include `{% raw %}{% seo %}{% endraw %}` in the head of your page.
+It is ridiculously easy to get pretty good SEO with Jekyll. The `jekyll-seo-tag` plugin does nearly all the heavy lifting to properly make the correct meta tags (description, open graph, Twitter card), and title. All that's really required is to be sure to set some variables in `_config.yml`, be sure to set the `title` and `description` in a page or post's front matter, and include `{% raw %}{% seo %}{% endraw %}` in the head of your page.
 Below is what I have added to my `_config.yml` file:
 
 ```yaml
