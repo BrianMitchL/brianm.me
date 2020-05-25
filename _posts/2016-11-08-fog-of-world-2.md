@@ -83,7 +83,7 @@ This shows the embedded map with the fog layer on top. You can pan and zoom arou
 
 ### Passport
 
-The passport is a section that presents a simple overview of yoiur current level, badge count, and exploration status of continents/regions of the world. You can tap on each region and see more detailed information such as the regions level, explored area, progress (as a percent), and territory count. You can further tap each territory within a region and see similar information for that territory.
+The passport is a section that presents a simple overview of your current level, badge count, and exploration status of continents/regions of the world. You can tap on each region and see more detailed information such as the regions level, explored area, progress (as a percent), and territory count. You can further tap each territory within a region and see similar information for that territory.
 
 <figure>
     <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/passport.png" title="Passport"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/passport.png" alt="Passport" style="max-height:667px"></a>
@@ -104,7 +104,7 @@ I use Fog of World on multiple devices, so syncing and backup are crucial to me.
 
 ### Settings
 
-Finally, the settings view lets you manage linked accounts, map styles, fog rendering mode, units, and language. You can chose between Apple Maps and Google Maps on a standard, satellite, or hybrid map. The fog can be rendered in black or white, at normal or thick concentration, with a thin, medium, or thick exploration track. Fog rendering quality can also be adjusted for when zooming and panning the map.
+Finally, the settings view lets you manage linked accounts, map styles, fog rendering mode, units, and language. You can choose between Apple Maps and Google Maps on a standard, satellite, or hybrid map. The fog can be rendered in black or white, at normal or thick concentration, with a thin, medium, or thick exploration track. Fog rendering quality can also be adjusted for when zooming and panning the map.
 
 ## Improvements Compared to Version 1
 
@@ -125,8 +125,8 @@ As Fog of World 1 was showing age, it could not add new data to its database in 
 
 <div class="uk-child-width-expand@s" uk-grid>
     <figure>
-        <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/lag.jpg" title="Innacurate Dual Paths (from two iPhones)"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/lag-small.jpg" alt="Innacurate Dual Paths (from two iPhones)"></a>
-        <figcaption>Innacurate Dual Paths (from two iPhones)</figcaption>
+        <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/lag.jpg" title="Inaccurate Dual Paths (from two iPhones)"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/lag-small.jpg" alt="Inaccurate Dual Paths (from two iPhones)"></a>
+        <figcaption>Inaccurate Dual Paths (from two iPhones)</figcaption>
     </figure>
     <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/downtown-Saint-Paul.jpg" title="Dashed Exploration Path"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/downtown-Saint-Paul-small.jpg" alt="Dashed Exploration Path"></a>
