@@ -52,3 +52,46 @@ span.wave {
     transform: rotate(360deg);
   }
 }
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: inline;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    margin: 0 -0.25em;
+    padding: 0 0.25em;
+    height: 0.25em;
+    width: 100%;
+    transform: skew(-1deg) rotate(-1deg);
+    transform-origin: right center;
+  }
+
+  &::after {
+    content: '';
+    display: table;
+  }
+
+  &:nth-of-type(4n + 1)::before {
+    background: rgba(#faa05a, 0.7);
+  }
+
+  &:nth-of-type(4n + 2)::before {
+    background: rgba(#32d296, 0.7);
+  }
+
+  &:nth-of-type(4n + 3)::before {
+    background: rgba(#1e87f0, 0.7);
+  }
+
+  &:nth-of-type(4n + 4)::before {
+    background: rgba(#f0506e, 0.7);
+  }
+}
