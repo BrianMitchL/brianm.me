@@ -14,7 +14,7 @@
     "avatar": "https://gravatar.com/avatar/{{ site.data.authors.brian.gravatar }}?s=512"
   },
   "items": [
-    {%- for post in site.posts | limit: 10 -%}
+    {%- for post in site.posts limit: 10 -%}
     {
       "id": "{{ post.id }}",
       "url": "{{ site.url }}{{ site.baseurl }}{{ post.url }}",
