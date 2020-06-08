@@ -115,8 +115,14 @@ main.uk-container {
   font-variant-caps: all-small-caps;
 }
 
-details > summary {
-  cursor: pointer;
+details {
+  margin-bottom: 1rem;
+
+  > summary {
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .uk-icon-button {
@@ -125,4 +131,15 @@ details > summary {
 
 .uk-light pre {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (screen and min-width: 680px) {
+  .float-left {
+    float: left;
+    margin-right: 1rem;
+  }
+  .float-right {
+    float: right;
+    margin-left: 1rem;
+  }
 }
