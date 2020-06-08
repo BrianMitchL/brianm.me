@@ -114,7 +114,7 @@ That's pretty neat, what else can you do?
 
 Good question, I'm glad you asked!
 
-```html
+```liquid
 {% raw %}{% assign author = site.data.authors[page.author] %}{% endraw %}
 <p>
   Written by {% raw %}{{ author.name }}{% endraw %} on {% raw %}{{ page.date |
@@ -141,7 +141,7 @@ As you can see in the example above, Liquid can also filter data. Here, the date
 
 If you have a file that you don't need to declare any variables, but want to use Liquid you must still use the set of triple-dashed lines for Jekyll to process that file. For example, here's my [humans.txt](/humans.txt) file:
 
-```plaintext
+```liquid
 {% raw %}---
 ---
 /* TEAM */
@@ -157,7 +157,7 @@ Last update: {{ site.time | date: "%Y/%m/%d"}}
 Language: English
 Doctype: HTML5
 Components: Jekyll, UIkit, fontawesome, SCSS, GitHub
-Software: WebStorm, Safari, Photoshop
+Software: WebStorm, Safari, Photoshop{% endraw %}
 ```
 
 For a full list of features, check out the Jekyll docs on [front matter](https://jekyllrb.com/docs/frontmatter/) and [variables](https://jekyllrb.com/docs/variables/).
@@ -170,7 +170,7 @@ Creating reusable templates through layouts and includes are crucial to building
 
 When writing pages and posts, you don't want to have to keep track of every occurrence of a navbar, or page head. This is where a layouts and includes are extremely useful. Store any layouts you use in `_layouts/`. In my site, I have a file at `_layouts/default.html` which more or less contains the following:
 
-```html
+```liquid
 {% raw %}<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -181,8 +181,7 @@ When writing pages and posts, you don't want to have to keep track of every occu
 
     <!-- some script tags and Google Analytics are located here -->
   </body>
-</html>
-{% endraw %}
+</html>{% endraw %}
 ```
 
 Every page I make in some way uses this layout. If I created a new page, I would include the following in its front matter, and the content of that file would be rendered into the `{% raw %}{{ content }}{% endraw %}` of the default layout:
@@ -201,7 +200,7 @@ Another layout can also use a layout. It's content will be loaded in the `{% raw
 
 In the layout above, I also have `{% raw %}{% include head.html %}{% endraw %}` and `{% raw %}{% include footer.html %}{% endraw %}`. These are known as includes (or partials). Includes are a file that can be inserted into any page. They're perfect for a navbar or footer, where you want to keep the markup consistent throughout the site. Store any includes you use in `_includes/`. Here is a portion of my `nav.html` code:
 
-```html
+```liquid
 {% raw %}{% assign url = page.url | remove:'/index.html' %}
 {% for link in site.navigation %}
 <li {% if url == link.url %}class="uk-active"{% endif %}>
@@ -245,16 +244,14 @@ Unlike pages, a post _must_ contain front matter. I like to set a more specific 
 So now you have a bunch of well written and entertaining posts, but how do you show links to them?
 It's quite easy, you can use Liquid to iterate through your posts to show them in a list:
 
-```html
-{% raw %}
-<ul>
+```liquid
+{% raw %}<ul>
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
   {% endfor %}
-</ul>
-{% endraw %}
+</ul>{% endraw %}
 ```
 
 If you have a lot of posts, be sure to check out the [Pagination](#pagination) plugin for showing your posts on more than one page.
@@ -305,7 +302,7 @@ Here's what the official docs say about pagination:
 
 So really, why not? To add pagination, add the following to your `_config.yml` file:
 
-```yml
+```yaml
 paginate: 5
 paginate_path: /blog/page/:num/
 
