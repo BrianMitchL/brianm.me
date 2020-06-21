@@ -1,6 +1,8 @@
 brian:
   name: Brian Mitchell
-  bio: 'Web developer, emoji lover :wave:, and an avid fan of electronic music.'
+  bio: >
+    Senior Frontend Software Engineer and Web Developer, emoji lover 👋🏻,
+    and an avid fan of electronic music.
   twitter: BrianMitchL
   gravatar: 89e0d7d3d9370c45517960c8a12f92b9
   web: https://brianm.me

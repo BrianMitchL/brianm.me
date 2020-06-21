@@ -17,11 +17,11 @@
   I listen to a lot of music, here's who I've been listening to in the last
   month.
 </p>
-<div class="uk-width-1-2@s uk-margin-auto">
+<div>
   {#await artistsPromise}
-    <div uk-spinner></div>
+    <div class="loading"></div>
   {:then data}
-    <table class="uk-table uk-table-small uk-table-striped uk-text-left">
+    <table>
       <caption>Top Artists - One Month</caption>
       <thead>
       <tr>
@@ -32,13 +32,13 @@
       <tbody>
       {#each data.topartists.artist as artist}
         <tr>
-          <td class="uk-table-link"><a href={artist.url} target="_blank" rel="noopener noreferrer">{artist.name}</a></td>
+          <td><a href={artist.url} target="_blank" rel="noopener noreferrer">{artist.name}</a></td>
           <td>{Number(artist.playcount).toLocaleString()}</td>
         </tr>
       {/each}
       </tbody>
     </table>
   {:catch error}
-    <span class="uk-text-danger">Error fetching top artists 😞</span>
+    <span>Error fetching top artists 😞</span>
   {/await}
 </div>

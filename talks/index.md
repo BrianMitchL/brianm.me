@@ -6,25 +6,30 @@ link: /talks
 redirect_from: /slides
 ---
 
-- ### [React Testing Library Livecoding](https://codesandbox.io/embed/react-minneapolis-rtl-sandbox-txy5t)
 
-  [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/263988845/)
-  Main Talk, <time dateTime="2019-10-17">October 17, 2019</time>
+{:.list-none}
+- ### React Testing Library Livecoding
 
-- ### [TypeScript & React](https://github.com/BrianMitchL/typescript-react-talk/tree/react-mpls-talk)
+  - [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/263988845/) Main Talk, <time dateTime="2019-10-17">October 17, 2019</time>
+  - [Code Sandbox](https://codesandbox.io/embed/react-minneapolis-rtl-sandbox-txy5t)
 
-  [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/257861771/)
-  Main Talk, <time dateTime="2019-07-18">July 18, 2019</time>
+- ### TypeScript & React
 
-- ### [TypeScript & React](https://github.com/BrianMitchL/typescript-react-talk/tree/jsmn-lightning-talk)
+  - [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/257861771/) Main Talk, <time dateTime="2019-07-18">July 18, 2019</time>
+  - [Slides](https://github.com/BrianMitchL/typescript-react-talk/tree/react-mpls-talk)
 
-  [JavaScriptMN](https://www.meetup.com/JavaScriptMN/events/tqfvfqyzfbkc/)
-  Lightning Talk [Watch [18:30]](https://youtu.be/p747lPJVHw0?t=900), <time dateTime="2019-03-27">March 27, 2019</time>
+- ### TypeScript & React
 
-- ### [Using Python to Write a Twitter Bot](/talks/python-twitter-bot)
+  - [JavaScriptMN](https://www.meetup.com/JavaScriptMN/events/tqfvfqyzfbkc/)
+    Lightning Talk, <time dateTime="2019-03-27">March 27, 2019</time>
+  - [Slides](https://github.com/BrianMitchL/typescript-react-talk/tree/jsmn-lightning-talk)
+  - [Watch [18:30]](https://youtu.be/p747lPJVHw0?t=900)
 
-  [PyMNtos](https://www.meetup.com/PyMNtos-Twin-Cities-Python-User-Group/events/236807650/)
-  Lightning Talk, <time dateTime="2017-02-09">February 9, 2017</time>
+- ### Using Python to Write a Twitter Bot
 
-- ### [Aggregating Information Based on Geolocated Twitter Data](https://github.com/UMM-CSci/senior-seminar/blob/master/_seminars/spring2016/mitchellslides.pdf)
-  Computer Science Senior Seminar Conference, University of Minnesota Morris, <time dateTime="2016-04-30">April 30, 2016</time>
+  - [PyMNtos](https://www.meetup.com/PyMNtos-Twin-Cities-Python-User-Group/events/236807650/) Lightning Talk, <time dateTime="2017-02-09">February 9, 2017</time>
+  - [Slides](/talks/python-twitter-bot)
+
+- ### Aggregating Information Based on Geolocated Twitter Data
+  - Computer Science Senior Seminar Conference, University of Minnesota Morris, <time dateTime="2016-04-30">April 30, 2016</time>
+  - [Slides](https://github.com/UMM-CSci/senior-seminar/blob/master/_seminars/spring2016/mitchellslides.pdf)

@@ -12,5 +12,5 @@ Name: mom
 Last update: {{ site.time | date: "%Y/%m/%d"}}
 Language: English
 Doctype: HTML5
-Components: Jekyll, UIkit, Simple Icons, SCSS, GitHub, Svelte
-Software: WebStorm, Safari, Photoshop
+Components: Jekyll, new.css, Simple Icons, SCSS, GitHub, Svelte
+Software: WebStorm, Safari, Firefox, Photoshop

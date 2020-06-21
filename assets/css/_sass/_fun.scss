@@ -41,7 +41,7 @@ span.wave {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  animation-delay: 300s;
+  animation-delay: 900s;
 }
 
 @keyframes rotate-animation {
@@ -53,45 +53,55 @@ span.wave {
   }
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  display: inline-block;
-  position: relative;
+div[itemprop='articleBody'] {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: inline-block;
+    position: relative;
+    border: none;
 
-  &::before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    margin: 0 -0.25em;
-    padding: 0 0.25em;
-    height: 0.25em;
-    width: 100%;
-    transform: skew(-1deg) rotate(-1deg);
-    transform-origin: right center;
-  }
+    // override heading links to position correctly
+    .heading-link {
+      position: absolute;
+      right: -2rem;
+      left: auto;
+    }
 
-  &::after {
-    content: '';
-    display: table;
-  }
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      margin: 0 -0.25em;
+      padding: 0 0.25em;
+      height: 0.25em;
+      width: 100%;
+      transform: skew(-1deg) rotate(-1deg);
+      transform-origin: right center;
+    }
 
-  &:nth-of-type(4n + 1)::before {
-    background: rgba(#faa05a, 0.7);
-  }
+    &::after {
+      content: '';
+      display: table;
+    }
 
-  &:nth-of-type(4n + 2)::before {
-    background: rgba(#32d296, 0.7);
-  }
+    &:nth-of-type(4n + 1)::before {
+      background: rgba(#faa05a, 0.7);
+    }
 
-  &:nth-of-type(4n + 3)::before {
-    background: rgba(#1e87f0, 0.7);
-  }
+    &:nth-of-type(4n + 2)::before {
+      background: rgba(#32d296, 0.7);
+    }
 
-  &:nth-of-type(4n + 4)::before {
-    background: rgba(#f0506e, 0.7);
+    &:nth-of-type(4n + 3)::before {
+      background: rgba(#1e87f0, 0.7);
+    }
+
+    &:nth-of-type(4n + 4)::before {
+      background: rgba(#f0506e, 0.7);
+    }
   }
 }

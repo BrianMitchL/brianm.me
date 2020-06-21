@@ -49,13 +49,13 @@ const main = {
   },
 };
 
-const theme = {
-  input: 'src/theme.js',
+const headingAnchors = {
+  input: 'src/heading-anchors.js',
   output: {
     sourcemap: true,
     format: 'iife',
-    name: 'theme',
-    file: 'assets/js/theme.js',
+    name: 'headingAnchors',
+    file: 'assets/js/heading-anchors.js',
   },
   plugins: [
     // In dev mode, call `npm run start` once
@@ -71,7 +71,7 @@ const theme = {
   },
 };
 
-export default [main, theme];
+export default [main, headingAnchors];
 
 let started = false;
 

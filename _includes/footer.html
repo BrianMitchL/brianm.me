@@ -1,33 +1,21 @@
-<footer class="uk-text-center uk-margin-top">
-  <p class="uk-margin-remove">
-    <a
-      href="https://github.com/BrianMitchL"
-      title="Brian Mitchell on Github"
-      class="uk-icon-link"
-    >
+<footer class="text-center">
+  <p>
+    <a href="https://twitter.com/BrianMitchL" title="@BrianMitchL on Twitter" aria-label="Twitter">
+      {% include icon.html icon="twitter" %}
+    </a>
+    <a href="https://github.com/BrianMitchL" title="Brian Mitchell on GitHub" aria-label="GitHub">
       {% include icon.html icon="github" %}
     </a>
     <a
       href="https://www.linkedin.com/in/brianscottmitchell"
       title="Brian Mitchell on LinkedIn"
-      class="uk-icon-link"
+      aria-label="LinkedIn"
     >
       {% include icon.html icon="linkedin" %}
     </a>
-    <a
-      href="https://twitter.com/BrianMitchL"
-      title="@BrianMitchL on Twitter"
-      class="uk-icon-link"
-    >
-      {% include icon.html icon="twitter" %}
-    </a>
   </p>
-  <p class="uk-margin-remove">
-    &copy; 2014
-    <script>
-      new Date().getFullYear() > 2014 &&
-        document.write('-' + new Date().getFullYear());
-    </script>
+  <p>
+    &copy; 2014&ndash;<script>document.write('' + new Date().getFullYear());</script>
     Brian Mitchell
   </p>
 </footer>

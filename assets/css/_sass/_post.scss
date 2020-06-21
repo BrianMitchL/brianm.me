@@ -1,58 +1,31 @@
 div[itemprop='articleBody'] > p:first-child {
-  // .uk-text-lead
   font-size: 1.5rem;
   line-height: 1.5;
-  color: #333;
+  color: var(--nc-tx-1);
 }
 
-.uk-light div[itemprop='articleBody'] > p:first-child {
-  color: #fff;
-}
+.video-container {
+  max-width: 560px;
 
-figure {
-  img {
-    margin-bottom: 0.5rem;
-  }
-  figcaption {
-    color: #999;
-    font-size: 0.875rem;
-  }
+  & > div {
+    position: relative;
+    padding-bottom: 56.25%; // 16:9
+    height: 0;
+    overflow: hidden;
 
-  &.video-container {
-    max-width: 560px;
-
-    & > div {
-      position: relative;
-      padding-bottom: 56.25%; // 16:9
-      height: 0;
-      overflow: hidden;
-
-      iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 }
 
-// taken from https://github.com/jekyll/jekyll/blob/7f578b5dd88653583bdf3ad5ff703a6ee5d91b95/site/_sass/_style.scss#L141
-.header-link {
-  position: absolute;
-  right: -1.5rem;
-  opacity: 0;
-  font-size: 0.8em;
-  line-height: 1.5;
-  transition: opacity 0.2s ease-in-out 0.1s;
-}
-
-h1:hover .header-link,
-h2:hover .header-link,
-h3:hover .header-link,
-h4:hover .header-link,
-h5:hover .header-link,
-h6:hover .header-link {
-  opacity: 1;
+.grid-thumbs {
+  display: grid;
+  justify-content: center;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
 }

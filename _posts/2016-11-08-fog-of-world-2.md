@@ -21,7 +21,7 @@ To this day, when going to a frequent destination like [thenexus.tv](http://then
 
 During the warmer months, I use Fog of World as a motivator to get outside and walk or bike to explore new areas. Several times I've chosen a half mile block between busier streets and biked in a lattice formation up and down each street. I might even come back to the same area later, but explore the alleys instead. After three summers of this, I have explored a great deal of Morris and Saint Paul. I feel more closely connected to my city, and believe I am more familiar with street names and navigating in general.
 
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="grid-thumbs">
     <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Morris.jpg" title="Morris, Minnesota"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Morris-small.jpg" alt="Morris, Minnesota"></a>
         <figcaption>Morris, Minnesota</figcaption>
@@ -40,7 +40,7 @@ During the warmer months, I use Fog of World as a motivator to get outside and w
 
 When traveling, having a history of where I was in Fog of World is wonderful. It's helpful to see how to get somewhere later on the same trip, as well as to see something new. Most importantly, it acts as a way to remember where I've been and through that, what I've done on trips. After living in Copenhagen last fall while studying abroad, I really treasure my Fog of World exploration. I can see paths of exploration and remember what I did there. In many cases these are small events that are otherwise unimportant, but with a path showing that I've gone somewhere, it triggers a memory.
 
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="grid-thumbs">
     <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Copenhagen.jpg" title="Copenhagen, Denmark"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Copenhagen-small.jpg" alt="Copenhagen, Denmark"></a>
         <figcaption>Copenhagen, Denmark</figcaption>
@@ -49,15 +49,15 @@ When traveling, having a history of where I was in Fog of World is wonderful. It
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Amsterdam.jpg" title="Amsterdam, Netherlands"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Amsterdam-small.jpg" alt="Amsterdam, Netherlands"></a>
         <figcaption>Amsterdam, Netherlands</figcaption>
     </figure>
-    <figure class="uk-margin-remove-bottom">
+    <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/London.jpg" title="London, England"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/London-small.jpg" alt="London, England"></a>
         <figcaption>London, England</figcaption>
     </figure>
-    <figure class="uk-margin-remove-bottom">
+    <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Boston.jpg" title="Boston, Massachusetts"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Boston-small.jpg" alt="Boston, Massachusetts"></a>
         <figcaption>Boston, Massachusetts</figcaption>
     </figure>
-    <figure class="uk-margin-remove-bottom">
+    <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Chicago.jpg" title="Chicago, Illinois"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Chicago-small.jpg" alt="Chicago, Illinois"></a>
         <figcaption>Chicago, Illinois</figcaption>
     </figure>
@@ -87,7 +87,7 @@ The passport is a section that presents a simple overview of your current level,
 
 <figure>
     <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/passport.png" title="Passport"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/passport.png" alt="Passport" style="max-height:667px"></a>
-    <figcaption class="uk-text-muted">Passport</figcaption>
+    <figcaption>Passport</figcaption>
 </figure>
 
 ### Badges
@@ -110,20 +110,20 @@ Finally, the settings view lets you manage linked accounts, map styles, fog rend
 
 First and foremost, Fod of World 2 is optimized for recent versions of iOS. It is able to track location without falling behind, and uses far less power. While panning and zooming, the fog can be rendered in high-quality, efficiency, or turned off all together.
 
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="grid-thumbs">
     <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/efficiency.jpg" title="Efficient Fog Rendering"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/efficiency.jpg" alt="Efficient Fog Rendering" style="max-height:568px"></a>
-        <figcaption class="uk-text-muted">Efficient Fog Rendering (hard edges)</figcaption>
+        <figcaption>Efficient Fog Rendering (hard edges)</figcaption>
     </figure>
     <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/high-quality.jpg" title="High-Quality Fog Rendering"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/high-quality.jpg" alt="High-Quality Fog Rendering" style="max-height:568px"></a>
-        <figcaption class="uk-text-muted">High-Quality Fog Rendering (soft edges)</figcaption>
+        <figcaption>High-Quality Fog Rendering (soft edges)</figcaption>
     </figure>
 </div>
 
 As Fog of World 1 was showing age, it could not add new data to its database in real time, causing a gap in recording avery few seconds. The gaps would become noticeable at higher speeds, when I was travelling fast and far enough in the brief time it was not recording. To combat this, I used my main and an old iPhone to record new exploration. This has caused dashed and sometimes offset paths to appear. iOS prioritizes the front-most application, so keeping the display on in Fog of World kept the exploration more accurate, but consumed even more power. All of these problems are gone on iOS 10 with Fog of World 2. I can only hope that the app will continue to be updated and work well for years to come.
 
-<div class="uk-child-width-expand@s" uk-grid>
+<div class="grid-thumbs">
     <figure>
         <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/lag.jpg" title="Inaccurate Dual Paths (from two iPhones)"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/lag-small.jpg" alt="Inaccurate Dual Paths (from two iPhones)"></a>
         <figcaption>Inaccurate Dual Paths (from two iPhones)</figcaption>
@@ -134,12 +134,11 @@ As Fog of World 1 was showing age, it could not add new data to its database in 
     </figure>
 </div>
 
-{: .uk-h2 }
 Thanks for reading, have fun exploring!
 
 <figure>
     <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/world.jpg" title="World Exploration"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/world-small.jpg" alt="World Exploration"></a>
-    <figcaption class="uk-text-muted">World Exploration</figcaption>
+    <figcaption>World Exploration</figcaption>
 </figure>
 
 **UPDATE:** I thought I should probably add a quick note about tracking while flying. Artem Liubeznyi made a good point in the comments that high-flying jets should not count for exploration, where low-flying aircraft or helicopters could count at under perhaps 10,000 feet, a distance where you can still around you with reasonable detail. While I do agree with Artem, I also think it's very interesting to see where a flight I've been on has been. I tried tracking one flight, and then thought that since I had already done it once, I might as well continue since I already broke the ground only exploration. If I could go back though, I don't think I would track those flights, as it does ruin the point of true exploration.
@@ -148,5 +147,5 @@ With that being said, I have one notable flight memory that is illustrated by Fo
 
 <figure>
     <a href="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Iceland.jpg" title="Circling north of the Keflavík, Iceland airport"><img loading="lazy" src="https://brianmme.s3.amazonaws.com/posts/fog-of-world-2/Iceland-small.jpg" alt="Circling north of the Keflavík, Iceland airport"></a>
-    <figcaption class="uk-text-muted">Circling north of the Keflavík, Iceland airport</figcaption>
+    <figcaption>Circling north of the Keflavík, Iceland airport</figcaption>
 </figure>

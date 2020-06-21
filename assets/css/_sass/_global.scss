@@ -1,6 +1,46 @@
 :root {
   color-scheme: light dark;
   supported-color-schemes: light dark;
+
+  --nc-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  @supports (font-variation-settings: normal) {
+    --nc-font-sans: 'Inter var', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  }
+
+  --nc-tx-1: #333; // Heading text color
+  --nc-tx-2: #555; // Body text color
+  --nc-tx-2-a025: rgba(85, 85, 85, 0.25); // Body text color - alpha of 0.25
+  --nc-bg-1: #ffffff; // Base background color
+  --nc-bg-2: #f6f8fa; // Slightly darker background color
+  --nc-bg-3: #e5e7eb; // Even slightly darker background color
+  --nc-lk-1: #0e75dd; // Action color for links and buttons
+  --nc-lk-2: #0957a5; // Link and buttons on mouse hover and active
+  --nc-lk-tx: #ffffff; // Text color for link buttons, or cases where link color is used as a background
+  --nc-ac-1: #39f; // Accent background color for <mark> and text selection background
+  --nc-ac-2: #e6143a; // Accent background color for <em>
+  --nc-ac-tx: #ffffff; // Text color when accent is used as a background
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nc-tx-1: #ffffff;
+    --nc-tx-2: rgba(255, 255, 255, 0.7);
+    --nc-tx-2-a025: rgba(238, 238, 238, 0.25);
+    --nc-bg-1: #161716;
+    --nc-bg-2: #262726;
+    --nc-bg-3: #363736;
+    --nc-lk-1: #ffffff;
+    --nc-lk-2: #ffffff;
+    --nc-lk-tx: #161716;
+    --nc-ac-1: #39f;
+    --nc-ac-2: #f0506e;
+    --nc-ac-tx: #ffffff;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -10,136 +50,157 @@
   }
 }
 
-html {
-  background: #fff;
+* {
+  transition: 0.2s ease-out;
+  transition-property: background, background-color, border-color,
+    border-top-color, border-left-color, border-bottom-color, border-right-color;
+}
 
-  &.uk-light {
-    background: #161716;
+pre > *,
+code > * {
+  transition: 0.2s ease-out;
+  transition-property: color, background, background-color, border-color,
+    border-top-color, border-left-color, border-bottom-color, border-right-color;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  & > a:hover {
+    text-decoration: none;
+  }
+
+  &:hover > a.heading-link {
+    opacity: 1;
   }
 }
 
-* {
-  transition: 0.2s ease-out;
-  transition-property: background, background-color, border-top-color,
-    border-left-color, border-bottom-color, border-right-color;
+em {
+  color: var(--nc-ac-2);
 }
 
-html,
-body {
-  height: 100%;
-}
-
-.content {
-  flex: 1 0 auto;
-}
-
-body > footer {
-  padding-bottom: 0;
-  padding-bottom: env(safe-area-inset-bottom);
+:not(pre) > code,
+:not(pre) > kbd,
+:not(pre) > samp {
+  color: var(--nc-ac-2);
 }
 
 a {
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
-}
+  text-decoration: none;
 
-.uk-table td,
-.uk-table th {
-  span {
-    display: block;
-    font-size: 90%;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  > img {
+    margin-bottom: 0;
+  }
+
+  > svg {
+    fill: currentColor;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
   }
 }
 
-.text-double {
-  font-size: 200%;
-}
-
-.emoji-color-reset {
+.emoji {
   color: initial;
 }
-
-.uk-light .emoji-color-reset {
-  color: white;
+img.emoji {
+  margin-bottom: 0;
+  vertical-align: baseline;
+  text-decoration: none;
 }
 
-// Twitter Bootstrap's implementation
-// https://github.com/twbs/bootstrap/blob/7e2741eb1074afc66bdf2fb5c2b65d476cf7f37e/less/scaffolding.less#L121
-// Only display content to screen readers
-//
-// See: http://a11yproject.com/posts/how-to-hide-content
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+header > nav > ul {
+  @extend .flex-wrap-space-between;
+  list-style: none;
+  margin: 0;
   padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-main.uk-container {
-  // need to reset the padding from the defaults in UIKit (3.0.0-beta.30)
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-left: calc(15px + env(safe-area-inset-left));
-  padding-right: calc(15px + env(safe-area-inset-right));
-
-  @media (min-width: 640px) {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-left: calc(30px + env(safe-area-inset-left));
-    padding-right: calc(30px + env(safe-area-inset-right));
-  }
-
-  @media (min-width: 960px) {
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-left: calc(40px + env(safe-area-inset-left));
-    padding-right: calc(40px + env(safe-area-inset-right));
+  font-size: 1.75rem;
+  font-size: clamp(1rem, 4vw, 1.75rem);
+  @media (max-width: 580px) {
+    font-size: 1rem;
+    font-size: clamp(1rem, 4vw, 1.75rem);
   }
 }
 
-.uk-navbar-container {
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
+body > header,
+body > footer {
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: var(--nc-tx-2);
+    @extend .text-decoration-none;
+  }
+
+  a:hover {
+    color: var(--nc-tx-1);
+  }
+}
+body > footer a {
+  font-size: 1.25rem;
 }
 
-.uk-light .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #222;
+// brand
+body > header nav > a {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
-.small-caps {
-  font-variant-caps: all-small-caps;
+.heading-link {
+  position: relative;
+  left: 0.5rem;
+  opacity: 0;
+  font-size: 0.8em;
+  line-height: 1.5;
+  transition: opacity 0.2s ease-in-out;
 }
 
-details {
-  margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  > a {
+    color: inherit;
+  }
 
-  > summary {
-    cursor: pointer;
-    font-weight: bold;
+  &:hover > a.heading-link {
+    opacity: 1;
+  }
+}
+
+figure {
+  > * {
     margin-bottom: 0.5rem;
   }
-}
 
-.uk-icon-button {
-  transition: none;
-}
-
-.uk-light pre {
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
-@media (screen and min-width: 680px) {
-  .float-left {
-    float: left;
-    margin-right: 1rem;
+  figcaption {
+    font-size: 0.875rem;
   }
-  .float-right {
-    float: right;
-    margin-left: 1rem;
-  }
+}
+
+.loading {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.25rem solid var(--nc-tx-2-a025);
+  border-top-color: var(--nc-tx-2);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  animation: rotate-animation 1s infinite linear;
 }

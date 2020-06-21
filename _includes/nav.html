@@ -1,47 +1,14 @@
 {%- if page.link -%} {%- assign url = page.link -%} {%- else -%} {%- assign url
 = page.url|remove:'/index.html' -%} {%- endif -%}
-<nav class="uk-navbar-container uk-margin-bottom" uk-navbar>
-  <div class="uk-navbar-left">
-    <a href="/" class="uk-navbar-item uk-logo">Brian Mitchell</a>
-    <ul class="uk-navbar-nav uk-visible@s">
-      {%- for link in site.navigation -%} {% if url == link.url %}
-      <li class="uk-active">{% else %}</li>
-      <li>
-        {% endif %}
-        <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-      </li>
-      {%- endfor -%}
-    </ul>
-  </div>
-  <div class="uk-navbar-right uk-hidden@s">
-    <button
-      class="uk-button"
-      type="button"
-      uk-toggle="target: #nav-offcanvas"
-      uk-navbar-toggle-icon
-      aria-label="Toggle nav menu"
-    ></button>
-  </div>
-
-  <div id="nav-offcanvas" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-      <button
-        class="uk-offcanvas-close"
-        type="button"
-        uk-close
-        aria-label="Close nav menu"
-      ></button>
-      <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-        <li><a href="/" title="Home">Home</a></li>
-        <li class="uk-nav-divider"></li>
-        {%- for link in site.navigation -%} {% if url == link.url %}
-        <li class="uk-active">{% else %}</li>
-        <li>
-          {% endif %}
-          <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-        </li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  </div>
+<nav>
+  <a href="/">Brian Mitchell</a>
+  <ul>
+    {%- for link in site.navigation -%} {% if url == link.url %}
+    <li>{% else %}</li>
+    <li>
+      {% endif %}
+      <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
 </nav>

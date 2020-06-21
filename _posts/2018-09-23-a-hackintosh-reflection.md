@@ -5,10 +5,10 @@ modified: 2018-09-23 13:50:04 CDT
 description: My Hackintosh has reached the end of its life.
 author: brian
 seo.type: BlogPosting
-excerpt: My Hackintosh, after just reaching it's fifth birthday, has reached the end of its life.
+excerpt: My Hackintosh, after just reaching its fifth birthday, has reached the end of its life.
 ---
 
-My Hackintosh, after just reaching it's fifth birthday, has reached the end of its life.
+My Hackintosh, after just reaching its fifth birthday, has reached the end of its life.
 
 <figure>
     <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Every time I change something with my
@@ -43,8 +43,7 @@ link with an emoji in Safari. Twice, it crashed while recording a podcast for [T
 resulted in total loss of the recording.
 
 On a more positive note, High Sierra became more reliable. I feel like the Hackintosh was a quite good "Mac" and it
-supported all major features of a new Mac throughout its life. I was even able to install some of the new major updates
-to macOS on the day of their release.
+supported all major features of a new Mac throughout its life. I was even able to install some new major updates to macOS on the day of their release.
 
 Seeing as the vast majority of the crashes later in its life were due to graphics issues (always read your logs in
 Console.app), I would have likely had a much more reliable machine if I had upgraded to a newer GPU. During much of
