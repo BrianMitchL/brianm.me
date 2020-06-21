@@ -2,9 +2,7 @@
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
 modified: 2020-03-22
-redirect_from: '/living-docs'
-redirect_from: '/living-docs/gear'
-redirect_from: '/living-docs/software'
+redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 ---
 
 This serves as a living document of software, gear, and other things that I typically use. Last updated <time datetime="{{ page.modified | date: date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>.

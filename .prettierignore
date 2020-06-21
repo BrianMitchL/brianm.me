@@ -3,3 +3,5 @@ node_modules
 _includes/icon.html
 assets/js
 assets/css/*.css
+feed.json
+talks/index.md

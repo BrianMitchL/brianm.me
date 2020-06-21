@@ -1,0 +1,77 @@
+feature:
+  - title: Github
+    url: https://github.com/BrianMitchL
+    icon: github
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/brianscottmitchell
+    icon: linkedin
+  - title: '@BrianMitchL on Twitter'
+    url: https://twitter.com/BrianMitchL
+    icon: twitter
+normal:
+  - title: Apple Music
+    url: https://itunes.apple.com/profile/BrianMitchL
+    icon: applemusic
+  - title: CodePen
+    url: https://codepen.io/brianmitchl
+    icon: codepen
+  - title: CodeSandbox
+    url: https://codesandbox.io/u/BrianMitchL
+    icon: codesandbox
+  - title: Brian Mitchell's DEV Profile
+    url: https://dev.to/brianmitchl
+    icon: dev-dot-to
+  - title: Facebook
+    url: https://facebook.com/BrianMitchL
+    icon: facebook
+  - title: Flickr
+    url: https://www.flickr.com/people/43812551@N03/
+    icon: flickr
+  - title: GitLab
+    url: https://gitlab.com/u/BrianMitchL
+    icon: gitlab
+  - title: Goodreads
+    url: https://www.goodreads.com/brianmitchl
+    icon: goodreads
+  - title: Instagram
+    url: https://www.instagram.com/BrianMitchL
+    icon: instagram
+  - title: Keybase
+    url: https://keybase.io/brianmitchl
+    icon: keybase
+  - title: Last.fm
+    url: https://www.last.fm/user/BrianMitchL
+    icon: last-dot-fm
+  - title: Mastodon
+    url: https://mastodon.cloud/@BrianMitchL
+    icon: mastodon
+  - title: Mixcloud
+    url: https://www.mixcloud.com/BrianMitchL/
+    icon: mixcloud
+  - title: Atom Feed
+    url: /feed.xml
+    icon: rss
+  - title: Snapchat
+    url: https://www.snapchat.com/add/bman4789
+    icon: snapchat
+  - title: SoundCloud
+    url: https://soundcloud.com/brianmitchl
+    icon: soundcloud
+  - title: Spotify
+    url: https://open.spotify.com/user/1237277662
+    icon: spotify
+  - title: Stack Overflow
+    url: https://stackoverflow.com/users/3928053/brianmitchl
+    icon: stackoverflow
+  - title: Strava
+    url: https://www.strava.com/athletes/brianmitchl
+    icon: strava
+  - title: Steam
+    url: https://steamcommunity.com/id/MagicBriBri
+    icon: steam
+  - title: Trakt
+    url: https://trakt.tv/users/brianmitchl
+    icon: trakt
+  - title: YouTube
+    url: https://www.youtube.com/user/bman112234
+    icon: youtube

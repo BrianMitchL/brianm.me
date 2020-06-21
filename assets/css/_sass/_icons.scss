@@ -1,36 +1,49 @@
-@mixin icon($multiplier: 1, $background: false) {
+@mixin icon-back($multiplier: 1) {
   $size: $multiplier * 1.5rem;
+
+  width: $size * 1.375;
+  height: $size * 1.375;
+  margin: $size * 0.1;
 
   & > svg {
     height: $size * 0.8;
     width: $size * 0.8;
   }
-
-  @if $background {
-    width: $size * 1.375;
-    height: $size * 1.375;
-    margin: $size * 0.1;
-  }
 }
 
 .icon {
-  @include icon();
-}
+  fill: currentcolor;
+  line-height: 0;
 
-.icon-2 {
-  @include icon(2);
+  @extend .text-decoration-none;
+
+  & > svg {
+    height: 1em;
+    width: 1em;
+  }
 }
 
 .icon-back {
-  @include icon(1.5, true);
+  @include icon-back(1.5);
 }
 
 .icon-back-large {
-  @include icon(2.5, true);
+  @include icon-back(2.5);
 }
 
-.icon-back,
-.icon-back-large {
+[class*="icon-back"] {
+  border-radius: 100%;
+  background: var(--nc-bg-2);
+  color: var(--nc-tx-2);
+  vertical-align: middle;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+
+[class*="icon-back"] {
   &:hover,
   &:active {
     color: white;
@@ -79,7 +92,7 @@
       background-color: #33a0ff;
     }
 
-    &.icon-lastfm {
+    &.icon-last-dot-fm {
       background-color: #d51007;
     }
 

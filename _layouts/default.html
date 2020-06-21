@@ -3,10 +3,9 @@
   <head>
     {% include head.html %}
   </head>
-  <body class="uk-flex uk-flex-column">
-    <div class="content">
-      {{ content }}
-    </div>
-    {% include footer.html %} {% include analytics.html %}
+  <body>
+    {{ content }}
+    {%- include footer.html -%}
+    {%- include analytics.html -%}
   </body>
 </html>

@@ -203,7 +203,7 @@ In the layout above, I also have `{% raw %}{% include head.html %}{% endraw %}` 
 ```liquid
 {% raw %}{% assign url = page.url | remove:'/index.html' %}
 {% for link in site.navigation %}
-<li {% if url == link.url %}class="uk-active"{% endif %}>
+<li {% if url == link.url %}class="active"{% endif %}>
     <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
 </li>{% endfor %}{% endraw %}
 ```

@@ -80,8 +80,8 @@ my current devices. I'm particularly impressed with how well the A12 Bionic
 compares to my aging mid-2012 MacBook Pro and it's multi-core performance in
 general.
 
-<div class="uk-overflow-auto">
-<table class="uk-table uk-table-small uk-table-middle uk-text-nowrap uk-table-divider">
+<div class="overflow-auto text-nowrap">
+<table>
     <caption>Geekbench 4 Results</caption>
     <thead>
         <tr>
@@ -89,8 +89,8 @@ general.
             <th>Name</th>
             <th>Platform</th>
             <th>Architecture</th>
-            <th class="uk-text-right">Single-core Score</th>
-            <th class="uk-text-right">Multi-core Score</th>
+            <th class="text-end">Single-core Score</th>
+            <th class="text-end">Multi-core Score</th>
         </tr>
     </thead>
     <tbody>
@@ -100,16 +100,15 @@ general.
             </td>
             <td>
                 iPhone 6
-                <span>
+                <br>
                 Apple A8
                 1400 MHz
                 (2 cores)
-                </span>
             </td>
             <td class="platform">iOS 64</td>
             <td>aarch64</td>
-            <td class="uk-text-right text-double">1549</td>
-            <td class="uk-text-right text-double">2428</td>
+            <td class="text-end text-double">1549</td>
+            <td class="text-end text-double">2428</td>
         </tr>
         <tr>
             <td>
@@ -117,16 +116,15 @@ general.
             </td>
             <td>
                 iPad Pro (9.7-inch)
-                <span>
+                <br>
                 Apple A9X
                 2260 MHz
                 (2 cores)
-                </span>
             </td>
             <td>iOS 64</td>
             <td>aarch64</td>
-            <td class="uk-text-right text-double">2583</td>
-            <td class="uk-text-right text-double">3321</td>
+            <td class="text-end text-double">2583</td>
+            <td class="text-end text-double">3321</td>
         </tr>
         <tr>
             <td>
@@ -134,16 +132,15 @@ general.
             </td>
             <td>
                 iPhone 7
-                <span>
+                <br>
                 Apple A10 Fusion
                 2340 MHz
                 (2 cores)
-                </span>
             </td>
             <td class="platform">iOS 64</td>
             <td>aarch64</td>
-            <td class="uk-text-right text-double">3401</td>
-            <td class="uk-text-right text-double">5587</td>
+            <td class="text-end text-double">3401</td>
+            <td class="text-end text-double">5587</td>
         </tr>
         <tr>
             <td>
@@ -151,16 +148,15 @@ general.
             </td>
             <td>
                 iPhone XS Max
-                <span>
+                <br>
                 Apple A12 Bionic
                 2490 MHz
                 (6 cores)
-                </span>
             </td>
             <td class="platform">iOS 64</td>
             <td>aarch64</td>
-            <td class="uk-text-right text-double">4789</td>
-            <td class="uk-text-right text-double">11223</td>
+            <td class="text-end text-double">4789</td>
+            <td class="text-end text-double">11223</td>
         </tr>
         <tr>
             <td>
@@ -168,16 +164,15 @@ general.
             </td>
             <td>
                 MacBook Pro (Retina)
-                <span>
+                <br>
                 Intel Core i7-3820QM
                 2700 MHz
                 (4 cores)
-                </span>
             </td>
             <td class="platform">Mac OS X 64</td>
             <td>x86_64</td>
-            <td class="uk-text-right text-double">3836</td>
-            <td class="uk-text-right text-double">12982</td>
+            <td class="text-end text-double">3836</td>
+            <td class="text-end text-double">12982</td>
         </tr>
     </tbody>
 </table>
@@ -290,7 +285,7 @@ video at that quality uses a ton of disk space.
 <figure class="video-container">
   <div>
     <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jeNbrPEMQgc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div
+  </div>
   <figcaption>Video example. This looks even better in 4K at 60fps with the raw 217.2 MB HEVC file.</figcaption>
 </figure>
 

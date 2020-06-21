@@ -2,18 +2,24 @@
 layout: default
 ---
 
-{% include nav.html %}
-<main class="uk-container" role="main">
-  <article class="uk-article" itemscope itemtype="https://schema.org/Article">
-    <h1 class="uk-article-title">{{ page.title }}</h1>
-    <p class="uk-article-meta">
-      Updated on
+<header>
+  <a href="#maincontent" class="skip-link">Skip to content</a>
+  {% include nav.html %}
+</header>
+<main role="main" id="maincontent">
+  <article itemscope itemtype="https://schema.org/Article">
+    <h1>{{ page.title }}</h1>
+    <p class="flex-wrap-space-between">
+      <span>
+        Updated on
       <time
         datetime="{{ page.modified | date: date_to_xmlschema }}"
         itemprop="dateModified"
-        >{{ page.modified | date: "%B %d, %Y" }}</time
+      >{{ page.modified | date: "%B %d, %Y" }}</time
       >
       • {% include read-time.html %}
+      </span>
+      <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/{{page.path | replace:'.html','.md'}}">Edit on GitHub</a>
     </p>
     <hr />
     <div itemprop="articleBody">
@@ -21,8 +27,8 @@ layout: default
     </div>
   </article>
   <hr />
-  <footer>
-    {% include share-page.html %} {% include author.html %}
-  </footer>
+  {% include share-page.html %}
+  <hr />
+  {% include author.html %}
 </main>
 {% include anchor-links.html %}

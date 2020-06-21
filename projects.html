@@ -8,33 +8,32 @@ description: Personal Projects
 <p>:star: indicates a featured and more complete project</p>
 
 {% for project in site.data.projects %}
-<div class="uk-article">
-  <header>
-    <h2 class="uk-article-title uk-margin-remove">
-      {{ project.name }}{% if project.featured %} :star:{% endif %}
-    </h2>
-  </header>
-  <p class="uk-article-meta">
+<article>
+  <h2>
+    {{ project.name }}{% if project.featured %} :star:{% endif %}
+  </h2>
+  <p>
     {{ project.range }} {{ project.status }}
   </p>
   <p>
     {% if project.link %}
-    <a href="{{ project.link.href }}" target="_blank"
+    <a href="{{ project.link.href }}" target="_blank" rel="noopener noreferrer"
       >{{ project.link.title }}</a
-    ><br>
+    ><br />
     {% endif %} {% if project.github %}
-    <a href="https://github.com/{{ project.github }}" target="_blank">
+    <a href="https://github.com/{{ project.github }}" target="_blank" rel="noopener noreferrer">
       {% include icon.html icon="github" %} {{ project.name }} on GitHub</a
-    ><br>
+    ><br />
     {% endif %} {% if project.gitlab %}
-    <a href="https://gitlab.com/{{ project.gitlab }}" target="_blank">
+    <a href="https://gitlab.com/{{ project.gitlab }}" target="_blank" rel="noopener noreferrer">
       {% include icon.html icon="gitlab" %} {{ project.name }} on GitLab</a
-    ><br>
+    ><br />
     {% endif %} {% if project.npm %}
-    <a href="https://npmjs.com/package/{{ project.npm }}" target="_blank">
+    <a href="https://npmjs.com/package/{{ project.npm }}" target="_blank" rel="noopener noreferrer">
       {% include icon.html icon="npm" %} {{ project.name }} on npm</a
-    ><br>
+    ><br />
     {% endif %} {{ project.description }}
   </p>
-</div>
+</article>
+{% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
