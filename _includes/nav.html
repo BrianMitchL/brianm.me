@@ -1,12 +1,8 @@
-{%- if page.link -%} {%- assign url = page.link -%} {%- else -%} {%- assign url
-= page.url|remove:'/index.html' -%} {%- endif -%}
 <nav>
   <a href="/">Brian Mitchell</a>
   <ul>
-    {%- for link in site.navigation -%} {% if url == link.url %}
-    <li>{% else %}</li>
+    {%- for link in site.navigation -%}
     <li>
-      {% endif %}
       <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
     </li>
     {%- endfor -%}
