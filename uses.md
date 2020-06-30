@@ -181,7 +181,7 @@ A :star2: indicates an app I find especially notable.
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
 - [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
 - [Focusrite Scarlett 2i2](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2) audio interface
-- [M-Audio BX5](https://www.m-audio.com/bx5d3) studio monitors, newer version linked
+- [M-Audio BX5D3](https://www.m-audio.com/bx5d3) 5" powered studio reference monitors
 - [Stageek Aluminum Desktop Speaker Stands](https://www.amazon.com/dp/B07SHCLR7T)
 - [Audio-Technica ATH-M50](https://www.audio-technica.com/cms/headphones/99aff89488ddd6b1/index.html) studio headphones, newer version linked
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
