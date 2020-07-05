@@ -36,23 +36,6 @@ span.wave {
   }
 }
 
-.easter-egg-rotate {
-  animation-name: rotate-animation;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 900s;
-}
-
-@keyframes rotate-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 div[itemprop='articleBody'] {
   h2,
   h3,
@@ -103,5 +86,55 @@ div[itemprop='articleBody'] {
     &:nth-of-type(4n + 4)::before {
       background: rgba(#f0506e, 0.7);
     }
+  }
+}
+
+.fun {
+  a {
+    color: deepskyblue;
+  }
+  h1,
+  h2,
+  h3 {
+    color: deeppink;
+  }
+  > header,
+  > main,
+  > footer {
+    animation: hue-rotate 2s linear infinite;
+  }
+  > header > nav > a {
+    animation: font-fun 1s linear infinite alternate;
+  }
+
+  .border-circle {
+    animation: rotate 10s linear infinite;
+  }
+}
+
+@keyframes hue-rotate {
+  from {
+    filter: hue-rotate(0turn);
+  }
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+@keyframes font-fun {
+  from {
+    font-variation-settings: 'wght' 100;
+  }
+  to {
+    font-variation-settings: 'wght' 900;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
   }
 }

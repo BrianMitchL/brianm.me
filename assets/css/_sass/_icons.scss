@@ -31,7 +31,7 @@
   @include icon-back(2.5);
 }
 
-[class*="icon-back"] {
+[class*='icon-back'] {
   border-radius: 100%;
   background: var(--nc-bg-2);
   color: var(--nc-tx-2);
@@ -43,7 +43,7 @@
   transition-property: color, background-color;
 }
 
-[class*="icon-back"] {
+[class*='icon-back'] {
   &:hover,
   &:active {
     color: white;

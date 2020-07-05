@@ -71,7 +71,51 @@ const headingAnchors = {
   },
 };
 
-export default [main, headingAnchors];
+const fun = {
+  input: 'src/fun.mjs',
+  output: {
+    sourcemap: true,
+    format: 'iife',
+    name: 'fun',
+    file: 'assets/js/fun.mjs',
+  },
+  plugins: [
+    // In dev mode, call `npm run start` once
+    // the bundle has been generated
+    !production && serve(),
+    // If we're building for production (npm run build
+    // instead of npm run dev), minify
+    production && terser(),
+    production && filesize(),
+  ],
+  watch: {
+    clearScreen: false,
+  },
+};
+
+const noFun = {
+  input: 'src/no-fun.js',
+  output: {
+    sourcemap: true,
+    format: 'iife',
+    name: 'noFun',
+    file: 'assets/js/no-fun.js',
+  },
+  plugins: [
+    // In dev mode, call `npm run start` once
+    // the bundle has been generated
+    !production && serve(),
+    // If we're building for production (npm run build
+    // instead of npm run dev), minify
+    production && terser(),
+    production && filesize(),
+  ],
+  watch: {
+    clearScreen: false,
+  },
+};
+
+export default [main, headingAnchors, fun, noFun];
 
 let started = false;
 

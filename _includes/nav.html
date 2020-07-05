@@ -1,5 +1,8 @@
 <nav>
   <a href="/">Brian Mitchell</a>
+  <button style="float: right;" class="shake" id="fun-button" aria-hidden="true" title="Fun Mode">
+    🥳
+  </button>
   <ul>
     {%- for link in site.navigation -%}
     <li>
@@ -8,3 +11,5 @@
     {%- endfor -%}
   </ul>
 </nav>
+<script src="{{site.baseurl}}/assets/js/no-fun.js" type="text/javascript" nomodule async defer></script>
+<script src="{{site.baseurl}}/assets/js/fun.mjs" type="module" async></script>
