@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Sneaky CSS: Concepts and Features I Never Knew'
-modified: 2020-06-07 19:45:00 -0500
+modified: 2020-07-06 15:35:00 -0500
 description: Some CSS concepts and features I have only learned more recently.
 author: brian
 seo.type: BlogPosting
@@ -11,9 +11,7 @@ I have been a full time frontend developer for over 3.5 years, and I am always l
 
 ## Collapsing Margins
 
-<div class="float-right">
-  <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">TIL about collapsing margins in CSS. This explains SO many of weird problems I&#39;ve had over the years! 🤯</p>&mdash; Brian Mitchell (@BrianMitchL) <a href="https://twitter.com/BrianMitchL/status/1244749160751837186?ref_src=twsrc%5Etfw">March 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">TIL about collapsing margins in CSS. This explains SO many of weird problems I&#39;ve had over the years! 🤯</p>&mdash; Brian Mitchell (@BrianMitchL) <a href="https://twitter.com/BrianMitchL/status/1244749160751837186?ref_src=twsrc%5Etfw">March 30, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I didn't notice this for a long time, but if you have a series of elements that have a `margin-top` and `margin-bottom` set, the browser uses the largest (when the values are positive) value for the margin between the elements. This concept, called [margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing), becomes important with spacing block elements, using borders, set height, or clearing floats. To help with preventing this from happening (and better component isolation), I've even seen the argument for [Margin considered harmful](https://mxstbr.com/thoughts/margin). If you need to override collapsed margins you can add wrapper elements, use padding, or fixed height spacer elements.
 
@@ -60,7 +58,8 @@ This wrapper has a padding of `0.5rem`, so it's height uses the margins of its c
   <p>Paragraph</p>
 </div>
 
-Each `p` still has a `margin-top` of `0.25rem` and `margin-bottom` of `1rem`, but we introduce a `div` which has a `margin-top` and `margin-bottom` of `2rem`. Inside the `div`, because the bottom margin on the `p` is smaller, it collapses, and the resulting space is the `2rem` from the `div`.
+Each `p` still has a `margin-top` of `0.25rem` and `margin-bottom` of `1rem`, but we introduce a `div` which has a `margin-top` and `margin-bottom` of `2rem`.
+Because the bottom margin on the `p` is smaller than the margin on the `div`, it collapses, and the resulting space is the `2rem` from the `div`.
 
 <div class="collapsing-margins-example">
   <p>Paragraph</p>
@@ -111,7 +110,8 @@ This wrapper has a padding of `0.5rem`, so it's height uses the margins of its c
   <p>Paragraph</p>
 </div>
 
-Each `p` still has a `margin-top` of `0.25rem` and `margin-bottom` of `1rem`, but we introduce a `div` which has a `margin-top` and `margin-bottom` of `2rem`. Inside the `div`, because the bottom margin on the `p` is smaller, it collapses, and the resulting space is the `2rem` from the `div`.
+Each `p` still has a `margin-top` of `0.25rem` and `margin-bottom` of `1rem`, but we introduce a `div` which has a `margin-top` and `margin-bottom` of `2rem`.
+Because the bottom margin on the `p` is smaller than the margin on the `div`, it collapses, and the resulting space is the `2rem` from the `div`.
 
 <div class="collapsing-margins-example">
   <p>Paragraph</p>
@@ -192,9 +192,7 @@ Toggle the checkbox to see that all colors change, even though we set the color 
 
 ## Accessibility with display: none
 
-<div class="float-right">
-  <blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Also TIL, when styling labels that wrap radio inputs, _of course_ they won&#39;t be keyboard navigable if the inputs are set to `display: none`. (Absolutely position them behind the labels)</p>&mdash; Brian Mitchell (@BrianMitchL) <a href="https://twitter.com/BrianMitchL/status/1194044909428363264?ref_src=twsrc%5Etfw">November 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+<blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Also TIL, when styling labels that wrap radio inputs, _of course_ they won&#39;t be keyboard navigable if the inputs are set to `display: none`. (Absolutely position them behind the labels)</p>&mdash; Brian Mitchell (@BrianMitchL) <a href="https://twitter.com/BrianMitchL/status/1194044909428363264?ref_src=twsrc%5Etfw">November 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 While it seems obvious now, when I was looking at fixing keyboard and accessibility support for a custom checkbox-like input in an app, I realized that `display: none` all but removes an element from the document. It still exists in the DOM, and can be toggled through clicking on a linked label, but otherwise it's effectively not there. To avoid this from happening, I found that the following CSS is a great way to visually hide the input while keeping it visible for focus management, tabbing with a keyboard, and being spoken with screen readers.
 
@@ -253,7 +251,7 @@ With a mouse, both checkboxes work the same, but if you use <kbd>Tab</kbd> to fo
 </style>
 
 <div class="checkbox-example">
-  <button>Click me to focus before the checkboxes</button>
+  <button>Click me for focus</button>
   <input id="checkbox-1" type="checkbox" />
   <label for="checkbox-1">Custom checkbox with <code>display: none</code></label>
   <input id="checkbox-2" type="checkbox" />
@@ -300,7 +298,7 @@ With a mouse, both checkboxes work the same, but if you use <kbd>Tab</kbd> to fo
 </style>
 
 <div class="checkbox-example">
-  <button>Click me to focus before the checkboxes</button>
+  <button>Click me for focus</button>
   <input id="checkbox-1" type="checkbox" />
   <label for="checkbox-1">Custom checkbox with <code>display: none</code></label>
   <input id="checkbox-2" type="checkbox" />
