@@ -3,7 +3,7 @@
 
   async function getArtists(path, period = 'overall') {
     const res = await fetch(
-            `https://royal-darkness-cf0c.brianmitchl.workers.dev/${path}?period=${period}`
+      `https://lastfm-proxy.brianm.me/${path}?period=${period}`
     );
     if (res.ok && res.status === 200) {
       return res.json();
