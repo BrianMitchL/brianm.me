@@ -1,7 +1,7 @@
 ---
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2020-03-22
+modified: 2020-09-06
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 ---
 
@@ -43,6 +43,7 @@ cross-platform.
 - [CARROT Weather](http://www.meetcarrot.com/weather/mac/)
 - [Coconut Battery](https://www.coconut-flavour.com/coconutbattery/)
 - [Daisy Disk](https://daisydiskapp.com)
+- [Discord](https://discord.com)
 - [DriveDx](https://binaryfruit.com/drivedx)
 - [Fantastical](https://flexibits.com/fantastical)
 - [Final Cut Pro X](https://www.apple.com/final-cut-pro/)
@@ -97,8 +98,10 @@ A :star2: indicates an app I find especially notable.
 - [Bloons Supermonkey 2](https://itunes.apple.com/us/app/bloons-supermonkey-2/id1118441024)
 - [holedown](https://itunes.apple.com/us/app/holedown/id1297270249)
 - [Jetpack Joyride](https://itunes.apple.com/us/app/jetpack-joyride/id457446957)
+- [Mineswifter (Minesweeper)](https://apps.apple.com/us/app/mineswifter-minesweeper/id1521190195)
 - [Monument Valley 2](https://itunes.apple.com/us/app/monument-valley-2/id1187265767)
 - [Monument Valley](https://itunes.apple.com/us/app/monument-valley/id728293409) :star2:
+- [Solitare](https://apps.apple.com/us/app/solitaire/id647804489)
 - [Tetris](https://apps.apple.com/us/app/tetris/id1491074310)
 - [Threes](https://itunes.apple.com/us/app/threes-freeplay/id976851174) :star2:
 
@@ -140,6 +143,7 @@ A :star2: indicates an app I find especially notable.
 ### Social
 
 - [Apollo for Reddit](https://itunes.apple.com/us/app/apollo-for-reddit/id979274575) :star2:
+- [Discord](https://apps.apple.com/us/app/discord-talk-chat-hang-out/id985746746)
 - [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669)
 - [Slack](https://itunes.apple.com/us/app/slack/id618783545)
 - [Strava](https://itunes.apple.com/us/app/strava-run-ride-or-swim/id426826309)
@@ -209,6 +213,7 @@ A :star2: indicates an app I find especially notable.
   - CentOS 7
   - Plex Media Server
   - Tautulli
+  - Minecraft
 - Salyut, [Synology Diskstation 1817+ NAS](https://www.synology.com/en-us/products/DS1817+)
   - RAID 6
   - Six 4 TB hard drives (mix of Western Digital Red, Seagate NAS, and HGST DeskStar NAS)
@@ -216,7 +221,6 @@ A :star2: indicates an app I find especially notable.
   - CentOS 7
   - Docker
   - [weatherBot](https://github.com/BrianMitchL/weatherBot)
-  - [packageBot](https://github.com/BrianMitchL/packageBot)
   - [paul](https://github.com/thenexustv/paul)
 
 ## Mobile
