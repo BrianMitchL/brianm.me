@@ -81,87 +81,87 @@ A :star2: indicates an app I find especially notable.
 
 ### Entertainment
 
-- [Cyanide and Happiness](https://itunes.apple.com/us/app/cyanide-and-happiness/id368088267)
-- [Duolingo](https://itunes.apple.com/app/duolingo-learn-spanish-french/id570060128)
-- [Fog of World](https://itunes.apple.com/us/app/fog-of-world/id505367096) (see my [review]({% post_url 2016-11-08-fog-of-world-2 %})) :star2:
-- [GPX Builder](https://itunes.apple.com/us/app/fog-of-world-assistant-gpx-builder/id938037644)
-- [Overcast](https://itunes.apple.com/us/app/overcast-podcast-player/id888422857) :star2:
-- [Plex](https://itunes.apple.com/us/app/plex/id383457673)
-- [Simple Reader for Hacker News](https://itunes.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
+- [Cyanide and Happiness](https://apps.apple.com/us/app/cyanide-and-happiness/id368088267)
+- [Duolingo](https://apps.apple.com/app/duolingo-learn-spanish-french/id570060128)
+- [Fog of World](https://apps.apple.com/us/app/fog-of-world/id505367096) (see my [review]({% post_url 2016-11-08-fog-of-world-2 %})) :star2:
+- [GPX Builder](https://apps.apple.com/us/app/fog-of-world-assistant-gpx-builder/id938037644)
+- [Overcast](https://apps.apple.com/us/app/overcast-podcast-player/id888422857) :star2:
+- [Plex](https://apps.apple.com/us/app/plex/id383457673)
+- [Simple Reader for Hacker News](https://apps.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
 - [Watcht for Trakt](https://apps.apple.com/us/app/watcht-for-trakt/id1396920723) :star2:
 
 ### Games
 
-- [Alto's Adventure](https://itunes.apple.com/us/app/altos-adventure/id950812012) :star2:
-- [Alto's Odyssey](https://itunes.apple.com/us/app/altos-odyssey/id1182456409)
-- [Artificial Superintelligence](https://itunes.apple.com/us/app/artificial-superintelligence/id1060474699)
-- [Bloons Supermonkey 2](https://itunes.apple.com/us/app/bloons-supermonkey-2/id1118441024)
-- [holedown](https://itunes.apple.com/us/app/holedown/id1297270249)
-- [Jetpack Joyride](https://itunes.apple.com/us/app/jetpack-joyride/id457446957)
+- [Alto's Adventure](https://apps.apple.com/us/app/altos-adventure/id950812012) :star2:
+- [Alto's Odyssey](https://apps.apple.com/us/app/altos-odyssey/id1182456409)
+- [Artificial Superintelligence](https://apps.apple.com/us/app/artificial-superintelligence/id1060474699)
+- [Bloons Supermonkey 2](https://apps.apple.com/us/app/bloons-supermonkey-2/id1118441024)
+- [holedown](https://apps.apple.com/us/app/holedown/id1297270249)
+- [Jetpack Joyride](https://apps.apple.com/us/app/jetpack-joyride/id457446957)
 - [Mineswifter (Minesweeper)](https://apps.apple.com/us/app/mineswifter-minesweeper/id1521190195)
-- [Monument Valley 2](https://itunes.apple.com/us/app/monument-valley-2/id1187265767)
-- [Monument Valley](https://itunes.apple.com/us/app/monument-valley/id728293409) :star2:
+- [Monument Valley 2](https://apps.apple.com/us/app/monument-valley-2/id1187265767)
+- [Monument Valley](https://apps.apple.com/us/app/monument-valley/id728293409) :star2:
 - [Solitare](https://apps.apple.com/us/app/solitaire/id647804489)
 - [Tetris](https://apps.apple.com/us/app/tetris/id1491074310)
-- [Threes](https://itunes.apple.com/us/app/threes-freeplay/id976851174) :star2:
+- [Threes](https://apps.apple.com/us/app/threes-freeplay/id976851174) :star2:
 
 ### Music
 
 - Apple Music
-- [Marvis Pro](https://itunes.apple.com/mt/app/marvis-pro/id1447768809) :star2:
-- [Mixcloud](https://itunes.apple.com/us/app/mixcloud-radio-dj-mixes/id401206431)
-- [Shazam](https://itunes.apple.com/us/app/shazam/id284993459)
+- [Marvis Pro](https://apps.apple.com/mt/app/marvis-pro/id1447768809) :star2:
+- [Mixcloud](https://apps.apple.com/us/app/mixcloud-radio-dj-mixes/id401206431)
+- [Shazam](https://apps.apple.com/us/app/shazam/id284993459)
 
 ### Photo/Video
 
-- [1 Second Everyday](https://itunes.apple.com/us/app/1-second-everyday-video-diary/id587823548) :star2:
-- [Darkroom](https://itunes.apple.com/us/app/darkroom-photo-editor/id953286746) :star2:
-- [Halide Camera](https://itunes.apple.com/us/app/halide-camera/id885697368) :star2:
-- [Motion Stills](https://itunes.apple.com/us/app/motion-stills-gif-collage/id1086172168)
-- [Pixelmator](https://itunes.apple.com/us/app/pixelmator/id924695435)
+- [1 Second Everyday](https://apps.apple.com/us/app/1-second-everyday-video-diary/id587823548) :star2:
+- [Darkroom](https://apps.apple.com/us/app/darkroom-photo-editor/id953286746) :star2:
+- [Halide Camera](https://apps.apple.com/us/app/halide-camera/id885697368) :star2:
+- [Motion Stills](https://apps.apple.com/us/app/motion-stills-gif-collage/id1086172168)
+- [Pixelmator](https://apps.apple.com/us/app/pixelmator/id924695435)
 - [Snapseed](https://apps.apple.com/us/app/snapseed/id439438619)
 - [Spectre Camera](https://apps.apple.com/us/app/spectre-camera/id1450074595) :star2:
-- [ViewExif](https://itunes.apple.com/us/app/viewexif/id945320815)
+- [ViewExif](https://apps.apple.com/us/app/viewexif/id945320815)
 
 ### Productivity
 
-- [1Blocker X](https://itunes.apple.com/us/app/1blocker-x/id1365531024)
-- [1Password](https://itunes.apple.com/us/app/1password-password-manager/id568903335) :star2:
+- [1Blocker X](https://apps.apple.com/us/app/1blocker-x/id1365531024)
+- [1Password](https://apps.apple.com/us/app/1password-password-manager/id568903335) :star2:
 - Apple Maps
-- [Bobby](https://itunes.apple.com/us/app/bobby-track-subscriptions/id1059152023)
-- [CARROT Weather](https://itunes.apple.com/us/app/carrot-weather/id961390574) :star2:
-- [Calcbot](https://itunes.apple.com/us/app/calcbot-2/id376694347)
-- [Clear Todos](https://itunes.apple.com/us/app/clear-todos/id493136154)
-- [Fantastical](https://itunes.apple.com/us/app/fantastical-2-for-iphone/id718043190) :star2:
+- [Bobby](https://apps.apple.com/us/app/bobby-track-subscriptions/id1059152023)
+- [CARROT Weather](https://apps.apple.com/us/app/carrot-weather/id961390574) :star2:
+- [Calcbot](https://apps.apple.com/us/app/calcbot-2/id376694347)
+- [Clear Todos](https://apps.apple.com/us/app/clear-todos/id493136154)
+- [Fantastical](https://apps.apple.com/us/app/fantastical-2-for-iphone/id718043190) :star2:
 - [GitHub](https://apps.apple.com/us/app/github/id1477376905/) :star2:
-- [Google Maps](https://itunes.apple.com/us/app/google-maps-transit-food/id585027354) (just for cycling directions)
-- [SmartNews](https://itunes.apple.com/us/app/smartnews-local-breaking-news/id579581125)
-- [Textastic](https://itunes.apple.com/us/app/textastic-code-editor-7/id1049254261)
-- [Waze](https://itunes.apple.com/us/app/waze-navigation-live-traffic/id323229106)
-- [Working Copy](https://itunes.apple.com/us/app/working-copy/id896694807) :star2:
+- [Google Maps](https://apps.apple.com/us/app/google-maps-transit-food/id585027354) (just for cycling directions)
+- [SmartNews](https://apps.apple.com/us/app/smartnews-local-breaking-news/id579581125)
+- [Textastic](https://apps.apple.com/us/app/textastic-code-editor-7/id1049254261)
+- [Waze](https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106)
+- [Working Copy](https://apps.apple.com/us/app/working-copy/id896694807) :star2:
 
 ### Social
 
-- [Apollo for Reddit](https://itunes.apple.com/us/app/apollo-for-reddit/id979274575) :star2:
+- [Apollo for Reddit](https://apps.apple.com/us/app/apollo-for-reddit/id979274575) :star2:
 - [Discord](https://apps.apple.com/us/app/discord-talk-chat-hang-out/id985746746)
-- [Signal](https://itunes.apple.com/us/app/signal-private-messenger/id874139669)
-- [Slack](https://itunes.apple.com/us/app/slack/id618783545)
-- [Strava](https://itunes.apple.com/us/app/strava-run-ride-or-swim/id426826309)
+- [Signal](https://apps.apple.com/us/app/signal-private-messenger/id874139669)
+- [Slack](https://apps.apple.com/us/app/slack/id618783545)
+- [Strava](https://apps.apple.com/us/app/strava-run-ride-or-swim/id426826309)
 - [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082) :star2:
-- [Tootdon](https://itunes.apple.com/us/app/tootdon-for-mastodon/id1282283934)
-- [Tweetbot](https://itunes.apple.com/us/app/tweetbot-4-for-twitter/id1018355599) :star2:
+- [Tootdon](https://apps.apple.com/us/app/tootdon-for-mastodon/id1282283934)
+- [Tweetbot](https://apps.apple.com/us/app/tweetbot-4-for-twitter/id1018355599) :star2:
 
 ### Utilities
 
-- [DS file](https://itunes.apple.com/us/app/ds-file/id416751772)
-- [DS finder](https://itunes.apple.com/us/app/ds-finder/id429865523)
-- [Mactracker](https://itunes.apple.com/us/app/mactracker/id311421597)
+- [DS file](https://apps.apple.com/us/app/ds-file/id416751772)
+- [DS finder](https://apps.apple.com/us/app/ds-finder/id429865523)
+- [Mactracker](https://apps.apple.com/us/app/mactracker/id311421597)
 - [Omnistat 2](https://apps.apple.com/us/app/omnistat-2/id1473751241)
-- [Prompt](https://itunes.apple.com/us/app/prompt-2/id917437289) :star2:
-- [Screens](https://itunes.apple.com/us/app/screens/id655890150)
-- [Speedtest](https://itunes.apple.com/us/app/speedtest-by-ookla/id300704847)
+- [Prompt](https://apps.apple.com/us/app/prompt-2/id917437289) :star2:
+- [Screens](https://apps.apple.com/us/app/screens/id655890150)
+- [Speedtest](https://apps.apple.com/us/app/speedtest-by-ookla/id300704847)
 - Transmit
-- [TypeStyle](https://itunes.apple.com/us/app/typestyle/id1441019779)
+- [TypeStyle](https://apps.apple.com/us/app/typestyle/id1441019779)
 
 ## Home Office
 
