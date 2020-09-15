@@ -13,7 +13,7 @@ Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeathe
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, Redux, redux-saga, react-table, react-testing-library, react-query, react-spring, styled-components, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, Redux, redux-saga, react-table, React Testing Library, react-query, react-spring, styled-components, Jest, Puppeteer, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 ### Operating Systems
 
