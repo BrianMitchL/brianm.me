@@ -157,8 +157,13 @@ body > footer {
     color: var(--nc-tx-1);
   }
 }
-body > footer a {
-  font-size: 1.25rem;
+body > footer {
+  ul {
+    margin-bottom: 0;
+  }
+  a {
+    font-size: 1.25rem;
+  }
 }
 
 // brand
