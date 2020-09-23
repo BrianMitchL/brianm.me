@@ -21,7 +21,7 @@
 
   --nc-tx-1: #333; // Heading text color
   --nc-tx-2: #555; // Body text color
-  --nc-tx-2-a025: rgba(85, 85, 85, 0.25); // Body text color - alpha of 0.25
+  --nc-tx-3: #777; // Tertiary text color
   --nc-bg-1: #ffffff; // Base background color
   --nc-bg-2: #f6f8fa; // Slightly darker background color
   --nc-bg-3: #e5e7eb; // Even slightly darker background color
@@ -36,10 +36,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --nc-tx-1: #ffffff;
-    --nc-tx-2: rgba(255, 255, 255, 0.7);
-    --nc-tx-2-a025: rgba(238, 238, 238, 0.25);
+    --nc-tx-2: #cccccc;
+    --nc-tx-3: #999999;
     --nc-bg-1: #161716;
-    --nc-bg-2: #262726;
+    --nc-bg-2: #232423;
     --nc-bg-3: #363736;
     --nc-lk-1: #ffffff;
     --nc-lk-2: #ffffff;
@@ -80,10 +80,6 @@ h3,
 h4,
 h5,
 h6 {
-  & > a:hover {
-    text-decoration: none;
-  }
-
   &:hover > a.heading-link {
     opacity: 1;
   }
@@ -102,11 +98,6 @@ em {
 a {
   -webkit-text-decoration-skip: ink;
   text-decoration-skip: ink;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 
   > img {
     margin-bottom: 0;
@@ -209,10 +200,10 @@ figure {
 .loading {
   width: 2.5rem;
   height: 2.5rem;
-  border: 0.25rem solid var(--nc-tx-2-a025);
+  border: 0.25rem solid var(--nc-bg-3);
   border-top-color: var(--nc-tx-2);
   border-radius: 50%;
   position: relative;
   margin: 0 auto;
-  animation: rotate-animation 1s infinite linear;
+  animation: rotate 1s infinite linear;
 }
