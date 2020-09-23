@@ -94,3 +94,24 @@
     grid-template-columns: 1fr;
   }
 }
+
+.project {
+  background-color: var(--nc-bg-2);
+  margin: 0 -1rem 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--nc-bg-3);
+
+  h2 {
+    border-bottom-color: var(--nc-bg-3);
+  }
+
+  p:first-of-type {
+    font-weight: 300;
+    color: var(--nc-tx-3);
+  }
+
+  &.featured h2::after {
+    content: ' ⭐️';
+  }
+}
