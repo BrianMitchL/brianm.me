@@ -8,6 +8,11 @@ redirect_from: /slides
 
 
 {:.list-none}
+- ### Make Goofy Features
+
+  - [Minnestar Presents: Lightning Talks, Twin Cities Startup Week 2020](https://www.twincitiesstartupweek.com) Lightning talk, September 8, 2020
+  - [Outline](https://gist.github.com/BrianMitchL/f693f40c0850a58aa158d05cf4cf1267)
+
 - ### React Testing Library Livecoding
 
   - [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/263988845/) Main Talk, <time dateTime="2019-10-17">October 17, 2019</time>
