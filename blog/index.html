@@ -26,7 +26,6 @@ link: /blog
   </p>
   <p>
     {{ post.excerpt | remove: '<p>' | remove: '</p>' | strip_newlines }}
-    <a href="{{ post.url }}" class="classy-link">Read more</a>
   </p>
 </article>
 {% unless forloop.last %}
