@@ -42,7 +42,7 @@
     --nc-bg-2: #232423;
     --nc-bg-3: #363736;
     --nc-lk-1: #ffffff;
-    --nc-lk-2: #faa05a;
+    --nc-lk-2: #ffffff;
     --nc-lk-tx: #161716;
     --nc-ac-1: #39f;
     --nc-ac-2: #f0506e;
@@ -82,6 +82,7 @@ h5,
 h6 {
   &:hover > a.heading-link {
     opacity: 1;
+    color: var(--nc-tx-1);
   }
 }
 
@@ -170,6 +171,12 @@ body > header nav > a {
   font-size: 0.8em;
   line-height: 1.5;
   transition: opacity 0.2s ease-in-out;
+
+  &:focus,
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
 }
 
 h1,
