@@ -4,7 +4,7 @@ async function lazyLoadConfetti() {
   if (confetti === null) {
     try {
       const module = await import(
-        'https://cdn.jsdelivr.net/npm/canvas-confetti@1.2.0/dist/confetti.module.mjs'
+        'https://unpkg.com/canvas-confetti@1.2.1/dist/confetti.module.mjs'
       );
       confetti = module.default;
     } catch (e) {
@@ -38,10 +38,12 @@ butt.addEventListener('click', function (e) {
     document.querySelectorAll('img.emoji').forEach(function (el) {
       el.setAttribute('src', '/assets/images/parrot.gif');
     });
-    document.querySelectorAll('.emoji[role="img"], .icon').forEach(function (el) {
-      el.innerHTML =
-        '<img height="20" width="20" style="margin-bottom:0;" src="/assets/images/parrot.gif" alt="party parrot" />';
-    });
+    document
+      .querySelectorAll('.emoji[role="img"], .icon')
+      .forEach(function (el) {
+        el.innerHTML =
+          '<img height="20" width="20" style="margin-bottom:0;" src="/assets/images/parrot.gif" alt="party parrot" />';
+      });
     funEnabled = true;
   }
 
