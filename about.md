@@ -5,15 +5,15 @@ title: About Brian Mitchell
 description: Extended Résumé
 ---
 
+Brian Mitchell is a Software Engineer III at C.H. Robinson, where he guides
+frontend development for Customer Facing Analytics. In Brian's spare time, he
+enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
+
 _A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf)._
-
-I am a senior frontend software engineer and web developer with an interest in tooling and developer experience. I am fairly proficient in a Terminal and enjoy tinkering and configuring things. Additionally, I am an experienced lighting designer, electrician, and console programmer.
-
-Check out my Twitter bots! [@MorrisMNWeather](https://twitter.com/MorrisMNWeather) and [@WeatherByBrian](https://twitter.com/WeatherByBrian)
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, Redux, redux-saga, react-table, React Testing Library, react-query, react-spring, styled-components, Jest, Puppeteer, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML5, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, Redux, redux-saga, react-table, React Testing Library, react-query, react-spring, styled-components, Jest, Puppeteer, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Jekyll, Python, Java, HTML, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 ### Operating Systems
 
@@ -21,12 +21,15 @@ macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
 
 ## Other Skills
 
-Pair programming, agile methodologies, communication, collaboration, enthusiasm, organization, lighting design, theatrical lighting electrician, lighting and sound board operation
+Pair programming, mentorship, enthusiasm, organization, lighting design, theatrical lighting electrician, lighting and sound board operation
 
 ## Hobbies
 
 - Co-organizer of the [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetup
-- Frequently attend [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/) and [NodeMN](https://www.meetup.com/NodeMN/) meetups
+- Frequent participant of several meetups in the Twin Cities, notably including
+  [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/),
+  [Twin Cites Codepen Meetup](https://www.codepenmeetup.com), and
+  [Mpls Jr Devs](https://mplsjrdevs.com).
 - Podcasting on [The Nexus](http://thenexus.tv)
 - Bicycling
 - Downhill skiing
@@ -35,10 +38,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
 - Watching science-fiction TV shows and movies
 - Learning/speaking Danish
 - Traveling
-- Hackintosh from macOS 10.8 - macOS 10.13
-- CentOS 7 based media server
-- CentOS 7 VPS running [weatherBots](https://github.com/BrianMitchL/weatherBot) via Docker
-- Jailbroke iPhone and iPad from iOS 4.3 - iOS 8.4
+- Finding new ways to consume coffee
 
 ## Experience
 
@@ -83,7 +83,7 @@ Pair programming, agile methodologies, communication, collaboration, enthusiasm,
   - Providing custom network installations
   - Managing internal tools, servers, radios, and other hardware
   - Climbing telecom towers, water towers, and grain elevators to install or service Info-Link's hardware
-- **[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions** (April 25-26, 2014), ​Verona, WI.\\
+- **[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions** (April 25-26, 2014), Verona, WI.\\
   Teams placed 4th of 11 in robotics (Java), and 18th of ~50 for programming (Java).
 - **University of Minnesota, Morris**, _Student Center Tech Crew_ (Fall 2012 - Spring 2016), Morris, MN.\\
   _Lighting Lead_ for the 2014-2015 school year and Spring 2016 semester.\\
