@@ -2,6 +2,7 @@
   featured: true
   range: September 2019 – Present
   description: React based Secret Santa generator. Built on top of my gift-exchange library, this is a web app that helps you create a Secret Santa or any other matching of people together. It supports grouping of people as well as group and individual exclusions to all of your custom rules.
+  status: <a href="https://github.com/BrianMitchL/secret-santa/workflows/CI/badge.svg"><img src="https://github.com/BrianMitchL/secret-santa/workflows/CI/badge.svg" alt="CI"></a> <a href='https://coveralls.io/github/BrianMitchL/secret-santa?branch=main'><img src='https://coveralls.io/repos/github/BrianMitchL/secret-santa/badge.svg?branch=main' alt='Coverage Status' /></a>
   github: BrianMitchL/secret-santa
   link: https://brianm.me/secret-santa/
 
