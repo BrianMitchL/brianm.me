@@ -2,6 +2,11 @@
 // http://edward.oconnor.cx/2007/08/tex-poshlet
 // Uses 'sub' and 'sup' classes of a <span> instead of <sub> and <sup>
 
+.latex {
+  font-family: 'Computer Modern', 'Computer Modern Unicode', Bodoni, Didot,
+    serif;
+}
+
 .latex .sub,
 .latex .sup {
   text-transform: uppercase;
