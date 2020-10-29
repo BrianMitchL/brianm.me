@@ -8,9 +8,15 @@ redirect_from: /slides
 
 
 {:.list-none}
+- ### 11ty and Tailwind - Brian Mitchell and Ryan Rampersad
+
+  - [JavaScriptMN](https://www.meetup.com/JavaScriptMN/events/hmzgxrybcnblc/) Main talk, <time datetime="2020-10-28">October 28, 2020</time>
+  - [Slides](https://docs.google.com/presentation/d/1nBPdnQeX4tCqTghVEbq41KFMSIFD3-ebaOa4njK6nxQ/edit?usp=sharing)
+  - [Watch](https://www.youtube.com/watch?v=oYJ_xpaCl18)
+
 - ### Make Goofy Features
 
-  - [Minnestar Presents: Lightning Talks, Twin Cities Startup Week 2020](https://www.twincitiesstartupweek.com) Lightning talk, September 8, 2020
+  - [Minnestar Presents: Lightning Talks, Twin Cities Startup Week 2020](https://www.twincitiesstartupweek.com) Lightning talk, <time datetime="2020-09-08">September 8, 2020</time>
   - [Outline](https://gist.github.com/BrianMitchL/f693f40c0850a58aa158d05cf4cf1267)
 
 - ### React Testing Library Livecoding
