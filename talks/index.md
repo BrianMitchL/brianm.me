@@ -10,7 +10,7 @@ redirect_from: /slides
 {:.list-none}
 - ### 11ty and Tailwind - Brian Mitchell and Ryan Rampersad
 
-  - [JavaScriptMN](https://www.meetup.com/JavaScriptMN/events/hmzgxrybcnblc/) Main talk, <time datetime="2020-10-28">October 28, 2020</time>
+  - [JavaScriptMN](https://www.meetup.com/JavaScriptMN/events/hmzgxrybcnblc/) Main Talk, <time datetime="2020-10-28">October 28, 2020</time>
   - [Slides](https://docs.google.com/presentation/d/1nBPdnQeX4tCqTghVEbq41KFMSIFD3-ebaOa4njK6nxQ/edit?usp=sharing)
   - [Watch](https://www.youtube.com/watch?v=oYJ_xpaCl18)
 
