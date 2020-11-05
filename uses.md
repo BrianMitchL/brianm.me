@@ -1,7 +1,7 @@
 ---
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2020-09-06
+modified: 2020-11-04
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 ---
 
@@ -24,7 +24,7 @@ I use the native macOS [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS
 - [oh-my-zsh](https://ohmyz.sh) with my [custom theme](https://github.com/BrianMitchL/dotfiles/blob/master/brian.zsh-theme)
 - [prettier](https://prettier.io)
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
-- [youtube-dl](https://ytdl-org.github.io/youtube-dl/)
+- [youtube-dl](https://yt-dl.org)
 
 ## Desktop Apps
 
@@ -57,6 +57,7 @@ cross-platform.
 - [iVI](http://southpolesoftware.com/wp/ivi-pro-v4/)
 - [Last.fm Scrobbler](https://www.last.fm/about/trackmymusic)
 - [Logic Pro X](https://www.apple.com/logic-pro/)
+- [Loopback](https://rogueamoeba.com/loopback/)
 - [Pixelmator](https://www.pixelmator.com/mac/)
 - [Private Internet Access](https://www.privateinternetaccess.com)
 - [Rocket](https://matthewpalmer.net/rocket/)
@@ -116,7 +117,7 @@ A :star2: indicates an app I find especially notable.
 
 - [1 Second Everyday](https://apps.apple.com/us/app/1-second-everyday-video-diary/id587823548) :star2:
 - [Darkroom](https://apps.apple.com/us/app/darkroom-photo-editor/id953286746) :star2:
-- [Halide Camera](https://apps.apple.com/us/app/halide-camera/id885697368) :star2:
+- [Halide Mark II - Pro Camera](https://apps.apple.com/us/app/halide/id885697368) :star2:
 - [Motion Stills](https://apps.apple.com/us/app/motion-stills-gif-collage/id1086172168)
 - [Pixelmator](https://apps.apple.com/us/app/pixelmator/id924695435)
 - [Snapseed](https://apps.apple.com/us/app/snapseed/id439438619)
@@ -166,7 +167,7 @@ A :star2: indicates an app I find especially notable.
 ## Home Office
 
 <figure>
-  <img src="{% link /assets/images/desk.jpg %}" alt="My home desk" loading="lazy">
+  <img src="{% link /assets/images/desk-2020-11-03.jpg %}" alt="My home desk" loading="lazy">
   <figcaption>My home desk</figcaption>
 </figure>
 
@@ -187,9 +188,10 @@ A :star2: indicates an app I find especially notable.
 - [Focusrite Scarlett 2i2](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2) audio interface
 - [M-Audio BX5D3](https://www.m-audio.com/bx5d3) 5" powered studio reference monitors
 - [Stageek Aluminum Desktop Speaker Stands](https://www.amazon.com/dp/B07SHCLR7T)
-- [Audio-Technica ATH-M50](https://www.audio-technica.com/cms/headphones/99aff89488ddd6b1/index.html) studio headphones, newer version linked
+- [Audio-Technica ATH-M50](https://www.audio-technica.com/cms/headphones/99aff89488ddd6b1/index.html) studio headphones (newer version linked)
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
 - [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
+- [Acoustic Panels](https://smile.amazon.com/gp/product/B07VH6KDY8/)
 
 ## Work Office
 
@@ -226,7 +228,7 @@ A :star2: indicates an app I find especially notable.
 ## Mobile
 
 - BriPhone XS Max, [iPhone XS Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
-- BriPad Pro, [iPad Pro (9.7-inch)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-pro-9-7-inch-1st-gen-wi-fi-only-specs.html)
+- BriPad Air, [iPad Air (4th Gen)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-air-4th-gen-a2316-wifi-only-specs.html)
 - Brapple Watch 5, [Apple Watch Series 5 (Aluminum, GPS, 44 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-5-aluminum-gps-44mm-a2093.html)
 - [AirPods Pro](https://www.apple.com/airpods-pro/)
 - [Anker PowerCore 13000](https://www.anker.com/products/variant/PowerCore-13000mAh/A1215011) power bank
