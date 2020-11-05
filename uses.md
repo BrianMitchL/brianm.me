@@ -5,7 +5,7 @@ modified: 2020-11-04
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 ---
 
-This serves as a living document of software, gear, and other things that I typically use. Last updated <time datetime="{{ page.modified | date: date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>.
+This serves as a living document of software, gear, and other things that I typically use. Last updated <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>.
 
 {% include toc.md %}
 

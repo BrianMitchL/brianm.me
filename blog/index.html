@@ -17,7 +17,7 @@ link: /blog
   </h2>
   <p>
     <time
-      datetime="{{ post.date | date: date_to_xmlschema }}"
+      datetime="{{ post.date | date: "%Y-%m-%d" }}"
       itemprop="datePublished"
       >{{ post.date | date: "%B %d, %Y" }}</time
     >
