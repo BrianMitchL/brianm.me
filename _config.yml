@@ -33,7 +33,6 @@ exclude:
   - package-lock.json
   - src
   - rollup.config.js
-  - Rakefile
 
 sass:
   sass_dir: assets/css/_sass
