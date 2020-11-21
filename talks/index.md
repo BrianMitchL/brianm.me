@@ -1,13 +1,18 @@
 ---
 layout: page
 title: Talks
-description: Talks from public presentations
+description: Resources from presentations
 link: /talks
 redirect_from: /slides
 ---
 
 
 {:.list-none}
+- ### React Hooks
+
+  - Internal talk at C.H. Robinson for Customer Solutions engineers, <time datetime="2020-11-17">November 17, 2020</time>
+  - [CodeSandbox](https://codesandbox.io/s/react-hooks-talk-m0eu2) with slides and demos
+
 - ### 11ty and Tailwind - Brian Mitchell and Ryan Rampersad
 
   - [JavaScriptMN](https://www.meetup.com/JavaScriptMN/events/hmzgxrybcnblc/) Main Talk, <time datetime="2020-10-28">October 28, 2020</time>
@@ -22,7 +27,7 @@ redirect_from: /slides
 - ### React Testing Library Livecoding
 
   - [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/events/263988845/) Main Talk, <time dateTime="2019-10-17">October 17, 2019</time>
-  - [Code Sandbox](https://codesandbox.io/embed/react-minneapolis-rtl-sandbox-txy5t)
+  - [CodeSandbox](https://codesandbox.io/embed/react-minneapolis-rtl-sandbox-txy5t)
 
 - ### TypeScript & React
 
