@@ -1,7 +1,7 @@
 ---
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2020-11-04
+modified: 2020-11-22
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 ---
 
@@ -40,7 +40,6 @@ cross-platform.
 - [Bartender](https://www.macbartender.com)
 - [BetterTouchTool](https://folivora.ai)
 - [Calcbot](https://www.tapbots.com/calcbot/mac/)
-- [CARROT Weather](http://www.meetcarrot.com/weather/mac/)
 - [Coconut Battery](https://www.coconut-flavour.com/coconutbattery/)
 - [Daisy Disk](https://daisydiskapp.com)
 - [Discord](https://discord.com)
@@ -138,7 +137,6 @@ A :star2: indicates an app I find especially notable.
 - [Google Maps](https://apps.apple.com/us/app/google-maps-transit-food/id585027354) (just for cycling directions)
 - [SmartNews](https://apps.apple.com/us/app/smartnews-local-breaking-news/id579581125)
 - [Textastic](https://apps.apple.com/us/app/textastic-code-editor-7/id1049254261)
-- [Waze](https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106)
 - [Working Copy](https://apps.apple.com/us/app/working-copy/id896694807) :star2:
 
 ### Social
@@ -149,8 +147,7 @@ A :star2: indicates an app I find especially notable.
 - [Slack](https://apps.apple.com/us/app/slack/id618783545)
 - [Strava](https://apps.apple.com/us/app/strava-run-ride-or-swim/id426826309)
 - [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082) :star2:
-- [Tootdon](https://apps.apple.com/us/app/tootdon-for-mastodon/id1282283934)
-- [Tweetbot](https://apps.apple.com/us/app/tweetbot-4-for-twitter/id1018355599) :star2:
+- [Twitter](https://apps.apple.com/us/app/twitter/id333903271) :star2:
 
 ### Utilities
 
@@ -191,6 +188,7 @@ A :star2: indicates an app I find especially notable.
 - [Audio-Technica ATH-M50](https://www.audio-technica.com/cms/headphones/99aff89488ddd6b1/index.html) studio headphones (newer version linked)
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
 - [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
+- [Mophie wireless charging base](https://www.zagg.com/en_us/wireless-charging-base)
 - [Acoustic Panels](https://smile.amazon.com/gp/product/B07VH6KDY8/)
 
 ## Work Office
@@ -201,8 +199,6 @@ A :star2: indicates an app I find especially notable.
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
 - [Apple Magic Trackpad 2](https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver)
 - [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
-- [Mophie wireless charging base](https://www.zagg.com/en_us/wireless-charging-base)
-- [Sony WH-1000XM3 Wireless Noise-Canceling Headphones](https://www.sony.com/electronics/headband-headphones/wh-1000xm3)
 - Sit/Standing desk (that I've exclusively stood at since November 2017!)
 - Standing pad
 
@@ -227,12 +223,13 @@ A :star2: indicates an app I find especially notable.
 
 ## Mobile
 
-- BriPhone XS Max, [iPhone XS Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-xs-max-united-states-canada-hong-kong-a1921-specs.html)
+- BriPhone, [iPhone 12 Pro Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-12-pro-max-united-states-a2342-specs.html)
 - BriPad Air, [iPad Air (4th Gen)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-air-4th-gen-a2316-wifi-only-specs.html)
 - Brapple Watch 5, [Apple Watch Series 5 (Aluminum, GPS, 44 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-5-aluminum-gps-44mm-a2093.html)
 - [AirPods Pro](https://www.apple.com/airpods-pro/)
 - [Anker PowerCore 13000](https://www.anker.com/products/variant/PowerCore-13000mAh/A1215011) power bank
 - [Ultimate Ears BOOM 2](https://www.ultimateears.com/en-us/wireless-speakers/boom-2.html) speaker
+- [Sony WH-1000XM3 Wireless Noise-Canceling Headphones](https://www.sony.com/electronics/headband-headphones/wh-1000xm3)
 
 ## Media
 
@@ -242,6 +239,7 @@ A :star2: indicates an app I find especially notable.
 - [ASUS RT-AC3200](https://www.asus.com/Networking/RTAC3200/) router
 - [Apple AirPort Express 802.11n (2nd Generation)](https://support.apple.com/kb/SP651) for AirPlay speakers
 - [APC Back-UPS Pro BX1500M](https://www.apc.com/shop/us/en/products/APC-Back-UPS-Pro-BX1500M-Compact-Tower-1500VA-AVR-LCD-120V/P-BX1500M)
+- [HomePod mini](https://www.apple.com/homepod-mini/)
 
 ## Transportation
 
