@@ -1,7 +1,7 @@
 ---
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2020-11-22
+modified: 2020-12-31
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 ---
 
@@ -21,7 +21,7 @@ I use the native macOS [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS
 - [Homebrew](https://brew.sh)
 - [bat](https://github.com/sharkdp/bat)
 - [ffmpeg](https://ffmpeg.org/)
-- [oh-my-zsh](https://ohmyz.sh) with my [custom theme](https://github.com/BrianMitchL/dotfiles/blob/master/brian.zsh-theme)
+- [starship](https://starship.rs) prompt
 - [prettier](https://prettier.io)
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
 - [youtube-dl](https://yt-dl.org)
@@ -82,13 +82,12 @@ A :star2: indicates an app I find especially notable.
 ### Entertainment
 
 - [Cyanide and Happiness](https://apps.apple.com/us/app/cyanide-and-happiness/id368088267)
-- [Duolingo](https://apps.apple.com/app/duolingo-learn-spanish-french/id570060128)
 - [Fog of World](https://apps.apple.com/us/app/fog-of-world/id505367096) (see my [review]({% post_url 2016-11-08-fog-of-world-2 %})) :star2:
 - [GPX Builder](https://apps.apple.com/us/app/fog-of-world-assistant-gpx-builder/id938037644)
 - [Overcast](https://apps.apple.com/us/app/overcast-podcast-player/id888422857) :star2:
 - [Plex](https://apps.apple.com/us/app/plex/id383457673)
 - [Simple Reader for Hacker News](https://apps.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
-- [Watcht for Trakt](https://apps.apple.com/us/app/watcht-for-trakt/id1396920723) :star2:
+- Trakt iOS beta :star2:
 
 ### Games
 
@@ -109,7 +108,7 @@ A :star2: indicates an app I find especially notable.
 
 - Apple Music
 - [Marvis Pro](https://apps.apple.com/mt/app/marvis-pro/id1447768809) :star2:
-- [Mixcloud](https://apps.apple.com/us/app/mixcloud-radio-dj-mixes/id401206431)
+- [MusicHarbor](https://apps.apple.com/us/app/musicharbor-track-new-music/id1440405750) :star2:
 - [Shazam](https://apps.apple.com/us/app/shazam/id284993459)
 
 ### Photo/Video
@@ -157,8 +156,8 @@ A :star2: indicates an app I find especially notable.
 - [Omnistat 2](https://apps.apple.com/us/app/omnistat-2/id1473751241)
 - [Prompt](https://apps.apple.com/us/app/prompt-2/id917437289) :star2:
 - [Screens](https://apps.apple.com/us/app/screens/id655890150)
+- [Secure ShellFish](https://apps.apple.com/us/app/secure-shellfish/id1336634154)
 - [Speedtest](https://apps.apple.com/us/app/speedtest-by-ookla/id300704847)
-- Transmit
 - [TypeStyle](https://apps.apple.com/us/app/typestyle/id1441019779)
 
 ## Home Office
@@ -181,6 +180,7 @@ A :star2: indicates an app I find especially notable.
 - [LG UltraFine 5K 27MD5KA](https://www.lg.com/us/monitors/lg-27MD5KA-B-5k-uhd-led-monitor) (newer version linked)
 - [Macally Aluminum Laptop Stand](https://us.macally.com/products/astand)
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
+- [Keychron K3](https://www.keychron.com/pages/keychron-k3-wireless-mechanical-keyboard) keyboard
 - [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
 - [Focusrite Scarlett 2i2](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2) audio interface
 - [M-Audio BX5D3](https://www.m-audio.com/bx5d3) 5" powered studio reference monitors
@@ -190,6 +190,7 @@ A :star2: indicates an app I find especially notable.
 - [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
 - [Mophie wireless charging base](https://www.zagg.com/en_us/wireless-charging-base)
 - [Acoustic Panels](https://smile.amazon.com/gp/product/B07VH6KDY8/)
+- [Steelcase Gesture](https://www.steelcase.com/products/office-chairs/gesture/) chair
 
 ## Work Office
 
