@@ -27,6 +27,16 @@
         </a>
       </div>
       <div>
+        <a
+          href="https://instagram.com/{{ author.instagram }}"
+          title="@{{ author.instagram }} on Instagram"
+          class="svg-margin-right"
+        >
+          {% include icon.html icon="instagram" color="#e4405f" %}@{{
+          author.instagram }}
+        </a>
+      </div>
+      <div>
         <a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a>
       </div>
     </address>
