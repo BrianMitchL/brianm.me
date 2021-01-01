@@ -115,3 +115,11 @@
     content: ' ⭐️';
   }
 }
+
+.article-teaser {
+  text-align: center;
+
+  img {
+    max-height: 400px;
+  }
+}
