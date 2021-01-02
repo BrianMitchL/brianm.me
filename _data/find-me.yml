@@ -51,9 +51,6 @@ normal:
   - title: Atom Feed
     url: /feed.xml
     icon: rss
-  - title: Snapchat
-    url: https://www.snapchat.com/add/bman4789
-    icon: snapchat
   - title: SoundCloud
     url: https://soundcloud.com/brianmitchl
     icon: soundcloud

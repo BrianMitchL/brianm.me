@@ -6,8 +6,6 @@ link: /talks
 redirect_from: /slides
 ---
 
-
-{:.list-none}
 - ### React Hooks
 
   - Internal talk at C.H. Robinson for Customer Solutions engineers, <time datetime="2020-11-17">November 17, 2020</time>
