@@ -29,7 +29,7 @@ X<span class="small-caps">S</span> (and me keeping an every-other-year upgrade
 cycle) that still made me decide to upgrade to the iPhone
 X<span class="small-caps">S</span> Max.
 
-Now that I live within a ten minute walk to an Apple Store, I decided to pick
+Now that I live within a ten-minute walk to an Apple Store, I decided to pick
 the phone up in store. This was a great decision, I was in and out in 15
 minutes!
 
@@ -67,7 +67,7 @@ and I can use the two-column layouts that are unique to iPads and iPhone Pluses
 
 ### Speed
 
-The A12 Bionic SoC packs a 64-bit, 7 nm processor (the definition of a 7nm
+The A12 Bionic SoC packs a 64-bit, 7 nm processor (the definition of a 7 nm
 processor can vary widely, so take it with a grain of salt) with six cores: two
 performance cores and four high-efficiency cores. It also includes a new
 "8-core Neural Engine." Apple didn't market the chip as being all that much faster,
@@ -237,7 +237,7 @@ The camera on the iPhone X<span class="small-caps">S</span> is the real
 flagship feature. It has a dual camera system, like the Plus sized iPhones
 from the past four years: a wide-angle ƒ/1.8 and a telephoto ƒ/2.4. New with
 the iPhone X<span class="small-caps">S</span> is that the wide-angle lens
-now has a 26mm equivalent focal length (compared to 28mm on the iPhone X),
+now has a 26 mm equivalent focal length (compared to 28 mm on the iPhone X),
 which means you can fit a bit more from a scene into the frame.
 
 The sensors in the new iPhone also are about [30% larger](https://daringfireball.net/2018/09/the_iphones_xs),
@@ -265,7 +265,7 @@ It took a photo at normal, above, and below exposure. I think it has continued
 to work in mostly the same way until now. Smart HDR takes several more photos at different
 exposures, and uses the A12 Bionic's Neural Engine to stitch the final photo back together,
 combining the different exposures. This makes for incredible detail, almost in
-an unatural way (at least when comparing to traditional cameras), where areas
+an unnatural way (at least when comparing to traditional cameras), where areas
 that would normally be over or under exposed are now included at an exposure
 that matches that area's brightness into the final image.
 
@@ -279,7 +279,7 @@ low-light scenes.
 New with this iPhone, video is recorded with stereo microphones! :tada:
 
 New last year with the iPhone 8 and X (but new to me), video can be recorded at
-at 60 fps when using the HEVC codec. Good thing I got the 256 GB iPhone, because
+60 fps when using the HEVC codec. Good thing I got the 256 GB iPhone, because
 video at that quality uses a ton of disk space.
 
 <figure class="video-container">

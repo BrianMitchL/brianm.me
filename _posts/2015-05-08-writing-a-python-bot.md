@@ -23,7 +23,7 @@ Over the next few days I added some vulgar tweets for special weather conditions
 
 ### March 16-29
 
-Once I started the scheduled tweets on my Twitter account, I realized that dropping the f-bomb in nearly every tweet wasn't going to work. I re-worded all of the templates so that they were still sarcastic and amusing (at least some are, I hope), but for the most part free of swearing. My work on weatherBot slowed a little during this time. I tweaked thresholds and minor refactoring here and there, but the features remained the same.
+Once I started the scheduled tweets on my Twitter account, I realized that dropping the f-bomb in nearly every tweet wasn't going to work. I re-worded all the templates so that they were still sarcastic and amusing (at least some are, I hope), but for the most part free of swearing. My work on weatherBot slowed a little during this time. I tweaked thresholds and minor refactoring here and there, but the features remained the same.
 
 ### March 31-April 1
 
@@ -43,7 +43,7 @@ I started deploying weatherBot on Heroku and added some documentation about that
 
 ## Thoughts
 
-Other than web development, this has been my first real project outside of a classroom or school setting. It has been exciting and refreshing to come back to something that is entirely my own where I'm not restricted by an assignment. I know that there are issues with several parts of weatherBot, but overall I'm happy with what I've created. When I started writing tests, I was a major refactor away from weatherBot's current state, and never expected to get to 80% code coverage (although I'm sure many tests are not ther most effective).
+Other than web development, this has been my first real project outside a classroom or school setting. It has been exciting and refreshing to come back to something that is entirely my own where I'm not restricted by an assignment. I know that there are issues with several parts of weatherBot, but overall I'm happy with what I've created. When I started writing tests, I was a major refactor away from weatherBot's current state, and never expected to get to 80% code coverage (although I'm sure many tests are not the most effective).
 
 ## Python 2.7 vs 3
 
@@ -67,7 +67,7 @@ if sys.version < '3':
 
 or by excepting an ImportError for imports.
 
-The largest annoyance in working with both versions at once was how they each handle unicode. For me, the issues all revolved around the degree (º) symbol. For Python 2.7 I have to decode it with utf-8 for it to work. With Python 3 it just works as everything uses utf-8. At first I used a separate file for each version of Python, but I learned very quickly that that was not the right way to handle it. I did the initial version conversion using 2to3. This worked very well aside from the urllib libraries used for fetching data from Yahoo's YQL service.
+The largest annoyance in working with both versions at once was how they each handle unicode. For me, the issues all revolved around the degree (º) symbol. For Python 2.7 I have to decode it with utf-8 for it to work. With Python 3 it just works as everything uses utf-8. At first, I used a separate file for each version of Python, but I learned very quickly that that was not the right way to handle it. I did the initial version conversion using 2to3. This worked very well aside from the urllib libraries used for fetching data from Yahoo's YQL service.
 
 ## Tools Used
 

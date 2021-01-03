@@ -25,11 +25,11 @@ one-year-old 15" MacBook Pro but was looking for a desktop/server to host the Mi
 time. I waited for the Mountain Lion update (10.8.5) that added support for Intel's 4th generation Haswell CPUs to be
 released, and promptly bought the remaining components.
 
-After a couple days, I had it up and running using [tonymacx86](https://www.tonymacx86.com) guides with the
+After a couple of days, I had it up and running using [tonymacx86](https://www.tonymacx86.com) guides with the
 Chimera/Chameleon bootloader for BIOS[^bios] booting. The following Spring I triple booted it with Windows 8.1 and
 Ubuntu. In the Fall of 2014 I upgraded to the Clover[^clover] bootloader in order to boot from EFI[^efi]. A year later I
 purchased a used Apple Broadcom BCM94360CD wireless card from a user on reddit and was able to use Handoff, Continuity,
-and unlock the Hackintosh with my Apple Watch (this came later). In July, 2017, I switched the case and
+and unlock the Hackintosh with my Apple Watch (this came later). In July 2017, I switched the case and
 motherboard with my server in order to have a smaller case on my desk. From there on out, the hardware remained
 unchanged.
 
@@ -42,7 +42,7 @@ issues. For some reason, JetBrains IDEs would very frequently cause it to crash.
 link with an emoji in Safari. Twice, it crashed while recording a podcast for [The Nexus](https://thenexus.tv), which
 resulted in total loss of the recording.
 
-On a more positive note, High Sierra became more reliable. I feel like the Hackintosh was a quite good "Mac" and it
+On a more positive note, High Sierra became more reliable. I feel like the Hackintosh was a quite good "Mac", and it
 supported all major features of a new Mac throughout its life. I was even able to install some new major updates to macOS on the day of their release.
 
 Seeing as the vast majority of the crashes later in its life were due to graphics issues (always read your logs in

@@ -7,7 +7,7 @@ author: brian
 seo.type: BlogPosting
 ---
 
-Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io).
+Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io/tree/ac7663c5644526b1cb69fb350922d118510cbb25).
 
 ## Introduction
 

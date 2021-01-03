@@ -70,8 +70,8 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 - **CarlHacks 2016** (April 8-10 2016), Carleton College, Northfield, MN.\\
   36 hour hackathon where I worked with a classmate to start an iOS application in Swift. For more info, see our [devpost page](https://devpost.com/software/bpm).
 - **C.H. Robinson**, _Intern - IT_ (Summer 2015, internship), Eden Prairie, MN.\\
-  Developed an interactive lobby display illustrating active customer shipments on an animated world map, implemented with web technologies for touch­driven hardware as part of working on the Client Technology Strategy and Enterprise Data Warehouse teams. Some technologies used were JavaScript, jQuery, Microsoft Maps, and d3.js.
-- **[MICS 2015](https://www.micsymposium.org/mics2015/) Robotics and Programming Competitions** (April 10-11, 2015), ​Grand Forks, ND.\\
+  Developed an interactive lobby display illustrating active customer shipments on an animated world map, implemented with web technologies for touch-driven hardware as part of working on the Client Technology Strategy and Enterprise Data Warehouse teams. Some technologies used were JavaScript, jQuery, Microsoft Maps, and d3.js.
+- **[MICS 2015](https://www.micsymposium.org/mics2015/) Robotics and Programming Competitions** (April 10-11, 2015), Grand Forks, ND.\\
   Teams placed 2nd of 14 in robotics (Arduino), and 26th of 52 for programming (Java).
 - **Computer Science Discipline, University of Minnesota, Morris.**, _System Administrator_ (Fall 2014 - Spring 2015), Morris, MN.\\
   Managed, maintained, updated, and supported the computer science labs in relation to software, hardware, and users.
