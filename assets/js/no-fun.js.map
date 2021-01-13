@@ -1,1 +1,0 @@
-{"version":3,"file":"no-fun.js","sources":["../../src/no-fun.js"],"sourcesContent":["document.getElementById('fun-button').addEventListener('click', function () {\n  alert('Sorry, no fun allowed in legacy browsers.');\n});\n"],"names":["document","getElementById","addEventListener","alert"],"mappings":"yBAAAA,SAASC,eAAe,cAAcC,iBAAiB,SAAS,WAC9DC,MAAM"}

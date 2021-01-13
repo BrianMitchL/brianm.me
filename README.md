@@ -6,17 +6,18 @@ The site can be found at [https://brianm.me/](https://brianm.me/)
 
 Install and run dev server:
 
-```sh
-gem install bundler
-bundle install
-bundle exec jekyll serve --livereload
+```shell
+npm install
+npm run start
 ```
 
 Production build:
 
-```sh
-JEKYLL_ENV=production bundle exec jekyll build
+```shell
+npm run build
 ```
+
+The site will be outputted to the `_site` directory.
 
 ## Attributions
 

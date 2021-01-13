@@ -1,0 +1,43 @@
+---
+layout: layouts/default.njk
+ogtype: article
+type: post
+---
+
+<header>
+  <a href="#maincontent" class="skip-link">Skip to content</a>
+  {% include "nav.njk" %}
+</header>
+<main id="maincontent">
+  <article itemscope itemtype="http://schema.org/Article">
+    <h1 itemprop="name">{{ title }}</h1>
+    <p class="flex-wrap-space-between">
+      <span>
+        Published on
+      <time
+        datetime="{{ page.date | htmlDateString }}"
+        itemprop="datePublished"
+      >{{ page.date | readableDate }}</time>
+      {%- set pub = page.date | htmlDateString -%}
+      {%- set mod = modified | toUTCDate | htmlDateString -%}
+      {%- if pub != mod -%}
+        &nbsp;•&nbsp;Updated on
+        <time
+          datetime="{{ modified | toUTCDate | htmlDateString }}"
+          itemprop="dateModified"
+        >{{ modified | toUTCDate | readableDate }}</time>
+      {%- endif -%}
+      &nbsp;•&nbsp;<span title="Estimated Reading Time">{{ content | emojiReadTime }}</span>
+      </span>
+      <a href="https://github.com/BrianMitchL/BrianMitchL.github.io/blob/master/{{ page.inputPath }}">Edit on GitHub</a>
+    </p>
+    <hr />
+    <div itemprop="articleBody">
+      {{ content | safe }}
+    </div>
+  </article>
+  <hr />
+  {% include "share-page.njk" %}
+  <hr />
+  {% include "author.njk" %}
+</main>

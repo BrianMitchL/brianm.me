@@ -1,8 +1,5 @@
 _site
 node_modules
-_includes/icon.html
-assets/js
-assets/css/*.css
-feed.json
-talks/index.md
-_posts/2020-07-06-sneaky-css.md
+src/assets/js
+src/assets/css/*.css
+src/posts/2020-07-06-sneaky-css.md

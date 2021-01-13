@@ -1,0 +1,15 @@
+<nav>
+  <a href="{{ '/' | url }}">{{ site.title }}</a>
+  <button style="float: right;" class="shake" id="fun-button" aria-hidden="true" title="Fun Mode">
+    🥳
+  </button>
+  <ul>
+    {%- for link in site.navigation -%}
+    <li>
+      <a href="{{ link.url | url }}" title="{{ link.title }}">{{ link.text }}</a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+<script src="{{ '/assets/js/no-fun.js' | url }}" nomodule async defer></script>
+<script src="{{ '/assets/js/fun.mjs' | url }}" type="module" async></script>

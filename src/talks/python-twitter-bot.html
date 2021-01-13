@@ -1,0 +1,392 @@
+---
+redirect_from: /slides/python-twitter-bot
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Using Python to Write a Twitter Bot</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.min.css"
+      integrity="sha256-9+Wg2bcNeiOMGXOUNqBdceY2lAH/eCiTDcdzHhHIl48="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/night.min.css"
+      integrity="sha256-djVnjcP0NP5brHSrvt4ZvBMjSJ6EkZE/jYKcR1TvJRY="
+      crossorigin="anonymous"
+    />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/css/zenburn.min.css"
+      integrity="sha256-GN8HsMOOckKB/M7+4WPg3rJkM8nem9eRdTiSgcKLVyA="
+      crossorigin="anonymous"
+    />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/pdf.min.css'
+        : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/print/paper.min.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.2.0/js/brands.js"
+      integrity="sha384-4BRtleJgTYsMKIVuV1Z7lNE29r4MxwKR7u88TWG2GaXsmSljIykt/YDbmKndKGID"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.2.0/js/fontawesome.js"
+      integrity="sha384-QcnrgQuRmocjIBY6ByWMmDvUg3HO4MSdVjY7ynJwZfvTDhVPPQOUI9TRzc6/7ZO1"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .twitter-tweet {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Using Python to<br />Write a Twitter Bot</h2>
+          <h3>Brian Mitchell</h3>
+          <h4>
+            <i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a
+              href="https://twitter.com/BrianMitchL"
+              >@BrianMitchL</a
+            >
+          </h4>
+          <h5>
+            Follow along at
+            <a href="https://brianm.me/talks/python-twitter-bot"
+              >https://brianm.me/talks/python-twitter-bot</a
+            >
+          </h5>
+        </section>
+        <section>
+          <section>
+            <h2>What is a Twitter bot?</h2>
+            <p class="fragment">
+              A script that routinely interacts with Twitter
+            </p>
+            <ul>
+              <li class="fragment">Auto-posting Tweets</li>
+              <li class="fragment">Responding to mentions</li>
+              <li class="fragment">
+                Spam following, liking, replying, quoting, retweeting, etc. 🙄
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Basic Structure</h2>
+            <pre><code data-trim data-noescape>
+                    while True:
+                        # implement logic here
+
+                        # download data
+                        # manipulate data
+                        # post a tweet
+
+                        time.sleep(60)
+                </code></pre>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## weatherBot
+
+              #### A Twitter bot for weather
+
+              [https://github.com/weatherBot](https://github.com/weatherBot)
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              * Powered by Dark Sky
+              * Daily forecasts <!-- .element: class="fragment fade-up" -->
+              * Scheduled conditions <!-- .element: class="fragment fade-up" -->
+              * Special conditions <!-- .element: class="fragment fade-up" -->
+              * Government issued weather alerts <!-- .element: class="fragment fade-up" -->
+              * Super configurable <!-- .element: class="fragment fade-up" -->
+                  * Languages
+                  * Timezones
+                  * Units
+                  * Custom text in a YAML file
+                  * Logging
+                  * Throttle durations
+            </script>
+          </section>
+          <section>
+            <blockquote class="twitter-tweet" data-lang="en">
+              <p lang="en" dir="ltr">
+                St Paul, MN: The clouds are saying hi, it&#39;s foggy right now.
+              </p>
+              &mdash; Weather By Brian (@WeatherByBrian)
+              <a
+                href="https://twitter.com/WeatherByBrian/status/823466381744205824"
+                >January 23, 2017</a
+              >
+            </blockquote>
+            <script
+              async
+              src="//platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+
+            <blockquote class="twitter-tweet" data-lang="en">
+              <p lang="en" dir="ltr">
+                Eden Prairie, MN: The forecast for today is mostly cloudy
+                starting in the evening. 21ºF/2ºF. Sweet!
+              </p>
+              &mdash; Weather By Brian (@WeatherByBrian)
+              <a
+                href="https://twitter.com/WeatherByBrian/status/829661514923642880"
+                >February 9, 2017</a
+              >
+            </blockquote>
+            <script
+              async
+              src="//platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+
+            <blockquote class="twitter-tweet" data-lang="en">
+              <p lang="en" dir="ltr">
+                Minneapolis, MN: Get ready, there&#39;s a Freezing Rain Advisory
+                until Tue, Feb 07 at 12:00:00 CST.
+                <a href="https://t.co/OtpCQ26e3d">https://t.co/OtpCQ26e3d</a>
+              </p>
+              &mdash; Weather By Brian (@WeatherByBrian)
+              <a
+                href="https://twitter.com/WeatherByBrian/status/828803766296117248"
+                >February 7, 2017</a
+              >
+            </blockquote>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Location</h2>
+
+            <p>Static or dynamic</p>
+
+            <p class="fragment fade-up">Twitter has geolocation data...</p>
+            <aside class="notes">
+              How can we consume the Twitter API?
+            </aside>
+          </section>
+          <section>
+            <pre class="stretch"><code data-trim data-noescape>
+                    def get_location_from_user_timeline(username, fallback):
+                        """
+                        Load the 20 most recent tweets of a given twitter handle and
+                        return a models.WeatherLocation object of the most recent location.
+                         This function will find a tweet with coordinates or a place,
+                         preferring coordinates. If a location is not found in the most
+                         recent 20 tweets, the given fallback location will be returned.
+                        :type username: str
+                        :param username: twitter username to follow
+                        :type fallback: models.WeatherLocation
+                        :param fallback: a fallback in case no location can be found
+                        :return: models.WeatherLocation
+                        """
+                        api = get_tweepy_api()
+                        # gets the 20 most recent tweets from the given profile
+                        try:
+                            timeline = api.user_timeline(screen_name=username,
+                                                         include_rts=False,
+                                                         count=20)
+                            for tweet in timeline:
+                                # if tweet has coordinates (from a smartphone)
+                                if tweet.coordinates is not None:
+                                    lat = tweet.coordinates['coordinates'][1]
+                                    lng = tweet.coordinates['coordinates'][0]
+                                    name = tweet.place.full_name
+                                    logging.debug('Found %s: %f, %f', name, lat, lng)
+                                    return models.WeatherLocation(lat=lat,
+                                                                  lng=lng,
+                                                                  name=name)
+                                # if the location is a place, not coordinates
+                                elif tweet.place is not None:
+                                    point = utils.centerpoint(
+                                        tweet.place.bounding_box.coordinates[0])
+                                    lat = point[0]
+                                    lng = point[1]
+                                    name = tweet.place.full_name
+                                    logging.debug('Found the center of bounding box at '
+                                                  '%s: %f, %f', name, lat, lng)
+                                    return models.WeatherLocation(lat=lat,
+                                                                  lng=lng,
+                                                                  name=name)
+                            # fallback to hardcoded location if there is no valid data
+                            logging.warning('Could not find tweet with location, '
+                                            'falling back to hardcoded location')
+                            return fallback
+                        except tweepy.TweepError as err:
+                            logging.error(err)
+                            logging.warning('Could not find tweet with location, '
+                                            'falling back to hardcoded location')
+                            return fallback
+                </code></pre>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### So we have our location, now what?
+
+              More than I have time to talk about in detail... <!-- .element: class="fragment fade-up" -->
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              * Get weather data for the location
+              * Create WeatherData object <!-- .element: class="fragment fade-up" -->
+              * Load cache <!-- .element: class="fragment fade-up" -->
+              * Check for weather alerts <!-- .element: class="fragment fade-up" -->
+              * Tweet a forecast or normal condition <!-- .element: class="fragment fade-up" -->
+              * Check for special conditions <!-- .element: class="fragment fade-up" -->
+                  * Cache timestamp to throttle the frequency
+            </script>
+          </section>
+        </section>
+        <section>
+          <h3>What if it Crashes?</h3>
+          <pre class="stretch"><code data-trim data-noescape>
+                import traceback
+                ...
+                try:
+                    while True:
+                        ...
+                except Exception as err:
+                    logging.error(err)
+                    logging.error('We got an exception!', exc_info=True)
+                    if CONFIG['basic']['dm_errors']:
+                        api = get_tweepy_api()
+                        api.send_direct_message(screen_name=api.me().screen_name,
+                                                text=str(random.randint(0, 9999))
+                                                     + traceback.format_exc())
+            </code></pre>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Twitter Bot:
+
+            Automated use of Twitter to post or interact with other users
+          </script>
+        </section>
+        <section>
+          <h2>Questions?</h2>
+          <h2>
+            <i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a
+              href="https://twitter.com/BrianMitchL"
+              >@BrianMitchL</a
+            >
+          </h2>
+          <h3>
+            <i class="fab fa-twitter" style="color:#55ACEE;"></i>&nbsp;<a
+              href="https://twitter.com/WeatherByBrian"
+              >@WeatherByBrian</a
+            >
+          </h3>
+          <h5>
+            Submit a pull request or feature suggestion!<br /><a
+              href="https://github.com/BrianMitchL/weatherBot"
+              >https://github.com/BrianMitchL/weatherBot</a
+            >
+          </h5>
+          <p><small>I also would love some code review 🙃</small></p>
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"
+      integrity="sha256-CTcwyen1cxIrm4hlqdxe0y7Hq6B0rpxAKLiXMD3dJv0="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.min.js"
+      integrity="sha256-Xr6ZH+/kc7hDVReZLO5khBknteLqu5oen/xnSraXrVk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        slideNumber: 'c/t',
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {
+            src:
+              'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/classList.js',
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src:
+              'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src:
+              'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.min.js',
+            condition: function() {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src:
+              'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.min.js',
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src:
+              'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.min.js',
+            async: true
+          },
+          {
+            src:
+              'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/notes/notes.min.js',
+            async: true
+          }
+        ]
+      });
+    </script>
+    {% include analytics.html %}
+  </body>
+</html>

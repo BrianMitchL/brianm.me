@@ -1,0 +1,142 @@
+---
+layout: page
+redirect_from: '/contact'
+description: Senior Frontend Software Engineer and Web Developer
+---
+
+<section class="bio text-center">
+  <div>
+    <img
+      class="border-circle"
+      src="https://www.gravatar.com/avatar/{{ authors.brian.gravatar }}?s=250"
+      srcset="
+        https://www.gravatar.com/avatar/{{ authors.brian.gravatar }}?s=250 1x,
+        https://www.gravatar.com/avatar/{{ authors.brian.gravatar }}?s=500 2x,
+        https://www.gravatar.com/avatar/{{ authors.brian.gravatar }}?s=750 3x
+      "
+      alt="Profile photo of Brian Mitchell"
+    />
+  </div>
+  <div>
+    <h1>
+      Hi, I'm Brian Mitchell!
+      <span class="emoji wave" role="img" aria-label="wave">👋🏻</span>
+    </h1>
+    <p>
+      Senior Frontend Software Engineer and Web Developer
+    </p>
+    <p>
+      Co-organizer of <a href="https://javascriptmn.com">JavaScriptMN</a>.
+      Occasionally a lighting designer. Cyclist.
+      <a href="http://my.pronoun.is/he">he/him</a>.
+    </p>
+    <p>
+      <span
+        class="emoji"
+        role="img"
+        title="Software Engineer"
+        aria-label="Software Engineer"
+        >👨🏻‍💻</span
+      >
+      at
+      <a href="https://twitter.com/CHRobinson" title="C.H. Robinson on Twitter"
+        >@CHRobinson</a
+      >.
+    </p>
+    <p>
+      <span class="emoji" role="img" title="Podcaster" aria-label="Podcaster"
+        >🎙</span
+      >
+      at
+      <a href="https://twitter.com/TheNexusTV" title="The Nexus TV on Twitter"
+        >@TheNexusTV</a
+      >.
+    </p>
+    <p>
+      <span class="emoji" role="img" title="Graduate" aria-label="Graduate"
+        >👨🏻‍🎓</span
+      >
+      of
+      <a
+        href="https://twitter.com/UMNMorris"
+        title="The University of Minnesota Morris on Twitter"
+        >@UMNMorris</a
+      >.
+    </p>
+    <p>
+      <span class="emoji" role="img" title="Bots" aria-label="Twitter bots"
+        >🤖</span
+      >:
+      <a
+        href="https://twitter.com/MorrisMNWeather"
+        title="@MorrisMNWeather on Twitter"
+        >@MorrisMNWeather</a
+      >
+      &
+      <a
+        href="https://twitter.com/WeatherByBrian"
+        title="@WeatherByBrian on Twitter"
+        >@WeatherByBrian</a
+      >
+    </p>
+  </div>
+</section>
+
+<section class="text-center">
+  <h2>Where to Find Me</h2>
+  <p>
+    {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
+    <a
+      href="{{ feature.url }}"
+      title="{{ feature.title }}"
+      class="icon icon-back-large icon-{{ feature.icon }}"
+    >
+      {% include 'icons/' + feature.icon + '.svg' %}
+    </a>
+    {%- endfor -%}
+  </p>
+  <p>
+    {%- set findMeNormal = findMe.normal | sort(false, true, 'icon') -%}
+    {%- for normal in findMeNormal -%}
+    <a
+      href="{{ normal.url }}"
+      title="{{ normal.title }}"
+      class="icon icon-back icon-{{ normal.icon }}"
+    >
+      {% include 'icons/' + normal.icon + '.svg' %}
+    </a>
+    {%- endfor -%}
+  </p>
+
+  <p>
+    I am a co-host on
+    <a href="http://thenexus.tv/category/pk/" title="PodKit">PodKit</a>, a
+    podcast about Apple inclined Web Developers discussing interesting
+    technology and development related topics.
+  </p>
+</section>
+
+<section class="text-center">
+  <h2>Affiliate Links</h2>
+  <p>
+    Use these links to save some money or gain extra perks when you sign up for
+    an account.
+  </p>
+  <ul class="list-inline list-dots">
+    {%- set sortedLinks = affiliateLinks | sort(false, true, 'title') -%}
+    {% for link in sortedLinks %}
+    <li>
+      <a href="{{ link.href }}" aria-label="{{ link.title }} Affiliate Link"
+        >{{ link.title }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="last-fm-artists-root" class="text-center"></section>
+
+<script
+  defer
+  src="{{ '/assets/js/lastfm-artists.js' | url }}"
+></script>
