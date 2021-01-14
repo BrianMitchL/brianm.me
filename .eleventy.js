@@ -66,7 +66,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
 
-  eleventyConfig.addNunjucksAsyncShortcode('icon', async function (icon, color) {
+  eleventyConfig.addNunjucksAsyncShortcode('icon', async function (
+    icon,
+    color
+  ) {
     const svg = await loadIcon(icon);
 
     return `<span class="icon" ${
@@ -124,7 +127,12 @@ module.exports = function (eleventyConfig) {
     return [...tagSet];
   });
 
-  eleventyConfig.addPassthroughCopy('src/assets');
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/typeface-inter/Inter Web/': 'assets/fonts/inter/',
+  });
+  eleventyConfig.addPassthroughCopy('src/assets/js');
+  eleventyConfig.addPassthroughCopy('src/assets/css/*.css');
+  eleventyConfig.addPassthroughCopy('src/assets/images');
   eleventyConfig.addPassthroughCopy('src/*.{txt,ico,png}');
   eleventyConfig.addPassthroughCopy('src/CNAME');
 

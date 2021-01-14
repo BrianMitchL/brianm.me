@@ -43,27 +43,14 @@ ul.list-inline > li {
   display: inline;
 }
 
-ul.list-dots {
-  li + li::before {
-    display: inline-block;
-    margin: 0 0.25rem;
-    content: '•';
-  }
+ul.list-dots > li + li::before {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: '•';
 }
 
 .overflow-auto {
   overflow: auto;
-}
-
-@media (screen and min-width: 725px) {
-  .float-left {
-    float: left;
-    margin-right: 1rem;
-  }
-  .float-right {
-    float: right;
-    margin-left: 1rem;
-  }
 }
 
 .svg-margin-left svg {
@@ -73,11 +60,13 @@ ul.list-dots {
   margin-right: 0.25rem;
 }
 
-// Twitter Bootstrap's implementation
-// https://github.com/twbs/bootstrap/blob/7e2741eb1074afc66bdf2fb5c2b65d476cf7f37e/less/scaffolding.less#L121
-// Only display content to screen readers
-//
-// See: http://a11yproject.com/posts/how-to-hide-content
+/*
+Twitter Bootstrap's implementation
+https://github.com/twbs/bootstrap/blob/7e2741eb1074afc66bdf2fb5c2b65d476cf7f37e/less/scaffolding.less#L121
+Only display content to screen readers
+
+See: http://a11yproject.com/posts/how-to-hide-content
+ */
 
 .sr-only {
   position: absolute;

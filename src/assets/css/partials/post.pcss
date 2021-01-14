@@ -7,11 +7,11 @@ div[itemprop='articleBody'] > p:first-child {
 
   & > div {
     position: relative;
-    padding-bottom: 56.25%; // 16:9
+    padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
 
-    iframe {
+    & iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -28,7 +28,7 @@ div[itemprop='articleBody'] > p:first-child {
   grid-gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 
-  img {
+  & img {
     max-height: 568px;
   }
 }

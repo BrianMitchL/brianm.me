@@ -37,17 +37,17 @@ span.wave {
 }
 
 div[itemprop='articleBody'] {
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
     display: inline-block;
     position: relative;
     border: none;
 
-    // override heading links to position correctly
-    .heading-link {
+    /* override heading links to position correctly */
+    & .heading-link {
       position: absolute;
       right: -2rem;
       left: auto;
@@ -72,42 +72,42 @@ div[itemprop='articleBody'] {
     }
 
     &:nth-of-type(4n + 1)::before {
-      background: rgba(#faa05a, 0.7);
+      background: rgba(250, 160, 90, 0.7);
     }
 
     &:nth-of-type(4n + 2)::before {
-      background: rgba(#32d296, 0.7);
+      background: rgba(50, 210, 150, 0.7);
     }
 
     &:nth-of-type(4n + 3)::before {
-      background: rgba(#1e87f0, 0.7);
+      background: rgba(30, 135, 240, 0.7);
     }
 
     &:nth-of-type(4n + 4)::before {
-      background: rgba(#f0506e, 0.7);
+      background: rgba(240, 80, 110, 0.7);
     }
   }
 }
 
 .fun {
-  a {
+  & a {
     color: deepskyblue;
   }
-  h1,
-  h2,
-  h3 {
+  & h1,
+  & h2,
+  & h3 {
     color: deeppink;
   }
-  > header,
-  > main,
-  > footer {
+  & > header,
+  & > main,
+  & > footer {
     animation: hue-rotate 2s linear infinite;
   }
-  > header > nav > a {
+  & > header > nav > a {
     animation: font-fun 1s linear infinite alternate;
   }
 
-  .border-circle {
+  & .border-circle {
     animation: rotate 10s linear infinite;
   }
 }

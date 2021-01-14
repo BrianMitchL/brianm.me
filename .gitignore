@@ -1,7 +1,6 @@
 # Ignore docs files
 _gh_pages
 _site
-.ruby-version
 
 # Numerous always-ignore extensions
 *.diff
@@ -14,7 +13,6 @@ _site
 *.zip
 *.vi
 *~
-.sass-cache
 .lock
 
 # OS or Editor folders
@@ -30,3 +28,4 @@ nbproject
 .idea
 
 node_modules
+src/assets/css/*.css
