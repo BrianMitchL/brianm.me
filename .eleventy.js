@@ -44,6 +44,7 @@ async function loadIcon(icon) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   // eleventyConfig.addPlugin(pluginNavigation);
