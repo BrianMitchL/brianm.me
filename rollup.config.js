@@ -7,7 +7,7 @@ import filesize from 'rollup-plugin-filesize';
 const production = !process.env.ROLLUP_WATCH;
 
 const main = {
-  input: 'src-js/lastfm-artists.js',
+  input: 'src/assets/js/src/lastfm-artists.js',
   output: {
     sourcemap: true,
     format: 'iife',
@@ -38,7 +38,7 @@ const main = {
 };
 
 const fun = {
-  input: 'src-js/fun.mjs',
+  input: 'src/assets/js/src/fun.mjs',
   output: {
     sourcemap: true,
     format: 'iife',
@@ -56,7 +56,7 @@ const fun = {
 };
 
 const noFun = {
-  input: 'src-js/no-fun.js',
+  input: 'src/assets/js/src/no-fun.js',
   output: {
     sourcemap: true,
     format: 'iife',
