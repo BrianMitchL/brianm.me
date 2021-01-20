@@ -12,8 +12,8 @@
     "build:css": "postcss src/assets/css/style.pcss -o src/assets/css/style.css --env production",
     "start:js": "rollup -c -w",
     "build:js": "rollup -c",
-    "start:11ty": "ELEVENTY_ENV=development eleventy --serve",
-    "build:11ty": "ELEVENTY_ENV=production eleventy"
+    "start:11ty": "eleventy --serve",
+    "build:11ty": "eleventy"
   },
   "repository": {
     "type": "git",

@@ -14,7 +14,7 @@ const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownItTOC = require('markdown-it-table-of-contents');
 
-const siteData = require('./src/_data/site.json');
+const siteData = require('./src/_data/site.js');
 
 const dir = {
   input: 'src',
