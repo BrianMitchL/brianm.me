@@ -34,7 +34,7 @@ permalink: "posts/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber + 
       </time>
       •
       <span title="Estimated Reading Time">
-        {{ post.template.frontMatter.content | emojiReadTime }}
+        {{ post.templateContent | emojiReadTime }}
       </span>
     </p>
     <p>
