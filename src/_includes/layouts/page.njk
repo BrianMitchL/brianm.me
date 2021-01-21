@@ -1,0 +1,14 @@
+---
+layout: layouts/default.njk
+type: page
+---
+<header>
+  <a href="#maincontent" class="skip-link">Skip to content</a>
+  {% include "nav.njk" %}
+</header>
+<main id="maincontent">
+  {% if title %}
+  <h1>{{ title }}</h1>
+  {% endif %}
+  {{ content | safe }}
+</main>

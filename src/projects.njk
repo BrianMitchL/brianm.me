@@ -1,0 +1,60 @@
+---
+layout: page
+title: Projects
+description: Personal Projects
+---
+<p>⭐️ indicates a featured and more complete project</p>
+
+{% for project in projects %}
+<article class="project {% if project.featured %}featured{% endif %}">
+  <h2>{{ project.name }}</h2>
+  <p>{{ project.range }} {{ project.status | safe }}</p>
+  <p>{{ project.description | safe }}</p>
+  <ul class="list-none">
+    {% if project.link %}
+    <li>
+      <span class="emoji" role="img" aria-label="Link">🔗</span> Link:
+      <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer"
+        >{{ project.link }}</a
+      ><br />
+    </li>
+    {% endif %}
+    {% if project.github %}
+    <li>
+      {% icon "github" %} GitHub:
+      <a
+        href="https://github.com/{{ project.github }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ project.github }}</a
+      >
+    </li>
+    {% endif %}
+    {% if project.gitlab %}
+    <li>
+      {% icon "gitlab" %} GitLab:
+      <a
+        href="https://gitlab.com/{{ project.gitlab }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ project.gitlab }}</a
+      >
+    </li>
+    {% endif %}
+    {% if project.npm %}
+    <li>
+      {% icon "npm" %} npm:
+      <a
+        href="https://npmjs.com/package/{{ project.npm }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ project.npm }}</a
+      >
+    </li>
+    {% endif %}
+  </ul>
+</article>
+{% endfor %}

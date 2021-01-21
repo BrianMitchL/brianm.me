@@ -1,0 +1,30 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://www.11ty.dev" version="{{ site.eleventyVersion }}">Eleventy</generator>
+  <title>{{ site.title }}</title>
+  <subtitle>{{ site.description }}</subtitle>
+  <link href="{{ permalink | url | absoluteUrl(site.url) }}" rel="self" type="application/atom+xml" />
+  <link href="{{ '/' | url | absoluteUrl(site.url) }}" rel="alternate" type="text/html" />
+  <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ '/' | url | absoluteUrl(site.url) }}</id>
+  <author>
+    <name>{{ authors.brian.name }}</name>
+  </author>
+  {%- for post in collections.post | reverse | head(10) %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}" rel="alternate"
+            type="text/html" title="{{ post.data.title }}"/>
+      <published>{{ post.date | dateToRfc3339 }}</published>
+      <updated>{{ post.data.modified | toUTCDate | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <summary type="html">{{ post.data.description }}</summary>
+      <content type="html" xml:base="{{ absolutePostUrl }}">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    </entry>
+  {%- endfor %}
+</feed>

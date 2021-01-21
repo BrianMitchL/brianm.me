@@ -1,0 +1,75 @@
+---
+layout: page
+title: Posts
+description: Infrequent Blog Posts
+redirect_from: [/blog/]
+pagination:
+  data: collections.post
+  size: 5
+  reverse: true
+  alias: posts
+eleventyComputed:
+  metaTitle: "{% if pagination.pageNumber > 0 %}Posts | Page {{ pagination.pageNumber + 1 }}{% else %}Posts{% endif %}"
+permalink: "posts/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber + 1 }}{% endif %}/index.html"
+---
+
+{%- for post in posts -%}
+  <article>
+    {%- if post.data.image -%}
+    <div class="article-teaser">
+      <a href="{{ post.url }}">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }} teaser image" />
+      </a>
+    </div>
+    {%- endif -%}
+    <h2>
+      <a href="{{ post.url }}" class="link-heading">{{ post.data.title }}</a>
+    </h2>
+    <p>
+      <time
+        datetime="{{ post.date | htmlDateString }}"
+        itemprop="datePublished"
+      >
+        {{ post.date | readableDate }}
+      </time>
+      •
+      <span title="Estimated Reading Time">
+        {{ post.templateContent | emojiReadTime }}
+      </span>
+    </p>
+    <p>
+      {%- if post.data.excerpt -%}
+        {{ post.data.excerpt | safe }}
+      {%- else -%}
+        {% excerpt post %}
+      {% endif %}
+    </p>
+  </article>
+  {% if not loop.last %}
+  <hr />
+  {% endif %}
+{%- endfor -%}
+
+{%- if pagination.items | length > 1 -%}
+<ul class="pagination">
+  {%- if pagination.href.previous -%}
+    <li><a href="{{ pagination.href.previous }}">Previous</a></li>
+  {%- else -%}
+    <li>Previous</li>
+  {%- endif -%}
+
+  {%- for href in pagination.hrefs -%}
+    {%- if loop.index0 == pagination.pageNumber -%}
+      <li>{{ loop.index }}</li>
+    {%- else -%}
+      <li><a href="{{ href }}">{{ loop.index }}</a></li>
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if pagination.href.next -%}
+    <li><a href="{{ pagination.href.next }}">Next</a></li>
+  {%- else -%}
+    <li>Next</li>
+  {%- endif -%}
+</ul>
+{%- endif -%}

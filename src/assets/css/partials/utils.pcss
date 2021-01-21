@@ -1,0 +1,80 @@
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-double {
+  font-size: 2em;
+}
+
+.text-decoration-none,
+.text-decoration-none:hover {
+  text-decoration: none;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.small-caps {
+  font-variant-caps: all-small-caps;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+.flex-wrap-space-between {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul.list-none,
+ul.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+ul.list-inline > li {
+  display: inline;
+}
+
+ul.list-dots > li + li::before {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: '•';
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.svg-margin-left svg {
+  margin-left: 0.25rem;
+}
+.svg-margin-right svg {
+  margin-right: 0.25rem;
+}
+
+/*
+Twitter Bootstrap's implementation
+https://github.com/twbs/bootstrap/blob/7e2741eb1074afc66bdf2fb5c2b65d476cf7f37e/less/scaffolding.less#L121
+Only display content to screen readers
+
+See: http://a11yproject.com/posts/how-to-hide-content
+ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

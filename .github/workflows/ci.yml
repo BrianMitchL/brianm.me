@@ -1,0 +1,19 @@
+name: Build Site
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Install deps (with cache)
+        uses: bahmutov/npm-install@v1
+      - name: Build site
+        run: npm run build

@@ -1,0 +1,100 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, viewport-fit=cover"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="{{ '/apple-touch-icon.png' | url }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="{{ '/favicon-32x32.png' | url }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="{{ '/favicon-16x16.png' | url }}"
+/>
+<link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/style.css' | url }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ '/assets/fonts/inter/inter.css' | url }}"
+/>
+
+<title>
+  {%- if metaTitle -%}
+    {{ metaTitle | escape }} | {{ site.title }}
+  {%- elif title -%}
+    {{ title | escape }} | {{ site.title }}
+  {%- else -%}
+    {{ site.title }}
+  {%- endif -%}
+</title>
+<meta name="description" content="{{ description or site.description }}" />
+<meta
+  name="author"
+  content="{% if author and authors[author] %}{{ authors[author].name }}{% else %}{{ site.author }}{% endif %}"
+/>
+<link rel="canonical" href="{{ site.url }}{{ page.url | url }}" />
+{% if tags | length > 0 %}
+<meta name="keywords" content="{{ tags | join(",") }}" />
+{% endif %}
+<meta name="generator" content="Eleventy v{{ site.eleventyVersion }}" />
+
+<meta property="og:title" content="{{ title or site.title }}">
+<meta property="og:type" content="{{ ogtype or 'website' }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:description" content="{{ description or site.description }}" />
+{% if image %}
+<meta property="og:image" content="{{ image | url | absoluteUrl(site.url) }}" />
+{% endif %}
+{% if imageAlt %}
+<meta property="og:image:alt" content="{{ imageAlt }}" />
+{% endif %}
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@{{ site.twitter }}" />
+<meta
+  name="twitter:title"
+  content="{%- if title -%}{{ title }}{%- else -%}{{ site.title }}{%- endif -%}"
+>
+<meta
+  name="twitter:description"
+  content="{%- if description -%}{{ description }}{%- else -%}{{ site.description }}{%- endif -%}"
+/>
+{% if image %}
+<meta name="twitter:image" content="{{ image | url | absoluteUrl(site.url) }}" />
+{% endif %}
+{% if imageAlt %}
+<meta name="twitter:image:alt" content="{{ imageAlt }}" />
+{% endif %}
+
+<meta
+  name="google-site-verification"
+  content="{{ site.google_site_verification }}"
+/>
+
+<link
+  type="application/atom+xml"
+  rel="alternate"
+  href="{{ '/feed.xml' | url }}"
+  title="{{ site.title }}"
+/>
+<link
+  type="application/json"
+  rel="alternate"
+  href="{{ '/feed.json' | url }}"
+  title="{{ site.title }}"
+/>
+
+{% jsonLdScript meta, type, tags %}
