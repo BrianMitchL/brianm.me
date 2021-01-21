@@ -1,8 +1,8 @@
 # BrianMitchL.github.io ![GitHub last commit (gh-pages)](https://img.shields.io/github/last-commit/BrianMitchL/BrianMitchL.github.io/gh-pages?label=last%20deployed) ![GitHub deployments](https://img.shields.io/github/deployments/BrianMitchL/BrianMitchL.github.io/github-pages?label=deploy)
 
-Website for Brian Mitchell
+My personal portfolio site and blog site, built with Eleventy. Find it live at [https://brianm.me/](https://brianm.me/)!
 
-The site can be found at [https://brianm.me/](https://brianm.me/)
+## Developing
 
 Install and run dev server:
 
@@ -18,6 +18,8 @@ npm run build
 ```
 
 The site will be outputted to the `_site` directory.
+
+Checkout the scripts object in the [package.json](/package.json) file for finer grain development and production build steps.
 
 ## Attributions
 

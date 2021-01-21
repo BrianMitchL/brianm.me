@@ -1,10 +1,12 @@
 ---
 title: How to Make a Jekyll Site/Blog
-modified: 2020-05-25
+modified: 2021-01-20
 description: A tutorial on making a Jekyll based site/blog.
 ---
 
-Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io/tree/ac7663c5644526b1cb69fb350922d118510cbb25).
+Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io/tree/2567798946140e686a284a6db5f1c64d664cdc86).
+
+*Note: This site is now built with Eleventy, but you can view it at the commit linked above to see it in its final Jekyll form.*
 
 ## Introduction
 
