@@ -50,13 +50,12 @@
   {
     "name": "BPM",
     "range": "April 2016 – August 2016",
-    "description": "An iOS application written in Swift to count the beats per minute (BPM) in a song. This was started at the CarlHacks 2016 hackathon with <a href=\"http://www.litzin.gr\">Zach Litzinger</a>, another brand new iOS developer.",
+    "description": "An iOS application written in Swift to count the beats per minute (BPM) in a song. This was started at the CarlHacks 2016 hackathon.",
     "github": "BrianMitchL/bpm"
   },
   {
     "name": "YeoMEAN",
     "range": "September 2014 – May 2016",
-    "status": "<a href=\"https://travis-ci.org/BrianMitchL/YeoMEAN\" title=\"Build Status\"><img src=\"https://travis-ci.org/BrianMitchL/YeoMEAN.svg?branch=master\" alt=\"Build Status\"/></a>",
     "description": "Former main website. The name is a pun on the Yeoman generator and the MEAN stack. Initially started as a MEAN stack tutorial project for a course at UMM, but then morphed into a full fledged homepage.",
     "github": "BrianMitchL/YeoMEAN"
   }
