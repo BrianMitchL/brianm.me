@@ -2,7 +2,7 @@
 title: Key Personal Life Moments
 modified: 2021-01-04
 tags:
- - personal
+  - personal
 ---
 
 Looking back at my life so far, I've realized there are specific moments in my life that I still think back to as being significant in some aspect of my sense of self. These are moments that take some time (years even) to really solidify themselves.
@@ -13,7 +13,7 @@ There isn't much in the last couple of years, but I hope to add to this over tim
 
 2. Junior High in general for really getting into Apple. I spent so much time reading every page on the [apple.com](https://apple.com) website and Wikipedia pages for every Mac and Apple product. I would fan out from there and learned about operating systems, lower level software principles, and hardware design. I spent 2.5 years saving for a Mac (I finally bought it fall of my freshman year of high school), and wanted to learn all I could about them. If you knew me then, I'm sorry, I'm sure it was all I talked about.
 
-3. Winter 2013, when the Harlem Shake meme was popular, for discovering trap music. I loved this meme for two reasons, the premise was ridiculous (someone dances, then a jump cut to mayhem), and that song  was nothing like anything I'd heard before. I looked up the song, found it was made by Baauer, and found similar artists, and songs in the genre from there. I bought the All Trap Music compilation album on iTunes and went from there. A lot of the music I listen to today, has directly branched off of the Harlem Shake, the meme that changed my life (for music).
+3. Winter 2013, when the Harlem Shake meme was popular, for discovering trap music. I loved this meme for two reasons, the premise was ridiculous (someone dances, then a jump cut to mayhem), and that song was nothing like anything I'd heard before. I looked up the song, found it was made by Baauer, and found similar artists, and songs in the genre from there. I bought the All Trap Music compilation album on iTunes and went from there. A lot of the music I listen to today, has directly branched off of the Harlem Shake, the meme that changed my life (for music).
 
 4. August 28th, 2015 for finding a whole new group and era of music. I was maybe two weeks into living in Copenhagen, Denmark for the semester, and came home after going out drinking. I wasn't ready to sleep yet, so I decided to look up some songs I had saved from Shazam from earlier in the night. This lead me to add 100 songs from Danish rappers. I still listen to and have branched out from this initial set to this day. When listening to some of these songs, I'm sent right back to where I was at that time: newly in Denmark, sitting at my desk with headphones on, with the sun rising out my window (I think I stayed up until around 06:00 that night).
 

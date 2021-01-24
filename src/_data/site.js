@@ -37,7 +37,7 @@ module.exports = {
   },
   title: 'Brian Mitchell',
   description: 'Blog, projects, & online presence',
-  url: isProduction ? 'https://brianm.me': 'http://localhost:8080',
+  url: isProduction ? 'https://brianm.me' : 'http://localhost:8080',
   author: 'Brian Mitchell',
   twitter: 'BrianMitchL',
   image: '/android-chrome-512x512.png',

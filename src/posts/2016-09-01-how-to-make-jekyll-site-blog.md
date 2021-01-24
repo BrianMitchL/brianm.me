@@ -6,7 +6,7 @@ description: A tutorial on making a Jekyll based site/blog.
 
 Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io/tree/2567798946140e686a284a6db5f1c64d664cdc86).
 
-*Note: This site is now built with Eleventy, but you can view it at the commit linked above to see it in its final Jekyll form.*
+_Note: This site is now built with Eleventy, but you can view it at the commit linked above to see it in its final Jekyll form._
 
 ## Introduction
 
@@ -138,10 +138,11 @@ Information can be accessed just as if it were front matter, which is what {% ra
 
 As you can see in the example above, Liquid can also filter data. Here, the date is being formatted. This is just the beginning of what Liquid can do, but it's two things that I think are really useful. Checkout other filters and Liquid features on the [Jekyll template docs](https://jekyllrb.com/docs/templates/).
 
-If you have a file that you don't need to declare any variables, but want to use Liquid you must still use the set of triple-dashed lines for Jekyll to process that file. For example, here's my [humans.txt](/src/humans.txt) file:
+If you have a file that you don't need to declare any variables, but want to use Liquid you must still use the set of triple-dashed lines for Jekyll to process that file. For example, here's my [humans.txt](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/2567798946140e686a284a6db5f1c64d664cdc86/humans.txt) file:
 
 ```text
-{% raw %}---
+{%- raw -%}
+---
 ---
 /* TEAM */
 Name: {{ site.data.authors.brian.name }}
@@ -156,7 +157,8 @@ Last update: {{ site.time | date: "%Y/%m/%d"}}
 Language: English
 Doctype: HTML5
 Components: Jekyll, UIkit, fontawesome, SCSS, GitHub
-Software: WebStorm, Safari, Photoshop{% endraw %}
+Software: WebStorm, Safari, Photoshop
+{%- endraw -%}
 ```
 
 For a full list of features, check out the Jekyll docs on [front matter](https://jekyllrb.com/docs/frontmatter/) and [variables](https://jekyllrb.com/docs/variables/).
@@ -170,7 +172,8 @@ Creating reusable templates through layouts and includes are crucial to building
 When writing pages and posts, you don't want to have to keep track of every occurrence of a navbar, or page head. This is where a layouts and includes are extremely useful. Store any layouts you use in `_layouts/`. In my site, I have a file at `_layouts/default.html` which more or less contains the following:
 
 ```html
-{% raw %}<!DOCTYPE html>
+{%- raw -%}
+<!DOCTYPE html>
 <html lang="en">
   <head>
     {% include head.html %}
@@ -180,7 +183,8 @@ When writing pages and posts, you don't want to have to keep track of every occu
 
     <!-- some script tags and Google Analytics are located here -->
   </body>
-</html>{% endraw %}
+</html>
+{%- endraw -%}
 ```
 
 Every page I make in some way uses this layout. If I created a new page, I would include the following in its front matter, and the content of that file would be rendered into the `{% raw %}{{ content }}{% endraw %}` of the default layout:
@@ -200,11 +204,13 @@ Another layout can also use a layout. It's content will be loaded in the `{% raw
 In the layout above, I also have `{% raw %}{% include head.html %}{% endraw %}` and `{% raw %}{% include footer.html %}{% endraw %}`. These are known as includes (or partials). Includes are a file that can be inserted into any page. They're perfect for a navbar or footer, where you want to keep the markup consistent throughout the site. Store any includes you use in `_includes/`. Here is a portion of my `nav.html` code:
 
 ```html
-{% raw %}{% assign url = page.url | remove:'/index.html' %}
+{%- raw -%}
+{% assign url = page.url | remove:'/index.html' %}
 {% for link in site.navigation %}
 <li {% if url == link.url %}class="active"{% endif %}>
     <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-</li>{% endfor %}{% endraw %}
+</li>{% endfor %}
+{%- endraw -%}
 ```
 
 Here, I get the URL from the current page (while removing unwanted possible filenames) and store it as `url`. Next, I iterate through a list of link dictionaries and build the list in HTML. While iterating through this list, I check if the page URL is the same as the current link in the loop and, if so, set the item's class to active, which then applies a different background color, indicating that the user is on the said page.
@@ -229,7 +235,7 @@ YYYY-MM-DD-title.MARKUP
 
 `YYYY-MM-DD` represents the year, month, and day of the post, `title` is the title of the post. I always specify this in the front matter of the file, and generally set my own slug and use that for the filename. `MARKUP` refers to the file extension and format the file uses. Here are a few examples filenames:
 
-```shell
+```
 2016-05-29-tech-crew.md
 2016-07-04-happy-independence-day.html
 ```
@@ -244,13 +250,15 @@ So now you have a bunch of well written and entertaining posts, but how do you s
 It's quite easy, you can use Liquid to iterate through your posts to show them in a list:
 
 ```html
-{% raw %}<ul>
+{%- raw -%}
+<ul>
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
   {% endfor %}
-</ul>{% endraw %}
+</ul>
+{%- endraw -%}
 ```
 
 If you have a lot of posts, be sure to check out the [Pagination](#pagination) plugin for showing your posts on more than one page.

@@ -67,16 +67,16 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
 
-  eleventyConfig.addNunjucksAsyncShortcode('icon', async function (
-    icon,
-    color
-  ) {
-    const svg = await loadIcon(icon);
+  eleventyConfig.addNunjucksAsyncShortcode(
+    'icon',
+    async function (icon, color) {
+      const svg = await loadIcon(icon);
 
-    return `<span class="icon" ${
-      color ? `style="color: ${color}"` : ''
-    } aria-hidden="true">${svg}</span>`;
-  });
+      return `<span class="icon" ${
+        color ? `style="color: ${color}"` : ''
+      } aria-hidden="true">${svg}</span>`;
+    }
+  );
 
   eleventyConfig.addFilter('toUTCDate', (dateObj) => {
     // add back the offset from UTC to the date

@@ -1,5 +1,4 @@
 _site
 node_modules
-src/assets/js
+src/assets/js/*.*
 src/assets/css/*.css
-src/posts/2020-07-06-sneaky-css.md
