@@ -15,7 +15,12 @@ const main = {
     file: 'src/assets/js/lastfm-artists.js',
   },
   plugins: [
-    svelte({ css: false }),
+    svelte({
+      compilerOptions: {
+        // enable run-time checks when not in production
+        dev: !production,
+      },
+    }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
@@ -45,6 +50,9 @@ const fun = {
     name: 'fun',
     file: 'src/assets/js/fun.mjs',
   },
+  external: [
+    'https://unpkg.com/canvas-confetti@1.2.1/dist/confetti.module.mjs',
+  ],
   plugins: [
     // If we're building for production, minify
     production && terser(),
