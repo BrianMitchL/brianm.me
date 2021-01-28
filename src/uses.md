@@ -4,6 +4,8 @@ title: Uses
 description: A living document of software, gear, and other things that I typically use.
 modified: 2020-12-31
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
+eleventyNavigation:
+  key: Uses
 ---
 
 This serves as a living document of software, gear, and other things that I typically use. Last updated <time datetime="{{ modified | htmlDateString }}" itemprop="dateModified">{{ modified | readableDate }}</time>.

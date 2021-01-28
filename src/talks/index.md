@@ -3,6 +3,8 @@ layout: page
 title: Talks
 description: Resources from presentations
 redirect_from: /slides
+eleventyNavigation:
+  key: Talks
 ---
 
 - ### React Hooks

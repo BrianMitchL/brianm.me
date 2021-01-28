@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-// const pluginNavigation = require("@11ty/eleventy-navigation");
+const pluginNavigation = require('@11ty/eleventy-navigation');
 const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 const pluginEmoji = require('eleventy-plugin-emoji');
 const pluginSitemap = require('@quasibit/eleventy-plugin-sitemap');
@@ -47,7 +47,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
-  // eleventyConfig.addPlugin(pluginNavigation);
+  eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(emojiReadTime, {
     emoji: '📖',
   });

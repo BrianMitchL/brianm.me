@@ -2,6 +2,8 @@
 layout: page
 title: About
 description: Extended Résumé
+eleventyNavigation:
+  key: About
 ---
 
 Brian Mitchell is a Software Engineer III at C.H. Robinson, where he guides

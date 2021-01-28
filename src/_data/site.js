@@ -3,33 +3,6 @@ const isProduction = !/--serve/.test(process.argv.join(','));
 module.exports = {
   isProduction,
   eleventyVersion: require('@11ty/eleventy/package.json').version,
-  navigation: [
-    {
-      text: 'About',
-      title: 'Extended Résumé',
-      url: '/about/',
-    },
-    {
-      text: 'Posts',
-      title: 'Posts',
-      url: '/posts/',
-    },
-    {
-      text: 'Projects',
-      title: 'Projects',
-      url: '/projects/',
-    },
-    {
-      text: 'Talks',
-      title: 'Talks',
-      url: '/talks/',
-    },
-    {
-      text: 'Uses',
-      title: 'Uses',
-      url: '/uses/',
-    },
-  ],
   analytics: {
     google: {
       tracking_id: 'UA-44772557-2',

@@ -11,6 +11,8 @@ pagination:
 eleventyComputed:
   metaTitle: "{% if pagination.pageNumber > 0 %}Posts | Page {{ pagination.pageNumber + 1 }}{% else %}Posts{% endif %}"
 permalink: "posts/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber + 1 }}{% endif %}/index.html"
+eleventyNavigation:
+  key: Posts
 ---
 
 {%- for post in posts -%}
