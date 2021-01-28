@@ -11,9 +11,14 @@
       "icon": "linkedin"
     },
     {
-      "title": "@BrianMitchL on Twitter",
+      "title": "Twitter",
       "url": "https://twitter.com/BrianMitchL",
       "icon": "twitter"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/BrianMitchL",
+      "icon": "instagram"
     }
   ],
   "normal": [
@@ -38,29 +43,9 @@
       "icon": "dev-dot-to"
     },
     {
-      "title": "Facebook",
-      "url": "https://facebook.com/BrianMitchL",
-      "icon": "facebook"
-    },
-    {
-      "title": "Flickr",
-      "url": "https://www.flickr.com/people/43812551@N03/",
-      "icon": "flickr"
-    },
-    {
       "title": "GitLab",
       "url": "https://gitlab.com/u/BrianMitchL",
       "icon": "gitlab"
-    },
-    {
-      "title": "Goodreads",
-      "url": "https://www.goodreads.com/brianmitchl",
-      "icon": "goodreads"
-    },
-    {
-      "title": "Instagram",
-      "url": "https://www.instagram.com/BrianMitchL",
-      "icon": "instagram"
     },
     {
       "title": "Keybase",
@@ -71,21 +56,6 @@
       "title": "Last.fm",
       "url": "https://www.last.fm/user/BrianMitchL",
       "icon": "last-dot-fm"
-    },
-    {
-      "title": "Mastodon",
-      "url": "https://mastodon.cloud/@BrianMitchL",
-      "icon": "mastodon"
-    },
-    {
-      "title": "Mixcloud",
-      "url": "https://www.mixcloud.com/BrianMitchL/",
-      "icon": "mixcloud"
-    },
-    {
-      "title": "Atom Feed",
-      "url": "/feed.xml",
-      "icon": "rss"
     },
     {
       "title": "SoundCloud",

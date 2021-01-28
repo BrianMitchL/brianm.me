@@ -1,23 +1,12 @@
 <footer class="text-center">
   <ul class="list-inline">
+    {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
     <li>
-      <a href="https://twitter.com/BrianMitchL" title="@BrianMitchL on Twitter">
-        {% icon "twitter" %}
+      <a href="{{ feature.url }}" title="{{ feature.title }}">
+        {% icon feature.icon %}
       </a>
     </li>
-    <li>
-      <a href="https://github.com/BrianMitchL" title="Brian Mitchell on GitHub">
-        {% icon "github" %}
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://www.linkedin.com/in/brianscottmitchell"
-        title="Brian Mitchell on LinkedIn"
-      >
-        {% icon "linkedin" %}
-      </a>
-    </li>
+    {%- endfor -%}
   </ul>
   <p>
     &copy; 2014&ndash;

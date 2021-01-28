@@ -65,6 +65,11 @@
     border-top-color, border-left-color, border-bottom-color, border-right-color;
 }
 
+body {
+  /* reset new.css setting this to 1.03rem https://github.com/xz/new.css/issues/12 */
+  font-size: 1rem;
+}
+
 pre > *,
 code > * {
   transition: 0.2s ease-out;
@@ -113,9 +118,6 @@ a {
   }
 }
 
-.emoji {
-  color: initial;
-}
 img.emoji {
   margin-bottom: 0;
   vertical-align: baseline;
