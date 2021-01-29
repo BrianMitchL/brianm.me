@@ -2,7 +2,7 @@
 title: Key Personal Life Moments
 modified: 2021-01-04
 tags:
-  - personal
+  - Personal
 ---
 
 Looking back at my life so far, I've realized there are specific moments in my life that I still think back to as being significant in some aspect of my sense of self. These are moments that take some time (years even) to really solidify themselves.

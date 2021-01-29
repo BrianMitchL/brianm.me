@@ -9,8 +9,9 @@ type: post
   {% include "nav.njk" %}
 </header>
 <main id="maincontent">
-  <article itemscope itemtype="http://schema.org/Article">
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     <h1 itemprop="name">{{ title }}</h1>
+    <div itemprop="subheading" class="subheading">{{ description }}</div>
     <p class="flex-wrap-space-between">
       <span>
         Published on
@@ -35,9 +36,21 @@ type: post
     <div itemprop="articleBody">
       {{ content | safe }}
     </div>
+    <hr />
+    <footer>
+      <aside aria-labelledby="tagged-heading">
+        <h2 id="tagged-heading">Tagged</h2>
+        {% for tag in tags %}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <a href="{{ tagUrl | url }}" rel="tag" class="tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      </aside>
+      <hr />
+      {% include "share-page.njk" %}
+      <hr />
+      {% include "author.njk" %}
+    </footer>
   </article>
-  <hr />
-  {% include "share-page.njk" %}
-  <hr />
-  {% include "author.njk" %}
 </main>

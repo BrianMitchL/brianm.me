@@ -5,6 +5,7 @@ modified: 2021-01-22
 tags:
   - Eleventy
   - Jekyll
+  - JavaScript
 ---
 
 When migrating my site from Jekyll on GitHub Pages to Eleventy on GitHub Pages, I wanted to continue to use my page redirects to preserve old links.

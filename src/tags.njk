@@ -2,9 +2,17 @@
 permalink: /tags/
 layout: page
 title: Tags
+eleventyNavigation:
+  key: Tags
+  parent: Posts
+disableSubNav: true
 ---
 
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-{% endfor %}
+<ul class="list-inline">
+  {% for tag in collections.tagList %}
+    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+    <li>
+      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+    </li>
+  {% endfor %}
+</ul>

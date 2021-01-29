@@ -2,6 +2,8 @@
 title: iPhone XS Max
 modified: 2018-10-23
 description: A review of the iPhone XS Max after upgrading from the iPhone 7.
+tags:
+  - Review
 ---
 
 The iPhone X<span class="small-caps">S</span> Max is a moderate "S" year

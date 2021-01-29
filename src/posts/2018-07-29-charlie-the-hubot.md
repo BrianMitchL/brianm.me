@@ -3,6 +3,9 @@ title: Charlie the Hubot
 modified: 2018-07-29
 description: Meet Charlie, the hubot I helped build out at my work.
 excerpt: How does a hubot instance automate tasks and promote workplace culture? Meet Charlie.
+tags:
+  - Cross-post
+  - JavaScript
 ---
 
 > How does a hubot instance automate tasks and promote workplace culture? Meet Charlie.

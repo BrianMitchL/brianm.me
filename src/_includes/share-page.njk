@@ -1,7 +1,7 @@
 {% set urlUri = page.url | url | absoluteUrl(site.url) | urlencode %}
 {% set titleUri = title | urlencode %}
-<aside>
-  <h2>Share</h2>
+<aside aria-labelledby="share-page-heading">
+  <h2 id="share-page-heading">Share</h2>
   <ul class="list-inline list-dots svg-margin-left">
     <li>
       <a

@@ -2,6 +2,9 @@
 title: Server and Desktop Setup
 modified: 2015-01-11
 description: An overview of the hardware and software I run on my desktop and server
+tags:
+  - Mac
+  - Linux
 ---
 
 A little over a week ago I finished building my new server. It's the second computer I've built (after my desktop), and is primarily a file and media server. Ryan ([@ryanmr](https://twitter.com/ryanmr)) asked me to do a spec sheet, so this is the result.

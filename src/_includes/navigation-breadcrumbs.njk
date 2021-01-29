@@ -1,0 +1,15 @@
+{% set breadPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+{%- if breadPages | length > 0 -%}
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ol>
+    {%- for entry in breadPages %}
+      <li>
+        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+      </li>
+    {%- endfor %}
+    <li>
+      <a href="{{ page.url | url }}" aria-current="page">{{ eleventyNavigation.title or eleventyNavigation.key }}</a>
+    </li>
+  </ol>
+</nav>
+{%- endif -%}

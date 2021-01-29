@@ -2,6 +2,8 @@
 title: 'Sneaky CSS: Concepts and Features I Never Knew'
 modified: 2020-07-06
 description: Some CSS concepts and features I have only learned more recently.
+tags:
+  - CSS
 ---
 
 I have been a full time frontend developer for over 3.5 years, and I am always learning new CSS syntax and concepts. I thought I would share some concepts and features I have only learned in the last year or so that have helped me style and build UIs faster and more easily.

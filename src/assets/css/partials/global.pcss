@@ -34,6 +34,10 @@
   --nc-ac-1: #0ea5e9; /* Accent background color for <mark> and text selection background */
   --nc-ac-2: #e11d48; /* Accent background color for <em> */
   --nc-ac-tx: #ffffff; /* Text color when accent is used as a background */
+  /* custom variables */
+  --tag-text: #fff;
+  --tag-bg: #6b21a8; /* tag background */
+  --tag-bg-hover: #9333ea; /* tag hover background */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,6 +73,10 @@
 body {
   /* reset new.css setting this to 1.03rem https://github.com/xz/new.css/issues/12 */
   font-size: 1rem;
+}
+
+main {
+  margin-bottom: 4rem;
 }
 
 pre > *,

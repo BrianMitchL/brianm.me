@@ -1,0 +1,14 @@
+<ol reversed style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+  {% for post in postslist | reverse %}
+    <li>
+      <a href="{{ post.url | url }}" {% if post.url == url %}aria-current="page"{% endif %}>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+      {% for tag in post.data.tags %}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+          {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+        {%- endif -%}
+      {% endfor %}
+    </li>
+  {% endfor %}
+</ol>

@@ -5,6 +5,8 @@ description: A review of Fog of World 2.
 excerpt: I first heard about Fog of World from a friend sometime in the spring of 2014. From then on, I have been conscious of any route I take. I use the app to document where I've been in a city I call home, and to explore new areas in both that city, or elsewhere while traveling. Most importantly, I use to it remember everywhere that I've been in the world.
 image: https://cdn.brianm.me/images/posts/fog-of-world-2/icon1024x1024.png
 imageAlt: Fog of World 2 app icon
+tags:
+  - Review
 ---
 
 I first heard about [Fog of World](https://itunes.apple.com/us/app/fog-of-world/id505367096?mt=8) from a friend sometime in the spring of 2014. From then on, I have been conscious of any route I take. I use the app to document where I've been in a city I call home, and to explore new areas in both that city, or elsewhere while traveling. Most importantly, I use to it remember everywhere that I've been in the world.

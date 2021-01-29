@@ -10,5 +10,7 @@ type: page
   {% if title %}
   <h1>{{ title }}</h1>
   {% endif %}
+  {% include 'navigation-children.njk' %}
+  {% include 'navigation-breadcrumbs.njk' %}
   {{ content | safe }}
 </main>

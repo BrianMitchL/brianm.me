@@ -110,22 +110,24 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection('tagList', function (collection) {
-    const tagSet = new Set();
-    collection.getAll().forEach((item) => {
-      if ('tags' in item.data) {
-        item.data.tags
-          .filter((item) => {
-            // this list should match the `filter` list in tag.njk
-            return !['all', 'nav', 'post'].includes(item);
-          })
-          .forEach((tag) => {
-            tagSet.add(tag);
-          });
-      }
-    });
+    const tags = collection.getAll().reduce((tags, item) => {
+      return tags.concat(
+        item.data.tags?.filter((item) => {
+          // this list should match the `filter` list in tag.njk
+          return !['all', 'post'].includes(item);
+        }) ?? []
+      );
+    }, []);
 
-    // returning an array in addCollection works in Eleventy 0.5.3
-    return [...tagSet];
+    // sort tags by frequency and remove duplicates
+    return Object.entries(
+      tags.reduce((counter, key) => {
+        counter[key] = 1 + counter[key] || 1;
+        return counter;
+      }, {})
+    )
+      .sort((a, b) => b[1] - a[1])
+      .map((x) => x[0]);
   });
 
   eleventyConfig.addPassthroughCopy({

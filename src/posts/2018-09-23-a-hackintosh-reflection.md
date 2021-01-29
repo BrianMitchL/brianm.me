@@ -2,6 +2,9 @@
 title: A Hackintosh Reflection
 modified: 2018-09-23
 description: My Hackintosh has reached the end of its life.
+tags:
+  - Personal
+  - Mac
 ---
 
 My Hackintosh, after just reaching its fifth birthday, has reached the end of its life.

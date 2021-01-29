@@ -4,6 +4,8 @@ modified: 2014-08-11
 description: A few thoughts on designing a logo and the process used for Brian Mitchell's new logo
 image: /assets/images/BM-Logo.png
 imageAlt: Brian Mitchell logo
+tags:
+  - Personal
 ---
 
 I had some time to kill today, so I thought to myself, "Hey, why not make a logo?" I then sat and thought for 30 seconds on how I could make a cool logo that had to do with my name, "Brian Mitchell." In the past, I've made little icons that were just squares with a 'B' or "BM" inside. An example of this is below:

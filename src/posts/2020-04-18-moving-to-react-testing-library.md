@@ -3,6 +3,10 @@ title: Moving to React Testing Library
 modified: 2020-04-20
 description: This post covers why using React Testing Library improves testing patterns and practices to your React component tests.
 excerpt: I co-wrote a post about using React Testing Library for the C.H. Robinson Engineering Blog. I've been using React Testing Library for over a year now, but it's recently been enabled by default for new apps across the company. This post covers why we think this is a better approach for testing.
+tags:
+  - React
+  - Testing
+  - Cross-post
 ---
 
 This is a cross-post with [Moving to React Testing Library](https://engineering.chrobinson.com/technology/moving-to-react-testing-library/) on the C.H. Robinson Engineering Blog, check out the full post there!

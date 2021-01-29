@@ -1,0 +1,12 @@
+{% set navPages = collections.all | eleventyNavigation(eleventyNavigation.key) %}
+{%- if disableSubNav != true and navPages | length > 0 -%}
+<nav aria-label="Children pages">
+  <ul>
+    {%- for entry in navPages %}
+      <li>
+        <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+      </li>
+    {%- endfor %}
+  </ul>
+</nav>
+{%- endif -%}
