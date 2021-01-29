@@ -3,18 +3,24 @@ permalink: /feed.json
 eleventyExcludeFromCollections: true
 ---
 {
-  "version": "https://jsonfeed.org/version/1",
+  "version": "https://jsonfeed.org/version/1.1",
   "title": "{{ site.title }}",
   "home_page_url": "{{ '/' | url | absoluteUrl(site.url) }}",
   "feed_url": "{{ permalink | url | absoluteUrl(site.url) }}",
   "description": "{{ site.description }}",
   "icon": "{{ '/assets/images/BM-Logo.png' | url | absoluteUrl(site.url) }}",
   "favicon": "{{ '/assets/images/favicon.ico' | url | absoluteUrl(site.url) }}",
+  "language": "en-US",
   "author": {
     "name": "{{ authors.brian.name }}",
     "url": "{{ authors.brian.web }}",
     "avatar": "https://gravatar.com/avatar/{{ authors.brian.gravatar }}?s=512"
   },
+  "authors": [{
+    "name": "{{ authors.brian.name }}",
+    "url": "{{ authors.brian.web }}",
+    "avatar": "https://gravatar.com/avatar/{{ authors.brian.gravatar }}?s=512"
+  }],
   "items": [
   {%- for post in collections.post | reverse | head(10) -%}
     {%- set absolutePostUrl -%}{{ post.url | url | absoluteUrl(site.url) }}{%- endset -%}
