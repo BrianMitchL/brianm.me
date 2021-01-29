@@ -7,6 +7,12 @@
       </a>
     </li>
     {%- endfor -%}
+    <li>
+      <a href="{{ '/feed.xml' | url }}" title="RSS Feed">{% icon "rss" %}</a>
+    </li>
+    <li>
+      <a href="{{ '/feed.json' | url }}" title="JSON Feed">{% icon "jsonfeed" %}</a>
+    </li>
   </ul>
   <p>
     &copy; 2014&ndash;
