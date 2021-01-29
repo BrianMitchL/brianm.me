@@ -38,6 +38,15 @@ eleventyNavigation:
       <span title="Estimated Reading Time">
         {{ post.templateContent | emojiReadTime }}
       </span>
+      •
+      <span class="text-075">
+      {%- for tag in post.data.tags -%}
+        {%- if collections.tagList.indexOf(tag) != -1 -%}
+          {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+      </span>
     </p>
     <p>
       {%- if post.data.excerpt -%}
