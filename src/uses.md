@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2020-12-31
+modified: 2021-01-30
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -57,7 +57,7 @@ cross-platform.
 - [iStat Menus](https://bjango.com/mac/istatmenus/)
 - [iStumbler](https://istumbler.net)
 - [iVI](http://southpolesoftware.com/wp/ivi-pro-v4/)
-- [Last.fm Scrobbler](https://www.last.fm/about/trackmymusic)
+- [Last.fm Desktop App](https://www.last.fm/about/trackmymusic#desktop-mac)
 - [Logic Pro X](https://www.apple.com/logic-pro/)
 - [Loopback](https://rogueamoeba.com/loopback/)
 - [Pixelmator](https://www.pixelmator.com/mac/)
@@ -72,7 +72,7 @@ cross-platform.
 - [TextMate](https://macromates.com)
 - [Transmission](https://transmissionbt.com)
 - [Transmit](https://www.panic.com/transmit/)
-- [Tweetbot for Mac](https://tapbots.com/tweetbot/mac/)
+- [Twitter for Mac](https://apps.apple.com/us/app/twitter/id1482454543)
 - [VLC](https://www.videolan.org/vlc/)
 - [Whatpulse](https://whatpulse.org)
 - [XLD](https://tmkk.undo.jp/xld/index_e.html)
