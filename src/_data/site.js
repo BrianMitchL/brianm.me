@@ -15,5 +15,4 @@ module.exports = {
   author: 'Brian Mitchell',
   twitter: 'BrianMitchL',
   image: '/android-chrome-512x512.png',
-  google_site_verification: '4-mwXA7aYqZalRm3UuWpPv-aMyFT_zUtA_ks_RK7r5I',
 };
