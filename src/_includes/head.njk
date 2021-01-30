@@ -23,11 +23,11 @@
 <link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
 <link
   rel="stylesheet"
-  href="{{ '/assets/css/style.css' | url }}"
+  href="{{ '/assets/css/style.css' | url | hashify }}"
 />
 <link
   rel="stylesheet"
-  href="{{ '/assets/fonts/inter/inter.css' | url }}"
+  href="{{ '/assets/fonts/inter/inter.css' | url }}?v={{ site.interVersion }}"
 />
 
 <title>

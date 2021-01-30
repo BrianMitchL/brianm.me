@@ -1,6 +1,7 @@
 const { DateTime } = require('luxon');
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginNavigation = require('@11ty/eleventy-navigation');
@@ -22,6 +23,28 @@ const dir = {
   data: '_data',
   output: '_site',
 };
+
+const hashCache = new Map();
+function hashify(filePath) {
+  if (typeof filePath !== 'string') {
+    throw new Error('the hashify filter must be used with a string');
+  }
+  if (!siteData.isProduction) {
+    return filePath;
+  }
+
+  if (hashCache.has(filePath)) {
+    return hashCache.get(filePath);
+  }
+
+  const hash = crypto.createHash('sha256');
+  const fileContent = fs.readFileSync(dir.input + '/' + filePath);
+  hash.update(fileContent);
+  const hashedPath = `${filePath}?h=${hash.digest('hex')}`;
+  hashCache.set(filePath, hashedPath);
+
+  return hashedPath;
+}
 
 const iconCache = new Map();
 async function loadIcon(icon) {
@@ -77,6 +100,8 @@ module.exports = function (eleventyConfig) {
       } aria-hidden="true">${svg}</span>`;
     }
   );
+
+  eleventyConfig.addFilter('hashify', hashify);
 
   eleventyConfig.addFilter('toUTCDate', (dateObj) => {
     // add back the offset from UTC to the date
