@@ -1,27 +1,9 @@
-let confetti = null;
+import confetti from 'canvas-confetti';
+import '../../css/fun.pcss';
 
-async function lazyLoadConfetti() {
-  if (confetti === null) {
-    try {
-      const module = await import(
-        'https://unpkg.com/canvas-confetti@1.2.1/dist/confetti.module.mjs'
-      );
-      confetti = module.default;
-    } catch (e) {
-      confetti = null;
-      console.error(
-        'There was problem fetching the confetti cannon',
-        e.message
-      );
-    }
-  }
-}
 let funEnabled = false;
 
-const butt = document.getElementById('fun-button');
-butt.addEventListener('mouseover', lazyLoadConfetti);
-butt.addEventListener('touchstart', lazyLoadConfetti);
-butt.addEventListener('click', function (e) {
+export default function fun(e) {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
     .matches;
 
@@ -47,7 +29,7 @@ butt.addEventListener('click', function (e) {
     funEnabled = true;
   }
 
-  if (!reduceMotion && confetti !== null) {
+  if (!reduceMotion) {
     console.log('🎉');
     const count = 150;
     const dx = window.innerWidth / 2 - e.clientX;
@@ -93,4 +75,4 @@ butt.addEventListener('click', function (e) {
       startVelocity: 45,
     });
   }
-});
+}

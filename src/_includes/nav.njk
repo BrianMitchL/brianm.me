@@ -12,5 +12,32 @@
     {%- endfor %}
   </ul>
 </nav>
-<script src="{{ '/assets/js/no-fun.js' | url | hashify }}" nomodule async defer></script>
-<script src="{{ '/assets/js/fun.mjs' | url | hashify }}" type="module" async></script>
+<script nomodule>
+  document.getElementById('fun-button').remove();
+</script>
+<script type="module" async>
+  {%- set js -%}
+  (function () {
+    let erred = false;
+    const importFun = () => import('{{ '/assets/js/fun.mjs' | url | hashify }}');
+    async function haveFun(e) {
+      try {
+        (await importFun()).default(e);
+      } catch (e) {
+        if (!erred) {
+          console.error(e);
+          alert('There was a problem starting fun mode 😭');
+        }
+        erred = true;
+      }
+    }
+    const funButton = document.getElementById('fun-button');
+    if (funButton) {
+      funButton.addEventListener('mouseover', importFun);
+      funButton.addEventListener('touchstart', importFun);
+      funButton.addEventListener('click', haveFun);
+    }
+  })();
+  {%- endset -%}
+  {{ js | jsmin | safe }}
+</script>

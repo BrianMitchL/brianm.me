@@ -14,6 +14,7 @@ const markdownIt = require('markdown-it');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownItTOC = require('markdown-it-table-of-contents');
+const { minify } = require('terser');
 
 const siteData = require('./src/_data/site.js');
 
@@ -133,6 +134,24 @@ module.exports = function (eleventyConfig) {
 
     return array.slice(0, n);
   });
+
+  eleventyConfig.addNunjucksAsyncFilter(
+    'jsmin',
+    async function (code, callback) {
+      if (siteData.isProduction) {
+        try {
+          const minified = await minify(code);
+          callback(null, minified.code);
+        } catch (err) {
+          console.error('Terser error: ', err);
+          // Fail gracefully.
+          callback(null, code);
+        }
+      } else {
+        callback(null, code);
+      }
+    }
+  );
 
   eleventyConfig.addCollection('tagList', function (collection) {
     const tags = collection.getAll().reduce((tags, item) => {

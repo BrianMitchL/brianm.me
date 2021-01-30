@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import filesize from 'rollup-plugin-filesize';
+import postcss from 'rollup-plugin-postcss';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -46,14 +47,18 @@ const fun = {
   input: 'src/assets/js/src/fun.mjs',
   output: {
     sourcemap: true,
-    format: 'iife',
+    format: 'esm',
     name: 'fun',
     file: 'src/assets/js/fun.mjs',
   },
-  external: [
-    'https://unpkg.com/canvas-confetti@1.2.1/dist/confetti.module.mjs',
-  ],
   plugins: [
+    resolve(),
+    postcss({
+      minimize: production,
+      config: {
+        path: './postcss.config.js',
+      },
+    }),
     // If we're building for production, minify
     production && terser(),
     production && filesize(),
@@ -63,22 +68,4 @@ const fun = {
   },
 };
 
-const noFun = {
-  input: 'src/assets/js/src/no-fun.js',
-  output: {
-    sourcemap: true,
-    format: 'iife',
-    name: 'noFun',
-    file: 'src/assets/js/no-fun.js',
-  },
-  plugins: [
-    // If we're building for production, minify
-    production && terser(),
-    production && filesize(),
-  ],
-  watch: {
-    clearScreen: false,
-  },
-};
-
-export default [main, fun, noFun];
+export default [main, fun];
