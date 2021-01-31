@@ -1,6 +1,5 @@
 {
   "layout": "post",
   "tags": ["post"],
-  "permalink": "/posts/{{ page.fileSlug }}/",
-  "author": "brian"
+  "permalink": "/posts/{{ page.fileSlug }}/"
 }

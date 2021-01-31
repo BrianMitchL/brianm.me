@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
   <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ '/' | url | absoluteUrl(site.url) }}</id>
   <author>
-    <name>{{ authors.brian.name }}</name>
+    <name>{{ site.author.name }}</name>
   </author>
   {%- for post in collections.post | reverse | head(10) %}
     {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}

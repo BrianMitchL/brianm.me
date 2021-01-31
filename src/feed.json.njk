@@ -8,18 +8,18 @@ eleventyExcludeFromCollections: true
   "home_page_url": "{{ '/' | url | absoluteUrl(site.url) }}",
   "feed_url": "{{ permalink | url | absoluteUrl(site.url) }}",
   "description": "{{ site.description }}",
-  "icon": "{{ '/assets/images/BM-Logo.png' | url | absoluteUrl(site.url) }}",
-  "favicon": "{{ '/assets/images/favicon.ico' | url | absoluteUrl(site.url) }}",
+  "icon": "{{ site.image | url | absoluteUrl(site.url) }}",
+  "favicon": "{{ '/favicon.ico' | url | absoluteUrl(site.url) }}",
   "language": "en-US",
   "author": {
-    "name": "{{ authors.brian.name }}",
-    "url": "{{ authors.brian.web }}",
-    "avatar": "https://gravatar.com/avatar/{{ authors.brian.gravatar }}?s=512"
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.author.web }}",
+    "avatar": "{{ site.author.image | url | absoluteUrl(site.url) }}"
   },
   "authors": [{
-    "name": "{{ authors.brian.name }}",
-    "url": "{{ authors.brian.web }}",
-    "avatar": "https://gravatar.com/avatar/{{ authors.brian.gravatar }}?s=512"
+    "name": "{{ site.author.name }}",
+    "url": "{{ site.author.web }}",
+    "avatar": "{{ site.author.image | url | absoluteUrl(site.url) }}"
   }],
   "items": [
   {%- for post in collections.post | reverse | head(10) -%}
@@ -31,9 +31,9 @@ eleventyExcludeFromCollections: true
       "date_published": "{{ post.date | dateToRfc3339 }}",
       "date_modified": "{{ post.data.modified | toUTCDate | dateToRfc3339 }}",
       "author": {
-        "name": "{{ authors[post.data.author].name }}",
-        "url": "{{ authors[post.data.author].web }}",
-        "avatar": "https://gravatar.com/avatar/{{ authors[post.data.author].gravatar }}?s=512"
+        "name": "{{ site.author.name }}",
+        "url": "{{ site.author.web }}",
+        "avatar": "{{ site.author.image | url | absoluteUrl(site.url) }}"
       },
       "summary": "{{ post.data.description }}",
       "content_html": {% if post.templateContent %}{{ post.templateContent | dump | safe }}{% else %}""{% endif %}

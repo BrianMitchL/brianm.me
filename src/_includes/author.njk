@@ -1,13 +1,7 @@
-{% set author = authors[author] %}
 <aside class="page-author" aria-label="Author">
   <div>
     <img
-      src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250"
-      srcset="
-        https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250 1x,
-        https://www.gravatar.com/avatar/{{ author.gravatar }}?s=500 2x,
-        https://www.gravatar.com/avatar/{{ author.gravatar }}?s=750 3x
-      "
+      src="{{ site.author.image | url }}"
       alt="Profile photo"
       itemprop="image"
       class="profile"
@@ -15,12 +9,12 @@
     />
   </div>
   <div>
-    <h2 itemprop="author">{{ author.name }}</h2>
-    <p>{{ author.bio }}</p>
+    <h2 itemprop="author">{{ site.author.name }}</h2>
+    <p>{{ site.author.bio }}</p>
     <address>
       <div>
         <a
-          href="https://twitter.com/{{ author.twitter }}"
+          href="https://twitter.com/{{ site.author.twitter }}"
           class="inline-flex-center svg-margin-right"
         >
           {% icon "twitter", "#1DA1F2" %}Twitter
@@ -28,14 +22,14 @@
       </div>
       <div>
         <a
-          href="https://instagram.com/{{ author.instagram }}"
+          href="https://instagram.com/{{ site.author.instagram }}"
           class="inline-flex-center svg-margin-right"
         >
           {% icon "instagram", "#e4405f" %}Instagram
         </a>
       </div>
       <div>
-        <a href="{{ author.web }}" title="{{ author.web }}">{{ author.web }}</a>
+        <a href="{{ site.author.web }}" title="{{ site.author.web }}">{{ site.author.web }}</a>
       </div>
     </address>
   </div>

@@ -42,7 +42,7 @@ module.exports = {
       },
     },
     author: {
-      name: (data) => data.site.author,
+      name: (data) => data.site.author.name,
     },
     published: (data) => data.page.date.toISOString(),
     modified: (data) => {
