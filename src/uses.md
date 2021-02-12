@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-01-30
+modified: 2021-02-11
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -84,7 +84,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 ### Entertainment
 
-- [Cyanide and Happiness](https://apps.apple.com/us/app/cyanide-and-happiness/id368088267)
+- [Cyanide and Happiness](https://apps.apple.com/us/app/cyanide-happiness/id372649148)
 - [Fog of World](https://apps.apple.com/us/app/fog-of-world/id505367096) (see my [review]({{ '/posts/fog-of-world-2/' | url }})) {% emoji "🌟", "star" %}
 - [GPX Builder](https://apps.apple.com/us/app/fog-of-world-assistant-gpx-builder/id938037644)
 - [Overcast](https://apps.apple.com/us/app/overcast-podcast-player/id888422857) {% emoji "🌟", "star" %}
