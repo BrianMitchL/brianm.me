@@ -6,7 +6,7 @@ eleventyNavigation:
   key: About
 ---
 
-Brian Mitchell is a Software Engineer III at C.H. Robinson, where he guides
+Brian Mitchell is a Senior Software Engineer at C.H. Robinson, where he leads
 frontend development for Customer Facing Analytics. In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
@@ -14,7 +14,7 @@ _A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, Redux, redux-saga, react-table, React Testing Library, react-query, react-spring, styled-components, Jest, Puppeteer, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Eleventy, Jekyll, Python, Java, HTML, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, react-query, Redux, redux-saga, react-table, React Testing Library, react-spring, styled-components, Jest, Puppeteer, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Eleventy, Jekyll, Python, Java, HTML, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 ### Operating Systems
 
@@ -44,7 +44,12 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 ## Experience
 
 - **C.H. Robinson** (November 2016 - Present), Eden Prairie, MN.
-  - _Software Engineer III_ (August 2019 - Present), Customer Facing Analytics
+  - _Senior Software Engineer_ (March 2021 - Present), Customer Facing Analytics
+    - Architected and lead the development of the React application for the
+      premier customer facing analytics platform.
+    - Worked with leaders on the customer solutions teams to create and document
+      technical patterns.
+  - _Software Engineer III_ (August 2019 - March 2021), Customer Facing Analytics
     - Architected and lead the development of the React application for the
       premier customer facing analytics platform.
     - Lead technical maintainer of a hubot chatbot running in Slack.
