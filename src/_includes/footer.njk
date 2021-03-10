@@ -1,21 +1,38 @@
+{% set sorted = findMe.feature | sort(false, true, 'icon') %}
+{% set footerLinks = sorted.concat([{
+  title: "RSS Feed",
+  url: "/feed.xml",
+  icon: "rss"
+}, {
+  title: "JSON Feed",
+  url: "/feed.json",
+  icon: "jsonfeed"
+}]) %}
 <footer class="text-center">
-  <ul class="list-inline">
-    {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
-    <li>
-      <a href="{{ feature.url }}" title="{{ feature.title }}">
-        {% icon feature.icon %}
+  <ul class="list-glass text-150">
+    {%- for feature in footerLinks -%}
+    <li class="glass">
+      <a href="{{ feature.url | url }}" title="{{ feature.title }}">
+        {% include 'icons/' + feature.icon + '.svg' %}
       </a>
     </li>
     {%- endfor -%}
-    <li>
-      <a href="{{ '/feed.xml' | url }}" title="RSS Feed">{% icon "rss" %}</a>
-    </li>
-    <li>
-      <a href="{{ '/feed.json' | url }}" title="JSON Feed">{% icon "jsonfeed" %}</a>
-    </li>
   </ul>
   <p>
     &copy; 2014&ndash;<script>document.write('' + new Date().getFullYear());</script>
     Brian Mitchell
   </p>
 </footer>
+
+<script>
+  // called in an interval in fun.mjs
+  function randomizeCssProperties() {
+    document.body.style.setProperty('--random-a', Math.random().toFixed(8));
+    document.body.style.setProperty('--random-b', Math.random().toFixed(8));
+    document.body.style.setProperty('--random-c', Math.random().toFixed(8));
+    document.body.style.setProperty('--random-d', Math.random().toFixed(8));
+    document.body.style.setProperty('--random-e', Math.random().toFixed(8));
+    document.body.style.setProperty('--random-f', Math.random().toFixed(8));
+  }
+  randomizeCssProperties();
+</script>

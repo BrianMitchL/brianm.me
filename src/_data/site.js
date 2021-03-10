@@ -11,7 +11,7 @@ module.exports = {
   },
   title: 'Brian Mitchell',
   description: 'Blog, projects, & online presence',
-  url: isProduction ? 'https://brianm.me' : 'http://localhost:8080',
+  url: isProduction ? 'https://brianm.me' : '',
   author: {
     name: 'Brian Mitchell',
     bio:

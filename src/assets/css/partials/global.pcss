@@ -38,6 +38,19 @@
   --tag-text: #fff;
   --tag-bg: #6b21a8; /* tag background */
   --tag-bg-hover: #9333ea; /* tag hover background */
+  --glass-1: rgba(255, 255, 255, 0.45);
+  --glass-2: rgba(255, 255, 255, 0.3);
+  --glass-3: rgba(255, 255, 255, 0.2);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-shadow-outer: rgba(31, 38, 55, 0.37);
+  --glass-shadow-inner: rgba(108, 116, 155, 0.36);
+  /* other variables */
+  --random-a: 0.15258505;
+  --random-b: 0.33595378;
+  --random-c: 0.21573404;
+  --random-d: 0.30899216;
+  --random-e: 0.80922477;
+  --random-f: 0.05050946;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,6 +67,12 @@
     --nc-ac-1: #0ea5e9;
     --nc-ac-2: #fb7185;
     --nc-ac-tx: #ffffff;
+
+    --glass-1: rgba(0, 0, 0, 0.45);
+    --glass-2: rgba(0, 0, 0, 0.3);
+    --glass-3: rgba(0, 0, 0, 0.2);
+    --glass-border: rgba(192, 192, 192, 0.18);
+    --glass-shadow-inner: rgba(108, 116, 155, 0.36);
   }
 }
 
@@ -154,17 +173,6 @@ body > footer {
     color: var(--nc-tx-1);
   }
 }
-body > footer {
-  & ul {
-    margin-bottom: 0;
-    font-size: 1.75rem;
-  }
-  & li {
-    padding: 0.5rem;
-  }
-  & a {
-  }
-}
 
 /* brand */
 body > header nav > a {
@@ -219,40 +227,11 @@ figure {
   animation: rotate 1s infinite linear;
 }
 
-span.wave {
-  animation-name: wave-animation;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  transform-origin: 70% 70%;
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
   }
-  5% {
-    transform: rotate(12deg);
-  }
-  10% {
-    transform: rotate(-10deg);
-  }
-  15% {
-    transform: rotate(10deg);
-  }
-  20% {
-    transform: rotate(-8deg);
-  }
-  25% {
-    transform: rotate(11deg);
-  }
-  30% {
-    transform: rotate(-11deg);
-  }
-  35% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
+  to {
+    transform: rotate(1turn);
   }
 }

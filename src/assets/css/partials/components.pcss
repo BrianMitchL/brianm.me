@@ -68,33 +68,6 @@
   }
 }
 
-.bio {
-  display: grid;
-  grid-template-columns: 33.33333333% 1fr;
-  grid-gap: 1.5em;
-  justify-content: space-between;
-  align-items: center;
-
-  & h1 + p {
-    font-size: 1.25rem;
-    font-weight: 300;
-  }
-
-  & img {
-    margin-bottom: 0;
-  }
-
-  & *:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .bio {
-    grid-template-columns: 1fr;
-  }
-}
-
 .project {
   background-color: var(--nc-bg-2);
   margin: 0 -1rem 2rem;
@@ -168,4 +141,77 @@ a.tag {
     background-color: var(--tag-bg-hover);
     color: var(--tag-text);
   }
+}
+
+.glass {
+  padding: 1rem;
+  background: var(--glass-1);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow-outer);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+}
+
+.glass .glass {
+  background: var(--glass-2);
+  box-shadow: 0 6px 24px 0 var(--glass-shadow-outer);
+  border-radius: 16px;
+}
+
+.glass .glass .glass {
+  background: var(--glass-3);
+  box-shadow: 0 4px 16px 0 var(--glass-shadow-outer);
+  border-radius: 12px;
+}
+
+ul.list-glass {
+  /* font-size: 1.75rem; */
+  list-style: none;
+  padding: 0;
+
+  & > li:nth-of-type(6n + 1) {
+    --rotate: calc((var(--random-a) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 2) {
+    --rotate: calc((var(--random-b) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 3) {
+    --rotate: calc((var(--random-c) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 4) {
+    --rotate: calc((var(--random-d) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 5) {
+    --rotate: calc((var(--random-e) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 6) {
+    --rotate: calc((var(--random-f) * 12 - 6) * 1deg);
+  }
+
+  & > li.glass {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    position: relative;
+
+    &:nth-of-type(even) {
+      z-index: 1;
+    }
+
+    transform: rotate(var(--rotate));
+    transition: transform 200ms linear;
+  }
+
+  & a {
+    display: inline-flex;
+    line-height: 1;
+  }
+}
+
+.enhance {
+  background: linear-gradient(to right, #f64f59, #c461ed, #12c2e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
