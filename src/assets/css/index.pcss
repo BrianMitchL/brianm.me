@@ -1,0 +1,64 @@
+.bio {
+  display: grid;
+  grid-template-columns: 33.33333333% 1fr;
+  grid-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+
+  & h1 + p {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+
+  & img {
+    margin-bottom: 0;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  & *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+span.wave {
+  animation-name: wave-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(12deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  15% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  25% {
+    transform: rotate(11deg);
+  }
+  30% {
+    transform: rotate(-11deg);
+  }
+  35% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

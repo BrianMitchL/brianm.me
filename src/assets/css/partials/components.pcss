@@ -42,12 +42,15 @@
   align-items: center;
   padding: 2em;
   background: var(--nc-bg-2);
-  border-radius: 0.25rem;
+  border: 1px solid var(--nc-bg-3);
+  border-radius: 0.5rem;
   margin-bottom: 1rem;
+  box-shadow: var(--shadow);
 
   & img.profile {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     width: 100%;
+    box-shadow: var(--shadow);
   }
 
   & *:last-child {
@@ -68,39 +71,13 @@
   }
 }
 
-.bio {
-  display: grid;
-  grid-template-columns: 33.33333333% 1fr;
-  grid-gap: 1.5em;
-  justify-content: space-between;
-  align-items: center;
-
-  & h1 + p {
-    font-size: 1.25rem;
-    font-weight: 300;
-  }
-
-  & img {
-    margin-bottom: 0;
-  }
-
-  & *:last-child {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .bio {
-    grid-template-columns: 1fr;
-  }
-}
-
 .project {
   background-color: var(--nc-bg-2);
   margin: 0 -1rem 2rem;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--nc-bg-3);
+  box-shadow: var(--shadow);
 
   & h2 {
     border-bottom-color: var(--nc-bg-3);
@@ -168,4 +145,60 @@ a.tag {
     background-color: var(--tag-bg-hover);
     color: var(--tag-text);
   }
+}
+
+ul.list-glass {
+  & > li:nth-of-type(6n + 1) {
+    --rotate: calc((var(--random-a) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 2) {
+    --rotate: calc((var(--random-b) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 3) {
+    --rotate: calc((var(--random-c) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 4) {
+    --rotate: calc((var(--random-d) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 5) {
+    --rotate: calc((var(--random-e) * 12 - 6) * 1deg);
+  }
+  & > li:nth-of-type(6n + 6) {
+    --rotate: calc((var(--random-f) * 12 - 6) * 1deg);
+  }
+
+  & > li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    position: relative;
+    padding: 1rem;
+    background: var(--glass-background);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    border: 1px solid var(--glass-border);
+
+    &:nth-of-type(even) {
+      z-index: 1;
+    }
+
+    transform: rotate(var(--rotate));
+    transition: transform 200ms linear;
+  }
+
+  & a {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+  }
+}
+
+.enhance {
+  background: var(--enhance-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }

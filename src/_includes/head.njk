@@ -25,6 +25,12 @@
   rel="stylesheet"
   href="{{ '/assets/css/style.css' | url | hashify }}"
 />
+{% if page.url === '/' -%}
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/index.css' | url | hashify }}"
+/>
+{%- endif %}
 <link
   rel="stylesheet"
   href="{{ '/assets/fonts/inter/inter.css' | url }}?v={{ site.interVersion }}"

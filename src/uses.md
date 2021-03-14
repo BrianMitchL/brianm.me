@@ -6,6 +6,7 @@ modified: 2021-02-11
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
+  order: 5
 ---
 
 This serves as a living document of software, gear, and other things that I typically use. Last updated <time datetime="{{ modified | htmlDateString }}" itemprop="dateModified">{{ modified | readableDate }}</time>.

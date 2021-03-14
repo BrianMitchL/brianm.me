@@ -38,7 +38,7 @@
       "icon": "codesandbox"
     },
     {
-      "title": "Brian Mitchell's DEV Profile",
+      "title": "DEV Profile",
       "url": "https://dev.to/brianmitchl",
       "icon": "dev-dot-to"
     },
@@ -58,6 +58,11 @@
       "icon": "last-dot-fm"
     },
     {
+      "title": "NPM",
+      "url": "https://www.npmjs.com/~brianmitchl",
+      "icon": "npm"
+    },
+    {
       "title": "SoundCloud",
       "url": "https://soundcloud.com/brianmitchl",
       "icon": "soundcloud"
@@ -66,11 +71,6 @@
       "title": "Spotify",
       "url": "https://open.spotify.com/user/1237277662",
       "icon": "spotify"
-    },
-    {
-      "title": "Stack Overflow",
-      "url": "https://stackoverflow.com/users/3928053/brianmitchl",
-      "icon": "stackoverflow"
     },
     {
       "title": "Strava",

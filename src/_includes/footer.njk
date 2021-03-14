@@ -1,21 +1,21 @@
-<footer class="text-center">
-  <ul class="list-inline">
-    {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
-    <li>
-      <a href="{{ feature.url }}" title="{{ feature.title }}">
-        {% icon feature.icon %}
-      </a>
-    </li>
+{% set sorted = findMe.feature | sort(false, true, 'icon') %}
+{% set footerLinks = sorted.concat([{
+  title: "RSS Feed",
+  url: "/feed.xml",
+  icon: "rss"
+}, {
+  title: "JSON Feed",
+  url: "/feed.json",
+  icon: "jsonfeed"
+}]) %}
+<footer class="text-center solid-link">
+  <ul class="list-none list-glass text-150" aria-label="Links">
+    {%- for feature in footerLinks -%}
+    <li><a href="{{ feature.url | url }}">
+        {%- icon feature.icon -%}<span class="sr-only">{{ feature.title }}</span>
+      </a></li>
     {%- endfor -%}
-    <li>
-      <a href="{{ '/feed.xml' | url }}" title="RSS Feed">{% icon "rss" %}</a>
-    </li>
-    <li>
-      <a href="{{ '/feed.json' | url }}" title="JSON Feed">{% icon "jsonfeed" %}</a>
-    </li>
   </ul>
-  <p>
-    &copy; 2014&ndash;<script>document.write('' + new Date().getFullYear());</script>
-    Brian Mitchell
-  </p>
+  <p>&copy; 2014&ndash;<script>document.write('' + new Date().getFullYear());</script>
+    Brian Mitchell</p>
 </footer>
