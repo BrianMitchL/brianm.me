@@ -7,5 +7,14 @@
   <body>
     {{ content | safe }}
     {%- include "footer.njk" -%}
+    <script>
+      // called in an interval in fun.mjs
+      function randomizeCssProperties() {
+        ['a', 'b', 'c', 'd', 'e', 'f'].forEach((item) => {
+          document.documentElement.style.setProperty(`--random-${item}`, Math.random().toFixed(8));
+        });
+      }
+      randomizeCssProperties();
+    </script>
   </body>
 </html>
