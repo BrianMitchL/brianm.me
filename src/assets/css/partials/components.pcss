@@ -42,12 +42,15 @@
   align-items: center;
   padding: 2em;
   background: var(--nc-bg-2);
-  border-radius: 0.25rem;
+  border: 1px solid var(--nc-bg-3);
+  border-radius: 0.5rem;
   margin-bottom: 1rem;
+  box-shadow: var(--shadow);
 
   & img.profile {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     width: 100%;
+    box-shadow: var(--shadow);
   }
 
   & *:last-child {
@@ -74,6 +77,7 @@
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--nc-bg-3);
+  box-shadow: var(--shadow);
 
   & h2 {
     border-bottom-color: var(--nc-bg-3);
@@ -143,33 +147,7 @@ a.tag {
   }
 }
 
-.glass {
-  padding: 1rem;
-  background: var(--glass-1);
-  box-shadow: 0 8px 32px 0 var(--glass-shadow-outer);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid var(--glass-border);
-}
-
-.glass .glass {
-  background: var(--glass-2);
-  box-shadow: 0 6px 24px 0 var(--glass-shadow-outer);
-  border-radius: 16px;
-}
-
-.glass .glass .glass {
-  background: var(--glass-3);
-  box-shadow: 0 4px 16px 0 var(--glass-shadow-outer);
-  border-radius: 12px;
-}
-
 ul.list-glass {
-  /* font-size: 1.75rem; */
-  list-style: none;
-  padding: 0;
-
   & > li:nth-of-type(6n + 1) {
     --rotate: calc((var(--random-a) * 12 - 6) * 1deg);
   }
@@ -189,12 +167,19 @@ ul.list-glass {
     --rotate: calc((var(--random-f) * 12 - 6) * 1deg);
   }
 
-  & > li.glass {
+  & > li {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin: -2px;
     position: relative;
+    padding: 1rem;
+    background: var(--glass-background);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    border: 1px solid var(--glass-border);
 
     &:nth-of-type(even) {
       z-index: 1;
@@ -206,12 +191,14 @@ ul.list-glass {
 
   & a {
     display: inline-flex;
+    align-items: center;
     line-height: 1;
   }
 }
 
 .enhance {
-  background: linear-gradient(to right, #f64f59, #c461ed, #12c2e9);
+  background: var(--enhance-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }

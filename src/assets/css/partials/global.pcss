@@ -38,12 +38,16 @@
   --tag-text: #fff;
   --tag-bg: #6b21a8; /* tag background */
   --tag-bg-hover: #9333ea; /* tag hover background */
-  --glass-1: rgba(255, 255, 255, 0.45);
-  --glass-2: rgba(255, 255, 255, 0.3);
-  --glass-3: rgba(255, 255, 255, 0.2);
+  --glass-background: rgba(255, 255, 255, 0.45);
   --glass-border: rgba(255, 255, 255, 0.18);
-  --glass-shadow-outer: rgba(31, 38, 55, 0.37);
-  --glass-shadow-inner: rgba(108, 116, 155, 0.36);
+  --shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  /* 500: orange, rose, fuchsia, light blue */
+  --enhance-text: linear-gradient(100deg, #F97316, #F43F5E, #D946EF, #0EA5E9);
+  /* 300: orange, rose, fuchsia, light blue */
+  --enhance-background: radial-gradient(
+    circle at top left,
+    #FDBA74, #FDA4AF, #F0ABFC, #7DD3FC
+  );
   /* other variables */
   --random-a: 0.15258505;
   --random-b: 0.33595378;
@@ -68,11 +72,15 @@
     --nc-ac-2: #fb7185;
     --nc-ac-tx: #ffffff;
 
-    --glass-1: rgba(0, 0, 0, 0.45);
-    --glass-2: rgba(0, 0, 0, 0.3);
-    --glass-3: rgba(0, 0, 0, 0.2);
+    --glass-background: rgba(0, 0, 0, 0.45);
     --glass-border: rgba(192, 192, 192, 0.18);
-    --glass-shadow-inner: rgba(108, 116, 155, 0.36);
+    /* 600: orange, rose, purple, light blue */
+    --enhance-text: linear-gradient(100deg, #EA580C, #E11D48, #C026D3, #0284C7);
+    /* 800: orange, rose, fuchsia, light blue */
+    --enhance-background: radial-gradient(
+      circle at top left,
+      #9A3412, #9F1239, #86198F, #075985
+    );
   }
 }
 
@@ -140,27 +148,28 @@ img.emoji {
   text-decoration: none;
 }
 
-header > nav > ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 1.75rem;
-  font-size: clamp(1rem, 4vw, 1.75rem);
-  @media (max-width: 580px) {
-    font-size: 1rem;
-    font-size: clamp(1rem, 4vw, 1.75rem);
+header > nav {
+  margin-bottom: 0;
+  & a {
+    font-weight: bold;
+  }
+
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.75rem;
+    @media (max-width: 580px) {
+      flex-direction: column;
+    }
   }
 }
 
-body > header,
-body > footer {
-  & p {
-    margin: 0;
-  }
-
+/* for non-blue links, like in the header/footer */
+.solid-link {
   & a {
     color: var(--nc-tx-2);
     text-decoration: none;
@@ -177,7 +186,6 @@ body > footer {
 /* brand */
 body > header nav > a {
   font-size: 2rem;
-  font-weight: 300;
 }
 
 .heading-link {
@@ -203,6 +211,7 @@ h6 {
 
   &:hover > a.heading-link {
     opacity: 1;
+    color: inherit;
   }
 }
 
@@ -233,5 +242,17 @@ figure {
   }
   to {
     transform: rotate(1turn);
+  }
+}
+
+body > footer {
+  padding: 2rem;
+  border-radius: 0.5rem 8rem;
+  background: var(--enhance-background);
+  box-shadow: var(--shadow);
+
+  & p {
+    margin: 0;
+    color: var(--nc-tx-1);
   }
 }

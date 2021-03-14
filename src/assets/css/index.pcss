@@ -1,88 +1,13 @@
-:root {
-  --nc-tx-1: #000004; /* Heading text color */
-  --nc-tx-2: #18181B; /* Body text color */
-  --nc-tx-3: #27272A; /* Tertiary text color */
-  --nc-bg-1: #ffffff; /* Base background color */
-  --nc-bg-2: var(--glass-2); /* Slightly darker background color */
-  --nc-bg-3: var(--glass-3); /* Even slightly darker background color */
-  --nc-lk-1: #1E3A8A; /* Action color for links and buttons */
-  --nc-lk-2: #1E40AF; /* Link and buttons on mouse hover and active */
-  --nc-lk-tx: #ffffff; /* Text color for link buttons, or cases where link color is used as a background */
-  --nc-ac-1: #facc15; /* Accent background color for <mark> and text selection background */
-  --nc-ac-2: #e11d48; /* Accent background color for <em> */
-  --nc-ac-tx: #ffffff; /* Text color when accent is used as a background */
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #FAFAFA;
-    --nc-tx-3: #F4F4F5;
-    --nc-bg-1: #18181b;
-    --nc-bg-2: var(--glass-2);
-    --nc-bg-3: var(--glass-3);
-    --nc-lk-1: #93C5FD;
-    --nc-lk-2: #60A5FA;
-    --nc-lk-tx: #171717;
-    --nc-ac-1: #facc15;
-    --nc-ac-2: #fb7185;
-    --nc-ac-tx: #ffffff;
-  }
-}
-
-body {
-  background: rgb(246, 79, 89);
-  background: radial-gradient(
-    circle at bottom,
-    #FDA4AF 0%,
-    #F0ABFC 29%,
-    #7DD3FC 100%
-  );
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: rgb(148, 48, 54);
-    background: radial-gradient(
-      circle at bottom,
-      #9F1239 0%,
-      #86198F 29%,
-      #075985 100%
-    );
-  }
-}
-
-a,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-th,
-td {
-  text-shadow: 0 2px 4px var(--glass-shadow-inner);
-}
-
-svg {
-  filter: drop-shadow(0 2px 4px var(--glass-shadow-inner));
-}
-
-body > header {
-  background: var(--glass-1);
-  box-shadow: 0 8px 32px 0 var(--glass-shadow-outer);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid var(--glass-border);
-}
-
 .bio {
   display: grid;
   grid-template-columns: 33.33333333% 1fr;
-  grid-gap: 1em;
+  grid-gap: 2rem;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 
   & h1 + p {
     font-size: 1.25rem;
@@ -91,27 +16,12 @@ body > header {
 
   & img {
     margin-bottom: 0;
-    border-radius: 12px;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
   }
 
   & *:last-child {
     margin-bottom: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .bio {
-    grid-template-columns: 1fr;
-  }
-
-  section.glass {
-    background: none;
-    border: none;
-    padding: unset;
-    box-shadow: none;
-    border-radius: unset;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
   }
 }
 
@@ -150,31 +60,5 @@ span.wave {
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-
-main a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2px;
-  margin-bottom: -2px;
-  background-image: linear-gradient(to right, #FDE047, #FBBF24, #EF4444);
-  background-position: 0 100%;
-  background-size: 0 2px;
-  background-repeat: no-repeat;
-  transition: background-size .3s ease;
-  text-decoration: none;
-
-  @media (hover: hover) {
-    &:hover {
-      background-size: 100% 2px;
-    }
-  }
-
-  & > svg {
-    height: 0.75em;
-    width: 0.75em;
-    margin-right: 0.25em;
   }
 }

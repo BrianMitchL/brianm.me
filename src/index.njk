@@ -5,15 +5,15 @@ description: Senior Frontend Software Engineer and Web Developer
 disableSubNav: true
 ---
 
-<section class="bio text-center glass">
-    <img
-      src="{{ site.author.image }}"
-      alt="Profile photo of Brian Mitchell"
-    />
+<section class="bio text-center" aria-label="short biography">
+  <img
+    src="{{ site.author.image }}"
+    alt="Profile photo of Brian Mitchell"
+  />
   <div>
     <h1>
       Hi, I'm Brian Mitchell!
-      <span class="emoji wave" role="img" aria-label="wave">👋🏻</span>
+      <span class="emoji wave" role="img" aria-label="wave emoji">👋🏻</span>
     </h1>
     <p>
       Senior <span class="enhance">Frontend</span> Software Engineer and Web Developer
@@ -23,66 +23,28 @@ disableSubNav: true
       Occasionally a lighting designer. Cyclist.
       <a href="http://my.pronoun.is/he">he/him</a>.
     </p>
-    <p>
-      <span
-        class="emoji"
-        role="img"
-        title="Software Engineer"
-        aria-label="Software Engineer"
-        >👨🏻‍💻</span
-      >
-      at
-      <a href="https://twitter.com/CHRobinson" title="C.H. Robinson on Twitter"
-        >@CHRobinson</a
-      >.
-    </p>
-    <p>
-      <span class="emoji" role="img" title="Podcaster" aria-label="Podcaster"
-        >🎙</span
-      >
-      at
-      <a href="https://twitter.com/TheNexusTV" title="The Nexus TV on Twitter"
-        >@TheNexusTV</a
-      >.
-    </p>
-    <p>
-      <span class="emoji" role="img" title="Graduate" aria-label="Graduate"
-        >👨🏻‍🎓</span
-      >
-      of
-      <a
-        href="https://twitter.com/UMNMorris"
-        title="The University of Minnesota Morris on Twitter"
-        >@UMNMorris</a
-      >.
-    </p>
   </div>
 </section>
 
-<section class="text-center glass">
-  <h2>Where to Find Me</h2>
-  <ul class="list-glass">
+<section class="text-center solid-link" aria-labelledby='where-to-find-me'>
+  <h2 id="where-to-find-me">Where to Find Me</h2>
+  <ul class="list-inline text-double">
     {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
-      <li class="glass">
-        <a
-          href="{{ feature.url }}"
-          class="text-150"
-        >
-          {% include 'icons/' + feature.icon + '.svg' %}
-          {{ feature.title }}
+      <li>
+        <a href="{{ feature.url }}">
+          {%- icon feature.icon -%}
+          <span class="sr-only">{{ feature.title }}</span>
         </a>
       </li>
     {%- endfor -%}
   </ul>
-  <ul class="list-glass">
+  <ul class="list-inline text-150">
     {%- set findMeNormal = findMe.normal | sort(false, true, 'icon') -%}
     {%- for normal in findMeNormal -%}
-    <li class="glass">
-      <a
-        href="{{ normal.url }}"
-      >
-        {% include 'icons/' + normal.icon + '.svg' %}
-        {{ normal.title }}
+    <li>
+      <a href="{{ normal.url }}">
+        {%- icon normal.icon -%}
+        <span class="sr-only">{{ normal.title }}</span>
       </a>
     </li>
     {%- endfor -%}

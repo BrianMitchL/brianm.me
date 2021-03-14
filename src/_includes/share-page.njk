@@ -1,14 +1,14 @@
 {% set urlUri = page.url | url | absoluteUrl(site.url) | urlencode %}
 {% set titleUri = title | urlencode %}
 <aside aria-labelledby="share-page-heading">
-  <h2 id="share-page-heading">Share</h2>
-  <ul class="list-inline list-dots svg-margin-left">
+  <h2 id="share-page-heading">Share Post</h2>
+  <ul class="list-inline list-dots svg-margin-right">
     <li>
       <a
         href="https://www.facebook.com/sharer/sharer.php?u={{ urlUri }}"
         target="_blank"
         rel="noopener noreferrer"
-        >Facebook{% include "icons/facebook.svg" %}</a
+        >{% include "icons/facebook.svg" %}Facebook</a
       >
     </li>
     <li>
@@ -16,21 +16,21 @@
         href="https://twitter.com/intent/tweet?text={{ titleUri }}&amp;url={{ urlUri }}&amp;via={{ site.twitter }}"
         target="_blank"
         rel="noopener noreferrer"
-        >Twitter{% include "icons/twitter.svg" %}</a>
+        >{% include "icons/twitter.svg" %}Twitter</a>
     </li>
     <li>
       <a
         href="https://www.reddit.com/submit?url={{ urlUri }}&title={{ titleUri }}"
         target="_blank"
         rel="noopener noreferrer"
-        >Reddit{% include "icons/reddit.svg" %}</a>
+        >{% include "icons/reddit.svg" %}Reddit</a>
     </li>
     <li>
       <a
         href="https://news.ycombinator.com/submitlink?u={{ urlUri }}&t={{ titleUri }}"
         target="_blank"
         rel="noopener noreferrer"
-        >Hacker News{% include "icons/ycombinator.svg" %}</a
+        >{% include "icons/ycombinator.svg" %}Hacker News</a
       >
     </li>
     <li>
@@ -38,7 +38,7 @@
         href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ urlUri }}&amp;title={{ titleUri }}&amp;source={{ site.title | urlencode }}"
         target="_blank"
         rel="noopener noreferrer"
-        >LinkedIn{% include "icons/linkedin.svg" %}</a
+        >{% include "icons/linkedin.svg" %}LinkedIn</a
       >
     </li>
   </ul>

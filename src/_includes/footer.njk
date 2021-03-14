@@ -8,18 +8,14 @@
   url: "/feed.json",
   icon: "jsonfeed"
 }]) %}
-<footer class="text-center">
-  <ul class="list-glass text-150">
+<footer class="text-center solid-link">
+  <ul class="list-none list-glass text-150" aria-label="Links">
     {%- for feature in footerLinks -%}
-    <li class="glass">
-      <a href="{{ feature.url | url }}" title="{{ feature.title }}">
-        {% include 'icons/' + feature.icon + '.svg' %}
-      </a>
-    </li>
+    <li><a href="{{ feature.url | url }}">
+        {%- icon feature.icon -%}<span class="sr-only">{{ feature.title }}</span>
+      </a></li>
     {%- endfor -%}
   </ul>
-  <p>
-    &copy; 2014&ndash;<script>document.write('' + new Date().getFullYear());</script>
-    Brian Mitchell
-  </p>
+  <p>&copy; 2014&ndash;<script>document.write('' + new Date().getFullYear());</script>
+    Brian Mitchell</p>
 </footer>
