@@ -26,9 +26,9 @@ disableSubNav: true
   </div>
 </section>
 
-<section class="text-center solid-link" aria-labelledby='where-to-find-me'>
+<section class="text-center" aria-labelledby='where-to-find-me'>
   <h2 id="where-to-find-me">Where to Find Me</h2>
-  <ul class="list-inline text-double">
+  <ul class="list-inline text-double solid-link">
     {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
       <li>
         <a href="{{ feature.url }}">
@@ -38,7 +38,7 @@ disableSubNav: true
       </li>
     {%- endfor -%}
   </ul>
-  <ul class="list-inline text-150">
+  <ul class="list-inline text-150 solid-link">
     {%- set findMeNormal = findMe.normal | sort(false, true, 'icon') -%}
     {%- for normal in findMeNormal -%}
     <li>
