@@ -5,6 +5,7 @@ description: Resources from presentations
 redirect_from: /slides
 eleventyNavigation:
   key: Talks
+  order: 4
 ---
 
 - ### React Hooks

@@ -4,6 +4,7 @@ title: About
 description: Extended Résumé
 eleventyNavigation:
   key: About
+  order: 1
 ---
 
 Brian Mitchell is a Senior Software Engineer at C.H. Robinson, where he leads

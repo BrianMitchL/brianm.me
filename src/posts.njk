@@ -13,6 +13,7 @@ eleventyComputed:
 permalink: "posts/{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber + 1 }}{% endif %}/index.html"
 eleventyNavigation:
   key: Posts
+  order: 2
 ---
 
 {%- for post in posts -%}
