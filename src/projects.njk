@@ -17,45 +17,49 @@ eleventyNavigation:
     {% if project.link %}
     <li>
       <span class="emoji" role="img" aria-label="Link">🔗</span> Link:
-      <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer"
-        >{{ project.link }}</a
-      ><br />
+      <a
+        href="{{ project.link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ project.link }}
+      </a><br />
     </li>
     {% endif %}
     {% if project.github %}
-    <li>
-      {% icon "github" %} GitHub:
+    <li class="svg-margin-right">
+      {% icon "github" %}GitHub:
       <a
         href="https://github.com/{{ project.github }}"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {{ project.github }}</a
-      >
+        {{ project.github }}
+      </a>
     </li>
     {% endif %}
     {% if project.gitlab %}
-    <li>
-      {% icon "gitlab" %} GitLab:
+    <li class="svg-margin-right">
+      {% icon "gitlab" %}GitLab:
       <a
         href="https://gitlab.com/{{ project.gitlab }}"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {{ project.gitlab }}</a
-      >
+        {{ project.gitlab }}
+      </a>
     </li>
     {% endif %}
     {% if project.npm %}
-    <li>
-      {% icon "npm" %} npm:
+    <li class="svg-margin-right">
+      {% icon "npm" %}npm:
       <a
         href="https://npmjs.com/package/{{ project.npm }}"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {{ project.npm }}</a
-      >
+        {{ project.npm }}
+      </a>
     </li>
     {% endif %}
   </ul>

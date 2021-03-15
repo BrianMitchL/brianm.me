@@ -4,7 +4,6 @@ redirect_from: '/contact'
 description: Senior Frontend Software Engineer and Web Developer
 disableSubNav: true
 ---
-
 <section class="bio text-center" aria-label="short biography">
   <img
     src="{{ site.author.image }}"
@@ -31,7 +30,7 @@ disableSubNav: true
   <h2 id="where-to-find-me">Where to Find Me</h2>
   <ul class="list-inline text-double solid-link">
     {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
-      <li>
+      <li class="margin-sm">
         <a href="{{ feature.url }}">
           {%- icon feature.icon -%}
           <span class="sr-only">{{ feature.title }}</span>
@@ -42,7 +41,7 @@ disableSubNav: true
   <ul class="list-inline text-150 solid-link">
     {%- set findMeNormal = findMe.normal | sort(false, true, 'icon') -%}
     {%- for normal in findMeNormal -%}
-    <li>
+    <li class="margin-sm">
       <a href="{{ normal.url }}">
         {%- icon normal.icon -%}
         <span class="sr-only">{{ normal.title }}</span>

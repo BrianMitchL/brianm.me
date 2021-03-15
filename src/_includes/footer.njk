@@ -11,9 +11,11 @@
 <footer class="text-center solid-link">
   <ul class="list-none list-glass text-150" aria-label="Links">
     {%- for feature in footerLinks -%}
-    <li><a href="{{ feature.url | url }}">
+    <li>
+      <a href="{{ feature.url | url }}">
         {%- icon feature.icon -%}<span class="sr-only">{{ feature.title }}</span>
-      </a></li>
+      </a>
+    </li>
     {%- endfor -%}
   </ul>
   <p>
