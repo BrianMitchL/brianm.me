@@ -6,11 +6,11 @@ eleventyNavigation:
   key: Projects
   order: 3
 ---
-<p>⭐️ indicates a featured and more complete project</p>
+<p>{% emoji "⭐️", "featured" %} indicates a featured and more complete project</p>
 
 {% for project in projects %}
-<article class="project {% if project.featured %}featured{% endif %}">
-  <h2>{{ project.name }}</h2>
+<article class="project">
+  <h2>{{ project.name }}{% if project.featured %} {% emoji "⭐️", "featured" %}{% endif %}</h2>
   <p>{{ project.range }} {{ project.status | safe }}</p>
   <p>{{ project.description | safe }}</p>
   <ul class="list-none">
