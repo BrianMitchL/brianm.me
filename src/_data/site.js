@@ -23,4 +23,5 @@ module.exports = {
   },
   twitter: 'BrianMitchL',
   image: '/android-chrome-512x512.png',
+  date: new Date(),
 };
