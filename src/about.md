@@ -11,7 +11,7 @@ Brian Mitchell is a Senior Software Engineer at C.H. Robinson, where he leads
 frontend development for Customer Facing Analytics. In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
-_A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/master/resume.pdf)._
+_A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
 
 ## Tools, Frameworks, and Languages
 
