@@ -7,8 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-Brian Mitchell is a Senior Software Engineer at C.H. Robinson, where he leads
-frontend development for Customer Facing Analytics. In Brian's spare time, he
+Brian Mitchell is a Senior Frontend Software Engineer. In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
 _A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
@@ -44,34 +43,35 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 
 ## Experience
 
-- **C.H. Robinson** (November 2016 - Present), Eden Prairie, MN.
-  - _Senior Software Engineer_ (March 2021 - Present), Customer Facing Analytics
-    - Architected and lead the development of the React application for the
+- **C.H. Robinson** (November 2016 - April 2021), Eden Prairie, MN.
+  - _Senior Software Engineer_ (March 2021 - April 2021), Customer Facing Analytics
+    - Led the architecture and development of the React application for the
       premier customer facing analytics platform.
     - Worked with leaders on the customer solutions teams to create and document
       technical patterns.
   - _Software Engineer III_ (August 2019 - March 2021), Customer Facing Analytics
-    - Architected and lead the development of the React application for the
+    - Led the architecture and development of the React application for the
       premier customer facing analytics platform.
     - Lead technical maintainer of a hubot chatbot running in Slack.
     - Advocated for React Testing Library and modernizing frontend tooling.
   - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
-    - Architected and lead the development of the React application for the
+    - Led the architecture and development of the React application for the
       premier customer facing analytics platform.
     - Implemented asynchronous event tracking for Adobe Analytics, creating a
-      common library used by React applications across the company.
-    - Built the first-in-the-company multi-source user authentication and
-      impersonation flow.
+      common library used by React applications.
+    - Built a multi-source user authentication and impersonation flow.
     - Introduced, advocated, and provided patterns of using React hooks and
       React Testing Library across the company.
-    - Built performant charting, table, and other visualization components
-      using React hooks and TypeScript.
-    - Developed an internal administration and analytics tool for displaying a usage statistics and debugging information.
-    - Mentored across the company with JavaScript/TypeScript and React.
-    - Lead developer and publisher for the C.H. Robinson [Engineering Blog](https://engineering.chrobinson.com).
+    – Built performant and animated charting and table components.
+    – Mentored across the company with JavaScript/TypeScript and React.
+    - Led development and publishing  for the C.H. Robinson
+      [Engineering Blog](https://engineering.chrobinson.com).
   - _Software Engineer I_ (November 2016 - December 2017), Enterprise Data Warehouse Customer
-    - Built new widgets and lead major refactoring for a customer analytics tool to support additional segments of the company and powerful dynamic data filtering application-wide.
-    - Designed new and rewrote existing screens in an animation-focused data visualization tool for lobby displays leveraging AngularJS, D3, and Bing Maps.
+    - Built new widgets and lead major refactoring for a customer analytics
+      tool to support additional segments of the company and powerful dynamic
+      data filtering application-wide.
+    - Designed new and rewrote screens in an animation-focused data
+      visualization tool for lobby displays leveraging D3 and Bing Maps.
 - **Concordia Language Villages - Skovsøen**, _Counselor and Technology Support_ (Summer 2016), Bemidji, MN.\
   Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
 - **CarlHacks 2016** (April 8-10 2016), Carleton College, Northfield, MN.\

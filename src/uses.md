@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-02-11
+modified: 2021-04-02
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -41,7 +41,6 @@ cross-platform.
 - [Apple Mail](https://support.apple.com/guide/mail/welcome/mac)
 - [Apple Music](https://www.apple.com/apple-music/)
 - [Apple Photos](https://www.apple.com/macos/photos/)
-- [Bartender](https://www.macbartender.com)
 - [BetterTouchTool](https://folivora.ai)
 - [Calcbot](https://www.tapbots.com/calcbot/mac/)
 - [Coconut Battery](https://www.coconut-flavour.com/coconutbattery/)
@@ -58,7 +57,6 @@ cross-platform.
 - [iStat Menus](https://bjango.com/mac/istatmenus/)
 - [iStumbler](https://istumbler.net)
 - [iVI](http://southpolesoftware.com/wp/ivi-pro-v4/)
-- [Last.fm Desktop App](https://www.last.fm/about/trackmymusic#desktop-mac)
 - [Logic Pro X](https://www.apple.com/logic-pro/)
 - [Loopback](https://rogueamoeba.com/loopback/)
 - [Pixelmator](https://www.pixelmator.com/mac/)
@@ -66,16 +64,15 @@ cross-platform.
 - [Rocket](https://matthewpalmer.net/rocket/)
 - [Safari](https://www.apple.com/safari/)
 - [Screens](https://edovia.com/en/screens-mac/)
+- [Scrobbles for Last.fm](https://apps.apple.com/us/app/scrobbles-for-last-fm/id1344679160)
 - [Sip](https://sipapp.io)
 - [Slack](https://slack.com)
 - [Spotify](https://www.spotify.com/us/)
-- [TermHere](https://hashbang.productions/apps/termhere/)
 - [TextMate](https://macromates.com)
 - [Transmission](https://transmissionbt.com)
 - [Transmit](https://www.panic.com/transmit/)
 - [Twitter for Mac](https://apps.apple.com/us/app/twitter/id1482454543)
 - [VLC](https://www.videolan.org/vlc/)
-- [Whatpulse](https://whatpulse.org)
 - [XLD](https://tmkk.undo.jp/xld/index_e.html)
 
 ## iOS Apps
@@ -186,6 +183,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
 - [Keychron K3](https://www.keychron.com/pages/keychron-k3-wireless-mechanical-keyboard) keyboard
 - [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
+- [Apple Magic Trackpad 2](https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver)
 - [Focusrite Scarlett 2i2](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2) audio interface
 - [M-Audio BX5D3](https://www.m-audio.com/bx5d3) 5" powered studio reference monitors
 - [Stageek Aluminum Desktop Speaker Stands](https://www.amazon.com/dp/B07SHCLR7T)
@@ -195,17 +193,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Mophie wireless charging base](https://www.zagg.com/en_us/wireless-charging-base)
 - [Acoustic Panels](https://smile.amazon.com/gp/product/B07VH6KDY8/)
 - [Steelcase Gesture](https://www.steelcase.com/products/office-chairs/gesture/) chair
-
-## Work Office
-
-- [MacBook Pro (13-inch, 2017, Four Thunderbolt 3 Ports)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-3.5-13-mid-2017-retina-display-touch-bar-specs.html)
-- [Elgato Thunderbolt 3 Dock](https://www.elgato.com/en/dock/thunderbolt-3)
-- Dual ASUS 1080p displays
-- [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
-- [Apple Magic Trackpad 2](https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver)
-- [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
-- Sit/Standing desk (that I've exclusively stood at since November 2017!)
-- Standing pad
 
 ## Servers
 
