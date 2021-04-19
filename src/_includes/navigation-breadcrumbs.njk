@@ -1,3 +1,4 @@
+{%- if eleventyNavigation.key -%}
 {% set breadPages = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
 {%- if breadPages | length > 0 -%}
 <nav aria-label="Breadcrumb" class="breadcrumb">
@@ -12,4 +13,5 @@
     </li>
   </ol>
 </nav>
+{%- endif -%}
 {%- endif -%}
