@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-Brian Mitchell is a Senior Frontend Software Engineer. In Brian's spare time, he
+Brian Mitchell is a Senior Frontend Software Engineer at Level2. In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
 _A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
@@ -43,18 +43,19 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 
 ## Experience
 
-- **C.H. Robinson** (November 2016 - April 2021), Eden Prairie, MN.
-  - _Senior Software Engineer_ (March 2021 - April 2021), Customer Facing Analytics
+- **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; Present), Minnetonka, MN.
+- **C.H. Robinson** (November 2016 &ndash; April 2021), Eden Prairie, MN.
+  - _Senior Software Engineer_ (March 2021 &ndash; April 2021), Customer Facing Analytics
     - Led the architecture and development of the React application for the
       premier customer facing analytics platform.
     - Worked with leaders on the customer solutions teams to create and document
       technical patterns.
-  - _Software Engineer III_ (August 2019 - March 2021), Customer Facing Analytics
+  - _Software Engineer III_ (August 2019 &ndash; March 2021), Customer Facing Analytics
     - Led the architecture and development of the React application for the
       premier customer facing analytics platform.
     - Lead technical maintainer of a hubot chatbot running in Slack.
     - Advocated for React Testing Library and modernizing frontend tooling.
-  - _Software Engineer II_ (January 2018 - July 2019), Customer Facing Analytics
+  - _Software Engineer II_ (January 2018 &ndash; July 2019), Customer Facing Analytics
     - Led the architecture and development of the React application for the
       premier customer facing analytics platform.
     - Implemented asynchronous event tracking for Adobe Analytics, creating a
@@ -66,7 +67,7 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
     – Mentored across the company with JavaScript/TypeScript and React.
     - Led development and publishing  for the C.H. Robinson
       [Engineering Blog](https://engineering.chrobinson.com).
-  - _Software Engineer I_ (November 2016 - December 2017), Enterprise Data Warehouse Customer
+  - _Software Engineer I_ (November 2016 &ndash; December 2017), Enterprise Data Warehouse Customer
     - Built new widgets and lead major refactoring for a customer analytics
       tool to support additional segments of the company and powerful dynamic
       data filtering application-wide.
@@ -74,13 +75,13 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
       visualization tool for lobby displays leveraging D3 and Bing Maps.
 - **Concordia Language Villages - Skovsøen**, _Counselor and Technology Support_ (Summer 2016), Bemidji, MN.\
   Presented the camp to family and friends of campers through photos and daily blog posts. Managed the retail store and acted as a counselor for campers aged 7-18.
-- **CarlHacks 2016** (April 8-10 2016), Carleton College, Northfield, MN.\
+- **CarlHacks 2016** (April 8 &ndash; 10, 2016), Carleton College, Northfield, MN.\
   36 hour hackathon where I worked with a classmate to start an iOS application in Swift. For more info, see our [devpost page](https://devpost.com/software/bpm).
 - **C.H. Robinson**, _Intern - IT_ (Summer 2015, internship), Eden Prairie, MN.\
   Developed an interactive lobby display illustrating active customer shipments on an animated world map, implemented with web technologies for touch-driven hardware as part of working on the Client Technology Strategy and Enterprise Data Warehouse teams. Some technologies used were JavaScript, jQuery, Microsoft Maps, and d3.js.
-- **[MICS 2015](https://www.micsymposium.org/mics2015/) Robotics and Programming Competitions** (April 10-11, 2015), Grand Forks, ND.\
+- **[MICS 2015](https://www.micsymposium.org/mics2015/) Robotics and Programming Competitions** (April 10 &ndash; 11, 2015), Grand Forks, ND.\
   Teams placed 2nd of 14 in robotics (Arduino), and 26th of 52 for programming (Java).
-- **Computer Science Discipline, University of Minnesota, Morris.**, _System Administrator_ (Fall 2014 - Spring 2015), Morris, MN.\
+- **Computer Science Discipline, University of Minnesota, Morris.**, _System Administrator_ (Fall 2014 &ndash; Spring 2015), Morris, MN.\
   Managed, maintained, updated, and supported the computer science labs in relation to software, hardware, and users.
 - **Info Link, Inc.**, _IT Specialist_ (Summer 2014, internship), Morris, MN.\
   Assisted with managing Info-Link's network and services. This included but was not limited to:
@@ -90,10 +91,10 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
   - Providing custom network installations
   - Managing internal tools, servers, radios, and other hardware
   - Climbing telecom towers, water towers, and grain elevators to install or service Info-Link's hardware
-- **[MICS 2014](http://www.micsymposium.org/mics2014/) Robotics and Programming Competitions** (April 25-26, 2014), Verona, WI.\
+- **[MICS 2014](https://www.micsymposium.org/mics2014/) Robotics and Programming Competitions** (April 25-26, 2014), Verona, WI.\
   Teams placed 4th of 11 in robotics (Java), and 18th of ~50 for programming (Java).
-- **University of Minnesota, Morris**, _Student Center Tech Crew_ (Fall 2012 - Spring 2016), Morris, MN.\
-  _Lighting Lead_ for the 2014-2015 school year and Spring 2016 semester.\
+- **University of Minnesota, Morris**, _Student Center Tech Crew_ (Fall 2012 &ndash; Spring 2016), Morris, MN.\
+  _Lighting Lead_ for the 2014&ndash;2015 school year and Spring 2016 semester.\
   Designed, set-up, and operated sound and lighting for small to large scale events. This also included rigging, managing power distribution, electrical work, operating heavy equipment, cable management, talking with clients, and problem solving.
 - **Concordia Language Villages**, _Assistant Cook_ (Summer 2012, Summer 2013), Bemidji, MN.
 
