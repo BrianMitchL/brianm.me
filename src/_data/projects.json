@@ -49,7 +49,7 @@
   {
     "name": "The Nexus CMS Admin Frontend",
     "range": "November 2016 – April 2017",
-    "description": "Vue.js frontend for \"the new CMS\" of <a href=\"http://thenexus.tv\" title=\"The Nexus\">The Nexus</a> podcast network.",
+    "description": "Vue.js frontend for \"the new CMS\" of <a href=\"http://thenexus.tv\">The Nexus</a> podcast network.",
     "gitlab": "thenexustv/nexus-cms-admin-frontend"
   },
   {

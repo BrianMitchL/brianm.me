@@ -10,7 +10,7 @@ eleventyNavigation:
 Brian Mitchell is a Senior Frontend Software Engineer at Level2. In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
-_A more formal résumé can be found on [GitHub](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
+_If you're looking for a more formal résumé, download the [PDF](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
 
 ## Tools, Frameworks, and Languages
 

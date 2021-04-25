@@ -1,6 +1,13 @@
 <nav aria-label="Primary" class="solid-link">
   <a href="{{ '/' | url }}" class="enhance">{{ site.title }}</a>
-  <button style="float: right;" class="shake" id="fun-button" aria-hidden="true" title="Fun Mode">
+  <button
+    style="float: right;"
+    class="shake"
+    id="fun-button"
+    title="Fun Mode"
+    aria-hidden="true"
+    tabindex="-1"
+  >
     🥳
   </button>
   {% set navPages = collections.all | eleventyNavigation %}
@@ -33,9 +40,9 @@
     }
     const funButton = document.getElementById('fun-button');
     if (funButton) {
-      funButton.addEventListener('mouseover', importFun);
-      funButton.addEventListener('touchstart', importFun);
-      funButton.addEventListener('click', haveFun);
+      funButton.addEventListener('mouseover', importFun, { passive: true });
+      funButton.addEventListener('touchstart', importFun, { passive: true });
+      funButton.addEventListener('click', haveFun, { passive: true });
     }
   })();
   {%- endset -%}

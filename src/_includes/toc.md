@@ -1,4 +1,4 @@
-## On This Page
+## Table of Contents
 
 [[toc]]
 

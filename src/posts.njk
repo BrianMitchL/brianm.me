@@ -20,9 +20,7 @@ eleventyNavigation:
   <article>
     {%- if post.data.image -%}
     <div class="article-teaser">
-      <a href="{{ post.url }}">
-        <img src="{{ post.data.image }}" alt="{{ post.data.title }} teaser image" />
-      </a>
+      <img src="{{ post.data.image }}" alt="{{ post.data.title }} teaser" />
     </div>
     {%- endif -%}
     <h2>

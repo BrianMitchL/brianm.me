@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-04-02
+modified: 2021-04-24
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -181,13 +181,13 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [LG UltraFine 5K 27MD5KA](https://www.lg.com/us/monitors/lg-27MD5KA-B-5k-uhd-led-monitor) (newer version linked)
 - [Macally Aluminum Laptop Stand](https://us.macally.com/products/astand)
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
-- [Keychron K3](https://www.keychron.com/pages/keychron-k3-wireless-mechanical-keyboard) keyboard
 - [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
 - [Apple Magic Trackpad 2](https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver)
 - [Focusrite Scarlett 2i2](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2) audio interface
 - [M-Audio BX5D3](https://www.m-audio.com/bx5d3) 5" powered studio reference monitors
 - [Stageek Aluminum Desktop Speaker Stands](https://www.amazon.com/dp/B07SHCLR7T)
-- [Audio-Technica ATH-M50](https://www.audio-technica.com/cms/headphones/99aff89488ddd6b1/index.html) studio headphones (newer version linked)
+- [Beyerdynamic DT 770 PRO 80 ohms](https://north-america.beyerdynamic.com/dt-770-pro.html) reference headphones
+- [Blue compass](https://www.bluemic.com/en-us/products/compass/) microphone boom arm
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
 - [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
 - [Mophie wireless charging base](https://www.zagg.com/en_us/wireless-charging-base)
@@ -211,7 +211,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
   - CentOS 7
   - Docker
   - [weatherBot](https://github.com/BrianMitchL/weatherBot)
-  - [paul](https://github.com/thenexustv/paul)
 
 ## Mobile
 
