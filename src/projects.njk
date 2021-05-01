@@ -6,62 +6,36 @@ eleventyNavigation:
   key: Projects
   order: 3
 ---
-<p>{% emoji "⭐️", "featured" %} indicates a featured and more complete project</p>
-
-{% for project in projects %}
-<article class="project">
-  <h2>{{ project.name }}{% if project.featured %} {% emoji "⭐️", "featured" %}{% endif %}</h2>
-  <p>{{ project.range }} {{ project.status | safe }}</p>
-  <p>{{ project.description | safe }}</p>
-  <ul class="list-none">
-    {% if project.link %}
-    <li>
-      <span class="emoji" role="img" aria-label="Link">🔗</span> Link:
-      <a
-        href="{{ project.link }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ project.link }}
-      </a><br />
+<ol class="projects">
+  {% for repo in github.repos %}
+    <li itemscope itemtype="http://schema.org/SoftwareSourceCode" class="repo svg-margin-right">
+        <div class="mb-2 repo-title">
+          {% octicon "repo" %}<a href="{{ repo.html_url }}" itemprop="codeRepository name">{{ repo.name }}</a>
+        </div>
+        <p itemprop="description">{{ repo.description }}</p>
+        {% if repo.homepage %}
+          <a href="{{ repo.homepage }}" itemprop="url" class="mb-2">
+            {{ repo.homepage }}
+          </a>
+        {% endif %}
+        <p class="m-0">
+          {% if repo.language %}
+          <span class="mr-3 text-nowrap inline-flex-center">
+            <span class="language-color" style="background-color: {{ repo.language_color }};"></span>
+            <span itemprop="programmingLanguage">{{ repo.language }}</span>
+          </span>
+          {% endif %}
+          {% if repo.stargazers_count %}
+            <a href="{{ repo.stargazers_url }}" class="mr-3 text-nowrap inline-flex-center text-decoration-none">
+              {% octicon "star" %}{{ repo.stargazers_count }}<span class="sr-only">Stars</span>
+            </a>
+          {% endif %}
+          {% if repo.forks_count %}
+            <a href="{{ repo.forks_url }}" class="mr-3 text-nowrap inline-flex-center text-decoration-none">
+              {% octicon "git-branch" %}{{ repo.forks_count }}<span class="sr-only">Forks</span>
+            </a>
+          {% endif %}
+        </p>
     </li>
-    {% endif %}
-    {% if project.github %}
-    <li class="svg-margin-right">
-      {% icon "github" %}GitHub:
-      <a
-        href="https://github.com/{{ project.github }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ project.github }}
-      </a>
-    </li>
-    {% endif %}
-    {% if project.gitlab %}
-    <li class="svg-margin-right">
-      {% icon "gitlab" %}GitLab:
-      <a
-        href="https://gitlab.com/{{ project.gitlab }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ project.gitlab }}
-      </a>
-    </li>
-    {% endif %}
-    {% if project.npm %}
-    <li class="svg-margin-right">
-      {% icon "npm" %}npm:
-      <a
-        href="https://npmjs.com/package/{{ project.npm }}"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {{ project.npm }}
-      </a>
-    </li>
-    {% endif %}
-  </ul>
-</article>
-{% endfor %}
+  {% endfor %}
+</ol>

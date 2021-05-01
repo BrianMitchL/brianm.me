@@ -71,21 +71,50 @@
   }
 }
 
-.project {
-  background-color: var(--nc-bg-2);
-  margin: 0 -1rem 2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--nc-bg-3);
-  box-shadow: var(--shadow);
+ol.projects {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
 
-  & h2 {
-    border-bottom-color: var(--nc-bg-3);
+  & > li {
+    margin: 0;
   }
 
-  & p:first-of-type {
-    font-weight: 300;
-    color: var(--nc-tx-3);
+  & .repo {
+    background-color: var(--nc-bg-2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--nc-bg-3);
+    color: var(--nc-tx-2);
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+
+    & .repo-title {
+      font-size: 1rem;
+    }
+
+    & .octicon.octicon-repo {
+      height: 1.5em;
+      width: 1.5em;
+    }
+
+    & [itemprop="description"] {
+      flex: 1 0 auto;
+      color: var(--nc-tx-3);
+    }
+
+    & .language-color {
+      display: inline-block;
+      width: 0.875em;
+      height: 0.875em;
+      border: 1px solid var(--nc-bg-3);
+      border-radius: 50%;
+      margin-right: 0.25em;
+    }
   }
 }
 
@@ -197,4 +226,10 @@ ul.list-glass {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+.octicon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
 }

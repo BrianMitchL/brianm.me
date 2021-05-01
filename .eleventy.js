@@ -16,6 +16,7 @@ const markdownItFootnote = require('markdown-it-footnote');
 const markdownItTOC = require('markdown-it-table-of-contents');
 const { minify } = require('terser');
 const htmlmin = require("html-minifier");
+const octicons = require("@primer/octicons");
 
 const siteData = require('./src/_data/site.js');
 
@@ -91,6 +92,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
+
+  eleventyConfig.addShortcode('octicon', function(icon) {
+    return octicons[icon].toSVG();
+  });
 
   eleventyConfig.addNunjucksAsyncShortcode(
     'icon',

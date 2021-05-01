@@ -22,6 +22,7 @@
   "author": "Brian Mitchell",
   "dependencies": {
     "@exampledev/new.css": "^1.1.3",
+    "@primer/octicons": "^13.0.0",
     "canvas-confetti": "^1.4.0",
     "csshake": "^1.5.3",
     "prism-themes": "^1.6.0",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-cache-assets": "^2.1.0",
     "@11ty/eleventy-navigation": "^0.2.0",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
@@ -42,8 +44,8 @@
     "cssnano": "^4.1.10",
     "eleventy-plugin-emoji": "^1.1.0",
     "eleventy-plugin-excerpt": "^1.1.2",
-    "eleventy-plugin-sitemap": "^1.0.1",
     "html-minifier": "^4.0.0",
+    "js-yaml": "^4.1.0",
     "luxon": "^1.26.0",
     "markdown-it": "^12.0.6",
     "markdown-it-anchor": "^7.1.0",
