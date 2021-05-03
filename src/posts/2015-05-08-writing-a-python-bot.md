@@ -15,7 +15,7 @@ I have toyed with the idea of writing a Twitter bot for posting weather updates 
 
 ### March 12-15
 
-I decided to use Python and Tweepy due to Google searching "how to make a Twitter bot." :stuck_out_tongue_closed_eyes: I had used Jython (Python built on top of Java) in an intro computer science class, but that was two years ago. I had always wanted to use Python again, so I decided why not now? I started off with a good old [hello world](https://github.com/BrianMitchL/weatherBot/commit/c24200ad415f9367d3cbc94427cd08f84acd0468), and continued from there.
+I decided to use Python and Tweepy due to Google searching "how to make a Twitter bot." {% emoji "😝", "face with stuck-out tongue and squinting eyes" %} I had used Jython (Python built on top of Java) in an intro computer science class, but that was two years ago. I had always wanted to use Python again, so I decided why not now? I started off with a good old [hello world](https://github.com/BrianMitchL/weatherBot/commit/c24200ad415f9367d3cbc94427cd08f84acd0468), and continued from there.
 
 Over the next few days I added some vulgar tweets for special weather conditions, a loop so it would run forever, scheduled tweets, normal condition tweet templates, tweeting with location, forking the process to daemonize it, proper logging, reimplemented that logging, logging to a file, and a separate version for Python 3. This was all done over four days while I stayed up way to late over Spring Break. I thought I was pretty close to being done with the bot, but I was just getting started.
 
