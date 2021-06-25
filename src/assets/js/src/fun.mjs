@@ -4,8 +4,9 @@ import '../../css/partials/fun.pcss';
 let funEnabled = false;
 
 export default function fun(e) {
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
-    .matches;
+  const reduceMotion = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  ).matches;
 
   if (reduceMotion) {
     alert(

@@ -24,7 +24,6 @@ title: My Cool Page
 permalink: /new-page
 redirect_from: /old-page
 ---
-
 ```
 
 With the `jekyll-redirect-from` plugin, it will also emit a page at `/old-page.html`, with the following content. This causes a browser to immediately load the page at the new URL, while preserving any links to the old page.

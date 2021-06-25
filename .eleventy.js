@@ -15,8 +15,8 @@ const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownItTOC = require('markdown-it-table-of-contents');
 const { minify } = require('terser');
-const htmlmin = require("html-minifier");
-const octicons = require("@primer/octicons");
+const htmlmin = require('html-minifier');
+const octicons = require('@primer/octicons');
 
 const siteData = require('./src/_data/site.js');
 
@@ -93,7 +93,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
 
-  eleventyConfig.addShortcode('octicon', function(icon) {
+  eleventyConfig.addShortcode('octicon', function (icon) {
     return octicons[icon].toSVG();
   });
 
@@ -223,10 +223,10 @@ module.exports = function (eleventyConfig) {
     ghostMode: false,
   });
 
-  eleventyConfig.addTransform("html-minifier", (value, outputPath) => {
+  eleventyConfig.addTransform('html-minifier', (value, outputPath) => {
     if (outputPath && outputPath.includes('.html')) {
       return htmlmin.minify(value, {
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
     }
     return value;

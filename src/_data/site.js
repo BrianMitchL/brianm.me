@@ -9,8 +9,7 @@ module.exports = {
   url: isProduction ? 'https://brianm.me' : 'http://localhost:8080',
   author: {
     name: 'Brian Mitchell',
-    bio:
-      'Senior Frontend Software Engineer and Web Developer, emoji lover 👋🏻, and an avid fan of electronic music.',
+    bio: 'Senior Frontend Software Engineer and Web Developer, emoji lover 👋🏻, and an avid fan of electronic music.',
     twitter: 'BrianMitchL',
     instagram: 'BrianMitchL',
     image: '/assets/images/headshot-2021.jpg',

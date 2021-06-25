@@ -63,9 +63,9 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
     - Built a multi-source user authentication and impersonation flow.
     - Introduced, advocated, and provided patterns of using React hooks and
       React Testing Library across the company.
-    – Built performant and animated charting and table components.
-    – Mentored across the company with JavaScript/TypeScript and React.
-    - Led development and publishing  for the C.H. Robinson
+    - Built performant and animated charting and table components.
+    - Mentored across the company with JavaScript/TypeScript and React.
+    - Led development and publishing for the C.H. Robinson
       [Engineering Blog](https://engineering.chrobinson.com).
   - _Software Engineer I_ (November 2016 &ndash; December 2017), Enterprise Data Warehouse Customer
     - Built new widgets and lead major refactoring for a customer analytics
