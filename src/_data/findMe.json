@@ -63,6 +63,11 @@
       "icon": "npm"
     },
     {
+      "title": "Polywork",
+      "url": "https://poly.work/brianmitchl",
+      "icon": "polywork"
+    },
+    {
       "title": "SoundCloud",
       "url": "https://soundcloud.com/brianmitchl",
       "icon": "soundcloud"
