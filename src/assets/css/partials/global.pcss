@@ -96,6 +96,10 @@
     animation: none !important;
     transition: none !important;
   }
+
+  html {
+    scroll-behavior: auto !important;
+  }
 }
 
 * {
@@ -107,6 +111,10 @@
    */
   transition-property: background-color, border-color, border-top-color,
     border-left-color, border-bottom-color, border-right-color;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -137,6 +145,14 @@ em {
 :not(pre) > kbd,
 :not(pre) > samp {
   color: var(--nc-ac-2);
+}
+
+dd {
+  margin-inline-start: 2rem;
+
+  &::before {
+    content: initial;
+  }
 }
 
 a {
@@ -201,13 +217,23 @@ body > header nav > a {
 }
 
 .heading-link {
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  text-decoration: none;
+  color: inherit;
 
   &:focus,
   &:hover,
   &:active {
-    opacity: 1;
+    &::before {
+      content: '🔗';
+      position: relative;
+      float: left;
+      left: max(-2ch, -2rem);
+      height: 0;
+      width: 0;
+    }
+
+    text-decoration: underline;
+    color: inherit;
   }
 }
 
@@ -218,11 +244,6 @@ h4,
 h5,
 h6 {
   & > a {
-    color: inherit;
-  }
-
-  &:hover > a.heading-link {
-    opacity: 1;
     color: inherit;
   }
 }

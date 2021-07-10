@@ -11,9 +11,11 @@ const pluginSitemap = require('@quasibit/eleventy-plugin-sitemap');
 const pluginSchema = require('@quasibit/eleventy-plugin-schema');
 const pluginExcerpt = require('eleventy-plugin-excerpt');
 const markdownIt = require('markdown-it');
+const markdownItDeflist = require('markdown-it-deflist');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
-const markdownItTOC = require('markdown-it-table-of-contents');
+const markdownItTOCDoneRight = require('markdown-it-toc-done-right');
+const uslug = require('uslug');
 const { minify } = require('terser');
 const htmlmin = require('html-minifier');
 const octicons = require('@primer/octicons');
@@ -68,6 +70,9 @@ async function loadIcon(icon) {
   return data;
 }
 
+function uslugify(str) {
+  return uslug(str);
+}
 module.exports = function (eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setUseGitIgnore(false);
@@ -195,14 +200,17 @@ module.exports = function (eleventyConfig) {
   const markdownLibrary = markdownIt({
     html: true,
   })
+    .use(markdownItDeflist)
     .use(markdownItAnchor, {
-      permalink: true,
-      permalinkClass: 'heading-link',
-      permalinkSymbol: '<span class="sr-only">Permalink</span>#',
+      permalink: markdownItAnchor.permalink.headerLink({
+        class: 'heading-link',
+      }),
+      slugify: uslugify,
     })
     .use(markdownItFootnote)
-    .use(markdownItTOC, {
-      includeLevel: [2, 3],
+    .use(markdownItTOCDoneRight, {
+      containerClass: 'toc-container',
+      slugify: uslugify,
     });
   eleventyConfig.setLibrary('md', markdownLibrary);
 
