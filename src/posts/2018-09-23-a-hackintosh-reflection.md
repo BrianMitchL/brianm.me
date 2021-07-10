@@ -14,7 +14,7 @@ My Hackintosh, after just reaching its fifth birthday, has reached the end of it
     Clover settings, I get really anxious that it won&#39;t boot up again.</p>&mdash; Brian Mitchell (@_BrianMitchell_)
     <a href="https://twitter.com/_BrianMitchell_/status/540778586957807617?ref_src=twsrc%5Etfw">December 5, 2014</a>
     </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <figcaption>It finally happened... :cry:</figcaption>
+    <figcaption>It finally happened... {% emoji "😢", "cry" %}</figcaption>
 </figure>
 
 ## History
@@ -80,11 +80,7 @@ looking for a new, fast, and stable Mac.
 
 RIP old friend. I'll boot you up twice a year to install Windows updates and play Age of Empires III.
 
-<figure style="max-width: 650px;">
-    <a class="twitter-moment" data-dnt="true" href="https://twitter.com/i/moments/1043749921088663552?ref_src=twsrc%5Etfw">
-    A Hackintosh Reflection</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <figcaption>Twitter Moment compiling a good majority of my tweets relating to the Hackintosh</figcaption>
-</figure>
+Check out my [Twitter Moment](https://twitter.com/i/moments/1043749921088663552) that compiles a good majority of my tweets relating to the Hackintosh.
 
 [^bios]: BIOS: Basic Input/Output System, a legacy way to boot a computer.
 [^efi]: EFI: Extensible Firmware Interface, a modern interface between the operating system and platform firmware.
