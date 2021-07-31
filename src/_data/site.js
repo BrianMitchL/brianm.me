@@ -3,7 +3,7 @@ const isProduction = !/--serve/.test(process.argv.join(','));
 module.exports = {
   isProduction,
   eleventyVersion: require('@11ty/eleventy/package.json').version,
-  interVersion: require('typeface-inter/package.json').version,
+  interVersion: require('@fontsource/inter/package.json').version,
   title: 'Brian Mitchell',
   description: 'Blog, projects, & online presence',
   url: isProduction ? 'https://brianm.me' : 'http://localhost:8080',
