@@ -52,9 +52,9 @@ function SearchComponent() {
 This is great, but what if someone tries to manipulate those parameters with this nice object we have?
 
 ```js
-searchParams.set('query', 'pizza')
+searchParams.set('query', 'pizza');
 ```
- 
+
 The `searchParams` object will have its internal state changed, but the location search and browser search parameters won't have changed. We're using this object as a nice API in order to read the parameters, but we still need to use React Router to change them.
 
 ## Type Checking Immutability
