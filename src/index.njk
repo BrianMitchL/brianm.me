@@ -28,12 +28,12 @@ disableSubNav: true
 
 <section class="text-center" aria-labelledby='where-to-find-me'>
   <h2 id="where-to-find-me">Where to Find Me</h2>
-  <ul class="list-inline text-double solid-link">
+  <ul class="list-inline text-200 solid-link">
     {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
       <li class="margin-sm">
         <a href="{{ feature.url }}">
+          <span class="visually-hidden">{{ feature.title }}</span>
           {%- icon feature.icon -%}
-          <span class="sr-only">{{ feature.title }}</span>
         </a>
       </li>
     {%- endfor -%}
@@ -43,8 +43,8 @@ disableSubNav: true
     {%- for normal in findMeNormal -%}
     <li class="margin-sm">
       <a href="{{ normal.url }}">
+        <span class="visually-hidden">{{ normal.title }}</span>
         {%- icon normal.icon -%}
-        <span class="sr-only">{{ normal.title }}</span>
       </a>
     </li>
     {%- endfor -%}

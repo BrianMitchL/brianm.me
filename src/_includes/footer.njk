@@ -13,7 +13,7 @@
     {%- for feature in footerLinks -%}
     <li>
       <a href="{{ feature.url | url }}">
-        {%- icon feature.icon -%}<span class="sr-only">{{ feature.title }}</span>
+        {%- icon feature.icon -%}<span class="visually-hidden">{{ feature.title }}</span>
       </a>
     </li>
     {%- endfor -%}

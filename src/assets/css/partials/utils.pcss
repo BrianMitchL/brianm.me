@@ -14,7 +14,7 @@
   font-size: 1.5em;
 }
 
-.text-double {
+.text-200 {
   font-size: 2em;
 }
 
@@ -76,21 +76,15 @@ ul.list-inline > li {
   margin-right: 1rem;
 }
 
-/*
-Twitter Bootstrap's implementation
-https://github.com/twbs/bootstrap/blob/7e2741eb1074afc66bdf2fb5c2b65d476cf7f37e/less/scaffolding.less#L121
-Only display content to screen readers
-
-See: http://a11yproject.com/posts/how-to-hide-content
- */
-
-.sr-only {
-  position: absolute;
-  width: 1px;
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
-  padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  word-wrap: normal;
 }

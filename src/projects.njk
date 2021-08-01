@@ -27,12 +27,12 @@ eleventyNavigation:
           {% endif %}
           {% if repo.stargazers_count %}
             <a href="{{ repo.stargazers_url }}" class="mr-3 text-nowrap inline-flex-center text-decoration-none">
-              {% octicon "star" %}{{ repo.stargazers_count }}<span class="sr-only">Stars</span>
+              {% octicon "star" %}{{ repo.stargazers_count }}<span class="visually-hidden">Stars</span>
             </a>
           {% endif %}
           {% if repo.forks_count %}
             <a href="{{ repo.forks_url }}" class="mr-3 text-nowrap inline-flex-center text-decoration-none">
-              {% octicon "git-branch" %}{{ repo.forks_count }}<span class="sr-only">Forks</span>
+              {% octicon "git-branch" %}{{ repo.forks_count }}<span class="visually-hidden">Forks</span>
             </a>
           {% endif %}
         </p>
