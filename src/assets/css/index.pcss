@@ -1,11 +1,11 @@
 .bio {
   display: grid;
-  grid-template-columns: 33.33333333% 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: calc(100% / 3) 1fr;
+  grid-gap: var(--base-padding);
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 580px) {
     grid-template-columns: 1fr;
   }
 

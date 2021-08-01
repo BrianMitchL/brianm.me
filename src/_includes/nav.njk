@@ -1,5 +1,5 @@
-<nav aria-label="Primary" class="solid-link">
-  <a href="{{ '/' | url }}" class="enhance">{{ site.title }}</a>
+<nav aria-label="Primary">
+  <a href="{{ '/' | url }}" class="enhance text-200">{{ site.title }}</a>
   <button
     style="float: right;"
     class="shake"
@@ -11,7 +11,7 @@
     🥳
   </button>
   {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
+  <ul class="list-none flex-wrap-space-between flex-direction-responsive">
     {%- for entry in navPages %}
       <li{% if entry.url == page.url %} aria-current="page"{% endif %}>
         <a href="{{ entry.url | url }}">{{ entry.title }}</a>

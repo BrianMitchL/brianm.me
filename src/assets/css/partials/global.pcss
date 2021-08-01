@@ -1,30 +1,31 @@
+/* Large amount of these styles were initially copied over from new.css v1.1.3 https://github.com/xz/new.css/tree/v1.1.3 */
+
 :root {
   color-scheme: light dark;
-  supported-color-schemes: light dark;
 
-  --nc-font-sans: 'InterVariable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-}
-
-:root {
-  /* new.css customizations, and extensions (more variables than it provides) */
-  --nc-tx-1: #27272a; /* Heading text color */
-  --nc-tx-2: #3f3f46; /* Body text color */
-  --nc-tx-3: #52525b; /* Tertiary text color */
-  --nc-bg-1: #ffffff; /* Base background color */
-  --nc-bg-2: #f9fafb; /* Slightly darker background color */
-  --nc-bg-3: #f3f4f6; /* Even slightly darker background color */
-  --nc-lk-1: #2563eb; /* Action color for links and buttons */
-  --nc-lk-2: #1e40af; /* Link and buttons on mouse hover and active */
-  --nc-lk-tx: #ffffff; /* Text color for link buttons, or cases where link color is used as a background */
-  --nc-ac-1: #0ea5e9; /* Accent background color for <mark> and text selection background */
-  --nc-ac-2: #e11d48; /* Accent background color for <em> */
-  --nc-ac-tx: #ffffff; /* Text color when accent is used as a background */
+  --font-sans: 'InterVariable', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New',
+    Courier, monospace;
+  /* colors */
+  --text-1: #27272a; /* Heading text color */
+  --text-2: #3f3f46; /* Body text color */
+  --text-3: #52525b; /* Tertiary text color */
+  --background-1: #ffffff; /* Base background color */
+  --background-2: #f9fafb; /* Slightly darker background color */
+  --background-3: #f3f4f6; /* Even slightly darker background color */
+  --background-4: #e5e7eb; /* keep going darker */
+  --link-1: #2563eb; /* Action color for links and buttons */
+  --link-2: #1e40af; /* Link and buttons on mouse hover and active */
+  --link-text: #ffffff; /* Text color for link buttons, or cases where link color is used as a background */
+  --accent-1: #0ea5e9; /* Accent background color for <mark> and text selection background */
+  --accent-2: #e11d48; /* Accent background color for <em> */
+  --accent-text: #ffffff; /* Text color when accent is used as a background */
   /* custom variables */
   --tag-text: #fff;
-  --tag-bg: #6b21a8; /* tag background */
-  --tag-bg-hover: #9333ea; /* tag hover background */
+  --tag-background: #6b21a8; /* tag background */
+  --tag-background-hover: #9333ea; /* tag hover background */
   --glass-background: rgba(255, 255, 255, 0.45);
   --glass-border: rgba(255, 255, 255, 0.18);
   --shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -46,22 +47,25 @@
   --random-d: 0.30899216;
   --random-e: 0.80922477;
   --random-f: 0.05050946;
+  /* layout */
+  --base-padding: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #e4e4e7;
-    --nc-tx-3: #a1a1aa;
-    --nc-bg-1: #18181b;
-    --nc-bg-2: #27272a;
-    --nc-bg-3: #3f3f46;
-    --nc-lk-1: #60a5fa;
-    --nc-lk-2: #3b82f6;
-    --nc-lk-tx: #171717;
-    --nc-ac-1: #0ea5e9;
-    --nc-ac-2: #fb7185;
-    --nc-ac-tx: #ffffff;
+    --text-1: #ffffff;
+    --text-2: #e4e4e7;
+    --text-3: #a1a1aa;
+    --background-1: #18181b;
+    --background-2: #27272a;
+    --background-3: #3f3f46;
+    --background-4: #52525b;
+    --link-1: #60a5fa;
+    --link-2: #3b82f6;
+    --link-text: #171717;
+    --accent-1: #0ea5e9;
+    --accent-2: #fb7185;
+    --accent-text: #ffffff;
 
     --glass-background: rgba(0, 0, 0, 0.45);
     --glass-border: rgba(192, 192, 192, 0.18);
@@ -78,6 +82,31 @@
   }
 }
 
+@media (max-width: 580px) {
+  :root {
+    --base-padding: 1rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.2s ease-out;
+  /*
+   * only transition on background-color, Safari has performance issues with
+   * continuous transitions when a background is set here, when the background
+   * is set to a gradient
+   */
+  transition-property: background-color, border-color, border-top-color,
+    border-left-color, border-bottom-color, border-right-color;
+}
+
+pre > *,
+code > * {
+  transition-property: color, background, background-color, border-color,
+    border-top-color, border-left-color, border-bottom-color, border-right-color;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
@@ -89,15 +118,54 @@
   }
 }
 
-* {
-  transition: 0.2s ease-out;
-  /*
-   * only transition on background-color, Safari has performance issues with
-   * continuous transitions when a background is set here, when the background
-   * is set to a gradient
-   */
-  transition-property: background-color, border-color, border-top-color,
-    border-left-color, border-bottom-color, border-right-color;
+address,
+area,
+article,
+aside,
+audio,
+blockquote,
+datalist,
+details,
+dl,
+fieldset,
+figure,
+form,
+input,
+iframe,
+img,
+meter,
+nav,
+ol,
+optgroup,
+option,
+output,
+p,
+pre,
+progress,
+ruby,
+section,
+table,
+textarea,
+ul,
+video {
+  /* Margins for most elements */
+  margin-bottom: 1rem;
+}
+
+main {
+  margin-bottom: 4rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+html,
+input,
+select,
+button {
+  /* Set body font family and some finicky elements */
+  font-family: var(--font-sans);
 }
 
 html {
@@ -105,123 +173,30 @@ html {
 }
 
 body {
-  /* reset new.css setting this to 1.03rem https://github.com/xz/new.css/issues/12 */
+  /* Center body in page */
+  margin: 0 auto;
+  max-width: 80ch;
+  /* fallback just in case? */
+  padding: var(--base-padding);
+  padding-top: max(env(safe-area-inset-top, 0), var(--base-padding));
+  padding-bottom: max(env(safe-area-inset-bottom, 0), var(--base-padding));
+  padding-left: max(env(safe-area-inset-left, 0), var(--base-padding));
+  padding-right: max(env(safe-area-inset-right, 0), var(--base-padding));
+  overflow-x: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  background: var(--background-1);
+
+  /* Main body text */
+  color: var(--text-2);
   font-size: 1rem;
+  line-height: 1.5;
 }
 
-main {
-  margin-bottom: 4rem;
-}
-
-pre > *,
-code > * {
-  transition: 0.2s ease-out;
-  transition-property: color, background, background-color, border-color,
-    border-top-color, border-left-color, border-bottom-color, border-right-color;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-em {
-  color: var(--nc-ac-2);
-}
-
-:not(pre) > code,
-:not(pre) > kbd,
-:not(pre) > samp {
-  color: var(--nc-ac-2);
-}
-
-dd {
-  margin-inline-start: 2rem;
-
-  &::before {
-    content: initial;
-  }
-}
-
-a {
-  text-decoration-skip-ink: auto;
-
-  & > img {
-    margin-bottom: 0;
-  }
-
-  & > svg {
-    fill: currentColor;
-    vertical-align: middle;
-    height: 1em;
-    width: 1em;
-  }
-}
-
-img.emoji {
-  margin-bottom: 0;
-  vertical-align: baseline;
-  text-decoration: none;
-}
-
-header > nav {
-  margin-bottom: 0;
-  & a {
-    font-weight: bold;
-  }
-
-  & > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.75rem;
-    @media (max-width: 580px) {
-      flex-direction: column;
-    }
-  }
-}
-
-/* for non-blue links, like in the header/footer */
-.solid-link {
-  & a {
-    color: var(--nc-tx-2);
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  & a:hover {
-    color: var(--nc-tx-1);
-  }
-}
-
-/* brand */
-body > header nav > a {
-  font-size: 2rem;
-}
-
-.heading-link {
-  text-decoration: none;
-  color: inherit;
-
-  &:focus,
-  &:hover,
-  &:active {
-    &::before {
-      content: '🔗';
-      position: relative;
-      float: left;
-      left: max(-2ch, -2rem);
-      height: 0;
-      width: 0;
-    }
-
-    text-decoration: underline;
-    color: inherit;
-  }
+::selection {
+  /* Set background color for selected text */
+  background: var(--accent-1);
+  color: var(--accent-text);
 }
 
 h1,
@@ -230,39 +205,362 @@ h3,
 h4,
 h5,
 h6 {
+  line-height: 1;
+  color: var(--text-1);
+  padding-top: 0.875rem;
+
   & > a {
     color: inherit;
   }
 }
 
-figure {
-  & > * {
-    margin-bottom: 0.5rem;
+h1,
+h2,
+h3 {
+  color: var(--text-1);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--background-2);
+}
+
+h4,
+h5,
+h6 {
+  margin-bottom: 0.3rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.85rem;
+}
+
+h3 {
+  font-size: 1.55rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+a {
+  color: var(--link-1);
+  text-decoration-skip-ink: auto;
+
+  &:hover {
+    color: var(--link-2);
   }
 
-  & figcaption {
-    font-size: 0.875rem;
+  & img {
+    margin-bottom: 0;
+  }
+
+  & svg {
+    fill: currentColor;
+    vertical-align: middle;
+    height: 1em;
+    width: 1em;
   }
 }
 
-.loading {
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 0.25rem solid var(--nc-bg-3);
-  border-top-color: var(--nc-tx-2);
-  border-radius: 50%;
-  position: relative;
-  margin: 0 auto;
-  animation: rotate 1s infinite linear;
+blockquote {
+  padding: 1.5rem;
+  background: var(--background-2);
+  border-left: 5px solid var(--background-3);
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0turn);
+abbr,
+abbr:hover {
+  cursor: help;
+}
+
+blockquote > *:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+header {
+  background: var(--background-2);
+  border-bottom: 1px solid var(--background-3);
+  padding-top: max(env(safe-area-inset-top, 0), var(--base-padding));
+  padding-right: calc(50vw - 50%);
+  padding-left: calc(50vw - 50%);
+  padding-bottom: var(--base-padding);
+
+  /*
+   * This sets the right and left margins to cancel out the body's margins.
+   * It's width is still the same, but the background stretches across
+   * the page's width.
+   */
+
+  margin-top: calc(-1 * max(env(safe-area-inset-top, 0), var(--base-padding)));
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  margin-bottom: var(--base-padding);
+}
+
+header h1,
+header h2,
+header h3 {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+header > *:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+header > *:last-child,
+header nav > *:last-child {
+  margin-bottom: 0;
+}
+
+header nav {
+  margin-bottom: 0;
+
+  & a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-2);
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: var(--text-1);
+    }
   }
-  to {
-    transform: rotate(1turn);
+
+  & ul {
+    font-size: 1.75rem;
+
+    & a {
+      display: block;
+    }
   }
+}
+
+button,
+input[type='submit'],
+input[type='reset'],
+input[type='button'] {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background: var(--link-1);
+  color: var(--link-text);
+  border: 0;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+button[disabled],
+input[type='submit'][disabled],
+input[type='reset'][disabled],
+input[type='button'][disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.button:focus,
+.button:hover,
+button:focus,
+button:hover,
+input[type='submit']:focus,
+input[type='submit']:hover,
+input[type='reset']:focus,
+input[type='reset']:hover,
+input[type='button']:focus,
+input[type='button']:hover {
+  background: var(--link-2);
+}
+
+code,
+pre,
+kbd,
+samp {
+  /* Set the font family for monospaced elements */
+  font-family: var(--font-mono);
+  /* The main preformatted style. This is changed slightly across different cases. */
+  background: var(--background-2);
+  border: 1px solid var(--background-4);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.875rem;
+}
+
+kbd {
+  /* Makes the kbd element look like a keyboard key */
+  border-bottom-width: 3px;
+}
+
+pre {
+  padding: 1rem 1.5rem;
+  max-width: 100%;
+  overflow: auto;
+}
+
+pre code,
+code pre {
+  /* When code or pre are nested in each other, reset the formatting to blend in */
+  background: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+code pre {
+  display: inline;
+}
+
+details {
+  padding: 0.75rem 1rem;
+  background: var(--background-2);
+  border: 1px solid var(--background-3);
+  border-radius: 0.25rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+details[open] {
+  padding-bottom: 0.75rem;
+}
+
+details[open] summary {
+  margin-bottom: 0.375rem;
+}
+
+details[open] > *:last-child {
+  /* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin-inline-start: 2rem;
+}
+
+hr {
+  /* Reset the border of the <hr> separator, then set a better line */
+  border: 0;
+  border-bottom: 1px solid var(--background-3);
+  margin: 1rem auto;
+}
+
+fieldset {
+  margin-top: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--background-3);
+  border-radius: 4px;
+}
+
+legend {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid var(--background-3);
+  text-align: left;
+  padding: 0.5rem;
+}
+
+th {
+  background: var(--background-2);
+}
+
+tr:nth-child(even) {
+  /* stripes! */
+  background: var(--background-2);
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  /* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
+  max-width: 100%;
+}
+
+ol,
+ul {
+  /* Replace the browser default padding */
+  padding-left: 2rem;
+}
+
+li {
+  margin-top: 0.4rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-bottom: 0;
+}
+
+mark {
+  padding: 0.1875rem 0.375rem;
+  background: var(--accent-1);
+  color: var(--accent-text);
+}
+
+textarea,
+select,
+input {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0.5rem;
+  background: var(--background-2);
+  color: var(--text-2);
+  border: 1px solid var(--background-3);
+  border-radius: 0.25rem;
+  box-shadow: none;
+  box-sizing: border-box;
+  /* prevent zooming in mobile browsers */
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+em {
+  color: var(--accent-2);
+}
+
+figure > * {
+  margin-bottom: 0.5rem;
+}
+
+figcaption {
+  font-size: 0.875rem;
 }
 
 body > footer {
@@ -273,6 +571,6 @@ body > footer {
 
   & p {
     margin: 0;
-    color: var(--nc-tx-1);
+    color: var(--text-1);
   }
 }

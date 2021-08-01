@@ -13,8 +13,8 @@
     position: fixed;
     top: 10px;
     left: 10px;
-    color: var(--nc-bg-1);
-    background: var(--nc-tx-1);
+    color: var(--background-1);
+    background: var(--text-1);
     z-index: 1;
     width: auto;
     height: auto;
@@ -40,9 +40,9 @@
   grid-gap: 1.5em;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
-  background: var(--nc-bg-2);
-  border: 1px solid var(--nc-bg-3);
+  padding: var(--base-padding);
+  background: var(--background-2);
+  border: 1px solid var(--background-3);
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   box-shadow: var(--shadow);
@@ -84,11 +84,11 @@ ol.projects {
   }
 
   & .repo {
-    background-color: var(--nc-bg-2);
+    background-color: var(--background-2);
     padding: 1rem;
     border-radius: 0.5rem;
-    border: 1px solid var(--nc-bg-3);
-    color: var(--nc-tx-2);
+    border: 1px solid var(--background-3);
+    color: var(--text-2);
     font-size: 0.875rem;
     display: flex;
     flex-direction: column;
@@ -104,14 +104,14 @@ ol.projects {
 
     & [itemprop='description'] {
       flex: 1 0 auto;
-      color: var(--nc-tx-3);
+      color: var(--text-3);
     }
 
     & .language-color {
       display: inline-block;
       width: 0.875em;
       height: 0.875em;
-      border: 1px solid var(--nc-bg-3);
+      border: 1px solid var(--background-3);
       border-radius: 50%;
       margin-right: 0.25em;
     }
@@ -148,7 +148,7 @@ nav.breadcrumb {
   }
 
   & [aria-current='page'] {
-    color: var(--nc-tx-1);
+    color: var(--text-1);
     font-weight: 700;
     text-decoration: none;
   }
@@ -159,7 +159,7 @@ a.tag {
   align-items: center;
   justify-content: center;
   margin-bottom: 0.25rem;
-  background-color: var(--tag-bg);
+  background-color: var(--tag-background);
   color: var(--tag-text);
   font-size: 0.875em;
   border-radius: 0.25rem;
@@ -168,7 +168,7 @@ a.tag {
   white-space: nowrap;
 
   &:hover {
-    background-color: var(--tag-bg-hover);
+    background-color: var(--tag-background-hover);
     color: var(--tag-text);
   }
 }
@@ -233,4 +233,66 @@ ul.list-glass {
   display: inline-block;
   vertical-align: middle;
   fill: currentColor;
+}
+
+img.emoji {
+  margin-bottom: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.loading {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.25rem solid var(--background-3);
+  border-top-color: var(--text-2);
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.heading-link {
+  text-decoration: none;
+  color: inherit;
+
+  &:focus,
+  &:hover,
+  &:active {
+    &::before {
+      content: '🔗';
+      position: relative;
+      float: left;
+      left: max(-2ch, -2rem);
+      height: 0;
+      width: 0;
+    }
+
+    text-decoration: underline;
+    color: inherit;
+  }
+}
+
+/* for non-blue links, like in the header/footer */
+.solid-link {
+  & a {
+    color: var(--text-2);
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  & a:hover {
+    color: var(--text-1);
+  }
 }

@@ -42,6 +42,14 @@
   align-items: center;
 }
 
+.flex-direction-responsive {
+  flex-direction: row;
+
+  @media (max-width: 580px) {
+    flex-direction: column;
+  }
+}
+
 ul.list-none,
 ul.list-inline {
   list-style: none;
