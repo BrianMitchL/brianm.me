@@ -8,7 +8,11 @@ eleventyNavigation:
 disableSubNav: true
 ---
 
-{% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-{% endfor %}
+<ol class="tags-list">
+  {% for tag in collections.tagList %}
+    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+    <li>
+      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+    </li>
+  {% endfor %}
+</ol>

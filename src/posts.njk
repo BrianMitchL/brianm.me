@@ -26,34 +26,29 @@ eleventyNavigation:
     <h2>
       <a href="{{ post.url }}" class="link-heading">{{ post.data.title }}</a>
     </h2>
-    <p>
+    <div class="article-meta">
       <time
         datetime="{{ post.date | htmlDateString }}"
         itemprop="datePublished"
       >
+        <span class="visually-hidden">Date published</span>
         {{ post.date | readableDate }}
       </time>
-      •
       <span title="Estimated Reading Time">
         {{ post.templateContent | emojiReadTime }}
       </span>
-      •
-      <span class="text-075">
-      {%- for tag in post.data.tags -%}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-          {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-        {%- endif -%}
-      {%- endfor -%}
-      </span>
-    </p>
-    <p>
-      {%- if post.data.excerpt -%}
-        {{ post.data.excerpt | safe }}
-      {%- else -%}
-        {% excerpt post %}
-      {% endif %}
-    </p>
+      <ul class="tags-list list-inline text-075" aria-label="Tagged">
+        {%- for tag in post.data.tags -%}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            <li>
+              <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+    {% excerpt post %}
   </article>
   {% if not loop.last %}
   <hr />

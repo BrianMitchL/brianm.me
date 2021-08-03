@@ -40,12 +40,16 @@ type: post
     <footer>
       <aside aria-labelledby="tagged-heading">
         <h2 id="tagged-heading">Tagged</h2>
-        {% for tag in tags %}
-          {%- if collections.tagList.indexOf(tag) != -1 -%}
-            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-            <a href="{{ tagUrl | url }}" rel="tag" class="tag">{{ tag }}</a>
-          {%- endif -%}
-        {% endfor %}
+        <ul class="tags-list">
+          {% for tag in tags %}
+            {%- if collections.tagList.indexOf(tag) != -1 -%}
+              {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+              <li>
+                <a href="{{ tagUrl | url }}" rel="tag" class="tag">{{ tag }}</a>
+              </li>
+            {%- endif -%}
+          {% endfor %}
+        </ul>
       </aside>
       <hr />
       {% include "author.njk" %}

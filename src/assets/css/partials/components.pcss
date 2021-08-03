@@ -117,7 +117,12 @@ ol.projects {
     }
   }
 }
-
+.article-meta > * + *::before {
+  content: '•';
+  font-size: 1rem;
+  padding-inline-start: 0.25rem;
+  padding-inline-end: 0.25rem;
+}
 .article-teaser {
   text-align: center;
 
@@ -155,21 +160,35 @@ nav.breadcrumb {
 }
 
 a.tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.25rem;
+  display: inline-block;
   background-color: var(--tag-background);
   color: var(--tag-text);
   font-size: 0.875em;
   border-radius: 0.25rem;
   padding: 0.25em 0.75em;
   text-decoration: none;
-  white-space: nowrap;
 
   &:hover {
     background-color: var(--tag-background-hover);
     color: var(--tag-text);
+  }
+}
+
+ol.tags-list,
+ul.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  list-style: none;
+  padding: 0;
+
+  & li {
+    margin: 0;
+  }
+
+  &.list-inline {
+    display: inline-flex;
+    padding-inline-start: 0.25em;
   }
 }
 
