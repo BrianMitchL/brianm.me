@@ -40,13 +40,6 @@
     #f0abfc,
     #7dd3fc
   );
-  /* other variables */
-  --random-a: 0.15258505;
-  --random-b: 0.33595378;
-  --random-c: 0.21573404;
-  --random-d: 0.30899216;
-  --random-e: 0.80922477;
-  --random-f: 0.05050946;
   /* layout */
   --base-padding: 2rem;
 }
@@ -568,6 +561,13 @@ body > footer {
   border-radius: 0.5rem 8rem;
   background: var(--enhance-background);
   box-shadow: var(--shadow);
+
+  & ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
   & p {
     margin: 0;

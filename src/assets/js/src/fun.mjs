@@ -27,9 +27,6 @@ export default function fun(e) {
         el.innerHTML =
           '<img height="20" width="20" style="margin-bottom:0;" src="/assets/images/parrot.gif" alt="party parrot" />';
       });
-    if (typeof randomizeCssProperties === 'function') {
-      setInterval(randomizeCssProperties, 1000);
-    }
     funEnabled = true;
   }
 
