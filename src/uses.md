@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-04-24
+modified: 2021-08-13
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -88,7 +88,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Overcast](https://apps.apple.com/us/app/overcast-podcast-player/id888422857) {% emoji "🌟", "star" %}
 - [Plex](https://apps.apple.com/us/app/plex/id383457673)
 - [Simple Reader for Hacker News](https://apps.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
-- Trakt iOS beta {% emoji "🌟", "star" %}
+- [Trakt](https://apps.apple.com/us/app/trakt/id1514873602) {% emoji "🌟", "star" %}
 
 ### Games
 
@@ -164,7 +164,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 ## Home Office
 
 <figure>
-  <img src="{{ '/assets/images/desk-2020-11-03.jpg' | url }}" alt="My home desk" loading="lazy">
+  <img src="{{ '/assets/images/desk-2021-08-13.jpg' | url }}" alt="My home desk" loading="lazy">
   <figcaption>My home desk</figcaption>
 </figure>
 
@@ -179,13 +179,12 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
   - Apple Broadcom BCM94360CD – 802.11 a/b/g/n/ac with Bluetooth 4.0
 - [Bamboo Stand Desk](https://www.standdesk.co/bamboo-standing-desk/)
 - [LG UltraFine 5K 27MD5KA](https://www.lg.com/us/monitors/lg-27MD5KA-B-5k-uhd-led-monitor) (newer version linked)
-- [Macally Aluminum Laptop Stand](https://us.macally.com/products/astand)
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
 - [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
 - [Apple Magic Trackpad 2](https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver)
 - [Focusrite Scarlett 2i2](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2) audio interface
 - [M-Audio BX5D3](https://www.m-audio.com/bx5d3) 5" powered studio reference monitors
-- [Stageek Aluminum Desktop Speaker Stands](https://www.amazon.com/dp/B07SHCLR7T)
+- [Gator Frameworks Clamp-On Studio Monitor Stand](https://gatorframeworks.com/products/frameworks-clamp-on-studio-monitor-stand-gfw-spkstmndskcmp/)
 - [Beyerdynamic DT 770 PRO 80 ohms](https://north-america.beyerdynamic.com/dt-770-pro.html) reference headphones
 - [Blue compass](https://www.bluemic.com/en-us/products/compass/) microphone boom arm
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
@@ -193,6 +192,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Mophie wireless charging base](https://www.zagg.com/en_us/wireless-charging-base)
 - [Acoustic Panels](https://smile.amazon.com/gp/product/B07VH6KDY8/)
 - [Steelcase Gesture](https://www.steelcase.com/products/office-chairs/gesture/) chair
+- [Lego Bonsai Tree](https://www.lego.com/en-us/product/bonsai-tree-10281)
 
 ## Servers
 
