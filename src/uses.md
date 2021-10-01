@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-08-13
+modified: 2021-09-30
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -234,5 +234,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 ## Transportation
 
-- 2013 Toyota Prius c Two
+Car-free since September 13, 2021!
+
 - 2017 Jamis Renegade Expat bicycle
+- 2011 Trek 3500 bicycle for winter riding
