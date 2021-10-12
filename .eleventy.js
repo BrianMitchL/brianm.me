@@ -204,6 +204,7 @@ module.exports = function (eleventyConfig) {
     .use(markdownItAnchor, {
       permalink: markdownItAnchor.permalink.headerLink({
         class: 'heading-link',
+        safariReaderFix: true,
       }),
       slugify: uslugify,
     })
