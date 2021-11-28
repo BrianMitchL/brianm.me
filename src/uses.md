@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-09-30
+modified: 2021-11-27
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -107,10 +107,11 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 ### Music
 
-- Apple Music
-- [Marvis Pro](https://apps.apple.com/mt/app/marvis-pro/id1447768809) {% emoji "🌟", "star" %}
+- [Apple Music](https://www.apple.com/apple-music/)
+- [Marvis Pro](https://apps.apple.com/us/app/marvis-pro/id1447768809) {% emoji "🌟", "star" %}
 - [MusicHarbor](https://apps.apple.com/us/app/musicharbor-track-new-music/id1440405750) {% emoji "🌟", "star" %}
 - [Shazam](https://apps.apple.com/us/app/shazam/id284993459)
+- [Spotify](https://apps.apple.com/us/app/spotify-new-music-and-podcasts/id324684580)
 
 ### Photo/Video
 
@@ -127,7 +128,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 - [1Blocker X](https://apps.apple.com/us/app/1blocker-x/id1365531024)
 - [1Password](https://apps.apple.com/us/app/1password-password-manager/id568903335) {% emoji "🌟", "star" %}
-- Apple Maps
+- [Apple Maps](https://www.apple.com/maps/)
 - [Bobby](https://apps.apple.com/us/app/bobby-track-subscriptions/id1059152023)
 - [CARROT Weather](https://apps.apple.com/us/app/carrot-weather/id961390574) {% emoji "🌟", "star" %}
 - [Calcbot](https://apps.apple.com/us/app/calcbot-2/id376694347)
@@ -216,7 +217,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 - BriPhone, [iPhone 12 Pro Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-12-pro-max-united-states-a2342-specs.html)
 - BriPad Air, [iPad Air (4th Gen)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-air-4th-gen-a2316-wifi-only-specs.html)
-- Brapple Watch 5, [Apple Watch Series 5 (Aluminum, GPS, 44 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-5-aluminum-gps-44mm-a2093.html)
+- Brapple Watch 7, [Apple Watch Series 7 (Aluminum, GPS, 45 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-7-aluminum-gps-45mm-a2474.html)
 - [AirPods Pro](https://www.apple.com/airpods-pro/)
 - [Anker PowerCore 13000](https://www.anker.com/products/variant/PowerCore-13000mAh/A1215011) power bank
 - [Ultimate Ears BOOM 2](https://www.ultimateears.com/en-us/wireless-speakers/boom-2.html) speaker
