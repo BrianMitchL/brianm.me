@@ -2,7 +2,7 @@
 layout: page
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-11-27
+modified: 2021-12-05
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -169,7 +169,12 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
   <figcaption>My home desk</figcaption>
 </figure>
 
-- Skylab, [MacBook Pro (13-inch, 2018, Four Thunderbolt 3 Ports)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-core-i7-2.7-13-mid-2018-true-tone-display-touch-bar-specs.html)
+- ISS, [MacBook Pro (14-inch, 2021)](https://everymac.com/systems/apple/macbook_pro/specs/macbook-pro-m1-pro-10-core-cpu-16-core-gpu-14-2021-specs.html)
+  - Apple M1 Pro
+  - 10-Core CPU
+  - 16-Core GPU
+  - 32 GB Unified Memory
+  - 1 TB SSD Storage
 - Terra, ~~Hackintosh (Late 2013)~~ (RIP, no longer running macOS, see the
   [blog post]({{ '/posts/a-hackintosh-reflection/' | url }}))
   - Windows 10 Pro
