@@ -9,7 +9,10 @@ disableSubNav: true
     src="{{ site.author.image }}"
     alt="Profile photo of Brian Mitchell"
   />
-  <div>
+  <div style="position: relative;">
+    <div id="morph-container">
+      {% include "morph-blobs.svg" %}
+    </div>
     <h1>
       Hi, I'm Brian Mitchell!
       <span class="emoji wave" role="img" aria-label="wave emoji">👋🏻</span>
@@ -71,3 +74,27 @@ disableSubNav: true
   defer
   src="{{ '/assets/js/lastfm-artists.js' | url | hashify }}"
 ></script>
+
+<script>
+  {%- set js -%}
+  (function () {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    if (mediaQuery.matches) {
+      const el = document.getElementById("morph-blobs");
+      el.pauseAnimations();
+    }
+
+    const handleMedia = (e) => {
+      const el = document.getElementById("morph-blobs");
+      if (e.matches) {
+        el.pauseAnimations();
+      } else {
+        el.unpauseAnimations();
+      }
+    };
+    mediaQuery.addEventListener("change", handleMedia);
+  })();
+  {%- endset -%}
+  {{ js | jsmin | safe }}
+</script>

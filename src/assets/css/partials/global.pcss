@@ -31,14 +31,28 @@
   --shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   /* 500: orange, rose, fuchsia, light blue */
-  --enhance-text: linear-gradient(100deg, #f97316, #f43f5e, #d946ef, #0ea5e9);
+  --enhance-color-1: #f97316;
+  --enhance-color-2: #f43f5e;
+  --enhance-color-3: #d946ef;
+  --enhance-color-4: #0ea5e9;
   /* 300: orange, rose, fuchsia, light blue */
+  --enhance-bg-color-1: #fdba74;
+  --enhance-bg-color-2: #fda4af;
+  --enhance-bg-color-3: #f0abfc;
+  --enhance-bg-color-4: #7dd3fc;
+  --enhance-text: linear-gradient(
+    100deg,
+    var(--enhance-color-1),
+    var(--enhance-color-2),
+    var(--enhance-color-3),
+    var(--enhance-color-4)
+  );
   --enhance-background: radial-gradient(
     circle at top left,
-    #fdba74,
-    #fda4af,
-    #f0abfc,
-    #7dd3fc
+    var(--enhance-bg-color-1),
+    var(--enhance-bg-color-2),
+    var(--enhance-bg-color-3),
+    var(--enhance-bg-color-4)
   );
   /* layout */
   --base-padding: 2rem;
@@ -63,15 +77,15 @@
     --glass-background: rgba(0, 0, 0, 0.45);
     --glass-border: rgba(192, 192, 192, 0.18);
     /* 600: orange, rose, purple, light blue */
-    --enhance-text: linear-gradient(100deg, #ea580c, #e11d48, #c026d3, #0284c7);
+    --enhance-color-1: #ea580c;
+    --enhance-color-2: #e11d48;
+    --enhance-color-3: #c026d3;
+    --enhance-color-4: #0284c7;
     /* 800: orange, rose, fuchsia, light blue */
-    --enhance-background: radial-gradient(
-      circle at top left,
-      #9a3412,
-      #9f1239,
-      #86198f,
-      #075985
-    );
+    --enhance-bg-color-1: #9a3412;
+    --enhance-bg-color-2: #9f1239;
+    --enhance-bg-color-3: #86198f;
+    --enhance-bg-color-4: #075985;
   }
 }
 

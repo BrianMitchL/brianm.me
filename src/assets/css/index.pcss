@@ -25,6 +25,44 @@
   }
 }
 
+#morph-container {
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  & svg {
+    height: 100%;
+    opacity: calc(1 / 3);
+
+    & path {
+      mix-blend-mode: screen;
+    }
+
+    & path:nth-child(1) {
+      fill: var(--enhance-bg-color-1);
+    }
+
+    & path:nth-child(2) {
+      fill: var(--enhance-bg-color-3);
+    }
+
+    & path:nth-child(3) {
+      fill: var(--enhance-bg-color-4);
+    }
+  }
+
+  @media (max-width: 580px) {
+    & svg {
+      height: 100vmin;
+      width: 100vmin;
+      margin: 0;
+    }
+  }
+}
+
 span.wave {
   animation-name: wave-animation;
   animation-duration: 5s;
