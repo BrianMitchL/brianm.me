@@ -25,7 +25,7 @@
   /* custom variables */
   --tag-text: #fff;
   --tag-background: #6b21a8; /* tag background */
-  --tag-background-hover: #9333ea; /* tag hover background */
+  --tag-background-hover: #581C87; /* tag hover background */
   --glass-background: rgba(255, 255, 255, 0.45);
   --glass-border: rgba(255, 255, 255, 0.18);
   --shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -58,6 +58,25 @@
   --base-padding: 2rem;
 }
 
+@supports (background-color: lch(55% 102 360)) {
+  :root {
+    --link-1: lch(45% 91 285);
+    --link-2: lch(15% 91 285);
+    --accent-1: lch(63.352% 57 248.571);
+    --accent-2: lch(49.5% 93 23);
+    --tag-background: lch(31% 101 310.61);
+    --tag-background-hover: lch(20% 101 310.61);
+    --enhance-color-1: lch(64.496% 118 54.285);
+    --enhance-color-2: lch(56.456% 101 21.088);
+    --enhance-color-3: lch(57.135% 114 321.873);
+    --enhance-color-4: lch(63.352% 59 248.571);
+    --enhance-bg-color-1: lch(80.802% 67 66.71);
+    --enhance-bg-color-2: lch(76.719% 47 14.118);
+    --enhance-bg-color-3: lch(78.742% 53 319.946);
+    --enhance-bg-color-4: lch(80.271% 39 236.772);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text-1: #ffffff;
@@ -86,6 +105,21 @@
     --enhance-bg-color-2: #9f1239;
     --enhance-bg-color-3: #86198f;
     --enhance-bg-color-4: #075985;
+
+    @supports (background-color: lch(55% 102 360)) {
+      --link-1: lch(66% 56 266.641);
+      --link-2: lch(54.619% 76 277.587);
+      --accent-1: lch(63.352% 58 248.571);
+      --accent-2: lch(65.533% 74 16.716);
+      --enhance-color-1: lch(57.39% 99 49.639);
+      --enhance-color-2: lch(49.528% 93 23.048);
+      --enhance-color-3: lch(48.343% 110 322.66);
+      --enhance-color-4: lch(51.857% 54 255.155);
+      --enhance-bg-color-1: lch(37% 79 51);
+      --enhance-bg-color-2: lch(34.794% 70 18.048);
+      --enhance-bg-color-3: lch(33.278% 83 323.941);
+      --enhance-bg-color-4: lch(35.263% 40 253.187);
+    }
   }
 }
 
