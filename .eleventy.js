@@ -19,6 +19,7 @@ const uslug = require('uslug');
 const { minify } = require('terser');
 const htmlmin = require('html-minifier');
 const octicons = require('@primer/octicons');
+const pluginImageBase64 = require('./lib/imageBase64');
 
 const siteData = require('./src/_data/site.js');
 
@@ -94,6 +95,9 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginSchema);
   eleventyConfig.addPlugin(pluginExcerpt);
+  eleventyConfig.addPlugin(pluginImageBase64, {
+    input: path.resolve(__dirname, dir.input),
+  });
 
   eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
   eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
