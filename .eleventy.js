@@ -99,9 +99,6 @@ module.exports = function (eleventyConfig) {
     input: path.resolve(__dirname, dir.input),
   });
 
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
-  eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
-
   eleventyConfig.addShortcode('octicon', function (icon) {
     return octicons[icon].toSVG();
   });

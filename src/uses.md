@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: "layouts/page.njk"
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
 modified: 2021-12-05
