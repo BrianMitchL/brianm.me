@@ -14,7 +14,7 @@ async function render(data) {
 
   const asset = new AssetCache(`svgAsPng--${hash.digest('hex')}`);
 
-  if (asset.isCacheValid('30d')) {
+  if (asset.isCacheValid('1y')) {
     return asset.getCachedValue();
   }
 
