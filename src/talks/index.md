@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: "layouts/page.njk"
 title: Talks
 description: Resources from presentations
 redirect_from: /slides

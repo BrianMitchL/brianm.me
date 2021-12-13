@@ -19,6 +19,7 @@ const uslug = require('uslug');
 const { minify } = require('terser');
 const htmlmin = require('html-minifier');
 const octicons = require('@primer/octicons');
+const pluginImageBase64 = require('./lib/imageBase64');
 
 const siteData = require('./src/_data/site.js');
 
@@ -94,9 +95,9 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginSchema);
   eleventyConfig.addPlugin(pluginExcerpt);
-
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
-  eleventyConfig.addLayoutAlias('page', 'layouts/page.njk');
+  eleventyConfig.addPlugin(pluginImageBase64, {
+    input: path.resolve(__dirname, dir.input),
+  });
 
   eleventyConfig.addShortcode('octicon', function (icon) {
     return octicons[icon].toSVG();
@@ -128,7 +129,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-      'MMM dd, yyyy'
+      'MMM d, yyyy'
     );
   });
 
