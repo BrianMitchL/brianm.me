@@ -21,7 +21,7 @@ class OpenGraphImage {
     let line = '';
     for (let i = 0; i < words.length; i += 1) {
       const possibleLine = (line + ' ' + words[i]).trim();
-      if (possibleLine.length > 19) {
+      if (possibleLine.length > 18) {
         yield line;
         line = words[i];
       } else {
@@ -35,7 +35,11 @@ class OpenGraphImage {
     let nameDate = data.site.author.name;
 
     if (data.item.data.tags?.includes('post')) {
-      nameDate += ` — ${this.readableDate(data.item.date)}`;
+      nameDate += ` – ${data.item.date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      })}`;
     }
 
     let splitTitle = [];
@@ -50,10 +54,9 @@ class OpenGraphImage {
 <svg viewBox="0 0 600 315" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style>
+      {% include "inter-medium-500-base64.css" %}
       text {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans','Helvetica Neue',
-          sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        font-family: "Inter Medium";
         font-weight: 500;
       }
     </style>
