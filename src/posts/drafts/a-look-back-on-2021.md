@@ -8,7 +8,7 @@ tags:
 
 Hello friend, family member, or stranger!
 This post is kind of like a holiday card, a place to document what I've been up to for myself, and a place to write.
-My life had a lot going on his year, let's take a look, shall we?
+My life had a lot going on his year; let's take a look, shall we?
 
 For the fifth full year, I recorded a compilation of the year with [1 Second Every Day](https://1se.co). Reading about my year before watching might help with some context, but at the same time, a video is fun and could also provide visual aid for the rest of the post, so you do you {% emoji "🤷🏻‍♂️", "man shrugging" %}
 
@@ -25,7 +25,7 @@ This year can really be broken up into two parts, before and after I got the COV
 
 ## Pre-COVID-19 Vaccine
 
-I have a hard time remembering what I did during this time, other than stress about changing jobs. All of my socialization was virtual or outdoors. I went skiing with friends a few times at Afton Alps and Wild Mountain. Those days almost felt normal, it was a huge sense of relief to "get back to something normal" and go skiing. I celebrated my 27th birthday on a FaceTime call with my parents in February. I went on many walks around Lake of the Isles, sometimes with a friend. February was freezing in Minneapolis, so I used my indoor bike trainer quite a few times, and had some very chilly walks.
+I have a hard time remembering what I did during this time, other than stress about changing jobs. All of my socialization was virtual or outdoors. I went skiing with friends a few times at Afton Alps and Wild Mountain. Those days almost felt normal; it was a huge sense of relief to "get back to something normal" and go skiing. I celebrated my 27th birthday on a FaceTime call with my parents in February. I went on many walks around Lake of the Isles, sometimes with a friend. February was freezing in Minneapolis, so I used my indoor bike trainer quite a few times, and had some very chilly walks.
 
 ## Post-COVID-19 Vaccine
 
@@ -33,7 +33,7 @@ This is where life got a lot more fun!
 
 Exactly three weeks after my second Pfizer dose of the vaccine (and on Mother's Day, May 9th), I had my parents and grandparents over for coffee. I had lived in my apartment for 10 months, and they hadn't seen it! It was bizarre having guests in my apartment, but so wonderful to see them and give them all hugs. I took social distancing maybe a little too seriously and hadn't as much as even hugged anyone since mid-March 2020.
 
-I've since gotten a booster shot (3x Pfizer gang {% emoji "🤘", "sign of the horns" %})! I've taken several many for COVID-19 this year, and thankfully have remained healthy.
+I've since gotten a booster shot (3x Pfizer gang {% emoji "🤘", "sign of the horns" %})! I've taken several tests for COVID-19 this year, and thankfully have remained healthy.
 
 ## Traveling
 
@@ -66,7 +66,7 @@ Keeping it local, I tried several new (to me) restaurants here in Minneapolis! I
 
 ## Socialization
 
-I feel like I saw so many people and did so many things this year! A lot was similar to 2020: outdoor events with small groups, not eating indoors, etc. However, in the early summer when I was vaccinated and COVID-19 rates were low, I was busy seeing people and doing some indoor activities like bowling, trivia at a brewery, eating indoors, larger crows at events, etc. A lot of that was short-lived, but it was nice for a month!
+I feel like I saw so many people and did so many things this year! A lot was similar to 2020: outdoor events with small groups, not eating indoors, etc. However, in the early summer when I was vaccinated and COVID-19 rates were low, I was busy seeing people and doing some indoor activities like bowling, trivia at a brewery, eating indoors, larger crowds at events, etc. A lot of that was short-lived, but it was nice for a month!
 
 I met a great group of urbanists this Spring and Summer. It's been fun to meet new people who live nearby and bike around the city with them! I've learned so much from them about what our cities can be (and are in progress of becoming) and the work we need to do to make them better. I got to know several candidates who ran for office in Minneapolis this fall, and followed this election more closely than any before. This new community definitely helped motivate me to sell my car…
 
@@ -124,7 +124,7 @@ I still primarily use TypeScript and React for building frontend applications. I
 
 I started the year off by completely [overhauling and rewriting](https://github.com/BrianMitchL/BrianMitchL.github.io/pull/6) how my website (the very one you're reading now) is built. I moved from a Jekyll site built by GitHub Pages, to an [Eleventy](https://www.11ty.dev) site, built in a GitHub Action. Since then, I've made several improvements including some design updates, rewriting my [projects]({{ "/projects/" | url | absoluteUrl(site.url) }}) page, and [generating social sharing images](https://github.com/BrianMitchL/BrianMitchL.github.io/pull/17) for each page on the site (thanks for the inspiration and review [Zac](https://twitter.com/zapplebee)!).
 
-For the third year, I continued to help run the [JavaScriptMN](https://javascriptmn.com) meetup as a board member. We had ten virtual events this year, it was great to see some cool presentation and stay connected with everyone!
+For the third year, I continued to help run the [JavaScriptMN](https://javascriptmn.com) meetup as a board member. We had ten virtual events this year, it was great to see some cool presentations and stay connected with everyone!
 
 As part of a work hackathon at C.H. Robinson, but then continued after, I helped write a [GitHub Action](https://github.com/marketplace/actions/pr-chatter) to add GIFs to PR reviews. It has some basic sentiment analysis to choose from positive or negative words in a PR review comment, and leaves a relevant GIF based on it; it's great for a laugh or meme in the middle of work.
 
