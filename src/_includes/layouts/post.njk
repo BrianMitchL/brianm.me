@@ -43,7 +43,7 @@ type: post
         <ul class="tags-list">
           {% for tag in tags %}
             {%- if collections.tagList.indexOf(tag) != -1 -%}
-              {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+              {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
               <li>
                 <a href="{{ tagUrl | url }}" rel="tag" class="tag">{{ tag }}</a>
               </li>

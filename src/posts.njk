@@ -40,7 +40,7 @@ eleventyNavigation:
       <ul class="tags-list list-inline text-075" aria-label="Tagged">
         {%- for tag in post.data.tags -%}
           {%- if collections.tagList.indexOf(tag) != -1 -%}
-            {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+            {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
             <li>
               <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
             </li>

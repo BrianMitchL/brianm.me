@@ -11,7 +11,7 @@ eleventyNavigation:
 
 This serves as a living document of software, gear, and other things that I typically use. Last updated <time datetime="{{ modified | htmlDateString }}" itemprop="dateModified">{{ modified | readableDate }}</time>.
 
-{% include toc.md %}
+{% include "toc.md" %}
 
 ## Editor & Terminal
 

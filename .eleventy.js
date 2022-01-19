@@ -15,7 +15,7 @@ const markdownItDeflist = require('markdown-it-deflist');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownItTOCDoneRight = require('markdown-it-toc-done-right');
-const uslug = require('uslug');
+const slugify = require('@sindresorhus/slugify');
 const { minify } = require('terser');
 const htmlmin = require('html-minifier');
 const octicons = require('@primer/octicons');
@@ -71,11 +71,7 @@ async function loadIcon(icon) {
   return data;
 }
 
-function uslugify(str) {
-  return uslug(str);
-}
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -207,12 +203,12 @@ module.exports = function (eleventyConfig) {
         class: 'heading-link',
         safariReaderFix: true,
       }),
-      slugify: uslugify,
+      slugify: slugify,
     })
     .use(markdownItFootnote)
     .use(markdownItTOCDoneRight, {
       containerClass: 'toc-container',
-      slugify: uslugify,
+      slugify: slugify,
     });
   eleventyConfig.setLibrary('md', markdownLibrary);
 
@@ -229,8 +225,6 @@ module.exports = function (eleventyConfig) {
         });
       },
     },
-    ui: false,
-    ghostMode: false,
   });
 
   eleventyConfig.addTransform('html-minifier', (value, outputPath) => {

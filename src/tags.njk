@@ -10,7 +10,7 @@ disableSubNav: true
 
 <ol class="tags-list">
   {% for tag in collections.tagList %}
-    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
     <li>
       <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
     </li>
