@@ -1,4 +1,5 @@
-const { DateTime } = require('luxon');
+const { DateTime, Settings } = require('luxon');
+Settings.defaultZone = 'utc';
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
@@ -112,26 +113,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('hashify', hashify);
 
-  eleventyConfig.addFilter('toUTCDate', (dateObj) => {
-    // add back the offset from UTC to the date
-    // https://www.11ty.dev/docs/dates/#dates-off-by-one-day
-    // Eleventy parses the date as UTC, which is different than the date
-    // front matter property, where it's created with a local timezone
-    const zoneName = DateTime.local().zoneName;
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' })
-      .setZone(zoneName, { keepLocalTime: true })
-      .toJSDate();
-  });
-
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-      'MMM d, yyyy'
-    );
+    return DateTime.fromJSDate(dateObj).toFormat('MMM d, yyyy');
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
   });
 
   // Get the first `n` elements of a collection.

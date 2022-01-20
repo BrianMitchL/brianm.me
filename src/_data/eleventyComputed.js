@@ -1,5 +1,3 @@
-const { DateTime } = require('luxon');
-
 module.exports = {
   meta: {
     site: {
@@ -45,19 +43,6 @@ module.exports = {
       name: (data) => data.site.author.name,
     },
     published: (data) => data.page.date.toISOString(),
-    modified: (data) => {
-      // dependencies
-      data.modified;
-      data.page.date;
-
-      if (data.modified) {
-        const zoneName = DateTime.local().zoneName;
-        return DateTime.fromJSDate(data.modified, { zone: 'utc' })
-          .setZone(zoneName, { keepLocalTime: true })
-          .toJSDate()
-          .toISOString();
-      }
-      return data.page.date.toISOString();
-    },
+    modified: (data) => data.modified?.toISOString() ?? null,
   },
 };

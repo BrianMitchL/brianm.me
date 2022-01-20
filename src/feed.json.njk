@@ -29,7 +29,7 @@ eleventyExcludeFromCollections: true
       "url": "{{ absolutePostUrl }}",
       "title": "{{ post.data.title }}",
       "date_published": "{{ post.date | dateToRfc3339 }}",
-      "date_modified": "{{ post.data.modified | toUTCDate | dateToRfc3339 }}",
+      {% if post.data.modified %}"date_modified": "{{ post.data.modified | dateToRfc3339 }}",{%  endif %}
       "author": {
         "name": "{{ site.author.name }}",
         "url": "{{ site.author.web }}",
