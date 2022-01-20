@@ -8,7 +8,7 @@ disableSubNav: true
 
 A single page for showcasing and testing the common styles and layouts for pages and posts on the site.
 
-{% include toc.md %}
+{% include "toc.md" %}
 
 ## Headings (this is an h2)
 

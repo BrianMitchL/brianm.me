@@ -1,7 +1,7 @@
 ---
-title: React Router Search Parameters with URLSearchParams
-description: A solution for using URLSearchParams with search parameters from React Router.
-modified: 2021-07-31
+title: React Router v5 Search Parameters with URLSearchParams
+description: A solution for using URLSearchParams with search parameters from React Router v5.
+modified: 2021-01-19
 image: https://cdn.brianm.me/images/posts/react-router-search-params/useSearchParams-hook.png
 imageAlt: Screenshot of useSearchParams hook
 tags:

@@ -1,4 +1,5 @@
-const { DateTime } = require('luxon');
+const { DateTime, Settings } = require('luxon');
+Settings.defaultZone = 'utc';
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
@@ -15,7 +16,7 @@ const markdownItDeflist = require('markdown-it-deflist');
 const markdownItAnchor = require('markdown-it-anchor');
 const markdownItFootnote = require('markdown-it-footnote');
 const markdownItTOCDoneRight = require('markdown-it-toc-done-right');
-const uslug = require('uslug');
+const slugify = require('@sindresorhus/slugify');
 const { minify } = require('terser');
 const htmlmin = require('html-minifier');
 const octicons = require('@primer/octicons');
@@ -71,11 +72,7 @@ async function loadIcon(icon) {
   return data;
 }
 
-function uslugify(str) {
-  return uslug(str);
-}
 module.exports = function (eleventyConfig) {
-  eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
@@ -116,26 +113,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('hashify', hashify);
 
-  eleventyConfig.addFilter('toUTCDate', (dateObj) => {
-    // add back the offset from UTC to the date
-    // https://www.11ty.dev/docs/dates/#dates-off-by-one-day
-    // Eleventy parses the date as UTC, which is different than the date
-    // front matter property, where it's created with a local timezone
-    const zoneName = DateTime.local().zoneName;
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' })
-      .setZone(zoneName, { keepLocalTime: true })
-      .toJSDate();
-  });
-
   eleventyConfig.addFilter('readableDate', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat(
-      'MMM d, yyyy'
-    );
+    return DateTime.fromJSDate(dateObj).toFormat('MMM d, yyyy');
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+    return DateTime.fromJSDate(dateObj).toFormat('yyyy-LL-dd');
   });
 
   // Get the first `n` elements of a collection.
@@ -207,12 +191,12 @@ module.exports = function (eleventyConfig) {
         class: 'heading-link',
         safariReaderFix: true,
       }),
-      slugify: uslugify,
+      slugify: slugify,
     })
     .use(markdownItFootnote)
     .use(markdownItTOCDoneRight, {
       containerClass: 'toc-container',
-      slugify: uslugify,
+      slugify: slugify,
     });
   eleventyConfig.setLibrary('md', markdownLibrary);
 
@@ -229,8 +213,6 @@ module.exports = function (eleventyConfig) {
         });
       },
     },
-    ui: false,
-    ghostMode: false,
   });
 
   eleventyConfig.addTransform('html-minifier', (value, outputPath) => {

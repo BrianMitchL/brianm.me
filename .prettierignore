@@ -2,3 +2,4 @@ _site
 node_modules
 src/assets/js/*.*
 src/assets/css/*.css
+.cache

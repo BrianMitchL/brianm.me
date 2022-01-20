@@ -3,7 +3,6 @@ layout: layouts/default.njk
 ogtype: article
 type: post
 ---
-
 <header>
   <a href="#maincontent" class="skip-link">Skip to content</a>
   {% include "nav.njk" %}
@@ -20,13 +19,13 @@ type: post
         itemprop="datePublished"
       >{{ page.date | readableDate }}</time>
       {%- set pub = page.date | htmlDateString -%}
-      {%- set mod = modified | toUTCDate | htmlDateString -%}
+      {%- set mod = modified | htmlDateString -%}
       {%- if pub != mod -%}
         &nbsp;•&nbsp;Updated on
         <time
-          datetime="{{ modified | toUTCDate | htmlDateString }}"
+          datetime="{{ modified | htmlDateString }}"
           itemprop="dateModified"
-        >{{ modified | toUTCDate | readableDate }}</time>
+        >{{ modified | readableDate }}</time>
       {%- endif -%}
       &nbsp;•&nbsp;<span title="Estimated Reading Time">{{ content | emojiReadTime }}</span>
       </span>
@@ -43,7 +42,7 @@ type: post
         <ul class="tags-list">
           {% for tag in tags %}
             {%- if collections.tagList.indexOf(tag) != -1 -%}
-              {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+              {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
               <li>
                 <a href="{{ tagUrl | url }}" rel="tag" class="tag">{{ tag }}</a>
               </li>
