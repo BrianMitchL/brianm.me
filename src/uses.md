@@ -2,7 +2,7 @@
 layout: "layouts/page.njk"
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2021-12-05
+modified: 2022-02-13
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -175,16 +175,16 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
   - 16-Core GPU
   - 32 GB Unified Memory
   - 1 TB SSD Storage
-- Terra, ~~Hackintosh (Late 2013)~~ (RIP, no longer running macOS, see the
-  [blog post]({{ '/posts/a-hackintosh-reflection/' | url }}))
-  - Windows 10 Pro
-  - Intel i7-4770K @ 3.50GHz
-  - 16 GB 1600 MHz DDR3 RAM
-  - NVIDIA GeForce GTX 760
-  - Gigabyte GA-Z97N-WIFI motherboard
-  - Apple Broadcom BCM94360CD – 802.11 a/b/g/n/ac with Bluetooth 4.0
+- Obelisk
+  - Windows 10 Home
+  - Intel i7-10700KF @ 3.80GHz
+  - 32 GB 3200 MHz DDR4 RAM
+  - NVIDIA GeForce RTX 3060 Ti
+  - Gigabyte Z590i AORUS ULTRA motherboard
+  - NZXT H1 (2019) case, white
 - [Bamboo Stand Desk](https://www.standdesk.co/bamboo-standing-desk/)
 - [LG UltraFine 5K 27MD5KA](https://www.lg.com/us/monitors/lg-27MD5KA-B-5k-uhd-led-monitor) (newer version linked)
+- [LG UltraGear 27GP83B](https://www.lg.com/us/monitors/lg-27gp83b-b-gaming-monitor)
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
 - [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
 - [Apple Magic Trackpad 2](https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver)
