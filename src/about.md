@@ -14,7 +14,7 @@ _If you're looking for a more formal résumé, download the [PDF](https://github
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, react-query, Redux, redux-saga, react-table, React Testing Library, react-spring, styled-components, Jest, Puppeteer, AngularJS, D3, Highcharts, Recharts, RxJS, Webpack, Node.js, Eleventy, Jekyll, Python, Java, HTML, CSS, SCSS, git, Docker, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, react-query, Redux, redux-saga, react-table, React Testing Library, react-spring, styled-components, Svelte, Jest, Puppeteer, AngularJS, D3, RxJS, Webpack, Node.js, Eleventy, Jekyll, Python, Java, HTML, CSS, SCSS, git, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 ### Operating Systems
 
@@ -26,7 +26,8 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 
 ## Hobbies
 
-- Co-organizer of the [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetup
+- Co-organizer of the [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetup (2019 &ndash; present)
+- Board on [Streets.mn](https://streets.mn) (2022 &ndash; present)
 - Frequent participant of several meetups in the Twin Cities, notably including
   [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/),
   [Twin Cites Codepen Meetup](https://www.codepenmeetup.com), and
@@ -35,7 +36,7 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 - Bicycling
 - Downhill skiing
 - Electronic music shows
-- Theatrical and live performance lighting (since 2003!)
+- Theatrical and live performance lighting (since I was in 4th grade!)
 - Watching science-fiction TV shows and movies
 - Learning/speaking Danish
 - Traveling
@@ -44,6 +45,8 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 ## Experience
 
 - **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; Present), Minnetonka, MN.
+  - Wrote a new chat interface utilizing Twilio chat, simplifying and separating display and data logic.
+  - Led the development of the next generation internal coaching portal React application to improve performance, accessibility, user experience, visual consistency, and ease of additional development.
 - **C.H. Robinson** (November 2016 &ndash; April 2021), Eden Prairie, MN.
   - _Senior Software Engineer_ (March 2021 &ndash; April 2021), Customer Facing Analytics
     - Led the architecture and development of the React application for the
@@ -94,8 +97,8 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 - **[MICS 2014](https://www.micsymposium.org/mics2014/) Robotics and Programming Competitions** (April 25-26, 2014), Verona, WI.\
   Teams placed 4th of 11 in robotics (Java), and 18th of ~50 for programming (Java).
 - **University of Minnesota, Morris**, _Student Center Tech Crew_ (Fall 2012 &ndash; Spring 2016), Morris, MN.\
-  _Lighting Lead_ for the 2014&ndash;2015 school year and Spring 2016 semester.\
-  Designed, set-up, and operated sound and lighting for small to large scale events. This also included rigging, managing power distribution, electrical work, operating heavy equipment, cable management, talking with clients, and problem solving.
+  _Lighting Lead_ for the 2014 &ndash; 2015 school year and Spring 2016 semester.\
+  Designed, set-up, and operated sound and lighting for small to large scale events. This included rigging, power distribution, electrical work, DMX network management, operating heavy equipment, cable management, and working with clients.
 - **Concordia Language Villages**, _Assistant Cook_ (Summer 2012, Summer 2013), Bemidji, MN.
 
 ## Education
