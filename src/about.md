@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-Brian Mitchell is a Senior Frontend Software Engineer at Level2. In Brian's spare time, he
+Brian Mitchell is a Senior Software Engineer at soona. In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
 _If you're looking for a more formal résumé, download the [PDF](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
@@ -44,7 +44,8 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 
 ## Experience
 
-- **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; Present), Minnetonka, MN.
+- **soona** _Senior Software Engineer_ (June 2022 &ndash; Present), Minneapolis, MN.
+- **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; May 2022), Minnetonka, MN.
   - Wrote a new chat interface utilizing Twilio chat, simplifying and separating display and data logic.
   - Led the development of the next generation internal coaching portal React application to improve performance, accessibility, user experience, visual consistency, and ease of additional development.
 - **C.H. Robinson** (November 2016 &ndash; April 2021), Eden Prairie, MN.
