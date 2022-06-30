@@ -1,5 +1,5 @@
 ---
-layout: "layouts/page.njk"
+layout: 'layouts/page.njk'
 title: About
 description: Extended Résumé
 eleventyNavigation:

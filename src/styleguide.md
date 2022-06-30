@@ -1,5 +1,5 @@
 ---
-layout: "layouts/page.njk"
+layout: 'layouts/page.njk'
 title: Styleguide
 description: A page for testing the common styles and layouts on the site.
 modified: 2021-07-03
