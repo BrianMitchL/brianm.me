@@ -132,20 +132,6 @@
 * {
   margin: 0;
   padding: 0;
-  transition: 0.2s ease-out;
-  /*
-   * only transition on background-color, Safari has performance issues with
-   * continuous transitions when a background is set here, when the background
-   * is set to a gradient
-   */
-  transition-property: background-color, border-color, border-top-color,
-    border-left-color, border-bottom-color, border-right-color;
-}
-
-pre > *,
-code > * {
-  transition-property: color, background, background-color, border-color,
-    border-top-color, border-left-color, border-bottom-color, border-right-color;
 }
 
 @media (prefers-reduced-motion: reduce) {
