@@ -8,13 +8,14 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-      - name: Install deps (with cache)
-        uses: bahmutov/npm-install@v1
+          node-version: '16'
+          cache: 'npm'
+      - name: Install deps
+        run: npm install
       - name: Build site
         run: npm run build
       - name: Deploy
