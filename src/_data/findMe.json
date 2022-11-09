@@ -58,6 +58,12 @@
       "icon": "last-dot-fm"
     },
     {
+      "title": "Mastodon",
+      "url": "https://mastodon.cloud/@BrianMitchL",
+      "icon": "mastodon",
+      "rel": "me"
+    },
+    {
       "title": "NPM",
       "url": "https://www.npmjs.com/~brianmitchl",
       "icon": "npm"

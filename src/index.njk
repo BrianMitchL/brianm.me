@@ -35,7 +35,7 @@ disableSubNav: true
   <ul class="list-inline text-200 solid-link">
     {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
       <li class="margin-sm">
-        <a href="{{ feature.url }}">
+        <a href="{{ feature.url }}" {%- if feature.rel %}rel="{{ feature.rel }}"{%- endif -%}>
           <span class="visually-hidden">{{ feature.title }}</span>
           {%- icon feature.icon -%}
         </a>
@@ -46,7 +46,7 @@ disableSubNav: true
     {%- set findMeNormal = findMe.normal | sort(false, true, 'icon') -%}
     {%- for normal in findMeNormal -%}
     <li class="margin-sm">
-      <a href="{{ normal.url }}">
+      <a href="{{ normal.url }}" {%- if normal.rel %}rel="{{ normal.rel }}"{%- endif -%}>
         <span class="visually-hidden">{{ normal.title }}</span>
         {%- icon normal.icon -%}
       </a>
