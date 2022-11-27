@@ -28,8 +28,8 @@
   --tag-background-hover: #581c87; /* tag hover background */
   --glass-background: rgba(255, 255, 255, 0.45);
   --glass-border: rgba(255, 255, 255, 0.18);
-  --shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --shadow: rgba(0, 0, 0, 0.1) 0rem 00.625rem 0.9375rem -0.1875rem,
+    rgba(0, 0, 0, 0.05) 0rem 0.25rem 0.375rem -0.125rem;
   /* 500: orange, rose, fuchsia, light blue */
   --enhance-color-1: #f97316;
   --enhance-color-2: #f43f5e;
@@ -56,25 +56,6 @@
   );
   /* layout */
   --base-padding: 2rem;
-}
-
-@supports (background-color: lch(55% 102 360)) {
-  :root {
-    --link-1: lch(45% 91 285);
-    --link-2: lch(15% 91 285);
-    --accent-1: lch(63.352% 57 248.571);
-    --accent-2: lch(49.5% 93 23);
-    --tag-background: lch(31% 101 310.61);
-    --tag-background-hover: lch(20% 101 310.61);
-    --enhance-color-1: lch(64.496% 118 54.285);
-    --enhance-color-2: lch(56.456% 101 21.088);
-    --enhance-color-3: lch(57.135% 114 321.873);
-    --enhance-color-4: lch(63.352% 59 248.571);
-    --enhance-bg-color-1: lch(80.802% 67 66.71);
-    --enhance-bg-color-2: lch(76.719% 47 14.118);
-    --enhance-bg-color-3: lch(78.742% 53 319.946);
-    --enhance-bg-color-4: lch(80.271% 39 236.772);
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -123,7 +104,7 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 36rem) {
   :root {
     --base-padding: 1rem;
   }
@@ -247,7 +228,7 @@ h3 {
   color: var(--text-1);
   padding-bottom: 0.25rem;
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--background-2);
+  border-bottom: 0.0625rem solid var(--background-2);
 }
 
 h4,
@@ -303,7 +284,7 @@ a {
 blockquote {
   padding: 1.5rem;
   background: var(--background-2);
-  border-left: 5px solid var(--background-3);
+  border-left: 0.3125rem solid var(--background-3);
 }
 
 abbr,
@@ -318,7 +299,7 @@ blockquote > *:last-child {
 
 header {
   background: var(--background-2);
-  border-bottom: 1px solid var(--background-3);
+  border-bottom: 0.0625rem solid var(--background-3);
   padding-top: max(env(safe-area-inset-top, 0), var(--base-padding));
   padding-right: calc(50vw - 50%);
   padding-left: calc(50vw - 50%);
@@ -424,7 +405,7 @@ samp {
   font-family: var(--font-mono);
   /* The main preformatted style. This is changed slightly across different cases. */
   background: var(--background-2);
-  border: 1px solid var(--background-4);
+  border: 0.0625rem solid var(--background-4);
   border-radius: 0.25rem;
   padding: 0.125rem 0.375rem;
   font-size: 0.875rem;
@@ -432,7 +413,7 @@ samp {
 
 kbd {
   /* Makes the kbd element look like a keyboard key */
-  border-bottom-width: 3px;
+  border-bottom-width: 0.1875rem;
 }
 
 pre {
@@ -459,7 +440,7 @@ code pre {
 details {
   padding: 0.75rem 1rem;
   background: var(--background-2);
-  border: 1px solid var(--background-3);
+  border: 0.0625rem solid var(--background-3);
   border-radius: 0.25rem;
 }
 
@@ -489,15 +470,15 @@ dt {
 hr {
   /* Reset the border of the <hr> separator, then set a better line */
   border: 0;
-  border-bottom: 1px solid var(--background-3);
+  border-bottom: 0.0625rem solid var(--background-3);
   margin: 1rem auto;
 }
 
 fieldset {
   margin-top: 1rem;
   padding: 2rem;
-  border: 1px solid var(--background-3);
-  border-radius: 4px;
+  border: 0.0625rem solid var(--background-3);
+  border-radius: 0.25rem;
 }
 
 legend {
@@ -512,7 +493,7 @@ table {
 
 td,
 th {
-  border: 1px solid var(--background-3);
+  border: 0.0625rem solid var(--background-3);
   text-align: left;
   padding: 0.5rem;
 }
@@ -566,7 +547,7 @@ input {
   margin-bottom: 0.5rem;
   background: var(--background-2);
   color: var(--text-2);
-  border: 1px solid var(--background-3);
+  border: 0.0625rem solid var(--background-3);
   border-radius: 0.25rem;
   box-shadow: none;
   box-sizing: border-box;
