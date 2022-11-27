@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2022-02-13
+modified: 2022-11-27
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -51,8 +51,6 @@ cross-platform.
 - [Final Cut Pro X](https://www.apple.com/final-cut-pro/)
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
 - [Forecast](https://overcast.fm/forecast)
-- [Fork](https://git-fork.com)
-- [Icon Slate](http://www.kodlian.com/apps/icon-slate)
 - [ImageOptim](https://imageoptim.com/mac)
 - [iStat Menus](https://bjango.com/mac/istatmenus/)
 - [iStumbler](https://istumbler.net)
@@ -65,7 +63,6 @@ cross-platform.
 - [Safari](https://www.apple.com/safari/)
 - [Screens](https://edovia.com/en/screens-mac/)
 - [Scrobbles for Last.fm](https://apps.apple.com/us/app/scrobbles-for-last-fm/id1344679160)
-- [Sip](https://sipapp.io)
 - [Slack](https://slack.com)
 - [Spotify](https://www.spotify.com/us/)
 - [TextMate](https://macromates.com)
@@ -98,10 +95,10 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Bloons Supermonkey 2](https://apps.apple.com/us/app/bloons-supermonkey-2/id1118441024)
 - [holedown](https://apps.apple.com/us/app/holedown/id1297270249)
 - [Jetpack Joyride](https://apps.apple.com/us/app/jetpack-joyride/id457446957)
+- [Microsoft Solitare Collection](https://apps.apple.com/us/app/microsoft-solitaire-collection/id1103438575)
 - [Mineswifter (Minesweeper)](https://apps.apple.com/us/app/mineswifter-minesweeper/id1521190195)
 - [Monument Valley 2](https://apps.apple.com/us/app/monument-valley-2/id1187265767)
 - [Monument Valley](https://apps.apple.com/us/app/monument-valley/id728293409) {% emoji "🌟", "star" %}
-- [Solitare](https://apps.apple.com/us/app/solitaire/id647804489)
 - [Tetris](https://apps.apple.com/us/app/tetris/id1491074310)
 - [Threes](https://apps.apple.com/us/app/threes-freeplay/id976851174) {% emoji "🌟", "star" %}
 
@@ -132,11 +129,9 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Bobby](https://apps.apple.com/us/app/bobby-track-subscriptions/id1059152023)
 - [CARROT Weather](https://apps.apple.com/us/app/carrot-weather/id961390574) {% emoji "🌟", "star" %}
 - [Calcbot](https://apps.apple.com/us/app/calcbot-2/id376694347)
-- [Clear Todos](https://apps.apple.com/us/app/clear-todos/id493136154)
 - [Fantastical](https://apps.apple.com/us/app/fantastical-2-for-iphone/id718043190) {% emoji "🌟", "star" %}
 - [GitHub](https://apps.apple.com/us/app/github/id1477376905/) {% emoji "🌟", "star" %}
 - [Google Maps](https://apps.apple.com/us/app/google-maps-transit-food/id585027354) (just for cycling directions)
-- [SmartNews](https://apps.apple.com/us/app/smartnews-local-breaking-news/id579581125)
 - [Textastic](https://apps.apple.com/us/app/textastic-code-editor-7/id1049254261)
 - [Working Copy](https://apps.apple.com/us/app/working-copy/id896694807) {% emoji "🌟", "star" %}
 
@@ -144,6 +139,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 - [Apollo for Reddit](https://apps.apple.com/us/app/apollo-for-reddit/id979274575) {% emoji "🌟", "star" %}
 - [Discord](https://apps.apple.com/us/app/discord-talk-chat-hang-out/id985746746)
+- [Metatext](https://apps.apple.com/us/app/metatext/id1523996615)
 - [Signal](https://apps.apple.com/us/app/signal-private-messenger/id874139669)
 - [Slack](https://apps.apple.com/us/app/slack/id618783545)
 - [Strava](https://apps.apple.com/us/app/strava-run-ride-or-swim/id426826309)
@@ -160,7 +156,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Screens](https://apps.apple.com/us/app/screens/id655890150)
 - [Secure ShellFish](https://apps.apple.com/us/app/secure-shellfish/id1336634154)
 - [Speedtest](https://apps.apple.com/us/app/speedtest-by-ookla/id300704847)
-- [TypeStyle](https://apps.apple.com/us/app/typestyle/id1441019779)
 
 ## Home Office
 
@@ -176,7 +171,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
   - 32 GB Unified Memory
   - 1 TB SSD Storage
 - Obelisk
-  - Windows 10 Home
+  - Windows 11
   - Intel i7-10700KF @ 3.80GHz
   - 32 GB 3200 MHz DDR4 RAM
   - NVIDIA GeForce RTX 3060 Ti
@@ -195,35 +190,27 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Blue compass](https://www.bluemic.com/en-us/products/compass/) microphone boom arm
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
 - [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
-- [Mophie wireless charging base](https://www.zagg.com/en_us/wireless-charging-base)
+- [Apple MagSafe Charger](https://www.apple.com/shop/product/MHXH3AM/A/magsafe-charger)
 - [Acoustic Panels](https://smile.amazon.com/gp/product/B07VH6KDY8/)
 - [Steelcase Gesture](https://www.steelcase.com/products/office-chairs/gesture/) chair
 - [Lego Bonsai Tree](https://www.lego.com/en-us/product/bonsai-tree-10281)
 
 ## Servers
 
-- Guantanamo, headless Server
-  - Intel i5-4690k @ 3.50GHz
-  - 20 GB 1600 MHz DDR3 RAM
-  - Gigabyte Z87MX-D3H-CF motherboard
-  - CentOS 7
+- Tiangong, Mac mini - Apple M1
   - Plex Media Server
   - Tautulli
   - Minecraft
 - Salyut, [Synology Diskstation 1817+ NAS](https://www.synology.com/en-us/products/DS1817+)
   - RAID 6
-  - Six 4 TB hard drives (mix of Western Digital Red, Seagate NAS, and HGST DeskStar NAS)
-- Mir, [Digital Ocean VPS](https://m.do.co/c/414f452c2b6f)
-  - CentOS 7
-  - Docker
-  - [weatherBot](https://github.com/BrianMitchL/weatherBot)
+  - Seven 4 TB hard drives (mix of Western Digital Red, Seagate NAS, and HGST DeskStar NAS)
 
 ## Mobile
 
-- BriPhone, [iPhone 12 Pro Max](https://everymac.com/systems/apple/iphone/specs/apple-iphone-12-pro-max-united-states-a2342-specs.html)
+- BriPhone 14 Pro, [iPhone 14 Pro](https://everymac.com/systems/apple/iphone/specs/apple-iphone-14-pro-united-states-a2650-specs.html)
 - BriPad Air, [iPad Air (4th Gen)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-air-4th-gen-a2316-wifi-only-specs.html)
 - Brapple Watch 7, [Apple Watch Series 7 (Aluminum, GPS, 45 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-7-aluminum-gps-45mm-a2474.html)
-- [AirPods Pro](https://www.apple.com/airpods-pro/)
+- [AirPods Pro (2nd generation)](https://www.apple.com/airpods-pro/)
 - [Anker PowerCore 13000](https://www.anker.com/products/variant/PowerCore-13000mAh/A1215011) power bank
 - [Ultimate Ears BOOM 2](https://www.ultimateears.com/en-us/wireless-speakers/boom-2.html) speaker
 - [Sony WH-1000XM3 Wireless Noise-Canceling Headphones](https://www.sony.com/electronics/headband-headphones/wh-1000xm3)
@@ -242,5 +229,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 Car-free since September 13, 2021!
 
+- 2022 All-City Super Professional Apex 1 bicycle
 - 2017 Jamis Renegade Expat bicycle
 - 2011 Trek 3500 bicycle for winter riding
