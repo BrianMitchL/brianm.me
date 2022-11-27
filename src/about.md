@@ -14,7 +14,7 @@ _If you're looking for a more formal résumé, download the [PDF](https://github
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, react-query, Redux, redux-saga, react-table, React Testing Library, react-spring, styled-components, Svelte, Jest, Puppeteer, AngularJS, D3, RxJS, Webpack, Node.js, Eleventy, Jekyll, Python, Java, HTML, CSS, SCSS, git, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, Tanstack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Webpack, Eleventy, Jekyll, Ruby on Rails, Node.js, Python, HTML, CSS, SCSS, git, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
 
 ### Operating Systems
 
@@ -40,11 +40,12 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 - Watching science-fiction TV shows and movies
 - Learning/speaking Danish
 - Traveling
-- Finding new ways to consume coffee
 
 ## Experience
 
 - **soona** _Senior Software Engineer_ (June 2022 &ndash; Present), Minneapolis, MN.
+  - Upgraded the Vue application from Vue 2 to Vue 3.
+  - Created patterns and promoted using Tanstack Query over global state solutions for server data in the Vue application.
 - **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; May 2022), Minnetonka, MN.
   - Wrote a new chat interface utilizing Twilio chat, simplifying and separating display and data logic.
   - Led the development of the next generation internal coaching portal React application to improve performance, accessibility, user experience, visual consistency, and ease of additional development.
