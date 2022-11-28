@@ -16,30 +16,29 @@
   --background-2: #f9fafb; /* Slightly darker background color */
   --background-3: #f3f4f6; /* Even slightly darker background color */
   --background-4: #e5e7eb; /* keep going darker */
-  --link-1: #2563eb; /* Action color for links and buttons */
-  --link-2: #1e40af; /* Link and buttons on mouse hover and active */
+  --link-1: oklch(54% 0.27 262); /* Action color for links and buttons */
+  --link-2: oklch(47% 0.27 262); /* Link and buttons on mouse hover and active */
   --link-text: #ffffff; /* Text color for link buttons, or cases where link color is used as a background */
-  --accent-1: #0ea5e9; /* Accent background color for <mark> and text selection background */
-  --accent-2: #e11d48; /* Accent background color for <em> */
-  --accent-text: #ffffff; /* Text color when accent is used as a background */
+  --mark: oklch(94% 0.205 109); /* Accent background color for <mark>  */
+  --em: oklch(58% 0.26 17); /* Accent background color for <em> */
   /* custom variables */
   --tag-text: #fff;
-  --tag-background: #6b21a8; /* tag background */
-  --tag-background-hover: #581c87; /* tag hover background */
+  --tag-background: oklch(43% 0.23 303); /* tag background */
+  --tag-background-hover: oklch(37% 0.2 303); /* tag hover background */
   --glass-background: rgba(255, 255, 255, 0.45);
   --glass-border: rgba(255, 255, 255, 0.18);
   --shadow: rgba(0, 0, 0, 0.1) 0rem 00.625rem 0.9375rem -0.1875rem,
     rgba(0, 0, 0, 0.05) 0rem 0.25rem 0.375rem -0.125rem;
   /* 500: orange, rose, fuchsia, light blue */
-  --enhance-color-1: #f97316;
-  --enhance-color-2: #f43f5e;
-  --enhance-color-3: #d946ef;
-  --enhance-color-4: #0ea5e9;
+  --enhance-color-1: oklch(70% 0.24 41);
+  --enhance-color-2: oklch(65% 0.29 17);
+  --enhance-color-3: oklch(66% 0.33 323);
+  --enhance-color-4: oklch(68% 0.19 242);
   /* 300: orange, rose, fuchsia, light blue */
-  --enhance-bg-color-1: #fdba74;
-  --enhance-bg-color-2: #fda4af;
-  --enhance-bg-color-3: #f0abfc;
-  --enhance-bg-color-4: #7dd3fc;
+  --enhance-bg-color-1: oklch(83% 0.126 41);
+  --enhance-bg-color-2: oklch(85% 0.1 17);
+  --enhance-bg-color-3: oklch(85% 0.14 323);
+  --enhance-bg-color-4: oklch(85% 0.086 242);
   --enhance-text: linear-gradient(
     100deg,
     var(--enhance-color-1),
@@ -67,40 +66,24 @@
     --background-2: #27272a;
     --background-3: #3f3f46;
     --background-4: #52525b;
-    --link-1: #60a5fa;
-    --link-2: #3b82f6;
+    --link-1: oklch(71% 0.16 254);
+    --link-2: oklch(61% 0.16 254);
     --link-text: #171717;
-    --accent-1: #0ea5e9;
-    --accent-2: #fb7185;
-    --accent-text: #ffffff;
+    --mark: oklch(50% 0.125 109);
+    --em: oklch(71% 0.23 13);
 
     --glass-background: rgba(0, 0, 0, 0.45);
     --glass-border: rgba(192, 192, 192, 0.18);
     /* 600: orange, rose, purple, light blue */
-    --enhance-color-1: #ea580c;
-    --enhance-color-2: #e11d48;
-    --enhance-color-3: #c026d3;
-    --enhance-color-4: #0284c7;
+    --enhance-color-1: oklch(64% 0.22 41);
+    --enhance-color-2: oklch(59% 0.26 17);
+    --enhance-color-3: oklch(59% 0.3 323);
+    --enhance-color-4: oklch(59% 0.18 242);
     /* 800: orange, rose, fuchsia, light blue */
-    --enhance-bg-color-1: #9a3412;
-    --enhance-bg-color-2: #9f1239;
-    --enhance-bg-color-3: #86198f;
-    --enhance-bg-color-4: #075985;
-
-    @supports (background-color: lch(55% 102 360)) {
-      --link-1: lch(66% 56 266.641);
-      --link-2: lch(54.619% 76 277.587);
-      --accent-1: lch(63.352% 58 248.571);
-      --accent-2: lch(65.533% 74 16.716);
-      --enhance-color-1: lch(57.39% 99 49.639);
-      --enhance-color-2: lch(49.528% 93 23.048);
-      --enhance-color-3: lch(48.343% 110 322.66);
-      --enhance-color-4: lch(51.857% 54 255.155);
-      --enhance-bg-color-1: lch(37% 79 51);
-      --enhance-bg-color-2: lch(34.794% 70 18.048);
-      --enhance-bg-color-3: lch(33.278% 83 323.941);
-      --enhance-bg-color-4: lch(35.263% 40 253.187);
-    }
+    --enhance-bg-color-1: oklch(47% 0.16 41);
+    --enhance-bg-color-2: oklch(47% 0.21 17);
+    --enhance-bg-color-3: oklch(47% 0.24 323);
+    --enhance-bg-color-4: oklch(47% 0.14 242);
   }
 }
 
@@ -199,12 +182,6 @@ body {
   color: var(--text-2);
   font-size: 1rem;
   line-height: 1.5;
-}
-
-::selection {
-  /* Set background color for selected text */
-  background: var(--accent-1);
-  color: var(--accent-text);
 }
 
 h1,
@@ -536,8 +513,8 @@ ol ol {
 
 mark {
   padding: 0.1875rem 0.375rem;
-  background: var(--accent-1);
-  color: var(--accent-text);
+  background: var(--mark);
+  color: var(--text-2);
 }
 
 textarea,
@@ -560,7 +537,7 @@ img {
 }
 
 em {
-  color: var(--accent-2);
+  color: var(--em);
 }
 
 figure > * {
