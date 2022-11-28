@@ -4,7 +4,7 @@
   font-weight: normal;
   font-style: normal;
   src: url('./BerkeleyMono-Regular.woff2') format('woff2'),
-       url('./BerkeleyMono-Regular.woff') format('woff');
+    url('./BerkeleyMono-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Berkeley Mono';
@@ -12,7 +12,7 @@
   font-weight: bold;
   font-style: normal;
   src: url('./BerkeleyMono-Bold.woff2') format('woff2'),
-       url('./BerkeleyMono-Bold.woff') format('woff');
+    url('./BerkeleyMono-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Berkeley Mono';
@@ -20,7 +20,7 @@
   font-weight: normal;
   font-style: italic;
   src: url('./BerkeleyMono-Italic.woff2') format('woff2'),
-       url('./BerkeleyMono-Italic.woff') format('woff');
+    url('./BerkeleyMono-Italic.woff') format('woff');
 }
 @font-face {
   font-family: 'Berkeley Mono';
@@ -28,5 +28,5 @@
   font-weight: bold;
   font-style: italic;
   src: url('./BerkeleyMono-BoldItalic.woff2') format('woff2'),
-       url('./BerkeleyMono-BoldItalic.woff') format('woff');
+    url('./BerkeleyMono-BoldItalic.woff') format('woff');
 }
