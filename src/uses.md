@@ -17,8 +17,8 @@ This serves as a living document of software, gear, and other things that I typi
 
 I use the native macOS [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) with my [custom theme](https://github.com/BrianMitchL/dotfiles/blob/master/Brian%20Theme.terminal). You can see my standard configuration and settings in my [dotfiles](https://github.com/BrianMitchL/dotfiles) repository.
 
-- [WebStorm](https://www.jetbrains.com/webstorm/) IDE with the Darcula theme. I've made one edit to the default theme, which is to use italics on keywords. This is great when paired with a typeface like Dank Mono.
-- [Dank Mono](https://dank.sh) typeface (make sure to use a theme that uses italics)
+- [WebStorm](https://www.jetbrains.com/webstorm/) IDE with the Darcula theme. I've made one edit to the default theme, which is to use italics on keywords. This is great when paired with a typeface like Dank Mono that uses a few cursive letters, or special italic styles.
+- [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) typeface
 - [webstorm-styled-components](https://github.com/styled-components/webstorm-styled-components) plug-in
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) my main development browser
 - [Safari](https://www.apple.com/safari/) my main personal and non-work browser, but I do occasionally use it for development, particularly with personal projects.
