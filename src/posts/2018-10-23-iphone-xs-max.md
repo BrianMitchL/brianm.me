@@ -102,8 +102,8 @@ general.
             </td>
             <td class="platform">iOS 64</td>
             <td>aarch64</td>
-            <td class="text-end text-200">1549</td>
-            <td class="text-end text-200">2428</td>
+            <td class="text-end text-lg">1549</td>
+            <td class="text-end text-lg">2428</td>
         </tr>
         <tr>
             <td>
@@ -118,8 +118,8 @@ general.
             </td>
             <td>iOS 64</td>
             <td>aarch64</td>
-            <td class="text-end text-200">2583</td>
-            <td class="text-end text-200">3321</td>
+            <td class="text-end text-lg">2583</td>
+            <td class="text-end text-lg">3321</td>
         </tr>
         <tr>
             <td>
@@ -134,8 +134,8 @@ general.
             </td>
             <td class="platform">iOS 64</td>
             <td>aarch64</td>
-            <td class="text-end text-200">3401</td>
-            <td class="text-end text-200">5587</td>
+            <td class="text-end text-lg">3401</td>
+            <td class="text-end text-lg">5587</td>
         </tr>
         <tr>
             <td>
@@ -150,8 +150,8 @@ general.
             </td>
             <td class="platform">iOS 64</td>
             <td>aarch64</td>
-            <td class="text-end text-200">4789</td>
-            <td class="text-end text-200">11223</td>
+            <td class="text-end text-lg">4789</td>
+            <td class="text-end text-lg">11223</td>
         </tr>
         <tr>
             <td>
@@ -166,8 +166,8 @@ general.
             </td>
             <td class="platform">Mac OS X 64</td>
             <td>x86_64</td>
-            <td class="text-end text-200">3836</td>
-            <td class="text-end text-200">12982</td>
+            <td class="text-end text-lg">3836</td>
+            <td class="text-end text-lg">12982</td>
         </tr>
     </tbody>
 </table>

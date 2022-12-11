@@ -3,11 +3,24 @@
 :root {
   color-scheme: light dark;
 
-  --font-sans: 'InterVariable', system-ui, -apple-system, BlinkMacSystemFont,
+  --font-heading: 'InterVariable', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-body: 'InterVariable', system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-mono: 'Berkeley Mono', Consolas, monaco, 'Ubuntu Mono',
     'Liberation Mono', 'Courier New', Courier, monospace;
+
+  /* generated with https://www.fluid-type-scale.com/ */
+  --font-size-sm: clamp(0.83rem, 0.1vw + 0.81rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.2rem, 0.7vw + 1.03rem, 1.58rem);
+  --font-size-lg: clamp(1.44rem, 1.22vw + 1.14rem, 2.11rem);
+  --font-size-xl: clamp(1.73rem, 1.97vw + 1.23rem, 2.81rem);
+  --font-size-xxl: clamp(2.07rem, 3.05vw + 1.31rem, 3.75rem);
+  --font-size-xxxl: clamp(2.49rem, 4.56vw + 1.35rem, 5rem);
+
   /* colors */
   --text-1: #27272a; /* Heading text color */
   --text-2: #3f3f46; /* Body text color */
@@ -156,7 +169,7 @@ input,
 select,
 button {
   /* Set body font family and some finicky elements */
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
 }
 
 html {
@@ -166,13 +179,11 @@ html {
 body {
   /* Center body in page */
   margin: 0 auto;
-  max-width: 80ch;
-  /* fallback just in case? */
-  padding: var(--base-padding);
-  padding-top: max(env(safe-area-inset-top, 0), var(--base-padding));
-  padding-bottom: max(env(safe-area-inset-bottom, 0), var(--base-padding));
-  padding-left: max(env(safe-area-inset-left, 0), var(--base-padding));
-  padding-right: max(env(safe-area-inset-right, 0), var(--base-padding));
+  max-width: 72ch;
+  padding: max(env(safe-area-inset-top, 0), var(--base-padding))
+    max(env(safe-area-inset-right, 0), var(--base-padding))
+    max(env(safe-area-inset-bottom, 0), var(--base-padding))
+    max(env(safe-area-inset-left, 0), var(--base-padding));
   overflow-x: hidden;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -180,7 +191,7 @@ body {
 
   /* Main body text */
   color: var(--text-2);
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   line-height: 1.5;
 }
 
@@ -190,9 +201,9 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
+  font-family: var(--font-heading);
+  line-height: 1.25;
   color: var(--text-1);
-  padding-top: 0.875rem;
 
   & > a {
     color: inherit;
@@ -211,31 +222,31 @@ h3 {
 h4,
 h5,
 h6 {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.3125rem;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: var(--font-size-xxxl);
 }
 
 h2 {
-  font-size: 1.85rem;
+  font-size: var(--font-size-xxl);
 }
 
 h3 {
-  font-size: 1.55rem;
+  font-size: var(--font-size-xl);
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: var(--font-size-lg);
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: var(--font-size-md);
 }
 
 h6 {
-  font-size: 0.875rem;
+  font-size: var(--font-size-md);
 }
 
 a {
@@ -274,7 +285,9 @@ blockquote > *:last-child {
   margin-bottom: 0;
 }
 
-header {
+body > header {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-xl);
   background: var(--background-2);
   border-bottom: 0.0625rem solid var(--background-3);
   padding-top: max(env(safe-area-inset-top, 0), var(--base-padding));
@@ -292,45 +305,43 @@ header {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   margin-bottom: var(--base-padding);
-}
 
-header h1,
-header h2,
-header h3 {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-header > *:first-child {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-header > *:last-child,
-header nav > *:last-child {
-  margin-bottom: 0;
-}
-
-header nav {
-  margin-bottom: 0;
-
-  & a {
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--text-2);
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-      color: var(--text-1);
-    }
+  & h1,
+  & h2,
+  & h3 {
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 
-  & ul {
-    font-size: 1.75rem;
+  & > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  & > *:last-child,
+  & nav > *:last-child {
+    margin-bottom: 0;
+  }
+
+  & nav {
+    margin-bottom: 0;
 
     & a {
-      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--text-2);
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: var(--text-1);
+      }
+    }
+
+    & ul {
+      & a {
+        display: block;
+      }
     }
   }
 }
@@ -339,7 +350,7 @@ button,
 input[type='submit'],
 input[type='reset'],
 input[type='button'] {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   display: inline-block;
   padding: 0.375rem 0.75rem;
   text-align: center;
@@ -385,7 +396,7 @@ samp {
   border: 0.0625rem solid var(--background-4);
   border-radius: 0.25rem;
   padding: 0.125rem 0.375rem;
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
 }
 
 code[class*='language-'],
@@ -534,7 +545,7 @@ input {
   box-shadow: none;
   box-sizing: border-box;
   /* prevent zooming in mobile browsers */
-  font-size: 1rem;
+  font-size: var(--font-size-base);
 }
 
 img {
@@ -550,7 +561,7 @@ figure > * {
 }
 
 figcaption {
-  font-size: 0.875rem;
+  font-size: var(--font-size-sm);
 }
 
 body > footer {

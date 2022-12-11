@@ -90,12 +90,12 @@ ol.projects {
     border-radius: 0.5rem;
     border: 0.0625rem solid var(--background-3);
     color: var(--text-2);
-    font-size: 0.875rem;
+    font-size: var(--font-size-sm);
     display: flex;
     flex-direction: column;
 
     & .repo-title {
-      font-size: 1rem;
+      font-size: var(--font-size-base);
     }
 
     & .octicon.octicon-repo {
@@ -120,7 +120,7 @@ ol.projects {
 }
 .article-meta > * + *::before {
   content: '•';
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   padding-inline-start: 0.25rem;
   padding-inline-end: 0.25rem;
 }
@@ -240,6 +240,7 @@ img.emoji {
 .heading-link {
   text-decoration: none;
   color: inherit;
+  line-height: 1.25;
 
   &:focus,
   &:hover,
