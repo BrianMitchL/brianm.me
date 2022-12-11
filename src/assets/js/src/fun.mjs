@@ -15,7 +15,19 @@ export default function fun(e) {
   } else if (!funEnabled) {
     console.log(
       '%cFun Mode! 🥳',
-      'display:inline-block;padding:20px;border-radius:50px;line-height:3.5;font-size:x-large;font-family:fantasy;background:linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);'
+      'display:inline-block;padding:20px;border-radius:50px;line-height:3.5;font-size:x-large;font-family:fantasy;background:linear-gradient(to right, hsl(0, 100%, 50%),' +
+      'hsl(30, 100%, 50%),' +
+      'hsl(60, 100%, 50%),' +
+      'hsl(90, 100%, 50%),' +
+      'hsl(120, 100%, 50%),' +
+      'hsl(150, 100%, 50%),' +
+      'hsl(180, 100%, 50%),' +
+      'hsl(210, 100%, 50%),' +
+      'hsl(240, 100%, 50%),' +
+      'hsl(270, 100%, 50%),' +
+      'hsl(300, 100%, 50%),' +
+      'hsl(330, 100%, 50%),' +
+      'hsl(360, 100%, 50%));'
     );
     document.body.classList.add('fun');
     document.querySelectorAll('img.emoji').forEach(function (el) {
