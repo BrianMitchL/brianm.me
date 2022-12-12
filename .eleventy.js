@@ -171,9 +171,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
-  eleventyConfig.addPassthroughCopy({
-    'node_modules/@fontsource/inter/': 'assets/fonts/inter/',
-  });
   eleventyConfig.addPassthroughCopy('src/assets/js/*.{js,mjs,map}');
   eleventyConfig.addPassthroughCopy('src/assets/css/*.css');
   eleventyConfig.addPassthroughCopy('src/assets/images');

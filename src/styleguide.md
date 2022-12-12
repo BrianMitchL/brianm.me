@@ -34,6 +34,8 @@ Heading level 6
 
 Text is important, there are lots of things you can do with it!
 
+This paragraph is for testing font features. The quick brown fox jumps over the lazy dog. 0987654321. tt TT Qq. Artificial, practical. Those words were for testing the ligatures from a 't' or an 'f' to an 'i'.
+
 ### Markdown
 
 A paragraph of text with a [link](https://brianm.me)! Here's an emoji {% emoji "👍", "thumbs up" %}. We can have _italicized text_, **bold text**, <q>quoted text</q>, and ~~striked text~~. **A mix of bold and _italicized text_**

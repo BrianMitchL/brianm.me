@@ -3,12 +3,11 @@
 :root {
   color-scheme: light dark;
 
-  --font-heading: 'InterVariable', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-body: 'InterVariable', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-fallback: system-ui, -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+  sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-heading: 'BebasNeue-Regular', var(--font-fallback);
+  --font-body: 'Satoshi-Variable', var(--font-fallback);
   --font-mono: 'Berkeley Mono', Consolas, monaco, 'Ubuntu Mono',
     'Liberation Mono', 'Courier New', Courier, monospace;
 
@@ -325,6 +324,10 @@ body > header {
 
   & nav {
     margin-bottom: 0;
+
+    & > a:first-of-type {
+      font-size: var(--font-size-xxl);
+    }
 
     & a {
       font-weight: bold;

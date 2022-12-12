@@ -240,18 +240,18 @@ img.emoji {
 .heading-link {
   text-decoration: none;
   color: inherit;
-  line-height: 1.25;
+  line-height: inherit;
 
   &:focus,
   &:hover,
   &:active {
-    &::before {
-      content: '🔗';
-      position: relative;
-      float: left;
-      left: max(-2ch, -2rem);
-      height: 0;
-      width: 0;
+    &::after {
+      content: '#';
+      display: inline-flex;
+      font-size: 0.75em;
+      padding-inline-start: 0.25em;
+      text-decoration: none;
+      opacity: 0.5;
     }
 
     text-decoration: underline;

@@ -21,7 +21,6 @@
   },
   "author": "Brian Mitchell",
   "dependencies": {
-    "@fontsource/inter": "^4.5.14",
     "@primer/octicons": "^17.9.0",
     "canvas-confetti": "^1.6.0",
     "csshake": "^1.7.0",
