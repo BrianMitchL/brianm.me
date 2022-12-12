@@ -54,9 +54,8 @@ class OpenGraphImage {
 <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style>
-      {% include "inter-medium-500-base64.css" %}
       text {
-        font-family: "Inter Medium";
+        font-family: Arial, sans-serif;
         font-weight: 500;
       }
     </style>
