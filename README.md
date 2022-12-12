@@ -23,7 +23,12 @@ Checkout the scripts object in the [package.json](/package.json) file for finer 
 
 ## Attributions
 
-This site uses [new.css](https://github.com/xz/new.css) and
-[Simple Icons](https://simpleicons.org).
+### Typefaces
+- [Satoshi](https://www.fontshare.com/fonts/satoshi) for body
+- [Bebas Neue](https://www.fontshare.com/fonts/bebas-neue) for headings
+- [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) for monospace
 
-Simple Icons are licensed with the CC0 1.0 Universal, so no extra information is included with the icons.
+The fluid type scale was generated with https://www.fluid-type-scale.com/.
+
+### Icons
+- [Simple Icons](https://simpleicons.org) for branded icons
