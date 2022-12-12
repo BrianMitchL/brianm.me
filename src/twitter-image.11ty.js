@@ -61,10 +61,10 @@ class OpenGraphImage {
       }
     </style>
     <linearGradient id="gradient" gradientTransform="rotate(5)">
-      <stop offset="0%" stop-color="#ea580c" />
-      <stop offset="33%" stop-color="#e11d48" />
-      <stop offset="66%" stop-color="#c026d3" />
-      <stop offset="100%" stop-color="#0284c7" />
+      <stop offset="0%" stop-color="#ff5c00" />
+      <stop offset="33%" stop-color="#ff0050" />
+      <stop offset="66%" stop-color="#e800ff" />
+      <stop offset="100%" stop-color="#00a1ff" />
     </linearGradient>
     <clipPath id="rrect" clipPathUnits="objectBoundingBox">
       <rect width="1" height="1" rx="0.1" />
