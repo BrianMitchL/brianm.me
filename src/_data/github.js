@@ -1,6 +1,13 @@
-const Cache = require('@11ty/eleventy-cache-assets');
+const Cache = require('@11ty/eleventy-fetch');
 const { DateTime } = require('luxon');
 const yaml = require('js-yaml');
+
+const headers = {};
+if (process.env.GH_PAT) {
+  headers.Authorization = `Basic ${btoa(`BrianMitchL:${process.env.GH_PAT}`)}`;
+} else {
+  console.warn('no GH_PAT env variable set');
+}
 
 module.exports = async function () {
   const linguistYaml = await Cache(
@@ -8,6 +15,9 @@ module.exports = async function () {
     {
       duration: '1d',
       type: 'text',
+      fetchOptions: {
+        headers,
+      },
     }
   );
 
@@ -28,6 +38,9 @@ module.exports = async function () {
     {
       duration: '1d',
       type: 'json',
+      fetchOptions: {
+        headers,
+      },
     }
   );
 

@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { DateTime, Settings } = require('luxon');
 Settings.defaultZone = 'utc';
 const fs = require('fs');

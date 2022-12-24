@@ -1,6 +1,6 @@
 const sharp = require('sharp');
 const { createHash } = require('crypto');
-const { AssetCache } = require('@11ty/eleventy-cache-assets');
+const { AssetCache } = require('@11ty/eleventy-fetch');
 const path = require('path');
 const fs = require('fs');
 

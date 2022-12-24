@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: 'Create env file'
+        run: |
+          echo "GH_PAT=${{ secrets.GH_PAT }}" > .env
       - name: Setup node
         uses: actions/setup-node@v3
         with:
