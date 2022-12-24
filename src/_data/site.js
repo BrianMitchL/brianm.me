@@ -11,6 +11,7 @@ module.exports = {
     bio: 'Senior Frontend Software Engineer and Web Developer, emoji lover 👋🏻, and an avid fan of electronic music.',
     twitter: 'BrianMitchL',
     instagram: 'BrianMitchL',
+    mastodon: 'https://mspsocial.net/@BrianMitchL',
     image: '/assets/images/headshot-2022.jpg',
     web: 'https://brianm.me',
   },
