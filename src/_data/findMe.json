@@ -58,12 +58,6 @@
       "icon": "last-dot-fm"
     },
     {
-      "title": "Mastodon.cloud",
-      "url": "https://mastodon.cloud/@BrianMitchL",
-      "icon": "mastodon",
-      "rel": "me"
-    },
-    {
       "title": "MSPSocial.net",
       "url": "https://mspsocial.net/@BrianMitchL",
       "icon": "mastodon",
