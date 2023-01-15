@@ -79,7 +79,7 @@
     "singleQuote": true
   },
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=18.13.0"
   },
   "browserslist": [
     "> 0.5%",
