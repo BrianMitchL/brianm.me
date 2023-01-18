@@ -1,12 +1,12 @@
 ---
 title: How to Make a Jekyll Site/Blog
-modified: 2021-01-20
+modified: 2023-01-18
 description: A tutorial on making a Jekyll based site/blog.
 tags:
   - Jekyll
 ---
 
-Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/BrianMitchL.github.io/tree/2567798946140e686a284a6db5f1c64d664cdc86).
+Because I put a lot of time into this site in the last few months, I figured I might as well share my experience so others can jump right in as well! You can view the source for this site on the [GitHub repository](https://github.com/BrianMitchL/brianm.me/tree/2567798946140e686a284a6db5f1c64d664cdc86).
 
 _Note: This site is now built with Eleventy, but you can view it at the commit linked above to see it in its final Jekyll form._
 
@@ -140,7 +140,7 @@ Information can be accessed just as if it were front matter, which is what {% ra
 
 As you can see in the example above, Liquid can also filter data. Here, the date is being formatted. This is just the beginning of what Liquid can do, but it's two things that I think are really useful. Checkout other filters and Liquid features on the [Jekyll template docs](https://jekyllrb.com/docs/templates/).
 
-If you have a file that you don't need to declare any variables, but want to use Liquid you must still use the set of triple-dashed lines for Jekyll to process that file. For example, here's my [humans.txt](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/2567798946140e686a284a6db5f1c64d664cdc86/humans.txt) file:
+If you have a file that you don't need to declare any variables, but want to use Liquid you must still use the set of triple-dashed lines for Jekyll to process that file. For example, here's my [humans.txt](https://github.com/BrianMitchL/brianm.me/blob/2567798946140e686a284a6db5f1c64d664cdc86/humans.txt) file:
 
 ```text
 {%- raw -%}
@@ -466,4 +466,4 @@ env:
 The `--disable-external` flag disables the checking on 3rd party links. Some websites will block scrapers like the one used in `html-proofer`, which will cause the check to fail, so this just skips em' all. The `--assume-extension` flag will assume that an href like `/about` is the same as `about.html`.
 For more detailed information, check out the [Jekyll documentation on continuous integration](https://jekyllrb.com/docs/deployment/automated/#continuous-integration-service).
 
-Update 2018-09-02: I have refactored this to use a [Rakefile](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/20d71bd373df82a1da07280bd8caaf0138479318/Rakefile) and tell Travis CI to use that (see the [.travis.yml](https://github.com/BrianMitchL/BrianMitchL.github.io/blob/20d71bd373df82a1da07280bd8caaf0138479318/.travis.yml)). I was having problems with html-proofer matching URLs with a hyphen in them, and needed to use the `url_swap` configuration, which I thought was easier to configure in a Rakefile.
+Update 2018-09-02: I have refactored this to use a [Rakefile](https://github.com/BrianMitchL/brianm.me/blob/20d71bd373df82a1da07280bd8caaf0138479318/Rakefile) and tell Travis CI to use that (see the [.travis.yml](https://github.com/BrianMitchL/brianm.me/blob/20d71bd373df82a1da07280bd8caaf0138479318/.travis.yml)). I was having problems with html-proofer matching URLs with a hyphen in them, and needed to use the `url_swap` configuration, which I thought was easier to configure in a Rakefile.
