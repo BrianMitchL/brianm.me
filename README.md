@@ -1,4 +1,4 @@
-# brianm.me
+# brianm.me [![Build and Publish Site](https://github.com/BrianMitchL/brianm.me/actions/workflows/publish.yml/badge.svg?branch=main)](https://github.com/BrianMitchL/brianm.me/actions/workflows/publish.yml)
 
 My personal portfolio site and blog site, built with Eleventy. Find it live at [https://brianm.me/](https://brianm.me/)!
 
