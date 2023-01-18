@@ -1,4 +1,4 @@
-# BrianMitchL.github.io ![GitHub last commit (gh-pages)](https://img.shields.io/github/last-commit/BrianMitchL/BrianMitchL.github.io/gh-pages?label=last%20deployed) ![GitHub deployments](https://img.shields.io/github/deployments/BrianMitchL/BrianMitchL.github.io/github-pages?label=deploy)
+# brianm.me
 
 My personal portfolio site and blog site, built with Eleventy. Find it live at [https://brianm.me/](https://brianm.me/)!
 
