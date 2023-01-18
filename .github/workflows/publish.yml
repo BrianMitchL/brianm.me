@@ -1,4 +1,4 @@
-name: Build and Publish Eleventy Site to CloudFlare Pages
+name: Build and Publish Site
 
 on:
   push:

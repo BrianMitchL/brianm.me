@@ -1,0 +1,28 @@
+---
+permalink: ".well-known/webfinger"
+eleventyExcludeFromCollections: true
+dynamicPermalink: false
+---
+{
+  subject: "acct:BrianMitchL@mspsocial.net",
+  aliases: [
+    "https://mspsocial.net/@BrianMitchL",
+    "https://mspsocial.net/users/BrianMitchL"
+  ],
+  links: [
+    {
+      rel: "http://webfinger.net/rel/profile-page",
+      type: "text/html",
+      href: "https://mspsocial.net/@BrianMitchL"
+    },
+    {
+      rel: "self",
+      type: "application/activity+json",
+      href: "https://mspsocial.net/users/BrianMitchL"
+    },
+    {
+      rel: "http://ostatus.org/schema/1.0/subscribe",
+      template: "https://mspsocial.net/authorize_interaction?uri={uri}"
+    }
+  ]
+}
