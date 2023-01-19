@@ -176,7 +176,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/css/*.css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
   eleventyConfig.addPassthroughCopy('src/*.{txt,ico,png}');
-  eleventyConfig.addPassthroughCopy('src/CNAME');
 
   eleventyConfig.addWatchTarget('src/assets/*.{css,js,mjs}');
 
