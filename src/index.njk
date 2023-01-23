@@ -22,43 +22,31 @@ disableSubNav: true
     </p>
     <p>{% emoji "🗺📍", "Location" %}Minneapolis, MN, USA.</p>
     <p>
-      Co-organizer of <a href="https://javascriptmn.com">JavaScriptMN</a>.
-      Board on <a href="https://streets.mn">Streets.mn</a>. Bike commuter.
-      <a href="http://my.pronoun.is/he">he/him</a>.
+      Co-organizer of <a href="https://javascriptmn.com" target="_blank" rel="noopener">JavaScriptMN</a>.
+      Board on <a href="https://streets.mn" target="_blank" rel="noopener">Streets.mn</a>.
+      Bike commuter.
+      <a href="http://my.pronoun.is/he" target="_blank" rel="noopener">he/him</a>.
     </p>
   </div>
 </section>
 
 <section class="text-center" aria-labelledby='where-to-find-me'>
   <h2 id="where-to-find-me">Where to Find Me</h2>
-  <ul class="list-inline text-lg solid-link">
-    {%- for feature in findMe.feature | sort(false, true, 'icon') -%}
-      <li class="margin-sm">
-        <a href="{{ feature.url }}" {%- if feature.rel %}rel="{{ feature.rel }}"{%- endif -%}>
-          <span class="visually-hidden">{{ feature.title }}</span>
-          {%- icon feature.icon -%}
-        </a>
+  <ul class="text-lg find-me-list" aria-label="featured find me">
+    {%- for feature in findMe.feature | sort(false, true, 'title') -%}
+      <li>
+        <a href="{{ feature.url }}" rel="me" target="_blank" rel="noopener" style="--find-me-color: {{ feature.color }}">{{ feature.title }}</a>
       </li>
     {%- endfor -%}
   </ul>
-  <ul class="list-inline text-md solid-link">
-    {%- set findMeNormal = findMe.normal | sort(false, true, 'icon') -%}
+  <ul class="text-md find-me-list" aria-label="other find me">
+    {%- set findMeNormal = findMe.normal | sort(false, true, 'title') -%}
     {%- for normal in findMeNormal -%}
-    <li class="margin-sm">
-      <a href="{{ normal.url }}" {%- if normal.rel %}rel="{{ normal.rel }}"{%- endif -%}>
-        <span class="visually-hidden">{{ normal.title }}</span>
-        {%- icon normal.icon -%}
-      </a>
+    <li>
+      <a href="{{ normal.url }}" rel="me" target="_blank" rel="noopener" style="--find-me-color: {{ normal.color }}">{{ normal.title }}</a>
     </li>
     {%- endfor -%}
   </ul>
-
-  <p>
-    I am a co-host on
-    <a href="http://thenexus.tv/category/pk/">PodKit</a>, a
-    podcast about Apple inclined Web Developers discussing interesting
-    technology and development related topics.
-  </p>
 </section>
 
 <section class="text-center" aria-labelledby="top-recent-music">

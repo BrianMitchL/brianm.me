@@ -101,3 +101,41 @@ span.wave {
     transform: rotate(0deg);
   }
 }
+
+.find-me-list {
+  list-style: none;
+  padding: calc(0.5 * var(--base-padding)) var(--base-padding);
+  display: inline-flex;
+  column-gap: 1rem;
+  flex-flow: row wrap;
+  font-weight: 700;
+  background: #ffffff;
+  border: 0.0625rem solid var(--background-2);
+  box-shadow: var(--shadow);
+
+  &:nth-child(even) {
+    border-radius: calc(0.75 * var(--base-padding))
+      calc(2 * var(--base-padding));
+  }
+  &:nth-child(odd) {
+    border-radius: calc(2 * var(--base-padding))
+      calc(0.75 * var(--base-padding));
+  }
+
+  & li {
+    margin: 0;
+  }
+
+  & a {
+    color: var(--find-me-color);
+    text-decoration-line: none;
+    text-decoration-color: var(--find-me-color);
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #27272a;
+      text-decoration-line: underline;
+    }
+  }
+}

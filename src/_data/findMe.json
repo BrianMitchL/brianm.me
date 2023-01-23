@@ -1,107 +1,125 @@
 {
   "feature": [
     {
-      "title": "Github",
+      "title": "GitHub",
       "url": "https://github.com/BrianMitchL",
-      "icon": "github"
+      "icon": "github",
+      "color": "#181717"
     },
     {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/brianmitchl",
-      "icon": "linkedin"
+      "icon": "linkedin",
+      "color": "#0A66C2"
     },
     {
-      "title": "Twitter",
-      "url": "https://twitter.com/BrianMitchL",
-      "icon": "twitter"
+      "title": "Mastodon",
+      "url": "https://mspsocial.net/@BrianMitchL",
+      "icon": "mastodon",
+      "color": "#6364FF"
     },
     {
       "title": "Instagram",
       "url": "https://www.instagram.com/BrianMitchL",
-      "icon": "instagram"
+      "icon": "instagram",
+      "color": "#E4405F"
     }
   ],
   "normal": [
     {
       "title": "Apple Music",
       "url": "https://music.apple.com/profile/brianmitchl",
-      "icon": "applemusic"
+      "icon": "applemusic",
+      "color": "#FA243C"
     },
     {
       "title": "CodePen",
       "url": "https://codepen.io/brianmitchl",
-      "icon": "codepen"
+      "icon": "codepen",
+      "color": "#000000"
     },
     {
       "title": "CodeSandbox",
       "url": "https://codesandbox.io/u/BrianMitchL",
-      "icon": "codesandbox"
+      "icon": "codesandbox",
+      "color": "#151515"
     },
     {
-      "title": "DEV Profile",
+      "title": "DEV.to",
       "url": "https://dev.to/brianmitchl",
-      "icon": "dev-dot-to"
+      "icon": "dev-dot-to",
+      "color": "#0A0A0A"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discordapp.com/users/220619101351968770",
+      "color": "#5865F2"
     },
     {
       "title": "GitLab",
-      "url": "https://gitlab.com/u/BrianMitchL",
-      "icon": "gitlab"
+      "url": "https://gitlab.com/BrianMitchL",
+      "icon": "gitlab",
+      "color": "#FC6D26"
     },
     {
       "title": "Keybase",
       "url": "https://keybase.io/brianmitchl",
-      "icon": "keybase"
+      "icon": "keybase",
+      "color": "#33A0FF"
     },
     {
       "title": "Last.fm",
       "url": "https://www.last.fm/user/BrianMitchL",
-      "icon": "last-dot-fm"
-    },
-    {
-      "title": "MSPSocial.net",
-      "url": "https://mspsocial.net/@BrianMitchL",
-      "icon": "mastodon",
-      "rel": "me"
+      "icon": "last-dot-fm",
+      "color": "#D51007"
     },
     {
       "title": "NPM",
       "url": "https://www.npmjs.com/~brianmitchl",
-      "icon": "npm"
+      "icon": "npm",
+      "color": "#CB3837"
     },
     {
       "title": "Polywork",
       "url": "https://poly.work/brianmitchl",
-      "icon": "polywork"
-    },
-    {
-      "title": "SoundCloud",
-      "url": "https://soundcloud.com/brianmitchl",
-      "icon": "soundcloud"
+      "icon": "polywork",
+      "color": "#543DE0"
     },
     {
       "title": "Spotify",
       "url": "https://open.spotify.com/user/1237277662",
-      "icon": "spotify"
+      "icon": "spotify",
+      "color": "#1DB954"
     },
     {
       "title": "Strava",
       "url": "https://www.strava.com/athletes/brianmitchl",
-      "icon": "strava"
+      "icon": "strava",
+      "color": "#FC4C02"
     },
     {
       "title": "Steam",
       "url": "https://steamcommunity.com/id/MagicBriBri",
-      "icon": "steam"
+      "icon": "steam",
+      "color": "#000000"
     },
     {
       "title": "Trakt",
       "url": "https://trakt.tv/users/brianmitchl",
-      "icon": "trakt"
+      "icon": "trakt",
+      "color": "#ED1C24"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/BrianMitchL",
+      "icon": "twitter",
+      "color": "#1DA1F2"
     },
     {
       "title": "YouTube",
       "url": "https://www.youtube.com/@BrianMitchL",
-      "icon": "youtube"
+      "icon": "youtube",
+      "color": "#FF0000"
     }
   ]
 }
