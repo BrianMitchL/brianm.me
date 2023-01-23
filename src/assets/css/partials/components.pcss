@@ -96,6 +96,7 @@ ol.projects {
 
     & .repo-title {
       font-size: var(--font-size-base);
+      margin-bottom: 0.5rem;
     }
 
     & .octicon.octicon-repo {
@@ -106,6 +107,17 @@ ol.projects {
     & [itemprop='description'] {
       flex: 1 0 auto;
       color: var(--text-3);
+    }
+
+    & [itemprop="url"] {
+      margin-bottom: 0.5rem;
+    }
+
+    & .repo-meta {
+      margin: 0;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1rem;
     }
 
     & .language-color {

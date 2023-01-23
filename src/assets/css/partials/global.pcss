@@ -172,6 +172,7 @@ button {
 }
 
 html {
+  background: var(--background-1);
   scroll-behavior: smooth;
 }
 
@@ -186,7 +187,6 @@ body {
   overflow-x: hidden;
   word-break: break-word;
   overflow-wrap: break-word;
-  background: var(--background-1);
 
   /* Main body text */
   color: var(--text-2);
@@ -251,6 +251,7 @@ h6 {
 a {
   color: var(--link-1);
   text-decoration-skip-ink: auto;
+  text-underline-offset: 0.125em;
 
   &:hover {
     color: var(--link-2);

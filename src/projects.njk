@@ -8,30 +8,30 @@ eleventyNavigation:
 ---
 <ol class="projects">
   {% for repo in github.repos %}
-    <li itemscope itemtype="https://schema.org/SoftwareSourceCode" class="repo svg-margin-right">
-        <div class="mb-2 repo-title">
+    <li itemscope itemtype="https://schema.org/SoftwareSourceCode" class="repo">
+        <div class="repo-title inline-flex-center">
           {% octicon "repo" %}<a href="{{ repo.html_url }}" itemprop="codeRepository name">{{ repo.name }}</a>
         </div>
         <p itemprop="description">{{ repo.description }}</p>
         {% if repo.homepage %}
-          <a href="{{ repo.homepage }}" itemprop="url" class="mb-2">
+          <a href="{{ repo.homepage }}" itemprop="url">
             {{ repo.homepage }}
           </a>
         {% endif %}
-        <p class="m-0">
+        <p class="repo-meta">
           {% if repo.language %}
-          <span class="mr-3 text-nowrap inline-flex-center">
+          <span class="text-nowrap inline-flex-center">
             <span class="language-color" style="background-color: {{ repo.language_color }};"></span>
             <span itemprop="programmingLanguage">{{ repo.language }}</span>
           </span>
           {% endif %}
           {% if repo.stargazers_count %}
-            <a href="{{ repo.stargazers_url }}" class="mr-3 text-nowrap inline-flex-center text-decoration-none">
+            <a href="{{ repo.stargazers_url }}" class="text-nowrap inline-flex-center text-decoration-none">
               {% octicon "star" %}{{ repo.stargazers_count }}<span class="visually-hidden">Stars</span>
             </a>
           {% endif %}
           {% if repo.forks_count %}
-            <a href="{{ repo.forks_url }}" class="mr-3 text-nowrap inline-flex-center text-decoration-none">
+            <a href="{{ repo.forks_url }}" class="text-nowrap inline-flex-center text-decoration-none">
               {% octicon "git-branch" %}{{ repo.forks_count }}<span class="visually-hidden">Forks</span>
             </a>
           {% endif %}
