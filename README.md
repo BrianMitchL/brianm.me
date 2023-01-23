@@ -24,6 +24,7 @@ Checkout the scripts object in the [package.json](/package.json) file for finer 
 ## Attributions
 
 ### Typefaces
+
 - [Satoshi](https://www.fontshare.com/fonts/satoshi) for body
 - [Bebas Neue](https://www.fontshare.com/fonts/bebas-neue) for headings
 - [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) for monospace
@@ -31,4 +32,5 @@ Checkout the scripts object in the [package.json](/package.json) file for finer 
 The fluid type scale was generated with https://www.fluid-type-scale.com/.
 
 ### Icons
+
 - [Simple Icons](https://simpleicons.org) for branded icons
