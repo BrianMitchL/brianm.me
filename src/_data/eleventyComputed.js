@@ -6,6 +6,8 @@ module.exports = {
       url: (data) => data.site.url,
       logo: {
         src: (data) => data.site.url + data.site.image,
+        height: (data) => data.site.imageHeight,
+        width: (data) => data.site.imageWidth,
       },
     },
     language: 'en-US',

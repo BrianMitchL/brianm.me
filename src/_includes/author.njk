@@ -1,4 +1,10 @@
-<aside class="page-author" aria-label="Author">
+<aside
+  class="page-author"
+  aria-label="Author"
+  itemprop="author"
+  itemscope
+  itemtype="https://schema.org/Person"
+>
   <div>
     <img
       src="{{ site.author.image | url }}"
@@ -9,8 +15,8 @@
     />
   </div>
   <div>
-    <h2 itemprop="author">{{ site.author.name }}</h2>
-    <p>{{ site.author.bio }}</p>
+    <h2 itemprop="name">{{ site.author.name }}</h2>
+    <p itemprop="description">{{ site.author.bio }}</p>
     <address>
       <div>
         <a
@@ -37,7 +43,7 @@
         </a>
       </div>
       <div>
-        <a href="{{ site.author.web }}" title="{{ site.author.web }}">{{ site.author.web }}</a>
+        <a itemprop="url" href="{{ site.author.web }}">{{ site.author.web }}</a>
       </div>
     </address>
   </div>

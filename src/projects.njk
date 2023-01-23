@@ -8,7 +8,7 @@ eleventyNavigation:
 ---
 <ol class="projects">
   {% for repo in github.repos %}
-    <li itemscope itemtype="http://schema.org/SoftwareSourceCode" class="repo svg-margin-right">
+    <li itemscope itemtype="https://schema.org/SoftwareSourceCode" class="repo svg-margin-right">
         <div class="mb-2 repo-title">
           {% octicon "repo" %}<a href="{{ repo.html_url }}" itemprop="codeRepository name">{{ repo.name }}</a>
         </div>

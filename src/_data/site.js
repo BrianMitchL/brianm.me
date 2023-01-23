@@ -13,6 +13,8 @@ module.exports = {
     instagram: 'BrianMitchL',
     mastodon: 'https://mspsocial.net/@BrianMitchL',
     image: '/assets/images/headshot-2022.jpg',
+    imageHeight: '1024',
+    imageWidth: '1024',
     web: 'https://brianm.me',
   },
   twitter: 'BrianMitchL',
