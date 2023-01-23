@@ -11,7 +11,7 @@
     </button>
   </div>
   {% set navPages = collections.all | eleventyNavigation %}
-  <ul class="list-none flex-wrap-space-between flex-direction-responsive">
+  <ul class="site-links-list">
     {%- for entry in navPages %}
       <li{% if entry.url == page.url %} aria-current="page"{% endif %}>
         <a href="{{ entry.url | url }}">{{ entry.title }}</a>
