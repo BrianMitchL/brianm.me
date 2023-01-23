@@ -306,6 +306,19 @@ body > header {
   margin-left: calc(50% - 50vw);
   margin-bottom: var(--base-padding);
 
+  & .hero {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+
+    & a {
+      font-size: var(--font-size-xxl);
+      line-height: 1;
+    }
+  }
+
   & h1,
   & h2,
   & h3 {
@@ -325,10 +338,6 @@ body > header {
 
   & nav {
     margin-bottom: 0;
-
-    & > a:first-of-type {
-      font-size: var(--font-size-xxl);
-    }
 
     & a {
       font-weight: bold;

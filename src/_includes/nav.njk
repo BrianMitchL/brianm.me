@@ -1,15 +1,15 @@
 <nav aria-label="Primary">
-  <a href="{{ '/' | url }}" class="enhance">{{ site.title }}</a>
-  <button
-    style="float: right;"
-    class="shake"
-    id="fun-button"
-    title="Fun Mode"
-    aria-hidden="true"
-    tabindex="-1"
-  >
-    🥳
-  </button>
+  <div class="hero">
+    <a href="{{ '/' | url }}" class="enhance">{{ site.title }}</a><button
+      class="shake"
+      id="fun-button"
+      title="Fun Mode"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      🥳
+    </button>
+  </div>
   {% set navPages = collections.all | eleventyNavigation %}
   <ul class="list-none flex-wrap-space-between flex-direction-responsive">
     {%- for entry in navPages %}
