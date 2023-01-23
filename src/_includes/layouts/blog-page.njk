@@ -1,0 +1,41 @@
+---
+layout: layouts/default.njk
+type: page
+---
+<a href="#maincontent" class="skip-link">Skip to content</a>
+<header>
+  {% include "nav.njk" %}
+</header>
+<main id="maincontent" itemscope itemtype="https://schema.org/WebPage">
+  {% if title %}
+    <h1 itemprop="name">{{ title }}</h1>
+  {% endif %}
+
+  <aside class="blog-subheader" aria-label="Blog info">
+    <p>
+      Infrequent blog posts. Sometimes I write about my life, web development,
+      reviews, and more. If you have any questions or thoughts, please don’t
+      hesitate to reach out.
+    </p>
+    <div class="subscribe-links">
+      <a
+        href="{{ "/feed.xml" | url }}"
+        class="inline-flex-center"
+        style="--background-color: #ffa500"
+      >
+        Subscribe RSS {%- icon "rss" -%}
+      </a>
+      <a
+        href="{{ "/feed.json" | url }}"
+        class="inline-flex-center"
+        style="--background-color: #8be028"
+      >
+        Subscribe JSON {%- icon "jsonfeed" -%}
+      </a>
+    </div>
+  </aside>
+
+  {% include 'navigation-children.njk' %}
+  {% include 'navigation-breadcrumbs.njk' %}
+  {{ content | safe }}
+</main>

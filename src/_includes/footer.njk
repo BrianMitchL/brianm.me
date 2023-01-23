@@ -1,18 +1,9 @@
-{% set sorted = findMe.feature | sort(false, true, 'icon') %}
-{% set footerLinks = sorted.concat([{
-  title: "RSS Feed",
-  url: "/feed.xml",
-  icon: "rss"
-}, {
-  title: "JSON Feed",
-  url: "/feed.json",
-  icon: "jsonfeed"
-}]) %}
+{% set footerLinks = findMe.feature | sort(false, true, 'title') %}
 <footer class="text-center">
-  <ul class="list-none text-md" aria-label="Links">
+  <ul class="list-none text-xl" aria-label="Links">
     {%- for feature in footerLinks -%}
     <li>
-      <a href="{{ feature.url | url }}">
+      <a href="{{ feature.url | url }}" target="_blank" rel="noopener">
         {%- icon feature.icon -%}<span class="visually-hidden">{{ feature.title }}</span>
       </a>
     </li>
