@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 ---
 
-Brian Mitchell is a Senior Software Engineer at soona. In Brian's spare time, he
+Brian Mitchell is a Senior Software Engineer at [soona](https://soona.co). In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
 _If you're looking for a more formal résumé, download the [PDF](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
