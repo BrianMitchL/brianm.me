@@ -198,21 +198,6 @@ module.exports = function (eleventyConfig) {
     });
   eleventyConfig.setLibrary('md', markdownLibrary);
 
-  // Browsersync Overrides
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function (err, browserSync) {
-        const content_404 = fs.readFileSync(`${dir.output}/404.html`);
-
-        browserSync.addMiddleware('*', (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
-        });
-      },
-    },
-  });
-
   eleventyConfig.addTransform('html-minifier', (value, outputPath) => {
     if (outputPath && outputPath.includes('.html')) {
       return htmlmin.minify(value, {
