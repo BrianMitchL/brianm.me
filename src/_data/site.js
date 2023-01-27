@@ -1,7 +1,9 @@
 const runMode = process.env.ELEVENTY_RUN_MODE;
-const isProduction = runMode === 'serve' || runMode === 'watch';
+const isProduction = runMode === 'build';
 
-console.log(`[brianm.me] Running in ${isProduction ? 'production' : 'development'} mode.`);
+console.log(
+  `[brianm.me] Running in ${isProduction ? 'production' : 'development'} mode.`
+);
 
 module.exports = {
   isProduction,
