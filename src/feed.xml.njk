@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <generator uri="https://www.11ty.dev" version="{{ site.eleventyVersion }}">Eleventy</generator>
+  <generator uri="https://www.11ty.dev" version="{{ eleventy.version }}">Eleventy</generator>
   <title>{{ site.title }}</title>
   <subtitle>{{ site.description }}</subtitle>
   <link href="{{ permalink | url | absoluteUrl(site.url) }}" rel="self" type="application/atom+xml" />
