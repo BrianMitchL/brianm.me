@@ -101,16 +101,13 @@ module.exports = function (eleventyConfig) {
     return octicons[icon].toSVG();
   });
 
-  eleventyConfig.addNunjucksAsyncShortcode(
-    'icon',
-    async function (icon, color) {
-      const svg = await loadIcon(icon);
+  eleventyConfig.addAsyncShortcode('icon', async function (icon, color) {
+    const svg = await loadIcon(icon);
 
-      return `<span class="icon" ${
-        color ? `style="color: ${color}"` : ''
-      } aria-hidden="true">${svg}</span>`;
-    }
-  );
+    return `<span class="icon" ${
+      color ? `style="color: ${color}"` : ''
+    } aria-hidden="true">${svg}</span>`;
+  });
 
   eleventyConfig.addFilter('hashify', hashify);
 
@@ -132,23 +129,20 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addNunjucksAsyncFilter(
-    'jsmin',
-    async function (code, callback) {
-      if (siteData.isProduction) {
-        try {
-          const minified = await minify(code);
-          callback(null, minified.code);
-        } catch (err) {
-          console.error('Terser error: ', err);
-          // Fail gracefully.
-          callback(null, code);
-        }
-      } else {
-        callback(null, code);
+  eleventyConfig.addAsyncFilter('jsmin', async function (code) {
+    if (siteData.isProduction) {
+      try {
+        const minified = await minify(code);
+        return minified.code;
+      } catch (err) {
+        console.error('Terser error: ', err);
+        // Fail gracefully.
+        return code;
       }
+    } else {
+      return code;
     }
-  );
+  });
 
   eleventyConfig.addCollection('tagList', function (collection) {
     const tags = collection.getAll().reduce((tags, item) => {
