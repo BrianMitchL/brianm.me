@@ -36,7 +36,7 @@ eleventyExcludeFromCollections: true
         "avatar": "{{ site.author.image | url | absoluteUrl(site.url) }}"
       },
       "summary": "{{ post.data.description }}",
-      "content_html": {% if post.templateContent %}{{ post.templateContent | dump | safe }}{% else %}""{% endif %}
+      "content_html": {% if post.content %}{{ post.content | dump | safe }}{% else %}""{% endif %}
     }
     {%- if not loop.last -%}
     ,

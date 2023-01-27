@@ -24,7 +24,7 @@ eleventyExcludeFromCollections: true
       {% if post.data.modified %}<updated>{{ post.data.modified | dateToRfc3339 }}</updated>{%  endif %}
       <id>{{ absolutePostUrl }}</id>
       <summary type="html">{{ post.data.description }}</summary>
-      <content type="html" xml:base="{{ absolutePostUrl }}">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+      <content type="html" xml:base="{{ absolutePostUrl }}">{{ post.content | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
     </entry>
   {%- endfor %}
 </feed>
