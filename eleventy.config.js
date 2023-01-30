@@ -76,6 +76,7 @@ async function loadIcon(icon) {
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addPlugin(require('./eleventy.config.drafts.js'));
+  eleventyConfig.addPlugin(require('./eleventy.config.og-images.js'));
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
