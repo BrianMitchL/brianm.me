@@ -63,12 +63,23 @@
 {% endif %}
 <meta name="generator" content="{{ eleventy.generator }}">
 
+{% setAsync "ogImageUrl" -%}
+  {% if site.isProduction -%}
+    {% ogImage "src/og-image.og.njk", { siteTitle: site.title, title: title or description, date: postDate, image: pageImage } %}
+  {%- else -%}
+    {{ "/assets/images/placeholder.png" | url }}
+  {%- endif %}
+{%- endsetAsync %}
+{% set "ogImageAlt" %}
+{{ site.title }} | {{ title or description }}{%- if postDate -%}. Posted on {{ postDate | readableDate }}{%- endif -%}
+{% endset %}
+
 <meta property="og:title" content="{{ title or site.title }}">
 <meta property="og:type" content="{{ ogtype or 'website' }}" />
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:description" content="{{ description or site.description }}" />
-<meta property="og:image" content="{{ site.url }}{{ page.url }}opengraph.png" />
-<meta property="og:image:alt" content="Preview card for {{ title or site.title }}" />
+<meta property="og:image" content="{{ ogImageUrl }}" />
+<meta property="og:image:alt" content="{{ ogImageAlt }}" />
 <meta property="og:locale" content="en_US" />
 
 <meta name="twitter:card" content="summary_large_image" />
@@ -81,8 +92,8 @@
   name="twitter:description"
   content="{%- if description -%}{{ description }}{%- else -%}{{ site.description }}{%- endif -%}"
 />
-<meta name="twitter:image" content="{{ site.url }}{{ page.url }}twitter.png" />
-<meta name="twitter:image:alt" content="Preview card for {{ title or site.title }}" />
+<meta name="twitter:image" content="{{ ogImageUrl }}" />
+<meta name="twitter:image:alt" content="{{ ogImageAlt }}" />
 
 <link
   type="application/atom+xml"

@@ -21,7 +21,6 @@ const slugify = require('@sindresorhus/slugify');
 const { minify } = require('terser');
 const htmlmin = require('html-minifier');
 const octicons = require('@primer/octicons');
-const pluginImageBase64 = require('./lib/imageBase64');
 
 const siteData = require('./src/_data/site.js');
 
@@ -75,7 +74,11 @@ async function loadIcon(icon) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addPlugin(require('./eleventy.config.drafts.js'));
+  eleventyConfig.addPlugin(require('./lib/eleventy.config.drafts.js'));
+  eleventyConfig.addPlugin(require('./lib/eleventy.config.imageBase64'), {
+    input: path.resolve(__dirname, dir.input),
+  });
+  eleventyConfig.addPlugin(require('./lib/eleventy.config.og-images.js'));
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -94,9 +97,6 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPlugin(pluginSchema);
   eleventyConfig.addPlugin(pluginExcerpt);
-  eleventyConfig.addPlugin(pluginImageBase64, {
-    input: path.resolve(__dirname, dir.input),
-  });
 
   eleventyConfig.addShortcode('octicon', function (icon) {
     return octicons[icon].toSVG();

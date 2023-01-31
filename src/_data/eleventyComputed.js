@@ -47,4 +47,10 @@ module.exports = {
     published: (data) => data.page.date.toISOString(),
     modified: (data) => data.modified?.toISOString() ?? null,
   },
+  postDate: (data) => {
+    return data.tags?.includes('post') ? data.page.date : null;
+  },
+  pageImage: (data) => {
+    return data.image ?? data.site.author.image;
+  },
 };

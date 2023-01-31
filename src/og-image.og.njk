@@ -1,0 +1,98 @@
+<style>
+  .root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #18181b;
+    color: #ffffff;
+  }
+
+  .gradient {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(91deg, #ff5c00, #ff0050, #e800ff, #00a1ff);
+  }
+
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 60px;
+    gap: 60px;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+  }
+
+  .image {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 60px;
+  }
+
+  .content-col {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    padding-right: 60px;
+  }
+
+  .site-title {
+    display: flex;
+    font-family: 'BebasNeue-Regular', sans-serif;
+    font-size: 100px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    color: #f8fafc;
+  }
+
+  .title {
+    display: flex;
+    font-family: 'Satoshi', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 30px;
+    flex-grow: 1;
+    height: 100%;
+    color: #f1f5f9;
+    overflow: hidden;
+  }
+
+  .date {
+    display: flex;
+    font-family: 'Berkeley Mono', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #cbd5e1;
+    flex-grow: 1;
+  }
+</style>
+
+<div class="root">
+  <div class="inner-row">
+    <div class="content-col">
+      <h1 class="site-title">{{ siteTitle }}</h1>
+      <h2 class="title">{{ title }}</h2>
+      {% if date %}<div class="date">{{ date | readableDate }}</div>{% endif %}
+    </div>
+
+    <div class="image-wrapper">
+      <img class="image" src="{{ image | imageBase64 }}" alt="" />
+    </div>
+  </div>
+  <div class="gradient"></div>
+</div>
