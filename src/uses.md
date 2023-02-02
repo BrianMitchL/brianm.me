@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2022-11-27
+modified: 2023-02-01
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -85,7 +85,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Overcast](https://apps.apple.com/us/app/overcast-podcast-player/id888422857) {% emoji "🌟", "star" %}
 - [Plex](https://apps.apple.com/us/app/plex/id383457673)
 - [Simple Reader for Hacker News](https://apps.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
-- [Trakt](https://apps.apple.com/us/app/trakt/id1514873602) {% emoji "🌟", "star" %}
+- [Trakt](https://apps.apple.com/us/app/trakt/id1514873602)
 
 ### Games
 
@@ -95,7 +95,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Bloons Supermonkey 2](https://apps.apple.com/us/app/bloons-supermonkey-2/id1118441024)
 - [holedown](https://apps.apple.com/us/app/holedown/id1297270249)
 - [Jetpack Joyride](https://apps.apple.com/us/app/jetpack-joyride/id457446957)
-- [Microsoft Solitare Collection](https://apps.apple.com/us/app/microsoft-solitaire-collection/id1103438575)
+- [Microsoft Solitare Collection](https://apps.apple.com/us/app/microsoft-solitaire-collection/id1103438575) {% emoji "🌟", "star" %}
 - [Mineswifter (Minesweeper)](https://apps.apple.com/us/app/mineswifter-minesweeper/id1521190195)
 - [Monument Valley 2](https://apps.apple.com/us/app/monument-valley-2/id1187265767)
 - [Monument Valley](https://apps.apple.com/us/app/monument-valley/id728293409) {% emoji "🌟", "star" %}
@@ -126,7 +126,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [1Blocker X](https://apps.apple.com/us/app/1blocker-x/id1365531024)
 - [1Password](https://apps.apple.com/us/app/1password-password-manager/id568903335) {% emoji "🌟", "star" %}
 - [Apple Maps](https://www.apple.com/maps/)
-- [Bobby](https://apps.apple.com/us/app/bobby-track-subscriptions/id1059152023)
 - [CARROT Weather](https://apps.apple.com/us/app/carrot-weather/id961390574) {% emoji "🌟", "star" %}
 - [Calcbot](https://apps.apple.com/us/app/calcbot-2/id376694347)
 - [Fantastical](https://apps.apple.com/us/app/fantastical-2-for-iphone/id718043190) {% emoji "🌟", "star" %}
@@ -139,12 +138,13 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 - [Apollo for Reddit](https://apps.apple.com/us/app/apollo-for-reddit/id979274575) {% emoji "🌟", "star" %}
 - [Discord](https://apps.apple.com/us/app/discord-talk-chat-hang-out/id985746746)
-- [Metatext](https://apps.apple.com/us/app/metatext/id1523996615)
+- [Instagram](https://apps.apple.com/us/app/instagram/id389801252)
+- [Ivory for Mastodon](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) {% emoji "🌟", "star" %}
 - [Signal](https://apps.apple.com/us/app/signal-private-messenger/id874139669)
 - [Slack](https://apps.apple.com/us/app/slack/id618783545)
 - [Strava](https://apps.apple.com/us/app/strava-run-ride-or-swim/id426826309)
 - [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082) {% emoji "🌟", "star" %}
-- [Twitter](https://apps.apple.com/us/app/twitter/id333903271) {% emoji "🌟", "star" %}
+- [Twitter](https://apps.apple.com/us/app/twitter/id333903271)
 
 ### Utilities
 
