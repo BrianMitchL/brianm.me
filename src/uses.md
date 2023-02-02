@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2023-02-01
+modified: 2023-02-02
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -160,7 +160,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 ## Home Office
 
 <figure>
-  <img src="{{ '/assets/images/desk-2021-08-13.jpg' | url }}" alt="My home desk" loading="lazy">
+  <img src="{{ '/assets/images/desk-2023-02-02.jpg' | url }}" alt="My home desk" loading="lazy">
   <figcaption>My home desk</figcaption>
 </figure>
 
@@ -181,7 +181,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [LG UltraFine 5K 27MD5KA](https://www.lg.com/us/monitors/lg-27MD5KA-B-5k-uhd-led-monitor) (newer version linked)
 - [LG UltraGear 27GP83B](https://www.lg.com/us/monitors/lg-27gp83b-b-gaming-monitor)
 - [Apple Magic Keyboard](https://www.apple.com/shop/product/MLA22LL/A/magic-keyboard-us-english)
-- [Logitech MX Master](https://www.logitech.com/en-us/product/mx-master-3) mouse
+- [Logitech MX Master 3](https://www.logitech.com/en-us/product/mx-master-3) mouse
 - [Apple Magic Trackpad 2](https://www.apple.com/shop/product/MJ2R2LL/A/magic-trackpad-2-silver)
 - [Focusrite Scarlett 2i2](https://focusrite.com/en/usb-audio-interface/scarlett/scarlett-2i2) audio interface
 - [M-Audio BX5D3](https://www.m-audio.com/bx5d3) 5" powered studio reference monitors
@@ -191,7 +191,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
 - [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
 - [Apple MagSafe Charger](https://www.apple.com/shop/product/MHXH3AM/A/magsafe-charger)
-- [Acoustic Panels](https://smile.amazon.com/gp/product/B07VH6KDY8/)
+- [Acoustic Panels](https://amazon.com/gp/product/B07VH6KDY8/)
 - [Steelcase Gesture](https://www.steelcase.com/products/office-chairs/gesture/) chair
 - [Lego Bonsai Tree](https://www.lego.com/en-us/product/bonsai-tree-10281)
 
