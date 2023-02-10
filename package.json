@@ -29,13 +29,13 @@
     "svelte-compare-image": "^1.0.2"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-beta.2",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-fetch": "^3.0.0",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
-    "@csstools/postcss-oklab-function": "^2.0.0",
+    "@csstools/postcss-oklab-function": "^2.1.0",
     "@quasibit/eleventy-plugin-schema": "^1.10.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@rollup/plugin-commonjs": "^24.0.1",
@@ -60,16 +60,16 @@
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
-    "postcss-nesting": "^11.0.0",
-    "prettier": "^2.8.3",
+    "postcss-nesting": "^11.1.0",
+    "prettier": "^2.8.4",
     "rimraf": "^4.1.2",
-    "rollup": "^3.11.0",
+    "rollup": "^3.14.0",
     "rollup-plugin-filesize": "^9.1.2",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-svelte": "^7.1.2",
     "rollup-plugin-terser": "^7.0.2",
     "sharp": "^0.31.3",
-    "terser": "^5.16.1"
+    "terser": "^5.16.3"
   },
   "overrides": {
     "rollup-plugin-terser": {
