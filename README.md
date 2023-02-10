@@ -26,7 +26,7 @@ Checkout the scripts object in the [package.json](/package.json) file for finer 
 ### Typefaces
 
 - [Satoshi](https://www.fontshare.com/fonts/satoshi) for body
-- [Bebas Neue](https://www.fontshare.com/fonts/bebas-neue) for headings
+- [Space Grotesk](https://fonts.floriankarsten.com/space-grotesk) for headings
 - [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) for monospace
 
 The fluid type scale was generated with https://www.fluid-type-scale.com/.

@@ -39,7 +39,7 @@
 />
 <link
   rel="stylesheet"
-  href="{{ '/assets/fonts/bebas-neue/bebas-neue.css' | url }}"
+  href="{{ '/assets/fonts/space-grotesk/space-grotesk.css' | url }}"
 />
 <link
   rel="stylesheet"
@@ -65,7 +65,7 @@
 
 {% setAsync "ogImageUrl" -%}
   {% if site.isProduction -%}
-    {% ogImage "src/og-image.og.njk", { siteTitle: site.title, title: title or description, date: postDate, image: pageImage } %}
+    {% ogImage "src/og-image.og.njk", { siteTitle: site.title, title: metaTitle or title or description, date: postDate, image: pageImage } %}
   {%- else -%}
     {{ "/assets/images/placeholder.png" | url }}
   {%- endif %}
