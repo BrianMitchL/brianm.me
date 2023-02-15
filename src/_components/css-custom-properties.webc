@@ -1,0 +1,116 @@
+<script>
+  class CssCustomProperties extends HTMLElement {
+    #colorSchemeMQL;
+    #rendered = false;
+    #list = [];
+    constructor() {
+      super();
+      this.#colorSchemeMQL = window.matchMedia('(prefers-color-scheme: dark)');
+    }
+
+    render = () => {
+      const computedStyle = window.getComputedStyle(this);
+
+      this.querySelector('.colors-list').innerHTML = this.#list.reduce(
+        (str, [prop]) => `${str}<li>
+        <div class="swatch" style="--color: var(${prop})"></div>
+        <div class="details">
+          <input aria-label="property" value="${prop}" readonly />
+          <input aria-label="property value" value="${computedStyle
+            .getPropertyValue(prop)
+            .replace(/\s+/g, ' ')}" readonly />
+        </div>
+       </li>`,
+        ''
+      );
+    };
+
+    connectedCallback() {
+      if (!this.#rendered) {
+        // cache the list of custom properties for future renders
+        this.#list = this.#getCssCustomProps();
+        this.render();
+        this.#rendered = true;
+        this.#colorSchemeMQL.addEventListener('change', this.render);
+      }
+    }
+
+    disconnectedCallback() {
+      this.#colorSchemeMQL.removeEventListener('change', this.render);
+    }
+
+    #getCssCustomProps() {
+      return [...document.styleSheets]
+        .filter(
+          (styleSheet) =>
+            !styleSheet.href ||
+            styleSheet.href.startsWith(window.location.origin)
+        )
+        .flatMap((sheet) => [...sheet.cssRules])
+        .filter((rule) => rule.type === 1)
+        .flatMap((rule) =>
+          Array.from(rule.style, (propName) => [
+            propName.trim(),
+            rule.style.getPropertyValue(propName).trim(),
+          ])
+        )
+        .filter(([propName]) => propName.startsWith('--'))
+        .filter(
+          ([propName, value]) =>
+            CSS.supports('color', value) && !propName.startsWith('--font')
+        )
+        .sort(([a], [b]) => a.localeCompare(b));
+    }
+  }
+
+  window.customElements.define('css-custom-properties', CssCustomProperties);
+</script>
+
+<ul class="colors-list"></ul>
+
+<style webc:scoped>
+  :host {
+    margin-block-end: 1rem;
+  }
+
+  :host ul {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  :host li {
+    margin: 0;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    border: 0.0625rem solid var(--background-3);
+    background-color: var(--background-2);
+  }
+
+  :host .swatch {
+    background: var(--color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    display: block;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  :host .details {
+    text-align: right;
+  }
+
+  :host li input {
+    border: 0;
+    display: block;
+    font-family: var(--font-mono);
+    font-size: var(--font-size-sm);
+    margin: 0;
+    padding: 0.25rem;
+    text-align: right;
+    width: 100%;
+    background: none;
+  }
+</style>

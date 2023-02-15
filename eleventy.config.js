@@ -4,9 +4,11 @@ Settings.defaultZone = 'utc';
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginNavigation = require('@11ty/eleventy-navigation');
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 const pluginEmoji = require('eleventy-plugin-emoji');
 const pluginSitemap = require('@quasibit/eleventy-plugin-sitemap');
@@ -79,6 +81,10 @@ module.exports = function (eleventyConfig) {
     input: path.resolve(__dirname, dir.input),
   });
   eleventyConfig.addPlugin(require('./lib/eleventy.config.og-images.js'));
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: "src/_components/**/*.webc",
+  });
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);

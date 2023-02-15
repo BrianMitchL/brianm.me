@@ -4,7 +4,7 @@
   "private": true,
   "description": "Website for Brian Mitchell",
   "scripts": {
-    "prettier": "prettier --write '**/*.{js,mjs,pcss,css,json,md,yml}'",
+    "prettier": "prettier --write '**/*.{js,mjs,pcss,css,json,md,yml,webc}'",
     "start": "run-p start:js start:css start:11ty",
     "prebuild": "rimraf _site",
     "build": "run-s build:js build:css build:11ty",
@@ -34,6 +34,7 @@
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
+    "@11ty/eleventy-plugin-webc": "^0.8.1",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@csstools/postcss-oklab-function": "^2.1.0",
     "@quasibit/eleventy-plugin-schema": "^1.10.0",
@@ -80,7 +81,15 @@
     }
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.webc",
+        "options": {
+          "parser": "html"
+        }
+      }
+    ]
   },
   "engines": {
     "node": ">=18.13.0"

@@ -186,3 +186,13 @@ function shuffle<T = unknown>(array: T[]) {
   </div>
     <figcaption>Juelz at Skyway Theater, February 29th, 2020</figcaption>
 </figure>
+
+## Colors
+
+Colors are set with CSS Custom Properties. This site supports a light and dark mode. The current theme is always set to your browser/operating system's preference, as set by the `(prefers-color-scheme: dark)` media query. Change your preference to see the different variations below.
+
+<noscript>JavaScript is required to view this content.</noscript>
+
+{% renderTemplate "webc" %}
+<css-custom-properties></css-custom-properties>
+{% endrenderTemplate %}
