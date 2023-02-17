@@ -55,18 +55,16 @@ disableSubNav: true
     I listen to a lot of music, here's who I've been listening to in the last
     month.
   </p>
-  <div id="last-fm-artists-root"></div>
+  {% renderTemplate "webc" %}
+    <lastfm-artists></lastfm-artists>
+  {% endrenderTemplate %}
+
   <noscript>
     <p>
       {% emoji "⚠️", "warning sign" %} JavaScript is required to display this content.
     </p>
   </noscript>
 </section>
-
-<script
-  defer
-  src="{{ '/assets/js/lastfm-artists.js' | url | hashify }}"
-></script>
 
 <script>
   {%- set js -%}

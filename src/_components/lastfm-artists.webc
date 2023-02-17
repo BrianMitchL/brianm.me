@@ -1,0 +1,96 @@
+<script>
+  class LastfmArtists extends HTMLElement {
+    async connectedCallback() {
+      const root = this.querySelector('#lastfm-artists-root');
+      root.classList.add('loading');
+
+      try {
+        const data = await this.getArtists('artists', '1month');
+        const tableFragment = this.querySelector(
+          '#lastfm-artists-table-template'
+        );
+        const rowFragment = this.querySelector('#lastfm-artists-tr-template');
+        const instance = document.importNode(tableFragment.content, true);
+        data.topartists.artist.forEach((artist) => {
+          const row = document.importNode(rowFragment.content, true);
+          row.querySelector('a').href = artist.url;
+          row.querySelector('a').textContent = artist.name;
+          row.querySelector('td:nth-child(2)').textContent = Number(
+            artist.playcount
+          ).toLocaleString();
+          instance.querySelector('tbody').appendChild(row);
+        });
+
+        root.appendChild(instance);
+      } catch (e) {
+        const fragment = this.querySelector('#lastfm-artists-error-template');
+        const instance = document.importNode(fragment.content, true);
+        root.appendChild(instance);
+      }
+
+      root.classList.remove('loading');
+    }
+
+    async getArtists(path, period = 'overall') {
+      const res = await fetch(
+        `https://lastfm-proxy.brianm.me/${path}?period=${period}`
+      );
+      if (res.ok && res.status === 200) {
+        return res.json();
+      }
+      throw new Error('Bad request');
+    }
+  }
+
+  window.customElements.define('lastfm-artists', LastfmArtists);
+</script>
+
+<template id="lastfm-artists-table-template">
+  <table>
+    <caption>
+      Top Artists - One Month
+    </caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Playcount</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</template>
+
+<template id="lastfm-artists-tr-template">
+  <tr>
+    <td><a target="_blank" rel="noopener noreferrer"></a></td>
+    <td></td>
+  </tr>
+</template>
+
+<template id="lastfm-artists-error-template">
+  <p>There was a problem displaying top artists 😞</p>
+</template>
+
+<div id="lastfm-artists-root"></div>
+
+<style webc:scoped>
+  :host .loading {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.25rem solid var(--background-3);
+    border-top-color: var(--text-2);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    animation: rotate 1s infinite linear;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+</style>
