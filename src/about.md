@@ -14,7 +14,7 @@ _If you're looking for a more formal résumé, download the [PDF](https://github
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, Tanstack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Webpack, Eleventy, Jekyll, Ruby on Rails, Node.js, Python, HTML, CSS, SCSS, git, <span class="latex">L<span class='sup'>a</span>T<span class='sub'>e</span>X</span>
+TypeScript, JavaScript, React, Tanstack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Webpack, Eleventy, Jekyll, Ruby on Rails, Node.js, Python, HTML, CSS, SCSS, git, {% renderTemplate "webc" %}<latex></latex>{% endrenderTemplate %}
 
 ### Operating Systems
 

@@ -1,0 +1,39 @@
+<span webc:root webc:keep
+  >L<span class="sup">a</span>T<span class="sub">e</span>X</span
+>
+
+<style webc:scoped>
+  /*
+   * This is for making a formatted LaTeX logo
+   * http://edward.oconnor.cx/2007/08/tex-poshlet
+   * Uses 'sub' and 'sup' classes of a <span> instead of <sub> and <sup>
+   */
+
+  :host {
+    font-family: 'Computer Modern', 'Computer Modern Unicode', Bodoni, Didot,
+      serif;
+  }
+
+  :host .sub,
+  :host .sup {
+    text-transform: uppercase;
+  }
+
+  :host .sub {
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+  }
+
+  :host,
+  :host .sub {
+    font-size: 1em;
+  }
+
+  :host .sup {
+    font-size: 0.85em;
+    vertical-align: 0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
+  }
+</style>
