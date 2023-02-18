@@ -72,64 +72,6 @@
   }
 }
 
-ol.projects {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  grid-gap: 1rem;
-
-  & > li {
-    margin: 0;
-  }
-
-  & .repo {
-    background-color: var(--background-2);
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border: 0.0625rem solid var(--background-3);
-    color: var(--text-2);
-    font-size: var(--font-size-sm);
-    display: flex;
-    flex-direction: column;
-
-    & .repo-title {
-      font-size: var(--font-size-base);
-      margin-bottom: 0.5rem;
-    }
-
-    & .octicon.octicon-repo {
-      height: 1.5em;
-      width: 1.5em;
-    }
-
-    & [itemprop='description'] {
-      flex: 1 0 auto;
-      color: var(--text-3);
-    }
-
-    & [itemprop='url'] {
-      margin-bottom: 0.5rem;
-    }
-
-    & .repo-meta {
-      margin: 0;
-      display: flex;
-      flex-flow: row wrap;
-      gap: 1rem;
-    }
-
-    & .language-color {
-      display: inline-block;
-      width: 0.875em;
-      height: 0.875em;
-      border: 0.0625rem solid var(--background-3);
-      border-radius: 50%;
-      margin-right: 0.25em;
-    }
-  }
-}
 .article-meta > * + *::before {
   content: '•';
   font-size: var(--font-size-base);

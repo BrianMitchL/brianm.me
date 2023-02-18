@@ -1,0 +1,36 @@
+---
+layout: 'layouts/page.njk'
+title: Projects
+description: Personal Projects
+eleventyNavigation:
+  key: Projects
+  order: 3
+---
+
+<script webc:type="render" webc:is="template">
+  function () {
+    return '<ol>' + this.github.repos.map((repo) => `<project-card
+      @project-html-url="${repo.html_url}"
+      @project-name="${repo.name}"
+      @project-description="${repo.description}"
+      @project-homepage="${repo.homepage}"
+      @project-language="${repo.language}"
+      @project-language-color="${repo.language_color}"
+      @project-stargazers-count="${repo.stargazers_count}"
+      @project-stargazers-url="${repo.stargazers_url}"
+      @project-forks-count="${repo.forks_count}"
+      @project-forks-url="${repo.forks_url}"
+    ></project-card>`).join('') + '</ol>';
+  }
+</script>
+
+<style webc:scoped>
+  :host {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-gap: 1rem;
+  }
+</style>

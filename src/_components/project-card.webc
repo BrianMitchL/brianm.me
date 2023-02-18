@@ -1,0 +1,120 @@
+<li
+  webc:root
+  webc:keep
+  itemscope
+  itemtype="https://schema.org/SoftwareSourceCode"
+>
+  <div class="project-title">
+    <a
+      :href="projectHtmlUrl"
+      itemprop="codeRepository name"
+      @text="projectName"
+    ></a>
+  </div>
+  <p itemprop="description" @text="projectDescription"></p>
+  <a
+    webc:if="projectHomepage"
+    :href="projectHomepage"
+    itemprop="url"
+    target="_blank"
+    rel="noopener"
+    @text="projectHomepage"
+  ></a>
+  <p class="project-meta">
+    <span webc:if="projectLanguage" class="language">
+      <span
+        class="language-color"
+        :style="`background-color: ${projectLanguageColor}`"
+      ></span>
+      <span itemprop="programmingLanguage" @text="projectLanguage"></span>
+    </span>
+    <a
+      webc:if="projectStargazersCount > 0"
+      :href="projectStargazersUrl"
+      class="project-link"
+      target="_blank"
+      rel="noopener"
+    >
+      <template webc:nokeep @html="octicon('star')"></template
+      ><template webc:nokeep @text="projectStargazersCount"></template
+      ><span class="visually-hidden">Stars</span>
+    </a>
+    <a
+      webc:if="projectForksCount > 0"
+      :href="projectForksUrl"
+      class="project-link"
+      target="_blank"
+      rel="noopener"
+    >
+      <template webc:nokeep @html="octicon('git-branch')"></template
+      ><template webc:nokeep @text="projectForksCount"></template
+      ><span class="visually-hidden">Forks</span>
+    </a>
+  </p>
+</li>
+
+<style webc:scoped>
+  :host {
+    margin: 0;
+    background-color: var(--background-2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid var(--background-3);
+    color: var(--text-2);
+    font-size: var(--font-size-sm);
+    display: flex;
+    flex-direction: column;
+  }
+
+  :host .project-title {
+    font-size: var(--font-size-base);
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  :host [itemprop='description'] {
+    flex: 1 0 auto;
+    color: var(--text-3);
+  }
+
+  :host [itemprop='url'] {
+    margin-bottom: 0.5rem;
+  }
+
+  :host .project-meta {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+
+  :host .language {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    white-space: nowrap;
+  }
+
+  :host .language .language-color {
+    display: inline-block;
+    width: 0.875em;
+    height: 0.875em;
+    border: 0.0625rem solid var(--background-3);
+    border-radius: 50%;
+    margin-right: 0.25em;
+  }
+
+  :host .project-link {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  :host .project-link,
+  :host .project-link:hover {
+    text-decoration: none;
+  }
+</style>
