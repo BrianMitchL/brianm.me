@@ -38,9 +38,7 @@ Heading level 6
 
 Text is important, there are lots of things you can do with it!
 
-This paragraph is for testing font features. The quick brown fox jumps over the lazy dog. 0987654321. tt TT Qq. Artificial, practical. Those words were for testing the ligatures from a 't' or an 'f' to an 'i'.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This paragraph is for testing font features. The quick brown fox jumps over the lazy dog. 0987654321. tt TT Qq. Artificial, practical. Those words were for testing the ligatures from a 't' or an 'f' to an 'i'. _italic_ **bold** _**italic bold**_
 
 </div>
 
@@ -50,9 +48,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Text is important, there are lots of things you can do with it!
 
-This paragraph is for testing font features. The quick brown fox jumps over the lazy dog. 0987654321. tt TT Qq. Artificial, practical. Those words were for testing the ligatures from a 't' or an 'f' to an 'i'.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This paragraph is for testing font features. The quick brown fox jumps over the lazy dog. 0987654321. tt TT Qq. Artificial, practical. Those words were for testing the ligatures from a 't' or an 'f' to an 'i'. _italic_ **bold** _**italic bold**_
 
 </div>
 
@@ -62,9 +58,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Text is important, there are lots of things you can do with it!
 
-This paragraph is for testing font features. The quick brown fox jumps over the lazy dog. 0987654321. tt TT Qq. Artificial, practical. Those words were for testing the ligatures from a 't' or an 'f' to an 'i'.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This paragraph is for testing font features. The quick brown fox jumps over the lazy dog. 0987654321. tt TT Qq. Artificial, practical. Those words were for testing the ligatures from a 't' or an 'f' to an 'i'. _italic_ **bold** _**italic bold**_
 
 </div>
 

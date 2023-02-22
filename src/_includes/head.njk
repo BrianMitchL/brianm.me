@@ -24,6 +24,24 @@
 />
 <link rel="manifest" href="{{ '/site.webmanifest' | url }}" />
 <link
+  rel="preload"
+  href="{{ '/assets/fonts/Satoshi-Variable.woff2' | url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin />
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/Satoshi-VariableItalic.woff2' | url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin />
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/SpaceGrotesk[wght].woff2' | url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin />
+<link
   rel="stylesheet"
   href="{{ '/assets/css/style.css' | url | hashify }}"
 />
@@ -33,18 +51,6 @@
   href="{{ '/assets/css/index.css' | url | hashify }}"
 />
 {%- endif %}
-<link
-  rel="stylesheet"
-  href="{{ '/assets/fonts/satoshi/satoshi.css' | url }}"
-/>
-<link
-  rel="stylesheet"
-  href="{{ '/assets/fonts/space-grotesk/space-grotesk.css' | url }}"
-/>
-<link
-  rel="stylesheet"
-  href="{{ '/assets/fonts/berkeley-mono/berkeley-mono.css' | url }}"
-/>
 
 <title>
   {%- if metaTitle -%}
