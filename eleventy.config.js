@@ -47,7 +47,7 @@ function hashify(filePath) {
   }
 
   const hash = crypto.createHash('sha256');
-  const fileContent = fs.readFileSync(dir.input + '/' + filePath);
+  const fileContent = fs.readFileSync(dir.output + '/' + filePath);
   hash.update(fileContent);
   const hashedPath = `${filePath}?h=${hash.digest('hex')}`;
   hashCache.set(filePath, hashedPath);
@@ -173,12 +173,10 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy('src/assets/fonts');
-  eleventyConfig.addPassthroughCopy('src/assets/js/*.{js,mjs,map}');
-  eleventyConfig.addPassthroughCopy('src/assets/css/*.css');
   eleventyConfig.addPassthroughCopy('src/assets/images');
   eleventyConfig.addPassthroughCopy('src/*.{txt,ico,png}');
 
-  eleventyConfig.addWatchTarget('src/assets/*.{css,js,mjs}');
+  eleventyConfig.addWatchTarget('src/assets/**/*.{pcss,js,mjs}');
 
   /* Markdown Overrides */
   const markdownLibrary = markdownIt({

@@ -26,7 +26,7 @@
   {%- set js -%}
   (function () {
     let erred = false;
-    const importFun = () => import('{{ '/assets/js/fun.mjs' | url | hashify }}');
+    const importFun = () => import('{{ '/assets/js/fun.js' | url | hashify }}');
     async function haveFun(e) {
       try {
         (await importFun()).default(e);

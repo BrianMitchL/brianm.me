@@ -1,5 +1,6 @@
 import confetti from 'canvas-confetti';
-import '../../css/partials/fun.pcss';
+import 'csshake/dist/csshake-default.css';
+import '../css/partials/fun.pcss';
 
 let funEnabled = false;
 

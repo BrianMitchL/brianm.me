@@ -28,6 +28,4 @@ nbproject
 .idea
 
 node_modules
-src/assets/css/*.css
-src/assets/js/*.*
 .env
