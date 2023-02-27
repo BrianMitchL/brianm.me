@@ -10,7 +10,7 @@ tags:
 
 When migrating my site from Jekyll on GitHub Pages to Eleventy on GitHub Pages, I wanted to continue to use my page redirects to preserve old links.
 
-Caveat: Emitting new HTML files with redirect content is best for webservers that just serve files. Hosts like [Netlify](https://docs.netlify.com/routing/redirects/), [Vercel](https://vercel.com/docs/configuration#project/redirects), [AWS Amplify](https://docs.aws.amazon.com/amplify/latest/userguide/redirects.html), or your own webserver all offer ways to centrally configure redirects. Using your host or webserver to configure redirects is probably a better approach that serving redirect HTML files that are handled on the client side.
+Caveat: Emitting new HTML files with redirect content is best for webservers that just serve files. Hosts like [Netlify](https://docs.netlify.com/routing/redirects/), [Vercel](https://vercel.com/docs/configuration#project/redirects), [AWS Amplify](https://docs.aws.amazon.com/amplify/latest/userguide/redirects.html), or your own webserver all offer ways to centrally configure redirects. Using your host or webserver to configure redirects is probably a better approach than serving redirect HTML files that are handled on the client side.
 
 ## Backstory
 
