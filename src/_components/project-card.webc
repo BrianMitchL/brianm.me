@@ -29,7 +29,7 @@
       <span itemprop="programmingLanguage" @text="projectLanguage"></span>
     </span>
     <a
-      webc:if="projectStargazersCount > 0"
+      webc:if="projectStargazersCount  !== '0'"
       :href="projectStargazersUrl"
       class="project-link"
       target="_blank"
@@ -40,7 +40,7 @@
       ><span class="visually-hidden">Stars</span>
     </a>
     <a
-      webc:if="projectForksCount > 0"
+      webc:if="projectForksCount !== '0'"
       :href="projectForksUrl"
       class="project-link"
       target="_blank"

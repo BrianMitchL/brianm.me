@@ -45,7 +45,7 @@ module.exports = async function () {
   );
 
   const formatNumber = (num) =>
-    Math.abs(num) > 999 ? (num / 1000).toFixed(1) + 'k' : num;
+    Math.abs(num) > 999 ? (num / 1000).toFixed(1) + 'k' : num.toString();
 
   // thanks https://thekevinscott.com/emojis-in-javascript/
   const startsWithEmoji =
