@@ -1,7 +1,6 @@
 import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
-import filesize from 'rollup-plugin-filesize';
 import postcss from 'rollup-plugin-postcss';
 
 const production = !process.env.ROLLUP_WATCH;
@@ -32,7 +31,6 @@ const config = {
       },
     }),
     production && terser(),
-    production && filesize(),
   ],
 };
 
