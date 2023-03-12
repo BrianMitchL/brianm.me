@@ -1,9 +1,9 @@
 require('dotenv').config();
 const { DateTime, Settings } = require('luxon');
 Settings.defaultZone = 'utc';
-const fs = require('fs');
-const path = require('path');
-const crypto = require('crypto');
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');

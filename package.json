@@ -21,11 +21,11 @@
   },
   "author": "Brian Mitchell",
   "dependencies": {
-    "@primer/octicons": "^17.12.0",
+    "@primer/octicons": "^18.2.0",
     "canvas-confetti": "^1.6.0",
     "csshake": "^1.7.0",
     "prism-themes": "^1.9.0",
-    "svelte": "^3.55.1",
+    "svelte": "^3.56.0",
     "svelte-compare-image": "^1.0.2"
   },
   "devDependencies": {
@@ -43,12 +43,12 @@
     "@rollup/plugin-terser": "^0.4.0",
     "@sindresorhus/slugify": "^1.1.2",
     "@types/markdown-it": "^12.2.3",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "cssnano": "^5.1.15",
     "dotenv": "^16.0.3",
     "eleventy-plugin-emoji": "^1.1.0",
     "eleventy-plugin-excerpt": "^1.1.2",
-    "eleventy-plugin-og-image": "^1.6.0",
+    "eleventy-plugin-og-image": "^1.6.1",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
     "luxon": "^2.5.2",
@@ -63,17 +63,12 @@
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^11.2.1",
     "prettier": "^2.8.4",
-    "rimraf": "^4.1.2",
-    "rollup": "^3.17.3",
+    "rimraf": "^4.4.0",
+    "rollup": "^3.19.1",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-svelte": "^7.1.3",
+    "rollup-plugin-svelte": "^7.1.4",
     "sharp": "^0.31.3",
-    "terser": "^5.16.5"
-  },
-  "overrides": {
-    "@quasibit/eleventy-plugin-schema": {
-      "@11ty/eleventy": "$@11ty/eleventy"
-    }
+    "terser": "^5.16.6"
   },
   "prettier": {
     "singleQuote": true,
