@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2023-02-02
+modified: 2023-04-08
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -189,6 +189,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Beyerdynamic DT 770 PRO 80 ohms](https://north-america.beyerdynamic.com/dt-770-pro.html) reference headphones
 - [Blue compass](https://www.bluemic.com/en-us/products/compass/) microphone boom arm
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
+- [Logitech Litra Glow](https://www.logitech.com/en-us/products/lighting/litra-glow.html) LED streaming light for video calls
 - [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
 - [Apple MagSafe Charger](https://www.apple.com/shop/product/MHXH3AM/A/magsafe-charger)
 - [Acoustic Panels](https://amazon.com/gp/product/B07VH6KDY8/)
