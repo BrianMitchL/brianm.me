@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2023-04-08
+modified: 2023-05-14
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -231,5 +231,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 Car-free since September 13, 2021!
 
 - 2022 All-City Super Professional Apex 1 bicycle
+- 2021 All-City Nature Cross single speed bicycle
 - 2017 Jamis Renegade Expat bicycle
 - 2011 Trek 3500 bicycle for winter riding
