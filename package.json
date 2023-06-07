@@ -48,7 +48,7 @@
     "dotenv": "^16.1.4",
     "eleventy-plugin-emoji": "^1.1.0",
     "eleventy-plugin-excerpt": "^1.1.2",
-    "eleventy-plugin-og-image": "^1.6.2",
+    "eleventy-plugin-og-image": "^2.0.0",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
     "luxon": "^2.5.2",
