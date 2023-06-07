@@ -46,6 +46,8 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 - **soona** _Senior Software Engineer_ (June 2022 &ndash; Present), Minneapolis, MN.
   - Upgraded the Vue application from Vue 2 to Vue 3.
   - Created patterns and promoted using Tanstack Query over global state solutions for server data in the Vue application.
+  - Upgraded Rails frontend bundler to use Vite, reducing dependencies, improving developer experience, and modernizing tooling.
+  - Worked on the Production team to implement new and enhance existing product features.
 - **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; May 2022), Minnetonka, MN.
   - Wrote a new chat interface utilizing Twilio chat, simplifying and separating display and data logic.
   - Led the development of the next generation internal coaching portal React application to improve performance, accessibility, user experience, visual consistency, and ease of additional development.
