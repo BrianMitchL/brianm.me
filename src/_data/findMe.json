@@ -33,6 +33,12 @@
       "color": "#FA243C"
     },
     {
+      "title": "Bluesky",
+      "url": "https://bsky.app/profile/brianm.me",
+      "icon": "bluesky",
+      "color": "#0560FF"
+    },
+    {
       "title": "CodePen",
       "url": "https://codepen.io/brianmitchl",
       "icon": "codepen",
@@ -101,6 +107,12 @@
       "title": "Steam",
       "url": "https://steamcommunity.com/id/MagicBriBri",
       "icon": "steam",
+      "color": "#000000"
+    },
+    {
+      "title": "Threads",
+      "url": "https://www.threads.net/@brianmitchl",
+      "icon": "threads",
       "color": "#000000"
     },
     {
