@@ -18,7 +18,7 @@ module.exports = (ctx) => {
     config.plugins.push(
       cssnano({
         preset: 'default',
-      })
+      }),
     );
   }
 

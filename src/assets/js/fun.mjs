@@ -6,12 +6,12 @@ let funEnabled = false;
 
 export default function fun(e) {
   const reduceMotion = window.matchMedia(
-    '(prefers-reduced-motion: reduce)'
+    '(prefers-reduced-motion: reduce)',
   ).matches;
 
   if (reduceMotion) {
     alert(
-      'Sorry, you have set to prefer reduced motion, fun mode is based on motion and color shifting.'
+      'Sorry, you have set to prefer reduced motion, fun mode is based on motion and color shifting.',
     );
   } else if (!funEnabled) {
     console.log(
@@ -28,7 +28,7 @@ export default function fun(e) {
         'hsl(270, 100%, 50%),' +
         'hsl(300, 100%, 50%),' +
         'hsl(330, 100%, 50%),' +
-        'hsl(360, 100%, 50%));'
+        'hsl(360, 100%, 50%));',
     );
     document.body.classList.add('fun');
     document.querySelectorAll('img.emoji').forEach(function (el) {
@@ -64,7 +64,7 @@ export default function fun(e) {
       confetti(
         Object.assign({}, defaults, opts, {
           particleCount: Math.floor(count * particleRatio),
-        })
+        }),
       );
     }
 

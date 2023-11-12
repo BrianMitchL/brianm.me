@@ -29,7 +29,7 @@ redirect_from: /old-page
 With the `jekyll-redirect-from` plugin, it will also emit a page at `/old-page.html`, with the following content. This causes a browser to immediately load the page at the new URL, while preserving any links to the old page.
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <meta charset="utf-8" />
   <title>Redirecting&hellip;</title>

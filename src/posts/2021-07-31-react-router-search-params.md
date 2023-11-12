@@ -1,7 +1,7 @@
 ---
 title: React Router v5 Search Parameters with URLSearchParams
 description: A solution for using URLSearchParams with search parameters from React Router v5.
-modified: 2021-01-19
+modified: 2022-01-19
 image: https://cdn.brianm.me/images/posts/react-router-search-params/useSearchParams-hook.png
 imageAlt: Screenshot of useSearchParams hook
 tags:
@@ -78,7 +78,7 @@ function SearchComponent() {
 
   const searchParams = useMemo(
     () => new URLSearchParams(search) as ReadOnlyURLSearchParams,
-    [search]
+    [search],
   );
 
   useEffect(() => {
@@ -115,7 +115,7 @@ export function useSearchParams() {
 
   return useMemo(
     () => new URLSearchParams(search) as ReadOnlyURLSearchParams,
-    [search]
+    [search],
   );
 }
 ```

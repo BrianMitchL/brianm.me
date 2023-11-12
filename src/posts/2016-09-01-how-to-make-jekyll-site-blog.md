@@ -175,7 +175,7 @@ When writing pages and posts, you don't want to have to keep track of every occu
 
 ```html
 {%- raw -%}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     {% include head.html %}
@@ -206,13 +206,12 @@ Another layout can also use a layout. It's content will be loaded in the `{% raw
 In the layout above, I also have `{% raw %}{% include head.html %}{% endraw %}` and `{% raw %}{% include footer.html %}{% endraw %}`. These are known as includes (or partials). Includes are a file that can be inserted into any page. They're perfect for a navbar or footer, where you want to keep the markup consistent throughout the site. Store any includes you use in `_includes/`. Here is a portion of my `nav.html` code:
 
 ```html
-{%- raw -%}
-{% assign url = page.url | remove:'/index.html' %}
-{% for link in site.navigation %}
-<li {% if url == link.url %}class="active"{% endif %}>
-    <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
-</li>{% endfor %}
-{%- endraw -%}
+{%- raw -%} {% assign url = page.url | remove:'/index.html' %} {% for link in
+site.navigation %}
+<li {% if url="" ="link.url" %}class="active" {% endif %}>
+  <a href="{{ link.url }}" title="{{ link.title }}">{{ link.text }}</a>
+</li>
+{% endfor %} {%- endraw -%}
 ```
 
 Here, I get the URL from the current page (while removing unwanted possible filenames) and store it as `url`. Next, I iterate through a list of link dictionaries and build the list in HTML. While iterating through this list, I check if the page URL is the same as the current link in the loop and, if so, set the item's class to active, which then applies a different background color, indicating that the user is on the said page.

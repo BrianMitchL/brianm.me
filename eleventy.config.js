@@ -64,7 +64,7 @@ async function loadIcon(icon) {
     dir.input,
     dir.includes,
     'icons',
-    `${icon}.svg`
+    `${icon}.svg`,
   );
   if (iconCache.has(iconPath)) {
     return iconCache.get(iconPath);
@@ -157,7 +157,7 @@ module.exports = function (eleventyConfig) {
         item.data.tags?.filter((item) => {
           // this list should match the `filter` list in tag.njk
           return !['all', 'post'].includes(item);
-        }) ?? []
+        }) ?? [],
       );
     }, []);
 
@@ -166,7 +166,7 @@ module.exports = function (eleventyConfig) {
       tags.reduce((counter, key) => {
         counter[key] = 1 + counter[key] || 1;
         return counter;
-      }, {})
+      }, {}),
     )
       .sort((a, b) => b[1] - a[1])
       .map((x) => x[0]);

@@ -21,7 +21,7 @@
             .replace(/\s+/g, ' ')}" readonly />
         </div>
        </li>`,
-        ''
+        '',
       );
     };
 
@@ -44,7 +44,7 @@
         .filter(
           (styleSheet) =>
             !styleSheet.href ||
-            styleSheet.href.startsWith(window.location.origin)
+            styleSheet.href.startsWith(window.location.origin),
         )
         .flatMap((sheet) => [...sheet.cssRules])
         .filter((rule) => rule.type === 1)
@@ -52,12 +52,12 @@
           Array.from(rule.style, (propName) => [
             propName.trim(),
             rule.style.getPropertyValue(propName).trim(),
-          ])
+          ]),
         )
         .filter(([propName]) => propName.startsWith('--'))
         .filter(
           ([propName, value]) =>
-            CSS.supports('color', value) && !propName.startsWith('--font')
+            CSS.supports('color', value) && !propName.startsWith('--font'),
         )
         .sort(([a], [b]) => a.localeCompare(b));
     }

@@ -7,7 +7,7 @@
       try {
         const data = await this.getArtists('artists', '1month');
         const tableFragment = this.querySelector(
-          '#lastfm-artists-table-template'
+          '#lastfm-artists-table-template',
         );
         const rowFragment = this.querySelector('#lastfm-artists-tr-template');
         const instance = document.importNode(tableFragment.content, true);
@@ -16,7 +16,7 @@
           row.querySelector('a').href = artist.url;
           row.querySelector('a').textContent = artist.name;
           row.querySelector('td:nth-child(2)').textContent = Number(
-            artist.playcount
+            artist.playcount,
           ).toLocaleString();
           instance.querySelector('tbody').appendChild(row);
         });
@@ -33,7 +33,7 @@
 
     async getArtists(path, period = 'overall') {
       const res = await fetch(
-        `https://lastfm-proxy.brianm.me/${path}?period=${period}`
+        `https://lastfm-proxy.brianm.me/${path}?period=${period}`,
       );
       if (res.ok && res.status === 200) {
         return res.json();

@@ -18,7 +18,7 @@ module.exports = async function () {
       fetchOptions: {
         headers,
       },
-    }
+    },
   );
 
   const linguist = yaml.load(linguistYaml);
@@ -30,7 +30,7 @@ module.exports = async function () {
       }
       return acc;
     },
-    {}
+    {},
   );
 
   const reposRaw = await Cache(
@@ -41,7 +41,7 @@ module.exports = async function () {
       fetchOptions: {
         headers,
       },
-    }
+    },
   );
 
   const formatNumber = (num) =>
