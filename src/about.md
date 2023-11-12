@@ -28,11 +28,6 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 
 - Co-organizer of the [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetup (2019 &ndash; present)
 - Board on [Streets.mn](https://streets.mn) (2022 &ndash; present)
-- Frequent participant of several meetups in the Twin Cities, notably including
-  [React Minneapolis](https://www.meetup.com/React-Minneapolis-Meetup/),
-  [Twin Cites Codepen Meetup](https://www.codepenmeetup.com), and
-  [Mpls Jr Devs](https://mplsjrdevs.com).
-- Podcasting on [The Nexus](http://thenexus.tv)
 - Bicycling
 - Downhill skiing
 - Electronic music shows
@@ -45,9 +40,11 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 
 - **soona** _Senior Software Engineer_ (June 2022 &ndash; Present), Minneapolis, MN.
   - Upgraded the Vue application from Vue 2 to Vue 3.
-  - Created patterns and promoted using Tanstack Query over global state solutions for server data in the Vue application.
+  - Created patterns and promoted using TanStack Query over global state solutions for server data in the Vue application.
   - Upgraded Rails frontend bundler to use Vite, reducing dependencies, improving developer experience, and modernizing tooling.
   - Worked on the Production team to implement new and enhance existing product features.
+  - Rewrote a chat implementation with a third-party SDK to allow for better observability, resilience, and user experience.
+  - Built a sidebar navigation and refactored site-wide layout touching nearly every page to allow for better scalability of the platform, more consistency, and a lighter weight implementation.
 - **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; May 2022), Minnetonka, MN.
   - Wrote a new chat interface utilizing Twilio chat, simplifying and separating display and data logic.
   - Led the development of the next generation internal coaching portal React application to improve performance, accessibility, user experience, visual consistency, and ease of additional development.
