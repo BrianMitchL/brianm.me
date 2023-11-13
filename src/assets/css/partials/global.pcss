@@ -580,10 +580,20 @@ body > footer {
   box-shadow: var(--shadow);
 
   & ul {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    padding: 0;
+
+    & > li {
+      margin: 0;
+    }
+
+    & svg {
+      display: block;
+    }
   }
 
   & p {

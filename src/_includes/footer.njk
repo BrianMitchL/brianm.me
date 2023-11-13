@@ -1,6 +1,6 @@
 {% set footerLinks = findMe.feature | sort(false, true, 'title') %}
 <footer class="text-center">
-  <ul class="list-none text-xl" aria-label="Links">
+  <ul class="text-xl" aria-label="Links">
     {%- for feature in footerLinks -%}
     <li>
       <a href="{{ feature.url | url }}" target="_blank" rel="noopener">

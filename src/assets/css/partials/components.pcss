@@ -132,7 +132,8 @@ a.tag {
 
 ol.tags-list,
 ul.tags-list {
-  display: flex;
+  display: inline-flex;
+  padding-inline-start: 0.25em;
   flex-wrap: wrap;
   gap: 0.25rem;
   list-style: none;
@@ -140,11 +141,6 @@ ul.tags-list {
 
   & li {
     margin: 0;
-  }
-
-  &.list-inline {
-    display: inline-flex;
-    padding-inline-start: 0.25em;
   }
 }
 
