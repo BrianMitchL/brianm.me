@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     {% include "head.njk" %}
-    <style>{{ page.url | webcGetCss | safe }}</style>
+    <style>{% getBundle "css" %}</style>
   </head>
   <body>
     {{ content | safe }}
     {%- include "footer.njk" -%}
-    <script type="module">{{ page.url | webcGetJs | jsmin | safe }}</script>
+    <script type="module">{% getBundle "js" %}</script>
     {%- include "analytics.njk" -%}
   </body>
 </html>

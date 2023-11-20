@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
+const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginNavigation = require('@11ty/eleventy-navigation');
@@ -22,6 +23,8 @@ const slugify = require('@sindresorhus/slugify');
 const { minify } = require('terser');
 const htmlmin = require('html-minifier');
 const octicons = require('@primer/octicons');
+const postcss = require('postcss');
+const postcssConfig = require('./postcss.config.js');
 
 const siteData = require('./src/_data/site.js');
 
@@ -101,6 +104,29 @@ module.exports = function (eleventyConfig) {
     },
   });
   eleventyConfig.addPlugin(pluginExcerpt);
+  eleventyConfig.addPlugin(bundlerPlugin, {
+    transforms: [
+      async function (content) {
+        // this.type returns the bundle name.
+        if (this.type === 'css') {
+          // Same as Eleventy transforms, this.page is available here.
+          const plugins = postcssConfig({
+            env: 'production',
+          }).plugins;
+          const result = await postcss(plugins).process(content, {
+            from: this.page.inputPath,
+            to: null,
+          });
+          return result.css;
+        } else if (this.type === 'js') {
+          const result = await minify(content);
+          return result.code;
+        }
+
+        return content;
+      },
+    ],
+  });
 
   eleventyConfig.addShortcode('octicon', function (icon) {
     return octicons[icon].toSVG();
