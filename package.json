@@ -22,10 +22,10 @@
   "author": "Brian Mitchell",
   "dependencies": {
     "@primer/octicons": "^19.8.0",
-    "canvas-confetti": "^1.9.0",
+    "canvas-confetti": "^1.9.1",
     "csshake": "^1.7.0",
     "prism-themes": "^1.9.0",
-    "svelte": "^4.2.3",
+    "svelte": "^4.2.5",
     "svelte-compare-image": "^2.0.2"
   },
   "devDependencies": {
@@ -61,9 +61,9 @@
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^12.0.1",
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "rimraf": "^5.0.5",
-    "rollup": "^4.4.0",
+    "rollup": "^4.5.0",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-svelte": "^7.1.6",
     "sharp": "^0.32.6",
