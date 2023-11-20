@@ -12,7 +12,6 @@ const pluginWebc = require('@11ty/eleventy-plugin-webc');
 const emojiReadTime = require('@11tyrocks/eleventy-plugin-emoji-readtime');
 const pluginEmoji = require('eleventy-plugin-emoji');
 const pluginSitemap = require('@quasibit/eleventy-plugin-sitemap');
-const pluginSchema = require('@quasibit/eleventy-plugin-schema');
 const pluginExcerpt = require('eleventy-plugin-excerpt');
 const markdownIt = require('markdown-it');
 const markdownItDeflist = require('markdown-it-deflist');
@@ -101,7 +100,6 @@ module.exports = function (eleventyConfig) {
       hostname: siteData.url,
     },
   });
-  eleventyConfig.addPlugin(pluginSchema);
   eleventyConfig.addPlugin(pluginExcerpt);
 
   eleventyConfig.addShortcode('octicon', function (icon) {

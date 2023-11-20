@@ -37,7 +37,6 @@
     "@11ty/eleventy-plugin-webc": "^0.8.1",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
     "@csstools/postcss-oklab-function": "^3.0.7",
-    "@quasibit/eleventy-plugin-schema": "^1.11.0",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
