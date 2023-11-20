@@ -111,7 +111,7 @@ module.exports = function (eleventyConfig) {
         if (this.type === 'css') {
           // Same as Eleventy transforms, this.page is available here.
           const plugins = postcssConfig({
-            env: 'production',
+            env: siteData.isProduction ? 'production' : 'dev',
           }).plugins;
           const result = await postcss(plugins).process(content, {
             from: this.page.inputPath,
