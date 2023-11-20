@@ -1,0 +1,25 @@
+<div webc:root>
+  <project-card
+    webc:for="repo of repos"
+    webc:nokeep
+    :@project-html-url="repo.html_url"
+    :@project-id="repo.id"
+    :@project-name="repo.name"
+    :@project-description="repo.description"
+    :@project-homepage="repo.homepage"
+    :@project-language="repo.language"
+    :@project-language-color="repo.language_color"
+    :@project-stargazers-count="repo.stargazers_count"
+    :@project-stargazers-url="repo.stargazers_url"
+    :@project-forks-count="repo.forks_count"
+    :@project-forks-url="repo.forks_url"
+  ></project-card>
+</div>
+
+<style webc:scoped>
+  :host {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    grid-gap: 1rem;
+  }
+</style>

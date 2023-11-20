@@ -1,24 +1,36 @@
-<li
-  webc:root
-  webc:keep
+<script webc:setup>
+  function formatUrl(href) {
+    return href.replace(/^https?:\/\//, '');
+  }
+</script>
+
+<article
+  webc:root="override"
+  :aria-labelledby="'project-heading-' + projectId"
   itemscope
   itemtype="https://schema.org/SoftwareSourceCode"
 >
-  <div class="project-title">
-    <a
-      :href="projectHtmlUrl"
-      itemprop="codeRepository name"
-      @text="projectName"
-    ></a>
-  </div>
+  <h2
+    :id="'project-heading-' + projectId"
+    class="project-title"
+    itemprop="name"
+    @text="projectName"
+  ></h2>
   <p itemprop="description" @text="projectDescription"></p>
+  <a
+    :href="projectHtmlUrl"
+    itemprop="codeRepository"
+    target="_blank"
+    rel="noopener"
+    @text="formatUrl(projectHtmlUrl)"
+  ></a>
   <a
     webc:if="projectHomepage"
     :href="projectHomepage"
     itemprop="url"
     target="_blank"
     rel="noopener"
-    @text="projectHomepage"
+    @text="formatUrl(projectHomepage)"
   ></a>
   <p class="project-meta">
     <span webc:if="projectLanguage" class="language">
@@ -51,7 +63,7 @@
       ><span class="visually-hidden">Forks</span>
     </a>
   </p>
-</li>
+</article>
 
 <style webc:scoped>
   :host {
@@ -68,10 +80,6 @@
 
   :host .project-title {
     font-size: var(--font-size-base);
-    margin-bottom: 0.5rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
   }
 
   :host [itemprop='description'] {
@@ -79,7 +87,8 @@
     color: var(--text-3);
   }
 
-  :host [itemprop='url'] {
+  :host [itemprop='url'],
+  :host [itemprop='codeRepository'] {
     margin-bottom: 0.5rem;
   }
 

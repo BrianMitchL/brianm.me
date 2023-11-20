@@ -1,6 +1,4 @@
-<span webc:root webc:keep
-  >L<span class="sup">a</span>T<span class="sub">e</span>X</span
->
+<span webc:root> L<span class="sup">a</span>T<span class="sub">e</span>X</span>
 
 <style webc:scoped>
   /*
@@ -12,6 +10,7 @@
   :host {
     font-family: 'Computer Modern', 'Computer Modern Unicode', Bodoni, Didot,
       serif;
+    display: inline;
   }
 
   :host .sub,

@@ -66,6 +66,7 @@ module.exports = async function () {
       );
     })
     .map((repo) => ({
+      id: repo.id,
       name: repo.name,
       description: repo.description,
       html_url: repo.html_url,
