@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2023-05-14
+modified: 2023-11-29
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -17,9 +17,8 @@ This serves as a living document of software, gear, and other things that I typi
 
 I use the native macOS [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) with my [custom theme](https://github.com/BrianMitchL/dotfiles/blob/master/Brian%20Theme.terminal). You can see my standard configuration and settings in my [dotfiles](https://github.com/BrianMitchL/dotfiles) repository.
 
-- [WebStorm](https://www.jetbrains.com/webstorm/) IDE with the Darcula theme. I've made one edit to the default theme, which is to use italics on keywords. This is great when paired with a typeface like Dank Mono that uses a few cursive letters, or special italic styles.
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/) IDE with the Darcula theme
 - [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) typeface
-- [webstorm-styled-components](https://github.com/styled-components/webstorm-styled-components) plug-in
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) my main development browser
 - [Safari](https://www.apple.com/safari/) my main personal and non-work browser, but I do occasionally use it for development, particularly with personal projects.
 - [Homebrew](https://brew.sh)
@@ -28,7 +27,7 @@ I use the native macOS [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS
 - [starship](https://starship.rs) prompt
 - [prettier](https://prettier.io)
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
-- [youtube-dl](https://yt-dl.org)
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) YouTube downloader
 
 ## Desktop Apps
 
@@ -38,7 +37,6 @@ cross-platform.
 - [1Blocker](https://1blocker.com)
 - [1Password](https://1password.com)
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
-- [Apple Mail](https://support.apple.com/guide/mail/welcome/mac)
 - [Apple Music](https://www.apple.com/apple-music/)
 - [Apple Photos](https://www.apple.com/macos/photos/)
 - [BetterTouchTool](https://folivora.ai)
@@ -55,8 +53,10 @@ cross-platform.
 - [iStat Menus](https://bjango.com/mac/istatmenus/)
 - [iStumbler](https://istumbler.net)
 - [iVI](http://southpolesoftware.com/wp/ivi-pro-v4/)
+- [Ivory for Mastodon](https://tapbots.com/ivory/mac/)
 - [Logic Pro X](https://www.apple.com/logic-pro/)
 - [Loopback](https://rogueamoeba.com/loopback/)
+- [Mimestream](https://mimestream.com) Gmail client
 - [Pixelmator](https://www.pixelmator.com/mac/)
 - [Private Internet Access](https://www.privateinternetaccess.com)
 - [Rocket](https://matthewpalmer.net/rocket/)
@@ -64,7 +64,7 @@ cross-platform.
 - [Screens](https://edovia.com/en/screens-mac/)
 - [Scrobbles for Last.fm](https://apps.apple.com/us/app/scrobbles-for-last-fm/id1344679160)
 - [Slack](https://slack.com)
-- [Spotify](https://www.spotify.com/us/)
+- [Spotify](https://www.spotify.com/)
 - [TextMate](https://macromates.com)
 - [Transmission](https://transmissionbt.com)
 - [Transmit](https://www.panic.com/transmit/)
@@ -89,18 +89,19 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 ### Games
 
-- [Alto's Adventure](https://apps.apple.com/us/app/altos-adventure/id950812012) {% emoji "🌟", "star" %}
+- [Alto's Adventure](https://apps.apple.com/us/app/altos-adventure/id950812012)
 - [Alto's Odyssey](https://apps.apple.com/us/app/altos-odyssey/id1182456409)
 - [Artificial Superintelligence](https://apps.apple.com/us/app/artificial-superintelligence/id1060474699)
 - [Bloons Supermonkey 2](https://apps.apple.com/us/app/bloons-supermonkey-2/id1118441024)
-- [holedown](https://apps.apple.com/us/app/holedown/id1297270249)
+- [holedown](https://apps.apple.com/us/app/holedown/id1297270249) {% emoji "🌟", "star" %}
 - [Jetpack Joyride](https://apps.apple.com/us/app/jetpack-joyride/id457446957)
 - [Microsoft Solitare Collection](https://apps.apple.com/us/app/microsoft-solitaire-collection/id1103438575) {% emoji "🌟", "star" %}
 - [Mineswifter (Minesweeper)](https://apps.apple.com/us/app/mineswifter-minesweeper/id1521190195)
 - [Monument Valley 2](https://apps.apple.com/us/app/monument-valley-2/id1187265767)
-- [Monument Valley](https://apps.apple.com/us/app/monument-valley/id728293409) {% emoji "🌟", "star" %}
+- [Monument Valley](https://apps.apple.com/us/app/monument-valley/id728293409)
 - [Tetris](https://apps.apple.com/us/app/tetris/id1491074310)
 - [Threes](https://apps.apple.com/us/app/threes-freeplay/id976851174) {% emoji "🌟", "star" %}
+- [twofold inc.](https://apps.apple.com/us/app/twofold-inc/id1042322028) {% emoji "🌟", "star" %}
 
 ### Music
 
@@ -136,7 +137,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 ### Social
 
-- [Apollo for Reddit](https://apps.apple.com/us/app/apollo-for-reddit/id979274575) {% emoji "🌟", "star" %}
+- [Bluesky Social](https://apps.apple.com/us/app/bluesky-social/id6444370199)
 - [Discord](https://apps.apple.com/us/app/discord-talk-chat-hang-out/id985746746)
 - [Instagram](https://apps.apple.com/us/app/instagram/id389801252)
 - [Ivory for Mastodon](https://apps.apple.com/us/app/ivory-for-mastodon-by-tapbots/id6444602274) {% emoji "🌟", "star" %}
@@ -144,7 +145,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Slack](https://apps.apple.com/us/app/slack/id618783545)
 - [Strava](https://apps.apple.com/us/app/strava-run-ride-or-swim/id426826309)
 - [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082) {% emoji "🌟", "star" %}
-- [Twitter](https://apps.apple.com/us/app/twitter/id333903271)
 
 ### Utilities
 
@@ -201,7 +201,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - Tiangong, Mac mini - Apple M1
   - Plex Media Server
   - Tautulli
-  - Minecraft
 - Salyut, [Synology Diskstation 1817+ NAS](https://www.synology.com/en-us/products/DS1817+)
   - RAID 6
   - Seven 4 TB hard drives (mix of Western Digital Red, Seagate NAS, and HGST DeskStar NAS)
@@ -210,9 +209,10 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 - BriPhone 14 Pro, [iPhone 14 Pro](https://everymac.com/systems/apple/iphone/specs/apple-iphone-14-pro-united-states-a2650-specs.html)
 - BriPad Air, [iPad Air (4th Gen)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-air-4th-gen-a2316-wifi-only-specs.html)
-- Brapple Watch 7, [Apple Watch Series 7 (Aluminum, GPS, 45 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-7-aluminum-gps-45mm-a2474.html)
+- Brapple Watch 9, [Apple Watch Series 9 (Aluminum, GPS, 45 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-9-aluminum-gps-45mm.html)
 - [AirPods Pro (2nd generation)](https://www.apple.com/airpods-pro/)
-- [Anker PowerCore 13000](https://www.anker.com/products/variant/PowerCore-13000mAh/A1215011) power bank
+- [Anker PowerCore 30W](https://www.amazon.com/gp/product/B0BYP1D2NT/) power bank
+- [Anker Prime 20,000mAh Power Bank (200W)](https://www.anker.com/products/a1336-20000mah-power-bank)
 - [Ultimate Ears BOOM 2](https://www.ultimateears.com/en-us/wireless-speakers/boom-2.html) speaker
 - [Sony WH-1000XM3 Wireless Noise-Canceling Headphones](https://www.sony.com/electronics/headband-headphones/wh-1000xm3)
 
@@ -232,5 +232,5 @@ Car-free since September 13, 2021!
 
 - 2022 All-City Super Professional Apex 1 bicycle
 - 2021 All-City Nature Cross single speed bicycle
+- 2018 (ish) All-City Gorilla Monsoon bicycle
 - 2017 Jamis Renegade Expat bicycle
-- 2011 Trek 3500 bicycle for winter riding
