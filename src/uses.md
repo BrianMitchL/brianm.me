@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2023-11-29
+modified: 2023-12-23
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -68,7 +68,6 @@ cross-platform.
 - [TextMate](https://macromates.com)
 - [Transmission](https://transmissionbt.com)
 - [Transmit](https://www.panic.com/transmit/)
-- [Twitter for Mac](https://apps.apple.com/us/app/twitter/id1482454543)
 - [VLC](https://www.videolan.org/vlc/)
 - [XLD](https://tmkk.undo.jp/xld/index_e.html)
 
