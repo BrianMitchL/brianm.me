@@ -613,4 +613,20 @@ body > footer {
       color: var(--text-2);
     }
   }
+
+  & li {
+    a {
+      display: block;
+      transform: scale(1) rotate(0);
+      transition: transform 100ms ease-in-out;
+    }
+
+    &:nth-child(even) a:hover {
+      transform: scale(1.1) rotate(-5deg);
+    }
+
+    &:nth-child(odd) a:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
 }
