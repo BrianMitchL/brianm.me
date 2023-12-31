@@ -17,14 +17,16 @@ eleventyNavigation:
 ---
 
 {%- for post in posts -%}
-  <article>
+  <article itemscope itemtype="https://schema.org/BlogPosting">
     {%- if post.data.image -%}
     <div class="article-teaser">
-      <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" />
+      <a href="{{ post.url }}" aria-label="{{ post.data.title }}">
+        <img itemprop="image" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" />
+      </a>
     </div>
     {%- endif -%}
-    <h2>
-      <a href="{{ post.url }}" class="link-heading">{{ post.data.title }}</a>
+    <h2 itemprop="headline">
+      <a href="{{ post.url }}" itemprop="url">{{ post.data.title }}</a>
     </h2>
     <div class="article-meta">
       <time
