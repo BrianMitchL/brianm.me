@@ -31,7 +31,8 @@ iframe {
 }
 
 iframe[src^="https://www.youtube.com"],
-iframe[src^="https://www.youtube-nocookie.com"] {
+iframe[src^="https://www.youtube-nocookie.com"]
+{
   aspect-ratio: 16 / 9;
   height: auto;
   width: 100%;
@@ -43,7 +44,7 @@ iframe[src^="https://www.youtube-nocookie.com"] {
   justify-content: center;
   align-items: end;
   grid-gap: 0.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
 }
 
 figure img {
