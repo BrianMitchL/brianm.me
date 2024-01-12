@@ -1,7 +1,7 @@
 ---
 title: Eleventy Redirect From
 description: An Eleventy drop-in replacement for the jekyll-redirect-from style of redirect files.
-modified: 2021-01-22
+modified: 2024-01-12
 tags:
   - Eleventy
   - Jekyll
@@ -48,7 +48,7 @@ With the `jekyll-redirect-from` plugin, it will also emit a page at `/old-page.h
 
 ## Eleventy Template
 
-With Eleventy, I was able to replicate this functionality with a single template utilizing the [pagination](https://www.11ty.dev/docs/pagination/) feature with a [before callback](https://www.11ty.dev/docs/pagination/#the-before-callback). This lets us reduce the collection of all pages into a list of redirect pairs (the source path and the destination path).
+With Eleventy, I was able to replicate this functionality with a single template utilizing the [pagination](https://www.11ty.dev/docs/pagination/) feature with a [before callback](https://www.11ty.dev/docs/pagination/#the-before-callback). This lets us reduce the collection of all pages into a list of redirect pairs (the source path and the destination path). Because this emits a page for each redirect, it needs to be treated as a full page, so put this in your top-level directory for pages, not in an `_includes` directory.
 
 Using this template allows for drop-in replacement from the `jekyll-redirect-from` style of creating redirects. We are able to check if the value is a string or an array in order to handle one or multiple redirects.
 
