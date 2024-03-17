@@ -10,11 +10,11 @@ eleventyNavigation:
 Brian Mitchell is a Senior Software Engineer at [soona](https://soona.co). In Brian's spare time, he
 enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
 
-_If you're looking for a more formal résumé, download the [PDF](https://github.com/BrianMitchL/resume/raw/main/resume.pdf)._
+_If you're looking for a more formal résumé, download the [PDF](https://github.com/BrianMitchL/resume/raw/main/resume%20-%20Brian%20Mitchell.pdf)._
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, TanStack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Webpack, Eleventy, Jekyll, Ruby on Rails, Node.js, Python, HTML, CSS, SCSS, git,&nbsp;{% renderTemplate "webc" %}<latex-logo></latex-logo>{% endrenderTemplate %}
+TypeScript, JavaScript, React, TanStack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Webpack, Eleventy, Jekyll, Ruby on Rails, NestJS, Next.js, Node.js, Python, HTML, CSS, SCSS, git,&nbsp;{% renderTemplate "webc" %}<latex-logo></latex-logo>{% endrenderTemplate %}
 
 ### Operating Systems
 
