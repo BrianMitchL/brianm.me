@@ -25,8 +25,8 @@
     "canvas-confetti": "^1.9.2",
     "csshake": "^1.7.0",
     "prism-themes": "^1.9.0",
-    "svelte": "^4.2.12",
-    "svelte-compare-image": "^2.0.2"
+    "svelte": "^4.2.15",
+    "svelte-compare-image": "^3.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
@@ -37,12 +37,12 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
     "@11tyrocks/eleventy-plugin-emoji-readtime": "^1.0.1",
-    "@csstools/postcss-oklab-function": "^3.0.12",
+    "@csstools/postcss-oklab-function": "^3.0.13",
     "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@sindresorhus/slugify": "^1.1.2",
-    "@types/markdown-it": "^13.0.7",
+    "@types/markdown-it": "^14.0.1",
     "autoprefixer": "^10.4.19",
     "cssnano": "^6.1.2",
     "dotenv": "^16.4.5",
@@ -61,14 +61,14 @@
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",
-    "postcss-nesting": "^12.1.0",
+    "postcss-nesting": "^12.1.1",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
-    "rollup": "^4.13.2",
+    "rollup": "^4.14.3",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-svelte": "^7.2.0",
     "sharp": "^0.32.6",
-    "terser": "^5.30.0"
+    "terser": "^5.30.3"
   },
   "prettier": {
     "singleQuote": true,
