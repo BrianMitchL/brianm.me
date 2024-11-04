@@ -21,7 +21,7 @@ const markdownItFootnote = require('markdown-it-footnote');
 const markdownItTOCDoneRight = require('markdown-it-toc-done-right');
 const slugify = require('@sindresorhus/slugify');
 const { minify } = require('terser');
-const htmlmin = require('html-minifier');
+const { minify: htmlMinify } = require('html-minifier-terser');
 const octicons = require('@primer/octicons');
 const postcss = require('postcss');
 const postcssConfig = require('./postcss.config.js');
@@ -223,7 +223,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addTransform('html-minifier', (value, outputPath) => {
     if (outputPath && outputPath.includes('.html')) {
-      return htmlmin.minify(value, {
+      return htmlMinify(value, {
         collapseWhitespace: true,
       });
     }

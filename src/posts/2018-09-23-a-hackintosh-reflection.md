@@ -83,6 +83,9 @@ RIP old friend. I'll boot you up twice a year to install Windows updates and pla
 Check out my [Twitter Moment](https://twitter.com/i/moments/1043749921088663552) that compiles a good majority of my tweets relating to the Hackintosh.
 
 [^bios]: BIOS: Basic Input/Output System, a legacy way to boot a computer.
+
 [^efi]: EFI: Extensible Firmware Interface, a modern interface between the operating system and platform firmware.
+
 [^clover]: [Clover](https://clover-wiki.zetam.org/) bootloader
+
 [^kext]: KEXT: Kernel EXTension. Apple's version of a driver.

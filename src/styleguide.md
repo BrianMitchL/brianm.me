@@ -73,6 +73,7 @@ How about some inline `code` or keyboard sequences, <kbd>Command + Tab</kbd>?
 We can also be super fancy and add footnotes[^short] to our text to reference things[^long]. You can also make them inline^[This footnote is defined right next to the text that it's noting.].
 
 [^short]: Here is the footnote.
+
 [^long]: Here's one with multiple blocks.
 
     Indented paragraphs belong to the previous footnote. Find the docs on the [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote) docs.
