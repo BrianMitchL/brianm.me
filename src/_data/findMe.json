@@ -13,6 +13,12 @@
       "color": "#0A66C2"
     },
     {
+      "title": "Bluesky",
+      "url": "https://bsky.app/profile/brianmitchl.com",
+      "icon": "bluesky",
+      "color": "#0285FF"
+    },
+    {
       "title": "Mastodon",
       "url": "https://mspsocial.net/@BrianMitchL",
       "icon": "mastodon",
@@ -31,12 +37,6 @@
       "url": "https://music.apple.com/profile/brianmitchl",
       "icon": "applemusic",
       "color": "#FA243C"
-    },
-    {
-      "title": "Bluesky",
-      "url": "https://bsky.app/profile/brianm.me",
-      "icon": "bluesky",
-      "color": "#0285FF"
     },
     {
       "title": "CodePen",
