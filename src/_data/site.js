@@ -13,7 +13,7 @@ module.exports = {
   author: {
     name: 'Brian Mitchell',
     bio: 'Senior Frontend Software Engineer and Web Developer, emoji lover 👋🏻, and an avid fan of electronic music.',
-    bluesky: 'https://bsky.app/profile/brianm.me',
+    bluesky: 'https://bsky.app/profile/brianmitchl.com',
     instagram: 'https://instagram.com/BrianMitchL',
     mastodon: 'https://mspsocial.net/@BrianMitchL',
     image: '/assets/images/headshot-2022.jpg',

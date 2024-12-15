@@ -62,12 +62,6 @@
       "color": "#FC6D26"
     },
     {
-      "title": "Keybase",
-      "url": "https://keybase.io/brianmitchl",
-      "icon": "keybase",
-      "color": "#33A0FF"
-    },
-    {
       "title": "Last.fm",
       "url": "https://www.last.fm/user/BrianMitchL",
       "icon": "last-dot-fm",
@@ -78,12 +72,6 @@
       "url": "https://www.npmjs.com/~brianmitchl",
       "icon": "npm",
       "color": "#CB3837"
-    },
-    {
-      "title": "Polywork",
-      "url": "https://poly.work/brianmitchl",
-      "icon": "polywork",
-      "color": "#543DE0"
     },
     {
       "title": "Spotify",
