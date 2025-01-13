@@ -92,22 +92,10 @@
       "color": "#000000"
     },
     {
-      "title": "Threads",
-      "url": "https://www.threads.net/@brianmitchl",
-      "icon": "threads",
-      "color": "#000000"
-    },
-    {
       "title": "Trakt",
       "url": "https://trakt.tv/users/brianmitchl",
       "icon": "trakt",
       "color": "#ED1C24"
-    },
-    {
-      "title": "Twitter",
-      "url": "https://twitter.com/BrianMitchL",
-      "icon": "twitter",
-      "color": "#1DA1F2"
     },
     {
       "title": "YouTube",

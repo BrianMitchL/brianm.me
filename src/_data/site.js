@@ -22,7 +22,6 @@ module.exports = {
     web: 'https://brianm.me',
   },
   short_name: 'BrianMitchL',
-  twitter: 'BrianMitchL',
   image: '/android-chrome-512x512.png',
   date: new Date(),
 };
