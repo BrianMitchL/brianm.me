@@ -1,4 +1,3 @@
-import svelte from 'rollup-plugin-svelte';
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import postcss from 'rollup-plugin-postcss';
@@ -12,15 +11,8 @@ const config = {
     dir: '_site/assets/js',
   },
   plugins: [
-    svelte({
-      compilerOptions: {
-        // enable run-time checks when not in production
-        dev: !production,
-      },
-    }),
     resolve({
       browser: true,
-      dedupe: ['svelte'],
     }),
     postcss({
       config: {
@@ -40,7 +32,7 @@ export default [
     ...config,
   },
   {
-    input: 'src/assets/js/compare-image.mjs',
+    input: 'src/assets/js/image-compare.mjs',
     ...config,
   },
 ];

@@ -1,0 +1,1 @@
+import '@cloudfour/image-compare';
