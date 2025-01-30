@@ -14,15 +14,11 @@ _If you're looking for a more formal résumé, download the [PDF](https://github
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, TanStack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Webpack, Eleventy, Jekyll, Ruby on Rails, NestJS, Next.js, Node.js, Python, HTML, CSS, SCSS, git,&nbsp;{% renderTemplate "webc" %}<latex-logo></latex-logo>{% endrenderTemplate %}
+TypeScript, JavaScript, React, TanStack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Vite, Vitest, Webpack, Eleventy, Jekyll, Ruby on Rails, NestJS, Next.js, Node.js, HTML, CSS, SCSS, git,&nbsp;{% renderTemplate "webc" %}<latex-logo></latex-logo>{% endrenderTemplate %}
 
 ### Operating Systems
 
 macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
-
-## Other Skills
-
-Pair programming, mentorship, enthusiasm, organization, lighting design, theatrical lighting electrician, lighting and sound board operation
 
 ## Hobbies
 
@@ -39,12 +35,14 @@ Pair programming, mentorship, enthusiasm, organization, lighting design, theatri
 ## Experience
 
 - **soona** _Senior Software Engineer_ (June 2022 &ndash; Present), Minneapolis, MN.
+  - Worked on the Production team to implement new and enhance existing product features.
   - Upgraded the Vue application from Vue 2 to Vue 3.
+  - Moved the bundler from Webpack to Vite, integrating with Ruby on Rails.
   - Created patterns and promoted using TanStack Query over global state solutions for server data in the Vue application.
   - Upgraded Rails frontend bundler to use Vite, reducing dependencies, improving developer experience, and modernizing tooling.
-  - Worked on the Production team to implement new and enhance existing product features.
   - Rewrote a chat implementation with a third-party SDK to allow for better observability, resilience, and user experience.
   - Built a sidebar navigation and refactored site-wide layout touching nearly every page to allow for better scalability of the platform, more consistency, and a lighter weight implementation.
+  - Introduced component tests utilizing Vitest and Testing Library to the codebase.
 - **Level2** _Senior Frontend Engineer_ (April 2021 &ndash; May 2022), Minnetonka, MN.
   - Wrote a new chat interface utilizing Twilio chat, simplifying and separating display and data logic.
   - Led the development of the next generation internal coaching portal React application to improve performance, accessibility, user experience, visual consistency, and ease of additional development.
