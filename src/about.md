@@ -24,17 +24,16 @@ macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
 
 - Co-organizer of the [JavaScriptMN](https://www.meetup.com/JavaScriptMN/) meetup (2019 &ndash; present)
 - Board on [Streets.mn](https://streets.mn) (2022 &ndash; present)
-- Bicycling
+- Bicycling - for commuting and for fun!
 - Downhill skiing
 - Electronic music shows
-- Theatrical and live performance lighting (since I was in 4th grade!)
 - Watching science-fiction TV shows and movies
 - Learning/speaking Danish
 - Traveling
 
 ## Experience
 
-- **soona** _Senior Software Engineer_ (June 2022 &ndash; Present), Minneapolis, MN.
+- **soona** _Senior Software Engineer_ (June 2022 &ndash; January 2025), Minneapolis, MN.
   - Worked on the Production team to implement new and enhance existing product features.
   - Upgraded the Vue application from Vue 2 to Vue 3.
   - Moved the bundler from Webpack to Vite, integrating with Ruby on Rails.
@@ -133,6 +132,8 @@ macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
   </details>
 
 ## Theatre Experience
+
+I used to work in technical theater, especially in lighting, and have the following show experience.
 
 - _Lighting Designer_ - _Young Artists Initiative's Frozen Jr._, January 2020, The Wellstone Center, Saint Paul, MN [Photos](https://www.facebook.com/pg/youngartistsmn/photos/?tab=album&album_id=2788812927897660)
 - _Lighting Designer_ - _Young Artists Initiative's Annie_, March 2018, The Wellstone Center, Saint Paul, MN [Photos](https://www.facebook.com/pg/youngartistsmn/photos/?tab=album&album_id=2328712980574326)
