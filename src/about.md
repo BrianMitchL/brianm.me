@@ -7,14 +7,13 @@ eleventyNavigation:
   order: 1
 ---
 
-Brian Mitchell is a Senior Software Engineer at [soona](https://soona.co). In Brian's spare time, he
-enjoys cycling, watching science-fiction, listening to music, and drinking coffee.
+Brian Mitchell is a Senior Software Engineer at [Articulate](https://www.articulate.com). He loves to bike and walk throughout the Twin Cities, dreaming of safer streets, fewer cars, better transit, and higher density. For other fun, he likes science-fiction, electronic music, and jigsaw puzzles.
 
 _If you're looking for a more formal résumé, download the [PDF](https://github.com/BrianMitchL/resume/raw/main/resume%20-%20Brian%20Mitchell.pdf)._
 
 ## Tools, Frameworks, and Languages
 
-TypeScript, JavaScript, React, TanStack Query (React and Vue adapters), Testing Library, CSS-in-JS, Svelte, Vue, Jest, Puppeteer, D3, Vite, Vitest, Webpack, Eleventy, Jekyll, Ruby on Rails, NestJS, Next.js, Node.js, HTML, CSS, SCSS, git,&nbsp;{% renderTemplate "webc" %}<latex-logo></latex-logo>{% endrenderTemplate %}
+TypeScript, JavaScript, React, TanStack Query, Testing Library, Svelte, Vue, Jest, Playwright, D3, Vite, Vitest, Webpack, Eleventy, Ruby on Rails, Node.js, HTML, CSS, SCSS, git,&nbsp;{% renderTemplate "webc" %}<latex-logo></latex-logo>{% endrenderTemplate %}
 
 ### Operating Systems
 
@@ -33,6 +32,9 @@ macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
 
 ## Experience
 
+- **Articulate** _Senior Software Engineer I_ (March 2025 &ndash; Present), Remote.
+  - Worked on the Rise Media team to support and develop text-to-speech, audio recording, file upload, stock image, AI image, and other features for the Rise authoring and learning experiences.
+  - Developed with a hybrid of React components and Lit Web Components for a federated module loaded into several host applications.
 - **soona** _Senior Software Engineer_ (June 2022 &ndash; January 2025), Minneapolis, MN.
   - Worked on the Production team to implement new and enhance existing product features.
   - Upgraded the Vue application from Vue 2 to Vue 3.

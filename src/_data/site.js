@@ -16,7 +16,7 @@ module.exports = {
     bluesky: 'https://bsky.app/profile/brianmitchl.com',
     instagram: 'https://instagram.com/BrianMitchL',
     mastodon: 'https://mspsocial.net/@BrianMitchL',
-    image: '/assets/images/headshot-2022.jpg',
+    image: '/assets/images/headshot-2025.jpg',
     imageHeight: '1024',
     imageWidth: '1024',
     web: 'https://brianm.me',
