@@ -2,7 +2,7 @@
 layout: 'layouts/page.njk'
 title: Uses
 description: A living document of software, gear, and other things that I typically use.
-modified: 2023-12-23
+modified: 2025-12-18
 redirect_from: [/living-docs, /living-docs/gear, /living-docs/software]
 eleventyNavigation:
   key: Uses
@@ -17,7 +17,7 @@ This serves as a living document of software, gear, and other things that I typi
 
 I use the native macOS [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) with my [custom theme](https://github.com/BrianMitchL/dotfiles/blob/master/Brian%20Theme.terminal). You can see my standard configuration and settings in my [dotfiles](https://github.com/BrianMitchL/dotfiles) repository.
 
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/) IDE with the Darcula theme
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/) IDE
 - [Berkeley Mono](https://berkeleygraphics.com/typefaces/berkeley-mono/) typeface
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/) my main development browser
 - [Safari](https://www.apple.com/safari/) my main personal and non-work browser, but I do occasionally use it for development, particularly with personal projects.
@@ -39,7 +39,6 @@ cross-platform.
 - [AppCleaner](https://freemacsoft.net/appcleaner/)
 - [Apple Music](https://www.apple.com/apple-music/)
 - [Apple Photos](https://www.apple.com/macos/photos/)
-- [BetterTouchTool](https://folivora.ai)
 - [Calcbot](https://www.tapbots.com/calcbot/mac/)
 - [Coconut Battery](https://www.coconut-flavour.com/coconutbattery/)
 - [Daisy Disk](https://daisydiskapp.com)
@@ -48,28 +47,26 @@ cross-platform.
 - [Fantastical](https://flexibits.com/fantastical)
 - [Final Cut Pro X](https://www.apple.com/final-cut-pro/)
 - [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
-- [Forecast](https://overcast.fm/forecast)
 - [ImageOptim](https://imageoptim.com/mac)
 - [iStat Menus](https://bjango.com/mac/istatmenus/)
-- [iStumbler](https://istumbler.net)
 - [iVI](http://southpolesoftware.com/wp/ivi-pro-v4/)
 - [Ivory for Mastodon](https://tapbots.com/ivory/mac/)
 - [Logic Pro X](https://www.apple.com/logic-pro/)
 - [Loopback](https://rogueamoeba.com/loopback/)
 - [Mimestream](https://mimestream.com) Gmail client
-- [Pixelmator](https://www.pixelmator.com/mac/)
+- [Pixelmator Pro](https://www.pixelmator.com/pro/)
 - [Private Internet Access](https://www.privateinternetaccess.com)
 - [Rocket](https://matthewpalmer.net/rocket/)
 - [Safari](https://www.apple.com/safari/)
-- [Screens](https://edovia.com/en/screens-mac/)
+- [Screens](https://edovia.com/en/screens)
 - [Scrobbles for Last.fm](https://apps.apple.com/us/app/scrobbles-for-last-fm/id1344679160)
 - [Slack](https://slack.com)
 - [Spotify](https://www.spotify.com/)
-- [TextMate](https://macromates.com)
+- [Tapestry](https://usetapestry.com) blogs, social media, etc. in one timeline
 - [Transmission](https://transmissionbt.com)
 - [Transmit](https://www.panic.com/transmit/)
 - [VLC](https://www.videolan.org/vlc/)
-- [XLD](https://tmkk.undo.jp/xld/index_e.html)
+- [XLD](https://tmkk.undo.jp/xld/index_e.html) X Lossless Decoder
 
 ## iOS Apps
 
@@ -78,34 +75,22 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 ### Entertainment
 
-- [Cyanide and Happiness](https://apps.apple.com/us/app/cyanide-happiness/id372649148)
 - [Fog of World](https://apps.apple.com/us/app/fog-of-world/id505367096) (see my [review]({{ '/posts/fog-of-world-2/' | url }})) {% emoji "🌟", "star" %}
-- [GPX Builder](https://apps.apple.com/us/app/fog-of-world-assistant-gpx-builder/id938037644)
+- [Nebula](https://apps.apple.com/us/app/nebula/id1447033725)
 - [Overcast](https://apps.apple.com/us/app/overcast-podcast-player/id888422857) {% emoji "🌟", "star" %}
 - [Plex](https://apps.apple.com/us/app/plex/id383457673)
-- [Simple Reader for Hacker News](https://apps.apple.com/us/app/simple-reader-for-hacker-news/id1000995253)
 - [Trakt](https://apps.apple.com/us/app/trakt/id1514873602)
 
 ### Games
 
-- [Alto's Adventure](https://apps.apple.com/us/app/altos-adventure/id950812012)
-- [Alto's Odyssey](https://apps.apple.com/us/app/altos-odyssey/id1182456409)
-- [Artificial Superintelligence](https://apps.apple.com/us/app/artificial-superintelligence/id1060474699)
-- [Bloons Supermonkey 2](https://apps.apple.com/us/app/bloons-supermonkey-2/id1118441024)
 - [holedown](https://apps.apple.com/us/app/holedown/id1297270249) {% emoji "🌟", "star" %}
-- [Jetpack Joyride](https://apps.apple.com/us/app/jetpack-joyride/id457446957)
 - [Microsoft Solitare Collection](https://apps.apple.com/us/app/microsoft-solitaire-collection/id1103438575) {% emoji "🌟", "star" %}
-- [Mineswifter (Minesweeper)](https://apps.apple.com/us/app/mineswifter-minesweeper/id1521190195)
-- [Monument Valley 2](https://apps.apple.com/us/app/monument-valley-2/id1187265767)
-- [Monument Valley](https://apps.apple.com/us/app/monument-valley/id728293409)
-- [Tetris](https://apps.apple.com/us/app/tetris/id1491074310)
 - [Threes](https://apps.apple.com/us/app/threes-freeplay/id976851174) {% emoji "🌟", "star" %}
 - [twofold inc.](https://apps.apple.com/us/app/twofold-inc/id1042322028) {% emoji "🌟", "star" %}
 
 ### Music
 
 - [Apple Music](https://www.apple.com/apple-music/)
-- [Marvis Pro](https://apps.apple.com/us/app/marvis-pro/id1447768809) {% emoji "🌟", "star" %}
 - [MusicHarbor](https://apps.apple.com/us/app/musicharbor-track-new-music/id1440405750) {% emoji "🌟", "star" %}
 - [Shazam](https://apps.apple.com/us/app/shazam/id284993459)
 - [Spotify](https://apps.apple.com/us/app/spotify-new-music-and-podcasts/id324684580)
@@ -144,6 +129,7 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Slack](https://apps.apple.com/us/app/slack/id618783545)
 - [Strava](https://apps.apple.com/us/app/strava-run-ride-or-swim/id426826309)
 - [Swarm](https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082) {% emoji "🌟", "star" %}
+- [Tapestry](https://apps.apple.com/us/app/iconfactory-tapestry/id6448078074) blogs, social media, etc. in one timeline
 
 ### Utilities
 
@@ -189,9 +175,6 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 - [Blue compass](https://www.bluemic.com/en-us/products/compass/) microphone boom arm
 - [Audio-Technica AT2020](https://www.audio-technica.com/cms/wired_mics/a0933a662b5ed0e2/index.html) condenser microphone
 - [Logitech Litra Glow](https://www.logitech.com/en-us/products/lighting/litra-glow.html) LED streaming light for video calls
-- [Samsung Portable SSD T5](https://www.samsung.com/semiconductor/minisite/ssd/product/portable/t5/) 500 GB
-- [Apple MagSafe Charger](https://www.apple.com/shop/product/MHXH3AM/A/magsafe-charger)
-- [Acoustic Panels](https://amazon.com/gp/product/B07VH6KDY8/)
 - [Steelcase Gesture](https://www.steelcase.com/products/office-chairs/gesture/) chair
 - [Lego Bonsai Tree](https://www.lego.com/en-us/product/bonsai-tree-10281)
 
@@ -202,18 +185,19 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
   - Tautulli
 - Salyut, [Synology Diskstation 1817+ NAS](https://www.synology.com/en-us/products/DS1817+)
   - RAID 6
-  - Seven 4 TB hard drives (mix of Western Digital Red, Seagate NAS, and HGST DeskStar NAS)
+- Solar Sailer, [Ubiquiti UNAS Pro](https://store.ui.com/us/en/category/all-integrations/products/unas-pro)
+  - RAID10
 
 ## Mobile
 
-- BriPhone 14 Pro, [iPhone 14 Pro](https://everymac.com/systems/apple/iphone/specs/apple-iphone-14-pro-united-states-a2650-specs.html)
+- BriPhone 16 Pro, [iPhone 16 Pro](https://everymac.com/systems/apple/iphone/specs/apple-iphone-16-pro-united-states-a3083-specs.html)
 - BriPad Air, [iPad Air (4th Gen)](https://everymac.com/systems/apple/ipad/specs/apple-ipad-air-4th-gen-a2316-wifi-only-specs.html)
 - Brapple Watch 9, [Apple Watch Series 9 (Aluminum, GPS, 45 mm)](https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-9-aluminum-gps-45mm.html)
 - [AirPods Pro (2nd generation)](https://www.apple.com/airpods-pro/)
 - [Anker PowerCore 30W](https://www.amazon.com/gp/product/B0BYP1D2NT/) power bank
 - [Anker Prime 20,000mAh Power Bank (200W)](https://www.anker.com/products/a1336-20000mah-power-bank)
-- [Ultimate Ears BOOM 2](https://www.ultimateears.com/en-us/wireless-speakers/boom-2.html) speaker
-- [Sony WH-1000XM3 Wireless Noise-Canceling Headphones](https://www.sony.com/electronics/headband-headphones/wh-1000xm3)
+- [Ultimate Ears BOOM 4 | Enchanting Lilac](https://www.ultimateears.com/en-us/shop/p/boom-4.984-002009) speaker
+- [Sony WH-1000XM6 Wireless Noise Canceling Headphones | Platinum Silver](https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-s)
 
 ## Media
 
@@ -229,7 +213,8 @@ A {% emoji "🌟", "star" %} indicates an app I find especially notable.
 
 Car-free since September 13, 2021!
 
-- 2022 All-City Super Professional Apex 1 bicycle
-- 2021 All-City Nature Cross single speed bicycle
-- 2018 (ish) All-City Gorilla Monsoon bicycle
-- 2017 Jamis Renegade Expat bicycle
+- 2019 All-City Gorilla Monsoon flat bar bike, Green Fade color
+- 2021 All-City Nature Cross single speed drop bar bike, Pink Lemonade color
+- 2023 All-City Super Professional single speed flat bar bike, Yellow Dab color
+- 2021 All-City Super Professional Apex 1 flat bar bike, Flash Basil color
+- 2021 All-City ZigZag 105 road drop bar bike, Honeydew Bling color
