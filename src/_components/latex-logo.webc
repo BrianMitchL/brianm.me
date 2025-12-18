@@ -8,8 +8,8 @@
    */
 
   :host {
-    font-family: 'Computer Modern', 'Computer Modern Unicode', Bodoni, Didot,
-      serif;
+    font-family:
+      'Computer Modern', 'Computer Modern Unicode', Bodoni, Didot, serif;
     display: inline;
   }
 

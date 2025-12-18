@@ -103,6 +103,8 @@ macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
 
 ## Education
 
+<!-- prettier-ignore-start -->
+
 - B.A. Computer Science, University of Minnesota, Morris. May 2016.
 
   <details>
@@ -132,6 +134,8 @@ macOS, iOS, Linux (more familiar with Fedora and CentOS), Windows
   - Danish Language I&ndash;II
 
   </details>
+
+<!-- prettier-ignore-end -->
 
 ## Theatre Experience
 
